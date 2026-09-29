@@ -1,28 +1,33 @@
+import csv
+from collections import Counter
+from pathlib import Path
 from policy_engine.audit import audit
 from policy_engine.compiler import compile_measure
 from policy_engine.schema import SourceRef
 
-DEMO = [
-    "Porter le SMIC à 2 000 euros brut",
-    "Sortie de l'Union européenne",
-    "Sortie de l'OTAN",
-    "Supprimer les régions",
-]
+CORPUS = Path("programs/seed_corpus.csv")
 
-source = SourceRef(
-    organisation="DEMO",
-    document="MVP smoke test",
-    version="0",
-    url="https://example.invalid/not-a-political-source",
-)
-
-policies = [
-    compile_measure(policy_id=f"demo-{i}", text=text, source=source)
-    for i, text in enumerate(DEMO, start=1)
-]
+def load():
+    policies = []
+    with CORPUS.open(encoding="utf-8", newline="") as f:
+        for row in csv.DictReader(f):
+            source = SourceRef(
+                organisation=row["organisation"], document=row["document"],
+                version=row["version"], url=row["url"]
+            )
+            policies.append(compile_measure(policy_id=row["policy_id"], text=row["text"], source=source))
+    return policies
 
 if __name__ == "__main__":
+    policies = load()
     result = audit(policies)
+    targets = Counter(p.target for p in policies)
+    evidence = Counter(p.evidence_class.value for p in policies)
     print("APRÈS — POLICY CAPABILITY AUDIT")
-    for key, value in result.items():
-        print(f"{key}: {value}")
+    print(f"measures: {len(policies)}")
+    print(f"traceable: {result['traceable_pct']}%")
+    print(f"classified: {result['classified_pct']}%")
+    print(f"targets: {dict(targets)}")
+    print(f"evidence: {dict(evidence)}")
+    print(f"gaps: {result['gaps']}")
+    print(f"required_capabilities: {result['required_capabilities']}")
