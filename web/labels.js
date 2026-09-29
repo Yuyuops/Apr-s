@@ -181,6 +181,15 @@ export const EXOGENOUS_LABELS = {
   contexte_UE: "Décisions et contexte de l'Union européenne"
 };
 
+export const SOURCE_STATUS_LABELS = {
+  current_official_source: "source officielle actuelle",
+  current: "source actuelle",
+  current_base: "base actuelle",
+  historical_test: "ancien programme utilisé pour tester le simulateur",
+  synthetic: "exemple fictif",
+  synthetic_fixture: "exemple fictif de test"
+};
+
 export const SCENARIO_LABELS = {
   relation_future_non_precisee: "Relation future avec l'UE non précisée",
   relation_type_marche_integre: "Accès proche du marché unique",
