@@ -140,3 +140,27 @@ test("technical engine values have human labels", async()=>{
   assert.equal(labels.MODEL_LABELS.policy_interaction_model,"Effets combinés entre les mesures");
   assert.equal(labels.EXOGENOUS_LABELS.taux_BCE,"Taux d'intérêt de la BCE");
 });
+
+
+test("every engine target and capability has a reader-friendly label", async()=>{
+  const labels=await import("./labels.js");
+  const engine=await import("./engine.js");
+  for(const [target,capabilities] of Object.entries(engine.CAPABILITIES)){
+    assert.ok(labels.TARGET_LABELS[target],"missing target label: "+target);
+    for(const capability of capabilities){
+      assert.ok(labels.MODEL_LABELS[capability],"missing capability label: "+capability);
+    }
+  }
+});
+
+test("every registry evidence and external factor has a reader-friendly label", async()=>{
+  const fs=await import("node:fs/promises");
+  const labels=await import("./labels.js");
+  const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
+  for(const item of registry.cases){
+    assert.ok(labels.EVIDENCE_LABELS[item.evidence],"missing evidence label: "+item.evidence);
+  }
+  for(const factor of registry.exogenous_variables){
+    assert.ok(labels.EXOGENOUS_LABELS[factor],"missing external-factor label: "+factor);
+  }
+});
