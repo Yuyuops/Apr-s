@@ -167,19 +167,28 @@ export function simulateProgram(policies,horizonMonths){
 }
 
 export function applyFiscalBaseline(simulation,baseline){
-  const spending=simulation.directEffects.annual_public_spending_delta_eur;
-  const revenue=simulation.directEffects.annual_public_revenue_delta_eur;
-  if(spending==null && revenue==null) return null;
+  const annualSpending=simulation.directEffects.annual_public_spending_delta_eur;
+  const annualRevenue=simulation.directEffects.annual_public_revenue_delta_eur;
+  if(annualSpending==null && annualRevenue==null) return null;
 
-  const deficitDelta=(spending||0)-(revenue||0);
-  const newDeficit=baseline.public_deficit_eur+deficitDelta;
+  const months=simulation.horizonMonths;
+  const annualDeficitDelta=(annualSpending||0)-(annualRevenue||0);
+  const cumulativeDeficitDelta=annualDeficitDelta*months/12;
+  const annualDeficitAfterDirectEffect=baseline.public_deficit_eur+annualDeficitDelta;
+  const debtImpactPctGdp=100*cumulativeDeficitDelta/baseline.gdp_eur;
+
   return {
     baselineId:baseline.id,
     baselinePeriod:baseline.period,
+    horizonMonths:months,
     baselinePublicDeficitEur:baseline.public_deficit_eur,
-    annualPublicDeficitDeltaEur:deficitDelta,
-    annualPublicDeficitAfterDirectEffectEur:newDeficit,
-    annualPublicDeficitAfterDirectEffectPctGdp:100*newDeficit/baseline.gdp_eur,
-    assumption:"Photographie comptable ceteris paribus : PIB et autres flux maintenus constants."
+    annualPublicDeficitDeltaEur:annualDeficitDelta,
+    annualPublicDeficitAfterDirectEffectEur:annualDeficitAfterDirectEffect,
+    annualPublicDeficitAfterDirectEffectPctGdp:100*annualDeficitAfterDirectEffect/baseline.gdp_eur,
+    cumulativePublicDeficitDeltaEur:cumulativeDeficitDelta,
+    cumulativeDebtImpactPctGdp:debtImpactPctGdp,
+    cumulativePublicSpendingDeltaEur:simulation.directEffects.cumulative_public_spending_delta_eur||0,
+    cumulativePublicRevenueDeltaEur:simulation.directEffects.cumulative_public_revenue_delta_eur||0,
+    assumption:"Effet comptable cumulé au prorata de l'horizon. PIB, taux, inflation et autres flux sont maintenus constants : ce n'est pas une prévision macroéconomique."
   };
 }
