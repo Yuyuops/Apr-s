@@ -36,3 +36,27 @@ def test_program_marks_interaction_model_as_missing():
     ]
     r = simulate_program(policies, 12)
     assert "policy_interaction_model" in r.missing_capabilities
+
+
+def test_horizon_uncertainty_increases():
+    p = compile_("Augmenter les dépenses publiques de 1 milliard d'euros par an")
+    assert simulate_policy(p, 1).downstream_uncertainty == "low"
+    assert simulate_policy(p, 12).downstream_uncertainty == "medium"
+    assert simulate_policy(p, 24).downstream_uncertainty == "high"
+    assert simulate_policy(p, 60).downstream_uncertainty == "very_high"
+
+
+def test_fiscal_baseline_snapshot_is_ceteris_paribus():
+    from simulation.engine import apply_fiscal_baseline
+
+    baseline = {
+        "id": "france_2025_insee",
+        "period": "2025",
+        "gdp_eur": 2_991_100_000_000,
+        "public_deficit_eur": 152_500_000_000,
+    }
+    p = compile_("Augmenter les dépenses publiques de 12 milliards d'euros par an")
+    r = simulate_policy(p, 12)
+    snapshot = apply_fiscal_baseline(r, baseline)
+    assert snapshot["annual_public_deficit_delta_eur"] == 12_000_000_000
+    assert snapshot["annual_public_deficit_after_direct_effect_eur"] == 164_500_000_000
