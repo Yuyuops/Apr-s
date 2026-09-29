@@ -1,16 +1,16 @@
 [
   {
+    "id":"synthetic-program",
+    "label":"Démo — mini-programme budgétaire",
+    "status":"synthetic",
+    "text":"Augmenter les dépenses publiques de 12 milliards d'euros par an\nRéduire les impôts de 2 milliards d'euros par an",
+    "source":null
+  },
+  {
     "id":"synthetic-spending",
     "label":"Démo — dépense publique",
     "status":"synthetic",
     "text":"Augmenter les dépenses publiques de 12 milliards d'euros par an",
-    "source":null
-  },
-  {
-    "id":"synthetic-tax",
-    "label":"Démo — baisse d'impôts",
-    "status":"synthetic",
-    "text":"Réduire les impôts de 2 milliards d'euros par an",
     "source":null
   },
   {
