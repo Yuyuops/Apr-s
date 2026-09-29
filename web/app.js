@@ -1,5 +1,6 @@
 import {applyFiscalBaseline,compilePolicy,simulateProgram} from "./engine.js";
 import {hypothesisSummary} from "./hypotheses.js";
+import {buildDashboardState,groupDashboardIndicators} from "./dashboard.js";
 import {
   ACTION_LABELS,
   CONFIDENCE_LABELS,
@@ -106,6 +107,47 @@ function render(){
   const simulation=simulateProgram(policies,months);
   const fiscal=applyFiscalBaseline(simulation,baseline);
   const hypotheses=hypothesisSummary(policies,hypothesisRegistry,months);
+  const dashboard=buildDashboardState({policies,simulation,fiscal,baseline,hypotheses});
+  const dashboardGroups=groupDashboardIndicators(dashboard.indicators);
+
+  const dashboardGroupsHtml=Object.entries(dashboardGroups).map(([group,items])=>{
+    const cards=items.map(item=>{
+      const delta=item.delta
+        ? '<div class="sim-delta">'+item.delta+'</div>'
+        : item.status==="affected_unmodelled"
+          ? '<div class="sim-pending">Impact à calculer</div>'
+          : item.status==="scenario"
+            ? '<div class="sim-scenario">Plusieurs scénarios</div>'
+            : '<div class="sim-neutral">Pas d’effet chiffré</div>';
+
+      const values=item.baseline
+        ? '<div class="sim-values"><span>'+item.baseline+'</span><span class="sim-arrow">→</span><strong>'+(item.projected||item.baseline)+'</strong></div>'
+        : '<div class="sim-values"><span>Valeur de départ à connecter</span></div>';
+
+      return '<article class="sim-card sim-'+item.status+'">'+
+        '<div class="sim-card-head"><span>'+item.label+'</span><small>'+item.confidence+'</small></div>'+
+        values+
+        delta+
+        '<p>'+item.detail+'</p>'+
+      '</article>';
+    }).join("");
+
+    return '<section class="sim-group"><h3>'+group+'</h3><div class="sim-cards">'+cards+'</div></section>';
+  }).join("");
+
+  const dashboardHtml=
+    '<section class="sim-dashboard">'+
+      '<div class="sim-dashboard-head">'+
+        '<div><span class="eyebrow">FRANCE À '+horizonName.toUpperCase()+'</span><h2>Tableau de bord des impacts</h2></div>'+
+        '<div class="sim-summary">'+
+          '<div><strong>'+dashboard.summary.calculated+'</strong><span>indicateurs calculés</span></div>'+
+          '<div><strong>'+dashboard.summary.pending+'</strong><span>touchés, à modéliser</span></div>'+
+          '<div><strong>'+dashboard.summary.scenarios+'</strong><span>en scénarios</span></div>'+
+        '</div>'+
+      '</div>'+
+      '<p class="sim-intro">Comme dans SimCity : le programme modifie l’état de la France. Les cartes chiffrées bougent avec le temps ; les cartes grisées indiquent les effets identifiés mais pas encore assez modélisés pour donner un chiffre fiable.</p>'+
+      dashboardGroupsHtml+
+    '</section>';
 
   const classifications=policies.map((p,i)=>
     "<li><strong>"+(i+1)+". "+humanize(p.target,TARGET_LABELS)+"</strong> · "+humanize(p.action,ACTION_LABELS)+"</li>"
@@ -178,7 +220,8 @@ function render(){
     '</section>';
 
   result.innerHTML=
-    '<div class="grid">'+
+    dashboardHtml+
+    '<details class="sim-details"><summary>Voir le détail du calcul et des hypothèses</summary><div class="grid">'+
       '<section><h3>Ce que le simulateur a compris</h3><p>'+policies.length+' mesure(s)</p><ul>'+classifications+'</ul>'+
         '<p>Niveau de calcul : <strong>'+humanize(simulation.confidence,CONFIDENCE_LABELS)+'</strong></p>'+
         '<p>Incertitude à cet horizon : <strong>'+humanize(simulation.downstreamUncertainty,UNCERTAINTY_LABELS)+'</strong></p></section>'+
@@ -187,7 +230,7 @@ function render(){
       '<section><h3>Ce qu’il manque pour aller plus loin</h3><div class="tag-cloud">'+missingCalculations+'</div></section>'+
       '<section><h3>À savoir sur ce résultat</h3><ul>'+notes+'</ul></section>'+
       hypothesisHtml+
-    "</div>";
+    "</div></details>";
 }
 
 preset.value=presets[0].id;
