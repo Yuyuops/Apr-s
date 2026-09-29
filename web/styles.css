@@ -8,3 +8,12 @@
 .baseline-grid span{display:block;font-size:12px;color:#c8c8c8;margin-bottom:6px}
 .baseline-grid strong{font-size:18px}
 @media(max-width:700px){.baseline-head{align-items:start;flex-direction:column}.baseline-grid{grid-template-columns:1fr 1fr}}
+
+.fiscal-impact{grid-column:1/-1}
+.impact-primary{display:flex;align-items:end;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid #e4dfd5;margin-bottom:14px}
+.impact-primary span{font-size:14px;color:#666}.impact-primary strong{font-size:30px}
+.impact-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.impact-grid div{background:#f7f4ee;border-radius:12px;padding:12px}
+.impact-grid span{display:block;font-size:12px;color:#666;margin-bottom:5px}
+.impact-grid strong{font-size:16px}
+@media(max-width:700px){.impact-primary{align-items:start;flex-direction:column}.impact-grid{grid-template-columns:1fr 1fr}}
