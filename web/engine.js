@@ -128,3 +128,58 @@ export function simulatePolicy(policy,horizonMonths){
     downstreamUncertainty:horizonUncertainty(horizonMonths),
   };
 }
+
+
+export function simulateProgram(policies,horizonMonths){
+  const total={
+    horizonMonths,
+    directEffects:{},
+    modeledEffects:{},
+    scenarioNotes:[],
+    missingCapabilities:[],
+    assumptions:[],
+    confidence:"unknown",
+    downstreamUncertainty:horizonUncertainty(horizonMonths),
+  };
+
+  for(const policy of policies){
+    const one=simulatePolicy(policy,horizonMonths);
+    for(const [key,value] of Object.entries(one.directEffects)){
+      total.directEffects[key]=(total.directEffects[key]||0)+value;
+    }
+    total.scenarioNotes.push(...one.scenarioNotes);
+    total.missingCapabilities.push(...one.missingCapabilities);
+    total.assumptions.push(...one.assumptions);
+  }
+
+  total.scenarioNotes=[...new Set(total.scenarioNotes)];
+  total.missingCapabilities=[...new Set(total.missingCapabilities)];
+  total.assumptions=[...new Set(total.assumptions)];
+
+  if(policies.length>1 && !total.missingCapabilities.includes("policy_interaction_model")){
+    total.missingCapabilities.push("policy_interaction_model");
+  }
+
+  if(Object.keys(total.directEffects).length) total.confidence="high_for_accounting_effects_only";
+  else if(total.scenarioNotes.length) total.confidence="scenario_only";
+
+  return total;
+}
+
+export function applyFiscalBaseline(simulation,baseline){
+  const spending=simulation.directEffects.annual_public_spending_delta_eur;
+  const revenue=simulation.directEffects.annual_public_revenue_delta_eur;
+  if(spending==null && revenue==null) return null;
+
+  const deficitDelta=(spending||0)-(revenue||0);
+  const newDeficit=baseline.public_deficit_eur+deficitDelta;
+  return {
+    baselineId:baseline.id,
+    baselinePeriod:baseline.period,
+    baselinePublicDeficitEur:baseline.public_deficit_eur,
+    annualPublicDeficitDeltaEur:deficitDelta,
+    annualPublicDeficitAfterDirectEffectEur:newDeficit,
+    annualPublicDeficitAfterDirectEffectPctGdp:100*newDeficit/baseline.gdp_eur,
+    assumption:"Photographie comptable ceteris paribus : PIB et autres flux maintenus constants."
+  };
+}
