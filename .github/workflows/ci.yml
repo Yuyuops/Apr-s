@@ -21,3 +21,7 @@ jobs:
       - run: pytest -q
       - run: python audit_programs.py
       - run: python simulate.py --horizon 6 --text "Augmenter les dépenses publiques de 12 milliards d euros par an"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - run: node --test web/engine.test.mjs

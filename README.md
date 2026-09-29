@@ -31,3 +31,22 @@ pytest
 ```
 
 Le front web viendra après validation de la couverture du moteur.
+
+
+## Démo web locale
+
+Le MVP web fonctionne sans backend ni clé API :
+
+```bash
+python -m http.server 8000 -d web
+```
+
+Puis ouvrir `http://localhost:8000`.
+
+La démo permet de saisir une mesure, choisir un horizon de 1 à 60 mois et visualiser :
+- les effets comptables directement calculables ;
+- les capacités de modélisation encore manquantes ;
+- les réformes qui nécessitent des scénarios plutôt qu'un chiffre unique ;
+- les hypothèses utilisées.
+
+Les mesures synthétiques sont explicitement marquées comme telles. Une mesure attribuée à une organisation doit conserver sa source et son statut temporel.
