@@ -25,4 +25,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "24"
+      - run: node --check web/app.js
+      - run: node --check web/hypotheses.js
       - run: node --test web/engine.test.mjs
