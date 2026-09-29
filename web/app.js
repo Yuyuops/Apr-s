@@ -53,7 +53,7 @@ function render(){
   const notes=[...s.scenarioNotes,...s.assumptions].map(x=>"<li>"+x+"</li>").join("")||"<li>Aucune hypothèse supplémentaire.</li>";
   result.innerHTML=
     '<div class="grid">'+
-      '<section><h3>Classification</h3><p><strong>'+p.target+'</strong></p><p>Action : '+p.action+'</p><p>Confiance : '+s.confidence+'</p></section>'+
+      '<section><h3>Classification</h3><p><strong>'+p.target+'</strong></p><p>Action : '+p.action+'</p><p>Confiance : '+s.confidence+'</p><p>Incertitude aval à cet horizon : <strong>'+s.downstreamUncertainty+'</strong></p></section>'+
       '<section><h3>Effets directs</h3><ul>'+direct+'</ul></section>'+
       '<section><h3>Capacités encore nécessaires</h3><div>'+caps+'</div></section>'+
       '<section><h3>Hypothèses / scénarios</h3><ul>'+notes+'</ul></section>'+
