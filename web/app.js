@@ -1,6 +1,7 @@
 import {applyFiscalBaseline,compilePolicy,simulateProgram} from "./engine.js";
 import {hypothesisSummary} from "./hypotheses.js";
 import {buildDashboardState,groupDashboardIndicators} from "./dashboard.js";
+import {detectMeasureType,MEASURE_TYPES} from "./measure-types.js";
 import {
   ACTION_LABELS,
   CONFIDENCE_LABELS,
@@ -22,6 +23,9 @@ const horizonLabel=document.querySelector("#horizonLabel");
 const result=document.querySelector("#result");
 const sourceBox=document.querySelector("#sourceBox");
 const baselineBox=document.querySelector("#baseline");
+const measureCount=document.querySelector("#measureCount");
+const resetButton=document.querySelector("#resetButton");
+const horizonButtons=[...document.querySelectorAll("#horizonButtons button")];
 
 const [presets,baseline,hypothesisRegistry]=await Promise.all([
   fetch("./demo-policies.json").then(r=>r.json()),
@@ -65,6 +69,18 @@ measure.addEventListener("input",()=>{
   render();
 });
 horizon.addEventListener("input",render);
+horizonButtons.forEach(button=>button.addEventListener("click",()=>{
+  horizon.value=button.dataset.months;
+  render();
+}));
+resetButton.addEventListener("click",()=>{
+  preset.value=presets[0]?.id||"";
+  const selected=presets[0];
+  measure.value=selected?.text||"";
+  sourceBox.textContent=selected?.source?"Source officielle chargée.":"Exemple fictif pour tester le simulateur.";
+  horizon.value="12";
+  render();
+});
 
 function formatBn(v){
   return (v/1e9).toLocaleString("fr-FR",{maximumFractionDigits:1})+" Md€";
@@ -88,6 +104,19 @@ function horizonText(months){
   return months===1?"1 mois":months===6?"6 mois":months===12?"1 an":months===24?"2 ans":months===60?"5 ans":months+" mois";
 }
 
+function sparkline(points){
+  if(!points || points.length<2) return "";
+  const width=180, height=42, pad=3;
+  const min=Math.min(...points), max=Math.max(...points);
+  const span=(max-min)||1;
+  const coords=points.map((value,index)=>{
+    const x=pad+(width-2*pad)*(index/(points.length-1));
+    const y=height-pad-(height-2*pad)*((value-min)/span);
+    return x.toFixed(1)+","+y.toFixed(1);
+  }).join(" ");
+  return '<svg class="sparkline" viewBox="0 0 '+width+' '+height+'" role="img" aria-label="Évolution dans le temps"><polyline points="'+coords+'" fill="none" stroke="currentColor" stroke-width="2.5" vector-effect="non-scaling-stroke"/></svg>';
+}
+
 function directLabel(key){
   return ({
     annual_public_spending_delta_eur:"Dépenses publiques — par an",
@@ -103,7 +132,13 @@ function render(){
   horizonLabel.textContent=horizonName;
 
   const texts=measure.value.split(/\n+/).map(x=>x.trim()).filter(Boolean);
-  const policies=texts.map(compilePolicy);
+  const policies=texts.map(text=>{
+    const policy=compilePolicy(text);
+    policy.measureType=detectMeasureType(policy);
+    return policy;
+  });
+  measureCount.textContent=policies.length+" mesure"+(policies.length>1?"s":"")+" analysée"+(policies.length>1?"s":"");
+  horizonButtons.forEach(button=>button.classList.toggle("active",Number(button.dataset.months)===months));
   const simulation=simulateProgram(policies,months);
   const fiscal=applyFiscalBaseline(simulation,baseline);
   const hypotheses=hypothesisSummary(policies,hypothesisRegistry,months);
@@ -124,15 +159,25 @@ function render(){
         ? '<div class="sim-values"><span>'+item.baseline+'</span><span class="sim-arrow">→</span><strong>'+(item.projected||item.baseline)+'</strong></div>'
         : '<div class="sim-values"><span>Valeur de départ à connecter</span></div>';
 
+      const trend=item.trend
+        ? '<div class="trend-block"><span>'+item.trendLabel+'</span>'+sparkline(item.trend)+'</div>'
+        : "";
+
       return '<article class="sim-card sim-'+item.status+'">'+
         '<div class="sim-card-head"><span>'+item.label+'</span><small>'+item.confidence+'</small></div>'+
         values+
         delta+
+        trend+
         '<p>'+item.detail+'</p>'+
       '</article>';
     }).join("");
 
     return '<section class="sim-group"><h3>'+group+'</h3><div class="sim-cards">'+cards+'</div></section>';
+  }).join("");
+
+  const measureTypeBadges=[...new Set(policies.map(p=>p.measureType))].map(type=>{
+    const meta=MEASURE_TYPES[type];
+    return meta?'<span class="type-badge" title="'+meta.effect+'">'+meta.label+'</span>':"";
   }).join("");
 
   const dashboardHtml=
@@ -145,13 +190,16 @@ function render(){
           '<div><strong>'+dashboard.summary.scenarios+'</strong><span>en scénarios</span></div>'+
         '</div>'+
       '</div>'+
-      '<p class="sim-intro">Comme dans SimCity : le programme modifie l’état de la France. Les cartes chiffrées bougent avec le temps ; les cartes grisées indiquent les effets identifiés mais pas encore assez modélisés pour donner un chiffre fiable.</p>'+
+      '<p class="sim-intro">Comme dans SimCity : le programme modifie l’état de la France. Les cartes chiffrées bougent avec le temps ; les cartes en attente montrent où un modèle fiable manque encore.</p>'+
+      '<div class="type-badges">'+measureTypeBadges+'</div>'+
       dashboardGroupsHtml+
     '</section>';
 
-  const classifications=policies.map((p,i)=>
-    "<li><strong>"+(i+1)+". "+humanize(p.target,TARGET_LABELS)+"</strong> · "+humanize(p.action,ACTION_LABELS)+"</li>"
-  ).join("")||"<li>Aucune mesure saisie.</li>";
+  const classifications=policies.map((p,i)=>{
+    const type=MEASURE_TYPES[p.measureType];
+    return "<li><strong>"+(i+1)+". "+humanize(p.target,TARGET_LABELS)+"</strong> · "+humanize(p.action,ACTION_LABELS)+
+      (type?" · <span>"+type.label+"</span>":"")+"</li>";
+  }).join("")||"<li>Aucune mesure saisie.</li>";
 
   const direct=Object.entries(simulation.directEffects)
     .map(([key,value])=>"<li><span>"+directLabel(key)+"</span> : <strong>"+eur(value)+"</strong></li>")

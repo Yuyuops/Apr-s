@@ -202,3 +202,44 @@ test("structural policy activates institution scenario card", async()=>{
 
   assert.equal(state.indicators.find(x=>x.id==="institutions").status,"scenario");
 });
+
+
+test("measure typology covers the 16 product categories", async()=>{
+  const {MEASURE_TYPES,detectMeasureType}=await import("./measure-types.js");
+  assert.equal(Object.keys(MEASURE_TYPES).length,16);
+
+  assert.equal(detectMeasureType(compilePolicy("Porter le SMIC à 2000 euros")),"parametric");
+  assert.equal(detectMeasureType(compilePolicy("Augmenter les dépenses publiques de 12 milliards d'euros par an")),"budgetary");
+  assert.equal(detectMeasureType(compilePolicy("Créer une nouvelle taxe")),"fiscal_social");
+  assert.equal(detectMeasureType(compilePolicy("Supprimer les régions")),"administrative");
+  assert.equal(detectMeasureType(compilePolicy("Sortir de l'Union européenne")),"treaty");
+  assert.equal(detectMeasureType(compilePolicy("Sortir de l'euro")),"monetary");
+});
+
+test("UX exposes five quick time horizons and a reset control", async()=>{
+  const fs=await import("node:fs/promises");
+  const html=await fs.readFile(new URL("./index.html",import.meta.url),"utf8");
+  for(const months of ["1","6","12","24","60"]){
+    assert.match(html,new RegExp('data-months="'+months+'"'));
+  }
+  assert.match(html,/id="resetButton"/);
+  assert.match(html,/Le tableau de bord se met à jour automatiquement/);
+});
+
+test("calculated dashboard cards include time trajectories", async()=>{
+  const dashboard=await import("./dashboard.js");
+  const fs=await import("node:fs/promises");
+  const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
+  const baseline=JSON.parse(await fs.readFile(new URL("./france_2025.json",import.meta.url),"utf8"));
+  const policies=[compilePolicy("Augmenter les dépenses publiques de 12 milliards d'euros par an")];
+  const simulation=simulateProgram(policies,60);
+  const fiscal=applyFiscalBaseline(simulation,baseline);
+  const hypotheses=hypothesisSummary(policies,registry,60);
+  const state=dashboard.buildDashboardState({policies,simulation,fiscal,baseline,hypotheses});
+
+  const spending=state.indicators.find(x=>x.id==="spending");
+  const debt=state.indicators.find(x=>x.id==="debt");
+  assert.equal(spending.trend.length,7);
+  assert.equal(debt.trend.length,7);
+  assert.notEqual(spending.trend[0],spending.trend.at(-1));
+});
