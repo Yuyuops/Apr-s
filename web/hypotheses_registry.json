@@ -323,6 +323,30 @@
       ]
     },
     {
+      "id": "media_regulation",
+      "label": "Médias et régulation",
+      "targets": [
+        "media_regulation"
+      ],
+      "layer": "media_regulation",
+      "evidence": "modelisable_scenario",
+      "models": [
+        "media_market",
+        "regulatory_change"
+      ],
+      "required_details": [
+        "périmètre des acteurs",
+        "règle applicable",
+        "gouvernance",
+        "calendrier"
+      ],
+      "affected_variables": [
+        "structure_marche_medias",
+        "cout_conformite",
+        "gouvernance_medias"
+      ]
+    },
+    {
       "id": "housing",
       "label": "Logement",
       "targets": [
