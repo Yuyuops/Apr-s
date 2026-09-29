@@ -1,0 +1,20 @@
+{
+  "id": "france_2025_insee",
+  "country": "France",
+  "period": "2025",
+  "currency": "EUR",
+  "status": "official_2025_accounts_published_2026",
+  "gdp_eur": 2991100000000,
+  "public_expenditure_eur": 1714100000000,
+  "public_deficit_eur": 152500000000,
+  "public_deficit_pct_gdp": 5.1,
+  "public_debt_pct_gdp": 115.7,
+  "public_revenue_pct_gdp": 52.2,
+  "mandatory_levies_pct_gdp": 43.6,
+  "retrieved_at": "2026-09-29",
+  "sources": [
+    {"label":"Insee — Comptes nationaux annuels en 2025","url":"https://www.insee.fr/fr/statistiques/8988793"},
+    {"label":"Insee — Le compte des administrations publiques en 2025","url":"https://www.insee.fr/fr/statistiques/8997691"},
+    {"label":"Insee — Dépenses par administration publique 2025","url":"https://www.insee.fr/fr/statistiques/2381404"}
+  ]
+}
