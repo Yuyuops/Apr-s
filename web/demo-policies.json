@@ -14,6 +14,34 @@
     "source": null
   },
   {
+    "id": "synthetic-police",
+    "label": "Démo — recruter 10 000 policiers",
+    "status": "synthetic",
+    "text": "Recruter 10 000 policiers",
+    "source": null
+  },
+  {
+    "id": "synthetic-hospitals",
+    "label": "Démo — construire 20 hôpitaux",
+    "status": "synthetic",
+    "text": "Construire 20 hôpitaux",
+    "source": null
+  },
+  {
+    "id": "synthetic-rail",
+    "label": "Démo — construire 300 km de rail",
+    "status": "synthetic",
+    "text": "Construire 300 km de rail",
+    "source": null
+  },
+  {
+    "id": "synthetic-solar",
+    "label": "Démo — ajouter 5 GW de solaire",
+    "status": "synthetic",
+    "text": "Ajouter 5 GW de solaire",
+    "source": null
+  },
+  {
     "id": "synthetic-spending",
     "label": "Démo — dépense publique",
     "status": "synthetic",
