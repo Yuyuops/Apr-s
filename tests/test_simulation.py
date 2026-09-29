@@ -60,3 +60,22 @@ def test_fiscal_baseline_snapshot_is_ceteris_paribus():
     snapshot = apply_fiscal_baseline(r, baseline)
     assert snapshot["annual_public_deficit_delta_eur"] == 12_000_000_000
     assert snapshot["annual_public_deficit_after_direct_effect_eur"] == 164_500_000_000
+
+
+def test_fiscal_baseline_cumulative_impact_changes_with_horizon():
+    from simulation.engine import apply_fiscal_baseline
+
+    baseline = {
+        "id": "france_2025_insee",
+        "period": "2025",
+        "gdp_eur": 2_991_100_000_000,
+        "public_deficit_eur": 152_500_000_000,
+    }
+    p = compile_("Augmenter les dépenses publiques de 12 milliards d'euros par an")
+
+    six = apply_fiscal_baseline(simulate_policy(p, 6), baseline)
+    sixty = apply_fiscal_baseline(simulate_policy(p, 60), baseline)
+
+    assert six["cumulative_public_deficit_delta_eur"] == 6_000_000_000
+    assert sixty["cumulative_public_deficit_delta_eur"] == 60_000_000_000
+    assert sixty["cumulative_debt_impact_pct_gdp"] > six["cumulative_debt_impact_pct_gdp"]
