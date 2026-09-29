@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {applyFiscalBaseline,compilePolicy,simulatePolicy,simulateProgram} from "./engine.js";
+import {hypothesisSummary} from "./hypotheses.js";
 
 test("annual spending scales with horizon",()=>{
   const p=compilePolicy("Augmenter les dépenses publiques de 12 milliards d'euros par an");
@@ -69,4 +70,48 @@ test("fiscal baseline cumulative impact changes with slider horizon",()=>{
   assert.equal(six.cumulativePublicDeficitDeltaEur,6_000_000_000);
   assert.equal(sixty.cumulativePublicDeficitDeltaEur,60_000_000_000);
   assert.ok(sixty.cumulativeDebtImpactPctGdp>six.cumulativeDebtImpactPctGdp);
+});
+
+
+test("hypothesis registry covers the identified structural and sector cases", async()=>{
+  const fs=await import("node:fs/promises");
+  const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
+  const ids=new Set(registry.cases.map(x=>x.id));
+  for(const expected of [
+    "minimum_wage","retirement_age","taxation","public_spending","social_benefit",
+    "healthcare","education","justice","security","immigration","housing","environment",
+    "energy","transport","administrative_layer","administrative_reorganisation",
+    "eu_exit","euro_exit","nato_exit","schengen_or_eu_rule","constitutional_reform",
+    "privatisation_nationalisation","foreign_policy","defence","public_service",
+    "digital_policy","objective_only"
+  ]){
+    assert.ok(ids.has(expected), "missing case "+expected);
+  }
+});
+
+test("combined EU and euro changes trigger an explicit interaction", async()=>{
+  const fs=await import("node:fs/promises");
+  const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
+  const policies=[
+    compilePolicy("Sortir de l'Union européenne"),
+    compilePolicy("Sortir de l'euro")
+  ];
+  const summary=hypothesisSummary(policies,registry,60);
+  assert.ok(summary.interactions.some(x=>x.id==="eu_euro_combo"));
+  assert.ok(summary.scenarioBranches.includes("relation_future_non_precisee"));
+  assert.ok(summary.scenarioBranches.includes("nouvelle_monnaie_non_precisee"));
+});
+
+test("administrative layer removal requires competence transfer details", async()=>{
+  const fs=await import("node:fs/promises");
+  const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
+  const summary=hypothesisSummary([compilePolicy("Supprimer les régions")],registry,24);
+  assert.ok(summary.missingDetails.includes("compétences transférées"));
+  assert.ok(summary.models.includes("competence_transfer"));
+});
+
+test("all five modelling horizons are encoded", async()=>{
+  const fs=await import("node:fs/promises");
+  const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
+  assert.deepEqual(registry.horizon_method.map(x=>x.months),[1,6,12,24,60]);
 });
