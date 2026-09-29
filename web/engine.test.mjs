@@ -164,3 +164,41 @@ test("every registry evidence and external factor has a reader-friendly label", 
     assert.ok(labels.EXOGENOUS_LABELS[factor],"missing external-factor label: "+factor);
   }
 });
+
+
+test("SimCity dashboard exposes 14 public indicators", async()=>{
+  const dashboard=await import("./dashboard.js");
+  const fs=await import("node:fs/promises");
+  const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
+  const baseline=JSON.parse(await fs.readFile(new URL("./france_2025.json",import.meta.url),"utf8"));
+  const policies=[
+    compilePolicy("Augmenter les dépenses publiques de 12 milliards d'euros par an"),
+    compilePolicy("Réduire les impôts de 2 milliards d'euros par an")
+  ];
+  const simulation=simulateProgram(policies,12);
+  const fiscal=applyFiscalBaseline(simulation,baseline);
+  const {hypothesisSummary}=await import("./hypotheses.js");
+  const hypotheses=hypothesisSummary(policies,registry,12);
+  const state=dashboard.buildDashboardState({policies,simulation,fiscal,baseline,hypotheses});
+
+  assert.equal(state.indicators.length,14);
+  assert.equal(state.indicators.find(x=>x.id==="spending").status,"calculated");
+  assert.equal(state.indicators.find(x=>x.id==="revenue").status,"calculated");
+  assert.equal(state.indicators.find(x=>x.id==="deficit").status,"calculated");
+  assert.equal(state.indicators.find(x=>x.id==="debt").status,"calculated");
+  assert.ok(state.summary.calculated>=4);
+});
+
+test("structural policy activates institution scenario card", async()=>{
+  const dashboard=await import("./dashboard.js");
+  const fs=await import("node:fs/promises");
+  const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
+  const baseline=JSON.parse(await fs.readFile(new URL("./france_2025.json",import.meta.url),"utf8"));
+  const policies=[compilePolicy("Sortir de l'Union européenne")];
+  const simulation=simulateProgram(policies,60);
+  const {hypothesisSummary}=await import("./hypotheses.js");
+  const hypotheses=hypothesisSummary(policies,registry,60);
+  const state=dashboard.buildDashboardState({policies,simulation,fiscal:null,baseline,hypotheses});
+
+  assert.equal(state.indicators.find(x=>x.id==="institutions").status,"scenario");
+});
