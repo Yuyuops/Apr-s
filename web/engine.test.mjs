@@ -166,7 +166,7 @@ test("every registry evidence and external factor has a reader-friendly label", 
 });
 
 
-test("SimCity dashboard exposes 14 public indicators", async()=>{
+test("SimCity dashboard exposes 15 public indicators", async()=>{
   const dashboard=await import("./dashboard.js");
   const fs=await import("node:fs/promises");
   const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
@@ -181,7 +181,7 @@ test("SimCity dashboard exposes 14 public indicators", async()=>{
   const hypotheses=hypothesisSummary(policies,registry,12);
   const state=dashboard.buildDashboardState({policies,simulation,fiscal,baseline,hypotheses});
 
-  assert.equal(state.indicators.length,14);
+  assert.equal(state.indicators.length,15);
   assert.equal(state.indicators.find(x=>x.id==="spending").status,"calculated");
   assert.equal(state.indicators.find(x=>x.id==="revenue").status,"calculated");
   assert.equal(state.indicators.find(x=>x.id==="deficit").status,"calculated");
@@ -274,4 +274,44 @@ test("non-hourly SMIC proposal is not silently compared to hourly baseline", asy
     smicHourly:{value:12.31,effectiveDate:"2026-06-01",sourceUrl:"https://example.invalid"}
   });
   assert.equal(changes.length,0);
+});
+
+
+test("explicit public staffing becomes a quantified dashboard effect", async()=>{
+  const {extractDirectOperationalEffects}=await import("./direct-operational.js");
+  const {buildDashboardState}=await import("./dashboard.js");
+  const fs=await import("node:fs/promises");
+  const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
+  const baseline=JSON.parse(await fs.readFile(new URL("./france_2025.json",import.meta.url),"utf8"));
+
+  const policies=[compilePolicy("Recruter 10 000 policiers")];
+  const operationalEffects=extractDirectOperationalEffects(policies);
+  assert.equal(operationalEffects[0].value,10000);
+  assert.equal(operationalEffects[0].indicator,"security");
+
+  const simulation=simulateProgram(policies,12);
+  const hypotheses=hypothesisSummary(policies,registry,12);
+  const state=buildDashboardState({policies,simulation,fiscal:null,baseline,hypotheses,operationalEffects});
+  const security=state.indicators.find(x=>x.id==="security");
+  assert.equal(security.status,"calculated");
+  assert.match(security.delta,/10.?000/);
+});
+
+test("explicit infrastructure and energy capacity are quantified without causal guesses", async()=>{
+  const {extractDirectOperationalEffects}=await import("./direct-operational.js");
+  const policies=[
+    compilePolicy("Construire 20 hôpitaux"),
+    compilePolicy("Construire 300 km de rail"),
+    compilePolicy("Ajouter 5 GW de solaire")
+  ];
+  const effects=extractDirectOperationalEffects(policies);
+  assert.ok(effects.some(x=>x.indicator==="health" && x.value===20));
+  assert.ok(effects.some(x=>x.indicator==="mobility" && x.value===300 && x.unit==="km"));
+  assert.ok(effects.some(x=>x.indicator==="energy" && x.value===5 && x.unit==="GW"));
+});
+
+test("recruitment and construction verbs are treated as increases",()=>{
+  assert.equal(compilePolicy("Recruter 1000 enseignants").action,"INCREASE");
+  assert.equal(compilePolicy("Construire 10 prisons").action,"INCREASE");
+  assert.equal(compilePolicy("Fermer 5 hôpitaux").action,"DECREASE");
 });

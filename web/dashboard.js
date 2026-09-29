@@ -13,6 +13,7 @@ const INDICATORS = [
   {id:"education", label:"Éducation", short:"Éducation", group:"Services & société", variables:["taille_classes","depenses_education"], kind:"generic"},
   {id:"security", label:"Sécurité & justice", short:"Sécurité / justice", group:"Services & société", variables:["effectifs_police","depenses_securite","capacite_operationnelle","delais_justice","stock_affaires","capacite_justice"], kind:"generic"},
   {id:"housing", label:"Logement", short:"Logement", group:"Services & société", variables:["logement","offre_logement","prix_logement","loyers"], kind:"generic"},
+  {id:"mobility", label:"Transports & infrastructures", short:"Transports", group:"Services & société", variables:["mobilite","investissement_public"], kind:"generic"},
 
   {id:"energy", label:"Énergie & climat", short:"Énergie / climat", group:"Transition & institutions", variables:["mix_energetique","prix_energie","emissions_CO2","pollution","investissement"], kind:"generic"},
   {id:"institutions", label:"Institutions & international", short:"Institutions", group:"Transition & institutions", variables:["organisation_etat","competences","institutions","frontieres","relations_internationales","reglementation","calendrier_legislatif"], kind:"generic"}
@@ -52,9 +53,19 @@ function linearSeries(start,end,steps=7){
   return Array.from({length:steps},(_,i)=>start+(end-start)*(i/(steps-1)));
 }
 
-export function buildDashboardState({policies,simulation,fiscal,baseline,hypotheses}){
+function formatOperational(effect){
+  const sign=effect.value>0?"+":effect.value<0?"−":"";
+  const value=Math.abs(effect.value).toLocaleString("fr-FR",{maximumFractionDigits:2});
+  return sign+value+" "+effect.unit;
+}
+
+export function buildDashboardState({policies,simulation,fiscal,baseline,hypotheses,operationalEffects=[]}){
   const affected=new Set(hypotheses.affectedVariables||[]);
   const structural=policies.some(p=>STRUCTURAL_TARGETS.has(p.target));
+  const operationalByIndicator=operationalEffects.reduce((acc,effect)=>{
+    (acc[effect.indicator] ||= []).push(effect);
+    return acc;
+  },{});
   const annualSpending=simulation.directEffects.annual_public_spending_delta_eur||0;
   const annualRevenue=simulation.directEffects.annual_public_revenue_delta_eur||0;
   const baselineRevenue=baseline.gdp_eur*(baseline.public_revenue_pct_gdp/100);
@@ -72,6 +83,17 @@ export function buildDashboardState({policies,simulation,fiscal,baseline,hypothe
       trend:null,
       trendLabel:null
     };
+
+    const directOperational=operationalByIndicator[indicator.id]||[];
+    if(directOperational.length){
+      base.status="calculated";
+      base.baseline="Situation actuelle";
+      base.projected="Capacité modifiée";
+      base.delta=directOperational.map(formatOperational).join(" · ");
+      base.detail=directOperational.map(x=>x.label).join(" · ")+" — quantité explicitement annoncée. L'effet sur les résultats du service reste à modéliser.";
+      base.confidence="Calcul direct";
+      return base;
+    }
 
     if(indicator.id==="gdp"){
       base.baseline=money(baseline.gdp_eur);

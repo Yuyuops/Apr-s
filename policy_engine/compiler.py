@@ -7,9 +7,9 @@ RULES = [
     ("taxation", ("impôt", "taxe", "cotisation", "prélèvement obligatoire")),
     ("public_spending", ("dépenses publiques", "financer")),
     ("social_benefit", ("minima sociaux", "allocation", "aide sociale")),
-    ("healthcare", ("hôpital", "désert médical", "santé", "médicament")),
-    ("education", ("éducation", "école", "enseignement")),
-    ("justice", ("justice", "sanctionner")),
+    ("healthcare", ("hôpital", "hopital", "désert médical", "santé", "médicament", "soignant", "infirmier", "médecin", "medecin")),
+    ("education", ("éducation", "école", "ecole", "enseignement", "professeur", "enseignant", "lycée", "lycee", "collège", "college")),
+    ("justice", ("justice", "sanctionner", "prison", "magistrat", "juge", "greffier")),
     ("immigration", ("immigration", "asile", "clandestin", "étranger")),
     ("media_regulation", ("médias", "media")),
     ("environment", ("écologique", "transition", "incendie", "littoral")),
@@ -25,10 +25,10 @@ RULES = [
     ("privatisation_nationalisation", ("privatisation", "nationalisation")),
     ("foreign_policy", ("politique étrangère", "aides au développement")),
     ("digital_policy", ("numérique",)),
-    ("security", ("police", "sécurité", "délinquance")),
+    ("security", ("police", "policier", "gendarme", "sécurité", "délinquance")),
     ("housing", ("logement", "logements")),
     ("defence", ("défense", "armée", "militaire")),
-    ("energy", ("énergie", "renouvelable", "nucléaire")),
+    ("energy", ("énergie", "energie", "renouvelable", "nucléaire", "nucleaire", "solaire", "éolien", "eolien")),
 ]
 
 CAPABILITIES = {
@@ -106,8 +106,8 @@ def compile_measure(*, policy_id: str, text: str, source: SourceRef) -> PolicyOb
     if target in {"public_service", "healthcare", "education"} and value is None:
         unresolved.append("implementation_scale_not_quantified")
 
-    increase_words = ("augmenter", "hausser", "accroître", "renforcer", "développer", "créer")
-    decrease_words = ("réduire", "baisser", "diminuer", "supprimer", "abolir")
+    increase_words = ("augmenter", "hausser", "accroître", "renforcer", "développer", "créer", "creer", "recruter", "embaucher", "construire", "ouvrir", "ajouter")
+    decrease_words = ("réduire", "baisser", "diminuer", "supprimer", "abolir", "fermer")
     set_words = ("porter", "fixer", "établir")
 
     if any(word in lowered for word in increase_words):
