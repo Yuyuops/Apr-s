@@ -60,10 +60,22 @@ function eur(v){
   return sign+abs.toLocaleString("fr-FR")+" €";
 }
 function tag(s){return '<span class="tag">'+s+"</span>";}
+function horizonText(months){
+  return months===1?"1 mois":months===6?"6 mois":months===12?"1 an":months===24?"2 ans":months===60?"5 ans":months+" mois";
+}
+function directLabel(key){
+  return ({
+    annual_public_spending_delta_eur:"Dépenses publiques — rythme annuel",
+    cumulative_public_spending_delta_eur:"Dépenses publiques — cumul à l'horizon",
+    annual_public_revenue_delta_eur:"Recettes publiques — rythme annuel",
+    cumulative_public_revenue_delta_eur:"Recettes publiques — cumul à l'horizon"
+  })[key]||key;
+}
 
 function render(){
   const months=Number(horizon.value);
-  horizonLabel.textContent=months===1?"1 mois":months===6?"6 mois":months===12?"1 an":months===24?"2 ans":months===60?"5 ans":months+" mois";
+  const horizonName=horizonText(months);
+  horizonLabel.textContent=horizonName;
 
   const texts=measure.value.split(/\n+/).map(x=>x.trim()).filter(Boolean);
   const policies=texts.map(compilePolicy);
@@ -75,7 +87,7 @@ function render(){
   ).join("")||"<li>Aucune mesure saisie.</li>";
 
   const direct=Object.entries(s.directEffects)
-    .map(([k,v])=>"<li><code>"+k+"</code> : <strong>"+eur(v)+"</strong></li>")
+    .map(([k,v])=>"<li><span>"+directLabel(k)+"</span> : <strong>"+eur(v)+"</strong></li>")
     .join("")||"<li>Aucun effet comptable direct calculable avec les informations fournies.</li>";
 
   const caps=s.missingCapabilities.map(tag).join(" ")||"Aucune capacité manquante pour l'effet direct affiché.";
@@ -83,13 +95,17 @@ function render(){
     .map(x=>"<li>"+x+"</li>").join("")||"<li>Aucune hypothèse supplémentaire.</li>";
 
   const fiscalHtml=fiscal?
-    '<section><h3>Impact budgétaire direct vs baseline 2025</h3>'+
-      '<p>Déficit 2025 : <strong>'+formatBn(fiscal.baselinePublicDeficitEur)+'</strong></p>'+
-      '<p>Variation annuelle directe : <strong>'+eur(fiscal.annualPublicDeficitDeltaEur)+'</strong></p>'+
-      '<p>Déficit après effet direct : <strong>'+formatBn(fiscal.annualPublicDeficitAfterDirectEffectEur)+'</strong> · <strong>'+fiscal.annualPublicDeficitAfterDirectEffectPctGdp.toFixed(2)+' % du PIB</strong></p>'+
+    '<section class="fiscal-impact"><h3>Impact direct à '+horizonName+'</h3>'+
+      '<div class="impact-primary"><span>Variation cumulée du déficit</span><strong>'+eur(fiscal.cumulativePublicDeficitDeltaEur)+'</strong></div>'+
+      '<div class="impact-grid">'+
+        '<div><span>Dépenses cumulées</span><strong>'+eur(fiscal.cumulativePublicSpendingDeltaEur)+'</strong></div>'+
+        '<div><span>Recettes cumulées</span><strong>'+eur(fiscal.cumulativePublicRevenueDeltaEur)+'</strong></div>'+
+        '<div><span>Impact dette vs baseline</span><strong>'+((fiscal.cumulativeDebtImpactPctGdp>=0?"+":"")+fiscal.cumulativeDebtImpactPctGdp.toFixed(3))+' pt PIB</strong></div>'+
+        '<div><span>Variation annuelle du déficit</span><strong>'+eur(fiscal.annualPublicDeficitDeltaEur)+'</strong></div>'+
+      '</div>'+
       '<p class="source">'+fiscal.assumption+'</p>'+
     '</section>':
-    '<section><h3>Impact budgétaire direct vs baseline 2025</h3><p>Non calculable pour les mesures saisies.</p></section>';
+    '<section class="fiscal-impact"><h3>Impact direct à '+horizonName+'</h3><p>Aucun flux budgétaire temporel calculable pour ces mesures. Le curseur ne peut donc modifier que l’incertitude tant qu’un modèle causal validé n’est pas branché.</p></section>';
 
   result.innerHTML=
     '<div class="grid">'+
