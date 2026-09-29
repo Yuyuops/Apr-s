@@ -115,3 +115,28 @@ test("all five modelling horizons are encoded", async()=>{
   const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
   assert.deepEqual(registry.horizon_method.map(x=>x.months),[1,6,12,24,60]);
 });
+
+
+test("plain-language UI hides core technical codes", async()=>{
+  const fs=await import("node:fs/promises");
+  const app=await fs.readFile(new URL("./app.js",import.meta.url),"utf8");
+  for(const forbidden of [
+    "Capacités encore nécessaires",
+    "Incertitude aval",
+    "Modèles attendus",
+    "Variables exogènes",
+    "Classification"
+  ]){
+    assert.equal(app.includes(forbidden),false,"technical wording still visible: "+forbidden);
+  }
+});
+
+test("technical engine values have human labels", async()=>{
+  const labels=await import("./labels.js");
+  assert.equal(labels.TARGET_LABELS.public_spending,"Dépenses publiques");
+  assert.equal(labels.CONFIDENCE_LABELS.high_for_accounting_effects_only,"Calculs directs fiables");
+  assert.equal(labels.UNCERTAINTY_LABELS.very_high,"Très élevée");
+  assert.equal(labels.MODEL_LABELS.macroeconomy,"Économie globale");
+  assert.equal(labels.MODEL_LABELS.policy_interaction_model,"Effets combinés entre les mesures");
+  assert.equal(labels.EXOGENOUS_LABELS.taux_BCE,"Taux d'intérêt de la BCE");
+});
