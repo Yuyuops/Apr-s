@@ -25,6 +25,10 @@ RULES = [
     ("privatisation_nationalisation", ("privatisation", "nationalisation")),
     ("foreign_policy", ("politique étrangère", "aides au développement")),
     ("digital_policy", ("numérique",)),
+    ("security", ("police", "sécurité", "délinquance")),
+    ("housing", ("logement", "logements")),
+    ("defence", ("défense", "armée", "militaire")),
+    ("energy", ("énergie", "renouvelable", "nucléaire")),
 ]
 
 CAPABILITIES = {
@@ -51,6 +55,10 @@ CAPABILITIES = {
     "privatisation_nationalisation": ["asset_valuation", "public_finance", "sector_model"],
     "foreign_policy": ["international_relations_scenarios"],
     "digital_policy": ["digital_economy", "regulatory_change"],
+    "security": ["security_system", "public_finance"],
+    "housing": ["housing_market", "public_finance", "distribution"],
+    "defence": ["defence_posture", "public_finance"],
+    "energy": ["environment_energy", "energy_system", "public_finance"],
 }
 
 SCENARIO_TARGETS = {
