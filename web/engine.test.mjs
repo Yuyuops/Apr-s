@@ -166,7 +166,7 @@ test("every registry evidence and external factor has a reader-friendly label", 
 });
 
 
-test("SimCity dashboard exposes 14 public indicators", async()=>{
+test("SimCity dashboard exposes 15 public indicators", async()=>{
   const dashboard=await import("./dashboard.js");
   const fs=await import("node:fs/promises");
   const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
@@ -181,7 +181,7 @@ test("SimCity dashboard exposes 14 public indicators", async()=>{
   const hypotheses=hypothesisSummary(policies,registry,12);
   const state=dashboard.buildDashboardState({policies,simulation,fiscal,baseline,hypotheses});
 
-  assert.equal(state.indicators.length,14);
+  assert.equal(state.indicators.length,15);
   assert.equal(state.indicators.find(x=>x.id==="spending").status,"calculated");
   assert.equal(state.indicators.find(x=>x.id==="revenue").status,"calculated");
   assert.equal(state.indicators.find(x=>x.id==="deficit").status,"calculated");
