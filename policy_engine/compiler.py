@@ -106,7 +106,18 @@ def compile_measure(*, policy_id: str, text: str, source: SourceRef) -> PolicyOb
     if target in {"public_service", "healthcare", "education"} and value is None:
         unresolved.append("implementation_scale_not_quantified")
 
-    action = "SET" if value is not None else "STRUCTURAL_CHANGE"
+    increase_words = ("augmenter", "hausser", "accroître", "renforcer", "développer", "créer")
+    decrease_words = ("réduire", "baisser", "diminuer", "supprimer", "abolir")
+    set_words = ("porter", "fixer", "établir")
+
+    if any(word in lowered for word in increase_words):
+        action = "INCREASE"
+    elif any(word in lowered for word in decrease_words):
+        action = "DECREASE"
+    elif any(word in lowered for word in set_words) and value is not None:
+        action = "SET"
+    else:
+        action = "STRUCTURAL_CHANGE"
     return PolicyObject(
         policy_id=policy_id, source=source, text=text, action=action,
         target=target, value=value, unit=unit,
