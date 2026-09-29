@@ -1,4 +1,5 @@
 import {applyFiscalBaseline,compilePolicy,simulateProgram} from "./engine.js";
+import {hypothesisSummary} from "./hypotheses.js";
 
 const measure=document.querySelector("#measure");
 const preset=document.querySelector("#preset");
@@ -8,9 +9,10 @@ const result=document.querySelector("#result");
 const sourceBox=document.querySelector("#sourceBox");
 const baselineBox=document.querySelector("#baseline");
 
-const [presets,baseline]=await Promise.all([
+const [presets,baseline,hypothesisRegistry]=await Promise.all([
   fetch("./demo-policies.json").then(r=>r.json()),
-  fetch("./france_2025.json").then(r=>r.json())
+  fetch("./france_2025.json").then(r=>r.json()),
+  fetch("./hypotheses_registry.json").then(r=>r.json())
 ]);
 
 for(const p of presets){
@@ -81,6 +83,7 @@ function render(){
   const policies=texts.map(compilePolicy);
   const s=simulateProgram(policies,months);
   const fiscal=applyFiscalBaseline(s,baseline);
+  const h=hypothesisSummary(policies,hypothesisRegistry,months);
 
   const classifications=policies.map((p,i)=>
     "<li><strong>"+(i+1)+". "+p.target+"</strong> · "+p.action+"</li>"
@@ -107,13 +110,51 @@ function render(){
     '</section>':
     '<section class="fiscal-impact"><h3>Impact direct à '+horizonName+'</h3><p>Aucun flux budgétaire temporel calculable pour ces mesures. Le curseur ne peut donc modifier que l’incertitude tant qu’un modèle causal validé n’est pas branché.</p></section>';
 
+  const hypothesisCases=h.cases.map((item,i)=>
+    '<div class="case-card">'+
+      '<div class="case-title"><strong>'+(i+1)+'. '+item.label+'</strong><span class="tag">'+item.evidence+'</span></div>'+
+      '<div class="case-meta">'+item.layer+'</div>'+
+      '<p><b>Modèles attendus :</b> '+((item.models||[]).join(", ")||"aucun")+'</p>'+
+      '<p><b>Variables touchées :</b> '+((item.affected_variables||[]).join(", ")||"non définies")+'</p>'+
+    '</div>'
+  ).join("");
+
+  const interactionsHtml=h.interactions.length
+    ? h.interactions.map(x=>'<li><strong>'+x.label+'</strong> — '+x.why+'</li>').join("")
+    : '<li>Aucune interaction prédéfinie détectée sur ce paquet.</li>';
+
+  const scenarioBranchesHtml=h.scenarioBranches.length
+    ? h.scenarioBranches.map(tag).join(" ")
+    : '<span class="muted">Aucune branche de scénario explicite requise pour les cas reconnus.</span>';
+
+  const horizonFocus=(h.horizon?.focus||[]).map(x=>'<li>'+x+'</li>').join("");
+  const missingDetailsHtml=h.missingDetails.map(tag).join(" ")||'<span class="muted">Aucune précision supplémentaire enregistrée.</span>';
+  const modelList=h.models.map(tag).join(" ")||'<span class="muted">Aucun modèle déclaré.</span>';
+  const exogenousHtml=h.exogenousVariables.map(tag).join(" ");
+  const affectedHtml=h.affectedVariables.map(tag).join(" ")||'<span class="muted">Aucune variable déclarée.</span>';
+
+  const hypothesisHtml=
+    '<section class="hypothesis-panel">'+
+      '<h3>Hypothèses et cas pris en compte</h3>'+
+      '<p class="source">Registre méthodologique : '+hypothesisRegistry.cases.length+' cas, '+hypothesisRegistry.interactions.length+' interactions, '+hypothesisRegistry.exogenous_variables.length+' variables exogènes.</p>'+
+      '<div class="case-grid">'+hypothesisCases+'</div>'+
+      '<details open><summary>À cet horizon : '+horizonName+'</summary><ul>'+horizonFocus+'</ul><p>Classe d’incertitude méthodologique : <strong>'+h.horizon.uncertainty+'</strong></p></details>'+
+      '<details><summary>Informations à préciser avant chiffrage complet</summary><div class="tag-cloud">'+missingDetailsHtml+'</div></details>'+
+      '<details><summary>Interactions détectées</summary><ul>'+interactionsHtml+'</ul></details>'+
+      '<details><summary>Branches de scénario à résoudre</summary><div class="tag-cloud">'+scenarioBranchesHtml+'</div></details>'+
+      '<details><summary>Modèles à brancher</summary><div class="tag-cloud">'+modelList+'</div></details>'+
+      '<details><summary>Variables potentiellement affectées</summary><div class="tag-cloud">'+affectedHtml+'</div></details>'+
+      '<details><summary>Variables exogènes à suivre</summary><div class="tag-cloud">'+exogenousHtml+'</div></details>'+
+    '</section>';
+
   result.innerHTML=
     '<div class="grid">'+
       '<section><h3>Classification</h3><p>'+policies.length+' mesure(s)</p><ul>'+classifications+'</ul><p>Confiance : '+s.confidence+'</p><p>Incertitude aval : <strong>'+s.downstreamUncertainty+'</strong></p></section>'+
       '<section><h3>Effets directs</h3><ul>'+direct+'</ul></section>'+
       fiscalHtml+
       '<section><h3>Capacités encore nécessaires</h3><div>'+caps+'</div></section>'+
-      '<section><h3>Hypothèses / scénarios</h3><ul>'+notes+'</ul></section>'+
+      '<section><h3>Hypothèses / scénarios</h3><ul>'+notes+'</ul></section>'+ 
+      hypothesisHtml+
     "</div>";
 }
 
