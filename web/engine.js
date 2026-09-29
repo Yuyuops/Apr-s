@@ -82,6 +82,13 @@ export function compilePolicy(text){
   };
 }
 
+function horizonUncertainty(horizonMonths){
+  if(horizonMonths <= 6) return "low";
+  if(horizonMonths <= 12) return "medium";
+  if(horizonMonths <= 24) return "high";
+  return "very_high";
+}
+
 export function simulatePolicy(policy,horizonMonths){
   if(horizonMonths<=0) throw new Error("horizonMonths must be > 0");
   const directEffects={};
@@ -118,5 +125,6 @@ export function simulatePolicy(policy,horizonMonths){
     missingCapabilities:[...new Set(missing)],
     assumptions,
     confidence:Object.keys(directEffects).length?"high_for_accounting_effect_only":scenarioNotes.length?"scenario_only":"unknown",
+    downstreamUncertainty:horizonUncertainty(horizonMonths),
   };
 }
