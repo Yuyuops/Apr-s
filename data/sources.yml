@@ -1,0 +1,19 @@
+sources:
+  - id: insee
+    role: economy_demography_employment
+    authority: primary_public
+  - id: openfisca_france
+    role: tax_benefit_rules
+    authority: primary_model
+  - id: mesange
+    role: macroeconomic_policy_model
+    authority: primary_model
+  - id: drees
+    role: health_social
+    authority: primary_public
+  - id: banque_de_france
+    role: monetary_credit_business
+    authority: primary_public
+  - id: data_gouv_fr
+    role: public_data_catalog
+    authority: primary_public
