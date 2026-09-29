@@ -77,3 +77,11 @@
 .method-note{margin-top:20px}
 @media(min-width:1100px){main{max-width:1240px}.control-panel{position:relative}.sim-cards{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:700px){.control-head{align-items:flex-start}.input-meta{flex-direction:column}.horizon-buttons{grid-template-columns:repeat(3,1fr)}.horizon-buttons button:nth-child(4),.horizon-buttons button:nth-child(5){grid-column:auto}.legend{gap:9px}}
+
+.baseline-grid small{display:block;font-size:10px;color:#aaa;margin-top:4px}
+.direct-params{margin:16px 0 22px}
+.direct-params>h3{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:#666;margin-bottom:10px}
+.param-card{background:#fff;border:2px solid #171717;border-radius:14px;padding:15px}
+.param-card>div:first-child{display:flex;justify-content:space-between;gap:12px}.param-card small{font-size:10px;border:1px solid #ddd7cc;border-radius:999px;padding:4px 7px;color:#666}
+.param-values{display:flex;align-items:center;gap:12px;margin:12px 0}.param-values strong{font-size:21px}.param-values span{color:#888}
+.param-card p{margin:5px 0;font-size:13px}

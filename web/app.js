@@ -2,6 +2,7 @@ import {applyFiscalBaseline,compilePolicy,simulateProgram} from "./engine.js";
 import {hypothesisSummary} from "./hypotheses.js";
 import {buildDashboardState,groupDashboardIndicators} from "./dashboard.js";
 import {detectMeasureType,MEASURE_TYPES} from "./measure-types.js";
+import {buildDirectParameterChanges,fetchSmicHourly} from "./openfisca.js";
 import {
   ACTION_LABELS,
   CONFIDENCE_LABELS,
@@ -27,11 +28,13 @@ const measureCount=document.querySelector("#measureCount");
 const resetButton=document.querySelector("#resetButton");
 const horizonButtons=[...document.querySelectorAll("#horizonButtons button")];
 
-const [presets,baseline,hypothesisRegistry]=await Promise.all([
+const [presets,baseline,hypothesisRegistry,smicHourly]=await Promise.all([
   fetch("./demo-policies.json").then(r=>r.json()),
   fetch("./france_2025.json").then(r=>r.json()),
-  fetch("./hypotheses_registry.json").then(r=>r.json())
+  fetch("./hypotheses_registry.json").then(r=>r.json()),
+  fetchSmicHourly().catch(()=>null)
 ]);
+const referenceData={smicHourly};
 
 for(const p of presets){
   const o=document.createElement("option");
@@ -48,6 +51,7 @@ baselineBox.innerHTML=
     '<div><span>Dépenses publiques</span><strong>'+formatBn(baseline.public_expenditure_eur)+'</strong></div>'+
     '<div><span>Déficit public</span><strong>'+formatBn(baseline.public_deficit_eur)+' · '+baseline.public_deficit_pct_gdp+' % du PIB</strong></div>'+
     '<div><span>Dette publique</span><strong>'+baseline.public_debt_pct_gdp+' % du PIB</strong></div>'+
+    (smicHourly?'<div><span>SMIC horaire brut</span><strong>'+smicHourly.value.toLocaleString("fr-FR",{minimumFractionDigits:2,maximumFractionDigits:2})+' €/h</strong><small>OpenFisca · '+smicHourly.effectiveDate+'</small></div>':"")+
   '</div>';
 
 preset.addEventListener("change",()=>{
@@ -144,6 +148,7 @@ function render(){
   const hypotheses=hypothesisSummary(policies,hypothesisRegistry,months);
   const dashboard=buildDashboardState({policies,simulation,fiscal,baseline,hypotheses});
   const dashboardGroups=groupDashboardIndicators(dashboard.indicators);
+  const directParameterChanges=buildDirectParameterChanges(policies,referenceData);
 
   const dashboardGroupsHtml=Object.entries(dashboardGroups).map(([group,items])=>{
     const cards=items.map(item=>{
@@ -175,6 +180,21 @@ function render(){
     return '<section class="sim-group"><h3>'+group+'</h3><div class="sim-cards">'+cards+'</div></section>';
   }).join("");
 
+  const directParameterHtml=directParameterChanges.length
+    ? '<section class="direct-params"><h3>Paramètres modifiés directement</h3>'+
+      directParameterChanges.map(change=>{
+        const delta=change.delta>=0?"+"+change.delta.toFixed(2):change.delta.toFixed(2);
+        const pct=change.deltaPct>=0?"+"+change.deltaPct.toFixed(1):change.deltaPct.toFixed(1);
+        return '<article class="param-card">'+
+          '<div><span>'+change.label+'</span><small>'+change.confidence+'</small></div>'+
+          '<div class="param-values"><strong>'+change.baseline.toFixed(2)+' '+change.unit+'</strong><span>→</span><strong>'+change.projected.toFixed(2)+' '+change.unit+'</strong></div>'+
+          '<p>Variation : <b>'+delta+' '+change.unit+'</b> ('+pct+' %)</p>'+
+          '<p class="source">Valeur de départ : <a href="'+change.sourceUrl+'" target="_blank" rel="noreferrer">'+change.sourceLabel+'</a> · applicable depuis '+change.effectiveDate+'</p>'+
+        '</article>';
+      }).join("")+
+    '</section>'
+    : "";
+
   const measureTypeBadges=[...new Set(policies.map(p=>p.measureType))].map(type=>{
     const meta=MEASURE_TYPES[type];
     return meta?'<span class="type-badge" title="'+meta.effect+'">'+meta.label+'</span>':"";
@@ -192,6 +212,7 @@ function render(){
       '</div>'+
       '<p class="sim-intro">Comme dans SimCity : le programme modifie l’état de la France. Les cartes chiffrées bougent avec le temps ; les cartes en attente montrent où un modèle fiable manque encore.</p>'+
       '<div class="type-badges">'+measureTypeBadges+'</div>'+
+      directParameterHtml+
       dashboardGroupsHtml+
     '</section>';
 

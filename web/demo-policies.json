@@ -1,23 +1,30 @@
 [
   {
-    "id":"synthetic-program",
-    "label":"Démo — mini-programme budgétaire",
-    "status":"synthetic",
-    "text":"Augmenter les dépenses publiques de 12 milliards d'euros par an\nRéduire les impôts de 2 milliards d'euros par an",
-    "source":null
+    "id": "synthetic-program",
+    "label": "Démo — mini-programme budgétaire",
+    "status": "synthetic",
+    "text": "Augmenter les dépenses publiques de 12 milliards d'euros par an\nRéduire les impôts de 2 milliards d'euros par an",
+    "source": null
   },
   {
-    "id":"synthetic-spending",
-    "label":"Démo — dépense publique",
-    "status":"synthetic",
-    "text":"Augmenter les dépenses publiques de 12 milliards d'euros par an",
-    "source":null
+    "id": "synthetic-smic-hourly",
+    "label": "Démo — SMIC horaire à 13 €",
+    "status": "synthetic",
+    "text": "Porter le SMIC horaire brut à 13 euros",
+    "source": null
   },
   {
-    "id":"ruches-regions-2027",
-    "label":"Les Ruches — organisation territoriale",
-    "status":"current_official_source",
-    "text":"Suppression des régions et déconcentration des services de l'État",
-    "source":"https://www.ruches.org/le-projet"
+    "id": "synthetic-spending",
+    "label": "Démo — dépense publique",
+    "status": "synthetic",
+    "text": "Augmenter les dépenses publiques de 12 milliards d'euros par an",
+    "source": null
+  },
+  {
+    "id": "ruches-regions-2027",
+    "label": "Les Ruches — organisation territoriale",
+    "status": "current_official_source",
+    "text": "Suppression des régions et déconcentration des services de l'État",
+    "source": "https://www.ruches.org/le-projet"
   }
 ]

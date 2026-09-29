@@ -243,3 +243,35 @@ test("calculated dashboard cards include time trajectories", async()=>{
   assert.equal(debt.trend.length,7);
   assert.notEqual(spending.trend[0],spending.trend.at(-1));
 });
+
+
+test("OpenFisca adapter selects the latest dated parameter value", async()=>{
+  const {latestParameterValue}=await import("./openfisca.js");
+  const latest=latestParameterValue({values:{
+    "2024-01-01":11.65,
+    "2026-01-01":12.02,
+    "2026-06-01":12.31
+  }});
+  assert.deepEqual(latest,{date:"2026-06-01",value:12.31});
+});
+
+test("hourly SMIC proposal becomes a direct parameter change", async()=>{
+  const {buildDirectParameterChanges}=await import("./openfisca.js");
+  const policy=compilePolicy("Porter le SMIC horaire brut à 13 euros");
+  const changes=buildDirectParameterChanges([policy],{
+    smicHourly:{value:12.31,effectiveDate:"2026-06-01",sourceUrl:"https://example.invalid"}
+  });
+  assert.equal(changes.length,1);
+  assert.equal(changes[0].baseline,12.31);
+  assert.equal(changes[0].projected,13);
+  assert.ok(changes[0].deltaPct>5);
+});
+
+test("non-hourly SMIC proposal is not silently compared to hourly baseline", async()=>{
+  const {buildDirectParameterChanges}=await import("./openfisca.js");
+  const policy=compilePolicy("Porter le SMIC à 2000 euros brut");
+  const changes=buildDirectParameterChanges([policy],{
+    smicHourly:{value:12.31,effectiveDate:"2026-06-01",sourceUrl:"https://example.invalid"}
+  });
+  assert.equal(changes.length,0);
+});
