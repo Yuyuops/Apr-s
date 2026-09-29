@@ -48,6 +48,10 @@ function isAffected(indicator,affected){
   return indicator.variables.some(v=>affected.has(v));
 }
 
+function linearSeries(start,end,steps=7){
+  return Array.from({length:steps},(_,i)=>start+(end-start)*(i/(steps-1)));
+}
+
 export function buildDashboardState({policies,simulation,fiscal,baseline,hypotheses}){
   const affected=new Set(hypotheses.affectedVariables||[]);
   const structural=policies.some(p=>STRUCTURAL_TARGETS.has(p.target));
@@ -64,7 +68,9 @@ export function buildDashboardState({policies,simulation,fiscal,baseline,hypothe
       delta:null,
       status:touched?"affected_unmodelled":"unchanged_unknown",
       detail:touched?"Cette mesure peut agir sur cet indicateur, mais le modèle chiffré n'est pas encore connecté.":"Aucun effet calculé pour les mesures saisies.",
-      confidence:touched?"À modéliser":"Non affecté directement"
+      confidence:touched?"À modéliser":"Non affecté directement",
+      trend:null,
+      trendLabel:null
     };
 
     if(indicator.id==="gdp"){
@@ -81,6 +87,11 @@ export function buildDashboardState({policies,simulation,fiscal,baseline,hypothe
       base.status=annualSpending!==0?"calculated":base.status;
       base.detail=annualSpending!==0?"Variation annuelle directement calculable.":"Aucune variation annuelle de dépense directement calculée.";
       base.confidence=annualSpending!==0?"Calcul direct":"À modéliser";
+      if(annualSpending!==0){
+        const cumulative=annualSpending*simulation.horizonMonths/12;
+        base.trend=linearSeries(0,cumulative);
+        base.trendLabel="Impact cumulé";
+      }
       return base;
     }
 
@@ -91,6 +102,11 @@ export function buildDashboardState({policies,simulation,fiscal,baseline,hypothe
       base.status=annualRevenue!==0?"calculated":base.status;
       base.detail=annualRevenue!==0?"Variation annuelle directement calculable.":"Aucune variation annuelle de recette directement calculée.";
       base.confidence=annualRevenue!==0?"Calcul direct":"À modéliser";
+      if(annualRevenue!==0){
+        const cumulative=annualRevenue*simulation.horizonMonths/12;
+        base.trend=linearSeries(0,cumulative);
+        base.trendLabel="Impact cumulé";
+      }
       return base;
     }
 
@@ -102,6 +118,8 @@ export function buildDashboardState({policies,simulation,fiscal,baseline,hypothe
         base.status="calculated";
         base.detail="Le chiffre principal est le déficit annuel après effet direct ; la variation affichée est cumulée jusqu'à l'horizon.";
         base.confidence="Calcul direct";
+        base.trend=linearSeries(0,fiscal.cumulativePublicDeficitDeltaEur);
+        base.trendLabel="Déficit cumulé ajouté";
       } else {
         base.projected=base.baseline;
       }
@@ -117,6 +135,8 @@ export function buildDashboardState({policies,simulation,fiscal,baseline,hypothe
         base.status="calculated";
         base.detail="Effet comptable cumulé du paquet sur la dette, à PIB inchangé.";
         base.confidence="Calcul direct";
+        base.trend=linearSeries(baseline.public_debt_pct_gdp,projected);
+        base.trendLabel="Dette projetée";
       } else {
         base.projected=base.baseline;
       }
