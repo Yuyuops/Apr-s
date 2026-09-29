@@ -11,15 +11,17 @@
     <header>
       <p class="eyebrow">MVP EXPÉRIMENTAL</p>
       <h1>Après</h1>
-      <p class="lead">Que peut-on calculer, modéliser ou seulement scénariser après l'application d'une mesure publique ?</p>
+      <p class="lead">Testez une mesure ou un mini-programme et voyez ce qui est calculable, ce qui reste à modéliser et ce qui doit être traité par scénarios.</p>
     </header>
 
-    <section id="baseline" class="baseline"></section>\n\n    <section class="panel">
-      <label for="preset">Exemple</label>
-      <select id="preset"><option value="">Saisir une mesure libre</option></select>
+    <section id="baseline" class="baseline"></section>
 
-      <label for="measure">Mesure</label>
-      <textarea id="measure" rows="4"></textarea>
+    <section class="panel">
+      <label for="preset">Exemple prêt à tester</label>
+      <select id="preset"><option value="">Saisir un programme libre</option></select>
+
+      <label for="measure">Programme / mesures — une mesure par ligne</label>
+      <textarea id="measure" rows="7" placeholder="Ex. Augmenter les dépenses publiques de 12 milliards d'euros par an&#10;Réduire les impôts de 2 milliards d'euros par an"></textarea>
       <p id="sourceBox" class="source"></p>
 
       <label for="horizon">Horizon : <strong id="horizonLabel"></strong></label>
@@ -30,7 +32,7 @@
     <section id="result"></section>
 
     <aside>
-      <strong>Règle du prototype :</strong> un effet non soutenu par une règle comptable, un modèle ou un scénario explicite reste inconnu. Aucun chiffre causal n'est inventé.
+      <strong>Règle du prototype :</strong> un effet non soutenu par une règle comptable, un modèle validé ou un scénario explicite reste inconnu. Aucun chiffre causal n'est inventé.
     </aside>
   </main>
   <script type="module" src="./app.js"></script>
