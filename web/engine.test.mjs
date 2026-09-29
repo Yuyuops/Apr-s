@@ -115,3 +115,52 @@ test("all five modelling horizons are encoded", async()=>{
   const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
   assert.deepEqual(registry.horizon_method.map(x=>x.months),[1,6,12,24,60]);
 });
+
+
+test("plain-language UI hides core technical codes", async()=>{
+  const fs=await import("node:fs/promises");
+  const app=await fs.readFile(new URL("./app.js",import.meta.url),"utf8");
+  for(const forbidden of [
+    "Capacités encore nécessaires",
+    "Incertitude aval",
+    "Modèles attendus",
+    "Variables exogènes",
+    "Classification"
+  ]){
+    assert.equal(app.includes(forbidden),false,"technical wording still visible: "+forbidden);
+  }
+});
+
+test("technical engine values have human labels", async()=>{
+  const labels=await import("./labels.js");
+  assert.equal(labels.TARGET_LABELS.public_spending,"Dépenses publiques");
+  assert.equal(labels.CONFIDENCE_LABELS.high_for_accounting_effects_only,"Calculs directs fiables");
+  assert.equal(labels.UNCERTAINTY_LABELS.very_high,"Très élevée");
+  assert.equal(labels.MODEL_LABELS.macroeconomy,"Économie globale");
+  assert.equal(labels.MODEL_LABELS.policy_interaction_model,"Effets combinés entre les mesures");
+  assert.equal(labels.EXOGENOUS_LABELS.taux_BCE,"Taux d'intérêt de la BCE");
+});
+
+
+test("every engine target and capability has a reader-friendly label", async()=>{
+  const labels=await import("./labels.js");
+  const engine=await import("./engine.js");
+  for(const [target,capabilities] of Object.entries(engine.CAPABILITIES)){
+    assert.ok(labels.TARGET_LABELS[target],"missing target label: "+target);
+    for(const capability of capabilities){
+      assert.ok(labels.MODEL_LABELS[capability],"missing capability label: "+capability);
+    }
+  }
+});
+
+test("every registry evidence and external factor has a reader-friendly label", async()=>{
+  const fs=await import("node:fs/promises");
+  const labels=await import("./labels.js");
+  const registry=JSON.parse(await fs.readFile(new URL("./hypotheses_registry.json",import.meta.url),"utf8"));
+  for(const item of registry.cases){
+    assert.ok(labels.EVIDENCE_LABELS[item.evidence],"missing evidence label: "+item.evidence);
+  }
+  for(const factor of registry.exogenous_variables){
+    assert.ok(labels.EXOGENOUS_LABELS[factor],"missing external-factor label: "+factor);
+  }
+});

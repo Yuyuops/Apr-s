@@ -1,5 +1,18 @@
 import {applyFiscalBaseline,compilePolicy,simulateProgram} from "./engine.js";
 import {hypothesisSummary} from "./hypotheses.js";
+import {
+  ACTION_LABELS,
+  CONFIDENCE_LABELS,
+  EVIDENCE_LABELS,
+  EXOGENOUS_LABELS,
+  MODEL_LABELS,
+  SCENARIO_LABELS,
+  SOURCE_STATUS_LABELS,
+  TARGET_LABELS,
+  UNCERTAINTY_LABELS,
+  VARIABLE_LABELS,
+  humanize
+} from "./labels.js";
 
 const measure=document.querySelector("#measure");
 const preset=document.querySelector("#preset");
@@ -23,13 +36,13 @@ for(const p of presets){
 }
 
 baselineBox.innerHTML=
-  '<div class="baseline-head"><div><span class="eyebrow">BASELINE OFFICIELLE</span><h2>France '+baseline.period+'</h2></div>'+
-  '<div class="baseline-source">Insee · récupéré le '+baseline.retrieved_at+'</div></div>'+
+  '<div class="baseline-head"><div><span class="eyebrow">POINT DE DÉPART OFFICIEL</span><h2>France '+baseline.period+'</h2></div>'+
+  '<div class="baseline-source">Données Insee · mises à jour le '+baseline.retrieved_at+'</div></div>'+
   '<div class="baseline-grid">'+
-    '<div><span>PIB</span><strong>'+formatBn(baseline.gdp_eur)+'</strong></div>'+
+    '<div><span>Richesse produite (PIB)</span><strong>'+formatBn(baseline.gdp_eur)+'</strong></div>'+
     '<div><span>Dépenses publiques</span><strong>'+formatBn(baseline.public_expenditure_eur)+'</strong></div>'+
-    '<div><span>Déficit public</span><strong>'+formatBn(baseline.public_deficit_eur)+' · '+baseline.public_deficit_pct_gdp+' % PIB</strong></div>'+
-    '<div><span>Dette publique</span><strong>'+baseline.public_debt_pct_gdp+' % PIB</strong></div>'+
+    '<div><span>Déficit public</span><strong>'+formatBn(baseline.public_deficit_eur)+' · '+baseline.public_deficit_pct_gdp+' % du PIB</strong></div>'+
+    '<div><span>Dette publique</span><strong>'+baseline.public_debt_pct_gdp+' % du PIB</strong></div>'+
   '</div>';
 
 preset.addEventListener("change",()=>{
@@ -37,16 +50,17 @@ preset.addEventListener("change",()=>{
   if(!p) return;
   measure.value=p.text;
   if(p.source){
-    sourceBox.innerHTML='Source déclarée : <a href="'+p.source+'" target="_blank" rel="noreferrer">'+p.source+'</a> · statut : '+p.status;
+    const status=SOURCE_STATUS_LABELS[p.status]||"source indiquée";
+    sourceBox.innerHTML='Source : <a href="'+p.source+'" target="_blank" rel="noreferrer">voir le document</a> · '+status;
   } else {
-    sourceBox.textContent="Mesure(s) synthétique(s) de démonstration.";
+    sourceBox.textContent="Exemple fictif pour tester le simulateur.";
   }
   render();
 });
 
 measure.addEventListener("input",()=>{
   preset.value="";
-  sourceBox.textContent="Entrée utilisateur non attribuée.";
+  sourceBox.textContent="Texte saisi librement : aucune source politique n'est attribuée.";
   render();
 });
 horizon.addEventListener("input",render);
@@ -54,6 +68,7 @@ horizon.addEventListener("input",render);
 function formatBn(v){
   return (v/1e9).toLocaleString("fr-FR",{maximumFractionDigits:1})+" Md€";
 }
+
 function eur(v){
   const abs=Math.abs(v);
   const sign=v<0?"−":"+";
@@ -61,16 +76,23 @@ function eur(v){
   if(abs>=1e6) return sign+(abs/1e6).toFixed(2)+" M€";
   return sign+abs.toLocaleString("fr-FR")+" €";
 }
+
 function tag(s){return '<span class="tag">'+s+"</span>";}
+
+function tags(values,dictionary){
+  return values.map(v=>tag(humanize(v,dictionary))).join(" ");
+}
+
 function horizonText(months){
   return months===1?"1 mois":months===6?"6 mois":months===12?"1 an":months===24?"2 ans":months===60?"5 ans":months+" mois";
 }
+
 function directLabel(key){
   return ({
-    annual_public_spending_delta_eur:"Dépenses publiques — rythme annuel",
-    cumulative_public_spending_delta_eur:"Dépenses publiques — cumul à l'horizon",
-    annual_public_revenue_delta_eur:"Recettes publiques — rythme annuel",
-    cumulative_public_revenue_delta_eur:"Recettes publiques — cumul à l'horizon"
+    annual_public_spending_delta_eur:"Dépenses publiques — par an",
+    cumulative_public_spending_delta_eur:"Dépenses publiques — cumulées",
+    annual_public_revenue_delta_eur:"Recettes publiques — par an",
+    cumulative_public_revenue_delta_eur:"Recettes publiques — cumulées"
   })[key]||key;
 }
 
@@ -81,79 +103,89 @@ function render(){
 
   const texts=measure.value.split(/\n+/).map(x=>x.trim()).filter(Boolean);
   const policies=texts.map(compilePolicy);
-  const s=simulateProgram(policies,months);
-  const fiscal=applyFiscalBaseline(s,baseline);
-  const h=hypothesisSummary(policies,hypothesisRegistry,months);
+  const simulation=simulateProgram(policies,months);
+  const fiscal=applyFiscalBaseline(simulation,baseline);
+  const hypotheses=hypothesisSummary(policies,hypothesisRegistry,months);
 
   const classifications=policies.map((p,i)=>
-    "<li><strong>"+(i+1)+". "+p.target+"</strong> · "+p.action+"</li>"
+    "<li><strong>"+(i+1)+". "+humanize(p.target,TARGET_LABELS)+"</strong> · "+humanize(p.action,ACTION_LABELS)+"</li>"
   ).join("")||"<li>Aucune mesure saisie.</li>";
 
-  const direct=Object.entries(s.directEffects)
-    .map(([k,v])=>"<li><span>"+directLabel(k)+"</span> : <strong>"+eur(v)+"</strong></li>")
-    .join("")||"<li>Aucun effet comptable direct calculable avec les informations fournies.</li>";
+  const direct=Object.entries(simulation.directEffects)
+    .map(([key,value])=>"<li><span>"+directLabel(key)+"</span> : <strong>"+eur(value)+"</strong></li>")
+    .join("")||"<li>Rien n'est encore calculable directement avec les informations fournies.</li>";
 
-  const caps=s.missingCapabilities.map(tag).join(" ")||"Aucune capacité manquante pour l'effet direct affiché.";
-  const notes=[...s.scenarioNotes,...s.assumptions]
-    .map(x=>"<li>"+x+"</li>").join("")||"<li>Aucune hypothèse supplémentaire.</li>";
+  const missingCalculations=simulation.missingCapabilities.length
+    ? tags(simulation.missingCapabilities,MODEL_LABELS)
+    : '<span class="muted">Rien ne manque pour les calculs directs affichés.</span>';
+
+  const notes=[...simulation.scenarioNotes,...simulation.assumptions]
+    .map(x=>"<li>"+x+"</li>").join("")||"<li>Aucune remarque particulière.</li>";
 
   const fiscalHtml=fiscal?
-    '<section class="fiscal-impact"><h3>Impact direct à '+horizonName+'</h3>'+
-      '<div class="impact-primary"><span>Variation cumulée du déficit</span><strong>'+eur(fiscal.cumulativePublicDeficitDeltaEur)+'</strong></div>'+
+    '<section class="fiscal-impact"><h3>Effet budgétaire à '+horizonName+'</h3>'+
+      '<div class="impact-primary"><span>Déficit supplémentaire cumulé</span><strong>'+eur(fiscal.cumulativePublicDeficitDeltaEur)+'</strong></div>'+
       '<div class="impact-grid">'+
         '<div><span>Dépenses cumulées</span><strong>'+eur(fiscal.cumulativePublicSpendingDeltaEur)+'</strong></div>'+
         '<div><span>Recettes cumulées</span><strong>'+eur(fiscal.cumulativePublicRevenueDeltaEur)+'</strong></div>'+
-        '<div><span>Impact dette vs baseline</span><strong>'+((fiscal.cumulativeDebtImpactPctGdp>=0?"+":"")+fiscal.cumulativeDebtImpactPctGdp.toFixed(3))+' pt PIB</strong></div>'+
-        '<div><span>Variation annuelle du déficit</span><strong>'+eur(fiscal.annualPublicDeficitDeltaEur)+'</strong></div>'+
+        '<div><span>Effet cumulé sur la dette</span><strong>'+((fiscal.cumulativeDebtImpactPctGdp>=0?"+":"")+fiscal.cumulativeDebtImpactPctGdp.toFixed(3))+' point de PIB</strong></div>'+
+        '<div><span>Effet sur le déficit par an</span><strong>'+eur(fiscal.annualPublicDeficitDeltaEur)+'</strong></div>'+
       '</div>'+
-      '<p class="source">'+fiscal.assumption+'</p>'+
+      '<p class="source">Calcul comptable simple : on garde le PIB, les taux, l’inflation et les autres recettes/dépenses inchangés. Ce n’est pas encore une prévision économique complète.</p>'+
     '</section>':
-    '<section class="fiscal-impact"><h3>Impact direct à '+horizonName+'</h3><p>Aucun flux budgétaire temporel calculable pour ces mesures. Le curseur ne peut donc modifier que l’incertitude tant qu’un modèle causal validé n’est pas branché.</p></section>';
+    '<section class="fiscal-impact"><h3>Effet à '+horizonName+'</h3><p>Pas encore de chiffre fiable pour cette mesure. Il faut connecter les modèles indiqués plus bas avant de faire varier emploi, PIB, revenus, prix ou services publics.</p></section>';
 
-  const hypothesisCases=h.cases.map((item,i)=>
-    '<div class="case-card">'+
-      '<div class="case-title"><strong>'+(i+1)+'. '+item.label+'</strong><span class="tag">'+item.evidence+'</span></div>'+
-      '<div class="case-meta">'+item.layer+'</div>'+
-      '<p><b>Modèles attendus :</b> '+((item.models||[]).join(", ")||"aucun")+'</p>'+
-      '<p><b>Variables touchées :</b> '+((item.affected_variables||[]).join(", ")||"non définies")+'</p>'+
-    '</div>'
-  ).join("");
+  const hypothesisCases=hypotheses.cases.map((item,i)=>{
+    const affected=(item.affected_variables||[]).map(v=>humanize(v,VARIABLE_LABELS)).join(", ")||"pas encore défini";
+    return '<div class="case-card">'+
+      '<div class="case-title"><strong>'+(i+1)+'. '+item.label+'</strong><span class="tag">'+humanize(item.evidence,EVIDENCE_LABELS)+'</span></div>'+
+      '<p><b>Ce qui peut changer :</b> '+affected+'</p>'+
+    '</div>';
+  }).join("");
 
-  const interactionsHtml=h.interactions.length
-    ? h.interactions.map(x=>'<li><strong>'+x.label+'</strong> — '+x.why+'</li>').join("")
-    : '<li>Aucune interaction prédéfinie détectée sur ce paquet.</li>';
+  const interactionsHtml=hypotheses.interactions.length
+    ? hypotheses.interactions.map(x=>'<li><strong>'+x.label+'</strong> — '+x.why+'</li>').join("")
+    : '<li>Aucune combinaison particulière détectée entre les mesures saisies.</li>';
 
-  const scenarioBranchesHtml=h.scenarioBranches.length
-    ? h.scenarioBranches.map(tag).join(" ")
-    : '<span class="muted">Aucune branche de scénario explicite requise pour les cas reconnus.</span>';
+  const scenarioBranchesHtml=hypotheses.scenarioBranches.length
+    ? tags(hypotheses.scenarioBranches,SCENARIO_LABELS)
+    : '<span class="muted">Aucun scénario alternatif obligatoire pour les mesures reconnues.</span>';
 
-  const horizonFocus=(h.horizon?.focus||[]).map(x=>'<li>'+x+'</li>').join("");
-  const missingDetailsHtml=h.missingDetails.map(tag).join(" ")||'<span class="muted">Aucune précision supplémentaire enregistrée.</span>';
-  const modelList=h.models.map(tag).join(" ")||'<span class="muted">Aucun modèle déclaré.</span>';
-  const exogenousHtml=h.exogenousVariables.map(tag).join(" ");
-  const affectedHtml=h.affectedVariables.map(tag).join(" ")||'<span class="muted">Aucune variable déclarée.</span>';
+  const horizonFocus=(hypotheses.horizon?.focus||[]).map(x=>'<li>'+x+'</li>').join("");
+  const missingDetailsHtml=hypotheses.missingDetails.length
+    ? hypotheses.missingDetails.map(tag).join(" ")
+    : '<span class="muted">Aucune information supplémentaire demandée.</span>';
+  const modelList=hypotheses.models.length
+    ? tags(hypotheses.models,MODEL_LABELS)
+    : '<span class="muted">Aucun calcul supplémentaire à connecter.</span>';
+  const exogenousHtml=tags(hypotheses.exogenousVariables,EXOGENOUS_LABELS);
+  const affectedHtml=hypotheses.affectedVariables.length
+    ? tags(hypotheses.affectedVariables,VARIABLE_LABELS)
+    : '<span class="muted">Aucun indicateur identifié.</span>';
 
   const hypothesisHtml=
     '<section class="hypothesis-panel">'+
-      '<h3>Hypothèses et cas pris en compte</h3>'+
-      '<p class="source">Registre méthodologique : '+hypothesisRegistry.cases.length+' cas, '+hypothesisRegistry.interactions.length+' interactions, '+hypothesisRegistry.exogenous_variables.length+' variables exogènes.</p>'+
+      '<h3>Ce que le simulateur prend en compte</h3>'+
+      '<p class="source">Pour chaque mesure, Après distingue ce qu’il peut calculer directement, ce qu’il peut estimer avec un modèle et ce qui dépend de plusieurs scénarios possibles.</p>'+
       '<div class="case-grid">'+hypothesisCases+'</div>'+
-      '<details open><summary>À cet horizon : '+horizonName+'</summary><ul>'+horizonFocus+'</ul><p>Classe d’incertitude méthodologique : <strong>'+h.horizon.uncertainty+'</strong></p></details>'+
-      '<details><summary>Informations à préciser avant chiffrage complet</summary><div class="tag-cloud">'+missingDetailsHtml+'</div></details>'+
-      '<details><summary>Interactions détectées</summary><ul>'+interactionsHtml+'</ul></details>'+
-      '<details><summary>Branches de scénario à résoudre</summary><div class="tag-cloud">'+scenarioBranchesHtml+'</div></details>'+
-      '<details><summary>Modèles à brancher</summary><div class="tag-cloud">'+modelList+'</div></details>'+
-      '<details><summary>Variables potentiellement affectées</summary><div class="tag-cloud">'+affectedHtml+'</div></details>'+
-      '<details><summary>Variables exogènes à suivre</summary><div class="tag-cloud">'+exogenousHtml+'</div></details>'+
+      '<details open><summary>Ce qui compte à '+horizonName+'</summary><ul>'+horizonFocus+'</ul><p>Incertitude à cet horizon : <strong>'+humanize(hypotheses.horizon.uncertainty,UNCERTAINTY_LABELS)+'</strong></p></details>'+
+      '<details><summary>Informations encore manquantes pour mieux calculer</summary><div class="tag-cloud">'+missingDetailsHtml+'</div></details>'+
+      '<details><summary>Mesures qui se combinent entre elles</summary><ul>'+interactionsHtml+'</ul></details>'+
+      '<details><summary>Scénarios possibles à distinguer</summary><div class="tag-cloud">'+scenarioBranchesHtml+'</div></details>'+
+      '<details><summary>Calculs encore à connecter</summary><div class="tag-cloud">'+modelList+'</div></details>'+
+      '<details><summary>Indicateurs qui pourraient changer</summary><div class="tag-cloud">'+affectedHtml+'</div></details>'+
+      '<details><summary>Éléments extérieurs qui peuvent changer le résultat</summary><div class="tag-cloud">'+exogenousHtml+'</div></details>'+
     '</section>';
 
   result.innerHTML=
     '<div class="grid">'+
-      '<section><h3>Classification</h3><p>'+policies.length+' mesure(s)</p><ul>'+classifications+'</ul><p>Confiance : '+s.confidence+'</p><p>Incertitude aval : <strong>'+s.downstreamUncertainty+'</strong></p></section>'+
-      '<section><h3>Effets directs</h3><ul>'+direct+'</ul></section>'+
+      '<section><h3>Ce que le simulateur a compris</h3><p>'+policies.length+' mesure(s)</p><ul>'+classifications+'</ul>'+
+        '<p>Niveau de calcul : <strong>'+humanize(simulation.confidence,CONFIDENCE_LABELS)+'</strong></p>'+
+        '<p>Incertitude à cet horizon : <strong>'+humanize(simulation.downstreamUncertainty,UNCERTAINTY_LABELS)+'</strong></p></section>'+
+      '<section><h3>Ce qu’on peut déjà calculer</h3><ul>'+direct+'</ul></section>'+
       fiscalHtml+
-      '<section><h3>Capacités encore nécessaires</h3><div>'+caps+'</div></section>'+
-      '<section><h3>Hypothèses / scénarios</h3><ul>'+notes+'</ul></section>'+ 
+      '<section><h3>Ce qu’il manque pour aller plus loin</h3><div class="tag-cloud">'+missingCalculations+'</div></section>'+
+      '<section><h3>À savoir sur ce résultat</h3><ul>'+notes+'</ul></section>'+
       hypothesisHtml+
     "</div>";
 }
