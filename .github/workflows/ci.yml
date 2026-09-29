@@ -28,4 +28,5 @@ jobs:
       - run: node --check web/app.js
       - run: node --check web/hypotheses.js
       - run: node --check web/labels.js
+      - run: node --check web/dashboard.js
       - run: node --test web/engine.test.mjs
