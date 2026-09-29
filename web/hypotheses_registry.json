@@ -1,0 +1,910 @@
+{
+  "version": "2026-09-29",
+  "purpose": "Neutral hypothesis and scenario registry for Après. It records which modelling questions must be answered before a policy effect can be quantified.",
+  "evidence_classes": {
+    "calculable": "Direct accounting or rule-based effect when inputs are explicit.",
+    "modelisable": "Requires a validated empirical, microsimulation, macroeconomic or sector model.",
+    "scenario_only": "Requires explicit scenario branches because the outcome depends on institutions, negotiations or external responses.",
+    "unsupported": "No validated model or sufficient implementation detail is available."
+  },
+  "horizon_method": [
+    {
+      "months": 1,
+      "label": "1 mois",
+      "focus": [
+        "effets comptables directs",
+        "calendrier juridique et administratif",
+        "mesures immédiatement applicables"
+      ],
+      "uncertainty": "low_for_direct_effects"
+    },
+    {
+      "months": 6,
+      "label": "6 mois",
+      "focus": [
+        "mise en œuvre initiale",
+        "premiers effets comportementaux seulement si un modèle existe",
+        "délais opérationnels"
+      ],
+      "uncertainty": "medium"
+    },
+    {
+      "months": 12,
+      "label": "1 an",
+      "focus": [
+        "effets budgétaires annuels",
+        "microsimulation fiscale-sociale",
+        "premiers effets macro si modèle validé"
+      ],
+      "uncertainty": "medium"
+    },
+    {
+      "months": 24,
+      "label": "2 ans",
+      "focus": [
+        "interactions entre mesures",
+        "capacités des services publics",
+        "effets sectoriels et macro"
+      ],
+      "uncertainty": "high"
+    },
+    {
+      "months": 60,
+      "label": "5 ans",
+      "focus": [
+        "effets structurels",
+        "boucles de rétroaction",
+        "scénarios bas/central/haut"
+      ],
+      "uncertainty": "very_high"
+    }
+  ],
+  "exogenous_variables": [
+    "taux_BCE",
+    "croissance_mondiale",
+    "prix_petrole",
+    "prix_gaz",
+    "EUR_USD",
+    "demographie",
+    "commerce_mondial",
+    "contexte_UE"
+  ],
+  "cases": [
+    {
+      "id": "minimum_wage",
+      "label": "Salaire minimum",
+      "targets": [
+        "minimum_wage"
+      ],
+      "layer": "labour_social",
+      "evidence": "modelisable",
+      "models": [
+        "tax_benefit_rules",
+        "labour_market",
+        "macroeconomy"
+      ],
+      "required_details": [
+        "montant brut/net",
+        "date d'entrée en vigueur",
+        "exemptions éventuelles"
+      ],
+      "affected_variables": [
+        "salaires",
+        "cout_travail",
+        "revenu_menages",
+        "emploi",
+        "recettes_publiques"
+      ]
+    },
+    {
+      "id": "retirement_age",
+      "label": "Retraites",
+      "targets": [
+        "retirement_age"
+      ],
+      "layer": "pensions_labour",
+      "evidence": "modelisable",
+      "models": [
+        "pension_system",
+        "labour_market",
+        "public_finance"
+      ],
+      "required_details": [
+        "age cible",
+        "carriere_longue",
+        "penibilite",
+        "calendrier générationnel"
+      ],
+      "affected_variables": [
+        "depenses_retraites",
+        "emploi_seniors",
+        "cotisations",
+        "revenu_menages"
+      ]
+    },
+    {
+      "id": "taxation",
+      "label": "Fiscalité",
+      "targets": [
+        "taxation"
+      ],
+      "layer": "tax_benefit",
+      "evidence": "calculable_then_modelisable",
+      "models": [
+        "tax_benefit_rules",
+        "distribution",
+        "macroeconomy"
+      ],
+      "required_details": [
+        "assiette",
+        "taux ou montant",
+        "population concernée",
+        "date d'application"
+      ],
+      "affected_variables": [
+        "recettes_publiques",
+        "revenu_disponible",
+        "distribution",
+        "consommation"
+      ]
+    },
+    {
+      "id": "public_spending",
+      "label": "Dépenses publiques",
+      "targets": [
+        "public_spending"
+      ],
+      "layer": "public_finance",
+      "evidence": "calculable_then_modelisable",
+      "models": [
+        "public_finance",
+        "macroeconomy"
+      ],
+      "required_details": [
+        "montant",
+        "périodicité",
+        "administration porteuse",
+        "financement"
+      ],
+      "affected_variables": [
+        "depenses_publiques",
+        "deficit",
+        "dette",
+        "PIB"
+      ]
+    },
+    {
+      "id": "social_benefit",
+      "label": "Prestations sociales",
+      "targets": [
+        "social_benefit"
+      ],
+      "layer": "tax_benefit",
+      "evidence": "calculable_then_modelisable",
+      "models": [
+        "tax_benefit_rules",
+        "take_up_model",
+        "distribution"
+      ],
+      "required_details": [
+        "barème",
+        "éligibilité",
+        "automaticité ou recours",
+        "date d'application"
+      ],
+      "affected_variables": [
+        "revenu_disponible",
+        "pauvrete",
+        "depenses_publiques",
+        "consommation"
+      ]
+    },
+    {
+      "id": "healthcare",
+      "label": "Santé",
+      "targets": [
+        "healthcare"
+      ],
+      "layer": "public_services",
+      "evidence": "modelisable",
+      "models": [
+        "health_system",
+        "regional_access",
+        "public_finance"
+      ],
+      "required_details": [
+        "moyens humains",
+        "budget",
+        "implantation territoriale",
+        "délai de montée en charge"
+      ],
+      "affected_variables": [
+        "capacite_soins",
+        "temps_acces",
+        "depenses_sante"
+      ]
+    },
+    {
+      "id": "education",
+      "label": "Éducation",
+      "targets": [
+        "education"
+      ],
+      "layer": "public_services",
+      "evidence": "modelisable",
+      "models": [
+        "education_system",
+        "public_finance"
+      ],
+      "required_details": [
+        "effectifs",
+        "niveau scolaire concerné",
+        "recrutements",
+        "infrastructures"
+      ],
+      "affected_variables": [
+        "taille_classes",
+        "effectifs_publics",
+        "depenses_education"
+      ]
+    },
+    {
+      "id": "justice",
+      "label": "Justice",
+      "targets": [
+        "justice"
+      ],
+      "layer": "public_services",
+      "evidence": "modelisable",
+      "models": [
+        "justice_system"
+      ],
+      "required_details": [
+        "moyens",
+        "procédure concernée",
+        "capacité carcérale éventuelle",
+        "calendrier"
+      ],
+      "affected_variables": [
+        "delais_justice",
+        "stock_affaires",
+        "capacite_justice"
+      ]
+    },
+    {
+      "id": "security",
+      "label": "Police et sécurité",
+      "targets": [
+        "security"
+      ],
+      "layer": "public_services",
+      "evidence": "modelisable",
+      "models": [
+        "security_system",
+        "public_finance"
+      ],
+      "required_details": [
+        "effectifs",
+        "missions",
+        "déploiement territorial",
+        "équipement"
+      ],
+      "affected_variables": [
+        "effectifs_police",
+        "depenses_securite",
+        "capacite_operationnelle"
+      ]
+    },
+    {
+      "id": "immigration",
+      "label": "Immigration et asile",
+      "targets": [
+        "immigration"
+      ],
+      "layer": "population_labour",
+      "evidence": "modelisable_scenario",
+      "models": [
+        "migration_system",
+        "labour_market",
+        "public_finance"
+      ],
+      "required_details": [
+        "population visée",
+        "règle juridique",
+        "volumes ou critères",
+        "calendrier"
+      ],
+      "affected_variables": [
+        "migration_nette",
+        "population_active",
+        "emploi",
+        "logement",
+        "finances_publiques"
+      ]
+    },
+    {
+      "id": "housing",
+      "label": "Logement",
+      "targets": [
+        "housing"
+      ],
+      "layer": "housing",
+      "evidence": "modelisable",
+      "models": [
+        "housing_market",
+        "distribution",
+        "public_finance"
+      ],
+      "required_details": [
+        "volume",
+        "type de logement",
+        "zone géographique",
+        "financement"
+      ],
+      "affected_variables": [
+        "offre_logement",
+        "prix_logement",
+        "loyers",
+        "depenses_publiques"
+      ]
+    },
+    {
+      "id": "environment",
+      "label": "Environnement",
+      "targets": [
+        "environment"
+      ],
+      "layer": "environment",
+      "evidence": "modelisable",
+      "models": [
+        "environment_energy",
+        "public_finance"
+      ],
+      "required_details": [
+        "instrument",
+        "secteur",
+        "calendrier",
+        "objectif quantifié"
+      ],
+      "affected_variables": [
+        "emissions_CO2",
+        "pollution",
+        "depenses_publiques"
+      ]
+    },
+    {
+      "id": "energy",
+      "label": "Énergie",
+      "targets": [
+        "energy"
+      ],
+      "layer": "energy_environment",
+      "evidence": "modelisable",
+      "models": [
+        "energy_system",
+        "environment_energy",
+        "public_finance"
+      ],
+      "required_details": [
+        "technologie",
+        "capacité",
+        "calendrier",
+        "investissement",
+        "hypothèses de prix"
+      ],
+      "affected_variables": [
+        "mix_energetique",
+        "prix_energie",
+        "emissions_CO2",
+        "investissement"
+      ]
+    },
+    {
+      "id": "transport",
+      "label": "Transports et infrastructures",
+      "targets": [
+        "transport"
+      ],
+      "layer": "infrastructure",
+      "evidence": "modelisable",
+      "models": [
+        "transport_system",
+        "environment_energy",
+        "public_finance"
+      ],
+      "required_details": [
+        "infrastructure",
+        "capacité",
+        "coût",
+        "calendrier de construction"
+      ],
+      "affected_variables": [
+        "investissement_public",
+        "mobilite",
+        "emissions_CO2"
+      ]
+    },
+    {
+      "id": "administrative_layer",
+      "label": "Suppression d'une couche administrative",
+      "targets": [
+        "administrative_layer"
+      ],
+      "layer": "institutional_graph",
+      "evidence": "scenario_only_then_calculable",
+      "models": [
+        "administrative_layer_removal",
+        "competence_transfer",
+        "public_finance"
+      ],
+      "required_details": [
+        "compétences transférées",
+        "destination des personnels",
+        "actifs",
+        "dettes",
+        "budget",
+        "date d'effet"
+      ],
+      "affected_variables": [
+        "organisation_etat",
+        "effectifs_publics",
+        "depenses_publiques",
+        "competences"
+      ]
+    },
+    {
+      "id": "administrative_reorganisation",
+      "label": "Fusion/réorganisation administrative",
+      "targets": [
+        "administrative_reorganisation"
+      ],
+      "layer": "institutional_graph",
+      "evidence": "scenario_only_then_calculable",
+      "models": [
+        "administrative_reorganisation",
+        "competence_transfer",
+        "public_finance"
+      ],
+      "required_details": [
+        "organismes concernés",
+        "missions reprises",
+        "personnels",
+        "actifs",
+        "coûts de transition"
+      ],
+      "affected_variables": [
+        "effectifs_publics",
+        "depenses_publiques",
+        "capacite_service_public"
+      ]
+    },
+    {
+      "id": "eu_exit",
+      "label": "Sortie de l'Union européenne",
+      "targets": [
+        "eu_exit"
+      ],
+      "layer": "institutional_international",
+      "evidence": "scenario_only",
+      "models": [
+        "international_treaty_exit",
+        "trade_regime",
+        "macroeconomy",
+        "public_finance"
+      ],
+      "required_details": [
+        "relation future avec l'UE",
+        "régime commercial",
+        "traitement des contributions et transferts",
+        "statut des règles dérivées",
+        "calendrier"
+      ],
+      "scenario_branches": [
+        "relation_future_non_precisee",
+        "relation_type_marche_integre",
+        "accord_commercial",
+        "regime_OMC"
+      ],
+      "affected_variables": [
+        "commerce",
+        "budget_public",
+        "reglementation",
+        "investissement",
+        "PIB"
+      ]
+    },
+    {
+      "id": "euro_exit",
+      "label": "Changement de régime monétaire / sortie de l'euro",
+      "targets": [
+        "euro_exit"
+      ],
+      "layer": "monetary",
+      "evidence": "scenario_only",
+      "models": [
+        "monetary_regime_change",
+        "banking_finance",
+        "macroeconomy"
+      ],
+      "required_details": [
+        "nouvelle monnaie",
+        "conversion des contrats",
+        "politique monétaire",
+        "banques",
+        "dette libellée"
+      ],
+      "scenario_branches": [
+        "nouvelle_monnaie_non_precisee",
+        "conversion_unitaire",
+        "conversion_differentiee"
+      ],
+      "affected_variables": [
+        "taux",
+        "inflation",
+        "change",
+        "banques",
+        "dette",
+        "PIB"
+      ]
+    },
+    {
+      "id": "nato_exit",
+      "label": "Sortie de l'OTAN",
+      "targets": [
+        "nato_exit"
+      ],
+      "layer": "international_defence",
+      "evidence": "scenario_only",
+      "models": [
+        "international_treaty_exit",
+        "defence_posture"
+      ],
+      "required_details": [
+        "calendrier",
+        "posture de défense",
+        "accords bilatéraux éventuels",
+        "budget défense"
+      ],
+      "affected_variables": [
+        "depenses_defense",
+        "posture_defense",
+        "relations_internationales"
+      ]
+    },
+    {
+      "id": "schengen_or_eu_rule",
+      "label": "Schengen / règle européenne",
+      "targets": [
+        "treaty_or_eu_rule"
+      ],
+      "layer": "institutional_international",
+      "evidence": "scenario_only",
+      "models": [
+        "international_legal_change",
+        "scenario_branching"
+      ],
+      "required_details": [
+        "texte visé",
+        "mécanisme juridique",
+        "population concernée",
+        "coordination européenne"
+      ],
+      "affected_variables": [
+        "frontieres",
+        "mobilite",
+        "administration",
+        "commerce"
+      ]
+    },
+    {
+      "id": "constitutional_reform",
+      "label": "Réforme constitutionnelle",
+      "targets": [
+        "constitutional_reform"
+      ],
+      "layer": "institutional_graph",
+      "evidence": "scenario_only",
+      "models": [
+        "constitutional_change",
+        "institutional_graph"
+      ],
+      "required_details": [
+        "procédure",
+        "texte ou institutions modifiées",
+        "calendrier",
+        "mesures d'application"
+      ],
+      "affected_variables": [
+        "institutions",
+        "competences",
+        "calendrier_legislatif"
+      ]
+    },
+    {
+      "id": "privatisation_nationalisation",
+      "label": "Nationalisation / privatisation",
+      "targets": [
+        "privatisation_nationalisation"
+      ],
+      "layer": "public_assets",
+      "evidence": "modelisable_scenario",
+      "models": [
+        "asset_valuation",
+        "public_finance",
+        "sector_model"
+      ],
+      "required_details": [
+        "entreprise ou actifs",
+        "périmètre du capital",
+        "valorisation",
+        "financement",
+        "gouvernance"
+      ],
+      "affected_variables": [
+        "actifs_publics",
+        "dette",
+        "dividendes",
+        "investissement_sectoriel"
+      ]
+    },
+    {
+      "id": "foreign_policy",
+      "label": "Politique étrangère",
+      "targets": [
+        "foreign_policy"
+      ],
+      "layer": "international",
+      "evidence": "scenario_only",
+      "models": [
+        "international_relations_scenarios"
+      ],
+      "required_details": [
+        "pays ou accord concerné",
+        "instrument",
+        "calendrier"
+      ],
+      "affected_variables": [
+        "relations_internationales"
+      ]
+    },
+    {
+      "id": "defence",
+      "label": "Défense",
+      "targets": [
+        "defence"
+      ],
+      "layer": "defence",
+      "evidence": "modelisable_scenario",
+      "models": [
+        "defence_posture",
+        "public_finance"
+      ],
+      "required_details": [
+        "budget",
+        "capacités visées",
+        "effectifs",
+        "calendrier"
+      ],
+      "affected_variables": [
+        "depenses_defense",
+        "effectifs_defense",
+        "capacite_militaire"
+      ]
+    },
+    {
+      "id": "public_service",
+      "label": "Services publics",
+      "targets": [
+        "public_service"
+      ],
+      "layer": "public_services",
+      "evidence": "modelisable",
+      "models": [
+        "public_service_capacity",
+        "public_finance"
+      ],
+      "required_details": [
+        "service concerné",
+        "effectifs",
+        "budget",
+        "niveau territorial",
+        "délai de montée en charge"
+      ],
+      "affected_variables": [
+        "effectifs_publics",
+        "depenses_publiques",
+        "capacite_service_public"
+      ]
+    },
+    {
+      "id": "digital_policy",
+      "label": "Numérique",
+      "targets": [
+        "digital_policy"
+      ],
+      "layer": "digital_regulation",
+      "evidence": "modelisable_scenario",
+      "models": [
+        "digital_economy",
+        "regulatory_change"
+      ],
+      "required_details": [
+        "secteur",
+        "règle",
+        "périmètre",
+        "calendrier"
+      ],
+      "affected_variables": [
+        "investissement_numerique",
+        "cout_conformite",
+        "services_numeriques"
+      ]
+    },
+    {
+      "id": "objective_only",
+      "label": "Objectif sans instrument défini",
+      "targets": [
+        "objective_only",
+        "unknown"
+      ],
+      "layer": "compiler",
+      "evidence": "unsupported",
+      "models": [],
+      "required_details": [
+        "instrument concret",
+        "budget ou règle",
+        "population ou secteur",
+        "calendrier"
+      ],
+      "affected_variables": []
+    }
+  ],
+  "interactions": [
+    {
+      "id": "tax_spending_mix",
+      "label": "Fiscalité + dépenses",
+      "requires_any": [
+        [
+          "taxation",
+          "public_spending"
+        ]
+      ],
+      "why": "Le solde budgétaire et les effets macro dépendent du paquet complet, pas de la somme de mesures isolées."
+    },
+    {
+      "id": "minimum_wage_payroll_taxes",
+      "label": "SMIC + cotisations",
+      "requires_any": [
+        [
+          "minimum_wage",
+          "taxation"
+        ]
+      ],
+      "why": "Le coût du travail dépend simultanément du salaire brut et des prélèvements employeur/salarié."
+    },
+    {
+      "id": "eu_euro_combo",
+      "label": "UE + euro",
+      "requires_any": [
+        [
+          "eu_exit",
+          "euro_exit"
+        ]
+      ],
+      "why": "Une sortie de l'UE et un changement de régime monétaire sont deux décisions distinctes dont les scénarios interagissent."
+    },
+    {
+      "id": "administrative_transfer",
+      "label": "Réorganisation + transfert de compétences",
+      "requires_any": [
+        [
+          "administrative_layer",
+          "administrative_reorganisation"
+        ]
+      ],
+      "why": "La suppression ou fusion d'une structure impose de réaffecter missions, personnels, actifs et dettes."
+    },
+    {
+      "id": "energy_fiscal_mix",
+      "label": "Énergie + fiscalité",
+      "requires_any": [
+        [
+          "energy",
+          "taxation"
+        ]
+      ],
+      "why": "Prix, investissement et recettes publiques dépendent conjointement de la politique énergétique et fiscale."
+    },
+    {
+      "id": "migration_labour_housing",
+      "label": "Immigration + travail/logement",
+      "requires_any": [
+        [
+          "immigration",
+          "housing"
+        ],
+        [
+          "immigration",
+          "minimum_wage"
+        ]
+      ],
+      "why": "Les effets démographiques, d'emploi et de logement ne peuvent pas être simulés indépendamment."
+    },
+    {
+      "id": "nationalisation_sector_finance",
+      "label": "Actifs publics + secteur + finances",
+      "requires_any": [
+        [
+          "privatisation_nationalisation",
+          "public_spending"
+        ],
+        [
+          "privatisation_nationalisation",
+          "taxation"
+        ]
+      ],
+      "why": "L'acquisition ou cession d'actifs modifie bilan public, financement et comportement sectoriel."
+    },
+    {
+      "id": "retirement_labour_tax",
+      "label": "Retraites + emploi + prélèvements",
+      "requires_any": [
+        [
+          "retirement_age",
+          "taxation"
+        ],
+        [
+          "retirement_age",
+          "minimum_wage"
+        ]
+      ],
+      "why": "Le financement des retraites et l'emploi des seniors interagissent avec salaires et prélèvements."
+    },
+    {
+      "id": "public_service_budget",
+      "label": "Services publics + budget",
+      "requires_any": [
+        [
+          "public_service",
+          "public_spending"
+        ],
+        [
+          "healthcare",
+          "public_spending"
+        ],
+        [
+          "education",
+          "public_spending"
+        ],
+        [
+          "security",
+          "public_spending"
+        ],
+        [
+          "justice",
+          "public_spending"
+        ]
+      ],
+      "why": "Une capacité publique supplémentaire exige effectifs, fonctionnement et calendrier de recrutement."
+    },
+    {
+      "id": "constitutional_institutional",
+      "label": "Constitution + architecture institutionnelle",
+      "requires_any": [
+        [
+          "constitutional_reform",
+          "administrative_layer"
+        ],
+        [
+          "constitutional_reform",
+          "eu_exit"
+        ],
+        [
+          "constitutional_reform",
+          "treaty_or_eu_rule"
+        ]
+      ],
+      "why": "Les réformes institutionnelles peuvent conditionner le mécanisme juridique d'autres mesures."
+    }
+  ]
+}
