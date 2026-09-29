@@ -97,7 +97,8 @@ export const MODEL_LABELS = {
   digital_economy: "Économie numérique",
   security_system: "Police et sécurité",
   housing_market: "Marché du logement",
-  energy_system: "Système énergétique"
+  energy_system: "Système énergétique",
+  policy_interaction_model: "Effets combinés entre les mesures"
 };
 
 export const VARIABLE_LABELS = {
