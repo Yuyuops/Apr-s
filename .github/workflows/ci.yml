@@ -31,4 +31,5 @@ jobs:
       - run: node --check web/dashboard.js
       - run: node --check web/measure-types.js
       - run: node --check web/openfisca.js
+      - run: node --check web/direct-operational.js
       - run: node --test web/engine.test.mjs
