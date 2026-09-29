@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-09-29",
+  "note": "Seed corpus for compiler capability testing. Entries marked historical_test are deliberately not represented as current 2027 commitments.",
+  "sources": [
+    {
+      "organisation": "La France insoumise",
+      "document": "Avenir en commun 2025",
+      "status": "current_base",
+      "url": "https://programme.lafranceinsoumise.fr/wp-content/uploads/2025/avenir_en_commun_2025.pdf",
+      "notes": "831 measures; 2027 programme is being updated from this base."
+    },
+    {
+      "organisation": "Rassemblement National",
+      "document": "Legislatives/European 2024",
+      "status": "historical_test",
+      "url": "https://rassemblementnational.fr/legislatives-2024"
+    },
+    {
+      "organisation": "Les Ruches",
+      "document": "La Voie / Projet 2027",
+      "status": "current",
+      "url": "https://ruches.org/le-projet",
+      "notes": "Site states 845 measures / 24 themes."
+    },
+    {
+      "organisation": "Les Écologistes",
+      "document": "2026 thematic proposals",
+      "status": "current",
+      "url": "https://lesecologistes.fr/"
+    },
+    {
+      "organisation": "UPR",
+      "document": "Programme 2022",
+      "status": "historical_test",
+      "url": "https://upr.fr/notre-programme",
+      "notes": "Official site says 2027 programme is still in preparation."
+    }
+  ]
+}
