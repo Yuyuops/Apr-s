@@ -20,3 +20,11 @@ test("structural reform does not fabricate causal number",()=>{
   assert.deepEqual(r.directEffects,{});
   assert.equal(r.confidence,"scenario_only");
 });
+
+test("downstream uncertainty grows with the horizon",()=>{
+  const p=compilePolicy("Augmenter les dépenses publiques de 1 milliard d'euros par an");
+  assert.equal(simulatePolicy(p,1).downstreamUncertainty,"low");
+  assert.equal(simulatePolicy(p,12).downstreamUncertainty,"medium");
+  assert.equal(simulatePolicy(p,24).downstreamUncertainty,"high");
+  assert.equal(simulatePolicy(p,60).downstreamUncertainty,"very_high");
+});
