@@ -128,25 +128,35 @@ def simulate_program(policies: Iterable[PolicyObject], horizon_months: int) -> S
 
 
 def apply_fiscal_baseline(result: SimulationResult, baseline: dict) -> dict | None:
-    spending_delta = result.direct_effects.get("annual_public_spending_delta_eur")
-    revenue_delta = result.direct_effects.get("annual_public_revenue_delta_eur")
+    annual_spending_delta = result.direct_effects.get("annual_public_spending_delta_eur")
+    annual_revenue_delta = result.direct_effects.get("annual_public_revenue_delta_eur")
 
-    if spending_delta is None and revenue_delta is None:
+    if annual_spending_delta is None and annual_revenue_delta is None:
         return None
 
-    spending_delta = spending_delta or 0.0
-    revenue_delta = revenue_delta or 0.0
-    deficit_delta = spending_delta - revenue_delta
+    annual_spending_delta = annual_spending_delta or 0.0
+    annual_revenue_delta = annual_revenue_delta or 0.0
+    annual_deficit_delta = annual_spending_delta - annual_revenue_delta
+    cumulative_deficit_delta = annual_deficit_delta * result.horizon_months / 12
+
     baseline_deficit = float(baseline["public_deficit_eur"])
     gdp = float(baseline["gdp_eur"])
-    new_deficit = baseline_deficit + deficit_delta
+    annual_deficit_after_direct_effect = baseline_deficit + annual_deficit_delta
 
     return {
         "baseline_id": baseline["id"],
         "baseline_period": baseline["period"],
+        "horizon_months": result.horizon_months,
         "baseline_public_deficit_eur": baseline_deficit,
-        "annual_public_deficit_delta_eur": deficit_delta,
-        "annual_public_deficit_after_direct_effect_eur": new_deficit,
-        "annual_public_deficit_after_direct_effect_pct_gdp": 100 * new_deficit / gdp,
-        "assumption": "Ceteris paribus accounting snapshot: GDP and all non-measure flows are held constant.",
+        "annual_public_deficit_delta_eur": annual_deficit_delta,
+        "annual_public_deficit_after_direct_effect_eur": annual_deficit_after_direct_effect,
+        "annual_public_deficit_after_direct_effect_pct_gdp": 100 * annual_deficit_after_direct_effect / gdp,
+        "cumulative_public_deficit_delta_eur": cumulative_deficit_delta,
+        "cumulative_debt_impact_pct_gdp": 100 * cumulative_deficit_delta / gdp,
+        "cumulative_public_spending_delta_eur": result.direct_effects.get("cumulative_public_spending_delta_eur", 0.0),
+        "cumulative_public_revenue_delta_eur": result.direct_effects.get("cumulative_public_revenue_delta_eur", 0.0),
+        "assumption": (
+            "Cumulative accounting effect prorated to the selected horizon. "
+            "GDP, rates, inflation and all other flows are held constant; this is not a macroeconomic forecast."
+        ),
     }
