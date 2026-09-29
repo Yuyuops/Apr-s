@@ -57,3 +57,16 @@ test("testable UI supports one measure per line without escaped markup", async()
   assert.match(html, /une mesure par ligne/i);
   assert.equal(html.includes("\\n\\n"), false);
 });
+
+
+test("fiscal baseline cumulative impact changes with slider horizon",()=>{
+  const policy=compilePolicy("Augmenter les dépenses publiques de 12 milliards d'euros par an");
+  const baseline={id:"france_2025_insee",period:"2025",gdp_eur:2_991_100_000_000,public_deficit_eur:152_500_000_000};
+
+  const six=applyFiscalBaseline(simulateProgram([policy],6),baseline);
+  const sixty=applyFiscalBaseline(simulateProgram([policy],60),baseline);
+
+  assert.equal(six.cumulativePublicDeficitDeltaEur,6_000_000_000);
+  assert.equal(sixty.cumulativePublicDeficitDeltaEur,60_000_000_000);
+  assert.ok(sixty.cumulativeDebtImpactPctGdp>six.cumulativeDebtImpactPctGdp);
+});
