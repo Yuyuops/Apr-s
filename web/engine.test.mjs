@@ -49,3 +49,11 @@ test("official baseline produces ceteris-paribus deficit snapshot",()=>{
   assert.equal(s.annualPublicDeficitDeltaEur,12_000_000_000);
   assert.equal(s.annualPublicDeficitAfterDirectEffectEur,164_500_000_000);
 });
+
+
+test("testable UI supports one measure per line without escaped markup", async()=>{
+  const fs = await import("node:fs/promises");
+  const html = await fs.readFile(new URL("./index.html", import.meta.url), "utf8");
+  assert.match(html, /une mesure par ligne/i);
+  assert.equal(html.includes("\\n\\n"), false);
+});
