@@ -15,7 +15,7 @@ def load():
                 organisation=row["organisation"], document=row["document"],
                 version=row["version"], url=row["url"]
             )
-            policies.append(compile_measure(policy_id=row["policy_id"], text=row["text"], source=source))
+            if row["status"] == "synthetic_fixture":\n                # Synthetic rows test capability coverage only; they are never treated as programme commitments.\n                pass\n            policies.append(compile_measure(policy_id=row["policy_id"], text=row["text"], source=source))
     return policies
 
 if __name__ == "__main__":
