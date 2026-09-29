@@ -4,9 +4,9 @@ export const RULES = [
   ["taxation", ["impôt", "taxe", "cotisation", "prélèvement obligatoire"]],
   ["public_spending", ["dépenses publiques", "budget"]],
   ["social_benefit", ["minima sociaux", "allocation", "aide sociale"]],
-  ["healthcare", ["hôpital", "désert médical", "santé", "médicament"]],
-  ["education", ["éducation", "école", "enseignement"]],
-  ["justice", ["justice"]],
+  ["healthcare", ["hôpital", "hopital", "désert médical", "santé", "médicament", "soignant", "infirmier", "médecin", "medecin"]],
+  ["education", ["éducation", "école", "ecole", "enseignement", "professeur", "enseignant", "lycée", "lycee", "collège", "college"]],
+  ["justice", ["justice", "prison", "magistrat", "juge", "greffier"]],
   ["immigration", ["immigration", "asile", "étranger"]],
   ["environment", ["écologique", "transition", "incendie", "littoral"]],
   ["transport", ["rail", "transport"]],
@@ -16,10 +16,10 @@ export const RULES = [
   ["nato_exit", ["sortir de l'otan", "sortie de l'otan", "quitter l'otan"]],
   ["constitutional_reform", ["assemblée constituante", "6e république", "constitution", "référendum"]],
   ["public_service", ["service public", "services publics"]],
-  ["security", ["police", "sécurité", "délinquance"]],
+  ["security", ["police", "policier", "gendarme", "sécurité", "délinquance"]],
   ["housing", ["logement"]],
   ["defence", ["défense", "armée", "militaire"]],
-  ["energy", ["énergie", "renouvelable", "nucléaire"]],
+  ["energy", ["énergie", "energie", "renouvelable", "nucléaire", "nucleaire", "solaire", "éolien", "eolien"]],
 ];
 
 export const CAPABILITIES = {
@@ -56,8 +56,8 @@ function extractNumber(text){
 
 function detectAction(text){
   const t=text.toLowerCase();
-  if(["augmenter","hausser","accroître","renforcer","développer","créer"].some(x=>t.includes(x))) return "INCREASE";
-  if(["réduire","baisser","diminuer","supprimer","abolir"].some(x=>t.includes(x))) return "DECREASE";
+  if(["augmenter","hausser","accroître","renforcer","développer","créer","creer","recruter","embaucher","construire","ouvrir","ajouter"].some(x=>t.includes(x))) return "INCREASE";
+  if(["réduire","baisser","diminuer","supprimer","abolir","fermer"].some(x=>t.includes(x))) return "DECREASE";
   if(["porter","fixer","établir"].some(x=>t.includes(x))) return "SET";
   return "STRUCTURAL_CHANGE";
 }
