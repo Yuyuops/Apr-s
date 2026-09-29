@@ -3,6 +3,7 @@ import {hypothesisSummary} from "./hypotheses.js";
 import {buildDashboardState,groupDashboardIndicators} from "./dashboard.js";
 import {detectMeasureType,MEASURE_TYPES} from "./measure-types.js";
 import {buildDirectParameterChanges,fetchSmicHourly} from "./openfisca.js";
+import {extractDirectOperationalEffects} from "./direct-operational.js";
 import {
   ACTION_LABELS,
   CONFIDENCE_LABELS,
@@ -146,7 +147,8 @@ function render(){
   const simulation=simulateProgram(policies,months);
   const fiscal=applyFiscalBaseline(simulation,baseline);
   const hypotheses=hypothesisSummary(policies,hypothesisRegistry,months);
-  const dashboard=buildDashboardState({policies,simulation,fiscal,baseline,hypotheses});
+  const operationalEffects=extractDirectOperationalEffects(policies);
+  const dashboard=buildDashboardState({policies,simulation,fiscal,baseline,hypotheses,operationalEffects});
   const dashboardGroups=groupDashboardIndicators(dashboard.indicators);
   const directParameterChanges=buildDirectParameterChanges(policies,referenceData);
 
@@ -179,6 +181,20 @@ function render(){
 
     return '<section class="sim-group"><h3>'+group+'</h3><div class="sim-cards">'+cards+'</div></section>';
   }).join("");
+
+  const operationalEffectsHtml=operationalEffects.length
+    ? '<section class="direct-params"><h3>Changements directement chiffrés dans le programme</h3>'+
+      operationalEffects.map(effect=>{
+        const sign=effect.value>0?"+":effect.value<0?"−":"";
+        const value=Math.abs(effect.value).toLocaleString("fr-FR",{maximumFractionDigits:2});
+        return '<article class="param-card">'+
+          '<div><span>'+effect.label+'</span><small>'+effect.confidence+'</small></div>'+
+          '<div class="param-values"><strong>'+sign+value+' '+effect.unit+'</strong></div>'+
+          '<p>Quantité explicitement annoncée. Le simulateur ne transforme pas encore ce nombre en résultat social ou économique sans modèle validé.</p>'+
+        '</article>';
+      }).join("")+
+    '</section>'
+    : "";
 
   const directParameterHtml=directParameterChanges.length
     ? '<section class="direct-params"><h3>Paramètres modifiés directement</h3>'+
@@ -213,6 +229,7 @@ function render(){
       '<p class="sim-intro">Comme dans SimCity : le programme modifie l’état de la France. Les cartes chiffrées bougent avec le temps ; les cartes en attente montrent où un modèle fiable manque encore.</p>'+
       '<div class="type-badges">'+measureTypeBadges+'</div>'+
       directParameterHtml+
+      operationalEffectsHtml+
       dashboardGroupsHtml+
     '</section>';
 
