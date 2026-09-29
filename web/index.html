@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Après — simulateur de politiques publiques</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">MVP EXPÉRIMENTAL</p>
+      <h1>Après</h1>
+      <p class="lead">Que peut-on calculer, modéliser ou seulement scénariser après l'application d'une mesure publique ?</p>
+    </header>
+
+    <section class="panel">
+      <label for="preset">Exemple</label>
+      <select id="preset"><option value="">Saisir une mesure libre</option></select>
+
+      <label for="measure">Mesure</label>
+      <textarea id="measure" rows="4"></textarea>
+      <p id="sourceBox" class="source"></p>
+
+      <label for="horizon">Horizon : <strong id="horizonLabel"></strong></label>
+      <input id="horizon" type="range" min="1" max="60" step="1" value="12">
+      <div class="ticks"><span>1 mois</span><span>1 an</span><span>5 ans</span></div>
+    </section>
+
+    <section id="result"></section>
+
+    <aside>
+      <strong>Règle du prototype :</strong> un effet non soutenu par une règle comptable, un modèle ou un scénario explicite reste inconnu. Aucun chiffre causal n'est inventé.
+    </aside>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
