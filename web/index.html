@@ -8,31 +8,70 @@
 </head>
 <body>
   <main>
-    <header>
-      <p class="eyebrow">MVP EXPÉRIMENTAL</p>
+    <header class="hero">
+      <p class="eyebrow">SIMULATEUR EXPÉRIMENTAL</p>
       <h1>Après</h1>
-      <p class="lead">Testez une mesure ou un mini-programme et voyez ce qui est calculable, ce qui reste à modéliser et ce qui doit être traité par scénarios.</p>
+      <p class="lead">Appliquez un programme. Faites avancer le temps. Observez quels indicateurs de la France changent — et lesquels demandent encore un modèle fiable.</p>
     </header>
 
     <section id="baseline" class="baseline"></section>
 
-    <section class="panel">
+    <section class="control-panel" aria-label="Paramètres de la simulation">
+      <div class="control-head">
+        <div>
+          <span class="step">1</span>
+          <div>
+            <h2>Choisissez les mesures</h2>
+            <p>Une mesure par ligne. Le tableau de bord se met à jour automatiquement.</p>
+          </div>
+        </div>
+        <button id="resetButton" class="ghost-button" type="button">Réinitialiser</button>
+      </div>
+
       <label for="preset">Exemple prêt à tester</label>
       <select id="preset"><option value="">Saisir un programme libre</option></select>
 
-      <label for="measure">Programme / mesures — une mesure par ligne</label>
+      <label for="measure">Programme / mesures</label>
       <textarea id="measure" rows="7" placeholder="Ex. Augmenter les dépenses publiques de 12 milliards d'euros par an&#10;Réduire les impôts de 2 milliards d'euros par an"></textarea>
-      <p id="sourceBox" class="source"></p>
+      <div class="input-meta">
+        <p id="sourceBox" class="source"></p>
+        <p id="measureCount" class="source"></p>
+      </div>
 
-      <label for="horizon">Horizon : <strong id="horizonLabel"></strong></label>
-      <input id="horizon" type="range" min="1" max="60" step="1" value="12">
-      <div class="ticks"><span>1 mois</span><span>1 an</span><span>5 ans</span></div>
+      <div class="time-control">
+        <div class="time-title">
+          <span class="step">2</span>
+          <div>
+            <h2>Faites avancer le temps</h2>
+            <p>Les effets cumulés et l'incertitude évoluent avec l'horizon.</p>
+          </div>
+        </div>
+
+        <div id="horizonButtons" class="horizon-buttons" aria-label="Horizons rapides">
+          <button type="button" data-months="1">1 mois</button>
+          <button type="button" data-months="6">6 mois</button>
+          <button type="button" data-months="12">1 an</button>
+          <button type="button" data-months="24">2 ans</button>
+          <button type="button" data-months="60">5 ans</button>
+        </div>
+
+        <label for="horizon">Horizon choisi : <strong id="horizonLabel"></strong></label>
+        <input id="horizon" type="range" min="1" max="60" step="1" value="12">
+        <div class="ticks"><span>1 mois</span><span>1 an</span><span>5 ans</span></div>
+      </div>
     </section>
 
-    <section id="result"></section>
+    <div class="legend" aria-label="Légende des résultats">
+      <span><i class="legend-dot calculated"></i> Calculé</span>
+      <span><i class="legend-dot pending"></i> Impact identifié, modèle à connecter</span>
+      <span><i class="legend-dot scenario"></i> Plusieurs scénarios possibles</span>
+      <span><i class="legend-dot neutral"></i> Pas d'effet chiffré</span>
+    </div>
 
-    <aside>
-      <strong>Règle du prototype :</strong> un effet non soutenu par une règle comptable, un modèle validé ou un scénario explicite reste inconnu. Aucun chiffre causal n'est inventé.
+    <section id="result" aria-live="polite"></section>
+
+    <aside class="method-note">
+      <strong>Principe :</strong> Après n'invente pas de chiffres. Une carte non chiffrée signifie « effet identifié mais modèle insuffisant », pas « aucun effet ».
     </aside>
   </main>
   <script type="module" src="./app.js"></script>
