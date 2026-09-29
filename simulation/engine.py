@@ -13,9 +13,20 @@ class SimulationResult:
     missing_capabilities: list[str] = field(default_factory=list)
     assumptions: list[str] = field(default_factory=list)
     confidence: str = "unknown"
+    downstream_uncertainty: str = "unknown"
 
     def to_dict(self) -> dict:
         return asdict(self)
+
+
+def _horizon_uncertainty(horizon_months: int) -> str:
+    if horizon_months <= 6:
+        return "low"
+    if horizon_months <= 12:
+        return "medium"
+    if horizon_months <= 24:
+        return "high"
+    return "very_high"
 
 
 def _to_eur(value, unit: str | None) -> float | None:
@@ -41,7 +52,10 @@ def simulate_policy(policy: PolicyObject, horizon_months: int) -> SimulationResu
     if horizon_months <= 0:
         raise ValueError("horizon_months must be > 0")
 
-    result = SimulationResult(horizon_months=horizon_months)
+    result = SimulationResult(
+        horizon_months=horizon_months,
+        downstream_uncertainty=_horizon_uncertainty(horizon_months),
+    )
     result.missing_capabilities = list(dict.fromkeys(policy.required_capabilities))
 
     annual = _annual_amount(policy)
@@ -56,7 +70,6 @@ def simulate_policy(policy: PolicyObject, horizon_months: int) -> SimulationResu
         result.missing_capabilities = [c for c in result.missing_capabilities if c != "public_finance"]
 
     elif policy.target == "taxation" and annual is not None and sign is not None:
-        # Accounting convention: a tax increase raises public revenue; a tax cut reduces it.
         annual_delta = sign * annual
         result.direct_effects["annual_public_revenue_delta_eur"] = annual_delta
         result.direct_effects["cumulative_public_revenue_delta_eur"] = annual_delta * horizon_months / 12
@@ -83,7 +96,10 @@ def simulate_policy(policy: PolicyObject, horizon_months: int) -> SimulationResu
 
 def simulate_program(policies: Iterable[PolicyObject], horizon_months: int) -> SimulationResult:
     policies = list(policies)
-    total = SimulationResult(horizon_months=horizon_months)
+    total = SimulationResult(
+        horizon_months=horizon_months,
+        downstream_uncertainty=_horizon_uncertainty(horizon_months),
+    )
 
     for policy in policies:
         one = simulate_policy(policy, horizon_months)
@@ -109,3 +125,28 @@ def simulate_program(policies: Iterable[PolicyObject], horizon_months: int) -> S
         total.confidence = "scenario_only"
 
     return total
+
+
+def apply_fiscal_baseline(result: SimulationResult, baseline: dict) -> dict | None:
+    spending_delta = result.direct_effects.get("annual_public_spending_delta_eur")
+    revenue_delta = result.direct_effects.get("annual_public_revenue_delta_eur")
+
+    if spending_delta is None and revenue_delta is None:
+        return None
+
+    spending_delta = spending_delta or 0.0
+    revenue_delta = revenue_delta or 0.0
+    deficit_delta = spending_delta - revenue_delta
+    baseline_deficit = float(baseline["public_deficit_eur"])
+    gdp = float(baseline["gdp_eur"])
+    new_deficit = baseline_deficit + deficit_delta
+
+    return {
+        "baseline_id": baseline["id"],
+        "baseline_period": baseline["period"],
+        "baseline_public_deficit_eur": baseline_deficit,
+        "annual_public_deficit_delta_eur": deficit_delta,
+        "annual_public_deficit_after_direct_effect_eur": new_deficit,
+        "annual_public_deficit_after_direct_effect_pct_gdp": 100 * new_deficit / gdp,
+        "assumption": "Ceteris paribus accounting snapshot: GDP and all non-measure flows are held constant.",
+    }
