@@ -1,0 +1,54 @@
+{
+ "ear_cells_removed": 800,
+ "ear_core_cells_removed": 616,
+ "ear0": {
+  "cells": 184,
+  "mean_x": 5.2,
+  "anchor_column": 1,
+  "ear_column": 0,
+  "studs_facing": "-X",
+  "anchors": 4,
+  "slot_cells": 6,
+  "head_cells_beyond_ear": 0,
+  "ear_cells_20ldu": 76,
+  "plates_layer_inner": 5,
+  "plates_layer_outer": 6,
+  "ear_cells_dropped_unattached": 58
+ },
+ "ear1": {
+  "cells": 226,
+  "mean_x": 6.4,
+  "anchor_column": 12,
+  "ear_column": 11,
+  "studs_facing": "-X",
+  "anchors": 4,
+  "slot_cells": 22,
+  "head_cells_beyond_ear": 11,
+  "ear_cells_20ldu": 116,
+  "plates_layer_inner": 16,
+  "plates_layer_outer": 19,
+  "ear_cells_dropped_unattached": 9
+ },
+ "head": {
+  "name": "paco_tete_E_head",
+  "parts": 1085,
+  "kinds": {
+   "shaped": 50,
+   "plate": 978,
+   "tile": 57
+  },
+  "reconnect_cells": 0,
+  "cells": 3754,
+  "cells_brickify": 4564,
+  "recoloured_new_surface": 1162,
+  "preplaced": 8,
+  "finish_cheese": 47,
+  "floating_before_repair": 53,
+  "bridge_recoloured_cells": 25,
+  "bridges": 26,
+  "shaped_reverted": 5,
+  "floating_after_repair": 13,
+  "dropped_floating_parts": 13,
+  "dropped_floating_cells": 13
+ }
+}

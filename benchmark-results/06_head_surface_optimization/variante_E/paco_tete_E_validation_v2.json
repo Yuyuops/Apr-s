@@ -1,0 +1,343 @@
+{
+ "name": "paco_tete_E_notice",
+ "source_ldr": "/root/bench/proto/out/E_snot/paco_tete_E_notice.ldr",
+ "disclaimer": "Geometric and graph checks plus an indicative stud-clutch model. Not a physical test.",
+ "parts": 1131,
+ "part_types": 22,
+ "part_colour_lines": 44,
+ "steps": 86,
+ "collisions": {
+  "pairs": 0,
+  "cells_4ldu": 0,
+  "examples": []
+ },
+ "blocked_studs": 0,
+ "joints": 1766,
+ "studs_engaged": 3610,
+ "single_stud_joints": 1074,
+ "sideways_joints": 61,
+ "groups_on_support_not_attached_to_main": 0,
+ "disconnected_parts": 0,
+ "islands": 0,
+ "disconnected_examples": [],
+ "unsupported_at_placement": 0,
+ "subassemblies_not_attachable": [],
+ "catalogue": {
+  "lines": 44,
+  "never_produced": [],
+  "not_found": [],
+  "rare": []
+ },
+ "frames": [
+  [
+   0,
+   -1,
+   0
+  ],
+  [
+   -1,
+   0,
+   0
+  ]
+ ],
+ "stability": {
+  "model": "rigid parts; clutch 1.0 N per stud (assumed); compression free; 0.10 g per stud x stud x plate; gravity, then a force at the far end of each sub-assembly. Indicative only.",
+  "cases": 572,
+  "gravity_sf_below_1": 0,
+  "gravity_sf_below_2": 0,
+  "min_gravity_sf": 7.34,
+  "subassemblies_over_1g": 77,
+  "tip_force_below_0_5N": 12,
+  "tip_force_below_2N": 18,
+  "min_tip_force_N": 0.08,
+  "weakest": [
+   {
+    "mass_g": 1.2,
+    "studs": 1,
+    "gravity_sf": 101.94,
+    "tip_force_N": 0.08,
+    "frame": [
+     0,
+     -1,
+     0
+    ],
+    "parts": 10,
+    "colours": {
+     "Yellow": 9,
+     "Red": 1
+    },
+    "bbox_ldu": [
+     [
+      200.0,
+      -256.0,
+      260.0
+     ],
+     [
+      220.0,
+      -184.0,
+      300.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.8,
+    "studs": 2,
+    "gravity_sf": null,
+    "tip_force_N": 0.15,
+    "frame": [
+     0,
+     -1,
+     0
+    ],
+    "parts": 10,
+    "colours": {
+     "Black": 8,
+     "Yellow": 2
+    },
+    "bbox_ldu": [
+     [
+      440.0,
+      -248.0,
+      620.0
+     ],
+     [
+      460.0,
+      -168.0,
+      660.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 21.6,
+    "studs": 2,
+    "gravity_sf": 7.39,
+    "tip_force_N": 0.47,
+    "frame": [
+     0,
+     -1,
+     0
+    ],
+    "parts": 35,
+    "colours": {
+     "Black": 34,
+     "Yellow": 1
+    },
+    "bbox_ldu": [
+     [
+      224.0,
+      -428.0,
+      20.0
+     ],
+     [
+      260.0,
+      -208.0,
+      320.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3.6,
+    "studs": 5,
+    "gravity_sf": null,
+    "tip_force_N": 0.75,
+    "frame": [
+     0,
+     -1,
+     0
+    ],
+    "parts": 25,
+    "colours": {
+     "Black": 13,
+     "Red": 7
+    },
+    "bbox_ldu": [
+     [
+      140.0,
+      -256.0,
+      180.0
+     ],
+     [
+      200.0,
+      -184.0,
+      260.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.0,
+    "studs": 4,
+    "gravity_sf": null,
+    "tip_force_N": 1.68,
+    "frame": [
+     0,
+     -1,
+     0
+    ],
+    "parts": 5,
+    "colours": {
+     "Black": 4,
+     "Yellow": 1
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -328.0,
+      320.0
+     ],
+     [
+      280.0,
+      -296.0,
+      360.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 8.7,
+    "studs": 15,
+    "gravity_sf": null,
+    "tip_force_N": 3.02,
+    "frame": [
+     0,
+     -1,
+     0
+    ],
+    "parts": 56,
+    "colours": {
+     "Black": 27,
+     "Yellow": 20
+    },
+    "bbox_ldu": [
+     [
+      80.0,
+      -256.0,
+      120.0
+     ],
+     [
+      220.0,
+      -168.0,
+      300.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.6,
+    "studs": 8,
+    "gravity_sf": null,
+    "tip_force_N": 4.91,
+    "frame": [
+     0,
+     -1,
+     0
+    ],
+    "parts": 7,
+    "colours": {
+     "Yellow": 5,
+     "Black": 2
+    },
+    "bbox_ldu": [
+     [
+      440.0,
+      -264.0,
+      500.0
+     ],
+     [
+      480.0,
+      -248.0,
+      600.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 390.5,
+    "studs": 53,
+    "gravity_sf": null,
+    "tip_force_N": 7.44,
+    "frame": [
+     0,
+     -1,
+     0
+    ],
+    "parts": 1117,
+    "colours": {
+     "Yellow": 713,
+     "Black": 348
+    },
+    "bbox_ldu": [
+     [
+      4.0,
+      -428.0,
+      20.0
+     ],
+     [
+      540.0,
+      -8.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.7,
+    "studs": 11,
+    "gravity_sf": 659.59,
+    "tip_force_N": 12.08,
+    "frame": [
+     0,
+     -1,
+     0
+    ],
+    "parts": 7,
+    "colours": {
+     "Yellow": 5,
+     "Black": 2
+    },
+    "bbox_ldu": [
+     [
+      340.0,
+      -72.0,
+      380.0
+     ],
+     [
+      400.0,
+      -56.0,
+      480.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.6,
+    "studs": 16,
+    "gravity_sf": 4077.47,
+    "tip_force_N": 18.28,
+    "frame": [
+     -1,
+     0,
+     0
+    ],
+    "parts": 1,
+    "colours": {
+     "Black": 1
+    },
+    "bbox_ldu": [
+     [
+      224.0,
+      -328.0,
+      140.0
+     ],
+     [
+      232.0,
+      -288.0,
+      300.0
+     ]
+    ]
+   }
+  ]
+ },
+ "fidelity": {
+  "volume_iou": 0.6741,
+  "lego_volume_cells": 3943.9,
+  "mesh_volume_cells": 4792.0,
+  "silhouette_iou_face": 0.7148,
+  "silhouette_iou_profil": 0.919,
+  "silhouette_iou_dessus": 0.7912
+ }
+}

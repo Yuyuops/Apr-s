@@ -1,0 +1,47 @@
+{
+ "name": "paco_tete_C_seuil",
+ "parts": 1735,
+ "kinds": {
+  "plate": 1700,
+  "tile": 35
+ },
+ "part_numbers": {
+  "3024": 830,
+  "3023": 477,
+  "3623": 125,
+  "3710": 60,
+  "3022": 38,
+  "3021": 34,
+  "3020": 34,
+  "3031": 31,
+  "3070b": 25,
+  "3032": 24,
+  "3666": 19,
+  "3795": 16,
+  "3069b": 7,
+  "3035": 5,
+  "3958": 4,
+  "3034": 2,
+  "3460": 1,
+  "63864": 1,
+  "2431": 1,
+  "3068b": 1
+ },
+ "settings": {
+  "npz": "proto/out/paco_head400.npz",
+  "out": "proto/out/C_seuil",
+  "name": "paco_tete_C_seuil",
+  "occupancy": 0.5,
+  "no_shapes": true,
+  "no_tiles": false,
+  "min_gain": 0.12
+ },
+ "reconnect_cells": 0,
+ "cells": 4799,
+ "cells_brickify": 6557,
+ "recoloured_new_surface": 1412,
+ "floating_before_repair": 16,
+ "bridge_recoloured_cells": 28,
+ "bridges": 30,
+ "floating_after_repair": 0
+}

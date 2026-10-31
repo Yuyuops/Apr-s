@@ -31,6 +31,13 @@ def part(num, inverted=None):
     for b, o, yt in cand:                               # remove each stud cylinder (from its top yt down to its base)
         d = np.hypot(V[:, 0] - o[0], V[:, 2] - o[2])
         keep &= ~((d < 6.5) & (V[:, 1] < o[1] + 0.1) & (V[:, 1] > yt - 0.2) & (V[:, 1] < yt + 4.2))
+    # also remove studs pointing sideways (studs on side, brackets): their cylinders are not part of the body box
+    for b, o, M in refs(num + ".dat"):
+        if not re.match(r"^stud(2a?|10|15|17a)?\.dat$", b): continue
+        ax = -M[:, 1]; sc = np.linalg.norm(ax)
+        if sc < 1e-6 or abs(ax[1]) / sc > 0.5: continue
+        ax = ax / sc; rel = V - o; along = rel @ ax; radial = np.linalg.norm(rel - np.outer(along, ax), axis=1)
+        keep &= ~((radial < 6.5) & (along > -0.1) & (along < 4 * sc + 0.2))
     keep = keep.reshape(-1, 3).all(axis=1).repeat(3)
     body = V[keep]
     lo, hi = body.min(0), body.max(0)               # y: lo = top (most negative), hi = bottom

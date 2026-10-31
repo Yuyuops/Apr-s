@@ -29,6 +29,17 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 bis. Itération Brickify V3 : finition des surfaces et oreilles SNOT (tête de Paco, 400 mm)
+
+Dossier `06_head_surface_optimization/`. Deux variantes ont été comparées au prototype C, avec le même GLB, la même échelle et un rendu identique :
+- **D** : finition cohérente des dessus visibles (tuiles, pentes 30° orientées selon la normale du modèle 3D) ;
+- **E** : D, plus des oreilles en panneaux SNOT sur briques à tenon latéral.
+
+Toutes sont valides techniquement après réordonnancement de la notice : 0 îlot, 0 collision, 0 pose dans le vide, couleurs vérifiées.
+Mais **aucune n'améliore visiblement le rendu**. D se distingue à peine de C. E recule : oreilles plates vues par la tranche de face, en partie retirées, IoU de volume 0,67.
+**Verdict : CHANGER D'APPROCHE pour les surfaces et les détails.** Le cœur volumique C est conservé. L'architecture proposée (modules de détail ajustés, charnières, validateur étendu) et la démonstration préalable sur une seule oreille sont décrites dans `06_head_surface_optimization/DECISION.md`.
+Nouveaux outils : `tools/conn.py`, `tools/validate_v2.py` (validateur indépendant de l'orientation, recoupé avec la v1 sur C) et `tools/reorder_notice.py`.
+
 ## 1. Décision (benchmark initial)
 
 | Question | Réponse |

@@ -30,8 +30,12 @@ PLATES = {(1,1):"3024",(2,1):"3023",(3,1):"3623",(4,1):"3710",(6,1):"3666",(8,1)
           (2,2):"3022",(3,2):"3021",(4,2):"3020",(6,2):"3795",(8,2):"3034",
           (4,4):"3031",(6,4):"3032",(8,4):"3035",(6,6):"3958",(8,6):"3036",(8,8):"41539"}
 TILES = {(1,1):"3070b",(2,1):"3069b",(3,1):"63864",(4,1):"2431",(6,1):"6636",(2,2):"3068b"}
-SHAPED_TOP = ["3040b", "3039", "11477", "15068", "54200", "85984"]
-SHAPED_BOTTOM = ["3665", "3660", "24201"]
+SHAPED_SETS = {
+    "b": (["3040b", "3039", "11477", "15068", "54200", "85984"], ["3665", "3660", "24201"]),
+    # variant D: curved bricks (2, 3, 4 long), cheese slopes, wedge plates, round and quarter-round tiles
+    "d": (["93273", "50950", "11477", "15068", "54200", "85984", "3040b", "43722", "43723", "24299", "24307", "25269", "98138"],
+          ["24201", "3665"]),
+}
 _db = None
 _avail = {}
 
@@ -162,6 +166,13 @@ def main():
     ap.add_argument("--occupancy", type=float, default=0.0)
     ap.add_argument("--no-shapes", action="store_true"); ap.add_argument("--no-tiles", action="store_true")
     ap.add_argument("--min-gain", type=float, default=0.12)
+    ap.add_argument("--shape-set", default="b", choices=sorted(SHAPED_SETS))
+    ap.add_argument("--tiles-all", action="store_true", help="tile every exposed top, except --studded colours")
+    ap.add_argument("--studded", default="0", help="LDraw colours that keep visible studs (Paco: black ears)")
+    ap.add_argument("--drop-floating", action="store_true", help="last resort: remove parts still floating after repair (counted)")
+    ap.add_argument("--preplaced", help="json list of upright parts placed before packing (e.g. SNOT anchor bricks)")
+    ap.add_argument("--finish", action="store_true", help="coherent finish of exposed tops from the mesh normal: tile / cheese slope facing downhill")
+    ap.add_argument("--flat-deg", type=float, default=20.0); ap.add_argument("--steep-deg", type=float, default=60.0)
     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True)
     d = np.load(a.npz); G0 = d["grid"].astype(int); F = d["fine"]; K = int(d["k"]); KY = K
     NX, NY, NZ = G0.shape; log = defaultdict(int)
@@ -180,10 +191,19 @@ def main():
     log["cells"] = int(occ.sum()); log["cells_brickify"] = int(occ0.sum()); log["recoloured_new_surface"] = int(new_vis.sum())
     m = Model(G, F, K); claimed = np.zeros(G.shape, bool); orig_occ = occ.copy()
     fsl = lambda x0, y0, z0, nx_, nh, nz_: (slice(x0 * K, (x0 + nx_) * K), slice(y0 * KY, (y0 + nh) * KY), slice(z0 * K, (z0 + nz_) * K))
+    # ---- stage 0b: pre-placed parts (anchors for sideways sub-assemblies)
+    if a.preplaced:
+        for q in json.load(open(a.preplaced)):
+            box = (slice(q["x0"], q["x0"] + q["w"]), slice(q["y0"], q["y0"] + q["h"]), slice(q["z0"], q["z0"] + q["d"]))
+            claimed[box] = True; occ[box] = True; G[box] = q["colour"]
+            m.add(dict(q, kind="shaped")); log["preplaced"] += 1
+        orig_occ = occ.copy()
     # ---- stage 1: shaped parts
     if not a.no_shapes:
         S = np.repeat(np.repeat(np.repeat(occ, K, 0), KY, 1), K, 2)
         cands = []
+        SHAPED_TOP, SHAPED_BOTTOM = SHAPED_SETS[a.shape_set]
+        studded = {int(c) for c in a.studded.split(",") if c.strip()}
         for num in SHAPED_TOP + SHAPED_BOTTOM:
             inv = num in SHAPED_BOTTOM
             for r in range(4):
@@ -218,9 +238,41 @@ def main():
             if not cols: continue
             colour = Counter(cols).most_common(1)[0][0]
             if not available(num, colour): continue
+            if a.shape_set == "d" and colour in studded and not PL.placed(num, r)["studs"] and num in SHAPED_TOP: continue
             claimed[box] = True; occ[box] = True; G[box] = colour; S[fsl(x0, y0, z0, nx_, nh, nz_)] = Q["solid"]
             m.add(dict(num=num, r=r, x0=x0, y0=y0, z0=z0, w=nx_, d=nz_, h=nh, colour=int(colour), kind="shaped"))
             log[f"shaped_{num}"] += 1
+    # ---- stage 1b: coherent finish of exposed tops (variant D)
+    if a.finish:
+        from scipy.ndimage import gaussian_filter
+        studded = {int(c) for c in a.studded.split(",") if c.strip()}
+        B_ = gaussian_filter(F.astype(float), sigma=(2.0, 5.0, 2.0))          # ~10 LDU in every direction
+        gx, gy, gz = np.gradient(B_); gx /= 5.0; gy /= 2.0; gz /= 5.0            # per LDU
+        # downhill direction of the cheese slope for each rotation, from its measured solid
+        low_dir = {}
+        for r in range(4):
+            h = PL.placed("54200", r)["solid"].sum(axis=1).astype(float)          # (x, z) solid height
+            dx = h[-1, :].mean() - h[0, :].mean(); dz = h[:, -1].mean() - h[:, 0].mean()
+            v = -np.array([dx, dz]); low_dir[r] = v / (np.linalg.norm(v) + 1e-9)
+        for x in range(NX):
+            for z in range(NZ):
+                col = np.nonzero(occ[x, :, z])[0]
+                for y in col:
+                    if y + 1 < NY and occ[x, y + 1, z]: continue              # not an exposed top
+                    if claimed[x, y, z] or int(G[x, y, z]) in studded: continue
+                    fx, fy, fz = x * K + K // 2, min((y + 1) * KY, F.shape[1] - 1), z * K + K // 2
+                    nvec = -np.array([gx[fx, fy, fz], gy[fx, fy, fz], gz[fx, fy, fz]])
+                    if np.linalg.norm(nvec) < 1e-6: continue
+                    nvec /= np.linalg.norm(nvec); theta = np.degrees(np.arccos(np.clip(nvec[1], -1, 1)))
+                    if theta < a.flat_deg or theta >= a.steep_deg: continue             # flat: tiled later; steep: wall
+                    if y == 0 or not occ[x, y - 1, z] or claimed[x, y - 1, z] or G[x, y - 1, z] != G[x, y, z]: continue
+                    hz = np.array([nvec[0], nvec[2]]); hz /= (np.linalg.norm(hz) + 1e-9)
+                    r = max(range(4), key=lambda k: float(low_dir[k] @ hz))
+                    colour = int(G[x, y, z])
+                    if not available("54200", colour): continue
+                    claimed[x, y - 1:y + 1, z] = True
+                    m.add(dict(num="54200", r=r, x0=x, y0=y - 1, z0=z, w=1, d=1, h=2, colour=colour, kind="shaped"))
+                    log["finish_cheese"] += 1
     # ---- stage 2: plates and tiles
     flat = {}
     def flat_top(y):
@@ -231,10 +283,11 @@ def main():
         free = occ[:, y, :] & ~claimed[:, y, :]
         if not free.any(): continue
         above = occ[:, y + 1, :] if y + 1 < NY else np.zeros((NX, NZ), bool)
-        tiles = (free & ~above & flat_top(y)) if not a.no_tiles else np.zeros_like(free)
+        tiles = (free & ~above & (True if a.tiles_all else flat_top(y))) if not a.no_tiles else np.zeros_like(free)
+        studded_c = {int(c) for c in a.studded.split(",") if c.strip()} if a.tiles_all else set()
         for colour in np.unique(G[:, y, :][free]):
-            for ut in (False, True):
-                reg = free & (G[:, y, :] == colour) & (tiles if ut else ~tiles)
+            for ut in ((False,) if int(colour) in studded_c else (False, True)):
+                reg = free & (G[:, y, :] == colour) & ((tiles if ut else ~tiles) if int(colour) not in studded_c else True)
                 if reg.any(): m.pack_region(y, reg, int(colour), use_tiles=ut)
     # ---- stage 3: repair floating parts
     surf_now = surface_of(occ)
@@ -246,6 +299,8 @@ def main():
         for f in sorted(floating, key=lambda i: m.parts[i]["y0"] if m.parts[i] else 0):
             p = m.parts[f]
             if p is None: continue
+            if p["kind"] == "shaped" and p.get("anchor"):
+                continue
             if p["kind"] == "shaped":        # turn the shaped part back into plates (originally occupied cells only)
                 y0, h = p["y0"], p["h"]; box = (slice(p["x0"], p["x0"] + p["w"]), slice(y0, y0 + h), slice(p["z0"], p["z0"] + p["d"]))
                 m.remove(f); claimed[box] = False
@@ -335,6 +390,10 @@ def main():
             progress = True
         if not progress: break
     Gr, grounded, floating, M = m.graph(); log["floating_after_repair"] = len(floating)
+    if a.drop_floating and floating:
+        log["dropped_floating_parts"] = len(floating)
+        log["dropped_floating_cells"] = int(sum(m.parts[f]["w"] * m.parts[f]["d"] * m.parts[f]["h"] for f in floating))
+        for f in floating: m.remove(f)
     if os.environ.get("DEBUG_FLOAT"):
         for f in floating:
             p = m.parts[f]; info = []
