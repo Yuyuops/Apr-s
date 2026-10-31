@@ -1,0 +1,39 @@
+{
+  "name": "fox_raw",
+  "height_mm": 250.0,
+  "grid_studs": [
+    11,
+    62
+  ],
+  "grid_plates": 79,
+  "size_mm": [
+    88,
+    253,
+    496
+  ],
+  "cells": 13554,
+  "parts": 1805,
+  "part_colour_lines": 50,
+  "steps": 271,
+  "sections": 7,
+  "stud_connections": 2593,
+  "floating_after_repair": 0,
+  "colours": {
+    "Bright Light Orange": 1187,
+    "White": 412,
+    "Reddish Brown": 206
+  },
+  "bricks": 649,
+  "plates": 1156,
+  "centre_of_mass": {
+    "x_studs": 5.4752102700309875,
+    "z_studs": 32.799837686291866,
+    "y_plates": 43.954994835472924,
+    "inside_footprint": true,
+    "margin_studs": 3.548826124224223,
+    "base_cells": 38
+  },
+  "bridges": 53,
+  "eye_level_plate": -1,
+  "seconds": 1.2
+}
