@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benchmark LEGO : Paco et Beagle</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1d1d1f; --mute:#5f6368; --bg:#fafafa; --card:#fff; --line:#e3e3e3; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#ececec; --mute:#a0a0a0; --bg:#161616; --card:#1f1f1f; --line:#333; } }
+  body { margin:0; font:16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--fg); background:var(--bg); }
+  main { max-width:1200px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:40px 0 8px; }
+  p { margin:6px 0; }
+  .mute { color:var(--mute); }
+  nav { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 8px; }
+  nav a { padding:6px 12px; border:1px solid var(--line); border-radius:999px; text-decoration:none; color:inherit; background:var(--card); }
+  figure { margin:12px 0 0; background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+  figure img { display:block; width:100%; height:auto; }
+  figcaption { padding:8px 12px; font-size:.9rem; color:#5f6368; background:#fff; border-top:1px solid #eee; }
+  ul { margin:6px 0; padding-left:20px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Benchmark LEGO : Paco et Beagle</h1>
+  <p class="mute">31 octobre 2026. Rendus LEGO calculés avec les vraies pièces de la bibliothèque LDraw officielle, sans retouche ni IA. Aucun service payant utilisé.</p>
+  <nav>
+    <a href="#lego-paco">LEGO Paco</a><a href="#lego-beagle">LEGO Beagle</a>
+    <a href="#glb-paco">3D Paco</a><a href="#glb-beagle">3D Beagle</a><a href="#autotile">AutoTile</a>
+  </nav>
+
+  <p><strong>À valider par vous :</strong> les silhouettes sont-elles assez proches des références ?</p>
+  <ul>
+    <li><strong>Brut 250 mm</strong> : réglages de votre README. L'image sort en miroir (défaut de brickify).</li>
+    <li><strong>Réglé 250 mm / 400 mm</strong> : miroir corrigé, couleurs limitées à celles des références.</li>
+  </ul>
+
+  <h2 id="lego-paco">Paco : référence, 3D et LEGO</h2>
+  <figure><img src="03_lego_brickify/paco_reference_vs_lego.png" alt="Paco : référence, modèle 3D et rendus LEGO brut 250 mm, réglé 250 mm et réglé 400 mm">
+    <figcaption>À 250 mm, les yeux et le badge « P » se perdent. Ils réapparaissent à 400 mm. Point fragile : une oreille ou un bras tient par un seul tenon à 250 mm.</figcaption></figure>
+
+  <h2 id="lego-beagle">Beagle : référence, 3D et LEGO</h2>
+  <figure><img src="03_lego_brickify/beagle_reference_vs_lego.png" alt="Beagle : référence, modèle 3D et rendus LEGO brut 250 mm, réglé 250 mm et réglé 400 mm">
+    <figcaption>Silhouette, oreilles et queue reconnaissables. Le poitrail blanc est moucheté (ombres des références lues comme une couleur). Une oreille tient par un seul tenon à 400 mm.</figcaption></figure>
+
+  <h2 id="glb-paco">Paco : modèle 3D gratuit avant conversion</h2>
+  <figure><img src="02_glb_gratuit_hunyuan2mv/paco_reference_vs_glb.png" alt="Paco : images de référence, forme 3D seule et forme 3D colorée">
+    <figcaption>Forme Hunyuan3D-2mv (4 vues), couleurs projetées depuis vos images. Traînées jaunes sur la salopette dues à la tête tournée sur la vue de face.</figcaption></figure>
+
+  <h2 id="glb-beagle">Beagle : modèle 3D gratuit avant conversion</h2>
+  <figure><img src="02_glb_gratuit_hunyuan2mv/beagle_reference_vs_glb.png" alt="Beagle : images de référence, forme 3D seule et forme 3D colorée">
+    <figcaption>Forme et couleurs très fidèles.</figcaption></figure>
+
+  <h2 id="autotile">Comparaison : AutoTile sur les mêmes modèles 3D</h2>
+  <figure><img src="04_autotile/paco_autotile_vues.png" alt="Paco converti par AutoTile"><figcaption>Paco par AutoTile : pièces disjointes, collisions, proportions déformées.</figcaption></figure>
+  <figure><img src="04_autotile/beagle_autotile_vues.png" alt="Beagle converti par AutoTile"><figcaption>Beagle par AutoTile : plus de 1 000 collisions et pièces non reliées.</figcaption></figure>
+</main>
+</body>
+</html>
