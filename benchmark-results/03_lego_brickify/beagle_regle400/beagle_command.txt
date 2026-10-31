@@ -1,0 +1,1 @@
+brickify --height-mm 400 --colour-mode palette --palette-passes 4 --interior dominant --exclude 4,1,14,2,25,19,28,71,72,272,288,320,321,322,26,27,191,226,212,78,85,30,73,10,3,323,378,379,330,43 

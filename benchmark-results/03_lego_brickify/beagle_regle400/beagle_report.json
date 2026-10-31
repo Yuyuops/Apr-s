@@ -1,0 +1,42 @@
+{
+  "name": "beagle",
+  "height_mm": 400.0,
+  "grid_studs": [
+    30,
+    58
+  ],
+  "grid_plates": 126,
+  "size_mm": [
+    240,
+    403,
+    464
+  ],
+  "cells": 59778,
+  "parts": 8329,
+  "part_colour_lines": 93,
+  "steps": 1118,
+  "sections": 11,
+  "stud_connections": 11876,
+  "floating_after_repair": 0,
+  "colours": {
+    "Dark Orange": 4110,
+    "Medium Nougat": 1705,
+    "White": 1380,
+    "Reddish Brown": 554,
+    "Dark Brown": 466,
+    "Black": 114
+  },
+  "bricks": 2598,
+  "plates": 5731,
+  "centre_of_mass": {
+    "x_studs": 14.89551339957844,
+    "z_studs": 29.45615443808759,
+    "y_plates": 62.63525042657834,
+    "inside_footprint": true,
+    "margin_studs": 12.215561678597624,
+    "base_cells": 410
+  },
+  "bridges": 444,
+  "eye_level_plate": -1,
+  "seconds": 9.9
+}

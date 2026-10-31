@@ -73,7 +73,7 @@ Passage **réglé** :
 | Angle de basculement | 12,8° | 12,7° | 13,7° | 27,6° | 27,5° | 26,9° |
 | Pièce × couleur jamais produite | 0 | 0 | 0 | 9× plaque 6×8 Dark Orange | 6×8 (9) et 4×4 (1) Dark Orange | 6×8 (21) et 4×4 (2) Dark Orange |
 | Pièce × couleur rare (< 5 sets) | 1 | 0 | 0 | 8 | 6 | 8 |
-| Étapes / pages de notice | 220 / 80 | 189 / 78 | 438 / 127 | 492 / 80 | 443 / 80 | 1 118 / voir PDF |
+| Étapes / pages de notice | 220 / 80 | 189 / 78 | 438 / 127 | 492 / 80 | 443 / 80 | 1 118 / 127 |
 
 Lecture :
 - **Le miroir est confirmé et imputable à brickify.** Mon rendu applique une vraie rotation (Y et Z inversés). brickify n'inverse que Y. Sur le passage brut, la tête de Paco regarde à droite au lieu de gauche. La pré-inversion de l'entrée corrige le problème sans toucher au moteur.
