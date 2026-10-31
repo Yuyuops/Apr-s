@@ -12,7 +12,7 @@ from ldr_expand import Lib, ldconfig, read_ldr
 
 STUD_MM, PLATE_MM = 8.0, 3.2
 
-def norm(s): return re.sub(r"[^a-z]", "", s.lower())
+def norm(s): return re.sub(r"[^a-z]", "", s.lower()).replace("grey", "gray")  # LDraw "Grey" vs Rebrickable "Gray"
 
 def colour_map(cols, db):
     """LDraw colour code -> Rebrickable colour row (by id when the names agree, else by name)."""
@@ -102,8 +102,16 @@ def main():
             for ch in tree.successors(k):
                 ss[k] = (ss[k][0] + ss[ch][0], ss[k][1] + ss[ch][1])
         for par, ch in tree.edges():
-            bridges.append(dict(parts_detached=ss[ch][0], cells_detached=ss[ch][1], studs=T[par][ch]["studs"]))
+            bridges.append(dict(parts_detached=ss[ch][0], cells_detached=ss[ch][1], studs=T[par][ch]["studs"], _root=(tree, ch)))
     bridges.sort(key=lambda b: -b["cells_detached"])
+    members = {k: [n for n in cid if cid[n] == k] for k in csize} if bridges else {}
+    for b in bridges[:10]:
+        tree, ch = b["_root"]; ks = [ch] + list(nx.descendants(tree, ch)); nodes = [n for k in ks for n in members[k]]
+        b["colours"] = dict(Counter(cols[P[n]["c"]]["name"] for n in nodes).most_common(3))
+        b["layers"] = [min(P[n]["y0"] for n in nodes), max(P[n]["y1"] for n in nodes)]
+        b["bbox_studs_x"] = [min(P[n]["x0"] for n in nodes), max(P[n]["x1"] for n in nodes)]
+        b["bbox_studs_z"] = [min(P[n]["z0"] for n in nodes), max(P[n]["z1"] for n in nodes)]
+    for b in bridges: b.pop("_root", None)
     # ---- load paths: for every layer boundary, every sub-assembly above it and the studs that hold it
     vol = np.array([p["vol"] for p in P], float)
     cen = np.array([[(p["x0"] + p["x1"]) / 2, (p["y0"] + p["y1"]) / 2 * PLATE_MM / STUD_MM, (p["z0"] + p["z1"]) / 2] for p in P])
@@ -223,6 +231,7 @@ def main():
                          single_stud_joints=sum(1 for _, _, d in G.edges(data=True) if d["studs"] == 1),
                          parts_with_one_joint=sum(1 for n in G if G.degree(n) == 1)),
         disconnected_parts=len(floating), connected_components=nx.number_connected_components(G),
+        islands_not_attached_to_main_body=[dict(parts=len(cc), cells=sum((P[i]["x1"]-P[i]["x0"])*(P[i]["y1"]-P[i]["y0"])*(P[i]["z1"]-P[i]["z0"]) for i in cc), rests_on_ground=any(P[i]["y0"] == 0 for i in cc), bbox_studs_xyz_min=[min(P[i]["x0"] for i in cc), min(P[i]["z0"] for i in cc), min(P[i]["y0"] for i in cc)]) for cc in sorted(nx.connected_components(G), key=len, reverse=True)[1:]],
         floating_at_placement=dict(count=len(floating_at_placement), free_space_below=len(reach_below), note="parts that, in the LDraw step order, have nothing under them yet (must be sub-assembled or added later)"),
         single_points_of_failure=dict(count=len(bridges), largest=bridges[:10]),
         weakest_by_torque=weak, appendages_weakest=appendages, horizontal_cantilevers=cantilevers[:10], thinnest_supports=thin,

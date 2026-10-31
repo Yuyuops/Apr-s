@@ -1,0 +1,62 @@
+19:56:34 loaded 115868 verts, 231740 faces, extents mm-free [1.332 1.957 1.333]
+19:56:35 components after seam merge: 1 sizes [231740]
+19:56:35 scaled to voxel units: extents [21.3 78.1 21.3] (studs, plates, studs)
+19:56:35 voxelized: 4524 filled cells in 0.2s, matrix (22, 79, 22)
+19:56:35 palette colours used: {'Yellow': 826, 'Red': 626, 'Black': 610, 'Bright Light Yellow': 140, 'Bright Light Orange': 120, 'Dark Bluish Gray': 102, 'Dark Red': 98, 'Orange': 97}
+19:56:35 grid (22, 79, 22) (studs x plates x studs), 4524 cells
+19:56:35 brick phase 1: 1030 cells brick-able of 4524
+19:56:36 pack 0: 1494 parts, 1709 stud connections, 441 floating, 0 new bridges, 0 kept
+19:56:36 brick phase 0: 1024 cells brick-able of 4524
+19:56:36 pack 1: 1493 parts, 1736 stud connections, 245 floating, 116 new bridges, 116 kept
+19:56:36 brick phase 0: 1023 cells brick-able of 4524
+19:56:36 pack 2: 1421 parts, 1714 stud connections, 35 floating, 99 new bridges, 200 kept
+19:56:36 brick phase 0: 1040 cells brick-able of 4524
+19:56:36 pack 3: 1397 parts, 1699 stud connections, 9 floating, 30 new bridges, 223 kept
+19:56:36   support columns: added 0 cells
+19:56:36 brick phase 0: 1040 cells brick-able of 4524
+19:56:36 pack 4: 1400 parts, 1710 stud connections, 0 floating, 13 new bridges, 225 kept
+19:56:36 best packing: 1400 parts, 0 floating
+19:56:36 {
+ "name": "paco",
+ "height_mm": 250.0,
+ "grid_studs": [
+  22,
+  22
+ ],
+ "grid_plates": 79,
+ "size_mm": [
+  176,
+  253,
+  176
+ ],
+ "cells": 4524,
+ "parts": 1400,
+ "part_colour_lines": 74,
+ "steps": 220,
+ "sections": 7,
+ "stud_connections": 1710,
+ "floating_after_repair": 0,
+ "colours": {
+  "Yellow": 534,
+  "Black": 270,
+  "Red": 203,
+  "Bright Light Yellow": 105,
+  "Bright Light Orange": 86,
+  "Dark Bluish Gray": 80,
+  "Orange": 68,
+  "Dark Red": 54
+ },
+ "bricks": 263,
+ "plates": 1137,
+ "centre_of_mass": {
+  "x_studs": 11.658488063660478,
+  "z_studs": 9.51392572944297,
+  "y_plates": 38.630857648099024,
+  "inside_footprint": true,
+  "margin_studs": 3.0139257294429704,
+  "base_cells": 72
+ },
+ "bridges": 258,
+ "eye_level_plate": -1,
+ "seconds": 2.2
+}

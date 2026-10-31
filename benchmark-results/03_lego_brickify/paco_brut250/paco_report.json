@@ -1,0 +1,44 @@
+{
+  "name": "paco",
+  "height_mm": 250.0,
+  "grid_studs": [
+    22,
+    22
+  ],
+  "grid_plates": 79,
+  "size_mm": [
+    176,
+    253,
+    176
+  ],
+  "cells": 4524,
+  "parts": 1400,
+  "part_colour_lines": 74,
+  "steps": 220,
+  "sections": 7,
+  "stud_connections": 1710,
+  "floating_after_repair": 0,
+  "colours": {
+    "Yellow": 534,
+    "Black": 270,
+    "Red": 203,
+    "Bright Light Yellow": 105,
+    "Bright Light Orange": 86,
+    "Dark Bluish Gray": 80,
+    "Orange": 68,
+    "Dark Red": 54
+  },
+  "bricks": 263,
+  "plates": 1137,
+  "centre_of_mass": {
+    "x_studs": 11.658488063660478,
+    "z_studs": 9.51392572944297,
+    "y_plates": 38.630857648099024,
+    "inside_footprint": true,
+    "margin_studs": 3.0139257294429704,
+    "base_cells": 72
+  },
+  "bridges": 258,
+  "eye_level_plate": -1,
+  "seconds": 2.2
+}

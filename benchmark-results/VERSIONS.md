@@ -9,4 +9,7 @@
 | Proxy de répétition | KhronosGroup glTF-Sample-Assets, Models/Fox (CC-BY 4.0 / CC0) | `8f492390ddc7a2ae221a1369ef560589cf8c70fb` |
 | Python | venv | Python 3.13.18 ; trimesh 5.2.0, numpy 2.5.4, scipy 1.18.1, networkx 3.7 |
 | Rendu | three.js 0.160.0 (npm), Chromium/Playwright préinstallé, WebGL SwiftShader | Node v22.23.4 |
-| Modèle photo→3D | **non exécuté** (fal.ai bloqué par le réseau, FAL_KEY absente) | — |
+| Modèle photo→3D | Hunyuan3D-2mv, démo Hugging Face officielle `tencent/Hunyuan3D-2mv` (gratuite, ZeroGPU), modèle `hunyuan3d-dit-v2-mv-turbo`, forme seule | Space commit `98b78666ba43239564d6607fd0d45d9b43581fdc` ; gradio_client 2.7.2 |
+| Couleurs du GLB | projection des 4 images de référence (`tools/colorize_from_views.py`), visibilité par lancer de rayons | embreex 4.4.0.post1, Pillow 13.0.0 |
+| fal.ai Hunyuan3D v3.1 Pro | **non exécuté** (prix officiel relu : 0,375 $ + 0,15 $ multivue = 0,525 $ par génération) | — |
+| AutoTile (dépendances chemin `--mesh`) | venv commun | scikit-learn 1.9.1, rtree 1.4.1 |

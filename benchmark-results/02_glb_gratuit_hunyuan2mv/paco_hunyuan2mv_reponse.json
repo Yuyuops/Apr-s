@@ -1,0 +1,47 @@
+{
+ "space": "tencent/Hunyuan3D-2mv",
+ "params": {
+  "mv_image_front": "image",
+  "mv_image_back": "image",
+  "mv_image_left": "image",
+  "mv_image_right": "image",
+  "steps": 30,
+  "guidance_scale": 5.0,
+  "seed": 1234,
+  "octree_resolution": 256,
+  "check_box_rembg": true,
+  "num_chunks": 8000,
+  "randomize_seed": false,
+  "api_name": "/shape_generation",
+  "caption": null
+ },
+ "seconds": 16.3,
+ "out1": "\n        <div style='height: 690; width: 100%;'>\n        <iframe src=\"/static/284e2a0a-9943-4388-9d8c-b3c6cee6ad1b/white_mesh.html\" height=\"690\" width=\"100%\" frameborder=\"0\"></iframe>\n        </div>\n    ",
+ "out2": {
+  "model": {
+   "shapegen": "tencent/Hunyuan3D-2mv/hunyuan3d-dit-v2-mv-turbo",
+   "texgen": "tencent/Hunyuan3D-2"
+  },
+  "params": {
+   "caption": null,
+   "steps": 30,
+   "guidance_scale": 5.0,
+   "seed": 1234,
+   "octree_resolution": 256,
+   "check_box_rembg": true,
+   "num_chunks": 8000
+  },
+  "number_of_faces": 374524,
+  "number_of_vertices": 115868,
+  "time": {
+   "remove background": 3.76676869392395,
+   "shape generation": 7.49783992767334,
+   "export to trimesh": 0.0551760196685791,
+   "total": 11.323520183563232
+  }
+ },
+ "out3": 1234,
+ "files": [
+  "runs/paco_hf2mv_shape_blanc/paco_out0.glb"
+ ]
+}

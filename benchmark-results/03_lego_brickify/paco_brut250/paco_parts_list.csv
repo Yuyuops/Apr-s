@@ -1,0 +1,75 @@
+part,name,ldraw_colour,colour_name,bricklink_colour_id,qty
+3005,Brick 1x1,0,Black,11,31
+3004,Brick 1x2,0,Black,11,7
+3622,Brick 1x3,0,Black,11,1
+3024,Plate 1x1,0,Black,11,87
+3023,Plate 1x2,0,Black,11,49
+3623,Plate 1x3,0,Black,11,26
+3710,Plate 1x4,0,Black,11,21
+3022,Plate 2x2,0,Black,11,13
+3021,Plate 2x3,0,Black,11,27
+3020,Plate 2x4,0,Black,11,8
+3005,Brick 1x1,4,Red,5,23
+3004,Brick 1x2,4,Red,5,16
+3622,Brick 1x3,4,Red,5,5
+3010,Brick 1x4,4,Red,5,9
+3009,Brick 1x6,4,Red,5,3
+3008,Brick 1x8,4,Red,5,1
+3024,Plate 1x1,4,Red,5,97
+3023,Plate 1x2,4,Red,5,30
+3623,Plate 1x3,4,Red,5,6
+3710,Plate 1x4,4,Red,5,2
+3022,Plate 2x2,4,Red,5,4
+3021,Plate 2x3,4,Red,5,1
+3020,Plate 2x4,4,Red,5,3
+3795,Plate 2x6,4,Red,5,3
+3005,Brick 1x1,14,Yellow,3,54
+3004,Brick 1x2,14,Yellow,3,36
+3622,Brick 1x3,14,Yellow,3,13
+3010,Brick 1x4,14,Yellow,3,11
+3009,Brick 1x6,14,Yellow,3,5
+3008,Brick 1x8,14,Yellow,3,1
+3003,Brick 2x2,14,Yellow,3,10
+3002,Brick 2x3,14,Yellow,3,6
+3001,Brick 2x4,14,Yellow,3,7
+2456,Brick 2x6,14,Yellow,3,5
+3007,Brick 2x8,14,Yellow,3,1
+3024,Plate 1x1,14,Yellow,3,188
+3023,Plate 1x2,14,Yellow,3,104
+3623,Plate 1x3,14,Yellow,3,18
+3710,Plate 1x4,14,Yellow,3,7
+3666,Plate 1x6,14,Yellow,3,3
+3460,Plate 1x8,14,Yellow,3,8
+3022,Plate 2x2,14,Yellow,3,5
+3021,Plate 2x3,14,Yellow,3,12
+3020,Plate 2x4,14,Yellow,3,12
+3795,Plate 2x6,14,Yellow,3,24
+3034,Plate 2x8,14,Yellow,3,4
+3005,Brick 1x1,25,Orange,4,2
+3024,Plate 1x1,25,Orange,4,50
+3023,Plate 1x2,25,Orange,4,10
+3021,Plate 2x3,25,Orange,4,6
+3005,Brick 1x1,72,Dark Bluish Gray,85,2
+3024,Plate 1x1,72,Dark Bluish Gray,85,64
+3023,Plate 1x2,72,Dark Bluish Gray,85,6
+3623,Plate 1x3,72,Dark Bluish Gray,85,1
+3022,Plate 2x2,72,Dark Bluish Gray,85,1
+3020,Plate 2x4,72,Dark Bluish Gray,85,6
+3005,Brick 1x1,191,Bright Light Orange,110,3
+3024,Plate 1x1,191,Bright Light Orange,110,54
+3023,Plate 1x2,191,Bright Light Orange,110,22
+3623,Plate 1x3,191,Bright Light Orange,110,3
+3021,Plate 2x3,191,Bright Light Orange,110,3
+3020,Plate 2x4,191,Bright Light Orange,110,1
+3005,Brick 1x1,226,Bright Light Yellow,103,3
+3024,Plate 1x1,226,Bright Light Yellow,103,76
+3023,Plate 1x2,226,Bright Light Yellow,103,22
+3623,Plate 1x3,226,Bright Light Yellow,103,2
+3022,Plate 2x2,226,Bright Light Yellow,103,1
+3021,Plate 2x3,226,Bright Light Yellow,103,1
+3005,Brick 1x1,320,Dark Red,59,4
+3004,Brick 1x2,320,Dark Red,59,3
+3622,Brick 1x3,320,Dark Red,59,1
+3024,Plate 1x1,320,Dark Red,59,39
+3023,Plate 1x2,320,Dark Red,59,6
+3623,Plate 1x3,320,Dark Red,59,1

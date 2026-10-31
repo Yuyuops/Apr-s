@@ -1,0 +1,105 @@
+part,name,ldraw_colour,colour_name,bricklink_colour_id,qty
+3024,Plate 1x1,0,Black,11,26
+3023,Plate 1x2,0,Black,11,5
+3623,Plate 1x3,0,Black,11,1
+3021,Plate 2x3,0,Black,11,1
+3005,Brick 1x1,15,White,1,52
+3004,Brick 1x2,15,White,1,12
+3622,Brick 1x3,15,White,1,6
+3010,Brick 1x4,15,White,1,1
+3024,Plate 1x1,15,White,1,270
+3023,Plate 1x2,15,White,1,85
+3623,Plate 1x3,15,White,1,22
+3710,Plate 1x4,15,White,1,5
+3666,Plate 1x6,15,White,1,4
+3022,Plate 2x2,15,White,1,5
+3021,Plate 2x3,15,White,1,12
+3020,Plate 2x4,15,White,1,7
+3031,Plate 4x4,15,White,1,4
+3005,Brick 1x1,19,Tan,2,1
+3024,Plate 1x1,19,Tan,2,85
+3023,Plate 1x2,19,Tan,2,5
+3005,Brick 1x1,25,Orange,4,2
+3024,Plate 1x1,25,Orange,4,82
+3023,Plate 1x2,25,Orange,4,19
+3623,Plate 1x3,25,Orange,4,1
+3710,Plate 1x4,25,Orange,4,1
+3005,Brick 1x1,28,Dark Tan,69,43
+3004,Brick 1x2,28,Dark Tan,69,12
+3622,Brick 1x3,28,Dark Tan,69,2
+3010,Brick 1x4,28,Dark Tan,69,1
+3024,Plate 1x1,28,Dark Tan,69,229
+3023,Plate 1x2,28,Dark Tan,69,51
+3623,Plate 1x3,28,Dark Tan,69,13
+3710,Plate 1x4,28,Dark Tan,69,3
+3666,Plate 1x6,28,Dark Tan,69,1
+3460,Plate 1x8,28,Dark Tan,69,1
+3022,Plate 2x2,28,Dark Tan,69,1
+3795,Plate 2x6,28,Dark Tan,69,1
+3005,Brick 1x1,70,Reddish Brown,88,15
+3004,Brick 1x2,70,Reddish Brown,88,1
+3024,Plate 1x1,70,Reddish Brown,88,167
+3023,Plate 1x2,70,Reddish Brown,88,28
+3623,Plate 1x3,70,Reddish Brown,88,2
+3710,Plate 1x4,70,Reddish Brown,88,4
+3022,Plate 2x2,70,Reddish Brown,88,4
+3021,Plate 2x3,70,Reddish Brown,88,2
+3020,Plate 2x4,70,Reddish Brown,88,7
+3005,Brick 1x1,71,Light Bluish Gray,86,23
+3004,Brick 1x2,71,Light Bluish Gray,86,3
+3622,Brick 1x3,71,Light Bluish Gray,86,1
+3024,Plate 1x1,71,Light Bluish Gray,86,308
+3023,Plate 1x2,71,Light Bluish Gray,86,78
+3623,Plate 1x3,71,Light Bluish Gray,86,17
+3710,Plate 1x4,71,Light Bluish Gray,86,6
+3666,Plate 1x6,71,Light Bluish Gray,86,1
+3022,Plate 2x2,71,Light Bluish Gray,86,1
+3021,Plate 2x3,71,Light Bluish Gray,86,1
+3020,Plate 2x4,71,Light Bluish Gray,86,2
+3005,Brick 1x1,72,Dark Bluish Gray,85,2
+3024,Plate 1x1,72,Dark Bluish Gray,85,44
+3023,Plate 1x2,72,Dark Bluish Gray,85,11
+3623,Plate 1x3,72,Dark Bluish Gray,85,2
+3005,Brick 1x1,84,Medium Nougat,150,4
+3024,Plate 1x1,84,Medium Nougat,150,124
+3023,Plate 1x2,84,Medium Nougat,150,17
+3623,Plate 1x3,84,Medium Nougat,150,3
+3022,Plate 2x2,84,Medium Nougat,150,1
+3021,Plate 2x3,84,Medium Nougat,150,1
+3005,Brick 1x1,308,Dark Brown,120,20
+3004,Brick 1x2,308,Dark Brown,120,1
+3622,Brick 1x3,308,Dark Brown,120,2
+3024,Plate 1x1,308,Dark Brown,120,122
+3023,Plate 1x2,308,Dark Brown,120,37
+3623,Plate 1x3,308,Dark Brown,120,3
+3710,Plate 1x4,308,Dark Brown,120,2
+3022,Plate 2x2,308,Dark Brown,120,2
+3021,Plate 2x3,308,Dark Brown,120,1
+3020,Plate 2x4,308,Dark Brown,120,5
+3005,Brick 1x1,484,Dark Orange,68,110
+3004,Brick 1x2,484,Dark Orange,68,69
+3622,Brick 1x3,484,Dark Orange,68,63
+3010,Brick 1x4,484,Dark Orange,68,48
+3009,Brick 1x6,484,Dark Orange,68,23
+3008,Brick 1x8,484,Dark Orange,68,69
+3003,Brick 2x2,484,Dark Orange,68,6
+3002,Brick 2x3,484,Dark Orange,68,24
+3001,Brick 2x4,484,Dark Orange,68,47
+2456,Brick 2x6,484,Dark Orange,68,40
+3007,Brick 2x8,484,Dark Orange,68,55
+3024,Plate 1x1,484,Dark Orange,68,451
+3023,Plate 1x2,484,Dark Orange,68,165
+3623,Plate 1x3,484,Dark Orange,68,58
+3710,Plate 1x4,484,Dark Orange,68,37
+3666,Plate 1x6,484,Dark Orange,68,38
+3460,Plate 1x8,484,Dark Orange,68,18
+3022,Plate 2x2,484,Dark Orange,68,15
+3021,Plate 2x3,484,Dark Orange,68,6
+3020,Plate 2x4,484,Dark Orange,68,12
+3795,Plate 2x6,484,Dark Orange,68,5
+3034,Plate 2x8,484,Dark Orange,68,10
+3032,Plate 4x6,484,Dark Orange,68,3
+3035,Plate 4x8,484,Dark Orange,68,3
+3958,Plate 6x6,484,Dark Orange,68,5
+3036,Plate 6x8,484,Dark Orange,68,9
+41539,Plate 8x8,484,Dark Orange,68,3

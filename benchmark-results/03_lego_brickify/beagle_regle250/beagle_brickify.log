@@ -1,0 +1,55 @@
+20:06:45 loaded 190057 verts, 380110 faces, extents mm-free [0.993 1.722 1.958]
+20:06:47 components after seam merge: 1 sizes [380110]
+20:06:47 scaled to voxel units: extents [18.  78.1 35.5] (studs, plates, studs)
+20:06:48 voxelized: 16170 filled cells in 0.4s, matrix (19, 79, 37)
+20:06:48 palette colours used: {'Dark Orange': 1642, 'Medium Nougat': 1313, 'White': 1312, 'Reddish Brown': 345, 'Dark Brown': 318, 'Black': 75}
+20:06:48 grid (19, 79, 37) (studs x plates x studs), 16170 cells
+20:06:48 brick phase 1: 4261 cells brick-able of 16170
+20:06:48 pack 0: 3215 parts, 4139 stud connections, 140 floating, 0 new bridges, 0 kept
+20:06:48 brick phase 1: 4245 cells brick-able of 16170
+20:06:49 pack 1: 3188 parts, 4255 stud connections, 3 floating, 131 new bridges, 131 kept
+20:06:49 brick phase 1: 4245 cells brick-able of 16170
+20:06:49 pack 2: 3189 parts, 4259 stud connections, 0 floating, 3 new bridges, 131 kept
+20:06:49 best packing: 3189 parts, 0 floating
+20:06:49 {
+ "name": "beagle",
+ "height_mm": 250.0,
+ "grid_studs": [
+  19,
+  37
+ ],
+ "grid_plates": 79,
+ "size_mm": [
+  152,
+  253,
+  296
+ ],
+ "cells": 16170,
+ "parts": 3189,
+ "part_colour_lines": 77,
+ "steps": 443,
+ "sections": 7,
+ "stud_connections": 4259,
+ "floating_after_repair": 0,
+ "colours": {
+  "Dark Orange": 1396,
+  "Medium Nougat": 714,
+  "White": 613,
+  "Reddish Brown": 226,
+  "Dark Brown": 194,
+  "Black": 46
+ },
+ "bricks": 814,
+ "plates": 2375,
+ "centre_of_mass": {
+  "x_studs": 9.498268398268399,
+  "z_studs": 18.507792207792207,
+  "y_plates": 39.073160173160176,
+  "inside_footprint": true,
+  "margin_studs": 7.630570675916474,
+  "base_cells": 175
+ },
+ "bridges": 134,
+ "eye_level_plate": -1,
+ "seconds": 3.9
+}

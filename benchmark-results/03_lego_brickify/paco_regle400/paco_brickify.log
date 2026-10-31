@@ -1,0 +1,53 @@
+20:06:45 loaded 115868 verts, 231740 faces, extents mm-free [1.332 1.957 1.333]
+20:06:46 components after seam merge: 1 sizes [231740]
+20:06:46 scaled to voxel units: extents [ 34.  125.   34.1] (studs, plates, studs)
+20:06:47 voxelized: 15501 filled cells in 1.3s, matrix (35, 126, 35)
+20:06:48 palette colours used: {'Yellow': 2909, 'Red': 1943, 'Black': 1708, 'White': 116}
+20:06:48 grid (35, 126, 35) (studs x plates x studs), 15501 cells
+20:06:48 brick phase 1: 4307 cells brick-able of 15501
+20:06:48 pack 0: 2976 parts, 3602 stud connections, 352 floating, 0 new bridges, 0 kept
+20:06:48 brick phase 1: 4296 cells brick-able of 15501
+20:06:49 pack 1: 2937 parts, 3729 stud connections, 72 floating, 342 new bridges, 342 kept
+20:06:49 brick phase 1: 4283 cells brick-able of 15501
+20:06:49 pack 2: 2920 parts, 3792 stud connections, 0 floating, 71 new bridges, 388 kept
+20:06:49 best packing: 2920 parts, 0 floating
+20:06:49 {
+ "name": "paco",
+ "height_mm": 400.0,
+ "grid_studs": [
+  35,
+  35
+ ],
+ "grid_plates": 126,
+ "size_mm": [
+  280,
+  403,
+  280
+ ],
+ "cells": 15501,
+ "parts": 2920,
+ "part_colour_lines": 61,
+ "steps": 438,
+ "sections": 11,
+ "stud_connections": 3792,
+ "floating_after_repair": 0,
+ "colours": {
+  "Yellow": 1461,
+  "Black": 824,
+  "Red": 558,
+  "White": 77
+ },
+ "bricks": 946,
+ "plates": 1974,
+ "centre_of_mass": {
+  "x_studs": 16.760047738855558,
+  "z_studs": 14.955777046642153,
+  "y_plates": 61.27924004902909,
+  "inside_footprint": true,
+  "margin_studs": 5.455777046642153,
+  "base_cells": 163
+ },
+ "bridges": 413,
+ "eye_level_plate": -1,
+ "seconds": 4.0
+}

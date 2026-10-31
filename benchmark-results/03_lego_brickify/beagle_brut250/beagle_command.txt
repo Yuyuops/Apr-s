@@ -1,0 +1,1 @@
+brickify --height-mm 250 --colour-mode palette --palette-passes 2 --interior dominant 
