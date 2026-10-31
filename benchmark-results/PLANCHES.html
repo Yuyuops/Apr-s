@@ -26,10 +26,23 @@
   <h1>Benchmark LEGO : Paco et Beagle</h1>
   <p class="mute">31 octobre 2026. Rendus LEGO calculés avec les vraies pièces de la bibliothèque LDraw officielle, sans retouche ni IA. Aucun service payant utilisé.</p>
   <nav>
-    <a href="#lego-paco">LEGO Paco</a><a href="#lego-beagle">LEGO Beagle</a>
+    <a href="#demo">Démonstrateur tête</a><a href="#lego-paco">LEGO Paco</a><a href="#lego-beagle">LEGO Beagle</a>
     <a href="#glb-paco">3D Paco</a><a href="#glb-beagle">3D Beagle</a><a href="#autotile">AutoTile</a>
   </nav>
 
+  <h2 id="demo">Nouveau : démonstrateur tête et oreilles de Paco, 400 mm</h2>
+  <p>Comparaison du brickify actuel et de deux variantes du prototype, sur la même grille. <strong>Prototype C</strong> : cellules gardées seulement si le modèle 3D les remplit à 50 %, plaques croisées et réparation des pièces flottantes. <strong>Prototype B</strong> : C avec des pentes.</p>
+  <ul>
+    <li>IoU de volume avec le modèle 3D : 0,73 (brickify) contre 0,86 (B) ; silhouettes de face 0,92 contre 0,96.</li>
+    <li>Sous-ensembles qui se décrochent avec moins de 0,5 N au bout : 156 contre 25 à 31. Îlots : 3 contre 0.</li>
+    <li>Limites : 20 % de pièces en plus, le bout des oreilles reste fragile (0,04 N) et le rendu reste en escalier.</li>
+  </ul>
+  <figure><img src="05_demonstrateur_tete_paco/paco_tete_brickify_vs_prototype.png" alt="Tête de Paco : référence, brickify actuel, prototype C et prototype B sous cinq angles">
+    <figcaption>Les oreilles et le museau s'affinent avec le prototype ; les pentes ajoutent peu une fois le volume corrigé.</figcaption></figure>
+  <figure><img src="05_demonstrateur_tete_paco/paco_tete_gros_plan.png" alt="Gros plan trois quarts et profil : brickify actuel et prototype B">
+    <figcaption>Gros plan : brickify actuel en haut, prototype B en bas.</figcaption></figure>
+
+  <h2>Benchmark initial</h2>
   <p><strong>À valider par vous :</strong> les silhouettes sont-elles assez proches des références ?</p>
   <ul>
     <li><strong>Brut 250 mm</strong> : réglages de votre README. L'image sort en miroir (défaut de brickify).</li>
