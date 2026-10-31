@@ -36,6 +36,7 @@
   "parts_with_one_joint": 442
  },
  "disconnected_parts": 0,
+ "disconnected_examples": [],
  "connected_components": 13,
  "islands_not_attached_to_main_body": [
   {
@@ -377,6 +378,445 @@
     "bbox_studs_z": [
      0,
      2
+    ]
+   }
+  ]
+ },
+ "clutch_stability": {
+  "model": "clutch 1.0 N per stud (assumed), 0.10 g per stud x plate cell; gravity, then a horizontal force at the far end of each sub-assembly",
+  "cases": 1965,
+  "gravity_below_1": 0,
+  "gravity_below_2": 0,
+  "min_gravity_safety_factor": 31.43,
+  "subassemblies_over_1g": 488,
+  "tip_force_below_0_5N": 137,
+  "tip_force_below_2N": 307,
+  "min_tip_force_N": 0.06,
+  "weakest_by_tip_force": [
+   {
+    "kind": "hanging",
+    "layer": 34,
+    "parts": 10,
+    "mass_g": 1.2,
+    "studs": 1,
+    "safety_factor": 84.95,
+    "tip_force_N": 0.06,
+    "colours": {
+     "Reddish_Brown": 4,
+     "White": 2
+    },
+    "bbox_studs_x": [
+     15,
+     16
+    ],
+    "bbox_studs_z": [
+     10,
+     11
+    ],
+    "layers": [
+     22,
+     34
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 30,
+    "parts": 4,
+    "mass_g": 1.0,
+    "studs": 1,
+    "safety_factor": 1.7215594905850518e+16,
+    "tip_force_N": 0.07,
+    "colours": {
+     "Reddish_Brown": 4
+    },
+    "bbox_studs_x": [
+     3,
+     4
+    ],
+    "bbox_studs_z": [
+     8,
+     9
+    ],
+    "layers": [
+     30,
+     40
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 31,
+    "parts": 6,
+    "mass_g": 1.0,
+    "studs": 1,
+    "safety_factor": 101.94,
+    "tip_force_N": 0.07,
+    "colours": {
+     "Medium_Nougat": 5,
+     "Dark_Orange": 1
+    },
+    "bbox_studs_x": [
+     3,
+     4
+    ],
+    "bbox_studs_z": [
+     10,
+     11
+    ],
+    "layers": [
+     21,
+     31
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 52,
+    "parts": 7,
+    "mass_g": 1.7,
+    "studs": 1,
+    "safety_factor": 33.98,
+    "tip_force_N": 0.07,
+    "colours": {
+     "White": 5,
+     "Medium_Nougat": 2
+    },
+    "bbox_studs_x": [
+     11,
+     14
+    ],
+    "bbox_studs_z": [
+     28,
+     29
+    ],
+    "layers": [
+     41,
+     52
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 66,
+    "parts": 6,
+    "mass_g": 1.0,
+    "studs": 1,
+    "safety_factor": 101.94,
+    "tip_force_N": 0.07,
+    "colours": {
+     "Dark_Brown": 3,
+     "Reddish_Brown": 3
+    },
+    "bbox_studs_x": [
+     3,
+     4
+    ],
+    "bbox_studs_z": [
+     28,
+     29
+    ],
+    "layers": [
+     56,
+     66
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 46,
+    "parts": 41,
+    "mass_g": 9.3,
+    "studs": 3,
+    "safety_factor": 32.88,
+    "tip_force_N": 0.11,
+    "colours": {
+     "White": 31,
+     "Medium_Nougat": 10
+    },
+    "bbox_studs_x": [
+     6,
+     13
+    ],
+    "bbox_studs_z": [
+     28,
+     29
+    ],
+    "layers": [
+     26,
+     46
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 62,
+    "parts": 20,
+    "mass_g": 2.5,
+    "studs": 2,
+    "safety_factor": null,
+    "tip_force_N": 0.12,
+    "colours": {
+     "Dark_Brown": 7,
+     "Reddish_Brown": 7
+    },
+    "bbox_studs_x": [
+     3,
+     5
+    ],
+    "bbox_studs_z": [
+     22,
+     23
+    ],
+    "layers": [
+     62,
+     76
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 34,
+    "parts": 10,
+    "mass_g": 1.7,
+    "studs": 2,
+    "safety_factor": 119.93,
+    "tip_force_N": 0.15,
+    "colours": {
+     "Dark_Orange": 4,
+     "White": 4
+    },
+    "bbox_studs_x": [
+     13,
+     15
+    ],
+    "bbox_studs_z": [
+     26,
+     27
+    ],
+    "layers": [
+     24,
+     34
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 65,
+    "parts": 15,
+    "mass_g": 1.8,
+    "studs": 2,
+    "safety_factor": 113.26,
+    "tip_force_N": 0.17,
+    "colours": {
+     "Dark_Brown": 8,
+     "Reddish_Brown": 3
+    },
+    "bbox_studs_x": [
+     15,
+     17
+    ],
+    "bbox_studs_z": [
+     28,
+     29
+    ],
+    "layers": [
+     56,
+     65
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 66,
+    "parts": 11,
+    "mass_g": 2.1,
+    "studs": 2,
+    "safety_factor": 87.37,
+    "tip_force_N": 0.19,
+    "colours": {
+     "Dark_Brown": 8,
+     "Dark_Orange": 2
+    },
+    "bbox_studs_x": [
+     2,
+     4
+    ],
+    "bbox_studs_z": [
+     28,
+     30
+    ],
+    "layers": [
+     66,
+     74
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 69,
+    "parts": 9,
+    "mass_g": 1.3,
+    "studs": 2,
+    "safety_factor": 1.3242765312192704e+16,
+    "tip_force_N": 0.21,
+    "colours": {
+     "Reddish_Brown": 5,
+     "Medium_Nougat": 2
+    },
+    "bbox_studs_x": [
+     3,
+     5
+    ],
+    "bbox_studs_z": [
+     22,
+     23
+    ],
+    "layers": [
+     69,
+     76
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 35,
+    "parts": 5,
+    "mass_g": 1.1,
+    "studs": 2,
+    "safety_factor": 6.260216329400188e+16,
+    "tip_force_N": 0.25,
+    "colours": {
+     "Dark_Orange": 3,
+     "Medium_Nougat": 2
+    },
+    "bbox_studs_x": [
+     13,
+     15
+    ],
+    "bbox_studs_z": [
+     4,
+     5
+    ],
+    "layers": [
+     37,
+     43
+    ]
+   }
+  ],
+  "worst_gravity": [
+   {
+    "kind": "resting",
+    "layer": 38,
+    "parts": 156,
+    "mass_g": 41.6,
+    "studs": 13,
+    "safety_factor": 31.43,
+    "tip_force_N": 1.05,
+    "colours": {
+     "Dark_Orange": 57,
+     "White": 33
+    },
+    "bbox_studs_x": [
+     5,
+     13
+    ],
+    "bbox_studs_z": [
+     0,
+     5
+    ],
+    "layers": [
+     38,
+     62
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 46,
+    "parts": 41,
+    "mass_g": 9.3,
+    "studs": 3,
+    "safety_factor": 32.88,
+    "tip_force_N": 0.11,
+    "colours": {
+     "White": 31,
+     "Medium_Nougat": 10
+    },
+    "bbox_studs_x": [
+     6,
+     13
+    ],
+    "bbox_studs_z": [
+     28,
+     29
+    ],
+    "layers": [
+     26,
+     46
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 46,
+    "parts": 5,
+    "mass_g": 1.1,
+    "studs": 1,
+    "safety_factor": 33.98,
+    "tip_force_N": 0.15,
+    "colours": {
+     "White": 4,
+     "Medium_Nougat": 1
+    },
+    "bbox_studs_x": [
+     11,
+     14
+    ],
+    "bbox_studs_z": [
+     28,
+     29
+    ],
+    "layers": [
+     41,
+     46
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 47,
+    "parts": 5,
+    "mass_g": 1.1,
+    "studs": 1,
+    "safety_factor": 33.98,
+    "tip_force_N": 0.15,
+    "colours": {
+     "White": 4,
+     "Medium_Nougat": 1
+    },
+    "bbox_studs_x": [
+     11,
+     14
+    ],
+    "bbox_studs_z": [
+     28,
+     29
+    ],
+    "layers": [
+     41,
+     46
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 48,
+    "parts": 5,
+    "mass_g": 1.1,
+    "studs": 1,
+    "safety_factor": 33.98,
+    "tip_force_N": 0.15,
+    "colours": {
+     "White": 4,
+     "Medium_Nougat": 1
+    },
+    "bbox_studs_x": [
+     11,
+     14
+    ],
+    "bbox_studs_z": [
+     28,
+     29
+    ],
+    "layers": [
+     41,
+     46
     ]
    }
   ]

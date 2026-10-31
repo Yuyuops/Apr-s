@@ -1,0 +1,53 @@
+{
+ "name": "paco_tete_B_seuil_forme",
+ "parts": 1760,
+ "kinds": {
+  "shaped": 66,
+  "plate": 1667,
+  "tile": 27
+ },
+ "part_numbers": {
+  "3024": 824,
+  "3023": 466,
+  "3623": 115,
+  "3710": 64,
+  "54200": 52,
+  "3020": 39,
+  "3021": 33,
+  "3022": 32,
+  "3031": 30,
+  "3032": 26,
+  "3070b": 19,
+  "3795": 16,
+  "85984": 14,
+  "3666": 12,
+  "3069b": 5,
+  "3035": 4,
+  "3958": 3,
+  "3034": 3,
+  "63864": 1,
+  "2431": 1,
+  "3068b": 1
+ },
+ "settings": {
+  "npz": "proto/out/paco_head400.npz",
+  "out": "proto/out/B_seuil_forme",
+  "name": "paco_tete_B_seuil_forme",
+  "occupancy": 0.5,
+  "no_shapes": false,
+  "no_tiles": false,
+  "min_gain": 0.12
+ },
+ "reconnect_cells": 0,
+ "cells": 4799,
+ "cells_brickify": 6557,
+ "recoloured_new_surface": 1412,
+ "shape_candidates": 131,
+ "shaped_85984": 17,
+ "shaped_54200": 66,
+ "floating_before_repair": 21,
+ "bridge_recoloured_cells": 24,
+ "bridges": 28,
+ "shaped_reverted": 17,
+ "floating_after_repair": 0
+}

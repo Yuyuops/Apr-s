@@ -43,9 +43,13 @@ def main():
     for i, p in enumerate(raw):
         k = p["p"].lower()
         if k not in bbox:
-            T, _ = lib.geom(p["p"]); V = T.reshape(-1, 3)
-            body = V[V[:, 1] >= -0.01]  # drop studs (above y=0 in part coords)
-            bbox[k] = (body.min(0), body.max(0))
+            try:   # body box without studs, measured on the real geometry (works whatever the part origin)
+                import partlib; os.environ.setdefault("LDRAW", a.ldraw)
+                sh = partlib.part(k.replace(".dat", "")); bbox[k] = (np.array(sh["lo"]), np.array(sh["hi"]))
+            except Exception:
+                T, _ = lib.geom(p["p"]); V = T.reshape(-1, 3)
+                body = V[V[:, 1] >= -0.01]  # drop studs (above y=0 in part coords)
+                bbox[k] = (body.min(0), body.max(0))
         lo, hi = bbox[k]
         M = np.array(p["M"]).reshape(3, 3); o = np.array(p["o"])
         corners = np.array([[x, y, z] for x in (lo[0], hi[0]) for y in (lo[1], hi[1]) for z in (lo[2], hi[2])]) @ M.T + o
@@ -64,14 +68,37 @@ def main():
         sl = owner[p["x0"]:p["x1"], p["y0"]:p["y1"], p["z0"]:p["z1"]]
         for q in np.unique(sl[sl >= 0]): overlaps[tuple(sorted((int(q), p["i"])))] += int((sl == q).sum())
         sl[...] = p["i"]
-    # ---- stud connections (top face of a part against bottom face of the part above, per stud cell)
+    # ---- stud connections: a joint needs a real stud on the lower part under a real receptor of the upper part.
+    #      Stud and receptor cells come from the LDraw geometry (tools/partlib.py): a tile has no stud, a 45-degree
+    #      slope has studs only on its high row, an inverted slope receives studs only under its vertical part.
+    import partlib
+    os.environ.setdefault("LDRAW", a.ldraw)
+    shape_cache = {}
+    def cells_world(p, which):
+        k = p["part"]
+        if k not in shape_cache:
+            try: shape_cache[k] = partlib.part(k)
+            except Exception: shape_cache[k] = None
+        sh = shape_cache[k]
+        full = {(x, z) for x in range(p["x0"], p["x1"]) for z in range(p["z0"], p["z1"])}
+        if sh is None: return full
+        M = np.array(raw[p["i"]]["M"]).reshape(3, 3); o = np.array(raw[p["i"]]["o"])
+        out = set()
+        for (i, j) in sh[which]:
+            c = M @ np.array([sh["lo"][0] + (i + 0.5) * 20, 0, sh["lo"][2] + (j + 0.5) * 20]) + o
+            out.add((int(np.floor(c[0] / 20)) - xs0, int(np.floor(c[2] / 20)) - zs0))
+        return out & full
+    for p in P:
+        p["studs_xz"] = cells_world(p, "studs"); p["recv_xz"] = cells_world(p, "recv")
+        sh = shape_cache.get(p["part"]); p["fill"] = sh["fill"] if sh else 1.0
     G = nx.Graph(); G.add_nodes_from(p["i"] for p in P)
     for p in P:
         if p["y1"] >= NY: continue
         top = owner[p["x0"]:p["x1"], p["y1"], p["z0"]:p["z1"]]
-        for q, n in Counter(top[top >= 0].tolist()).items():
+        for q in set(top[top >= 0].tolist()):
             if P[q]["y0"] == p["y1"]:
-                G.add_edge(p["i"], q, studs=n)
+                cells = sorted(p["studs_xz"] & P[q]["recv_xz"])
+                if cells: G.add_edge(p["i"], q, studs=len(cells), cells=cells, plane=p["y1"])
     ground = [p["i"] for p in P if p["y0"] == 0]
     comp_ground = set()
     for g in ground:
@@ -134,6 +161,85 @@ def main():
                               load_per_stud=round(cv / max(studs, 1), 1), lever_studs=round(lever, 1),
                               torque_index=round(cv * lever / max(studs, 1), 1), com_studs=[round(float(c), 1) for c in com],
                               where=None))
+    # ---- numerical stability (indicative): every sub-assembly that only holds through stud joints at one level.
+    #      Mass = part box volume x solid fraction x 0.10 g per stud x plate cell. A stud joint resists pull-out with
+    #      F_CLUTCH newtons per stud (assumed, conservative; measured values on new bricks are typically 1-4 N).
+    #      Resting sub-assembly: stable if its centre of mass is inside the stud polygon, otherwise
+    #      SF = F*sum(d_i + r) / (W*d_com) about the critical polygon edge. Hanging sub-assembly (held from above):
+    #      SF = F*n / W, reduced the same way when the load is off-centre. SF < 1: predicted to come apart under its
+    #      own weight; SF < 2: no margin for handling. Not a physical test.
+    F_CLUTCH, G_ACC, R_STUD = 1.0, 9.81, 0.3
+    mass_g = np.array([p["vol"] * p["fill"] * 0.10 for p in P])
+    cxz = np.array([[(p["x0"] + p["x1"]) / 2, (p["z0"] + p["z1"]) / 2] for p in P])
+    def sf_for(comp, links, hanging):
+        """returns (gravity safety factor, minimal horizontal tip force in N that peels the joint, mass g, studs)"""
+        m = mass_g[comp].sum(); W = m / 1000 * G_ACC
+        com = (cxz[comp] * mass_g[comp, None]).sum(0) / max(m, 1e-9)
+        pts = np.array([[c[0] + 0.5, c[1] + 0.5] for _, _, d in links for c in d["cells"]])
+        plane = np.mean([d["plane"] for _, _, d in links])
+        n = len(pts)
+        if n == 0: return 0.0, 0.0, m, 0
+        # candidate tipping axes: convex hull edges of the stud points, or 8 directions for degenerate sets
+        axes = []
+        try:
+            if n >= 3:
+                for e in ConvexHull(pts).equations: axes.append((e[:2], e[2]))
+        except Exception:
+            pass
+        if not axes:
+            for t in np.linspace(0, 2 * np.pi, 8, endpoint=False):
+                nv = np.array([np.cos(t), np.sin(t)]); axes.append((nv, -max(pts @ nv)))
+        ys = [P[i]["y1"] for i in comp] if not hanging else [P[i]["y0"] for i in comp]
+        h_mm = (max(ys) - plane) * PLATE_MM if not hanging else (plane - min(ys)) * PLATE_MM
+        h_mm = max(h_mm, PLATE_MM)
+        g_sf, f_tip = np.inf, np.inf
+        for nv, off in axes:
+            lever_mm = ((-(pts @ nv + off)).clip(0) + R_STUD) * STUD_MM     # each stud's distance to the axis, + stud radius
+            m_res = F_CLUTCH * lever_mm.sum()                                 # N.mm resisting peel about this axis
+            dcom_mm = (nv @ com + off) * STUD_MM                              # >0: COM beyond the axis (overturning)
+            m_grav = W * dcom_mm                                              # N.mm (negative = stabilising)
+            if dcom_mm > 0: g_sf = min(g_sf, m_res / m_grav)
+            # horizontal force at the far end pushing outward across this axis, at height h above the joint plane
+            f_tip = min(f_tip, max(m_res - m_grav, 0.0) / h_mm)
+        if hanging: g_sf = min(g_sf, F_CLUTCH * n / max(W, 1e-9))
+        return float(g_sf), float(f_tip), float(m), n
+    clutch = []
+    for b in range(1, NY):
+        above = [p["i"] for p in P if p["y0"] >= b]
+        below = [p["i"] for p in P if p["y1"] <= b]
+        for side, nodes in (("resting", above), ("hanging", below)):
+            if not nodes: continue
+            H = G.subgraph(nodes)
+            for comp in nx.connected_components(H):
+                comp = sorted(comp); cs = set(comp)
+                if side == "hanging" and any(P[i]["y0"] == 0 for i in comp): continue
+                links = [(u, v, d) for u in comp for v, d in G[u].items() if v not in cs]
+                if not links: continue
+                sf, ftip, m, n = sf_for(np.array(comp), links, side == "hanging")
+                cols_c = Counter(cols[P[i]["c"]]["name"] for i in comp).most_common(2)
+                clutch.append(dict(kind=side, layer=b, parts=len(comp), mass_g=round(m, 1), studs=n,
+                                   safety_factor=(round(sf, 2) if np.isfinite(sf) else None), tip_force_N=round(ftip, 2), colours=dict(cols_c),
+                                   bbox_studs_x=[min(P[i]["x0"] for i in comp), max(P[i]["x1"] for i in comp)],
+                                   bbox_studs_z=[min(P[i]["z0"] for i in comp), max(P[i]["z1"] for i in comp)],
+                                   layers=[min(P[i]["y0"] for i in comp), max(P[i]["y1"] for i in comp)]))
+    finite = [c for c in clutch if c["safety_factor"] is not None]
+    # distinct weakest sub-assemblies by tip force (keep the worst cut of each region)
+    tipw = []
+    for c in sorted(clutch, key=lambda c: c["tip_force_N"]):
+        if c["mass_g"] < 1.0: continue
+        if all(abs(c["bbox_studs_x"][0] - t["bbox_studs_x"][0]) + abs(c["bbox_studs_z"][0] - t["bbox_studs_z"][0]) > 4 or abs(c["layers"][0] - t["layers"][0]) > 6 for t in tipw):
+            tipw.append(c)
+    big = [c for c in clutch if c["mass_g"] >= 1.0]
+    clutch_summary = dict(model=f"clutch {F_CLUTCH} N per stud (assumed), 0.10 g per stud x plate cell; gravity, then a horizontal force at the far end of each sub-assembly",
+                          cases=len(clutch), gravity_below_1=sum(1 for c in finite if c["safety_factor"] < 1),
+                          gravity_below_2=sum(1 for c in finite if c["safety_factor"] < 2),
+                          min_gravity_safety_factor=min([c["safety_factor"] for c in finite], default=None),
+                          subassemblies_over_1g=len(big),
+                          tip_force_below_0_5N=sum(1 for c in big if c["tip_force_N"] < 0.5),
+                          tip_force_below_2N=sum(1 for c in big if c["tip_force_N"] < 2.0),
+                          min_tip_force_N=min([c["tip_force_N"] for c in big], default=None),
+                          weakest_by_tip_force=tipw[:12],
+                          worst_gravity=sorted(finite, key=lambda c: c["safety_factor"])[:5])
     # label where each sub-assembly sits (heuristic, for reading only)
     fz = 1 if a.front == "+z" else -1
     def where(h):
@@ -230,10 +336,12 @@ def main():
         connections=dict(stud_joints=G.number_of_edges(), studs=sum(d["studs"] for _, _, d in G.edges(data=True)),
                          single_stud_joints=sum(1 for _, _, d in G.edges(data=True) if d["studs"] == 1),
                          parts_with_one_joint=sum(1 for n in G if G.degree(n) == 1)),
-        disconnected_parts=len(floating), connected_components=nx.number_connected_components(G),
+        disconnected_parts=len(floating), disconnected_examples=[dict(part=P[i]['part'], colour=P[i]['c'], cell=[P[i]['x0'], P[i]['y0'], P[i]['z0']], size=[P[i]['x1']-P[i]['x0'], P[i]['y1']-P[i]['y0'], P[i]['z1']-P[i]['z0']]) for i in floating[:40]],
+        connected_components=nx.number_connected_components(G),
         islands_not_attached_to_main_body=[dict(parts=len(cc), cells=sum((P[i]["x1"]-P[i]["x0"])*(P[i]["y1"]-P[i]["y0"])*(P[i]["z1"]-P[i]["z0"]) for i in cc), rests_on_ground=any(P[i]["y0"] == 0 for i in cc), bbox_studs_xyz_min=[min(P[i]["x0"] for i in cc), min(P[i]["z0"] for i in cc), min(P[i]["y0"] for i in cc)]) for cc in sorted(nx.connected_components(G), key=len, reverse=True)[1:]],
         floating_at_placement=dict(count=len(floating_at_placement), free_space_below=len(reach_below), note="parts that, in the LDraw step order, have nothing under them yet (must be sub-assembled or added later)"),
         single_points_of_failure=dict(count=len(bridges), largest=bridges[:10]),
+        clutch_stability=clutch_summary,
         weakest_by_torque=weak, appendages_weakest=appendages, horizontal_cantilevers=cantilevers[:10], thinnest_supports=thin,
         feet=dict(count=nfeet, cells=sorted(feet, reverse=True)),
         centre_of_mass=dict(x_studs=round(com[0], 2), z_studs=round(com[2], 2), height_mm=round(com_h_mm, 1), inside_support_polygon=inside,

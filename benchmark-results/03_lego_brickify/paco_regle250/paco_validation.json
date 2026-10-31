@@ -34,6 +34,7 @@
   "parts_with_one_joint": 171
  },
  "disconnected_parts": 0,
+ "disconnected_examples": [],
  "connected_components": 6,
  "islands_not_attached_to_main_body": [
   {
@@ -311,6 +312,441 @@
     "bbox_studs_z": [
      16,
      22
+    ]
+   }
+  ]
+ },
+ "clutch_stability": {
+  "model": "clutch 1.0 N per stud (assumed), 0.10 g per stud x plate cell; gravity, then a horizontal force at the far end of each sub-assembly",
+  "cases": 887,
+  "gravity_below_1": 6,
+  "gravity_below_2": 6,
+  "min_gravity_safety_factor": 0.7,
+  "subassemblies_over_1g": 281,
+  "tip_force_below_0_5N": 48,
+  "tip_force_below_2N": 119,
+  "min_tip_force_N": 0.0,
+  "weakest_by_tip_force": [
+   {
+    "kind": "hanging",
+    "layer": 63,
+    "parts": 131,
+    "mass_g": 37.8,
+    "studs": 2,
+    "safety_factor": 0.7,
+    "tip_force_N": 0.0,
+    "colours": {
+     "Black": 107,
+     "Yellow": 23
+    },
+    "bbox_studs_x": [
+     2,
+     8
+    ],
+    "bbox_studs_z": [
+     0,
+     9
+    ],
+    "layers": [
+     41,
+     63
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 68,
+    "parts": 7,
+    "mass_g": 1.7,
+    "studs": 1,
+    "safety_factor": 59.96,
+    "tip_force_N": 0.04,
+    "colours": {
+     "Black": 7
+    },
+    "bbox_studs_x": [
+     8,
+     9
+    ],
+    "bbox_studs_z": [
+     7,
+     8
+    ],
+    "layers": [
+     51,
+     68
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 47,
+    "parts": 5,
+    "mass_g": 1.3,
+    "studs": 1,
+    "safety_factor": 2.6485530624385412e+16,
+    "tip_force_N": 0.06,
+    "colours": {
+     "Black": 5
+    },
+    "bbox_studs_x": [
+     6,
+     7
+    ],
+    "bbox_studs_z": [
+     4,
+     5
+    ],
+    "layers": [
+     47,
+     60
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 55,
+    "parts": 6,
+    "mass_g": 1.2,
+    "studs": 1,
+    "safety_factor": 1.4346329088208764e+16,
+    "tip_force_N": 0.06,
+    "colours": {
+     "Yellow": 3,
+     "Black": 2
+    },
+    "bbox_studs_x": [
+     12,
+     13
+    ],
+    "bbox_studs_z": [
+     8,
+     9
+    ],
+    "layers": [
+     55,
+     67
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 78,
+    "parts": 5,
+    "mass_g": 1.1,
+    "studs": 1,
+    "safety_factor": 92.67,
+    "tip_force_N": 0.07,
+    "colours": {
+     "Black": 5
+    },
+    "bbox_studs_x": [
+     4,
+     5
+    ],
+    "bbox_studs_z": [
+     5,
+     6
+    ],
+    "layers": [
+     67,
+     78
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 63,
+    "parts": 162,
+    "mass_g": 38.7,
+    "studs": 4,
+    "safety_factor": 2.89,
+    "tip_force_N": 0.33,
+    "colours": {
+     "Black": 124,
+     "Yellow": 38
+    },
+    "bbox_studs_x": [
+     2,
+     9
+    ],
+    "bbox_studs_z": [
+     0,
+     9
+    ],
+    "layers": [
+     63,
+     79
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 25,
+    "parts": 11,
+    "mass_g": 7.2,
+    "studs": 6,
+    "safety_factor": null,
+    "tip_force_N": 0.35,
+    "colours": {
+     "Red": 10,
+     "Yellow": 1
+    },
+    "bbox_studs_x": [
+     8,
+     14
+    ],
+    "bbox_studs_z": [
+     6,
+     7
+    ],
+    "layers": [
+     27,
+     40
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 53,
+    "parts": 7,
+    "mass_g": 1.6,
+    "studs": 2,
+    "safety_factor": 127.42,
+    "tip_force_N": 0.37,
+    "colours": {
+     "Yellow": 5,
+     "Red": 2
+    },
+    "bbox_studs_x": [
+     14,
+     16
+    ],
+    "bbox_studs_z": [
+     12,
+     16
+    ],
+    "layers": [
+     48,
+     53
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 24,
+    "parts": 3,
+    "mass_g": 2.4,
+    "studs": 4,
+    "safety_factor": 169.89,
+    "tip_force_N": 0.5,
+    "colours": {
+     "Red": 3
+    },
+    "bbox_studs_x": [
+     9,
+     13
+    ],
+    "bbox_studs_z": [
+     11,
+     12
+    ],
+    "layers": [
+     18,
+     24
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 66,
+    "parts": 9,
+    "mass_g": 2.6,
+    "studs": 3,
+    "safety_factor": null,
+    "tip_force_N": 0.5,
+    "colours": {
+     "Black": 8,
+     "Yellow": 1
+    },
+    "bbox_studs_x": [
+     8,
+     10
+    ],
+    "bbox_studs_z": [
+     7,
+     10
+    ],
+    "layers": [
+     66,
+     74
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 19,
+    "parts": 2,
+    "mass_g": 1.1,
+    "studs": 3,
+    "safety_factor": null,
+    "tip_force_N": 0.56,
+    "colours": {
+     "Red": 2
+    },
+    "bbox_studs_x": [
+     15,
+     16
+    ],
+    "bbox_studs_z": [
+     8,
+     11
+    ],
+    "layers": [
+     21,
+     25
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 28,
+    "parts": 8,
+    "mass_g": 1.1,
+    "studs": 3,
+    "safety_factor": null,
+    "tip_force_N": 0.56,
+    "colours": {
+     "Red": 4,
+     "Yellow": 4
+    },
+    "bbox_studs_x": [
+     3,
+     4
+    ],
+    "bbox_studs_z": [
+     8,
+     11
+    ],
+    "layers": [
+     30,
+     34
+    ]
+   }
+  ],
+  "worst_gravity": [
+   {
+    "kind": "hanging",
+    "layer": 63,
+    "parts": 131,
+    "mass_g": 37.8,
+    "studs": 2,
+    "safety_factor": 0.7,
+    "tip_force_N": 0.0,
+    "colours": {
+     "Black": 107,
+     "Yellow": 23
+    },
+    "bbox_studs_x": [
+     2,
+     8
+    ],
+    "bbox_studs_z": [
+     0,
+     9
+    ],
+    "layers": [
+     41,
+     63
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 64,
+    "parts": 132,
+    "mass_g": 37.9,
+    "studs": 2,
+    "safety_factor": 0.7,
+    "tip_force_N": 0.0,
+    "colours": {
+     "Black": 108,
+     "Yellow": 23
+    },
+    "bbox_studs_x": [
+     2,
+     8
+    ],
+    "bbox_studs_z": [
+     0,
+     9
+    ],
+    "layers": [
+     41,
+     64
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 65,
+    "parts": 133,
+    "mass_g": 38.0,
+    "studs": 2,
+    "safety_factor": 0.7,
+    "tip_force_N": 0.0,
+    "colours": {
+     "Black": 109,
+     "Yellow": 23
+    },
+    "bbox_studs_x": [
+     2,
+     8
+    ],
+    "bbox_studs_z": [
+     0,
+     9
+    ],
+    "layers": [
+     41,
+     65
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 66,
+    "parts": 135,
+    "mass_g": 38.4,
+    "studs": 2,
+    "safety_factor": 0.7,
+    "tip_force_N": 0.0,
+    "colours": {
+     "Black": 110,
+     "Yellow": 24
+    },
+    "bbox_studs_x": [
+     2,
+     8
+    ],
+    "bbox_studs_z": [
+     0,
+     9
+    ],
+    "layers": [
+     41,
+     66
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 67,
+    "parts": 137,
+    "mass_g": 38.6,
+    "studs": 2,
+    "safety_factor": 0.7,
+    "tip_force_N": 0.0,
+    "colours": {
+     "Black": 111,
+     "Yellow": 25
+    },
+    "bbox_studs_x": [
+     2,
+     8
+    ],
+    "bbox_studs_z": [
+     0,
+     9
+    ],
+    "layers": [
+     41,
+     67
     ]
    }
   ]

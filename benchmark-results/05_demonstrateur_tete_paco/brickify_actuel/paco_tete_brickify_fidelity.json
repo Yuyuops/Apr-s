@@ -1,0 +1,10 @@
+{
+ "volume_iou": 0.7281,
+ "lego_volume_cells": 6557.0,
+ "mesh_volume_cells": 4792.0,
+ "excess_cells": 1775.3,
+ "missing_cells": 10.3,
+ "silhouette_iou_face": 0.9214,
+ "silhouette_iou_profil": 0.9338,
+ "silhouette_iou_dessus": 0.8107
+}

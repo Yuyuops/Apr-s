@@ -1,0 +1,1460 @@
+{
+ "name": "paco_tete_brickify",
+ "source_ldr": "/root/bench/proto/out/baseline/paco_tete_brickify.ldr",
+ "disclaimer": "Geometric/graph checks only. Not a mechanical test. Nothing here is 'physically validated'.",
+ "parts": 1446,
+ "part_types": 26,
+ "part_colour_lines": 45,
+ "bricks": 457,
+ "plates": 989,
+ "size_studs_xyz": [
+  27,
+  35,
+  56
+ ],
+ "size_mm": {
+  "width_x": 216.0,
+  "depth_z": 280.0,
+  "height": 179.2
+ },
+ "colours": {
+  "Yellow": 702,
+  "Black": 694,
+  "White": 39,
+  "Red": 11
+ },
+ "collisions": {
+  "pairs": 0,
+  "cells": 0
+ },
+ "connections": {
+  "stud_joints": 1779,
+  "studs": 3913,
+  "single_stud_joints": 1254,
+  "parts_with_one_joint": 203
+ },
+ "disconnected_parts": 0,
+ "disconnected_examples": [],
+ "connected_components": 4,
+ "islands_not_attached_to_main_body": [
+  {
+   "parts": 10,
+   "cells": 45,
+   "rests_on_ground": true,
+   "bbox_studs_xyz_min": [
+    12,
+    11,
+    0
+   ]
+  },
+  {
+   "parts": 6,
+   "cells": 15,
+   "rests_on_ground": true,
+   "bbox_studs_xyz_min": [
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "parts": 1,
+   "cells": 1,
+   "rests_on_ground": true,
+   "bbox_studs_xyz_min": [
+    10,
+    13,
+    0
+   ]
+  }
+ ],
+ "floating_at_placement": {
+  "count": 96,
+  "free_space_below": 96,
+  "note": "parts that, in the LDraw step order, have nothing under them yet (must be sub-assembled or added later)"
+ },
+ "single_points_of_failure": {
+  "count": 443,
+  "largest": [
+   {
+    "parts_detached": 172,
+    "cells_detached": 1144,
+    "studs": 12,
+    "colours": {
+     "Yellow": 141,
+     "Black": 26,
+     "White": 4
+    },
+    "layers": [
+     14,
+     35
+    ],
+    "bbox_studs_x": [
+     16,
+     27
+    ],
+    "bbox_studs_z": [
+     23,
+     35
+    ]
+   },
+   {
+    "parts_detached": 171,
+    "cells_detached": 1108,
+    "studs": 12,
+    "colours": {
+     "Yellow": 140,
+     "Black": 26,
+     "White": 4
+    },
+    "layers": [
+     14,
+     35
+    ],
+    "bbox_studs_x": [
+     16,
+     27
+    ],
+    "bbox_studs_z": [
+     23,
+     35
+    ]
+   },
+   {
+    "parts_detached": 5,
+    "cells_detached": 180,
+    "studs": 12,
+    "colours": {
+     "Yellow": 5
+    },
+    "layers": [
+     0,
+     15
+    ],
+    "bbox_studs_x": [
+     11,
+     17
+    ],
+    "bbox_studs_z": [
+     12,
+     14
+    ]
+   },
+   {
+    "parts_detached": 4,
+    "cells_detached": 144,
+    "studs": 12,
+    "colours": {
+     "Yellow": 4
+    },
+    "layers": [
+     0,
+     12
+    ],
+    "bbox_studs_x": [
+     11,
+     17
+    ],
+    "bbox_studs_z": [
+     12,
+     14
+    ]
+   },
+   {
+    "parts_detached": 3,
+    "cells_detached": 108,
+    "studs": 12,
+    "colours": {
+     "Yellow": 3
+    },
+    "layers": [
+     0,
+     9
+    ],
+    "bbox_studs_x": [
+     11,
+     17
+    ],
+    "bbox_studs_z": [
+     12,
+     14
+    ]
+   },
+   {
+    "parts_detached": 2,
+    "cells_detached": 72,
+    "studs": 12,
+    "colours": {
+     "Yellow": 2
+    },
+    "layers": [
+     0,
+     6
+    ],
+    "bbox_studs_x": [
+     11,
+     17
+    ],
+    "bbox_studs_z": [
+     12,
+     14
+    ]
+   },
+   {
+    "parts_detached": 11,
+    "cells_detached": 70,
+    "studs": 6,
+    "colours": {
+     "Yellow": 9,
+     "White": 1,
+     "Black": 1
+    },
+    "layers": [
+     24,
+     36
+    ],
+    "bbox_studs_x": [
+     15,
+     21
+    ],
+    "bbox_studs_z": [
+     22,
+     23
+    ]
+   },
+   {
+    "parts_detached": 10,
+    "cells_detached": 52,
+    "studs": 6,
+    "colours": {
+     "Yellow": 8,
+     "White": 1,
+     "Black": 1
+    },
+    "layers": [
+     27,
+     36
+    ],
+    "bbox_studs_x": [
+     15,
+     21
+    ],
+    "bbox_studs_z": [
+     22,
+     23
+    ]
+   },
+   {
+    "parts_detached": 1,
+    "cells_detached": 48,
+    "studs": 16,
+    "colours": {
+     "Yellow": 1
+    },
+    "layers": [
+     0,
+     3
+    ],
+    "bbox_studs_x": [
+     10,
+     18
+    ],
+    "bbox_studs_z": [
+     14,
+     16
+    ]
+   },
+   {
+    "parts_detached": 20,
+    "cells_detached": 44,
+    "studs": 4,
+    "colours": {
+     "Black": 20
+    },
+    "layers": [
+     33,
+     47
+    ],
+    "bbox_studs_x": [
+     5,
+     7
+    ],
+    "bbox_studs_z": [
+     9,
+     12
+    ]
+   }
+  ]
+ },
+ "clutch_stability": {
+  "model": "clutch 1.0 N per stud (assumed), 0.10 g per stud x plate cell; gravity, then a horizontal force at the far end of each sub-assembly",
+  "cases": 1092,
+  "gravity_below_1": 0,
+  "gravity_below_2": 0,
+  "min_gravity_safety_factor": 17.99,
+  "subassemblies_over_1g": 349,
+  "tip_force_below_0_5N": 156,
+  "tip_force_below_2N": 194,
+  "min_tip_force_N": 0.04,
+  "weakest_by_tip_force": [
+   {
+    "kind": "resting",
+    "layer": 6,
+    "parts": 7,
+    "mass_g": 2.5,
+    "studs": 1,
+    "safety_factor": 43.69,
+    "tip_force_N": 0.04,
+    "colours": {
+     "Black": 7
+    },
+    "bbox_studs_x": [
+     5,
+     6
+    ],
+    "bbox_studs_z": [
+     9,
+     11
+    ],
+    "layers": [
+     6,
+     24
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 34,
+    "parts": 9,
+    "mass_g": 3.0,
+    "studs": 1,
+    "safety_factor": 17.99,
+    "tip_force_N": 0.04,
+    "colours": {
+     "Black": 9
+    },
+    "bbox_studs_x": [
+     9,
+     10
+    ],
+    "bbox_studs_z": [
+     8,
+     11
+    ],
+    "layers": [
+     36,
+     52
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 19,
+    "parts": 7,
+    "mass_g": 1.3,
+    "studs": 1,
+    "safety_factor": 2207127552032117.0,
+    "tip_force_N": 0.06,
+    "colours": {
+     "Yellow": 5,
+     "White": 1
+    },
+    "bbox_studs_x": [
+     21,
+     22
+    ],
+    "bbox_studs_z": [
+     22,
+     23
+    ],
+    "layers": [
+     21,
+     34
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 45,
+    "parts": 6,
+    "mass_g": 1.2,
+    "studs": 1,
+    "safety_factor": 84.95,
+    "tip_force_N": 0.06,
+    "colours": {
+     "Black": 4,
+     "Yellow": 2
+    },
+    "bbox_studs_x": [
+     10,
+     11
+    ],
+    "bbox_studs_z": [
+     12,
+     13
+    ],
+    "layers": [
+     33,
+     45
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 7,
+    "parts": 5,
+    "mass_g": 1.4,
+    "studs": 1,
+    "safety_factor": 76.45,
+    "tip_force_N": 0.07,
+    "colours": {
+     "Black": 5
+    },
+    "bbox_studs_x": [
+     4,
+     5
+    ],
+    "bbox_studs_z": [
+     2,
+     4
+    ],
+    "layers": [
+     9,
+     19
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 50,
+    "parts": 10,
+    "mass_g": 2.0,
+    "studs": 1,
+    "safety_factor": 30.58,
+    "tip_force_N": 0.07,
+    "colours": {
+     "Black": 10
+    },
+    "bbox_studs_x": [
+     1,
+     3
+    ],
+    "bbox_studs_z": [
+     0,
+     1
+    ],
+    "layers": [
+     40,
+     50
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 13,
+    "parts": 4,
+    "mass_g": 1.3,
+    "studs": 1,
+    "safety_factor": 76.45,
+    "tip_force_N": 0.08,
+    "colours": {
+     "Black": 4
+    },
+    "bbox_studs_x": [
+     5,
+     6
+    ],
+    "bbox_studs_z": [
+     9,
+     11
+    ],
+    "layers": [
+     15,
+     24
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 1,
+    "parts": 5,
+    "mass_g": 1.2,
+    "studs": 1,
+    "safety_factor": 61.16,
+    "tip_force_N": 0.11,
+    "colours": {
+     "Black": 5
+    },
+    "bbox_studs_x": [
+     1,
+     3
+    ],
+    "bbox_studs_z": [
+     0,
+     1
+    ],
+    "layers": [
+     1,
+     10
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 27,
+    "parts": 8,
+    "mass_g": 2.4,
+    "studs": 2,
+    "safety_factor": 84.95,
+    "tip_force_N": 0.12,
+    "colours": {
+     "Yellow": 8
+    },
+    "bbox_studs_x": [
+     22,
+     23
+    ],
+    "bbox_studs_z": [
+     23,
+     25
+    ],
+    "layers": [
+     14,
+     27
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 30,
+    "parts": 4,
+    "mass_g": 1.0,
+    "studs": 1,
+    "safety_factor": 76.45,
+    "tip_force_N": 0.12,
+    "colours": {
+     "Yellow": 2,
+     "Black": 2
+    },
+    "bbox_studs_x": [
+     26,
+     27
+    ],
+    "bbox_studs_z": [
+     33,
+     35
+    ],
+    "layers": [
+     24,
+     30
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 20,
+    "parts": 6,
+    "mass_g": 1.6,
+    "studs": 2,
+    "safety_factor": 127.42,
+    "tip_force_N": 0.14,
+    "colours": {
+     "Black": 6
+    },
+    "bbox_studs_x": [
+     9,
+     10
+    ],
+    "bbox_studs_z": [
+     10,
+     12
+    ],
+    "layers": [
+     9,
+     20
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 1,
+    "parts": 9,
+    "mass_g": 3.3,
+    "studs": 3,
+    "safety_factor": null,
+    "tip_force_N": 0.17,
+    "colours": {
+     "Yellow": 9
+    },
+    "bbox_studs_x": [
+     13,
+     16
+    ],
+    "bbox_studs_z": [
+     11,
+     12
+    ],
+    "layers": [
+     3,
+     16
+    ]
+   }
+  ],
+  "worst_gravity": [
+   {
+    "kind": "resting",
+    "layer": 34,
+    "parts": 9,
+    "mass_g": 3.0,
+    "studs": 1,
+    "safety_factor": 17.99,
+    "tip_force_N": 0.04,
+    "colours": {
+     "Black": 9
+    },
+    "bbox_studs_x": [
+     9,
+     10
+    ],
+    "bbox_studs_z": [
+     8,
+     11
+    ],
+    "layers": [
+     36,
+     52
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 35,
+    "parts": 9,
+    "mass_g": 3.0,
+    "studs": 1,
+    "safety_factor": 17.99,
+    "tip_force_N": 0.04,
+    "colours": {
+     "Black": 9
+    },
+    "bbox_studs_x": [
+     9,
+     10
+    ],
+    "bbox_studs_z": [
+     8,
+     11
+    ],
+    "layers": [
+     36,
+     52
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 36,
+    "parts": 9,
+    "mass_g": 3.0,
+    "studs": 1,
+    "safety_factor": 17.99,
+    "tip_force_N": 0.04,
+    "colours": {
+     "Black": 9
+    },
+    "bbox_studs_x": [
+     9,
+     10
+    ],
+    "bbox_studs_z": [
+     8,
+     11
+    ],
+    "layers": [
+     36,
+     52
+    ]
+   },
+   {
+    "kind": "resting",
+    "layer": 37,
+    "parts": 8,
+    "mass_g": 2.7,
+    "studs": 1,
+    "safety_factor": 17.99,
+    "tip_force_N": 0.05,
+    "colours": {
+     "Black": 8
+    },
+    "bbox_studs_x": [
+     9,
+     10
+    ],
+    "bbox_studs_z": [
+     8,
+     11
+    ],
+    "layers": [
+     37,
+     52
+    ]
+   },
+   {
+    "kind": "hanging",
+    "layer": 50,
+    "parts": 10,
+    "mass_g": 2.0,
+    "studs": 1,
+    "safety_factor": 30.58,
+    "tip_force_N": 0.07,
+    "colours": {
+     "Black": 10
+    },
+    "bbox_studs_x": [
+     1,
+     3
+    ],
+    "bbox_studs_z": [
+     0,
+     1
+    ],
+    "layers": [
+     40,
+     50
+    ]
+   }
+  ]
+ },
+ "weakest_by_torque": [
+  {
+   "layer": 1,
+   "parts": 1399,
+   "cells": 6263,
+   "frac_mass": 0.9552,
+   "studs": 79,
+   "joints": 37,
+   "load_per_stud": 79.3,
+   "lever_studs": 1.2,
+   "torque_index": 95.7,
+   "com_studs": [
+    13.1,
+    10.2,
+    15.8
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 2,
+   "parts": 1385,
+   "cells": 6223,
+   "frac_mass": 0.9491,
+   "studs": 79,
+   "joints": 38,
+   "load_per_stud": 78.8,
+   "lever_studs": 1.2,
+   "torque_index": 95.1,
+   "com_studs": [
+    13.2,
+    10.2,
+    15.9
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 3,
+   "parts": 1379,
+   "cells": 6212,
+   "frac_mass": 0.9474,
+   "studs": 82,
+   "joints": 36,
+   "load_per_stud": 75.8,
+   "lever_studs": 1.2,
+   "torque_index": 91.6,
+   "com_studs": [
+    13.2,
+    10.2,
+    15.9
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 4,
+   "parts": 1348,
+   "cells": 5976,
+   "frac_mass": 0.9114,
+   "studs": 81,
+   "joints": 41,
+   "load_per_stud": 73.8,
+   "lever_studs": 1.0,
+   "torque_index": 72.8,
+   "com_studs": [
+    13.3,
+    10.6,
+    16.1
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 32,
+   "parts": 532,
+   "cells": 1584,
+   "frac_mass": 0.2416,
+   "studs": 56,
+   "joints": 24,
+   "load_per_stud": 28.3,
+   "lever_studs": 2.5,
+   "torque_index": 70.7,
+   "com_studs": [
+    7.5,
+    17.0,
+    9.2
+   ],
+   "where": "rear/top"
+  },
+  {
+   "layer": 5,
+   "parts": 1340,
+   "cells": 5963,
+   "frac_mass": 0.9094,
+   "studs": 85,
+   "joints": 45,
+   "load_per_stud": 70.2,
+   "lever_studs": 1.0,
+   "torque_index": 68.3,
+   "com_studs": [
+    13.3,
+    10.6,
+    16.1
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 6,
+   "parts": 1322,
+   "cells": 5924,
+   "frac_mass": 0.9035,
+   "studs": 83,
+   "joints": 46,
+   "load_per_stud": 71.4,
+   "lever_studs": 0.9,
+   "torque_index": 67.7,
+   "com_studs": [
+    13.4,
+    10.6,
+    16.1
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 13,
+   "parts": 1132,
+   "cells": 4947,
+   "frac_mass": 0.7545,
+   "studs": 104,
+   "joints": 44,
+   "load_per_stud": 47.6,
+   "lever_studs": 1.3,
+   "torque_index": 59.9,
+   "com_studs": [
+    13.8,
+    11.9,
+    16.8
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 22,
+   "parts": 718,
+   "cells": 2546,
+   "frac_mass": 0.3883,
+   "studs": 90,
+   "joints": 23,
+   "load_per_stud": 28.3,
+   "lever_studs": 1.7,
+   "torque_index": 49.4,
+   "com_studs": [
+    10.2,
+    14.8,
+    12.1
+   ],
+   "where": "middle/top"
+  },
+  {
+   "layer": 10,
+   "parts": 1207,
+   "cells": 5289,
+   "frac_mass": 0.8066,
+   "studs": 111,
+   "joints": 41,
+   "load_per_stud": 47.6,
+   "lever_studs": 1.0,
+   "torque_index": 49.0,
+   "com_studs": [
+    13.6,
+    11.4,
+    16.5
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 12,
+   "parts": 1182,
+   "cells": 5199,
+   "frac_mass": 0.7929,
+   "studs": 111,
+   "joints": 49,
+   "load_per_stud": 46.8,
+   "lever_studs": 1.0,
+   "torque_index": 48.9,
+   "com_studs": [
+    13.6,
+    11.6,
+    16.5
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 11,
+   "parts": 1197,
+   "cells": 5244,
+   "frac_mass": 0.7998,
+   "studs": 114,
+   "joints": 46,
+   "load_per_stud": 46.0,
+   "lever_studs": 1.0,
+   "torque_index": 47.6,
+   "com_studs": [
+    13.6,
+    11.5,
+    16.5
+   ],
+   "where": "middle/mid"
+  }
+ ],
+ "appendages_weakest": [
+  {
+   "layer": 32,
+   "parts": 532,
+   "cells": 1584,
+   "frac_mass": 0.2416,
+   "studs": 56,
+   "joints": 24,
+   "load_per_stud": 28.3,
+   "lever_studs": 2.5,
+   "torque_index": 70.7,
+   "com_studs": [
+    7.5,
+    17.0,
+    9.2
+   ],
+   "where": "rear/top"
+  },
+  {
+   "layer": 19,
+   "parts": 138,
+   "cells": 912,
+   "frac_mass": 0.1391,
+   "studs": 58,
+   "joints": 13,
+   "load_per_stud": 15.7,
+   "lever_studs": 1.2,
+   "torque_index": 18.3,
+   "com_studs": [
+    22.1,
+    10.7,
+    28.3
+   ],
+   "where": "front/mid"
+  },
+  {
+   "layer": 42,
+   "parts": 193,
+   "cells": 636,
+   "frac_mass": 0.097,
+   "studs": 45,
+   "joints": 27,
+   "load_per_stud": 14.1,
+   "lever_studs": 0.9,
+   "torque_index": 12.7,
+   "com_studs": [
+    4.4,
+    19.4,
+    5.7
+   ],
+   "where": "rear/top"
+  },
+  {
+   "layer": 22,
+   "parts": 60,
+   "cells": 257,
+   "frac_mass": 0.0392,
+   "studs": 19,
+   "joints": 9,
+   "load_per_stud": 13.5,
+   "lever_studs": 0.9,
+   "torque_index": 12.1,
+   "com_studs": [
+    24.7,
+    11.0,
+    31.7
+   ],
+   "where": "front/mid"
+  },
+  {
+   "layer": 2,
+   "parts": 6,
+   "cells": 31,
+   "frac_mass": 0.0047,
+   "studs": 3,
+   "joints": 2,
+   "load_per_stud": 10.3,
+   "lever_studs": 0.7,
+   "torque_index": 7.2,
+   "com_studs": [
+    0.5,
+    3.2,
+    2.7
+   ],
+   "where": "rear/low"
+  },
+  {
+   "layer": 6,
+   "parts": 7,
+   "cells": 25,
+   "frac_mass": 0.0038,
+   "studs": 1,
+   "joints": 1,
+   "load_per_stud": 25.0,
+   "lever_studs": 0.3,
+   "torque_index": 7.0,
+   "com_studs": [
+    5.5,
+    6.2,
+    9.8
+   ],
+   "where": "rear/low"
+  },
+  {
+   "layer": 37,
+   "parts": 87,
+   "cells": 185,
+   "frac_mass": 0.0282,
+   "studs": 13,
+   "joints": 13,
+   "load_per_stud": 14.2,
+   "lever_studs": 0.4,
+   "torque_index": 5.2,
+   "com_studs": [
+    9.7,
+    17.4,
+    12.8
+   ],
+   "where": "middle/top"
+  },
+  {
+   "layer": 1,
+   "parts": 9,
+   "cells": 33,
+   "frac_mass": 0.005,
+   "studs": 3,
+   "joints": 2,
+   "load_per_stud": 11.0,
+   "lever_studs": 0.4,
+   "torque_index": 4.2,
+   "com_studs": [
+    14.4,
+    3.5,
+    11.5
+   ],
+   "where": "middle/low"
+  },
+  {
+   "layer": 17,
+   "parts": 34,
+   "cells": 83,
+   "frac_mass": 0.0127,
+   "studs": 11,
+   "joints": 9,
+   "load_per_stud": 7.5,
+   "lever_studs": 0.5,
+   "torque_index": 3.9,
+   "com_studs": [
+    4.9,
+    8.4,
+    6.8
+   ],
+   "where": "rear/mid"
+  },
+  {
+   "layer": 48,
+   "parts": 23,
+   "cells": 55,
+   "frac_mass": 0.0084,
+   "studs": 8,
+   "joints": 6,
+   "load_per_stud": 6.9,
+   "lever_studs": 0.5,
+   "torque_index": 3.5,
+   "com_studs": [
+    6.4,
+    20.5,
+    9.0
+   ],
+   "where": "rear/top"
+  },
+  {
+   "layer": 32,
+   "parts": 13,
+   "cells": 64,
+   "frac_mass": 0.0098,
+   "studs": 13,
+   "joints": 4,
+   "load_per_stud": 4.9,
+   "lever_studs": 0.7,
+   "torque_index": 3.2,
+   "com_studs": [
+    16.5,
+    13.9,
+    20.9
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 28,
+   "parts": 10,
+   "cells": 54,
+   "frac_mass": 0.0082,
+   "studs": 12,
+   "joints": 6,
+   "load_per_stud": 4.5,
+   "lever_studs": 0.5,
+   "torque_index": 2.3,
+   "com_studs": [
+    18.8,
+    12.8,
+    24.0
+   ],
+   "where": "middle/mid"
+  }
+ ],
+ "horizontal_cantilevers": [
+  {
+   "axis": "z",
+   "plane": 25,
+   "side": "+",
+   "frac_mass": 0.1432,
+   "lever_studs": 4.0,
+   "bridging_parts": 1,
+   "bridging_layers": 1,
+   "index": 3736.5
+  },
+  {
+   "axis": "z",
+   "plane": 23,
+   "side": "+",
+   "frac_mass": 0.1867,
+   "lever_studs": 4.8,
+   "bridging_parts": 7,
+   "bridging_layers": 4,
+   "index": 845.0
+  },
+  {
+   "axis": "z",
+   "plane": 24,
+   "side": "+",
+   "frac_mass": 0.1549,
+   "lever_studs": 4.6,
+   "bridging_parts": 10,
+   "bridging_layers": 8,
+   "index": 472.3
+  },
+  {
+   "axis": "z",
+   "plane": 21,
+   "side": "+",
+   "frac_mass": 0.2333,
+   "lever_studs": 5.7,
+   "bridging_parts": 21,
+   "bridging_layers": 13,
+   "index": 414.0
+  },
+  {
+   "axis": "z",
+   "plane": 22,
+   "side": "+",
+   "frac_mass": 0.2097,
+   "lever_studs": 5.3,
+   "bridging_parts": 19,
+   "bridging_layers": 13,
+   "index": 380.6
+  },
+  {
+   "axis": "z",
+   "plane": 20,
+   "side": "+",
+   "frac_mass": 0.2614,
+   "lever_studs": 6.1,
+   "bridging_parts": 29,
+   "bridging_layers": 19,
+   "index": 358.2
+  },
+  {
+   "axis": "z",
+   "plane": 19,
+   "side": "+",
+   "frac_mass": 0.2782,
+   "lever_studs": 6.7,
+   "bridging_parts": 35,
+   "bridging_layers": 21,
+   "index": 347.8
+  },
+  {
+   "axis": "z",
+   "plane": 26,
+   "side": "+",
+   "frac_mass": 0.0846,
+   "lever_studs": 4.1,
+   "bridging_parts": 16,
+   "bridging_layers": 14,
+   "index": 140.7
+  },
+  {
+   "axis": "x",
+   "plane": 20,
+   "side": "+",
+   "frac_mass": 0.1351,
+   "lever_studs": 2.9,
+   "bridging_parts": 25,
+   "bridging_layers": 13,
+   "index": 104.2
+  },
+  {
+   "axis": "x",
+   "plane": 19,
+   "side": "+",
+   "frac_mass": 0.158,
+   "lever_studs": 3.5,
+   "bridging_parts": 45,
+   "bridging_layers": 17,
+   "index": 79.7
+  }
+ ],
+ "thinnest_supports": [
+  {
+   "layer": 21,
+   "parts": 12,
+   "cells": 88,
+   "frac_mass": 0.0134,
+   "studs": 6,
+   "joints": 3,
+   "load_per_stud": 14.7,
+   "lever_studs": 0.0,
+   "torque_index": 0.7,
+   "com_studs": [
+    18.0,
+    11.3,
+    22.5
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 22,
+   "parts": 11,
+   "cells": 70,
+   "frac_mass": 0.0107,
+   "studs": 6,
+   "joints": 1,
+   "load_per_stud": 11.7,
+   "lever_studs": 0.1,
+   "torque_index": 0.7,
+   "com_studs": [
+    17.9,
+    11.9,
+    22.5
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 23,
+   "parts": 11,
+   "cells": 70,
+   "frac_mass": 0.0107,
+   "studs": 6,
+   "joints": 1,
+   "load_per_stud": 11.7,
+   "lever_studs": 0.1,
+   "torque_index": 0.7,
+   "com_studs": [
+    17.9,
+    11.9,
+    22.5
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 24,
+   "parts": 11,
+   "cells": 70,
+   "frac_mass": 0.0107,
+   "studs": 6,
+   "joints": 1,
+   "load_per_stud": 11.7,
+   "lever_studs": 0.1,
+   "torque_index": 0.7,
+   "com_studs": [
+    17.9,
+    11.9,
+    22.5
+   ],
+   "where": "middle/mid"
+  },
+  {
+   "layer": 43,
+   "parts": 33,
+   "cells": 70,
+   "frac_mass": 0.0107,
+   "studs": 9,
+   "joints": 9,
+   "load_per_stud": 7.8,
+   "lever_studs": 0.5,
+   "torque_index": 4.3,
+   "com_studs": [
+    9.0,
+    18.8,
+    12.3
+   ],
+   "where": "middle/top"
+  },
+  {
+   "layer": 17,
+   "parts": 34,
+   "cells": 83,
+   "frac_mass": 0.0127,
+   "studs": 11,
+   "joints": 9,
+   "load_per_stud": 7.5,
+   "lever_studs": 0.5,
+   "torque_index": 3.9,
+   "com_studs": [
+    4.9,
+    8.4,
+    6.8
+   ],
+   "where": "rear/mid"
+  },
+  {
+   "layer": 37,
+   "parts": 87,
+   "cells": 185,
+   "frac_mass": 0.0282,
+   "studs": 13,
+   "joints": 13,
+   "load_per_stud": 14.2,
+   "lever_studs": 0.4,
+   "torque_index": 5.2,
+   "com_studs": [
+    9.7,
+    17.4,
+    12.8
+   ],
+   "where": "middle/top"
+  },
+  {
+   "layer": 38,
+   "parts": 80,
+   "cells": 176,
+   "frac_mass": 0.0268,
+   "studs": 15,
+   "joints": 15,
+   "load_per_stud": 11.7,
+   "lever_studs": 0.4,
+   "torque_index": 4.3,
+   "com_studs": [
+    9.7,
+    17.5,
+    12.8
+   ],
+   "where": "middle/top"
+  },
+  {
+   "layer": 41,
+   "parts": 57,
+   "cells": 126,
+   "frac_mass": 0.0192,
+   "studs": 15,
+   "joints": 11,
+   "load_per_stud": 8.4,
+   "lever_studs": 0.3,
+   "torque_index": 2.3,
+   "com_studs": [
+    9.7,
+    18.2,
+    12.7
+   ],
+   "where": "middle/top"
+  },
+  {
+   "layer": 16,
+   "parts": 41,
+   "cells": 100,
+   "frac_mass": 0.0153,
+   "studs": 15,
+   "joints": 8,
+   "load_per_stud": 6.7,
+   "lever_studs": 0.2,
+   "torque_index": 1.3,
+   "com_studs": [
+    4.6,
+    8.2,
+    6.6
+   ],
+   "where": "rear/mid"
+  },
+  {
+   "layer": 39,
+   "parts": 73,
+   "cells": 166,
+   "frac_mass": 0.0253,
+   "studs": 16,
+   "joints": 13,
+   "load_per_stud": 10.4,
+   "lever_studs": 0.4,
+   "torque_index": 3.9,
+   "com_studs": [
+    9.7,
+    17.7,
+    12.8
+   ],
+   "where": "middle/top"
+  },
+  {
+   "layer": 42,
+   "parts": 51,
+   "cells": 112,
+   "frac_mass": 0.0171,
+   "studs": 16,
+   "joints": 11,
+   "load_per_stud": 7.0,
+   "lever_studs": 0.2,
+   "torque_index": 1.3,
+   "com_studs": [
+    9.6,
+    18.3,
+    12.7
+   ],
+   "where": "middle/top"
+  }
+ ],
+ "feet": {
+  "count": 2,
+  "cells": [
+   53,
+   34
+  ]
+ },
+ "centre_of_mass": {
+  "x_studs": 12.98,
+  "z_studs": 15.57,
+  "height_mm": 78.0,
+  "inside_support_polygon": true,
+  "margin_mm": 24.5,
+  "tipping_angle_deg": 17.5
+ },
+ "steps": 210,
+ "layers": 56,
+ "parts_per_step": 6.9,
+ "catalogue": {
+  "all_parts_official_ldraw": true,
+  "part_colour_combos_never_produced": [],
+  "part_colour_combos_rare_lt5_sets": [],
+  "rebrickable_db": "rb.db (ojuuji/rb.db latest-v8)"
+ },
+ "cost": "co\u00fbt non v\u00e9rifi\u00e9"
+}

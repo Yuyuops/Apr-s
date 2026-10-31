@@ -13,7 +13,23 @@ Planches principales :
 
 ---
 
-## 1. Décision
+## 0. Décisions de l'utilisateur (2026-10-31) et suite
+
+- Reconstructions 3D gratuites Hunyuan3D-2mv : **validées** pour poursuivre.
+- Modèles LEGO brickify actuels (250 et 400 mm) : **refusés visuellement**. Les silhouettes sont reconnaissables, mais la qualité est insuffisante.
+- Hunyuan3D v3.1 Pro : **refusé** pour l'instant.
+- Étude de faisabilité d'un brickify amélioré (pièces de forme, connexions renforcées) : démonstrateur sur la **tête et les oreilles de Paco à 400 mm**,
+  dans `05_demonstrateur_tete_paco/README.md`. En résumé :
+  - **fidélité :** IoU de volume de 0,73 à 0,86, silhouettes de 0,92-0,93 à 0,96 ;
+  - **robustesse :** sous-ensembles décrochés par moins de 0,5 N, de 156 à 25-31 ; îlots, de 3 à 0 ;
+  - **prix à payer :** 20 % de pièces en plus ;
+  - **limite :** le bout des oreilles reste fragile (0,04 N) et le rendu reste en escalier.
+  - Le gain vient surtout d'une voxellisation plus juste, très peu des pentes.
+  - Recommandation : ne pas étendre au chien entier ; essayer d'abord une oreille montée de côté (SNOT).
+- Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
+  et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
+
+## 1. Décision (benchmark initial)
 
 | Question | Réponse |
 |---|---|
