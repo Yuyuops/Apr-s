@@ -1,0 +1,5 @@
+V6 A Paco {'oreille_A_paco.ldr': (True, 162, 162), 'tete_C_avec_oreille_generee.ldr': (True, 1313, 1313)} rapport diff 0 {'validation.json': 0} BOM True
+V6 B Beagle {'oreille_B_beagle.ldr': (True, 247, 247)} rapport diff 0 {'validation.json': 0} BOM True
+V6.1 A Paco {'oreille_A_paco.ldr': (True, 170, 170), 'tete_C_avec_oreille_V61.ldr': (True, 1321, 1321)} rapport diff 0 {'validation_v3.json': 0, 'validation_v2.json': 0} BOM True
+V6.1 B Beagle {'oreille_B_beagle.ldr': (True, 276, 276), 'oreille_B_beagle_V61_notice.ldr': (True, 276, 276)} rapport diff 0 {'validation_v3.json': 0, 'validation_v2.json': 0} BOM True
+VERDICT AUCUNE DIFFERENCE

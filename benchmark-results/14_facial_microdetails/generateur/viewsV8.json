@@ -1,0 +1,12 @@
+[{"name":"1_face","az":180,"el":8,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"2_dos","az":0,"el":8,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"3_profil_gauche","az":270,"el":5,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"4_profil_droit","az":90,"el":5,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"5_trois_quarts","az":225,"el":18,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"6_dessus","az":200,"el":80,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"7_visage_gauche","az":270,"el":5,"frameBox":[[90,245,-275],[250,355,-100]]},
+ {"name":"8_visage_droit","az":90,"el":5,"frameBox":[[90,245,-275],[250,355,-100]]},
+ {"name":"9_visage_avant","az":150,"el":8,"frameBox":[[90,245,-275],[250,355,-100]]},
+ {"name":"10_visage_trois_quarts","az":215,"el":15,"frameBox":[[90,245,-275],[250,355,-100]]},
+ {"name":"11_bouche","az":120,"el":-20,"frameBox":[[120,245,-275],[250,330,-130]]},
+ {"name":"12_oreilles","az":40,"el":10,"frameBox":[[20,170,-240],[200,405,-20]]}]

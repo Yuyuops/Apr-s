@@ -1,0 +1,717 @@
+{
+ "regles": {
+  "min_sets": 20,
+  "catalogue": {
+   "14769": {
+    "num": "14769",
+    "title": "Tile  2 x  2 Round with Round Underside Stud",
+    "D_mm": 16.0,
+    "L_mm": 16.0,
+    "h_ldu": 8.0,
+    "rise_mm": 0.0,
+    "centre_stud": false,
+    "stud_top": null,
+    "visible_studs": false,
+    "receptors": [
+     [
+      -10.0,
+      8.0,
+      -10.0
+     ],
+     [
+      -10.0,
+      8.0,
+      10.0
+     ],
+     [
+      10.0,
+      8.0,
+      -10.0
+     ],
+     [
+      10.0,
+      8.0,
+      10.0
+     ]
+    ],
+    "rond": true
+   },
+   "18674": {
+    "num": "18674",
+    "title": "Plate  2 x  2 Round with  1 Centre Stud",
+    "D_mm": 16.0,
+    "L_mm": 16.0,
+    "h_ldu": 8.0,
+    "rise_mm": 1.6,
+    "centre_stud": true,
+    "stud_top": 0.0,
+    "visible_studs": true,
+    "receptors": [
+     [
+      -10.0,
+      8.0,
+      -10.0
+     ],
+     [
+      -10.0,
+      8.0,
+      10.0
+     ],
+     [
+      10.0,
+      8.0,
+      -10.0
+     ],
+     [
+      10.0,
+      8.0,
+      10.0
+     ]
+    ],
+    "rond": true
+   },
+   "24246": {
+    "num": "24246",
+    "title": "Tile  1 x  1 with Rounded End",
+    "D_mm": 8.0,
+    "L_mm": 8.0,
+    "h_ldu": 8.0,
+    "rise_mm": 0.0,
+    "centre_stud": false,
+    "stud_top": null,
+    "visible_studs": false,
+    "receptors": [
+     [
+      0.0,
+      8.0,
+      0.0
+     ]
+    ],
+    "rond": true
+   },
+   "2431": {
+    "num": "2431",
+    "title": "Tile  1 x  4 with Groove",
+    "D_mm": 8.0,
+    "L_mm": 32.0,
+    "h_ldu": 8.0,
+    "rise_mm": 0.0,
+    "centre_stud": false,
+    "stud_top": null,
+    "visible_studs": false,
+    "receptors": [
+     [
+      -30.0,
+      8.0,
+      0.0
+     ],
+     [
+      -10.0,
+      8.0,
+      0.0
+     ],
+     [
+      10.0,
+      8.0,
+      0.0
+     ],
+     [
+      30.0,
+      8.0,
+      0.0
+     ]
+    ],
+    "rond": false
+   },
+   "3069b": {
+    "num": "3069b",
+    "title": "Tile  1 x  2 with Groove",
+    "D_mm": 8.0,
+    "L_mm": 16.0,
+    "h_ldu": 8.0,
+    "rise_mm": 0.0,
+    "centre_stud": false,
+    "stud_top": null,
+    "visible_studs": false,
+    "receptors": [
+     [
+      -10.0,
+      8.0,
+      0.0
+     ],
+     [
+      10.0,
+      8.0,
+      0.0
+     ]
+    ],
+    "rond": false
+   },
+   "3070b": {
+    "num": "3070b",
+    "title": "Tile  1 x  1 with Groove",
+    "D_mm": 8.0,
+    "L_mm": 8.0,
+    "h_ldu": 8.0,
+    "rise_mm": 0.0,
+    "centre_stud": false,
+    "stud_top": null,
+    "visible_studs": false,
+    "receptors": [
+     [
+      0.0,
+      8.0,
+      0.0
+     ]
+    ],
+    "rond": false
+   },
+   "3960": {
+    "num": "3960",
+    "title": "Dish  4 x  4 Inverted",
+    "D_mm": 32.0,
+    "L_mm": 32.0,
+    "h_ldu": 16.0,
+    "rise_mm": 4.0,
+    "centre_stud": true,
+    "stud_top": 0.0,
+    "visible_studs": true,
+    "receptors": [
+     [
+      30.0,
+      16.0,
+      30.0
+     ],
+     [
+      -30.0,
+      16.0,
+      30.0
+     ],
+     [
+      30.0,
+      16.0,
+      -30.0
+     ],
+     [
+      -30.0,
+      16.0,
+      -30.0
+     ]
+    ],
+    "rond": true
+   },
+   "43898": {
+    "num": "43898",
+    "title": "Dish  3 x  3 Inverted",
+    "D_mm": 24.0,
+    "L_mm": 24.0,
+    "h_ldu": 15.39,
+    "rise_mm": 5.03,
+    "centre_stud": true,
+    "stud_top": 0.61,
+    "visible_studs": true,
+    "receptors": [
+     [
+      20.0,
+      16.0,
+      20.0
+     ],
+     [
+      -20.0,
+      16.0,
+      20.0
+     ],
+     [
+      20.0,
+      16.0,
+      -20.0
+     ],
+     [
+      -20.0,
+      16.0,
+      -20.0
+     ]
+    ],
+    "rond": true
+   },
+   "4740": {
+    "num": "4740",
+    "title": "Dish  2 x  2 Inverted",
+    "D_mm": 16.0,
+    "L_mm": 16.0,
+    "h_ldu": 6.300000000000001,
+    "rise_mm": 3.84,
+    "centre_stud": true,
+    "stud_top": 1.7,
+    "visible_studs": true,
+    "receptors": [
+     [
+      -10.0,
+      8.0,
+      10.0
+     ],
+     [
+      10.0,
+      8.0,
+      -10.0
+     ],
+     [
+      10.0,
+      8.0,
+      10.0
+     ],
+     [
+      -10.0,
+      8.0,
+      -10.0
+     ]
+    ],
+    "rond": true
+   },
+   "6141": {
+    "num": "6141",
+    "title": "Plate  1 x  1 Round",
+    "D_mm": 8.0,
+    "L_mm": 8.0,
+    "h_ldu": 8.0,
+    "rise_mm": 1.6,
+    "centre_stud": true,
+    "stud_top": 0.0,
+    "visible_studs": true,
+    "receptors": [
+     [
+      0.0,
+      8.0,
+      0.0
+     ]
+    ],
+    "rond": true
+   },
+   "63864": {
+    "num": "63864",
+    "title": "Tile  1 x  3",
+    "D_mm": 8.0,
+    "L_mm": 24.0,
+    "h_ldu": 8.0,
+    "rise_mm": 0.0,
+    "centre_stud": false,
+    "stud_top": null,
+    "visible_studs": false,
+    "receptors": [
+     [
+      -20.0,
+      8.0,
+      0.0
+     ],
+     [
+      0.0,
+      8.0,
+      0.0
+     ],
+     [
+      20.0,
+      8.0,
+      0.0
+     ]
+    ],
+    "rond": false
+   },
+   "85861": {
+    "num": "85861",
+    "title": "Plate  1 x  1 Round with Open Stud",
+    "D_mm": 8.0,
+    "L_mm": 8.0,
+    "h_ldu": 8.0,
+    "rise_mm": 0.0,
+    "centre_stud": true,
+    "stud_top": 0.0,
+    "visible_studs": true,
+    "receptors": [
+     [
+      0.0,
+      8.0,
+      0.0
+     ]
+    ],
+    "rond": true
+   },
+   "87087": {
+    "num": "87087",
+    "title": "Brick  1 x  1 with Stud on 1 Side",
+    "D_mm": 8.0,
+    "L_mm": 8.0,
+    "h_ldu": 24.0,
+    "rise_mm": 1.6,
+    "centre_stud": true,
+    "stud_top": 0.0,
+    "visible_studs": true,
+    "receptors": [
+     [
+      0.0,
+      24.0,
+      0.0
+     ]
+    ],
+    "rond": false
+   },
+   "98138": {
+    "num": "98138",
+    "title": "Tile  1 x  1 Round with Groove",
+    "D_mm": 8.0,
+    "L_mm": 8.0,
+    "h_ldu": 8.0,
+    "rise_mm": 0.0,
+    "centre_stud": false,
+    "stud_top": null,
+    "visible_studs": false,
+    "receptors": [
+     [
+      0.0,
+      8.0,
+      0.0
+     ]
+    ],
+    "rond": true
+   }
+  }
+ },
+ "details": [
+  {
+   "id": "bouche_9",
+   "classe": "bouche",
+   "couleur": "noir",
+   "centre_mm": [
+    192.15,
+    271.62,
+    -192.13
+   ],
+   "diametre_cible_mm": 11.1,
+   "axe_fixation": "bas",
+   "inclinaison_deg": 6.8,
+   "decision": "couleur du volume seulement (face tournee vers le bas : aucune fixation a tenon possible) - capacite manquante",
+   "cellules_recolorees": 4,
+   "confiance": "faible"
+  },
+  {
+   "id": "bouche_15",
+   "classe": "bouche",
+   "couleur": "rouge",
+   "centre_mm": [
+    180.78,
+    262.61,
+    -169.83
+   ],
+   "diametre_cible_mm": 9.8,
+   "axe_fixation": "haut",
+   "inclinaison_deg": 30.3,
+   "decision": "construit (tuile incrustee dans la couche superieure)",
+   "pieces": [
+    [
+     "incrustation",
+     "3070b"
+    ]
+   ],
+   "iou_forme": 0.74,
+   "cellules_creusees": 1,
+   "confiance": "moyenne"
+  },
+  {
+   "id": "bouche_14",
+   "classe": "bouche",
+   "couleur": "rouge",
+   "centre_mm": [
+    184.5,
+    271.18,
+    -213.98
+   ],
+   "diametre_cible_mm": 9.5,
+   "axe_fixation": "bas",
+   "inclinaison_deg": 5.1,
+   "decision": "couleur du volume seulement (face tournee vers le bas : aucune fixation a tenon possible) - capacite manquante",
+   "cellules_recolorees": 6,
+   "confiance": "faible"
+  },
+  {
+   "id": "oeil_2",
+   "classe": "oeil",
+   "couleur": "blanc",
+   "centre_mm": [
+    177.22,
+    311.36,
+    -146.17
+   ],
+   "diametre_cible_mm": 22.3,
+   "axe_fixation": "+X",
+   "inclinaison_deg": 15.2,
+   "candidats": [
+    {
+     "piece": "43898",
+     "cout": 0.379,
+     "D_mm": 24.0,
+     "bombe_mm": 5.03,
+     "tenon_central": true,
+     "sets": 162
+    },
+    {
+     "piece": "18674",
+     "cout": 0.534,
+     "D_mm": 16.0,
+     "bombe_mm": 1.6,
+     "tenon_central": true,
+     "sets": 560
+    },
+    {
+     "piece": "4740",
+     "cout": 0.604,
+     "D_mm": 16.0,
+     "bombe_mm": 3.84,
+     "tenon_central": true,
+     "sets": 371
+    },
+    {
+     "piece": "3960",
+     "cout": 0.694,
+     "D_mm": 32.0,
+     "bombe_mm": 4.0,
+     "tenon_central": true,
+     "sets": 159
+    },
+    {
+     "piece": "85861",
+     "cout": 0.842,
+     "D_mm": 8.0,
+     "bombe_mm": 0.0,
+     "tenon_central": true,
+     "sets": 580
+    }
+   ],
+   "pupille": {
+    "id": "pupille_11",
+    "piece": "98138",
+    "diametre_cible_mm": 8.1,
+    "D_mm": 8.0
+   },
+   "positions_rejetees": 0,
+   "decision": "construit",
+   "pieces": [
+    [
+     "snot",
+     "87087"
+    ],
+    [
+     "detail",
+     "43898"
+    ],
+    [
+     "pupille",
+     "98138"
+    ]
+   ],
+   "pose": {
+    "cellule_snot": [
+     20,
+     93,
+     17
+    ],
+    "cales": 0,
+    "ecart_centre_mm": 1.8,
+    "face_externe_vs_surface_mm": 0.1,
+    "appuis_snot": 2
+   },
+   "cellules_creusees": 49,
+   "confiance": "haute",
+   "cellules_recolorees": 22
+  },
+  {
+   "id": "oeil_1",
+   "classe": "oeil",
+   "couleur": "blanc",
+   "centre_mm": [
+    122.9,
+    307.53,
+    -148.86
+   ],
+   "diametre_cible_mm": 21.3,
+   "axe_fixation": "-X",
+   "inclinaison_deg": 21.6,
+   "candidats": [
+    {
+     "piece": "43898",
+     "cout": 0.434,
+     "D_mm": 24.0,
+     "bombe_mm": 5.03,
+     "tenon_central": true,
+     "sets": 162
+    },
+    {
+     "piece": "18674",
+     "cout": 0.497,
+     "D_mm": 16.0,
+     "bombe_mm": 1.6,
+     "tenon_central": true,
+     "sets": 560
+    },
+    {
+     "piece": "4740",
+     "cout": 0.567,
+     "D_mm": 16.0,
+     "bombe_mm": 3.84,
+     "tenon_central": true,
+     "sets": 371
+    },
+    {
+     "piece": "3960",
+     "cout": 0.768,
+     "D_mm": 32.0,
+     "bombe_mm": 4.0,
+     "tenon_central": true,
+     "sets": 159
+    },
+    {
+     "piece": "85861",
+     "cout": 0.824,
+     "D_mm": 8.0,
+     "bombe_mm": 0.0,
+     "tenon_central": true,
+     "sets": 580
+    }
+   ],
+   "pupille": {
+    "id": "pupille_7",
+    "piece": "98138",
+    "diametre_cible_mm": 7.9,
+    "D_mm": 8.0
+   },
+   "positions_rejetees": 67,
+   "decision": "construit",
+   "pieces": [
+    [
+     "snot",
+     "87087"
+    ],
+    [
+     "detail",
+     "43898"
+    ],
+    [
+     "pupille",
+     "98138"
+    ]
+   ],
+   "pose": {
+    "cellule_snot": [
+     16,
+     91,
+     18
+    ],
+    "cales": 0,
+    "ecart_centre_mm": 7.6,
+    "face_externe_vs_surface_mm": 4.3,
+    "appuis_snot": 2
+   },
+   "cellules_creusees": 42,
+   "confiance": "moyenne",
+   "cellules_recolorees": 19
+  },
+  {
+   "id": "oeil_douteux_0",
+   "classe": "oeil_douteux",
+   "couleur": "blanc",
+   "centre_mm": [
+    145.78,
+    322.65,
+    -176.46
+   ],
+   "diametre_cible_mm": 21.6,
+   "axe_fixation": "+Z",
+   "inclinaison_deg": 35.6,
+   "decision": "non construit : oeil sans partenaire symetrique (artefact de generation probable)",
+   "cellules_recolorees": 11
+  },
+  {
+   "id": "truffe_16",
+   "classe": "truffe",
+   "couleur": "noir",
+   "centre_mm": [
+    213.36,
+    311.06,
+    -259.94
+   ],
+   "diametre_cible_mm": 24.7,
+   "axe_fixation": "+Z",
+   "inclinaison_deg": 37.4,
+   "candidats": [
+    {
+     "piece": "43898",
+     "cout": 0.11,
+     "D_mm": 24.0,
+     "bombe_mm": 5.03,
+     "tenon_central": true,
+     "sets": 157
+    },
+    {
+     "piece": "3960",
+     "cout": 0.335,
+     "D_mm": 32.0,
+     "bombe_mm": 4.0,
+     "tenon_central": true,
+     "sets": 92
+    },
+    {
+     "piece": "14769",
+     "cout": 0.375,
+     "D_mm": 16.0,
+     "bombe_mm": 0.0,
+     "tenon_central": false,
+     "sets": 258
+    },
+    {
+     "piece": "18674",
+     "cout": 0.379,
+     "D_mm": 16.0,
+     "bombe_mm": 1.6,
+     "tenon_central": true,
+     "sets": 343
+    },
+    {
+     "piece": "4740",
+     "cout": 0.449,
+     "D_mm": 16.0,
+     "bombe_mm": 3.84,
+     "tenon_central": true,
+     "sets": 546
+    }
+   ],
+   "positions_rejetees": 0,
+   "decision": "construit",
+   "pieces": [
+    [
+     "snot",
+     "87087"
+    ],
+    [
+     "detail",
+     "43898"
+    ]
+   ],
+   "pose": {
+    "cellule_snot": [
+     25,
+     93,
+     31
+    ],
+    "cales": 0,
+    "ecart_centre_mm": 1.4,
+    "face_externe_vs_surface_mm": 2.2,
+    "appuis_snot": 2
+   },
+   "cellules_creusees": 52,
+   "confiance": "faible",
+   "cellules_recolorees": 0,
+   "couleur_voxel_conservee": "flancs de la tache enveloppante"
+  }
+ ],
+ "n_pieces": 9,
+ "cellules_creusees": 144,
+ "cellules_recolorees": 36
+}

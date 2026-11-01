@@ -29,6 +29,40 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 decies. LEGO V8 : micro-détails du visage (`14_facial_microdetails/`)
+
+**Verdict : CORRIGER.**
+
+Nouveau détecteur automatique des détails du GLB :
+
+- taches de couleur, normale extérieure, taille, bombé ;
+- appariement des yeux par symétrie ;
+- le troisième œil du GLB, un artefact, est écarté.
+
+Nouveau générateur de pièces de surface :
+
+- catalogue générique mesuré sur la géométrie LDraw, avec la disponibilité Rebrickable ;
+- pose SNOT encastrée à la surface du GLB ;
+- réservation des fixations d'oreilles.
+
+Résultats :
+
+- **Yeux** : coupole 3×3 blanche avec pupille ronde 1×1 noire, nettement plus fidèles.
+- **Truffe** : coupole 3×3 noire.
+- **Langue** : une tuile incrustée.
+- **Contrôles** (`validate_v3`) : 2 758 pièces, 0 collision, 0 pièce déconnectée, 331 étapes.
+- **Oreilles** : identiques à V7.
+- **Non-régression V6 / V6.1** : aucune différence (modèles, rapports, validations, nomenclatures).
+
+Défaut bloquant : la bouche n'est pas plus lisible. Les surfaces tournées vers le bas et les traits n'ont pas de module.
+
+Réserves :
+
+- truffe inclinée à 37° de son axe de pose ;
+- œil gauche décalé de 7,6 mm ;
+- trois règles réglées sur ce cas ;
+- deux nouveaux groupes faibles.
+
 ## 0 nonies. LEGO V7 : première sculpture complète automatique (`13_complete_sculpture_proof/`)
 
 **Verdict : INTÉGRATION PARTIELLE.**

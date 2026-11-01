@@ -1,0 +1,18 @@
+bouche_9         noir      127 mm2  c [192.15, 271.62, -192.13] n [0.034, -0.993, 0.109]  16.6 x  7.4  bombe  0.15  pos -0.09  gauche museau
+bouche_15        rouge      78 mm2  c [180.78, 262.61, -169.83] n [0.241, 0.863, -0.444]  12.0 x  8.0  bombe -0.23  pos -0.39  gauche museau
+bouche_14        rouge      29 mm2  c [184.5, 271.18, -213.98] n [-0.044, -0.996, -0.078]  19.0 x  4.8  bombe  0.23  pos  0.09  droite museau
+marque_4         noir    29083 mm2  c [69.95, 319.98, -62.36]  n [0.989, -0.142, 0.053] 157.1 x 120.6  bombe  6.37  pos -2.19  droite crane
+marque_6         noir      387 mm2  c [159.41, 323.76, -113.13] n [0.867, 0.173, 0.468]   36.6 x 10.2  bombe  1.11  pos -1.10  gauche crane
+marque_8         noir      303 mm2  c [208.84, 327.38, -212.48] n [0.473, 0.859, 0.194]   64.6 x  9.8  bombe -1.71  pos  0.23  gauche museau
+marque_10        noir      149 mm2  c [169.64, 343.42, -142.06] n [0.804, 0.415, 0.426]   27.4 x  5.7  bombe  0.42  pos -0.74  gauche crane
+marque_12        noir       93 mm2  c [217.59, 286.44, -213.28] n [0.204, -0.038, 0.978]  12.0 x  6.0  bombe  2.33  pos  0.29  gauche museau
+marque_3         noir       61 mm2  c [107.47, 354.35, -96.88] n [0.697, -0.638, 0.327]  17.1 x  4.7  bombe  3.30  pos -1.60  droite crane
+marque_13        rouge      52 mm2  c [116.78, 279.62, -105.46] n [-0.777, 0.022, 0.629]  10.4 x  6.6  bombe  0.13  pos -1.45  droite crane
+oeil_2           blanc     402 mm2  c [177.22, 311.36, -146.17] n [0.965, -0.09, 0.245]   23.9 x 20.9  bombe -0.43  pos -0.65  gauche yeux
+oeil_1           blanc     395 mm2  c [122.9, 307.53, -148.86] n [-0.93, -0.055, -0.363]  23.3 x 19.4  bombe -0.33  pos -0.97  droite crane
+oeil_douteux_0   blanc     224 mm2  c [145.78, 322.65, -176.46] n [-0.577, 0.077, -0.813]  24.0 x 19.4  bombe -1.44  pos -0.54  droite museau
+pupille_11       noir       68 mm2  c [176.99, 310.41, -146.31] n [0.974, -0.189, -0.121]   8.1 x  8.1  bombe  0.21  pos -0.65  gauche yeux
+pupille_7        noir       62 mm2  c [124.88, 305.94, -150.34] n [-0.854, 0.094, -0.511]   8.0 x  7.9  bombe -0.09  pos -0.94  droite crane
+pupille_douteuse_5 noir       67 mm2  c [143.03, 317.46, -174.13] n [0.101, 0.225, -0.969]   8.8 x  6.4  bombe  0.31  pos -0.59  droite museau
+truffe_16        noir      743 mm2  c [213.36, 311.06, -259.94] n [-0.492, 0.357, -0.794]  47.0 x 24.7  bombe -7.17  pos  0.93  centre museau
+{"axe_museau": [0.533, 0.0, -0.846], "normale_plan_sagittal": [-0.846, 0.0, -0.533], "plan_offset_mm": -50.6, "ecart_symetrie_median_mm": 3.04, "museau_racine_mm": 272.3, "museau_bout_mm": 355.6}

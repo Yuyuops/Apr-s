@@ -1,0 +1,595 @@
+{
+ "V7": {
+  "pieces": 2773,
+  "types": 38,
+  "etapes": 331,
+  "collisions": 0,
+  "deconnectees": 0,
+  "ilots": 0,
+  "non_soutenues": 0,
+  "liaisons_laterales": 268,
+  "min_coef_gravite": 2.68,
+  "sous_ensembles_moins_0_5N": 46,
+  "sous_ensembles_moins_2N": 126,
+  "force_min_N": 0.07,
+  "plus_faibles": [
+   {
+    "mass_g": 1.6,
+    "studs": 1,
+    "gravity_sf": 50.97,
+    "tip_force_N": 0.07,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10,
+    "colours": {
+     "Red": 10
+    },
+    "bbox_ldu": [
+     [
+      440.0,
+      -384.0,
+      220.0
+     ],
+     [
+      480.0,
+      -304.0,
+      240.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4.4,
+    "studs": 1,
+    "gravity_sf": 2.68,
+    "tip_force_N": 0.08,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 11,
+    "colours": {
+     "Black": 11
+    },
+    "bbox_ldu": [
+     [
+      179.0,
+      -756.0,
+      154.0
+     ],
+     [
+      293.0,
+      -712.0,
+      282.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1126.6,
+    "studs": 5,
+    "gravity_sf": 5.43,
+    "tip_force_N": 0.16,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2769,
+    "colours": {
+     "Yellow": 1502,
+     "Red": 671
+    },
+    "bbox_ldu": [
+     [
+      20.0,
+      -1000.0,
+      -6.0
+     ],
+     [
+      700.0,
+      -8.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3.5,
+    "studs": 1,
+    "gravity_sf": 4.11,
+    "tip_force_N": 0.21,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7,
+    "colours": {
+     "Black": 7
+    },
+    "bbox_ldu": [
+     [
+      95.0,
+      -556.0,
+      42.0
+     ],
+     [
+      209.0,
+      -512.0,
+      170.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.2,
+    "studs": 2,
+    "gravity_sf": 169.89,
+    "tip_force_N": 0.22,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6,
+    "colours": {
+     "Yellow": 6
+    },
+    "bbox_ldu": [
+     [
+      100.0,
+      -288.0,
+      300.0
+     ],
+     [
+      120.0,
+      -240.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.4,
+    "studs": 3,
+    "gravity_sf": 218.44,
+    "tip_force_N": 0.23,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9,
+    "colours": {
+     "Yellow": 9
+    },
+    "bbox_ldu": [
+     [
+      320.0,
+      -592.0,
+      360.0
+     ],
+     [
+      380.0,
+      -520.0,
+      380.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 5.0,
+    "studs": 4,
+    "gravity_sf": null,
+    "tip_force_N": 0.26,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 18,
+    "colours": {
+     "Red": 18
+    },
+    "bbox_ldu": [
+     [
+      460.0,
+      -392.0,
+      260.0
+     ],
+     [
+      480.0,
+      -304.0,
+      360.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.8,
+    "studs": 2,
+    "gravity_sf": 76.45,
+    "tip_force_N": 0.26,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 11,
+    "colours": {
+     "Yellow": 9,
+     "Black": 2
+    },
+    "bbox_ldu": [
+     [
+      580.0,
+      -288.0,
+      300.0
+     ],
+     [
+      620.0,
+      -248.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.3,
+    "studs": 1,
+    "gravity_sf": 78.32,
+    "tip_force_N": 0.27,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 5,
+    "colours": {
+     "Black": 5
+    },
+    "bbox_ldu": [
+     [
+      66.0,
+      -596.0,
+      0.0
+     ],
+     [
+      125.0,
+      -552.0,
+      58.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 12.2,
+    "studs": 7,
+    "gravity_sf": null,
+    "tip_force_N": 0.31,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 30,
+    "colours": {
+     "Red": 30
+    },
+    "bbox_ldu": [
+     [
+      260.0,
+      -424.0,
+      200.0
+     ],
+     [
+      440.0,
+      -296.0,
+      220.0
+     ]
+    ]
+   }
+  ]
+ },
+ "V8": {
+  "pieces": 2758,
+  "types": 41,
+  "etapes": 331,
+  "collisions": 0,
+  "deconnectees": 0,
+  "ilots": 0,
+  "non_soutenues": 0,
+  "liaisons_laterales": 273,
+  "min_coef_gravite": 2.68,
+  "sous_ensembles_moins_0_5N": 49,
+  "sous_ensembles_moins_2N": 128,
+  "force_min_N": 0.07,
+  "plus_faibles": [
+   {
+    "mass_g": 1.3,
+    "studs": 1,
+    "gravity_sf": 27.8,
+    "tip_force_N": 0.07,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10,
+    "colours": {
+     "Black": 7,
+     "Red": 2
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -816.0,
+      260.0
+     ],
+     [
+      300.0,
+      -744.0,
+      280.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.6,
+    "studs": 1,
+    "gravity_sf": 50.97,
+    "tip_force_N": 0.07,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10,
+    "colours": {
+     "Red": 10
+    },
+    "bbox_ldu": [
+     [
+      440.0,
+      -384.0,
+      220.0
+     ],
+     [
+      480.0,
+      -304.0,
+      240.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4.4,
+    "studs": 1,
+    "gravity_sf": 2.68,
+    "tip_force_N": 0.08,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 11,
+    "colours": {
+     "Black": 11
+    },
+    "bbox_ldu": [
+     [
+      179.0,
+      -756.0,
+      154.0
+     ],
+     [
+      293.0,
+      -712.0,
+      282.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1117.7,
+    "studs": 5,
+    "gravity_sf": 9.19,
+    "tip_force_N": 0.17,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2754,
+    "colours": {
+     "Yellow": 1511,
+     "Red": 680
+    },
+    "bbox_ldu": [
+     [
+      20.0,
+      -1000.0,
+      -6.0
+     ],
+     [
+      700.0,
+      -8.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.3,
+    "studs": 2,
+    "gravity_sf": 101.94,
+    "tip_force_N": 0.19,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7,
+    "colours": {
+     "Yellow": 7
+    },
+    "bbox_ldu": [
+     [
+      540.0,
+      -800.0,
+      640.0
+     ],
+     [
+      580.0,
+      -744.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3.5,
+    "studs": 1,
+    "gravity_sf": 4.11,
+    "tip_force_N": 0.21,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7,
+    "colours": {
+     "Black": 7
+    },
+    "bbox_ldu": [
+     [
+      95.0,
+      -556.0,
+      42.0
+     ],
+     [
+      209.0,
+      -512.0,
+      170.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.2,
+    "studs": 2,
+    "gravity_sf": 169.89,
+    "tip_force_N": 0.22,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6,
+    "colours": {
+     "Yellow": 6
+    },
+    "bbox_ldu": [
+     [
+      100.0,
+      -288.0,
+      300.0
+     ],
+     [
+      120.0,
+      -240.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 5.0,
+    "studs": 4,
+    "gravity_sf": null,
+    "tip_force_N": 0.26,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 18,
+    "colours": {
+     "Red": 18
+    },
+    "bbox_ldu": [
+     [
+      460.0,
+      -392.0,
+      260.0
+     ],
+     [
+      480.0,
+      -304.0,
+      360.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.1,
+    "studs": 3,
+    "gravity_sf": 278.01,
+    "tip_force_N": 0.26,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8,
+    "colours": {
+     "Yellow": 8
+    },
+    "bbox_ldu": [
+     [
+      320.0,
+      -584.0,
+      360.0
+     ],
+     [
+      380.0,
+      -520.0,
+      380.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.8,
+    "studs": 2,
+    "gravity_sf": 76.45,
+    "tip_force_N": 0.26,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 11,
+    "colours": {
+     "Yellow": 9,
+     "Black": 2
+    },
+    "bbox_ldu": [
+     [
+      580.0,
+      -288.0,
+      300.0
+     ],
+     [
+      620.0,
+      -248.0,
+      340.0
+     ]
+    ]
+   }
+  ]
+ },
+ "nomenclature_nouvelles_references": [
+  "87087 Yellow: 3",
+  "3069b Red: 2",
+  "43898 White: 2",
+  "98138 Black: 2",
+  "43898 Black: 1"
+ ],
+ "oreilles": {
+  "pieces_identiques_V7": true,
+  "appuis": [
+   4,
+   2,
+   7,
+   5
+  ]
+ }
+}
