@@ -62,12 +62,15 @@ def main():
         done = [b for b, idx in pending_blocks.items() if any(j in placed for i in idx for j in G.neighbors(i) if j not in idx)
                 and not any(any(j in remaining for j in G.neighbors(i)) and False for i in idx)]
         # sub-assemblies are attached once all main parts are placed (they hang outside the body)
-    out = header[:]
+    out = header[:]; dropped_parts = []
     for kind, val in steps:
         if kind == "block":
             idx = blocks[val]; H = G.subgraph(idx)
             # one sub-assembly per internally connected piece, parts in breadth-first order of their joints
             for k, comp in enumerate(sorted(nx.connected_components(H), key=lambda c: min(c))):
+                attached = any(j not in idx for i in comp for j in G.neighbors(i))
+                if not attached and os.environ.get("DROP_UNATTACHED"):
+                    dropped_parts.extend(comp); continue                     # piece of a sub-assembly touching nothing else
                 root = min(comp); order = list(nx.bfs_tree(H.subgraph(comp), root))
                 out.append(f"0 BRICKIFY SUBASSEMBLY BEGIN {val}{'_' + str(k) if k else ''}")
                 for i in order: out.append(parts[i]["line"])
@@ -77,7 +80,8 @@ def main():
             out.append("0 STEP")
     open(dst, "w").write("\n".join(out) + "\n")
     n_out = sum(1 for l in out if l.startswith("1 "))
-    assert n_out == len(parts), f"part count changed: {n_out} != {len(parts)}"
+    assert n_out + len(dropped_parts) == len(parts), f"part count changed: {n_out} + {len(dropped_parts)} != {len(parts)}"
+    if dropped_parts: print(f"dropped (unattached sub-assembly pieces): {len(dropped_parts)} -> " + ", ".join(parts[i]["num"] for i in dropped_parts))
     print(f"{dst}: {len(steps)} steps, {sum(len(v) for k, v in steps if k == 'orphans')} parts could not be ordered")
 
 if __name__ == "__main__":
