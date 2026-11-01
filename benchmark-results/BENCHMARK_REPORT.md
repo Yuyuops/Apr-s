@@ -29,6 +29,17 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 sexies. LEGO V5.1 : finalisation de l'oreille conçue (`10_designed_ear_refinement/`)
+
+**Verdict : CHANGER LA FIXATION.** La forme est réussie.
+
+- **Épaisseur.** 20,8 mm (référence ≈ 20 mm). L'oreille est un sandwich à deux faces tuilées autour d'une âme à tenons sur 2 faces ; la face intérieure est maintenant propre.
+- **Raccord.** Plus de pied ni de jour : l'oreille entre dans le crâne, reconstruit autour d'elle.
+- **Fixation.** Plus de plateau tournant : une plaque tournée à 53,13° est noyée dans le crâne, emboîtée sur 5 tenons qui coïncident avec la grille (triangle 3-4-5).
+- **Validation.** 0 collision, 0 pièce déconnectée, notice en 85 étapes, 29 couples pièce × couleur vérifiés. Silhouette 0,943 / 0,942 (V5 : 0,923 / 0,939 ; C : 0,955 / 0,958).
+- **Tenue indicative.** Force au bout 0,16 → 0,32 N, mais un seul chemin de liaison, masse 37 → 87 g, coefficient sous le poids propre 3,47 → 2,17 : insuffisant.
+- **Automatisation.** `AUTOMATISATION.md` dit ce qui est réellement automatisé et ce qui reste manuel, et propose un algorithme de choix des pièces le long du contour.
+
 ## 0 quinquies. LEGO V5 : oreille conçue directement (`09_designed_ear_proof/`)
 
 **Verdict : VALIDER LA MÉTHODE**, avec réserves.

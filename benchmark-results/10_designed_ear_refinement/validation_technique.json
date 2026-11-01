@@ -1,0 +1,442 @@
+{
+ "modele": "tete C reconstruite autour de l oreille V5.1",
+ "controle_conception": {
+  "head": {
+   "name": "head_C",
+   "parts": 1174,
+   "kinds": {
+    "plate": 1135,
+    "tile": 39
+   },
+   "reconnect_cells": 0,
+   "cells": 3694,
+   "cells_brickify": 4927,
+   "recoloured_new_surface": 1081,
+   "floating_before_repair": 35,
+   "bridge_recoloured_cells": 28,
+   "bridges": 32,
+   "floating_after_repair": 11,
+   "dropped_floating_parts": 11,
+   "dropped_floating_cells": 15
+  },
+  "carved_cells": 273,
+  "carved_eye_or_mouth_cells": 0,
+  "seat_pieces": 5,
+  "seat_coincident_studs": 5,
+  "coincident_studs_without_skull_below": 0,
+  "head_tiles_turned_to_plates_under_seats": 4,
+  "studs_without_receptor_by_group": {
+   "wall": 61,
+   "base": 4
+  },
+  "parts_by_group": {
+   "base": 1,
+   "wall": 61,
+   "outer": 17,
+   "outer_t": 23,
+   "inner": 17,
+   "inner_t": 23
+  }
+ },
+ "validation_v2": {
+  "name": "tete_v51",
+  "source_ldr": "/root/bench/proto/ear10/run/tete_notice.ldr",
+  "disclaimer": "Geometric and graph checks plus an indicative stud-clutch model. Not a physical test.",
+  "parts": 1321,
+  "part_types": 35,
+  "part_colour_lines": 56,
+  "steps": 85,
+  "collisions": {
+   "pairs": 0,
+   "cells_4ldu": 0,
+   "examples": [],
+   "details": []
+  },
+  "blocked_studs": 0,
+  "joints": 1954,
+  "studs_engaged": 3927,
+  "single_stud_joints": 1211,
+  "sideways_joints": 100,
+  "groups_on_support_not_attached_to_main": 0,
+  "disconnected_parts": 0,
+  "islands": 0,
+  "disconnected_examples": [],
+  "unsupported_at_placement": 0,
+  "subassemblies_not_attachable": [],
+  "catalogue": {
+   "lines": 56,
+   "never_produced": [],
+   "not_found": [],
+   "rare": []
+  },
+  "frames": [
+   [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   [
+    0.8,
+    0.0,
+    -0.6
+   ],
+   [
+    -0.8,
+    0.0,
+    0.6
+   ]
+  ],
+  "turntable_joints": 0,
+  "stability": {
+   "model": "rigid parts; clutch 1.0 N per stud (assumed); compression free; 0.10 g per stud x stud x plate; gravity, then a force at the far end of each sub-assembly. Indicative only.",
+   "cases": 411,
+   "gravity_sf_below_1": 0,
+   "gravity_sf_below_2": 0,
+   "min_gravity_sf": 2.17,
+   "subassemblies_over_1g": 106,
+   "tip_force_below_0_5N": 19,
+   "tip_force_below_2N": 40,
+   "min_tip_force_N": 0.04,
+   "weakest": [
+    {
+     "mass_g": 2.3,
+     "studs": 1,
+     "gravity_sf": 76.45,
+     "tip_force_N": 0.04,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 19,
+     "colours": {
+      "Black": 19
+     },
+     "bbox_ldu": [
+      [
+       80.0,
+       -160.0,
+       60.0
+      ],
+      [
+       100.0,
+       -8.0,
+       100.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.2,
+     "studs": 1,
+     "gravity_sf": 152.91,
+     "tip_force_N": 0.07,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 10,
+     "colours": {
+      "Yellow": 8,
+      "Black": 2
+     },
+     "bbox_ldu": [
+      [
+       360.0,
+       -272.0,
+       300.0
+      ],
+      [
+       380.0,
+       -192.0,
+       340.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.3,
+     "studs": 1,
+     "gravity_sf": 61.39,
+     "tip_force_N": 0.18,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 5,
+     "colours": {
+      "Black": 5
+     },
+     "bbox_ldu": [
+      [
+       191.0,
+       -378.0,
+       250.0
+      ],
+      [
+       257.0,
+       -336.0,
+       314.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.4,
+     "studs": 1,
+     "gravity_sf": 61.98,
+     "tip_force_N": 0.2,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 6,
+     "colours": {
+      "Black": 6
+     },
+     "bbox_ldu": [
+      [
+       167.0,
+       -400.0,
+       218.0
+      ],
+      [
+       233.0,
+       -360.0,
+       282.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 86.8,
+     "studs": 5,
+     "gravity_sf": 2.17,
+     "tip_force_N": 0.32,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 147,
+     "colours": {
+      "Black": 147
+     },
+     "bbox_ldu": [
+      [
+       -1.0,
+       -440.0,
+       -6.0
+      ],
+      [
+       376.0,
+       -240.0,
+       416.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.7,
+     "studs": 2,
+     "gravity_sf": null,
+     "tip_force_N": 0.39,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 6,
+     "colours": {
+      "Black": 6
+     },
+     "bbox_ldu": [
+      [
+       143.0,
+       -418.0,
+       186.0
+      ],
+      [
+       209.0,
+       -376.0,
+       250.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 2.6,
+     "studs": 2,
+     "gravity_sf": 233.89,
+     "tip_force_N": 0.67,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 5,
+     "colours": {
+      "Black": 5
+     },
+     "bbox_ldu": [
+      [
+       95.0,
+       -440.0,
+       122.0
+      ],
+      [
+       185.0,
+       -400.0,
+       218.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 3.8,
+     "studs": 2,
+     "gravity_sf": 125.94,
+     "tip_force_N": 0.67,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 5,
+     "colours": {
+      "Black": 5
+     },
+     "bbox_ldu": [
+      [
+       47.0,
+       -440.0,
+       58.0
+      ],
+      [
+       137.0,
+       -400.0,
+       154.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 4.0,
+     "studs": 2,
+     "gravity_sf": 45.17,
+     "tip_force_N": 0.67,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 9,
+     "colours": {
+      "Black": 9
+     },
+     "bbox_ldu": [
+      [
+       54.0,
+       -320.0,
+       64.0
+      ],
+      [
+       137.0,
+       -256.0,
+       154.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 2.2,
+     "studs": 2,
+     "gravity_sf": 92.67,
+     "tip_force_N": 0.67,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 5,
+     "colours": {
+      "Black": 5
+     },
+     "bbox_ldu": [
+      [
+       95.0,
+       -280.0,
+       122.0
+      ],
+      [
+       185.0,
+       -256.0,
+       218.0
+      ]
+     ]
+    }
+   ]
+  },
+  "fidelity": {
+   "volume_iou": 0.7801,
+   "lego_volume_cells": 4547.2,
+   "mesh_volume_cells": 4792.0,
+   "silhouette_iou_face": 0.9432,
+   "silhouette_iou_profil": 0.9416,
+   "silhouette_iou_dessus": 0.8875
+  }
+ },
+ "oreille_pire_decoupage": {
+  "mass_g": 86.8,
+  "studs": 5,
+  "gravity_sf": 2.17,
+  "tip_force_N": 0.32,
+  "frame": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "parts": 147,
+  "colours": {
+   "Black": 147
+  },
+  "bbox_ldu": [
+   [
+    -1.0,
+    -440.0,
+    -6.0
+   ],
+   [
+    376.0,
+    -240.0,
+    416.0
+   ]
+  ]
+ },
+ "comparaison": {
+  "C": {
+   "silhouette_face": 0.955,
+   "silhouette_profil": 0.958,
+   "silhouette_dessus": 0.893,
+   "volume_iou": 0.853
+  },
+  "V5": {
+   "silhouette_face": 0.923,
+   "silhouette_profil": 0.939,
+   "silhouette_dessus": 0.878,
+   "volume_iou": 0.774,
+   "module_pieces": 79,
+   "epaisseur_mm": 9.6,
+   "masse_g": 37,
+   "contacts": 4,
+   "coef_poids": 3.47,
+   "force_bout_N": 0.16
+  },
+  "V51": {
+   "silhouette_face": 0.9432,
+   "silhouette_profil": 0.9416,
+   "silhouette_dessus": 0.8875,
+   "volume_iou": 0.7801,
+   "module_pieces": 142,
+   "epaisseur_mm": 20.8,
+   "masse_g": 86.8,
+   "contacts": 5,
+   "coef_poids": 2.17,
+   "force_bout_N": 0.32
+  }
+ }
+}
