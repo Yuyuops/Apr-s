@@ -1,0 +1,1781 @@
+{
+ "target": "B_beagle",
+ "contour": {
+  "axe": {
+   "pixels": 63
+  },
+  "pente": {
+   "pixels": 71,
+   "pentes_dv_du_quartiles": [
+    0.85,
+    3.37,
+    5.79
+   ]
+  },
+  "arc": {
+   "pixels": 154,
+   "rayons_ldu_quartiles": [
+    54.0,
+    62.0,
+    86.0
+   ]
+  }
+ },
+ "parts_removed_unlinked": 0,
+ "settings_tried": [
+  {
+   "gain_min": 4,
+   "tol_px": 1.5,
+   "fill_thr": 0.5,
+   "shaped": 5,
+   "rects": 15,
+   "dropped_cells": 0,
+   "iou": 0.9581
+  },
+  {
+   "gain_min": 4,
+   "tol_px": 1.5,
+   "fill_thr": 0.6,
+   "shaped": 5,
+   "rects": 15,
+   "dropped_cells": 0,
+   "iou": 0.9581
+  },
+  {
+   "gain_min": 4,
+   "tol_px": 2.5,
+   "fill_thr": 0.5,
+   "shaped": 5,
+   "rects": 15,
+   "dropped_cells": 0,
+   "iou": 0.9581
+  },
+  {
+   "gain_min": 4,
+   "tol_px": 2.5,
+   "fill_thr": 0.6,
+   "shaped": 5,
+   "rects": 15,
+   "dropped_cells": 0,
+   "iou": 0.9581
+  },
+  {
+   "gain_min": 8,
+   "tol_px": 1.5,
+   "fill_thr": 0.5,
+   "shaped": 3,
+   "rects": 12,
+   "dropped_cells": 1,
+   "iou": 0.9513
+  },
+  {
+   "gain_min": 8,
+   "tol_px": 1.5,
+   "fill_thr": 0.6,
+   "shaped": 3,
+   "rects": 12,
+   "dropped_cells": 1,
+   "iou": 0.9513
+  },
+  {
+   "gain_min": 8,
+   "tol_px": 2.5,
+   "fill_thr": 0.5,
+   "shaped": 3,
+   "rects": 12,
+   "dropped_cells": 1,
+   "iou": 0.9513
+  },
+  {
+   "gain_min": 8,
+   "tol_px": 2.5,
+   "fill_thr": 0.6,
+   "shaped": 3,
+   "rects": 12,
+   "dropped_cells": 1,
+   "iou": 0.9513
+  },
+  {
+   "gain_min": 16,
+   "tol_px": 1.5,
+   "fill_thr": 0.5,
+   "shaped": 1,
+   "rects": 14,
+   "dropped_cells": 2,
+   "iou": 0.9433
+  },
+  {
+   "gain_min": 16,
+   "tol_px": 1.5,
+   "fill_thr": 0.6,
+   "shaped": 1,
+   "rects": 14,
+   "dropped_cells": 2,
+   "iou": 0.9433
+  },
+  {
+   "gain_min": 16,
+   "tol_px": 2.5,
+   "fill_thr": 0.5,
+   "shaped": 1,
+   "rects": 14,
+   "dropped_cells": 2,
+   "iou": 0.9433
+  },
+  {
+   "gain_min": 16,
+   "tol_px": 2.5,
+   "fill_thr": 0.6,
+   "shaped": 1,
+   "rects": 14,
+   "dropped_cells": 2,
+   "iou": 0.9433
+  }
+ ],
+ "chosen": {
+  "gain_min": 4,
+  "tol_px": 1.5,
+  "fill_thr": 0.5,
+  "shaped": 5,
+  "rects": 15,
+  "dropped_cells": 0,
+  "iou": 0.9581
+ },
+ "outer_layout": [
+  [
+   "78444",
+   0,
+   -9,
+   6,
+   "S1 forme 78444 (gain 27)"
+  ],
+  [
+   "24307",
+   1,
+   -7,
+   16,
+   "S2 forme 24307 (gain 15)"
+  ],
+  [
+   "78443",
+   0,
+   3,
+   3,
+   "S3 forme 78443 (gain 8)"
+  ],
+  [
+   "43723",
+   0,
+   4,
+   9,
+   "S4 forme 43723 (gain 7)"
+  ],
+  [
+   "30565",
+   3,
+   2,
+   17,
+   "S5 forme 30565 (gain 5)"
+  ],
+  [
+   "41539",
+   0,
+   -4,
+   9,
+   "P1 plaque 8x8"
+  ],
+  [
+   "3036",
+   0,
+   -5,
+   3,
+   "P2 plaque 8x6"
+  ],
+  [
+   "3034",
+   1,
+   -7,
+   8,
+   "P3 plaque 2x8"
+  ],
+  [
+   "3031",
+   0,
+   -2,
+   17,
+   "P4 plaque 4x4"
+  ],
+  [
+   "3460",
+   1,
+   -5,
+   11,
+   "P5 plaque 1x8"
+  ],
+  [
+   "3020",
+   1,
+   4,
+   13,
+   "P6 plaque 2x4"
+  ],
+  [
+   "3020",
+   1,
+   -9,
+   12,
+   "P7 plaque 2x4"
+  ],
+  [
+   "3020",
+   1,
+   -7,
+   4,
+   "P8 plaque 2x4"
+  ],
+  [
+   "3666",
+   0,
+   -3,
+   2,
+   "P9 plaque 6x1"
+  ],
+  [
+   "3021",
+   1,
+   -4,
+   17,
+   "P10 plaque 2x3"
+  ],
+  [
+   "3023",
+   0,
+   4,
+   12,
+   "P11 plaque 2x1"
+  ],
+  [
+   "3023",
+   1,
+   -5,
+   9,
+   "P12 plaque 1x2"
+  ],
+  [
+   "3023",
+   1,
+   -8,
+   4,
+   "P13 plaque 1x2"
+  ],
+  [
+   "3024",
+   0,
+   -3,
+   20,
+   "P14 plaque 1x1"
+  ],
+  [
+   "3024",
+   0,
+   -4,
+   2,
+   "P15 plaque 1x1"
+  ]
+ ],
+ "fixation": {},
+ "outline_iou_vs_target": 0.9581,
+ "outline_iou_vs_target_outside_skull": 0.9581,
+ "parts_by_group": {
+  "base": 0,
+  "wall": 103,
+  "outer": 20,
+  "outer_t": 52,
+  "inner": 20,
+  "inner_t": 52
+ },
+ "parts": [
+  {
+   "part": "78444",
+   "colour": 0,
+   "group": "outer",
+   "role": "S1 forme 78444 (gain 27)"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur S1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur S1"
+  },
+  {
+   "part": "24307",
+   "colour": 0,
+   "group": "outer",
+   "role": "S2 forme 24307 (gain 15)"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur S2"
+  },
+  {
+   "part": "78443",
+   "colour": 0,
+   "group": "outer",
+   "role": "S3 forme 78443 (gain 8)"
+  },
+  {
+   "part": "25269",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile quart de rond sur S3"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur S3"
+  },
+  {
+   "part": "43723",
+   "colour": 0,
+   "group": "outer",
+   "role": "S4 forme 43723 (gain 7)"
+  },
+  {
+   "part": "63864",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur S4"
+  },
+  {
+   "part": "30565",
+   "colour": 0,
+   "group": "outer",
+   "role": "S5 forme 30565 (gain 5)"
+  },
+  {
+   "part": "25269",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile quart de rond sur S5"
+  },
+  {
+   "part": "2431",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur S5"
+  },
+  {
+   "part": "63864",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur S5"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur S5"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur S5"
+  },
+  {
+   "part": "41539",
+   "colour": 0,
+   "group": "outer",
+   "role": "P1 plaque 8x8"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P1"
+  },
+  {
+   "part": "3036",
+   "colour": 0,
+   "group": "outer",
+   "role": "P2 plaque 8x6"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P2"
+  },
+  {
+   "part": "3034",
+   "colour": 0,
+   "group": "outer",
+   "role": "P3 plaque 2x8"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P3"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P3"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P3"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P3"
+  },
+  {
+   "part": "3031",
+   "colour": 0,
+   "group": "outer",
+   "role": "P4 plaque 4x4"
+  },
+  {
+   "part": "1751",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile P4"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "outer",
+   "role": "P5 plaque 1x8"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P5"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile sur P5"
+  },
+  {
+   "part": "3020",
+   "colour": 0,
+   "group": "outer",
+   "role": "P6 plaque 2x4"
+  },
+  {
+   "part": "87079",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile P6"
+  },
+  {
+   "part": "3020",
+   "colour": 0,
+   "group": "outer",
+   "role": "P7 plaque 2x4"
+  },
+  {
+   "part": "87079",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile P7"
+  },
+  {
+   "part": "3020",
+   "colour": 0,
+   "group": "outer",
+   "role": "P8 plaque 2x4"
+  },
+  {
+   "part": "87079",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile P8"
+  },
+  {
+   "part": "3666",
+   "colour": 0,
+   "group": "outer",
+   "role": "P9 plaque 6x1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile P9"
+  },
+  {
+   "part": "3021",
+   "colour": 0,
+   "group": "outer",
+   "role": "P10 plaque 2x3"
+  },
+  {
+   "part": "26603",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile P10"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "outer",
+   "role": "P11 plaque 2x1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile P11"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "outer",
+   "role": "P12 plaque 1x2"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile P12"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "outer",
+   "role": "P13 plaque 1x2"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile P13"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "outer",
+   "role": "P14 plaque 1x1"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile P14"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "outer",
+   "role": "P15 plaque 1x1"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "outer_t",
+   "role": "tuile P15"
+  },
+  {
+   "part": "78443",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : S1 forme 78444 (gain 27)"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur S1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur S1"
+  },
+  {
+   "part": "24299",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : S2 forme 24307 (gain 15)"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur S2"
+  },
+  {
+   "part": "78444",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : S3 forme 78443 (gain 8)"
+  },
+  {
+   "part": "25269",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile quart de rond sur S3"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur S3"
+  },
+  {
+   "part": "43722",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : S4 forme 43723 (gain 7)"
+  },
+  {
+   "part": "63864",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur S4"
+  },
+  {
+   "part": "30565",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : S5 forme 30565 (gain 5)"
+  },
+  {
+   "part": "25269",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile quart de rond sur S5"
+  },
+  {
+   "part": "2431",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur S5"
+  },
+  {
+   "part": "63864",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur S5"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur S5"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur S5"
+  },
+  {
+   "part": "41539",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P1 plaque 8x8"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P1"
+  },
+  {
+   "part": "3036",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P2 plaque 8x6"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P2"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P2"
+  },
+  {
+   "part": "3034",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P3 plaque 2x8"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P3"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P3"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P3"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P3"
+  },
+  {
+   "part": "3031",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P4 plaque 4x4"
+  },
+  {
+   "part": "1751",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile P4"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P5 plaque 1x8"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P5"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile sur P5"
+  },
+  {
+   "part": "3020",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P6 plaque 2x4"
+  },
+  {
+   "part": "87079",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile P6"
+  },
+  {
+   "part": "3020",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P7 plaque 2x4"
+  },
+  {
+   "part": "87079",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile P7"
+  },
+  {
+   "part": "3020",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P8 plaque 2x4"
+  },
+  {
+   "part": "87079",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile P8"
+  },
+  {
+   "part": "3666",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P9 plaque 6x1"
+  },
+  {
+   "part": "6636",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile P9"
+  },
+  {
+   "part": "3021",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P10 plaque 2x3"
+  },
+  {
+   "part": "26603",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile P10"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P11 plaque 2x1"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile P11"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P12 plaque 1x2"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile P12"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P13 plaque 1x2"
+  },
+  {
+   "part": "3069b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile P13"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P14 plaque 1x1"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile P14"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "inner",
+   "role": "face interieure : P15 plaque 1x1"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "inner_t",
+   "role": "face interieure : tuile P15"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "47905",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  1 with Studs on Two Opposite Sides"
+  },
+  {
+   "part": "3623",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  3"
+  },
+  {
+   "part": "3666",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  6"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  2"
+  },
+  {
+   "part": "3666",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  6"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "47905",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  1 with Studs on Two Opposite Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "47905",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  1 with Studs on Two Opposite Sides"
+  },
+  {
+   "part": "3623",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  3"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3623",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  3"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  2"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  2"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3623",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  3"
+  },
+  {
+   "part": "47905",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  1 with Studs on Two Opposite Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "47905",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  1 with Studs on Two Opposite Sides"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  2"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3623",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  3"
+  },
+  {
+   "part": "3623",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  3"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  2"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "47905",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  1 with Studs on Two Opposite Sides"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3710",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  4"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "3623",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  3"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3623",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  3"
+  },
+  {
+   "part": "47905",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  1 with Studs on Two Opposite Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3666",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  6"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  2"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3710",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  4"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "47905",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  1 with Studs on Two Opposite Sides"
+  },
+  {
+   "part": "3623",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  3"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3710",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  4"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  2"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3623",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  3"
+  },
+  {
+   "part": "47905",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  1 with Studs on Two Opposite Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "3623",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  3"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "3460",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  8"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "3023",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  2"
+  },
+  {
+   "part": "3666",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  6"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "3024",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  1"
+  },
+  {
+   "part": "3666",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Plate  1 x  6"
+  },
+  {
+   "part": "47905",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  1 with Studs on Two Opposite Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "52107",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : Brick  1 x  2 with Studs on Sides"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : tuile de fermeture"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : tuile de fermeture"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : tuile de fermeture"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : tuile de fermeture"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : tuile de fermeture"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : tuile de fermeture"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : tuile de fermeture"
+  },
+  {
+   "part": "3070b",
+   "colour": 0,
+   "group": "wall",
+   "role": "ame : tuile de fermeture"
+  }
+ ]
+}

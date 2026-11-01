@@ -1,0 +1,38 @@
+{
+ "u0": -220.0,
+ "v0": 32.0,
+ "frame": "plan PCA de l'oreille droite, v = vertical, echelle 797.4 LDU par unite GLB",
+ "plane_normal": [
+  0.976,
+  0.163,
+  -0.143
+ ],
+ "scale_ldu_per_unit": 797.3525178128766,
+ "res": 4.0,
+ "shape": [
+  91,
+  111
+ ],
+ "area_ldu2": 92048.0,
+ "analyse": {
+  "axe": {
+   "pixels": 63
+  },
+  "pente": {
+   "pixels": 71,
+   "pentes_dv_du_quartiles": [
+    0.85,
+    3.37,
+    5.79
+   ]
+  },
+  "arc": {
+   "pixels": 154,
+   "rayons_ldu_quartiles": [
+    54.0,
+    62.0,
+    86.0
+   ]
+  }
+ }
+}

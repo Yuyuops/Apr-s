@@ -29,6 +29,25 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 septies. LEGO V6 : contour automatique (`11_automatic_contour_proof/`)
+
+**Verdict : CORRIGER L'ALGORITHME.**
+
+Un générateur sans liste de positions (`autogen.py`) traite l'oreille de Paco et celle du Beagle avec la même chaîne :
+
+1. contour extrait du GLB et analysé (pentes, arcs) ;
+2. pièces de forme choisies le long du contour ;
+3. intérieur en rectangles ;
+4. règles de V5.1 (miroir, âme, tuiles) ;
+5. fixation cherchée automatiquement.
+
+Résultats :
+
+- **Paco.** Recouvrement du contour 0,911 (V5 manuelle 0,839, V5.1 manuelle 0,871, même mesure). 0 collision, 0 pièce déconnectée. 2 chemins de fixation (5 + 2 vrais tenons), 2,13 N au bout (V5.1 : 0,32 N), 75 à 83 g.
+- **Beagle.** Recouvrement 0,958, 0 collision, 0 pièce déconnectée (module seul).
+
+Défaut identifié : les grands bouts arrondis ne sont pas reproduits, à cause du choix glouton et de la réservation des boîtes. La seconde plaque de fixation affleure sur le crâne de Paco. Un banc d'essai physique de la fixation et son protocole sont prêts, sans essai réalisé.
+
 ## 0 sexies. LEGO V5.1 : finalisation de l'oreille conçue (`10_designed_ear_refinement/`)
 
 **Verdict : CHANGER LA FIXATION.** La forme est réussie.
