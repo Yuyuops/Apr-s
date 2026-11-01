@@ -1,0 +1,333 @@
+{
+ "fenetre_mm": [
+  [
+   48.0,
+   9.600000000000001,
+   -240.0
+  ],
+  [
+   232.0,
+   355.20000000000005,
+   -56.0
+  ]
+ ],
+ "cellules_cavite": 570,
+ "colonnes": 131,
+ "cameras": {
+  "profil_gauche": {
+   "az": 270,
+   "el": 5,
+   "surface_projetee_cavite_mm2": 5959.4,
+   "modeles": {
+    "GLB": {
+     "cavite_visible_mm2": 3302.6,
+     "cavite_masquee_mm2": 2656.8,
+     "part_visible": 0.554,
+     "couleurs_exposees": {
+      "sombre": 0.037,
+      "rouge": 0.182,
+      "clair": 0.049,
+      "peau": 0.732
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.088,
+      "plafond (face vers le bas)": 0.059,
+      "paroi laterale": 0.852
+     },
+     "pixels_rouges_mm2": 600.16,
+     "pixels_sombres_mm2": 122.48
+    },
+    "V82": {
+     "cavite_visible_mm2": 3239.3,
+     "cavite_masquee_mm2": 2720.1,
+     "part_visible": 0.544,
+     "couleurs_exposees": {
+      "sombre": 0.263,
+      "rouge": 0.192,
+      "clair": 0.044,
+      "peau": 0.502
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.06,
+      "plafond (face vers le bas)": 0.005,
+      "paroi laterale": 0.935
+     },
+     "pixels_rouges_mm2": 620.96,
+     "pixels_sombres_mm2": 852.08,
+     "silhouette_IoU_fenetre_cavite": 0.96,
+     "ecart_profondeur_median_mm": 3.08
+    }
+   }
+  },
+  "profil_droit": {
+   "az": 90,
+   "el": 5,
+   "surface_projetee_cavite_mm2": 5924.5,
+   "modeles": {
+    "GLB": {
+     "cavite_visible_mm2": 3892.1,
+     "cavite_masquee_mm2": 2032.4,
+     "part_visible": 0.657,
+     "couleurs_exposees": {
+      "sombre": 0.045,
+      "rouge": 0.155,
+      "clair": 0.07,
+      "peau": 0.73
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.151,
+      "plafond (face vers le bas)": 0.05,
+      "paroi laterale": 0.799
+     },
+     "pixels_rouges_mm2": 601.52,
+     "pixels_sombres_mm2": 177.08
+    },
+    "V82": {
+     "cavite_visible_mm2": 3461.0,
+     "cavite_masquee_mm2": 2463.4,
+     "part_visible": 0.584,
+     "couleurs_exposees": {
+      "sombre": 0.253,
+      "rouge": 0.159,
+      "clair": 0.09,
+      "peau": 0.497
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.082,
+      "plafond (face vers le bas)": 0.013,
+      "paroi laterale": 0.905
+     },
+     "pixels_rouges_mm2": 550.16,
+     "pixels_sombres_mm2": 877.36,
+     "silhouette_IoU_fenetre_cavite": 0.965,
+     "ecart_profondeur_median_mm": 3.72
+    }
+   }
+  },
+  "face": {
+   "az": 180,
+   "el": 8,
+   "surface_projetee_cavite_mm2": 6299.2,
+   "modeles": {
+    "GLB": {
+     "cavite_visible_mm2": 3451.9,
+     "cavite_masquee_mm2": 2847.4,
+     "part_visible": 0.548,
+     "couleurs_exposees": {
+      "sombre": 0.007,
+      "rouge": 0.223,
+      "clair": 0.012,
+      "peau": 0.758
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.283,
+      "plafond (face vers le bas)": 0.055,
+      "paroi laterale": 0.662
+     },
+     "pixels_rouges_mm2": 770.72,
+     "pixels_sombres_mm2": 23.92
+    },
+    "V82": {
+     "cavite_visible_mm2": 3304.0,
+     "cavite_masquee_mm2": 2995.2,
+     "part_visible": 0.525,
+     "couleurs_exposees": {
+      "sombre": 0.114,
+      "rouge": 0.216,
+      "clair": 0.004,
+      "peau": 0.666
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.114,
+      "plafond (face vers le bas)": 0.0,
+      "paroi laterale": 0.886
+     },
+     "pixels_rouges_mm2": 712.88,
+     "pixels_sombres_mm2": 376.6,
+     "silhouette_IoU_fenetre_cavite": 0.95,
+     "ecart_profondeur_median_mm": 3.79
+    }
+   }
+  },
+  "trois_quarts": {
+   "az": 225,
+   "el": 18,
+   "surface_projetee_cavite_mm2": 10854.3,
+   "modeles": {
+    "GLB": {
+     "cavite_visible_mm2": 5664.4,
+     "cavite_masquee_mm2": 5189.9,
+     "part_visible": 0.522,
+     "couleurs_exposees": {
+      "sombre": 0.018,
+      "rouge": 0.178,
+      "clair": 0.043,
+      "peau": 0.761
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.261,
+      "plafond (face vers le bas)": 0.016,
+      "paroi laterale": 0.723
+     },
+     "pixels_rouges_mm2": 1005.72,
+     "pixels_sombres_mm2": 104.76
+    },
+    "V82": {
+     "cavite_visible_mm2": 5510.9,
+     "cavite_masquee_mm2": 5343.4,
+     "part_visible": 0.508,
+     "couleurs_exposees": {
+      "sombre": 0.205,
+      "rouge": 0.166,
+      "clair": 0.018,
+      "peau": 0.612
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.159,
+      "plafond (face vers le bas)": 0.003,
+      "paroi laterale": 0.837
+     },
+     "pixels_rouges_mm2": 912.64,
+     "pixels_sombres_mm2": 1127.08,
+     "silhouette_IoU_fenetre_cavite": 0.962,
+     "ecart_profondeur_median_mm": 2.5
+    }
+   }
+  },
+  "dessous": {
+   "az": 180,
+   "el": -70,
+   "surface_projetee_cavite_mm2": 9865.9,
+   "modeles": {
+    "GLB": {
+     "cavite_visible_mm2": 3587.6,
+     "cavite_masquee_mm2": 6278.2,
+     "part_visible": 0.364,
+     "couleurs_exposees": {
+      "sombre": 0.033,
+      "rouge": 0.249,
+      "clair": 0.007,
+      "peau": 0.711
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.0,
+      "plafond (face vers le bas)": 0.758,
+      "paroi laterale": 0.242
+     },
+     "pixels_rouges_mm2": 892.36,
+     "pixels_sombres_mm2": 119.16
+    },
+    "V82": {
+     "cavite_visible_mm2": 1308.2,
+     "cavite_masquee_mm2": 8557.7,
+     "part_visible": 0.133,
+     "couleurs_exposees": {
+      "sombre": 0.127,
+      "rouge": 0.173,
+      "clair": 0.028,
+      "peau": 0.671
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.0,
+      "plafond (face vers le bas)": 0.662,
+      "paroi laterale": 0.338
+     },
+     "pixels_rouges_mm2": 226.48,
+     "pixels_sombres_mm2": 166.16,
+     "silhouette_IoU_fenetre_cavite": 0.982,
+     "ecart_profondeur_median_mm": 4.26
+    }
+   }
+  },
+  "trois_quarts_gauche_bas": {
+   "az": 240,
+   "el": -25,
+   "surface_projetee_cavite_mm2": 11840.9,
+   "modeles": {
+    "GLB": {
+     "cavite_visible_mm2": 5564.8,
+     "cavite_masquee_mm2": 6276.1,
+     "part_visible": 0.47,
+     "couleurs_exposees": {
+      "sombre": 0.019,
+      "rouge": 0.23,
+      "clair": 0.029,
+      "peau": 0.721
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.017,
+      "plafond (face vers le bas)": 0.247,
+      "paroi laterale": 0.736
+     },
+     "pixels_rouges_mm2": 1282.64,
+     "pixels_sombres_mm2": 107.72
+    },
+    "V82": {
+     "cavite_visible_mm2": 4590.2,
+     "cavite_masquee_mm2": 7250.7,
+     "part_visible": 0.388,
+     "couleurs_exposees": {
+      "sombre": 0.206,
+      "rouge": 0.179,
+      "clair": 0.029,
+      "peau": 0.586
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.0,
+      "plafond (face vers le bas)": 0.15,
+      "paroi laterale": 0.85
+     },
+     "pixels_rouges_mm2": 821.48,
+     "pixels_sombres_mm2": 944.68,
+     "silhouette_IoU_fenetre_cavite": 0.972,
+     "ecart_profondeur_median_mm": 2.86
+    }
+   }
+  },
+  "trois_quarts_droit_bas": {
+   "az": 130,
+   "el": -20,
+   "surface_projetee_cavite_mm2": 10129.2,
+   "modeles": {
+    "GLB": {
+     "cavite_visible_mm2": 4340.5,
+     "cavite_masquee_mm2": 5788.7,
+     "part_visible": 0.429,
+     "couleurs_exposees": {
+      "sombre": 0.03,
+      "rouge": 0.325,
+      "clair": 0.041,
+      "peau": 0.604
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.074,
+      "plafond (face vers le bas)": 0.228,
+      "paroi laterale": 0.697
+     },
+     "pixels_rouges_mm2": 1410.72,
+     "pixels_sombres_mm2": 129.0
+    },
+    "V82": {
+     "cavite_visible_mm2": 3270.9,
+     "cavite_masquee_mm2": 6858.3,
+     "part_visible": 0.323,
+     "couleurs_exposees": {
+      "sombre": 0.087,
+      "rouge": 0.266,
+      "clair": 0.03,
+      "peau": 0.617
+     },
+     "surfaces_vues": {
+      "plancher (face vers le haut)": 0.004,
+      "plafond (face vers le bas)": 0.155,
+      "paroi laterale": 0.841
+     },
+     "pixels_rouges_mm2": 870.48,
+     "pixels_sombres_mm2": 285.88,
+     "silhouette_IoU_fenetre_cavite": 0.982,
+     "ecart_profondeur_median_mm": 4.75
+    }
+   }
+  }
+ }
+}

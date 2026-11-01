@@ -1,0 +1,14 @@
+{
+ "camera": "face",
+ "cellules": 223,
+ "visibles": 96,
+ "cachees": 127,
+ "sombre": {
+  "total": 198,
+  "visibles": 85
+ },
+ "rouge": {
+  "total": 25,
+  "visibles": 11
+ }
+}

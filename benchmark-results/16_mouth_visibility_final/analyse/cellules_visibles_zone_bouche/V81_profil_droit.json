@@ -1,0 +1,18 @@
+{
+ "camera": "profil_droit",
+ "cellules": 93,
+ "visibles": 36,
+ "cachees": 57,
+ "sombre": {
+  "total": 68,
+  "visibles": 25
+ },
+ "rouge": {
+  "total": 25,
+  "visibles": 11
+ },
+ "peau": {
+  "total": 0,
+  "visibles": 0
+ }
+}

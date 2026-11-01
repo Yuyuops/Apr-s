@@ -1,0 +1,18 @@
+{
+ "camera": "trois_quarts",
+ "cellules": 23,
+ "visibles": 4,
+ "cachees": 19,
+ "sombre": {
+  "total": 8,
+  "visibles": 0
+ },
+ "rouge": {
+  "total": 12,
+  "visibles": 3
+ },
+ "peau": {
+  "total": 3,
+  "visibles": 1
+ }
+}

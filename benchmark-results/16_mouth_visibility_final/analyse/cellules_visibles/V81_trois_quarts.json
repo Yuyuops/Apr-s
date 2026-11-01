@@ -1,0 +1,14 @@
+{
+ "camera": "trois_quarts",
+ "cellules": 223,
+ "visibles": 71,
+ "cachees": 152,
+ "sombre": {
+  "total": 198,
+  "visibles": 61
+ },
+ "rouge": {
+  "total": 25,
+  "visibles": 10
+ }
+}

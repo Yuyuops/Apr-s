@@ -1,0 +1,102 @@
+{
+ "variante": "C",
+ "regles": {
+  "lining_layers": 2,
+  "marge_mm": 4.0,
+  "ceil_max": 5,
+  "min_open": 3,
+  "min_sets": 20,
+  "famille_haut": [
+   "3070b",
+   "3069b",
+   "63864",
+   "2431",
+   "24246",
+   "54200",
+   "85984",
+   "3040b",
+   "3039",
+   "4286"
+  ]
+ },
+ "traitements": [
+  {
+   "id": "bouche_9",
+   "couleur": "noir",
+   "orientation": "bas",
+   "inclinaison_deg": 6.8,
+   "longueur_mm": 16.6,
+   "largeur_mm": 7.4,
+   "traitement": "T2 plafond : 4 cellules de surface + 1 plaque(s) derriere",
+   "cellules_recolorees": 8,
+   "confiance": "haute"
+  },
+  {
+   "id": "bouche_15",
+   "couleur": "rouge",
+   "orientation": "haut",
+   "inclinaison_deg": 30.3,
+   "longueur_mm": 12.0,
+   "largeur_mm": 8.0,
+   "traitement": "T1 surface inclinee",
+   "piece": "54200",
+   "inclinaison_piece_deg": 29.9,
+   "erreur_direction_deg": 28.5,
+   "iou_empreinte": 1.0,
+   "saillie_plaques": 0.9,
+   "cout": 0.52,
+   "confiance": "haute"
+  },
+  {
+   "id": "bouche_14",
+   "couleur": "rouge",
+   "orientation": "bas",
+   "inclinaison_deg": 5.1,
+   "longueur_mm": 19.0,
+   "largeur_mm": 4.8,
+   "traitement": "T2 plafond : 5 cellules de surface + 1 plaque(s) derriere",
+   "cellules_recolorees": 10,
+   "confiance": "haute"
+  },
+  {
+   "id": "T3C",
+   "traitement": "transfert des couleurs du GLB sur les cellules de cavite exposees",
+   "cellules_cavite_exposees": 154,
+   "cellules_sombres": 0,
+   "cellules_rouges": 1,
+   "cellules_peau": 122,
+   "cellules_claires": 0,
+   "cellules_recolorees": 6,
+   "cavite": {
+    "composantes_3D_gardees": 1,
+    "cellules": 303,
+    "ix": [
+     14,
+     25
+    ],
+    "iy": [
+     80,
+     89
+    ],
+    "iz": [
+     12,
+     26
+    ]
+   }
+  },
+  {
+   "id": "T3",
+   "traitement": "cavite ouverte : ouverture minimale 3 plaques (9.6 mm) ; couleurs transferees du GLB (voir T3C)",
+   "colonnes_cavite": 77,
+   "composantes_gardees": 1,
+   "cellules_creusees_plafond": 0,
+   "cellules_ligne_levre": 0,
+   "cotes_ouverts": {},
+   "cellules_langue": 0,
+   "cellules_parois": 0
+  }
+ ],
+ "cellules_recolorees": 23,
+ "cellules_creusees": 1,
+ "pieces": 1
+}

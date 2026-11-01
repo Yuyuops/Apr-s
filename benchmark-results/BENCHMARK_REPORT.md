@@ -29,6 +29,21 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 duodecies. LEGO V8.2 : diagnostic final de visibilité de la bouche (`16_mouth_visibility_final/`)
+
+**Verdict : VALIDER AVEC LIMITATION.**
+
+Diagnostic par projection et tampon de profondeur, sur les mêmes caméras, pour le GLB, V8, V8.1 et V8.2.
+
+- **Géométrie.** L'ouverture est reproduite : 92 à 98 % de la cavité visible du GLB vue de côté, IoU de silhouette 0,96 à 0,99. Pas d'occultation propre au profil gauche (31 % de cavité cachée contre 29 % dans le GLB).
+- **Couleur.** La cavité du GLB est jaune à 97-100 % : sa lecture vient de la forme et de l'ombrage.
+- **Défaut de V8.1 mis au jour.** La sélection de la cavité par colonnes mélangeait les hauteurs : **130 des 223 cellules recolorées par V8.1 étaient hors de la bouche** (pieds, jambes et bassin). Sa ligne de lèvre sombre n'existe pas dans le GLB. V8.2 les corrige (composante 3D, couleurs transférées du GLB : 23 cellules, toutes dans la bouche).
+- **Résultats antérieurs.** La première mesure de ce diagnostic avait le même défaut : elle est écartée. Les dossiers 14 et 15 ne sont pas modifiés ; la correction de V8.1 est consignée dans le dossier 16.
+- **Limitation restante.** 79 % du sombre visible dans la zone vu de gauche vient des pièces de la fixation de l'oreille basse (module gelé).
+- **Contrôles.** 2 756 pièces, 0 collision, 0 pièce déconnectée, 326 étapes ; oreilles, yeux et truffe inchangés ; non-régression V6 / V6.1 sans différence ; 50 sous-ensembles sous 0,5 N (49 en V8), un nouveau groupe faible loin de la bouche, justifié.
+
+Règle d'arrêt : pas d'autre itération esthétique sur cette bouche sans décision.
+
 ## 0 undecies. LEGO V8.1 : module de lignes et cavités (`15_mouth_and_cavities/`)
 
 **Verdict : CORRIGER SOUS CONDITION.**

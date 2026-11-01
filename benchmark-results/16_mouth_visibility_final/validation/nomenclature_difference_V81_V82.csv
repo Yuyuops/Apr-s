@@ -1,0 +1,35 @@
+part,designation,colour,qty_V81,qty_V82,diff
+3021,Plate  2 x  3,Black,4,2,-2
+3021,Plate  2 x  3,Yellow,72,73,1
+3022,Plate  2 x  2,Black,1,0,-1
+3022,Plate  2 x  2,Red,2,1,-1
+3022,Plate  2 x  2,Yellow,35,46,11
+3023,Plate  1 x  2,Black,76,53,-23
+3023,Plate  1 x  2,Red,142,156,14
+3023,Plate  1 x  2,White,18,21,3
+3023,Plate  1 x  2,Yellow,268,262,-6
+3024,Plate  1 x  1,Black,160,114,-46
+3024,Plate  1 x  1,Red,259,247,-12
+3024,Plate  1 x  1,White,39,35,-4
+3024,Plate  1 x  1,Yellow,486,519,33
+3031,Plate  4 x  4,Yellow,49,51,2
+3032,Plate  4 x  6,Yellow,28,31,3
+3034,Plate  2 x  8,Yellow,9,8,-1
+3035,Plate  4 x  8,Yellow,21,20,-1
+3069b,Tile  1 x  2 with Groove,Black,58,57,-1
+3069b,Tile  1 x  2 with Groove,Red,1,2,1
+3069b,Tile  1 x  2 with Groove,Yellow,14,17,3
+3070b,Tile  1 x  1 with Groove,Black,36,37,1
+3070b,Tile  1 x  1 with Groove,Red,5,4,-1
+3070b,Tile  1 x  1 with Groove,White,3,4,1
+3070b,Tile  1 x  1 with Groove,Yellow,37,34,-3
+3460,Plate  1 x  8,Red,28,29,1
+3460,Plate  1 x  8,Yellow,11,10,-1
+3623,Plate  1 x  3,Black,21,17,-4
+3623,Plate  1 x  3,Red,72,76,4
+3623,Plate  1 x  3,White,3,2,-1
+3623,Plate  1 x  3,Yellow,121,114,-7
+3666,Plate  1 x  6,Red,39,45,6
+3710,Plate  1 x  4,Red,126,117,-9
+3710,Plate  1 x  4,Yellow,131,130,-1
+3795,Plate  2 x  6,Yellow,23,24,1

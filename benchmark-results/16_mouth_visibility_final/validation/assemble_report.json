@@ -1,0 +1,176 @@
+{
+ "body": {
+  "name": "corps",
+  "parts": 2388,
+  "kinds": {
+   "plate": 2294,
+   "tile": 94
+  },
+  "reconnect_cells": 11,
+  "cells": 9357,
+  "cells_brickify": 12840,
+  "recoloured_new_surface": 2274,
+  "floating_before_repair": 132,
+  "bridge_recoloured_cells": 46,
+  "bridges": 47,
+  "floating_after_repair": 63,
+  "dropped_floating_parts": 63,
+  "dropped_floating_cells": 78
+ },
+ "carved_cells": 1307,
+ "carved_cells_ears": 1197,
+ "carved_cells_microdetails": 110,
+ "recoloured_cells": 26,
+ "parts_microdetails": 8,
+ "parts_lcm": 1,
+ "cells_lcm_recoloured": 23,
+ "cells_lcm_carved": 1,
+ "carved_protected_cells": 13,
+ "seats": [
+  {
+   "oreille": "V7_oreille_haute",
+   "plaque": "plaque tournee 1 (v 40..48)",
+   "appuis": 4
+  },
+  {
+   "oreille": "V7_oreille_haute",
+   "plaque": "plaque tournee 2 (v 80..88)",
+   "appuis": 2
+  },
+  {
+   "oreille": "V7_oreille_basse",
+   "plaque": "plaque tournee 1 (v 200..208)",
+   "appuis": 7
+  },
+  {
+   "oreille": "V7_oreille_basse",
+   "plaque": "plaque tournee 2 (v 240..248)",
+   "appuis": 5
+  }
+ ],
+ "body_tiles_turned_to_plates": 14,
+ "parts_body": 2388,
+ "parts_seats": 18,
+ "parts_ears": 341,
+ "fixations": {
+  "V7_oreille_haute": {
+   "primary": {
+    "num": "3034",
+    "w": 8,
+    "l": 2,
+    "xm0": 220,
+    "zm0": -20,
+    "vp": 48,
+    "coin": [
+     [
+      230,
+      10
+     ],
+     [
+      270,
+      -10
+     ],
+     [
+      330,
+      10
+     ],
+     [
+      370,
+      -10
+     ]
+    ]
+   },
+   "secondary": {
+    "num": "3031",
+    "w": 4,
+    "l": 4,
+    "xm0": 220,
+    "zm0": -80,
+    "vp": 88,
+    "coin": [
+     [
+      250,
+      -50
+     ],
+     [
+      290,
+      -70
+     ]
+    ],
+    "tier": 1,
+    "exposed_cells": 0
+   }
+  },
+  "V7_oreille_basse": {
+   "primary": {
+    "num": "3035",
+    "w": 8,
+    "l": 4,
+    "xm0": 160,
+    "zm0": -80,
+    "vp": 208,
+    "coin": [
+     [
+      170,
+      -10
+     ],
+     [
+      190,
+      -70
+     ],
+     [
+      210,
+      -30
+     ],
+     [
+      250,
+      -50
+     ],
+     [
+      270,
+      -10
+     ],
+     [
+      290,
+      -70
+     ],
+     [
+      310,
+      -30
+     ]
+    ]
+   },
+   "secondary": {
+    "num": "3035",
+    "w": 8,
+    "l": 4,
+    "xm0": 300,
+    "zm0": -80,
+    "vp": 248,
+    "coin": [
+     [
+      350,
+      -50
+     ],
+     [
+      390,
+      -70
+     ],
+     [
+      450,
+      -50
+     ]
+    ],
+    "tier": 1,
+    "exposed_cells": 1
+   }
+  }
+ },
+ "prep": {
+  "ear_cells": 399,
+  "skin_cells": 728,
+  "core_cells": 602,
+  "protect_cells": 23
+ },
+ "lower_ear_frame_shift_ldu": 304
+}
