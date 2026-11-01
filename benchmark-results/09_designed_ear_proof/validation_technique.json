@@ -1,0 +1,372 @@
+{
+ "modele": "tete C (poche V4.1) + oreille concue V5",
+ "controle_conception": {
+  "pieces": {
+   "A": 25,
+   "B": 17,
+   "C": 23
+  },
+  "overlap_cells_A": 0,
+  "overlap_cells_B": 0,
+  "overlap_cells_C": 0,
+  "A_outside_B_cells": 0,
+  "C_outside_B_cells": 0,
+  "visible_studs": 0,
+  "visible_studs_parts": [],
+  "outline_iou_layer_B_vs_reference_lobe": 0.86
+ },
+ "validation_v2": {
+  "name": "tete_v5",
+  "source_ldr": "/root/bench/proto/ear09/run/tete_notice.ldr",
+  "disclaimer": "Geometric and graph checks plus an indicative stud-clutch model. Not a physical test.",
+  "parts": 1282,
+  "part_types": 34,
+  "part_colour_lines": 56,
+  "steps": 84,
+  "collisions": {
+   "pairs": 0,
+   "cells_4ldu": 0,
+   "examples": [],
+   "details": []
+  },
+  "blocked_studs": 0,
+  "joints": 1964,
+  "studs_engaged": 4009,
+  "single_stud_joints": 1205,
+  "sideways_joints": 82,
+  "groups_on_support_not_attached_to_main": 0,
+  "disconnected_parts": 0,
+  "islands": 0,
+  "disconnected_examples": [],
+  "unsupported_at_placement": 0,
+  "subassemblies_not_attachable": [],
+  "catalogue": {
+   "lines": 56,
+   "never_produced": [],
+   "not_found": [],
+   "rare": []
+  },
+  "frames": [
+   [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   [
+    0.8,
+    0.0,
+    -0.6
+   ]
+  ],
+  "turntable_joints": 2,
+  "stability": {
+   "model": "rigid parts; clutch 1.0 N per stud (assumed); compression free; 0.10 g per stud x stud x plate; gravity, then a force at the far end of each sub-assembly. Indicative only.",
+   "cases": 349,
+   "gravity_sf_below_1": 0,
+   "gravity_sf_below_2": 0,
+   "min_gravity_sf": 3.46,
+   "subassemblies_over_1g": 81,
+   "tip_force_below_0_5N": 12,
+   "tip_force_below_2N": 26,
+   "min_tip_force_N": 0.04,
+   "weakest": [
+    {
+     "mass_g": 2.3,
+     "studs": 1,
+     "gravity_sf": 76.45,
+     "tip_force_N": 0.04,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 19,
+     "colours": {
+      "Black": 19
+     },
+     "bbox_ldu": [
+      [
+       80.0,
+       -160.0,
+       60.0
+      ],
+      [
+       100.0,
+       -8.0,
+       100.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 37.0,
+     "studs": 4,
+     "gravity_sf": 3.47,
+     "tip_force_N": 0.16,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 68,
+     "colours": {
+      "Black": 68
+     },
+     "bbox_ldu": [
+      [
+       22.0,
+       -444.0,
+       -1.0
+      ],
+      [
+       250.0,
+       -256.0,
+       302.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.0,
+     "studs": 4,
+     "gravity_sf": null,
+     "tip_force_N": 0.8,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 6,
+     "colours": {
+      "Yellow": 4,
+      "Black": 2
+     },
+     "bbox_ldu": [
+      [
+       380.0,
+       -288.0,
+       380.0
+      ],
+      [
+       400.0,
+       -264.0,
+       460.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.6,
+     "studs": 4,
+     "gravity_sf": null,
+     "tip_force_N": 0.96,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 12,
+     "colours": {
+      "Black": 11,
+      "Yellow": 1
+     },
+     "bbox_ldu": [
+      [
+       40.0,
+       -152.0,
+       40.0
+      ],
+      [
+       80.0,
+       -112.0,
+       100.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.0,
+     "studs": 4,
+     "gravity_sf": 339.79,
+     "tip_force_N": 1.09,
+     "frame": [
+      0.8,
+      0.0,
+      -0.6
+     ],
+     "parts": 2,
+     "colours": {
+      "Black": 2
+     },
+     "bbox_ldu": [
+      [
+       118.0,
+       -444.0,
+       127.0
+      ],
+      [
+       178.0,
+       -404.0,
+       201.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.0,
+     "studs": 5,
+     "gravity_sf": null,
+     "tip_force_N": 1.36,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 4,
+     "colours": {
+      "Yellow": 4
+     },
+     "bbox_ldu": [
+      [
+       340.0,
+       -272.0,
+       480.0
+      ],
+      [
+       440.0,
+       -256.0,
+       500.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.0,
+     "studs": 4,
+     "gravity_sf": null,
+     "tip_force_N": 1.68,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 5,
+     "colours": {
+      "Black": 4,
+      "Yellow": 1
+     },
+     "bbox_ldu": [
+      [
+       240.0,
+       -328.0,
+       320.0
+      ],
+      [
+       280.0,
+       -296.0,
+       360.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.9,
+     "studs": 8,
+     "gravity_sf": null,
+     "tip_force_N": 3.89,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 10,
+     "colours": {
+      "Yellow": 6,
+      "Black": 4
+     },
+     "bbox_ldu": [
+      [
+       480.0,
+       -272.0,
+       620.0
+      ],
+      [
+       540.0,
+       -240.0,
+       700.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.2,
+     "studs": 6,
+     "gravity_sf": 1656.47,
+     "tip_force_N": 4.36,
+     "frame": [
+      0.8,
+      0.0,
+      -0.6
+     ],
+     "parts": 2,
+     "colours": {
+      "Black": 2
+     },
+     "bbox_ldu": [
+      [
+       94.0,
+       -324.0,
+       95.0
+      ],
+      [
+       130.0,
+       -264.0,
+       137.0
+      ]
+     ]
+    },
+    {
+     "mass_g": 1.2,
+     "studs": 8,
+     "gravity_sf": 679.58,
+     "tip_force_N": 5.81,
+     "frame": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "parts": 3,
+     "colours": {
+      "Yellow": 3
+     },
+     "bbox_ldu": [
+      [
+       400.0,
+       -136.0,
+       560.0
+      ],
+      [
+       480.0,
+       -120.0,
+       600.0
+      ]
+     ]
+    }
+   ]
+  },
+  "fidelity": {
+   "volume_iou": 0.7745,
+   "lego_volume_cells": 4374.8,
+   "mesh_volume_cells": 4792.0,
+   "silhouette_iou_face": 0.923,
+   "silhouette_iou_profil": 0.9391,
+   "silhouette_iou_dessus": 0.8784
+  }
+ },
+ "comparaison": {
+  "C": {
+   "silhouette_face": 0.955,
+   "silhouette_profil": 0.958,
+   "silhouette_dessus": 0.893,
+   "volume_iou": 0.853
+  },
+  "V41": {
+   "silhouette_face": 0.896,
+   "silhouette_profil": 0.92,
+   "silhouette_dessus": 0.89,
+   "volume_iou": 0.713
+  }
+ }
+}

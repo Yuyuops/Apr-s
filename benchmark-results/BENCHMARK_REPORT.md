@@ -29,6 +29,25 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 quinquies. LEGO V5 : oreille conçue directement (`09_designed_ear_proof/`)
+
+**Verdict : VALIDER LA MÉTHODE**, avec réserves.
+
+L'oreille haute a été mesurée sur le maillage de référence (palette de 21,6 × 11 tenons, bout en demi-cercle de 4 tenons de rayon, plan à 52,5°). Elle a ensuite été dessinée à la main, pièce par pièce, sans l'algorithme voxel :
+
+- un demi-disque 4×8 au bout libre ;
+- une chaîne d'ailes 2×4 et 2×2 pour le bord biseauté ;
+- 3 couches de 9,6 mm au total, dont une face extérieure entièrement tuilée ;
+- le mécanisme à plateaux 3-4-5 de 07 et 08, avec un pied court et 2 équerres 2×2.
+
+Résultats techniques : 0 collision, 0 îlot, 0 tenon visible, 79 pièces disponibles.
+
+Résultat visuel : visiblement meilleure que C sur la face extérieure, le profil, les trois quarts et la face intérieure. Moins bonne de face (trop fine par rapport aux ≈ 20 mm de la référence) et au raccord (pied visible).
+
+Silhouette 0,923 / 0,939, contre 0,955 / 0,958 pour C. Tenue indicative inchangée par rapport à V4.1 (2 plateaux tournants).
+
+Aucune nouvelle itération sans décision.
+
 ## 0 quater. Brickify V4.1 : correction finale de l'oreille articulée
 
 Dossier `08_articulated_ear_final_correction/`. Ce qui a été corrigé :
