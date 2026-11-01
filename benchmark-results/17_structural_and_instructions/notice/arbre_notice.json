@@ -1,0 +1,104 @@
+{
+ "Corps": {
+  "Pieds, jambes, bassin, torse, cou et tete": {
+   "etapes": 124,
+   "pieces": 2468
+  }
+ },
+ "Bras gauche": {
+  "Main": {
+   "etapes": 1,
+   "pieces": 20
+  },
+  "Avant-bras et bras": {
+   "etapes": 6,
+   "pieces": 117
+  },
+  "Fixation / assemblage": {
+   "etapes": 1,
+   "pieces": 0
+  }
+ },
+ "Bras droit": {
+  "Main": {
+   "etapes": 1,
+   "pieces": 20
+  },
+  "Avant-bras et bras": {
+   "etapes": 5,
+   "pieces": 98
+  },
+  "Fixation / assemblage": {
+   "etapes": 1,
+   "pieces": 0
+  }
+ },
+ "Oreille basse": {
+  "Construction": {
+   "etapes": 23,
+   "pieces": 156
+  },
+  "Fixation / assemblage des unites": {
+   "etapes": 5,
+   "pieces": 0
+  },
+  "Fixation / assemblage": {
+   "etapes": 1,
+   "pieces": 0
+  }
+ },
+ "Detail du visage 1 (1x 54200)": {
+  "Construction": {
+   "etapes": 1,
+   "pieces": 1
+  },
+  "Fixation / assemblage": {
+   "etapes": 1,
+   "pieces": 0
+  }
+ },
+ "Detail du visage 2 (1x 43898, 1x 98138)": {
+  "Construction": {
+   "etapes": 1,
+   "pieces": 2
+  },
+  "Fixation / assemblage": {
+   "etapes": 1,
+   "pieces": 0
+  }
+ },
+ "Detail du visage 3 (1x 43898, 1x 98138)": {
+  "Construction": {
+   "etapes": 1,
+   "pieces": 2
+  },
+  "Fixation / assemblage": {
+   "etapes": 1,
+   "pieces": 0
+  }
+ },
+ "Detail du visage 4 (1x 43898)": {
+  "Construction": {
+   "etapes": 1,
+   "pieces": 1
+  },
+  "Fixation / assemblage": {
+   "etapes": 1,
+   "pieces": 0
+  }
+ },
+ "Oreille haute": {
+  "Construction": {
+   "etapes": 28,
+   "pieces": 181
+  },
+  "Fixation / assemblage des unites": {
+   "etapes": 5,
+   "pieces": 0
+  },
+  "Fixation / assemblage": {
+   "etapes": 2,
+   "pieces": 0
+  }
+ }
+}

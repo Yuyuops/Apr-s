@@ -1,0 +1,52 @@
+[
+ {
+  "test": "T1 module V8.1 (lcm B) : modifications hors de sa zone -> REJETE",
+  "ok": true,
+  "detail": "153 cellules hors zone sur 245"
+ },
+ {
+  "test": "T2 module V8.2 (lcm C) : toutes les modifications dans sa zone -> ACCEPTE",
+  "ok": true,
+  "detail": "0 cellules hors zone sur 24"
+ },
+ {
+  "test": "T3a modele V8 -> V8.1 : modifications de surface hors zone -> REJETE",
+  "ok": true,
+  "detail": "198 violations (dont occupation : 21 listees)"
+ },
+ {
+  "test": "T3b entrees du moteur de volume V8 -> V8.2 : identiques hors zone",
+  "ok": true,
+  "detail": "17 cellules differentes, 0 hors zone"
+ },
+ {
+  "test": "T3c modele V8 -> V8.2 : la derive de reconstruction hors zone est DETECTEE (pas silencieuse) et attribuee au moteur (T3b)",
+  "ok": true,
+  "detail": "21 cellules de surface hors zone dans le modele construit, alors que les entrees du moteur sont identiques hors zone : derive du moteur, a ne pas confondre avec une erreur du module"
+ },
+ {
+  "test": "T4 recoloration d'une plaque lointaine (pied/jambe) -> REJETEE",
+  "ok": true,
+  "detail": "1 violations"
+ },
+ {
+  "test": "T5 suppression d'une plaque lointaine -> REJETEE (occupation)",
+  "ok": true,
+  "detail": "1 violations"
+ },
+ {
+  "test": "T6 changement de decoupage seul (deux 1x1 -> une 1x2, memes cellules, meme couleur) -> NON une violation",
+  "ok": true,
+  "detail": "2 cellules de decoupage differentes, 0 violations"
+ },
+ {
+  "test": "T7 recoloration d'une plaque DANS la zone declaree -> acceptee et attribuee au module",
+  "ok": true,
+  "detail": "par zone {'bouche': 4}"
+ },
+ {
+  "test": "T8 V8.2 -> V9 : oreilles, yeux, truffe, pente rouge identiques (pieces, positions, matrices)",
+  "ok": true,
+  "detail": "346 pieces"
+ }
+]

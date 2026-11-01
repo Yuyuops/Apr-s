@@ -1,0 +1,242 @@
+{
+ "r1": {
+  "niveau_0": {
+   "pieces": 26,
+   "aire_cm2": 132.2,
+   "marge_cdg_mm": 41.1
+  }
+ },
+ "r2": [
+  {
+   "groupe": 4,
+   "parties": 7,
+   "force_avant_N": 0.19,
+   "tenons_avant": 2,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 16
+  },
+  {
+   "groupe": 5,
+   "parties": 9,
+   "force_avant_N": 0.19,
+   "tenons_avant": 2,
+   "cellules_ajoutees": 8,
+   "gain_tenons_estime": 15,
+   "pieces_retirees": 13,
+   "pieces_ajoutees": 15,
+   "couches": [
+    "82",
+    "83",
+    "84",
+    "85",
+    "86",
+    "87",
+    "88",
+    "89"
+   ],
+   "cellules": [
+    [
+     20,
+     82,
+     21
+    ],
+    [
+     20,
+     83,
+     21
+    ],
+    [
+     20,
+     82,
+     20
+    ],
+    [
+     20,
+     83,
+     20
+    ],
+    [
+     21,
+     82,
+     20
+    ],
+    [
+     21,
+     83,
+     20
+    ],
+    [
+     21,
+     82,
+     19
+    ],
+    [
+     21,
+     83,
+     19
+    ]
+   ],
+   "decision": "applique"
+  },
+  {
+   "groupe": 3,
+   "parties": 5,
+   "force_avant_N": 0.26,
+   "tenons_avant": 2,
+   "decision": "aucune cellule voisine utilisable (couleur et cellules cachees)",
+   "cellules_ajoutees": 0
+  },
+  {
+   "groupe": 8,
+   "parties": 12,
+   "force_avant_N": 0.26,
+   "tenons_avant": 2,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 4
+  },
+  {
+   "groupe": 1,
+   "parties": 9,
+   "force_avant_N": 0.44,
+   "tenons_avant": 4,
+   "cellules_ajoutees": 24,
+   "gain_tenons_estime": 48,
+   "pieces_retirees": 17,
+   "pieces_ajoutees": 49,
+   "couches": [
+    "48",
+    "49",
+    "50",
+    "51",
+    "52",
+    "53"
+   ],
+   "cellules": [
+    [
+     12,
+     48,
+     13
+    ],
+    [
+     13,
+     49,
+     15
+    ],
+    [
+     13,
+     50,
+     16
+    ],
+    [
+     13,
+     51,
+     16
+    ],
+    [
+     13,
+     52,
+     15
+    ],
+    [
+     13,
+     53,
+     17
+    ],
+    [
+     13,
+     48,
+     16
+    ],
+    [
+     14,
+     49,
+     15
+    ],
+    [
+     13,
+     50,
+     17
+    ],
+    [
+     14,
+     51,
+     16
+    ],
+    [
+     14,
+     52,
+     15
+    ],
+    [
+     13,
+     53,
+     18
+    ],
+    [
+     13,
+     48,
+     13
+    ],
+    [
+     13,
+     49,
+     16
+    ],
+    [
+     13,
+     50,
+     18
+    ],
+    [
+     13,
+     51,
+     17
+    ],
+    [
+     13,
+     52,
+     16
+    ],
+    [
+     13,
+     53,
+     16
+    ],
+    [
+     14,
+     48,
+     13
+    ],
+    [
+     13,
+     49,
+     14
+    ],
+    [
+     14,
+     50,
+     18
+    ],
+    [
+     13,
+     51,
+     18
+    ],
+    [
+     13,
+     52,
+     14
+    ],
+    [
+     14,
+     53,
+     18
+    ]
+   ],
+   "decision": "applique"
+  }
+ ],
+ "non_relies_avant": 0,
+ "pieces_avant": 3032,
+ "pieces_apres": 3066
+}

@@ -1,0 +1,346 @@
+{
+ "verdict": "AUCUNE DIFFERENCE",
+ "cas": {
+  "V6 A Paco": {
+   "modeles": {
+    "oreille_A_paco.ldr": {
+     "pieces_rejouees": 162,
+     "pieces_reference": 162,
+     "lignes_absentes": 0,
+     "lignes_en_plus": 0,
+     "identique": true
+    },
+    "tete_C_avec_oreille_generee.ldr": {
+     "pieces_rejouees": 1313,
+     "pieces_reference": 1313,
+     "lignes_absentes": 0,
+     "lignes_en_plus": 0,
+     "identique": true
+    }
+   },
+   "rapport": {
+    "differences": 0,
+    "exemples": []
+   },
+   "validations": {
+    "validation.json": {
+     "differences": 0,
+     "exemples": [],
+     "cles": {
+      "parts": [
+       "1313",
+       "1313"
+      ],
+      "collisions": [
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}",
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}"
+      ],
+      "disconnected_parts": [
+       "0",
+       "0"
+      ],
+      "islands": [
+       "0",
+       "0"
+      ],
+      "steps": [
+       "78",
+       "78"
+      ],
+      "sideways_joints": [
+       "140",
+       "140"
+      ],
+      "unsupported_at_placement": [
+       "0",
+       "0"
+      ],
+      "blocked_studs": [
+       "0",
+       "0"
+      ]
+     }
+    }
+   },
+   "nomenclature": {
+    "identique": true,
+    "lignes_rejouees": 53,
+    "lignes_reference": 53,
+    "ecarts": []
+   }
+  },
+  "V6 B Beagle": {
+   "modeles": {
+    "oreille_B_beagle.ldr": {
+     "pieces_rejouees": 247,
+     "pieces_reference": 247,
+     "lignes_absentes": 0,
+     "lignes_en_plus": 0,
+     "identique": true
+    }
+   },
+   "rapport": {
+    "differences": 0,
+    "exemples": []
+   },
+   "validations": {
+    "validation.json": {
+     "differences": 0,
+     "exemples": [],
+     "cles": {
+      "parts": [
+       "247",
+       "247"
+      ],
+      "collisions": [
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}",
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}"
+      ],
+      "disconnected_parts": [
+       "0",
+       "0"
+      ],
+      "islands": [
+       "0",
+       "0"
+      ],
+      "steps": [
+       "63",
+       "63"
+      ],
+      "sideways_joints": [
+       "210",
+       "210"
+      ],
+      "unsupported_at_placement": [
+       "0",
+       "0"
+      ],
+      "blocked_studs": [
+       "0",
+       "0"
+      ]
+     }
+    }
+   },
+   "nomenclature": {
+    "identique": true,
+    "lignes_rejouees": 30,
+    "lignes_reference": 30,
+    "ecarts": []
+   }
+  },
+  "V6.1 A Paco": {
+   "modeles": {
+    "oreille_A_paco.ldr": {
+     "pieces_rejouees": 170,
+     "pieces_reference": 170,
+     "lignes_absentes": 0,
+     "lignes_en_plus": 0,
+     "identique": true
+    },
+    "tete_C_avec_oreille_V61.ldr": {
+     "pieces_rejouees": 1321,
+     "pieces_reference": 1321,
+     "lignes_absentes": 0,
+     "lignes_en_plus": 0,
+     "identique": true
+    }
+   },
+   "rapport": {
+    "differences": 0,
+    "exemples": []
+   },
+   "validations": {
+    "validation_v3.json": {
+     "differences": 0,
+     "exemples": [],
+     "cles": {
+      "parts": [
+       "1321",
+       "1321"
+      ],
+      "collisions": [
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}",
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}"
+      ],
+      "disconnected_parts": [
+       "0",
+       "0"
+      ],
+      "islands": [
+       "0",
+       "0"
+      ],
+      "steps": [
+       "78",
+       "78"
+      ],
+      "sideways_joints": [
+       "144",
+       "144"
+      ],
+      "unsupported_at_placement": [
+       "0",
+       "0"
+      ],
+      "blocked_studs": [
+       "0",
+       "0"
+      ]
+     }
+    },
+    "validation_v2.json": {
+     "differences": 0,
+     "exemples": [],
+     "cles": {
+      "parts": [
+       "1321",
+       "1321"
+      ],
+      "collisions": [
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}",
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}"
+      ],
+      "disconnected_parts": [
+       "0",
+       "0"
+      ],
+      "islands": [
+       "0",
+       "0"
+      ],
+      "steps": [
+       "78",
+       "78"
+      ],
+      "sideways_joints": [
+       "144",
+       "144"
+      ],
+      "unsupported_at_placement": [
+       "0",
+       "0"
+      ],
+      "blocked_studs": [
+       "0",
+       "0"
+      ]
+     }
+    }
+   },
+   "nomenclature": {
+    "identique": true,
+    "lignes_rejouees": 53,
+    "lignes_reference": 53,
+    "ecarts": []
+   }
+  },
+  "V6.1 B Beagle": {
+   "modeles": {
+    "oreille_B_beagle.ldr": {
+     "pieces_rejouees": 276,
+     "pieces_reference": 276,
+     "lignes_absentes": 0,
+     "lignes_en_plus": 0,
+     "identique": true
+    },
+    "oreille_B_beagle_V61_notice.ldr": {
+     "pieces_rejouees": 276,
+     "pieces_reference": 276,
+     "lignes_absentes": 0,
+     "lignes_en_plus": 0,
+     "identique": true
+    }
+   },
+   "rapport": {
+    "differences": 0,
+    "exemples": []
+   },
+   "validations": {
+    "validation_v3.json": {
+     "differences": 0,
+     "exemples": [],
+     "cles": {
+      "parts": [
+       "276",
+       "276"
+      ],
+      "collisions": [
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}",
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}"
+      ],
+      "disconnected_parts": [
+       "0",
+       "0"
+      ],
+      "islands": [
+       "0",
+       "0"
+      ],
+      "steps": [
+       "60",
+       "60"
+      ],
+      "sideways_joints": [
+       "236",
+       "236"
+      ],
+      "unsupported_at_placement": [
+       "0",
+       "0"
+      ],
+      "blocked_studs": [
+       "0",
+       "0"
+      ]
+     }
+    },
+    "validation_v2.json": {
+     "differences": 0,
+     "exemples": [],
+     "cles": {
+      "parts": [
+       "276",
+       "276"
+      ],
+      "collisions": [
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}",
+       "{\"pairs\": 0, \"cells_4ldu\": 0, \"examples\": [], \"details\": []}"
+      ],
+      "disconnected_parts": [
+       "0",
+       "0"
+      ],
+      "islands": [
+       "0",
+       "0"
+      ],
+      "steps": [
+       "60",
+       "60"
+      ],
+      "sideways_joints": [
+       "236",
+       "236"
+      ],
+      "unsupported_at_placement": [
+       "0",
+       "0"
+      ],
+      "blocked_studs": [
+       "0",
+       "0"
+      ]
+     }
+    }
+   },
+   "nomenclature": {
+    "identique": true,
+    "lignes_rejouees": 30,
+    "lignes_reference": 30,
+    "ecarts": []
+   }
+  }
+ }
+}

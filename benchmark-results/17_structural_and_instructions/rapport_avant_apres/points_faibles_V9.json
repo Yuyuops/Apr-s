@@ -1,0 +1,196 @@
+[
+ {
+  "id": 6,
+  "zone": "bord d'oreille",
+  "sous_ensemble": "V7_oreille_basse",
+  "pieces": 15,
+  "masse_g": 5.1,
+  "tenons": 3,
+  "types_de_liaison": {
+   "vertical": 3
+  },
+  "force_decrochage_indicative_N": 0.08,
+  "centre_mm": [
+   94.0,
+   290.0,
+   -88.0
+  ],
+  "couleurs": {
+   "Black": 11
+  },
+  "categorie": "structurel",
+  "risque_montage": "eleve",
+  "risque_manipulation": "eleve",
+  "expose": true
+ },
+ {
+  "id": 3,
+  "zone": "visage / tete",
+  "sous_ensemble": "corps",
+  "pieces": 7,
+  "masse_g": 1.3,
+  "tenons": 2,
+  "types_de_liaison": {
+   "vertical": 2
+  },
+  "force_decrochage_indicative_N": 0.19,
+  "centre_mm": [
+   224.0,
+   309.0,
+   -268.0
+  ],
+  "couleurs": {
+   "Yellow": 7
+  },
+  "categorie": "decoration legere",
+  "risque_montage": "moyen",
+  "risque_manipulation": "moyen",
+  "expose": true
+ },
+ {
+  "id": 5,
+  "zone": "bord d'oreille",
+  "sous_ensemble": "V7_oreille_basse",
+  "pieces": 7,
+  "masse_g": 3.5,
+  "tenons": 1,
+  "types_de_liaison": {
+   "vertical": 1
+  },
+  "force_decrochage_indicative_N": 0.21,
+  "centre_mm": [
+   61.0,
+   214.0,
+   -42.0
+  ],
+  "couleurs": {
+   "Black": 7
+  },
+  "categorie": "structurel",
+  "risque_montage": "eleve",
+  "risque_manipulation": "eleve",
+  "expose": true
+ },
+ {
+  "id": 2,
+  "zone": "mains / doigts",
+  "sous_ensemble": "corps",
+  "pieces": 5,
+  "masse_g": 1.0,
+  "tenons": 2,
+  "types_de_liaison": {
+   "vertical": 2
+  },
+  "force_decrochage_indicative_N": 0.26,
+  "centre_mm": [
+   44.0,
+   104.0,
+   -128.0
+  ],
+  "couleurs": {
+   "Yellow": 5
+  },
+  "categorie": "decoration legere",
+  "risque_montage": "moyen",
+  "risque_manipulation": "moyen",
+  "expose": true
+ },
+ {
+  "id": 4,
+  "zone": "visage / tete",
+  "sous_ensemble": "corps",
+  "pieces": 9,
+  "masse_g": 1.4,
+  "tenons": 3,
+  "types_de_liaison": {
+   "vertical": 3
+  },
+  "force_decrochage_indicative_N": 0.26,
+  "centre_mm": [
+   156.0,
+   275.0,
+   -176.0
+  ],
+  "couleurs": {
+   "Yellow": 8,
+   "Black": 1
+  },
+  "categorie": "decoration legere",
+  "risque_montage": "faible",
+  "risque_manipulation": "moyen",
+  "expose": true
+ },
+ {
+  "id": 7,
+  "zone": "mains / doigts",
+  "sous_ensemble": "corps",
+  "pieces": 12,
+  "masse_g": 2.1,
+  "tenons": 3,
+  "types_de_liaison": {
+   "vertical": 3
+  },
+  "force_decrochage_indicative_N": 0.26,
+  "centre_mm": [
+   244.0,
+   109.0,
+   -128.0
+  ],
+  "couleurs": {
+   "Yellow": 9,
+   "Black": 2
+  },
+  "categorie": "intermediaire",
+  "risque_montage": "moyen",
+  "risque_manipulation": "moyen",
+  "expose": true
+ },
+ {
+  "id": 1,
+  "zone": "bord d'oreille",
+  "sous_ensemble": "V7_oreille_basse",
+  "pieces": 5,
+  "masse_g": 1.3,
+  "tenons": 1,
+  "types_de_liaison": {
+   "vertical": 1
+  },
+  "force_decrochage_indicative_N": 0.27,
+  "centre_mm": [
+   38.0,
+   230.0,
+   -12.0
+  ],
+  "couleurs": {
+   "Black": 5
+  },
+  "categorie": "decoration legere",
+  "risque_montage": "moyen",
+  "risque_manipulation": "moyen",
+  "expose": true
+ },
+ {
+  "id": 8,
+  "zone": "bord d'oreille",
+  "sous_ensemble": "V7_oreille_basse",
+  "pieces": 18,
+  "masse_g": 8.1,
+  "tenons": 3,
+  "types_de_liaison": {
+   "vertical": 3
+  },
+  "force_decrochage_indicative_N": 0.41,
+  "centre_mm": [
+   66.0,
+   294.0,
+   -50.0
+  ],
+  "couleurs": {
+   "Black": 18
+  },
+  "categorie": "structurel",
+  "risque_montage": "faible",
+  "risque_manipulation": "moyen",
+  "expose": true
+ }
+]

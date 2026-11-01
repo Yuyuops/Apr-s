@@ -1,0 +1,270 @@
+{
+ "categories": {
+  "occupation": 5,
+  "couleur_exposee": 0,
+  "couleur_interieure": 103,
+  "finition_dessus": 0
+ },
+ "violations": [],
+ "par_zone": {
+  "R1 plan d'appui (couche 0)": 5,
+  "R2 pa1 groupe 18": 16,
+  "R2 pa1 groupe 21": 27,
+  "R2 pa2 groupe 1": 17,
+  "R2 pa1 groupe 11": 4,
+  "R2 pa1 groupe 14": 2,
+  "R2 pa1 groupe 7": 18,
+  "R2 pa1 groupe 8": 8,
+  "R2 pa1 groupe 2": 2,
+  "R2 pa1 groupe 3": 3,
+  "R2 pa1 groupe 12": 8,
+  "R2 pa1 groupe 15": 19
+ },
+ "ignores_tessellation": 1444,
+ "cellules_identiques": 11063,
+ "pieces_hors_reseau_modifiees": {
+  "retirees": 0,
+  "ajoutees": 0
+ },
+ "violations_total": 0,
+ "zones": [
+  {
+   "name": "R1 plan d'appui (couche 0)",
+   "kind": "module",
+   "lo": [
+    0,
+    0,
+    0
+   ],
+   "hi": [
+    39,
+    0,
+    39
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 7",
+   "kind": "module",
+   "lo": [
+    19,
+    37,
+    9
+   ],
+   "hi": [
+    24,
+    48,
+    13
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 14",
+   "kind": "module",
+   "lo": [
+    11,
+    92,
+    12
+   ],
+   "hi": [
+    16,
+    102,
+    15
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 5",
+   "kind": "module",
+   "lo": [
+    3,
+    29,
+    14
+   ],
+   "hi": [
+    6,
+    36,
+    17
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 8",
+   "kind": "module",
+   "lo": [
+    18,
+    64,
+    11
+   ],
+   "hi": [
+    22,
+    70,
+    14
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 13",
+   "kind": "module",
+   "lo": [
+    15,
+    64,
+    16
+   ],
+   "hi": [
+    19,
+    73,
+    19
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 15",
+   "kind": "module",
+   "lo": [
+    20,
+    37,
+    12
+   ],
+   "hi": [
+    24,
+    49,
+    19
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 9",
+   "kind": "module",
+   "lo": [
+    17,
+    82,
+    19
+   ],
+   "hi": [
+    22,
+    90,
+    23
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 18",
+   "kind": "module",
+   "lo": [
+    10,
+    37,
+    12
+   ],
+   "hi": [
+    14,
+    47,
+    19
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 21",
+   "kind": "module",
+   "lo": [
+    11,
+    36,
+    9
+   ],
+   "hi": [
+    22,
+    53,
+    12
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 20",
+   "kind": "module",
+   "lo": [
+    31,
+    27,
+    11
+   ],
+   "hi": [
+    35,
+    36,
+    17
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 2",
+   "kind": "module",
+   "lo": [
+    19,
+    9,
+    10
+   ],
+   "hi": [
+    25,
+    15,
+    13
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 3",
+   "kind": "module",
+   "lo": [
+    19,
+    9,
+    13
+   ],
+   "hi": [
+    25,
+    15,
+    17
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 12",
+   "kind": "module",
+   "lo": [
+    18,
+    14,
+    10
+   ],
+   "hi": [
+    21,
+    23,
+    17
+   ]
+  },
+  {
+   "name": "R2 pa1 groupe 11",
+   "kind": "module",
+   "lo": [
+    13,
+    17,
+    12
+   ],
+   "hi": [
+    16,
+    22,
+    17
+   ]
+  },
+  {
+   "name": "R2 pa2 groupe 5",
+   "kind": "module",
+   "lo": [
+    17,
+    81,
+    18
+   ],
+   "hi": [
+    22,
+    90,
+    23
+   ]
+  },
+  {
+   "name": "R2 pa2 groupe 1",
+   "kind": "module",
+   "lo": [
+    11,
+    47,
+    12
+   ],
+   "hi": [
+    15,
+    54,
+    19
+   ]
+  }
+ ]
+}

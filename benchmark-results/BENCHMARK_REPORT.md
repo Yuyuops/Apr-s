@@ -29,6 +29,17 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 terdecies. LEGO V9 : solidité, validation indépendante et vraie notice (`17_structural_and_instructions/`)
+
+**Verdict : CORRIGER.**
+
+- **Contrôle de portée des modifications.** Chaque module déclare sa zone ; deux modèles complets sont comparés cellule par cellule (occupation, couleur exposée, finition, couleur intérieure, découpage, pièces hors réseau). Le découpage seul n'est pas une violation. 10 tests sur 10 : le module de bouche V8.1 est **rejeté** (153 cellules hors zone sur 245), V8.2 est accepté. Le contrôle a aussi montré que la reconstruction du volume avait changé en silence 21 cellules de surface aux épaules entre V8 et V8.2 (dérive du moteur, non corrigée).
+- **Défaut de V7 et V8 découvert : le plan d'appui.** La statue ne touchait la table que par 4 plaques (marge du centre de gravité de 4,2 mm), alors que le rapport V7 annonçait 74 mm. Après retrait de ces 4 plaques (5 cellules) : 26 plaques, 132 cm², marge de 41 mm.
+- **Renforts.** Ponts internes par cellules cachées ou de même couleur, avec plaques à cheval, sous garde-fou de connectivité : 21 → 8 groupes fragiles, 50 → 17 cas sous 0,5 N, sans changer la silhouette ni les couleurs visibles, avec +310 petites plaques de références déjà utilisées. Restent les bords d'oreille (module gelé), les mains et le bout du museau.
+- **Notice.** 211 étapes en modules et unités (bras, mains, oreilles, détails) au lieu de 326 étapes avec oreilles d'un bloc ; 5 PDF illustrés, LDraw ordonné, plan contrôlé (emboîtement, dégagement, collisions) : tout est insérable, sauf **31 pièces d'oreille** sans séquence d'assemblage trouvée.
+- **Contrôles.** 3 066 pièces, 0 collision, 0 pièce déconnectée, 73 couples pièce × couleur vérifiés ; oreilles, yeux et truffe identiques.
+- **Non démontré physiquement** : protocole d'essai et bancs V7 prêts, aucun essai réalisé.
+
 ## 0 duodecies. LEGO V8.2 : diagnostic final de visibilité de la bouche (`16_mouth_visibility_final/`)
 
 **Verdict : VALIDER AVEC LIMITATION.**
