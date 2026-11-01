@@ -1,0 +1,26 @@
+{
+ "V8": {
+  "colonnes_zone": 131,
+  "hauteur_libre_moy_plaques": 4.59,
+  "hauteur_libre_min": 1,
+  "colonnes_sous_3_plaques": 34,
+  "cellules_sombres_exposees": 10,
+  "cellules_rouges_exposees": 8
+ },
+ "V81A": {
+  "colonnes_zone": 131,
+  "hauteur_libre_moy_plaques": 4.59,
+  "hauteur_libre_min": 1,
+  "colonnes_sous_3_plaques": 33,
+  "cellules_sombres_exposees": 14,
+  "cellules_rouges_exposees": 10
+ },
+ "V81B": {
+  "colonnes_zone": 131,
+  "hauteur_libre_moy_plaques": 4.75,
+  "hauteur_libre_min": 1,
+  "colonnes_sous_3_plaques": 15,
+  "cellules_sombres_exposees": 70,
+  "cellules_rouges_exposees": 21
+ }
+}

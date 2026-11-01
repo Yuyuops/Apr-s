@@ -1,0 +1,692 @@
+{
+ "V8": {
+  "pieces": 2758,
+  "types": 41,
+  "etapes": 331,
+  "collisions": 0,
+  "deconnectees": 0,
+  "ilots": 0,
+  "non_soutenues": 0,
+  "tenons_bouches": 0,
+  "liaisons_laterales": 273,
+  "min_coef_gravite": 2.68,
+  "sous_ensembles_sous_0_5N": 49,
+  "sous_ensembles_sous_2N": 128,
+  "force_min_N": 0.07,
+  "plus_faibles": [
+   {
+    "pieces": 10,
+    "tenons": 1,
+    "force_N": 0.07,
+    "masse_g": 1.3,
+    "couleurs": {
+     "Black": 7,
+     "Red": 2
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -816.0,
+      260.0
+     ],
+     [
+      300.0,
+      -744.0,
+      280.0
+     ]
+    ]
+   },
+   {
+    "pieces": 10,
+    "tenons": 1,
+    "force_N": 0.07,
+    "masse_g": 1.6,
+    "couleurs": {
+     "Red": 10
+    },
+    "bbox_ldu": [
+     [
+      440.0,
+      -384.0,
+      220.0
+     ],
+     [
+      480.0,
+      -304.0,
+      240.0
+     ]
+    ]
+   },
+   {
+    "pieces": 11,
+    "tenons": 1,
+    "force_N": 0.08,
+    "masse_g": 4.4,
+    "couleurs": {
+     "Black": 11
+    },
+    "bbox_ldu": [
+     [
+      179.0,
+      -756.0,
+      154.0
+     ],
+     [
+      293.0,
+      -712.0,
+      282.0
+     ]
+    ]
+   },
+   {
+    "pieces": 2754,
+    "tenons": 5,
+    "force_N": 0.17,
+    "masse_g": 1117.7,
+    "couleurs": {
+     "Yellow": 1511,
+     "Red": 680
+    },
+    "bbox_ldu": [
+     [
+      20.0,
+      -1000.0,
+      -6.0
+     ],
+     [
+      700.0,
+      -8.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "pieces": 7,
+    "tenons": 2,
+    "force_N": 0.19,
+    "masse_g": 1.3,
+    "couleurs": {
+     "Yellow": 7
+    },
+    "bbox_ldu": [
+     [
+      540.0,
+      -800.0,
+      640.0
+     ],
+     [
+      580.0,
+      -744.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "pieces": 7,
+    "tenons": 1,
+    "force_N": 0.21,
+    "masse_g": 3.5,
+    "couleurs": {
+     "Black": 7
+    },
+    "bbox_ldu": [
+     [
+      95.0,
+      -556.0,
+      42.0
+     ],
+     [
+      209.0,
+      -512.0,
+      170.0
+     ]
+    ]
+   },
+   {
+    "pieces": 6,
+    "tenons": 2,
+    "force_N": 0.22,
+    "masse_g": 1.2,
+    "couleurs": {
+     "Yellow": 6
+    },
+    "bbox_ldu": [
+     [
+      100.0,
+      -288.0,
+      300.0
+     ],
+     [
+      120.0,
+      -240.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "pieces": 18,
+    "tenons": 4,
+    "force_N": 0.26,
+    "masse_g": 5.0,
+    "couleurs": {
+     "Red": 18
+    },
+    "bbox_ldu": [
+     [
+      460.0,
+      -392.0,
+      260.0
+     ],
+     [
+      480.0,
+      -304.0,
+      360.0
+     ]
+    ]
+   },
+   {
+    "pieces": 8,
+    "tenons": 3,
+    "force_N": 0.26,
+    "masse_g": 1.1,
+    "couleurs": {
+     "Yellow": 8
+    },
+    "bbox_ldu": [
+     [
+      320.0,
+      -584.0,
+      360.0
+     ],
+     [
+      380.0,
+      -520.0,
+      380.0
+     ]
+    ]
+   },
+   {
+    "pieces": 11,
+    "tenons": 2,
+    "force_N": 0.26,
+    "masse_g": 1.8,
+    "couleurs": {
+     "Yellow": 9,
+     "Black": 2
+    },
+    "bbox_ldu": [
+     [
+      580.0,
+      -288.0,
+      300.0
+     ],
+     [
+      620.0,
+      -248.0,
+      340.0
+     ]
+    ]
+   }
+  ]
+ },
+ "V81_A": {
+  "pieces": 2757,
+  "types": 42,
+  "etapes": 323,
+  "collisions": 0,
+  "deconnectees": 0,
+  "ilots": 0,
+  "non_soutenues": 0,
+  "tenons_bouches": 0,
+  "liaisons_laterales": 273,
+  "min_coef_gravite": 2.68,
+  "sous_ensembles_sous_0_5N": 49,
+  "sous_ensembles_sous_2N": 130,
+  "force_min_N": 0.07,
+  "plus_faibles": [
+   {
+    "pieces": 10,
+    "tenons": 1,
+    "force_N": 0.07,
+    "masse_g": 1.3,
+    "couleurs": {
+     "Black": 7,
+     "Red": 2
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -816.0,
+      260.0
+     ],
+     [
+      300.0,
+      -744.0,
+      280.0
+     ]
+    ]
+   },
+   {
+    "pieces": 10,
+    "tenons": 1,
+    "force_N": 0.07,
+    "masse_g": 1.6,
+    "couleurs": {
+     "Red": 10
+    },
+    "bbox_ldu": [
+     [
+      440.0,
+      -384.0,
+      220.0
+     ],
+     [
+      480.0,
+      -304.0,
+      240.0
+     ]
+    ]
+   },
+   {
+    "pieces": 11,
+    "tenons": 1,
+    "force_N": 0.08,
+    "masse_g": 4.4,
+    "couleurs": {
+     "Black": 11
+    },
+    "bbox_ldu": [
+     [
+      179.0,
+      -756.0,
+      154.0
+     ],
+     [
+      293.0,
+      -712.0,
+      282.0
+     ]
+    ]
+   },
+   {
+    "pieces": 2753,
+    "tenons": 5,
+    "force_N": 0.17,
+    "masse_g": 1117.7,
+    "couleurs": {
+     "Yellow": 1513,
+     "Red": 679
+    },
+    "bbox_ldu": [
+     [
+      20.0,
+      -1000.0,
+      -6.0
+     ],
+     [
+      700.0,
+      -8.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "pieces": 7,
+    "tenons": 2,
+    "force_N": 0.19,
+    "masse_g": 1.3,
+    "couleurs": {
+     "Yellow": 7
+    },
+    "bbox_ldu": [
+     [
+      540.0,
+      -800.0,
+      640.0
+     ],
+     [
+      580.0,
+      -744.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "pieces": 7,
+    "tenons": 1,
+    "force_N": 0.21,
+    "masse_g": 3.5,
+    "couleurs": {
+     "Black": 7
+    },
+    "bbox_ldu": [
+     [
+      95.0,
+      -556.0,
+      42.0
+     ],
+     [
+      209.0,
+      -512.0,
+      170.0
+     ]
+    ]
+   },
+   {
+    "pieces": 6,
+    "tenons": 2,
+    "force_N": 0.22,
+    "masse_g": 1.2,
+    "couleurs": {
+     "Yellow": 6
+    },
+    "bbox_ldu": [
+     [
+      100.0,
+      -288.0,
+      300.0
+     ],
+     [
+      120.0,
+      -240.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "pieces": 18,
+    "tenons": 4,
+    "force_N": 0.26,
+    "masse_g": 5.0,
+    "couleurs": {
+     "Red": 18
+    },
+    "bbox_ldu": [
+     [
+      460.0,
+      -392.0,
+      260.0
+     ],
+     [
+      480.0,
+      -304.0,
+      360.0
+     ]
+    ]
+   },
+   {
+    "pieces": 7,
+    "tenons": 2,
+    "force_N": 0.26,
+    "masse_g": 1.0,
+    "couleurs": {
+     "Red": 4,
+     "Yellow": 2
+    },
+    "bbox_ldu": [
+     [
+      400.0,
+      -560.0,
+      240.0
+     ],
+     [
+      440.0,
+      -520.0,
+      260.0
+     ]
+    ]
+   },
+   {
+    "pieces": 8,
+    "tenons": 3,
+    "force_N": 0.26,
+    "masse_g": 1.1,
+    "couleurs": {
+     "Yellow": 8
+    },
+    "bbox_ldu": [
+     [
+      320.0,
+      -584.0,
+      360.0
+     ],
+     [
+      380.0,
+      -520.0,
+      380.0
+     ]
+    ]
+   }
+  ]
+ },
+ "V81_B": {
+  "pieces": 2796,
+  "types": 42,
+  "etapes": 335,
+  "collisions": 0,
+  "deconnectees": 0,
+  "ilots": 0,
+  "non_soutenues": 0,
+  "tenons_bouches": 0,
+  "liaisons_laterales": 273,
+  "min_coef_gravite": 2.68,
+  "sous_ensembles_sous_0_5N": 43,
+  "sous_ensembles_sous_2N": 121,
+  "force_min_N": 0.07,
+  "plus_faibles": [
+   {
+    "pieces": 10,
+    "tenons": 1,
+    "force_N": 0.07,
+    "masse_g": 1.3,
+    "couleurs": {
+     "Black": 7,
+     "Red": 2
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -816.0,
+      260.0
+     ],
+     [
+      300.0,
+      -744.0,
+      280.0
+     ]
+    ]
+   },
+   {
+    "pieces": 10,
+    "tenons": 1,
+    "force_N": 0.07,
+    "masse_g": 1.6,
+    "couleurs": {
+     "Red": 10
+    },
+    "bbox_ldu": [
+     [
+      440.0,
+      -384.0,
+      220.0
+     ],
+     [
+      480.0,
+      -304.0,
+      240.0
+     ]
+    ]
+   },
+   {
+    "pieces": 11,
+    "tenons": 1,
+    "force_N": 0.08,
+    "masse_g": 4.4,
+    "couleurs": {
+     "Black": 11
+    },
+    "bbox_ldu": [
+     [
+      179.0,
+      -756.0,
+      154.0
+     ],
+     [
+      293.0,
+      -712.0,
+      282.0
+     ]
+    ]
+   },
+   {
+    "pieces": 2792,
+    "tenons": 5,
+    "force_N": 0.17,
+    "masse_g": 1115.6,
+    "couleurs": {
+     "Yellow": 1482,
+     "Red": 676
+    },
+    "bbox_ldu": [
+     [
+      20.0,
+      -1000.0,
+      -6.0
+     ],
+     [
+      700.0,
+      -8.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "pieces": 7,
+    "tenons": 1,
+    "force_N": 0.21,
+    "masse_g": 3.5,
+    "couleurs": {
+     "Black": 7
+    },
+    "bbox_ldu": [
+     [
+      95.0,
+      -556.0,
+      42.0
+     ],
+     [
+      209.0,
+      -512.0,
+      170.0
+     ]
+    ]
+   },
+   {
+    "pieces": 6,
+    "tenons": 2,
+    "force_N": 0.22,
+    "masse_g": 1.2,
+    "couleurs": {
+     "Yellow": 6
+    },
+    "bbox_ldu": [
+     [
+      100.0,
+      -288.0,
+      300.0
+     ],
+     [
+      120.0,
+      -240.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "pieces": 18,
+    "tenons": 4,
+    "force_N": 0.26,
+    "masse_g": 5.0,
+    "couleurs": {
+     "Red": 18
+    },
+    "bbox_ldu": [
+     [
+      460.0,
+      -392.0,
+      260.0
+     ],
+     [
+      480.0,
+      -304.0,
+      360.0
+     ]
+    ]
+   },
+   {
+    "pieces": 8,
+    "tenons": 3,
+    "force_N": 0.26,
+    "masse_g": 1.1,
+    "couleurs": {
+     "Yellow": 8
+    },
+    "bbox_ldu": [
+     [
+      320.0,
+      -584.0,
+      360.0
+     ],
+     [
+      380.0,
+      -520.0,
+      380.0
+     ]
+    ]
+   },
+   {
+    "pieces": 11,
+    "tenons": 2,
+    "force_N": 0.26,
+    "masse_g": 1.8,
+    "couleurs": {
+     "Yellow": 9,
+     "Black": 2
+    },
+    "bbox_ldu": [
+     [
+      580.0,
+      -288.0,
+      300.0
+     ],
+     [
+      620.0,
+      -248.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "pieces": 5,
+    "tenons": 1,
+    "force_N": 0.27,
+    "masse_g": 1.3,
+    "couleurs": {
+     "Black": 5
+    },
+    "bbox_ldu": [
+     [
+      66.0,
+      -596.0,
+      0.0
+     ],
+     [
+      125.0,
+      -552.0,
+      58.0
+     ]
+    ]
+   }
+  ]
+ }
+}

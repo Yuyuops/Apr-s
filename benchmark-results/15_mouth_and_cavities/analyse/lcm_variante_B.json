@@ -1,0 +1,81 @@
+{
+ "variante": "B",
+ "regles": {
+  "lining_layers": 2,
+  "marge_mm": 4.0,
+  "ceil_max": 5,
+  "min_open": 3,
+  "min_sets": 20,
+  "famille_haut": [
+   "3070b",
+   "3069b",
+   "63864",
+   "2431",
+   "24246",
+   "54200",
+   "85984",
+   "3040b",
+   "3039",
+   "4286"
+  ]
+ },
+ "traitements": [
+  {
+   "id": "bouche_9",
+   "couleur": "noir",
+   "orientation": "bas",
+   "inclinaison_deg": 6.8,
+   "longueur_mm": 16.6,
+   "largeur_mm": 7.4,
+   "traitement": "T2 plafond : 4 cellules de surface + 1 plaque(s) derriere",
+   "cellules_recolorees": 8,
+   "confiance": "haute"
+  },
+  {
+   "id": "bouche_15",
+   "couleur": "rouge",
+   "orientation": "haut",
+   "inclinaison_deg": 30.3,
+   "longueur_mm": 12.0,
+   "largeur_mm": 8.0,
+   "traitement": "T1 surface inclinee",
+   "piece": "54200",
+   "inclinaison_piece_deg": 29.9,
+   "erreur_direction_deg": 28.5,
+   "iou_empreinte": 1.0,
+   "saillie_plaques": 0.9,
+   "cout": 0.52,
+   "confiance": "haute"
+  },
+  {
+   "id": "bouche_14",
+   "couleur": "rouge",
+   "orientation": "bas",
+   "inclinaison_deg": 5.1,
+   "longueur_mm": 19.0,
+   "largeur_mm": 4.8,
+   "traitement": "T2 plafond : 5 cellules de surface + 1 plaque(s) derriere",
+   "cellules_recolorees": 10,
+   "confiance": "haute"
+  },
+  {
+   "id": "T3",
+   "traitement": "cavite ouverte : ouverture minimale 3 plaques (9.6 mm), ligne de levre sur les bords ouverts, langue sur le plancher",
+   "colonnes_cavite": 131,
+   "composantes_gardees": 1,
+   "cellules_creusees_plafond": 21,
+   "cellules_ligne_levre": 80,
+   "cotes_ouverts": {
+    "x+": 17,
+    "x-": 23,
+    "z+": 14,
+    "z-": 21
+   },
+   "cellules_langue": 15,
+   "cellules_parois": 110
+  }
+ ],
+ "cellules_recolorees": 223,
+ "cellules_creusees": 22,
+ "pieces": 1
+}

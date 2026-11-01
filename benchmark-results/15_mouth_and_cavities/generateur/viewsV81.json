@@ -1,0 +1,11 @@
+[{"name":"1_profil_gauche","az":270,"el":5,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"2_profil_droit","az":90,"el":5,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"3_trois_quarts","az":225,"el":18,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"4_face","az":180,"el":8,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"5_bouche_gauche","az":270,"el":0,"frameBox":[[120,235,-250],[240,320,-130]]},
+ {"name":"6_bouche_droit","az":90,"el":0,"frameBox":[[120,235,-250],[240,320,-130]]},
+ {"name":"7_bouche_dessous","az":180,"el":-70,"frameBox":[[120,235,-250],[240,320,-130]]},
+ {"name":"8_bouche_34_gauche","az":240,"el":-25,"frameBox":[[120,235,-250],[240,320,-130]]},
+ {"name":"9_bouche_34_droit","az":130,"el":-20,"frameBox":[[120,235,-250],[240,320,-130]]},
+ {"name":"10_tete_profil_gauche","az":270,"el":5,"frameBox":[[60,235,-280],[280,370,-40]]},
+ {"name":"11_tete_profil_droit","az":90,"el":5,"frameBox":[[60,235,-280],[280,370,-40]]}]

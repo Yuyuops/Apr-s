@@ -29,6 +29,31 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 undecies. LEGO V8.1 : module de lignes et cavités (`15_mouth_and_cavities/`)
+
+**Verdict : CORRIGER SOUS CONDITION.**
+
+Nouveau module générique `lcm.py` :
+
+- surfaces inclinées : choix de la pièce par la pente mesurée sur son maillage ;
+- revêtement des surfaces tournées vers le bas ;
+- cavité ouverte détectée par plafond et plancher : ouverture minimale, ligne de lèvre, langue, parois intérieures.
+
+Résultats :
+
+- **Bouche lisible de profil droit, de dessous et de trois quarts** à taille normale. Elle ne l'était pas en V8 : une barre noire.
+- **`validate_v3`** : 2 796 pièces, 0 collision, 0 pièce déconnectée, 335 étapes, 74 couples pièce × couleur vérifiés.
+- **Sous-ensembles fragiles sous 0,5 N** : 43 (49 en V8), aucun nouveau point faible.
+- **Oreilles, yeux et truffe** : inchangés.
+- **Non-régression V6 / V6.1** : aucune différence.
+
+Défaut précis : bouche non lisible de profil gauche et de face (cavité fermée par la joue dans la grille).
+
+Réserves :
+
+- pas de lèvre courbe ni de commissure (pièces courbes étudiées, non implémentées) ;
+- paramètres réglés sur Paco, à confirmer sur un autre personnage, avec les trois règles de V8.
+
 ## 0 decies. LEGO V8 : micro-détails du visage (`14_facial_microdetails/`)
 
 **Verdict : CORRIGER.**
