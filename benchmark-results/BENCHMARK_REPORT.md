@@ -29,6 +29,24 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 octies. LEGO V6.1 : grands arrondis automatiques (`12_automatic_curves/`)
+
+**Verdict : VALIDER V6.1.**
+
+Le choix glouton des pièces de forme est remplacé par un programme en nombres entiers sur les candidats de contour :
+
+- arcs caractéristiques détectés, avec une forte pénalité s'ils sont perdus ;
+- vraie géométrie des plaques arrondies au lieu de leur boîte ;
+- nouveau validateur v3.
+
+Résultats :
+
+- **Bout libre de Paco** : IoU locale 0,929 (V6 0,927, V5 0,910), surface d'écart 784 LDU² (V6 800, V5 1 024). Le demi-disque de V5 s'écarte de 63 LDU du GLB, dont le bout est asymétrique.
+- **Beagle** : bas 0,918 (V6 0,909), haut 0,927 (V6 0,921), coins carrés remplacés par des quarts de rond.
+- **Contrôles** : 0 collision (v2 et v3), 0 pièce déconnectée, notices réalisables.
+
+Réserves : plaque de fixation supérieure visible sur Paco, fixation du Beagle non démontrée.
+
 ## 0 septies. LEGO V6 : contour automatique (`11_automatic_contour_proof/`)
 
 **Verdict : CORRIGER L'ALGORITHME.**

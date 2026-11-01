@@ -1,0 +1,408 @@
+{
+ "A_paco": {
+  "V5 manuelle": {
+   "iou_glb": 0.867,
+   "iou_manual_V5": 1.0,
+   "hausdorff_glb_to_gen_ldu": 63.2,
+   "hausdorff_gen_to_glb_ldu": 55.6,
+   "arcs": [
+    {
+     "radius_ldu": 78,
+     "length_ldu": 84.0,
+     "centre_uv": [
+      -153.0,
+      198.0
+     ],
+     "mean_ldu": 4.8,
+     "max_ldu": 8.0,
+     "share_within_8ldu": 1.0,
+     "excess_max_ldu": 8.9,
+     "excess_mean_ldu": 4.7
+    },
+    {
+     "radius_ldu": 47,
+     "length_ldu": 136.0,
+     "centre_uv": [
+      198.0,
+      80.0
+     ],
+     "mean_ldu": 46.6,
+     "max_ldu": 63.2,
+     "share_within_8ldu": 0.0,
+     "excess_max_ldu": 33.9,
+     "excess_mean_ldu": 19.2
+    }
+   ],
+   "extremites": {
+    "bout_min": {
+     "centre_uv": [
+      -129.0,
+      158.0
+     ],
+     "iou": 0.91,
+     "ecart_surface_ldu2": 1024,
+     "ecart_max_ldu": 8.9
+    },
+    "bout_max": {
+     "centre_uv": [
+      172.0,
+      100.0
+     ],
+     "iou": 0.231,
+     "ecart_surface_ldu2": 5280,
+     "ecart_max_ldu": 63.2
+    }
+   }
+  },
+  "V5.1 manuelle": {
+   "iou_glb": 0.8983,
+   "iou_manual_V5": 0.9035,
+   "hausdorff_glb_to_gen_ldu": 40.0,
+   "hausdorff_gen_to_glb_ldu": 36.9,
+   "arcs": [
+    {
+     "radius_ldu": 78,
+     "length_ldu": 84.0,
+     "centre_uv": [
+      -153.0,
+      198.0
+     ],
+     "mean_ldu": 3.2,
+     "max_ldu": 8.0,
+     "share_within_8ldu": 1.0,
+     "excess_max_ldu": 8.0,
+     "excess_mean_ldu": 4.4
+    },
+    {
+     "radius_ldu": 47,
+     "length_ldu": 136.0,
+     "centre_uv": [
+      198.0,
+      80.0
+     ],
+     "mean_ldu": 24.1,
+     "max_ldu": 40.0,
+     "share_within_8ldu": 0.212,
+     "excess_max_ldu": 36.9,
+     "excess_mean_ldu": 21.9
+    }
+   ],
+   "extremites": {
+    "bout_min": {
+     "centre_uv": [
+      -129.0,
+      158.0
+     ],
+     "iou": 0.908,
+     "ecart_surface_ldu2": 1040,
+     "ecart_max_ldu": 8.9
+    },
+    "bout_max": {
+     "centre_uv": [
+      172.0,
+      100.0
+     ],
+     "iou": 0.596,
+     "ecart_surface_ldu2": 2768,
+     "ecart_max_ldu": 40.0
+    }
+   }
+  },
+  "V6 automatique": {
+   "iou_glb": 0.9355,
+   "iou_manual_V5": 0.8644,
+   "hausdorff_glb_to_gen_ldu": 20.0,
+   "hausdorff_gen_to_glb_ldu": 36.9,
+   "arcs": [
+    {
+     "radius_ldu": 78,
+     "length_ldu": 84.0,
+     "centre_uv": [
+      -153.0,
+      198.0
+     ],
+     "mean_ldu": 2.7,
+     "max_ldu": 8.0,
+     "share_within_8ldu": 1.0,
+     "excess_max_ldu": 8.0,
+     "excess_mean_ldu": 3.2
+    },
+    {
+     "radius_ldu": 47,
+     "length_ldu": 136.0,
+     "centre_uv": [
+      198.0,
+      80.0
+     ],
+     "mean_ldu": 7.0,
+     "max_ldu": 20.0,
+     "share_within_8ldu": 0.606,
+     "excess_max_ldu": 36.9,
+     "excess_mean_ldu": 13.8
+    }
+   ],
+   "extremites": {
+    "bout_min": {
+     "centre_uv": [
+      -129.0,
+      158.0
+     ],
+     "iou": 0.927,
+     "ecart_surface_ldu2": 800,
+     "ecart_max_ldu": 8.9
+    },
+    "bout_max": {
+     "centre_uv": [
+      172.0,
+      100.0
+     ],
+     "iou": 0.83,
+     "ecart_surface_ldu2": 1168,
+     "ecart_max_ldu": 36.9
+    }
+   }
+  },
+  "V6.1 automatique": {
+   "iou_glb": 0.9358,
+   "iou_manual_V5": 0.8668,
+   "hausdorff_glb_to_gen_ldu": 20.0,
+   "hausdorff_gen_to_glb_ldu": 36.9,
+   "arcs": [
+    {
+     "radius_ldu": 78,
+     "length_ldu": 84.0,
+     "centre_uv": [
+      -153.0,
+      198.0
+     ],
+     "mean_ldu": 3.2,
+     "max_ldu": 8.0,
+     "share_within_8ldu": 1.0,
+     "excess_max_ldu": 8.0,
+     "excess_mean_ldu": 3.3
+    },
+    {
+     "radius_ldu": 47,
+     "length_ldu": 136.0,
+     "centre_uv": [
+      198.0,
+      80.0
+     ],
+     "mean_ldu": 7.0,
+     "max_ldu": 20.0,
+     "share_within_8ldu": 0.606,
+     "excess_max_ldu": 36.9,
+     "excess_mean_ldu": 13.8
+    }
+   ],
+   "extremites": {
+    "bout_min": {
+     "centre_uv": [
+      -129.0,
+      158.0
+     ],
+     "iou": 0.929,
+     "ecart_surface_ldu2": 784,
+     "ecart_max_ldu": 8.9
+    },
+    "bout_max": {
+     "centre_uv": [
+      172.0,
+      100.0
+     ],
+     "iou": 0.83,
+     "ecart_surface_ldu2": 1168,
+     "ecart_max_ldu": 36.9
+    }
+   }
+  },
+  "_arcs_detectes": [
+   {
+    "radius_ldu": 78,
+    "length_ldu": 84.0
+   },
+   {
+    "radius_ldu": 47,
+    "length_ldu": 136.0
+   }
+  ]
+ },
+ "B_beagle": {
+  "V6 automatique": {
+   "iou_glb": 0.9581,
+   "hausdorff_glb_to_gen_ldu": 12.0,
+   "hausdorff_gen_to_glb_ldu": 8.9,
+   "arcs": [
+    {
+     "radius_ldu": 59,
+     "length_ldu": 136.0,
+     "centre_uv": [
+      -145.0,
+      340.0
+     ],
+     "mean_ldu": 2.6,
+     "max_ldu": 8.0,
+     "share_within_8ldu": 1.0,
+     "excess_max_ldu": 8.9,
+     "excess_mean_ldu": 3.3
+    },
+    {
+     "radius_ldu": 46,
+     "length_ldu": 116.0,
+     "centre_uv": [
+      -146.0,
+      113.0
+     ],
+     "mean_ldu": 4.9,
+     "max_ldu": 12.0,
+     "share_within_8ldu": 0.931,
+     "excess_max_ldu": 8.9,
+     "excess_mean_ldu": 4.2
+    },
+    {
+     "radius_ldu": 60,
+     "length_ldu": 96.0,
+     "centre_uv": [
+      64.0,
+      74.0
+     ],
+     "mean_ldu": 3.0,
+     "max_ldu": 4.0,
+     "share_within_8ldu": 1.0,
+     "excess_max_ldu": 8.0,
+     "excess_mean_ldu": 3.1
+    },
+    {
+     "radius_ldu": 61,
+     "length_ldu": 120.0,
+     "centre_uv": [
+      84.0,
+      403.0
+     ],
+     "mean_ldu": 4.7,
+     "max_ldu": 11.3,
+     "share_within_8ldu": 0.867,
+     "excess_max_ldu": 8.0,
+     "excess_mean_ldu": 2.8
+    }
+   ],
+   "extremites": {
+    "bout_min": {
+     "centre_uv": [
+      21.0,
+      384.0
+     ],
+     "iou": 0.921,
+     "ecart_surface_ldu2": 1168,
+     "ecart_max_ldu": 11.3
+    },
+    "bout_max": {
+     "centre_uv": [
+      -42.0,
+      98.0
+     ],
+     "iou": 0.909,
+     "ecart_surface_ldu2": 1552,
+     "ecart_max_ldu": 12.0
+    }
+   }
+  },
+  "V6.1 automatique": {
+   "iou_glb": 0.9555,
+   "hausdorff_glb_to_gen_ldu": 12.0,
+   "hausdorff_gen_to_glb_ldu": 14.4,
+   "arcs": [
+    {
+     "radius_ldu": 59,
+     "length_ldu": 136.0,
+     "centre_uv": [
+      -145.0,
+      340.0
+     ],
+     "mean_ldu": 3.6,
+     "max_ldu": 12.0,
+     "share_within_8ldu": 0.912,
+     "excess_max_ldu": 14.4,
+     "excess_mean_ldu": 3.6
+    },
+    {
+     "radius_ldu": 46,
+     "length_ldu": 116.0,
+     "centre_uv": [
+      -146.0,
+      113.0
+     ],
+     "mean_ldu": 4.9,
+     "max_ldu": 12.0,
+     "share_within_8ldu": 0.862,
+     "excess_max_ldu": 8.9,
+     "excess_mean_ldu": 3.5
+    },
+    {
+     "radius_ldu": 60,
+     "length_ldu": 96.0,
+     "centre_uv": [
+      64.0,
+      74.0
+     ],
+     "mean_ldu": 2.7,
+     "max_ldu": 8.0,
+     "share_within_8ldu": 1.0,
+     "excess_max_ldu": 12.0,
+     "excess_mean_ldu": 4.6
+    },
+    {
+     "radius_ldu": 61,
+     "length_ldu": 120.0,
+     "centre_uv": [
+      84.0,
+      403.0
+     ],
+     "mean_ldu": 4.7,
+     "max_ldu": 11.3,
+     "share_within_8ldu": 0.867,
+     "excess_max_ldu": 8.0,
+     "excess_mean_ldu": 2.8
+    }
+   ],
+   "extremites": {
+    "bout_min": {
+     "centre_uv": [
+      21.0,
+      384.0
+     ],
+     "iou": 0.927,
+     "ecart_surface_ldu2": 1072,
+     "ecart_max_ldu": 11.3
+    },
+    "bout_max": {
+     "centre_uv": [
+      -42.0,
+      98.0
+     ],
+     "iou": 0.918,
+     "ecart_surface_ldu2": 1392,
+     "ecart_max_ldu": 12.0
+    }
+   }
+  },
+  "_arcs_detectes": [
+   {
+    "radius_ldu": 59,
+    "length_ldu": 136.0
+   },
+   {
+    "radius_ldu": 46,
+    "length_ldu": 116.0
+   },
+   {
+    "radius_ldu": 60,
+    "length_ldu": 96.0
+   },
+   {
+    "radius_ldu": 61,
+    "length_ldu": 120.0
+   }
+  ]
+ }
+}

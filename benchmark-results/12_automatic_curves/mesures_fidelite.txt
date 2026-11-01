@@ -1,0 +1,16 @@
+A_paco
+  V5 manuelle        ends {'bout_min': (0.91, 1024, 8.9), 'bout_max': (0.231, 5280, 63.2)}
+  V5 manuelle        IoU_glb 0.867 IoU_V5 1.000 H  63.2/ 55.6  arcs [(78, 4.8, 8.0, 1.0, 8.9), (47, 46.6, 63.2, 0.0, 33.9)]
+  V5.1 manuelle      ends {'bout_min': (0.908, 1040, 8.9), 'bout_max': (0.596, 2768, 40.0)}
+  V5.1 manuelle      IoU_glb 0.898 IoU_V5 0.903 H  40.0/ 36.9  arcs [(78, 3.2, 8.0, 1.0, 8.0), (47, 24.1, 40.0, 0.212, 36.9)]
+  V6 automatique     ends {'bout_min': (0.927, 800, 8.9), 'bout_max': (0.83, 1168, 36.9)}
+  V6 automatique     IoU_glb 0.935 IoU_V5 0.864 H  20.0/ 36.9  arcs [(78, 2.7, 8.0, 1.0, 8.0), (47, 7.0, 20.0, 0.606, 36.9)]
+  V6.1 automatique   ends {'bout_min': (0.929, 784, 8.9), 'bout_max': (0.83, 1168, 36.9)}
+  V6.1 automatique   IoU_glb 0.936 IoU_V5 0.867 H  20.0/ 36.9  arcs [(78, 3.2, 8.0, 1.0, 8.0), (47, 7.0, 20.0, 0.606, 36.9)]
+  arcs: [{'radius_ldu': 78, 'length_ldu': 84.0}, {'radius_ldu': 47, 'length_ldu': 136.0}]
+B_beagle
+  V6 automatique     ends {'bout_min': (0.921, 1168, 11.3), 'bout_max': (0.909, 1552, 12.0)}
+  V6 automatique     IoU_glb 0.958  H  12.0/  8.9  arcs [(59, 2.6, 8.0, 1.0, 8.9), (46, 4.9, 12.0, 0.931, 8.9), (60, 3.0, 4.0, 1.0, 8.0), (61, 4.7, 11.3, 0.867, 8.0)]
+  V6.1 automatique   ends {'bout_min': (0.927, 1072, 11.3), 'bout_max': (0.918, 1392, 12.0)}
+  V6.1 automatique   IoU_glb 0.956  H  12.0/ 14.4  arcs [(59, 3.6, 12.0, 0.912, 14.4), (46, 4.9, 12.0, 0.862, 8.9), (60, 2.7, 8.0, 1.0, 12.0), (61, 4.7, 11.3, 0.867, 8.0)]
+  arcs: [{'radius_ldu': 59, 'length_ldu': 136.0}, {'radius_ldu': 46, 'length_ldu': 116.0}, {'radius_ldu': 60, 'length_ldu': 96.0}, {'radius_ldu': 61, 'length_ldu': 120.0}]
