@@ -29,6 +29,17 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 ter. Brickify V4 : démonstrateur d'oreille articulée (oreille haute de Paco, 400 mm)
+
+Dossier `07_articulated_ear_proof/`. Module paramétrique monté sur la tête C :
+- 2 plateaux tournants 2×2 posés à 3 × 4 tenons d'écart ; la plaque 2×10 qui les relie fixe l'angle à 53,13° (52,5° mesuré dans le GLB) ;
+- 4 équerres portant 8 tenons latéraux ;
+- un panneau de 2 couches de plaques noires, avec un contour biseauté et arrondi.
+
+Côté technique : 0 collision (géométrie réelle des pièces tournées), 0 îlot, notice sans pose dans le vide, pièces et couleurs vérifiées.
+Mais l'oreille n'est **pas visiblement meilleure que C** : posée sur des cales visibles, détachée de la tête, contour trop épais.
+**Verdict : CORRIGER LE MODULE.** Les trois corrections identifiées (poche dans la tête, contour, dessous visible) sont détaillées dans `07_articulated_ear_proof/DECISION.md`.
+
 ## 0 bis. Itération Brickify V3 : finition des surfaces et oreilles SNOT (tête de Paco, 400 mm)
 
 Dossier `06_head_surface_optimization/`. Deux variantes ont été comparées au prototype C, avec le même GLB, la même échelle et un rendu identique :

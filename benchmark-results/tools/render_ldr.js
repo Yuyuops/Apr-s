@@ -12,7 +12,7 @@ import * as THREE from 'three';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 window.ready = (async () => {
-  const IS_GLB = __ISGLB__;
+  const IS_GLB = __ISGLB__; const GLB_NATIVE = __GLBNATIVE__;
   const S = IS_GLB ? {meshes:{}, parts:[], colours:{}} : await (await fetch('http://local/scene.json')).json();
   const dec = b => { const s = atob(b); const u = new Uint8Array(s.length); for (let i=0;i<s.length;i++) u[i]=s.charCodeAt(i); return new Float32Array(u.buffer); };
   const renderer = new THREE.WebGLRenderer({antialias:true, preserveDrawingBuffer:true});
@@ -46,8 +46,9 @@ window.ready = (async () => {
     glbScene.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
     root.scale.set(1, 1, 1);
     // normalise like brickify: height (Y extent) -> v.heightMm, base on y=0
+    if (!GLB_NATIVE) {   // default: scale a GLB to 250 mm height; GLB_NATIVE=1 keeps its own mm coordinates (comparison frames)
     const b = new THREE.Box3().setFromObject(glbScene); const s = 250 / (b.max.y - b.min.y);
-    glbScene.scale.setScalar(s); glbScene.position.set(-s*(b.min.x+b.max.x)/2, -s*b.min.y, -s*(b.min.z+b.max.z)/2);
+    glbScene.scale.setScalar(s); glbScene.position.set(-s*(b.min.x+b.max.x)/2, -s*b.min.y, -s*(b.min.z+b.max.z)/2); }
   }
   function build(v) {
     if (IS_GLB) { if (!built) { built = new THREE.Group(); built.add(glbScene); root.add(built); } return; }
@@ -110,7 +111,7 @@ window.ready = (async () => {
   page.on('pageerror', e => console.error('pageerror:', e.message));
   await page.route('http://local/**', async route => {
     const u = new URL(route.request().url()).pathname;
-    if (u === '/') return route.fulfill({body: PAGE.replace('__ISGLB__', sceneFile.endsWith('.glb') ? 'true' : 'false'), contentType: 'text/html'});
+    if (u === '/') return route.fulfill({body: PAGE.replace('__ISGLB__', sceneFile.endsWith('.glb') ? 'true' : 'false').replace('__GLBNATIVE__', process.env.GLB_NATIVE ? 'true' : 'false'), contentType: 'text/html'});
     if (u === '/scene.json') return route.fulfill({path: sceneFile, contentType: sceneFile.endsWith('.glb') ? 'model/gltf-binary' : 'application/json'});
     if (u.startsWith('/three/')) return route.fulfill({path: path.join(THREE_DIR, u.slice(7)), contentType: 'text/javascript'});
     route.fulfill({status: 404});

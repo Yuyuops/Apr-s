@@ -21,7 +21,7 @@ def main():
         if t and t[0] == "1" and len(t) >= 15:
             o = np.array(t[2:5], float); M = np.array(t[5:14], float).reshape(3, 3); num = t[14].lower().replace(".dat", "")
             st, rc, lo, hi = conn.world(num, M, o)
-            parts.append(dict(line=l, sub=sub, studs=st, recv=rc, lo=lo, hi=hi))
+            parts.append(dict(line=l, sub=sub, studs=st, recv=rc, lo=lo, hi=hi, num=num, o=o, M=M))
     rindex = {}
     for i, p in enumerate(parts):
         for pt, n in p["recv"]: rindex.setdefault(tuple(np.round(pt).astype(int)), []).append((i, n))
@@ -34,6 +34,11 @@ def main():
                     for dz in (-1, 0, 1):
                         for (j, n) in rindex.get((k[0] + dx, k[1] + dy, k[2] + dz), []):
                             if j != i and np.dot(n, ax) < -0.9: G.add_edge(i, j)
+    # turntable 2x2: the top (3679) clicks on the base (3680) at the same origin, free rotation about the vertical
+    for i, p in enumerate(parts):
+        if p["num"] != "3679": continue
+        for j, q in enumerate(parts):
+            if q["num"] == "3680" and np.linalg.norm(q["o"] - p["o"]) < 1.0 and np.allclose(p["M"][1], [0, 1, 0], atol=1e-4): G.add_edge(i, j)
     base = max(p["hi"][1] for p in parts)
     blocks = {}
     for i, p in enumerate(parts):
@@ -47,7 +52,7 @@ def main():
             # attach any sub-assembly that can now connect
             done = [b for b, idx in pending_blocks.items() if any(j in placed for i in idx for j in G.neighbors(i) if j not in idx)]
             if not done:
-                steps.append(("orphans", sorted(remaining))); break       # cannot be ordered (disconnected): left at the end
+                steps.append(("orphans", sorted(remaining) + [i for idx in pending_blocks.values() for i in idx])); break   # never dropped: left at the end, counted
             for b in done:
                 steps.append(("block", b)); placed |= set(pending_blocks.pop(b))
             continue
@@ -71,6 +76,8 @@ def main():
             for i in val: out.append(parts[i]["line"])
             out.append("0 STEP")
     open(dst, "w").write("\n".join(out) + "\n")
+    n_out = sum(1 for l in out if l.startswith("1 "))
+    assert n_out == len(parts), f"part count changed: {n_out} != {len(parts)}"
     print(f"{dst}: {len(steps)} steps, {sum(len(v) for k, v in steps if k == 'orphans')} parts could not be ordered")
 
 if __name__ == "__main__":

@@ -58,19 +58,55 @@ def main():
         st, rc, lo, hi = conn.world(p["num"], p["M"], p["o"])
         p["studs"], p["recv"], p["lo"], p["hi"] = st, rc, lo, hi
         p["fill"] = conn.part(p["num"])["fill"]
-        p["mass"] = float(np.prod(hi - lo)) * p["fill"] * G_PER_LDU3
-        p["up"] = tuple(np.round(p["M"] @ np.array([0, -1.0, 0])).astype(int))   # local up (stud side) in world
+        Cp = conn.part(p["num"]); p["mass"] = float(np.prod(Cp["hi"] - Cp["lo"])) * p["fill"] * G_PER_LDU3   # own box (not the rotated AABB)
+        p["up"] = tuple(np.round(p["M"] @ np.array([0, -1.0, 0]), 3))            # local up (stud side) in world
+        p["aligned"] = bool(np.all(np.isclose(np.abs(p["M"]), 0, atol=1e-4) | np.isclose(np.abs(p["M"]), 1, atol=1e-4)))
+        if "bracket" in PL.title(p["num"]).lower(): p["aligned"] = False      # L-shaped: its box is not its solid
     lo_all = np.min([p["lo"] for p in P], 0); hi_all = np.max([p["hi"] for p in P], 0)
+    lo_all = np.floor(lo_all / 4.0) * 4.0 - 4.0      # grid origin on a 4-LDU multiple: right-angle boxes fall on cell edges
     # ---------------- collisions on a 4-LDU grid
     g = 4.0
     idx = lambda v: np.round((v - lo_all) / g).astype(int)
     shape = idx(hi_all) + 1
     owner = -np.ones(shape, np.int32); overlaps = Counter()
     for p in P:
+        if not p["aligned"]: continue
         a0, a1 = idx(p["lo"]), idx(p["hi"])
         sl = owner[a0[0]:a1[0], a0[1]:a1[1], a0[2]:a1[2]]
         for q in np.unique(sl[sl >= 0]): overlaps[tuple(sorted((int(q), p["i"])))] += int((sl == q).sum())
         sl[sl < 0] = p["i"]
+    # parts at non-right angles: points of their real solid (>= 1 LDU inside their faces) tested exactly against the
+    # boxes of right-angle parts and, by proximity (< 1.5 LDU), against the solid points of the other angled parts
+    from scipy.spatial import cKDTree
+    rot = [p for p in P if not p["aligned"]]
+    rpts = {p["i"]: conn.solid_points(p["num"]) @ p["M"].T + p["o"] for p in rot}
+    for p in rot:
+        pts = rpts[p["i"]]
+        k = np.floor((pts - lo_all) / g).astype(int); ok = np.all((k >= 0) & (k < shape), axis=1)
+        cand = set()
+        for dx in (-1, 0, 1):
+            for dy in (-1, 0, 1):
+                for dz in (-1, 0, 1):
+                    kk = k[ok] + [dx, dy, dz]; kk = kk[np.all((kk >= 0) & (kk < shape), axis=1)]
+                    cand |= set(np.unique(owner[tuple(kk.T)]).tolist())
+        for q in cand - {-1}:
+            Q = P[q]; inside = np.all((pts > Q["lo"] + 1e-6) & (pts < Q["hi"] - 1e-6), axis=1)
+            if inside.any(): overlaps[tuple(sorted((int(q), p["i"])))] += int(inside.sum())
+    for a_ in range(len(rot)):
+        ta = cKDTree(rpts[rot[a_]["i"]])
+        for b_ in range(a_ + 1, len(rot)):
+            pa, pb = rot[a_], rot[b_]
+            if np.any(pa["hi"] < pb["lo"] - 2) or np.any(pb["hi"] < pa["lo"] - 2): continue
+            dd, _ = ta.query(rpts[pb["i"]], distance_upper_bound=1.5)
+            nclash = int(np.isfinite(dd).sum())
+            if nclash: overlaps[tuple(sorted((pa["i"], pb["i"])))] += nclash
+    allowed_pairs = set()
+    for p in P:
+        if p["num"] != "3679": continue
+        for q in P:
+            if q["num"] == "3680" and np.linalg.norm(q["o"] - p["o"]) < 1.0 and abs(p["M"][1, 1] - 1) < 1e-4 and np.allclose(p["M"][1], [0, 1, 0], atol=1e-4):
+                allowed_pairs.add(tuple(sorted((p["i"], q["i"]))))
+    overlaps = Counter({k: v for k, v in overlaps.items() if k not in allowed_pairs})
     # ---------------- joints
     rindex = defaultdict(list)
     for p in P:
@@ -99,6 +135,8 @@ def main():
                         Q = P[q]; loc = Q["M"].T @ (tip - Q["o"]); S = conn.part(Q["num"])
                         sol = S["solid"]; ix = int((loc[0] - S["plo"][0]) // 5); iy = int((S["phi"][1] - loc[1]) // 2); iz = int((loc[2] - S["plo"][2]) // 5)
                         if 0 <= ix < sol.shape[0] and 0 <= iy < sol.shape[1] and 0 <= iz < sol.shape[2] and sol[ix, iy, iz]: blocked += 1
+    for (a_, b_) in allowed_pairs:     # turntable 2x2: top clicked on base, free rotation about the vertical axis
+        G.add_edge(a_, b_, contacts=[(P[a_]["o"] + np.array([0, 8.0, 0]), np.array([0, -1.0, 0]), b_ if P[b_]["num"] == "3680" else a_)], kind="turntable")
     for u, v, d in G.edges(data=True): d["studs"] = len(d["contacts"])
     # ---------------- support plane, disconnected parts, islands
     base_y = hi_all[1]
@@ -156,8 +194,8 @@ def main():
                 contacts.append((pt, n_comp))
         if not contacts: return None
         # keep the dominant joint direction (other directions are ignored: conservative)
-        dirs = Counter(tuple(np.round(n).astype(int)) for _, n in contacts); nd = np.array(dirs.most_common(1)[0][0], float)
-        pts = np.array([pt for pt, n in contacts if np.allclose(np.round(n), nd)])
+        dirs = Counter(tuple(np.round(n, 2)) for _, n in contacts); nd = np.array(dirs.most_common(1)[0][0], float); nd /= np.linalg.norm(nd)
+        pts = np.array([pt for pt, n in contacts if np.dot(n, nd) > 0.99])
         e1 = np.cross(nd, [1, 0, 0]) if abs(nd[0]) < 0.9 else np.cross(nd, [0, 1, 0]); e1 /= np.linalg.norm(e1); e2 = np.cross(nd, e1)
         q = np.c_[pts @ e1, pts @ e2]; p0 = pts.mean(0)
         far = max((((P[i]["lo"] + P[i]["hi"]) / 2 - p0) @ nd for i in comp), default=0) + 10
@@ -204,7 +242,7 @@ def main():
                     if r is None: continue
                     cc = Counter(cols[P[i]["c"]]["name"] for i in comp).most_common(2)
                     lo_c = np.min([P[i]["lo"] for i in comp], 0); hi_c = np.max([P[i]["hi"] for i in comp], 0)
-                    r.update(frame=list(map(int, up)), parts=len(comp), colours=dict(cc), bbox_ldu=[np.round(lo_c).tolist(), np.round(hi_c).tolist()])
+                    r.update(frame=list(map(float, up)), parts=len(comp), colours=dict(cc), bbox_ldu=[np.round(lo_c).tolist(), np.round(hi_c).tolist()])
                     cases.append(r)
     # distinct weakest sub-assemblies by tip force
     big = [c for c in cases if c["mass_g"] >= 1.0 and c["tip_force_N"] is not None]
@@ -246,7 +284,9 @@ def main():
             A, B = S.any(axis=ax), Fm.any(axis=ax); fid[f"silhouette_iou_{nm}"] = round(np.count_nonzero(A & B) / np.count_nonzero(A | B), 4)
     rep = dict(name=a.name, source_ldr=os.path.abspath(a.ldr), disclaimer="Geometric and graph checks plus an indicative stud-clutch model. Not a physical test.",
                parts=len(P), part_types=len({p["num"] for p in P}), part_colour_lines=len(rows), steps=nsteps,
-               collisions=dict(pairs=len(overlaps), cells_4ldu=int(sum(overlaps.values())), examples=[[P[x]["num"], P[y]["num"]] for (x, y) in list(overlaps)[:5]]),
+               collisions=dict(pairs=len(overlaps), cells_4ldu=int(sum(overlaps.values())), examples=[[P[x]["num"], P[y]["num"]] for (x, y) in list(overlaps)[:5]],
+                           details=[dict(a=P[x]["num"], b=P[y]["num"], a_sub=P[x]["sub"], b_sub=P[y]["sub"], a_aligned=P[x]["aligned"], b_aligned=P[y]["aligned"],
+                                         a_box=np.round(P[x]["lo"]).tolist(), b_box=np.round(P[y]["lo"]).tolist(), points=int(v)) for (x, y), v in list(overlaps.items())[:10]]),
                blocked_studs=int(blocked), joints=G.number_of_edges(), studs_engaged=int(sum(d["studs"] for _, _, d in G.edges(data=True))),
                single_stud_joints=sum(1 for _, _, d in G.edges(data=True) if d["studs"] == 1),
                sideways_joints=sum(1 for _, _, d in G.edges(data=True) if abs(d["contacts"][0][1][1]) < 0.5),
@@ -257,7 +297,7 @@ def main():
                catalogue=dict(lines=len(rows), never_produced=[f"{r['part']} {r['colour']}" for r in rows if r["status"] == "couleur jamais produite"],
                               not_found=[f"{r['part']} {r['colour']}" for r in rows if r["status"] == "non trouvée dans Rebrickable"],
                               rare=[f"{r['part']} {r['colour']} ({r['sets']} sets)" for r in rows if r["status"].startswith("rare")]),
-               frames=[list(map(int, k)) for k in frames], stability=stability, fidelity=fid)
+               frames=[list(map(float, k)) for k in frames], turntable_joints=len(allowed_pairs), stability=stability, fidelity=fid)
     json.dump(rep, open(os.path.join(a.out, f"{a.name}_validation_v2.json"), "w"), indent=1, default=float)
     print(json.dumps({k: rep[k] for k in ("parts", "part_types", "steps", "collisions", "blocked_studs", "disconnected_parts", "islands", "unsupported_at_placement",
                                           "subassemblies_not_attachable", "sideways_joints")}, default=float))
