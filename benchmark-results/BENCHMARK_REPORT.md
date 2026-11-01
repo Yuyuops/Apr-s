@@ -29,6 +29,34 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 nonies. LEGO V7 : première sculpture complète automatique (`13_complete_sculpture_proof/`)
+
+**Verdict : INTÉGRATION PARTIELLE.**
+
+Paco cartoon entier à 400 mm, produit automatiquement par l'enchaînement suivant :
+
+- grille complète (la découpe de la tête est identique à celle des itérations 05 à 12) ;
+- segmentation automatique, avec décision et confiance par zone ;
+- deux oreilles V6.1 ;
+- volume brickify_plus ;
+- appuis des plaques tournées.
+
+Résultats :
+
+- **Modèle** : 2 773 pièces ; `validate_v3` donne 0 collision, 0 pièce déconnectée, 0 îlot ; 331 étapes ; 68 couples pièce × couleur vérifiés.
+- **Masse et équilibre** : environ 1,13 kg ; centre de gravité dans l'appui des pieds, avec 74 mm de marge.
+- **Fixations** : deux chemins sur chaque oreille. La plaque secondaire de l'oreille haute est désormais **cachée**, ce qui corrige la réserve de V6.1. L'oreille basse est suspendue par une fixation à plusieurs niveaux (nouvelle capacité générique).
+- **Visuel** : personnage reconnaissable sous toutes les vues.
+
+Réserves :
+
+- capacité manquante pour les détails du visage (yeux, truffe, bouche) ;
+- mains fragiles (1 tenon) ;
+- notice des oreilles en un seul bloc ;
+- seuil de minceur réglé de 30 à 35 mm au vu de ce cas ;
+- `autogen.py` modifié (les valeurs par défaut gardent V6/V6.1) ;
+- aucun essai physique (protocole et bancs fournis).
+
 ## 0 octies. LEGO V6.1 : grands arrondis automatiques (`12_automatic_curves/`)
 
 **Verdict : VALIDER V6.1.**

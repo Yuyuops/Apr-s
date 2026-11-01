@@ -1,0 +1,50 @@
+{
+ "masse_g": 1127.1,
+ "cdg_hauteur_mm": 188.8,
+ "cdg_dans_appui": true,
+ "marge_mm": 74.2,
+ "surface_appui_cm2": 100.3,
+ "oreille_pire": {
+  "mass_g": 59.1,
+  "studs": 6,
+  "gravity_sf": 7.68,
+  "tip_force_N": 0.67,
+  "frame": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "parts": 111,
+  "colours": {
+   "Black": 111
+  },
+  "bbox_ldu": [
+   [
+    66.0,
+    -716.0,
+    -1.0
+   ],
+   [
+    286.0,
+    -512.0,
+    277.0
+   ]
+  ]
+ },
+ "stabilite_globale": {
+  "min_gravity_sf": 2.68,
+  "tip_force_below_0_5N": 46,
+  "tip_force_below_2N": 126,
+  "min_tip_force_N": 0.07,
+  "subassemblies_over_1g": 305,
+  "cases": 1091
+ },
+ "couleurs": {
+  "Yellow": 1506,
+  "Red": 671,
+  "Black": 517,
+  "White": 79
+ },
+ "pieces": 2773,
+ "couples_piece_couleur": 68
+}

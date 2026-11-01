@@ -1,0 +1,71 @@
+212c212
+<             if not (0 <= x < NX and 0 <= z < NZ and 0 <= ys - 1 < NY): bad = True; continue
+---
+>             if not (0 <= x < NX and 0 <= z < NZ and 0 <= ys - 1 < NY and 0 <= y < NY and 0 <= xs < NX and 0 <= zs < NZ): bad = True; continue
+226a227,228
+> P1_LEVELS = (48,)          # V7: levels of the primary turned plate (48 + 40 n); V6/V6.1 keep (48,)
+> 
+238,241c240,246
+<                 coin, expo, bad = plate_seats(occ, E, R, O, xm0, zm0, w, l, 48)
+<                 if bad or expo or len(coin) < 2: continue
+<                 sc = (len(coin), -xm0)
+<                 if best is None or sc > best[0]: best = (sc, dict(num=num, w=w, l=l, xm0=xm0, zm0=zm0, vp=48, coin=coin))
+---
+>                 for L in P1_LEVELS:
+>                     if L > 48:      # the root (core columns next to the plate, v L..L+40) must meet the ear outline
+>                         if not any(xm0 - 40 <= 20 * i < xm0 + 20 * w and L - 20 <= V0 + 20 * k <= L + 40 for (i, k) in lobe_cells): continue
+>                     coin, expo, bad = plate_seats(occ, E, R, O, xm0, zm0, w, l, L)
+>                     if bad or expo or len(coin) < 2: continue
+>                     sc = (len(coin), -abs(L - 48) * 0, -xm0)
+>                     if best is None or sc > best[0]: best = (sc, dict(num=num, w=w, l=l, xm0=xm0, zm0=zm0, vp=L, coin=coin))
+254c259
+<         for vp2 in (88, 128):
+---
+>         for vp2 in (P1["vp"] + 40, P1["vp"] + 80):
+260c265
+<                         if vp2 == 88 and over < 2: continue                       # rests on the block plate (connection)
+---
+>                         if vp2 == P1["vp"] + 40 and over < 2: continue            # rests on the block plate (connection)
+342c347,348
+<             for P, v0_, v1_, zlo, zhi in ((P1_, 36, 84, None, None), (P2_, (P2_ or {}).get("vp", 88) - 32, (P2_ or {}).get("vp", 88) + 4, None, None)):
+---
+>             L1 = (P1_ or {}).get("vp", 48)
+>             for P, v0_, v1_, zlo, zhi in ((P1_, L1 - 12, L1 + 36, None, None), (P2_, (P2_ or {}).get("vp", 88) - 32, (P2_ or {}).get("vp", 88) + 4, None, None)):
+349c355,356
+<         forb |= {p for p in Tset if p[1] * 4 < 52}            # the core starts on the turned plate (v 48): no face below
+---
+>         if (P1_ or {}).get("vp", 48) == 48:
+>             forb |= {p for p in Tset if p[1] * 4 < 52}        # the core starts on the turned plate (v 48): no face below
+354c361
+<         inside = {p for p in inside if not in_fix(*p) and p[1] * 4 >= 52}
+---
+>         inside = {p for p in inside if not in_fix(*p) and (p[1] * 4 >= 52 or (P1_ or {}).get("vp", 48) > 48)}
+394c401
+<         vstart = 48
+---
+>         vstart = 48 if (fix.get("primary") or {}).get("vp", 48) == 48 else vstart   # V7: hanging ear, core from its lowest point
+408c415,416
+<         if P1 and in_p(P1, i) and v0 >= 72 and v1 <= 80: return False                       # block plate
+---
+>         L1 = P1["vp"] if P1 else 48
+>         if P1 and in_p(P1, i) and v0 >= L1 + 24 and v1 <= L1 + 32: return False             # block plate
+410,411c418,419
+<         if P2 and P2["vp"] > 88 and P2["xm0"] - 20 <= 20 * i < P2["xm0"] + 20 * P2["w"] and v0 >= 48 and v1 <= P2["vp"] - 8: return True   # core under it
+<         if P1 and P1["xm0"] - 40 <= 20 * i < P1["xm0"] + 20 * P1["w"] and v0 >= 48 and v1 <= 88: return True   # root
+---
+>         if P2 and P2["vp"] > L1 + 40 and P2["xm0"] - 20 <= 20 * i < P2["xm0"] + 20 * P2["w"] and v0 >= L1 and v1 <= P2["vp"] - 8: return True   # core under it
+>         if P1 and P1["xm0"] - 40 <= 20 * i < P1["xm0"] + 20 * P1["w"] and v0 >= L1 and v1 <= L1 + 40: return True   # root
+439c447
+<                 num = bricks[(2, P1["w"])]; M, o = axis_part(num, (P1["xm0"], -72, rows[j])); j += 2
+---
+>                 num = bricks[(2, P1["w"])]; M, o = axis_part(num, (P1["xm0"], -(P1["vp"] + 24), rows[j])); j += 2
+441c449
+<                 num = bricks[(1, P1["w"])]; M, o = axis_part(num, (P1["xm0"], -72, rows[j])); j += 1
+---
+>                 num = bricks[(1, P1["w"])]; M, o = axis_part(num, (P1["xm0"], -(P1["vp"] + 24), rows[j])); j += 1
+443,444c451,452
+<         M, o = axis_part(P1["num"], (P1["xm0"], -80, P1["zm0"])); mod.append((BLACK, P1["num"], M, o, "wall", "bloc de racine : plaque"))
+<         M, o = axis_part(P1["num"], (P1["xm0"], -48, P1["zm0"])); mod.append((BLACK, P1["num"], M, o, "base", "plaque tournee 1 (v 40..48)"))
+---
+>         M, o = axis_part(P1["num"], (P1["xm0"], -(P1["vp"] + 32), P1["zm0"])); mod.append((BLACK, P1["num"], M, o, "wall", "bloc de racine : plaque"))
+>         M, o = axis_part(P1["num"], (P1["xm0"], -P1["vp"], P1["zm0"])); mod.append((BLACK, P1["num"], M, o, "base", "plaque tournee 1 (v %d..%d)" % (P1["vp"] - 8, P1["vp"])))

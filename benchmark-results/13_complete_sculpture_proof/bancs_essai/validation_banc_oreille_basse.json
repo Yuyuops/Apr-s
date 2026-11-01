@@ -1,0 +1,83 @@
+{
+ "name": "val_V7_oreille_basse",
+ "source_ldr": "/root/bench/proto/v7/rigs/notice_V7_oreille_basse.ldr",
+ "disclaimer": "Geometric and graph checks plus an indicative stud-clutch model. Not a physical test.",
+ "parts": 34,
+ "part_types": 7,
+ "part_colour_lines": 8,
+ "steps": 10,
+ "collisions": {
+  "pairs": 0,
+  "cells_4ldu": 0,
+  "examples": [],
+  "details": []
+ },
+ "blocked_studs": 0,
+ "joints": 45,
+ "studs_engaged": 99,
+ "single_stud_joints": 39,
+ "sideways_joints": 0,
+ "groups_on_support_not_attached_to_main": 0,
+ "disconnected_parts": 0,
+ "islands": 0,
+ "disconnected_examples": [],
+ "unsupported_at_placement": 0,
+ "subassemblies_not_attachable": [],
+ "catalogue": {
+  "lines": 8,
+  "never_produced": [],
+  "not_found": [],
+  "rare": []
+ },
+ "frames": [
+  [
+   0.0,
+   -1.0,
+   0.0
+  ]
+ ],
+ "turntable_joints": 0,
+ "stability": {
+  "model": "rigid parts; clutch 1.0 N per stud (assumed); compression free; 0.10 g per stud x stud x plate; gravity, then a force at the far end of each sub-assembly. Indicative only.",
+  "cases": 8,
+  "gravity_sf_below_1": 0,
+  "gravity_sf_below_2": 0,
+  "min_gravity_sf": 873.74,
+  "subassemblies_over_1g": 8,
+  "tip_force_below_0_5N": 0,
+  "tip_force_below_2N": 0,
+  "min_tip_force_N": 6.17,
+  "weakest": [
+   {
+    "mass_g": 23.7,
+    "studs": 12,
+    "gravity_sf": null,
+    "tip_force_N": 6.17,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 33,
+    "colours": {
+     "Dark_Bluish_Grey": 15,
+     "Red": 12
+    },
+    "bbox_ldu": [
+     [
+      248.0,
+      -720.0,
+      240.0
+     ],
+     [
+      520.0,
+      -656.0,
+      540.0
+     ]
+    ]
+   }
+  ],
+  "big_cases": []
+ },
+ "fidelity": null
+}

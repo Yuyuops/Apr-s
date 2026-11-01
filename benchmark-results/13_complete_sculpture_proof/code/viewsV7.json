@@ -1,0 +1,9 @@
+[{"name":"1_face","az":180,"el":8,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"2_dos","az":0,"el":8,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"3_profil_gauche","az":270,"el":5,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"4_profil_droit","az":90,"el":5,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"5_trois_quarts","az":225,"el":18,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"6_dessus","az":200,"el":80,"frameBox":[[0,0,-280],[280,405,0]]},
+ {"name":"7_gros_plan_tete","az":215,"el":15,"frameBox":[[20,220,-260],[260,405,-20]]},
+ {"name":"8_gros_plan_oreilles","az":40,"el":10,"frameBox":[[20,170,-240],[200,405,-20]]},
+ {"name":"9_gros_plan_mains_pieds","az":200,"el":15,"frameBox":[[20,0,-260],[260,190,-20]]}]
