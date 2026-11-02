@@ -1,0 +1,180 @@
+{
+ "cou": 88,
+ "entrejambe": 34,
+ "zones": [
+  {
+   "zone": "yeux",
+   "cellules": 198,
+   "couleurs": {
+    "noir": 16,
+    "blanc": 182
+   },
+   "etendue_mm": [
+    120.0,
+    112.0,
+    456.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.184,
+   "acp_epaisseur_sur_largeur": 0.681,
+   "epaisseur_mm": 78.5,
+   "contact_cellules": 314,
+   "decision": "couleur de la grille seulement (detail trop petit pour une piece de forme) - capacite manquante : module de details ronds",
+   "confiance": "faible"
+  },
+  {
+   "zone": "truffe",
+   "cellules": 23,
+   "couleurs": {
+    "noir": 23
+   },
+   "etendue_mm": [
+    40.0,
+    29.0,
+    24.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.187,
+   "acp_epaisseur_sur_largeur": 0.207,
+   "epaisseur_mm": 12.1,
+   "contact_cellules": 46,
+   "decision": "couleur de la grille seulement (detail trop petit pour une piece de forme) - capacite manquante : module de details ronds",
+   "confiance": "faible"
+  },
+  {
+   "zone": "museau",
+   "cellules": 1558,
+   "couleurs": {
+    "noir": 27,
+    "blanc": 6,
+    "70": 11,
+    "84": 76,
+    "308": 20,
+    "484": 1418
+   },
+   "etendue_mm": [
+    128.0,
+    109.0,
+    72.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.587,
+   "acp_epaisseur_sur_largeur": 0.649,
+   "epaisseur_mm": 60.8,
+   "contact_cellules": 601,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "moyenne"
+  },
+  {
+   "zone": "crane",
+   "cellules": 10523,
+   "couleurs": {
+    "noir": 20,
+    "blanc": 9,
+    "70": 191,
+    "84": 107,
+    "308": 189,
+    "484": 10007
+   },
+   "etendue_mm": [
+    240.0,
+    118.0,
+    376.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.581,
+   "acp_epaisseur_sur_largeur": 0.64,
+   "epaisseur_mm": 102.8,
+   "contact_cellules": 737,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "haute"
+  },
+  {
+   "zone": "pieds",
+   "cellules": 3336,
+   "couleurs": {
+    "noir": 8,
+    "blanc": 364,
+    "84": 378,
+    "308": 4,
+    "484": 2582
+   },
+   "etendue_mm": [
+    208.0,
+    48.0,
+    336.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.101,
+   "acp_epaisseur_sur_largeur": 0.222,
+   "epaisseur_mm": 47.1,
+   "contact_cellules": 157,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "haute"
+  },
+  {
+   "zone": "jambes",
+   "cellules": 3060,
+   "couleurs": {
+    "noir": 3,
+    "blanc": 233,
+    "70": 2,
+    "84": 342,
+    "308": 1,
+    "484": 2479
+   },
+   "etendue_mm": [
+    176.0,
+    64.0,
+    304.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.177,
+   "acp_epaisseur_sur_largeur": 0.378,
+   "epaisseur_mm": 64.0,
+   "contact_cellules": 863,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "haute"
+  },
+  {
+   "zone": "bras_mains",
+   "cellules": 542,
+   "couleurs": {
+    "noir": 5,
+    "blanc": 44,
+    "70": 34,
+    "84": 39,
+    "308": 47,
+    "484": 373
+   },
+   "etendue_mm": [
+    64.0,
+    45.0,
+    432.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.076,
+   "acp_epaisseur_sur_largeur": 0.903,
+   "epaisseur_mm": 46.4,
+   "contact_cellules": 89,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "moyenne"
+  },
+  {
+   "zone": "torse",
+   "cellules": 33353,
+   "couleurs": {
+    "noir": 7,
+    "blanc": 699,
+    "70": 161,
+    "84": 637,
+    "308": 105,
+    "484": 31744
+   },
+   "etendue_mm": [
+    192.0,
+    234.0,
+    416.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.439,
+   "acp_epaisseur_sur_largeur": 0.886,
+   "epaisseur_mm": 139.7,
+   "contact_cellules": 1198,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "haute"
+  }
+ ]
+}

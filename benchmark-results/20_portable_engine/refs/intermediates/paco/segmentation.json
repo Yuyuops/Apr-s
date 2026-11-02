@@ -1,0 +1,218 @@
+{
+ "cou": 70,
+ "entrejambe": 55,
+ "zones": [
+  {
+   "zone": "oreille_haute",
+   "cellules": 196,
+   "couleurs": {
+    "noir": 196
+   },
+   "etendue_mm": [
+    72.0,
+    109.0,
+    112.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.143,
+   "acp_epaisseur_sur_largeur": 0.251,
+   "epaisseur_mm": 24.8,
+   "contact_cellules": 286,
+   "decision": "generateur V6.1 (contour, panneau a deux faces, fixation 3-4-5)",
+   "confiance": "haute"
+  },
+  {
+   "zone": "oreille_basse",
+   "cellules": 203,
+   "couleurs": {
+    "noir": 203
+   },
+   "etendue_mm": [
+    72.0,
+    99.0,
+    96.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.237,
+   "acp_epaisseur_sur_largeur": 0.356,
+   "epaisseur_mm": 30.3,
+   "contact_cellules": 300,
+   "decision": "generateur V6.1 (contour, panneau a deux faces, fixation 3-4-5)",
+   "confiance": "moyenne"
+  },
+  {
+   "zone": "yeux",
+   "cellules": 14,
+   "couleurs": {
+    "noir": 2,
+    "blanc": 12
+   },
+   "etendue_mm": [
+    64.0,
+    19.0,
+    24.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.105,
+   "acp_epaisseur_sur_largeur": 0.43,
+   "epaisseur_mm": 16.7,
+   "contact_cellules": 28,
+   "decision": "couleur de la grille seulement (detail trop petit pour une piece de forme) - capacite manquante : module de details ronds",
+   "confiance": "faible"
+  },
+  {
+   "zone": "truffe",
+   "cellules": 7,
+   "couleurs": {
+    "noir": 7
+   },
+   "etendue_mm": [
+    8.0,
+    19.0,
+    16.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.0,
+   "acp_epaisseur_sur_largeur": 0.0,
+   "epaisseur_mm": 8.0,
+   "contact_cellules": 12,
+   "decision": "couleur de la grille seulement (detail trop petit pour une piece de forme) - capacite manquante : module de details ronds",
+   "confiance": "faible"
+  },
+  {
+   "zone": "bouche",
+   "cellules": 2,
+   "couleurs": {
+    "rouge": 2
+   },
+   "etendue_mm": [
+    88.0,
+    35.0,
+    64.0
+   ],
+   "acp_epaisseur_sur_longueur": null,
+   "acp_epaisseur_sur_largeur": null,
+   "epaisseur_mm": null,
+   "contact_cellules": 7,
+   "decision": "couleur de la grille seulement (detail trop petit pour une piece de forme) - capacite manquante : module de details ronds",
+   "confiance": "faible"
+  },
+  {
+   "zone": "museau",
+   "cellules": 1418,
+   "couleurs": {
+    "noir": 22,
+    "jaune": 1385,
+    "blanc": 11
+   },
+   "etendue_mm": [
+    120.0,
+    99.0,
+    120.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.291,
+   "acp_epaisseur_sur_largeur": 0.55,
+   "epaisseur_mm": 42.6,
+   "contact_cellules": 186,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "moyenne"
+  },
+  {
+   "zone": "crane",
+   "cellules": 2982,
+   "couleurs": {
+    "noir": 98,
+    "jaune": 2883,
+    "blanc": 1
+   },
+   "etendue_mm": [
+    160.0,
+    176.0,
+    152.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.189,
+   "acp_epaisseur_sur_largeur": 0.283,
+   "epaisseur_mm": 48.0,
+   "contact_cellules": 605,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "haute"
+  },
+  {
+   "zone": "pieds",
+   "cellules": 1171,
+   "couleurs": {
+    "noir": 22,
+    "rouge": 107,
+    "jaune": 1037,
+    "blanc": 5
+   },
+   "etendue_mm": [
+    168.0,
+    48.0,
+    96.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.246,
+   "acp_epaisseur_sur_largeur": 0.56,
+   "epaisseur_mm": 47.4,
+   "contact_cellules": 60,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "haute"
+  },
+  {
+   "zone": "jambes",
+   "cellules": 3836,
+   "couleurs": {
+    "noir": 31,
+    "rouge": 898,
+    "jaune": 2886,
+    "blanc": 21
+   },
+   "etendue_mm": [
+    272.0,
+    131.0,
+    80.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.399,
+   "acp_epaisseur_sur_largeur": 0.485,
+   "epaisseur_mm": 64.7,
+   "contact_cellules": 435,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "haute"
+  },
+  {
+   "zone": "bras_mains",
+   "cellules": 33,
+   "couleurs": {
+    "jaune": 33
+   },
+   "etendue_mm": [
+    40.0,
+    13.0,
+    48.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.214,
+   "acp_epaisseur_sur_largeur": 0.911,
+   "epaisseur_mm": 17.8,
+   "contact_cellules": 32,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "moyenne"
+  },
+  {
+   "zone": "torse",
+   "cellules": 1793,
+   "couleurs": {
+    "noir": 5,
+    "rouge": 135,
+    "jaune": 1643,
+    "blanc": 10
+   },
+   "etendue_mm": [
+    272.0,
+    138.0,
+    80.0
+   ],
+   "acp_epaisseur_sur_longueur": 0.263,
+   "acp_epaisseur_sur_largeur": 0.37,
+   "epaisseur_mm": 52.4,
+   "contact_cellules": 398,
+   "decision": "volume brickify_plus (reglages du prototype C)",
+   "confiance": "haute"
+  }
+ ]
+}

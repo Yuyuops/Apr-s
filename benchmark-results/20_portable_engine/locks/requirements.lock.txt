@@ -1,0 +1,11 @@
+# Dependances Python du moteur 1 (Python 3.13), versions exactes de l'environnement de reference de V1 a V10
+numpy==2.5.4
+scipy==1.18.1
+trimesh==5.2.0
+networkx==3.7
+scikit-learn==1.9.1
+pillow==13.0.0
+rtree==1.4.1
+embreex==4.4.0.post1
+joblib==1.6.0
+threadpoolctl==3.7.0

@@ -1,0 +1,118 @@
+{
+ "ear_skin_cells_removed": 441,
+ "ear_core_cells_removed": 615,
+ "head": {
+  "name": "head_C",
+  "parts": 1214,
+  "kinds": {
+   "plate": 1181,
+   "tile": 33
+  },
+  "reconnect_cells": 0,
+  "cells": 3967,
+  "cells_brickify": 5200,
+  "recoloured_new_surface": 1074,
+  "floating_before_repair": 22,
+  "bridge_recoloured_cells": 10,
+  "bridges": 10,
+  "floating_after_repair": 9,
+  "dropped_floating_parts": 9,
+  "dropped_floating_cells": 9
+ },
+ "ear_plane": {
+  "centre_ldu": [
+   128.7,
+   -350.9,
+   159.6
+  ],
+  "normal": [
+   -0.793,
+   0.0,
+   0.609
+  ],
+  "in_plane_angle_deg": 52.5,
+  "module_angle_deg": 53.13
+ },
+ "placement": {
+  "turntable_1_corner": [
+   6,
+   8
+  ],
+  "turntable_2_corner": [
+   9,
+   12
+  ],
+  "head_top_layer": 26,
+  "panel_side": 1,
+  "panel_to_mesh_ear_plane_ldu": -24.8,
+  "riser_plates_1x1": 2,
+  "pocket_cells": 13
+ },
+ "panel": {
+  "cells": 137,
+  "cells_removed_touching_head": 40,
+  "brackets_down_99781_at_module_x": [
+   40
+  ],
+  "brackets_up_99780_at_module_x": [
+   -20,
+   80,
+   120
+  ],
+  "plate": "3832",
+  "side_studs": 6,
+  "outer_pieces": 20,
+  "outer_rounded": 8,
+  "inner_plates": 12,
+  "pieces_dropped_unlinked": 8,
+  "pieces_removed_touching_head": 0
+ },
+ "head_after_pocket": {
+  "name": "head_C",
+  "parts": 1201,
+  "kinds": {
+   "plate": 1169,
+   "tile": 32
+  },
+  "reconnect_cells": 0,
+  "cells": 3949,
+  "cells_brickify": 5182,
+  "recoloured_new_surface": 1058,
+  "floating_before_repair": 29,
+  "bridge_recoloured_cells": 10,
+  "bridges": 10,
+  "floating_after_repair": 11,
+  "dropped_floating_parts": 11,
+  "dropped_floating_cells": 11
+ },
+ "carving": {
+  "cells_removed_total": 18,
+  "pocket_cells": 13,
+  "cells_hit_by_module_or_panel": 5,
+  "zone": "panel: 2 cells around the removed ear skin and core; hidden module body (pocket): anywhere except within 2 cells of the eyes and mouth",
+  "grid_cells_head_before": 3967,
+  "grid_cells_head_after": 3949
+ },
+ "R_mod": [
+  [
+   0.6,
+   0.0,
+   -0.8
+  ],
+  [
+   0.0,
+   1.0,
+   0.0
+  ],
+  [
+   0.8,
+   0.0,
+   0.6
+  ]
+ ],
+ "O": [
+  120.0,
+  -208.0,
+  160.0
+ ]
+}

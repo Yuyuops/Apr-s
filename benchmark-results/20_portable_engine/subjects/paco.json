@@ -1,0 +1,15 @@
+{
+  "name": "paco",
+  "description": "Paco, biped : le sujet sur lequel le moteur 1 a ete developpe (V1 a V9.1)",
+  "source_glb": "benchmark-results/02_glb_gratuit_hunyuan2mv/paco.glb",
+  "height_mm": 400,
+  "mirror_x": true,
+  "neck": "auto",
+  "palette_exclude": [1,2,25,19,28,70,71,72,272,288,320,321,322,29,26,27,191,226,212,84,78,308,85,30,73,10,3,323,378,379,330,484,43],
+  "palette_passes": 4,
+  "ears": {"enabled": true, "frame_json": "engine/data/paco_ear_frame.json", "note": "SPECIFIQUE A PACO : repere (rotation 3-4-5, origine) trouve a la main en V4.1 et silhouette de l'oreille haute"},
+  "mouth_module": "C",
+  "reinforce_passes": [{"per_layer": 2, "skip_r1": 0}, {"per_layer": 4, "skip_r1": 1}],
+  "ear_stitch": true,
+  "grid_shape": "40,130,40"
+}

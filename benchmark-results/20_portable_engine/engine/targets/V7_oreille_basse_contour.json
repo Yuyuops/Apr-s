@@ -1,0 +1,31 @@
+{
+ "u0": -196.0,
+ "v0": 36.0,
+ "res": 4.0,
+ "shape": [
+  119,
+  131
+ ],
+ "frame": "V7 oreille basse (repere V4.1 abaisse), GLB complet",
+ "analyse": {
+  "axe": {
+   "pixels": 22
+  },
+  "pente": {
+   "pixels": 122,
+   "pentes_dv_du_quartiles": [
+    0.31,
+    0.77,
+    1.27
+   ]
+  },
+  "arc": {
+   "pixels": 47,
+   "rayons_ldu_quartiles": [
+    44.0,
+    73.0,
+    81.0
+   ]
+  }
+ }
+}

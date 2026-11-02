@@ -1,0 +1,32 @@
+{
+ "u0": -196.0,
+ "v0": -228.0,
+ "frame": "module V4.1 (u = x module, v = -y module)",
+ "res": 4.0,
+ "shape": [
+  119,
+  121
+ ],
+ "area_ldu2": 63424.0,
+ "analyse": {
+  "axe": {
+   "pixels": 49
+  },
+  "pente": {
+   "pixels": 84,
+   "pentes_dv_du_quartiles": [
+    0.21,
+    0.35,
+    0.54
+   ]
+  },
+  "arc": {
+   "pixels": 139,
+   "rayons_ldu_quartiles": [
+    35.0,
+    45.0,
+    69.0
+   ]
+  }
+ }
+}

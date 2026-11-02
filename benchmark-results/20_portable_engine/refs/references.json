@@ -1,0 +1,212 @@
+{
+ "paco_V6_oreille": {
+  "11_automatic_contour_proof/exemples/A_paco/oreille_A_paco.ldr": {
+   "sha256": "a5a6d1d51c011584a526b2c22c755363ed623fff1acf9d48781818f5fa53b70b",
+   "bytes": 20109,
+   "lines_parts": 162
+  },
+  "11_automatic_contour_proof/exemples/A_paco/validation.json": {
+   "sha256": "3564b3487c2c08a2801acadf6a76ede916fb0a0a80b887814e7e7e8274ed7936",
+   "bytes": 20539,
+   "lines_parts": null
+  },
+  "11_automatic_contour_proof/exemples/A_paco/nomenclature_oreille.csv": {
+   "sha256": "6f8c17086ff3aeb1c5261cf802b5a419c330e7d0ce63fc141cfda770a4cabe55",
+   "bytes": 1108,
+   "lines_parts": null
+  }
+ },
+ "paco_V61_oreille": {
+  "12_automatic_curves/A_paco/oreille_A_paco.ldr": {
+   "sha256": "795c3f0399562938efa67d63ef5471ecc28a2f345d2eef7969d4c0717d4e54ec",
+   "bytes": 21087,
+   "lines_parts": 170
+  },
+  "12_automatic_curves/A_paco/validation_v3.json": {
+   "sha256": "96e77ba58c04d46f70a1cb5364762b5c97c22e6f347b25012390406da0036191",
+   "bytes": 20580,
+   "lines_parts": null
+  },
+  "12_automatic_curves/A_paco/nomenclature_oreille.csv": {
+   "sha256": "b30db8c98535e0d3f3328acbea9cf5676334a4fa19c3dc1442b105b6876b03ee",
+   "bytes": 1135,
+   "lines_parts": null
+  }
+ },
+ "beagle_V6_oreille": {
+  "11_automatic_contour_proof/exemples/B_beagle/oreille_B_beagle.ldr": {
+   "sha256": "16b716d3a78cefee73804e6e1ce39c0ee5c2ef5a09b1ccf1885690775f33f12b",
+   "bytes": 30782,
+   "lines_parts": 247
+  },
+  "11_automatic_contour_proof/exemples/B_beagle/validation.json": {
+   "sha256": "97281e8497988592105e11726fd5aa493c6e2fe81d7a7915aeb494a7304194b8",
+   "bytes": 11231,
+   "lines_parts": null
+  },
+  "11_automatic_contour_proof/exemples/B_beagle/nomenclature_oreille.csv": {
+   "sha256": "2d259294e8a3ee3f62b1dde0b955c16c749aad24d40d87c87577aba40a9914a6",
+   "bytes": 1437,
+   "lines_parts": null
+  }
+ },
+ "beagle_V61_oreille": {
+  "12_automatic_curves/B_beagle/oreille_B_beagle.ldr": {
+   "sha256": "b341fb32bcd34561b6489097e63174cd7cea21cac460ca317a92c39f580086a4",
+   "bytes": 33912,
+   "lines_parts": 276
+  },
+  "12_automatic_curves/B_beagle/validation_v3.json": {
+   "sha256": "5e8f95b3d3428c4a56f7f4f952b547f770e2805afff39c2ab43d040486d382c4",
+   "bytes": 11207,
+   "lines_parts": null
+  },
+  "12_automatic_curves/B_beagle/nomenclature_oreille.csv": {
+   "sha256": "da3773648d8b8b055bfdf5eed0314e30f50ef84db486d545d691020fa5ae9249",
+   "bytes": 1466,
+   "lines_parts": null
+  }
+ },
+ "paco_V82": {
+  "16_mouth_visibility_final/modeles/paco_V82_brut.ldr": {
+   "sha256": "f4bb6e67a42535e413e4310524db916d36efe3457b55ba5cca2a95cdd0e5dd09",
+   "bytes": 152980,
+   "lines_parts": 2756
+  },
+  "16_mouth_visibility_final/modeles/corps_seul_V82.ldr": {
+   "sha256": "d34447d9136e9b5d20b9af63e80232a9066287b85ed34d7319a5410dc3cfb2f2",
+   "bytes": 107972,
+   "lines_parts": 2388
+  },
+  "16_mouth_visibility_final/nomenclature_complete.csv": {
+   "sha256": "1d014036eb9709792aa3362951197916b4ead348c60a2b7091662c4ac5d40978",
+   "bytes": 4697,
+   "lines_parts": null
+  }
+ },
+ "paco_V9": {
+  "17_structural_and_instructions/modeles/paco_V9_brut.ldr": {
+   "sha256": "837b1b21c71270efdfb5a5e2dbfd273af95751c948a7a04ba261ebcb8ff38f47",
+   "bytes": 215129,
+   "lines_parts": 3066
+  },
+  "17_structural_and_instructions/modeles/paco_V9_notice.ldr": {
+   "sha256": "611a6ca70d92e6c57fde10aa46f143654ad8a60c19c1df284b26ea6e0fd99b62",
+   "bytes": 217959,
+   "lines_parts": 3066
+  },
+  "17_structural_and_instructions/nomenclature_complete.csv": {
+   "sha256": "9e00d4d268a687ab93a964af0b9a5a61eebe94808290ade7070e49bc819353b0",
+   "bytes": 4697,
+   "lines_parts": null
+  },
+  "17_structural_and_instructions/validation/validation_v3_V9_notice.json": {
+   "sha256": "0eb2b6097556032771abd0a7af2fb7164be840968075feb3ce638306fcf522de",
+   "bytes": 66089,
+   "lines_parts": null
+  }
+ },
+ "paco_V91": {
+  "18_ear_assembly_final/modeles/paco_V91_brut.ldr": {
+   "sha256": "f878c3b723abf60d982cb284f0596dd2d4cb3d0a3c669b1f51f8806b8e334661",
+   "bytes": 215939,
+   "lines_parts": 3098
+  },
+  "18_ear_assembly_final/modeles/paco_V91_notice.ldr": {
+   "sha256": "d0dcd9f418afae1a6ee159f9c4a83b97218229a430591327e48d0a1be39b6f62",
+   "bytes": 218755,
+   "lines_parts": 3098
+  },
+  "18_ear_assembly_final/nomenclature_complete.csv": {
+   "sha256": "6f61ef113264ec66d5d02518799c2aebdacf5cc4991521e0b77e4d1b33f2baf4",
+   "bytes": 5392,
+   "lines_parts": null
+  },
+  "18_ear_assembly_final/validation/validation_v4_V91_notice.json": {
+   "sha256": "c1918bfb331552ed61962385b98014a5a5c4cb86a65e6b1db0199c181b04a514",
+   "bytes": 70951,
+   "lines_parts": null
+  },
+  "18_ear_assembly_final/notice/plan_notice.json": {
+   "sha256": "6f8cd71f5906c31ea0e79c06a2a604f3ae9190a8b595c35eb24fdb2833d35cc1",
+   "bytes": 717021,
+   "lines_parts": null
+  }
+ },
+ "beagle_V10": {
+  "19_full_second_subject/modeles/beagle_V10_brut.ldr": {
+   "sha256": "04b7c28e2db64694113277acdb238fa51645050fe0b999843385e548cc90e45c",
+   "bytes": 596937,
+   "lines_parts": 11111
+  },
+  "19_full_second_subject/modeles/beagle_V10_notice.ldr": {
+   "sha256": "37df44320489c203475bc6e34204f97992a47173f68222089c942f4965c60aaa",
+   "bytes": 595750,
+   "lines_parts": 11111
+  },
+  "19_full_second_subject/modeles/beagle_avant_renforts.ldr": {
+   "sha256": "f11def0e8bf3ccaa4f2de56340b084cf4b1b32415daf03e5fd3dd4ef72492b05",
+   "bytes": 494776,
+   "lines_parts": 10658
+  },
+  "19_full_second_subject/nomenclature_complete.csv": {
+   "sha256": "696cfbc9b5eb86aa4b0077ac5a513f91dbdea1b9c4d235921082b4d4cb7bec91",
+   "bytes": 5237,
+   "lines_parts": null
+  },
+  "19_full_second_subject/validation/final_validation_v2.json": {
+   "sha256": "eb15b71c5525beb9d20d63b26c47c62732a278cd88bd75e63d1f25eae0d245a2",
+   "bytes": 58018,
+   "lines_parts": null
+  }
+ },
+ "sources_glb": {
+  "02_glb_gratuit_hunyuan2mv/paco.glb": {
+   "sha256": "b3d39c3f6eae3d7cee5644e8665c8a1c53be6a14486745a572d9b636a1be997b",
+   "bytes": 6026992,
+   "lines_parts": null
+  },
+  "02_glb_gratuit_hunyuan2mv/beagle.glb": {
+   "sha256": "c91757508fc40ca895f8d98de5c2df823b2ce7ed39f10b41e5882c1fb71d4f09",
+   "bytes": 9884728,
+   "lines_parts": null
+  }
+ },
+ "intermediaires_archives": {
+  "20_portable_engine/refs/intermediates/paco/paco_full400.npz": {
+   "sha256": "f30464ee8b120977e4cddc47c1ef84d442543833814e61fd2241823c9ddbd623",
+   "bytes": 65683,
+   "lines_parts": null
+  },
+  "20_portable_engine/refs/intermediates/paco/segmentation.npz": {
+   "sha256": "27bfdd2761ee0c8cc8ed0a07e50e005b85d08352fd9db5c5b61400ec3a1ced67",
+   "bytes": 3582,
+   "lines_parts": null
+  },
+  "20_portable_engine/refs/intermediates/paco/ears.pkl": {
+   "sha256": "50d50d036cf2f1da96a6b6ac4531052bb68da20fcb49eb45d1f13ca6f727da97",
+   "bytes": 70018,
+   "lines_parts": null
+  },
+  "20_portable_engine/refs/intermediates/paco/details.json": {
+   "sha256": "946e5db84a8bfa6547d0c637f66e0b17dde9498fee4e9cf4ec96bc15fd5583aa",
+   "bytes": 9801,
+   "lines_parts": null
+  },
+  "20_portable_engine/refs/intermediates/beagle/beagle_full400.npz": {
+   "sha256": "4cc73bbbf4bb870a0f92a5b127d65eeca6da39366f4f5071eae04e5128d494a7",
+   "bytes": 150699,
+   "lines_parts": null
+  },
+  "20_portable_engine/refs/intermediates/beagle/segmentation.npz": {
+   "sha256": "653f96623f824bcd8ee4df08f5ae9f0f22e6937d811370d69c5f08e79c397cff",
+   "bytes": 6527,
+   "lines_parts": null
+  },
+  "20_portable_engine/refs/intermediates/beagle/details.json": {
+   "sha256": "84a02da1ea3023263cd522a8d5e79c23e898548d3d8c72d757f5eb5e76e3f5fc",
+   "bytes": 28518,
+   "lines_parts": null
+  }
+ }
+}

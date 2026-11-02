@@ -1,0 +1,10 @@
+{
+  "brickify": {"url": "https://github.com/hamnaanaa/brickify", "commit": "1564bb3b2704c522e084fdb1b2a3ce9d3f11d300", "license": "voir LICENSE du depot amont ; non copie dans Git"},
+  "ldraw": {"url": "https://github.com/gkjohnson/ldraw-parts-library", "commit": "1f24cac1821b9a86a5a84cd3a40291aad24679b3", "content": "bibliotheque de pieces LDraw (CC BY 4.0, ldraw.org) telechargee le 30 janvier 2023 + couleurs du 15 mai 2023 ; non copiee dans Git"},
+  "rebrickable_db": {"url": "https://github.com/ojuuji/rb.db/releases/download/latest-v8/rb.db.xz", "release": "latest-v8 (version glissante : le contenu change a chaque mise a jour amont)",
+    "reference": {"data_timestamp": "1793454908", "sha256_rb_db": "9122861943c50cec759a6307b38364b036dbe02c6e5056e26973dff9a2dedf59", "sha256_pcs_mat_table": "ba5353a9c9088712697e3a13b9367343db25153a5c7121b513df26215f7b1aea", "pcs_mat_rows": 104469, "sha256_colors_table": "d94410e18400e0535695c0d076e45ebfb70c4fb7208f1574d1c0d0811c6c909b"},
+    "note": "La release 'latest' ne peut pas etre figee ; une base plus recente donne des disponibilites de pieces par couleur differentes. fetch_deps.sh compare aux empreintes de reference et SIGNALE l'ecart (mesure dans refs/rb_db_drift.json), il ne fabrique rien.",
+    "license": "donnees Rebrickable (voir conditions rebrickable.com/api) : non copiees dans Git"},
+  "python": "3.13",
+  "node": "22"
+}

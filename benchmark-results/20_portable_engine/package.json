@@ -1,0 +1,10 @@
+{
+  "name": "lego-engine-1-render",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rendus et notices du moteur 1 (three.js + Playwright), versions exactes",
+  "dependencies": {
+    "three": "0.160.0",
+    "playwright": "1.63.0"
+  }
+}

@@ -1,0 +1,599 @@
+{
+ "repere": {
+  "axe_museau": [
+   0.533,
+   0.0,
+   -0.846
+  ],
+  "normale_plan_sagittal": [
+   -0.846,
+   0.0,
+   -0.533
+  ],
+  "plan_offset_mm": -50.6,
+  "ecart_symetrie_median_mm": 3.04,
+  "museau_racine_mm": 272.3,
+  "museau_bout_mm": 355.6
+ },
+ "regles": {
+  "fusion_mm": 6.0,
+  "aire_min_mm2": 25.0
+ },
+ "details": [
+  {
+   "couleur": "noir",
+   "aire_mm2": 127.1,
+   "centre_mm": [
+    192.15,
+    271.62,
+    -192.13
+   ],
+   "normale": [
+    0.034,
+    -0.993,
+    0.109
+   ],
+   "axe_long": [
+    0.221,
+    -0.099,
+    -0.97
+   ],
+   "longueur_mm": 16.6,
+   "largeur_mm": 7.4,
+   "diametre_eq_mm": 12.7,
+   "bombe_mm": 0.15,
+   "zone": "museau",
+   "n_faces": 110,
+   "position_museau": -0.09,
+   "cote": "gauche",
+   "ecart_plan_sagittal_mm": -9.4,
+   "remplissage": 1.32,
+   "classe": "bouche",
+   "id": "bouche_9",
+   "pupille": null
+  },
+  {
+   "couleur": "rouge",
+   "aire_mm2": 77.9,
+   "centre_mm": [
+    180.78,
+    262.61,
+    -169.83
+   ],
+   "normale": [
+    0.241,
+    0.863,
+    -0.444
+   ],
+   "axe_long": [
+    -0.593,
+    0.493,
+    0.637
+   ],
+   "longueur_mm": 12.0,
+   "largeur_mm": 8.0,
+   "diametre_eq_mm": 10.0,
+   "bombe_mm": -0.23,
+   "zone": "museau",
+   "n_faces": 97,
+   "position_museau": -0.39,
+   "cote": "gauche",
+   "ecart_plan_sagittal_mm": -11.7,
+   "remplissage": 1.03,
+   "classe": "bouche",
+   "id": "bouche_15",
+   "pupille": null
+  },
+  {
+   "couleur": "rouge",
+   "aire_mm2": 28.8,
+   "centre_mm": [
+    184.5,
+    271.18,
+    -213.98
+   ],
+   "normale": [
+    -0.044,
+    -0.996,
+    -0.078
+   ],
+   "axe_long": [
+    0.121,
+    -0.082,
+    0.989
+   ],
+   "longueur_mm": 19.0,
+   "largeur_mm": 4.8,
+   "diametre_eq_mm": 6.1,
+   "bombe_mm": 0.23,
+   "zone": "museau",
+   "n_faces": 23,
+   "position_museau": 0.09,
+   "cote": "droite",
+   "ecart_plan_sagittal_mm": 8.7,
+   "remplissage": 0.4,
+   "classe": "bouche",
+   "id": "bouche_14",
+   "pupille": null
+  },
+  {
+   "couleur": "noir",
+   "aire_mm2": 29082.9,
+   "centre_mm": [
+    69.95,
+    319.98,
+    -62.36
+   ],
+   "normale": [
+    0.989,
+    -0.142,
+    0.053
+   ],
+   "axe_long": [
+    -0.15,
+    -0.963,
+    0.226
+   ],
+   "longueur_mm": 157.1,
+   "largeur_mm": 120.6,
+   "diametre_eq_mm": 192.4,
+   "bombe_mm": 6.37,
+   "zone": "crane",
+   "n_faces": 33770,
+   "position_museau": -2.19,
+   "cote": "droite",
+   "ecart_plan_sagittal_mm": 24.7,
+   "remplissage": 1.95,
+   "classe": "marque",
+   "id": "marque_4",
+   "pupille": null
+  },
+  {
+   "couleur": "noir",
+   "aire_mm2": 387.0,
+   "centre_mm": [
+    159.41,
+    323.76,
+    -113.13
+   ],
+   "normale": [
+    0.867,
+    0.173,
+    0.468
+   ],
+   "axe_long": [
+    -0.008,
+    -0.933,
+    0.359
+   ],
+   "longueur_mm": 36.6,
+   "largeur_mm": 10.2,
+   "diametre_eq_mm": 22.2,
+   "bombe_mm": 1.11,
+   "zone": "crane",
+   "n_faces": 440,
+   "position_museau": -1.1,
+   "cote": "gauche",
+   "ecart_plan_sagittal_mm": -23.9,
+   "remplissage": 1.32,
+   "classe": "marque",
+   "id": "marque_6",
+   "pupille": null
+  },
+  {
+   "couleur": "noir",
+   "aire_mm2": 302.8,
+   "centre_mm": [
+    208.84,
+    327.38,
+    -212.48
+   ],
+   "normale": [
+    0.473,
+    0.859,
+    0.194
+   ],
+   "axe_long": [
+    0.401,
+    -0.015,
+    -0.916
+   ],
+   "longueur_mm": 64.6,
+   "largeur_mm": 9.8,
+   "diametre_eq_mm": 19.6,
+   "bombe_mm": -1.71,
+   "zone": "museau",
+   "n_faces": 326,
+   "position_museau": 0.23,
+   "cote": "gauche",
+   "ecart_plan_sagittal_mm": -12.7,
+   "remplissage": 0.61,
+   "classe": "marque",
+   "id": "marque_8",
+   "pupille": null
+  },
+  {
+   "couleur": "noir",
+   "aire_mm2": 149.4,
+   "centre_mm": [
+    169.64,
+    343.42,
+    -142.06
+   ],
+   "normale": [
+    0.804,
+    0.415,
+    0.426
+   ],
+   "axe_long": [
+    -0.538,
+    0.2,
+    0.819
+   ],
+   "longueur_mm": 27.4,
+   "largeur_mm": 5.7,
+   "diametre_eq_mm": 13.8,
+   "bombe_mm": 0.42,
+   "zone": "crane",
+   "n_faces": 179,
+   "position_museau": -0.74,
+   "cote": "gauche",
+   "ecart_plan_sagittal_mm": -17.1,
+   "remplissage": 1.22,
+   "classe": "marque",
+   "id": "marque_10",
+   "pupille": null
+  },
+  {
+   "couleur": "noir",
+   "aire_mm2": 93.2,
+   "centre_mm": [
+    217.59,
+    286.44,
+    -213.28
+   ],
+   "normale": [
+    0.204,
+    -0.038,
+    0.978
+   ],
+   "axe_long": [
+    0.064,
+    0.998,
+    0.026
+   ],
+   "longueur_mm": 12.0,
+   "largeur_mm": 6.0,
+   "diametre_eq_mm": 10.9,
+   "bombe_mm": 2.33,
+   "zone": "museau",
+   "n_faces": 108,
+   "position_museau": 0.29,
+   "cote": "gauche",
+   "ecart_plan_sagittal_mm": -19.7,
+   "remplissage": 1.65,
+   "classe": "marque",
+   "id": "marque_12",
+   "pupille": null
+  },
+  {
+   "couleur": "noir",
+   "aire_mm2": 61.0,
+   "centre_mm": [
+    107.47,
+    354.35,
+    -96.88
+   ],
+   "normale": [
+    0.697,
+    -0.638,
+    0.327
+   ],
+   "axe_long": [
+    -0.386,
+    0.05,
+    0.921
+   ],
+   "longueur_mm": 17.1,
+   "largeur_mm": 4.7,
+   "diametre_eq_mm": 8.8,
+   "bombe_mm": 3.3,
+   "zone": "crane",
+   "n_faces": 72,
+   "position_museau": -1.6,
+   "cote": "droite",
+   "ecart_plan_sagittal_mm": 11.4,
+   "remplissage": 0.97,
+   "classe": "marque",
+   "id": "marque_3",
+   "pupille": null
+  },
+  {
+   "couleur": "rouge",
+   "aire_mm2": 52.2,
+   "centre_mm": [
+    116.78,
+    279.62,
+    -105.46
+   ],
+   "normale": [
+    -0.777,
+    0.022,
+    0.629
+   ],
+   "axe_long": [
+    0.007,
+    -0.999,
+    0.043
+   ],
+   "longueur_mm": 10.4,
+   "largeur_mm": 6.6,
+   "diametre_eq_mm": 8.2,
+   "bombe_mm": 0.13,
+   "zone": "crane",
+   "n_faces": 56,
+   "position_museau": -1.45,
+   "cote": "droite",
+   "ecart_plan_sagittal_mm": 8.1,
+   "remplissage": 0.97,
+   "classe": "marque",
+   "id": "marque_13",
+   "pupille": null
+  },
+  {
+   "couleur": "blanc",
+   "aire_mm2": 402.5,
+   "centre_mm": [
+    177.22,
+    311.36,
+    -146.17
+   ],
+   "normale": [
+    0.965,
+    -0.09,
+    0.245
+   ],
+   "axe_long": [
+    -0.243,
+    0.035,
+    0.969
+   ],
+   "longueur_mm": 23.9,
+   "largeur_mm": 20.9,
+   "diametre_eq_mm": 22.6,
+   "bombe_mm": -0.43,
+   "zone": "yeux",
+   "n_faces": 425,
+   "position_museau": -0.65,
+   "cote": "gauche",
+   "ecart_plan_sagittal_mm": -21.3,
+   "remplissage": 1.03,
+   "classe": "oeil",
+   "ecart_miroir_mm": 27.4,
+   "id": "oeil_2",
+   "pupille": [
+    "pupille_11"
+   ]
+  },
+  {
+   "couleur": "blanc",
+   "aire_mm2": 394.7,
+   "centre_mm": [
+    122.9,
+    307.53,
+    -148.86
+   ],
+   "normale": [
+    -0.93,
+    -0.055,
+    -0.363
+   ],
+   "axe_long": [
+    0.366,
+    -0.205,
+    -0.908
+   ],
+   "longueur_mm": 23.3,
+   "largeur_mm": 19.4,
+   "diametre_eq_mm": 22.4,
+   "bombe_mm": -0.33,
+   "zone": "crane",
+   "n_faces": 448,
+   "position_museau": -0.97,
+   "cote": "droite",
+   "ecart_plan_sagittal_mm": 26.1,
+   "remplissage": 1.11,
+   "classe": "oeil",
+   "score_paire": 30.5,
+   "marge_choix_paire": 7.1,
+   "ecart_miroir_mm": 27.4,
+   "id": "oeil_1",
+   "pupille": [
+    "pupille_7"
+   ]
+  },
+  {
+   "couleur": "blanc",
+   "aire_mm2": 223.8,
+   "centre_mm": [
+    145.78,
+    322.65,
+    -176.46
+   ],
+   "normale": [
+    -0.577,
+    0.077,
+    -0.813
+   ],
+   "axe_long": [
+    0.771,
+    0.379,
+    -0.511
+   ],
+   "longueur_mm": 24.0,
+   "largeur_mm": 19.4,
+   "diametre_eq_mm": 16.9,
+   "bombe_mm": -1.44,
+   "zone": "museau",
+   "n_faces": 259,
+   "position_museau": -0.54,
+   "cote": "droite",
+   "ecart_plan_sagittal_mm": 21.4,
+   "remplissage": 0.61,
+   "classe": "oeil_douteux",
+   "score_paire": 37.6,
+   "marge_choix_paire": 7.1,
+   "id": "oeil_douteux_0",
+   "pupille": [
+    "pupille_douteuse_5"
+   ]
+  },
+  {
+   "couleur": "noir",
+   "aire_mm2": 68.3,
+   "centre_mm": [
+    176.99,
+    310.41,
+    -146.31
+   ],
+   "normale": [
+    0.974,
+    -0.189,
+    -0.121
+   ],
+   "axe_long": [
+    -0.22,
+    -0.699,
+    -0.681
+   ],
+   "longueur_mm": 8.1,
+   "largeur_mm": 8.1,
+   "diametre_eq_mm": 9.3,
+   "bombe_mm": 0.21,
+   "zone": "yeux",
+   "n_faces": 67,
+   "position_museau": -0.65,
+   "cote": "gauche",
+   "ecart_plan_sagittal_mm": -21.0,
+   "remplissage": 1.33,
+   "classe": "pupille",
+   "id": "pupille_11",
+   "pupille": null
+  },
+  {
+   "couleur": "noir",
+   "aire_mm2": 62.0,
+   "centre_mm": [
+    124.88,
+    305.94,
+    -150.34
+   ],
+   "normale": [
+    -0.854,
+    0.094,
+    -0.511
+   ],
+   "axe_long": [
+    0.518,
+    0.071,
+    -0.852
+   ],
+   "longueur_mm": 8.0,
+   "largeur_mm": 7.9,
+   "diametre_eq_mm": 8.9,
+   "bombe_mm": -0.09,
+   "zone": "crane",
+   "n_faces": 71,
+   "position_museau": -0.94,
+   "cote": "droite",
+   "ecart_plan_sagittal_mm": 25.2,
+   "remplissage": 1.25,
+   "classe": "pupille",
+   "id": "pupille_7",
+   "pupille": null
+  },
+  {
+   "couleur": "noir",
+   "aire_mm2": 66.7,
+   "centre_mm": [
+    143.03,
+    317.46,
+    -174.13
+   ],
+   "normale": [
+    0.101,
+    0.225,
+    -0.969
+   ],
+   "axe_long": [
+    -0.283,
+    0.94,
+    0.188
+   ],
+   "longueur_mm": 8.8,
+   "largeur_mm": 6.4,
+   "diametre_eq_mm": 9.2,
+   "bombe_mm": 0.31,
+   "zone": "museau",
+   "n_faces": 71,
+   "position_museau": -0.59,
+   "cote": "droite",
+   "ecart_plan_sagittal_mm": 22.5,
+   "remplissage": 1.51,
+   "classe": "pupille_douteuse",
+   "id": "pupille_douteuse_5",
+   "pupille": null
+  },
+  {
+   "couleur": "noir",
+   "aire_mm2": 742.7,
+   "centre_mm": [
+    213.36,
+    311.06,
+    -259.94
+   ],
+   "normale": [
+    -0.492,
+    0.357,
+    -0.794
+   ],
+   "axe_long": [
+    0.776,
+    0.522,
+    -0.354
+   ],
+   "longueur_mm": 47.0,
+   "largeur_mm": 24.7,
+   "diametre_eq_mm": 30.8,
+   "bombe_mm": -7.17,
+   "zone": "museau",
+   "n_faces": 865,
+   "membres": [
+    [
+     201.13,
+     304.48,
+     -256.89
+    ],
+    [
+     234.01,
+     320.25,
+     -265.47
+    ],
+    [
+     215.64,
+     325.96,
+     -257.8
+    ]
+   ],
+   "bombe_membres": 1.14,
+   "classe": "truffe",
+   "fusion": 3,
+   "position_museau": 0.93,
+   "cote": "centre",
+   "ecart_plan_sagittal_mm": 8.8,
+   "remplissage": 0.81,
+   "id": "truffe_16",
+   "pupille": null
+  }
+ ]
+}
