@@ -1,0 +1,82 @@
+{
+ "cas_oreilles_V9": {
+  "cas": 62,
+  "sous_0_5N": 10,
+  "sous_2N": 38,
+  "force_min_N": 0.08,
+  "masse_max_g": 78.5
+ },
+ "cas_oreilles_V91": {
+  "cas": 54,
+  "sous_0_5N": 0,
+  "sous_2N": 9,
+  "force_min_N": 0.54,
+  "masse_max_g": 78.5
+ },
+ "groupes": [
+  {
+   "groupe_V9": 6,
+   "pieces": 15,
+   "masse_g": 5.1,
+   "tenons_avant": 1,
+   "force_avant_N": 0.08,
+   "pieces_conservees": 13,
+   "pieces_remplacees": 2,
+   "apres": {
+    "pieces": 119,
+    "masse_g": 47.6,
+    "tenons": 23,
+    "force_N": 71.51
+   },
+   "plus_aucun_cas_sous_0_5N_contenant_le_groupe": true
+  },
+  {
+   "groupe_V9": 5,
+   "pieces": 7,
+   "masse_g": 3.5,
+   "tenons_avant": 1,
+   "force_avant_N": 0.21,
+   "pieces_conservees": 5,
+   "pieces_remplacees": 2,
+   "apres": {
+    "pieces": 155,
+    "masse_g": 66.5,
+    "tenons": 8,
+    "force_N": 5.82
+   },
+   "plus_aucun_cas_sous_0_5N_contenant_le_groupe": true
+  },
+  {
+   "groupe_V9": 1,
+   "pieces": 5,
+   "masse_g": 1.3,
+   "tenons_avant": 1,
+   "force_avant_N": 0.27,
+   "pieces_conservees": 3,
+   "pieces_remplacees": 2,
+   "apres": {
+    "pieces": 155,
+    "masse_g": 66.5,
+    "tenons": 8,
+    "force_N": 5.82
+   },
+   "plus_aucun_cas_sous_0_5N_contenant_le_groupe": true
+  },
+  {
+   "groupe_V9": 8,
+   "pieces": 18,
+   "masse_g": 8.1,
+   "tenons_avant": 3,
+   "force_avant_N": 0.41,
+   "pieces_conservees": 16,
+   "pieces_remplacees": 2,
+   "apres": {
+    "pieces": 119,
+    "masse_g": 47.6,
+    "tenons": 23,
+    "force_N": 71.51
+   },
+   "plus_aucun_cas_sous_0_5N_contenant_le_groupe": true
+  }
+ ]
+}

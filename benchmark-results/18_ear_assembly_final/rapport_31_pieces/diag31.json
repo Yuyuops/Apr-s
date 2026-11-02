@@ -1,0 +1,1510 @@
+[
+ {
+  "piece": 2206,
+  "sous_ensemble": "V7_oreille_haute",
+  "ref": "3460",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2206,
+   2207,
+   2238,
+   2299
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2156,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2157,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2239,
+    "ref": "3666",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2240,
+    "ref": "3623",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   }
+  ],
+  "rang_V91": 68,
+  "sur": 176,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 2,
+  "voisines_posees_apres": 2,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2207,
+  "sous_ensemble": "V7_oreille_haute",
+  "ref": "3666",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2206,
+   2207,
+   2238,
+   2299
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2204,
+    "ref": "3666",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2241,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2158,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   }
+  ],
+  "rang_V91": 25,
+  "sur": 176,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 2,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2238,
+  "sous_ensemble": "V7_oreille_haute",
+  "ref": "47905",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2206,
+   2207,
+   2238,
+   2299
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2203,
+    "ref": "3460",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2225,
+    "ref": "2450",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2226,
+    "ref": "2450",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   }
+  ],
+  "rang_V91": 47,
+  "sur": 176,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 2,
+  "prise_en_sandwich_T": true,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2299,
+  "sous_ensemble": "V7_oreille_haute",
+  "ref": "47905",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2206,
+   2207,
+   2238,
+   2299
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2292,
+    "ref": "3024",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2274,
+    "ref": "3023",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2301,
+    "ref": "30565",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2302,
+    "ref": "30565",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   }
+  ],
+  "rang_V91": 66,
+  "sur": 176,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 3,
+  "prise_en_sandwich_T": true,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2237,
+  "sous_ensemble": "V7_oreille_haute",
+  "ref": "52107",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2237
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2201,
+    "ref": "3460",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2202,
+    "ref": "3460",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2264,
+    "ref": "3023",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2265,
+    "ref": "24307",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2266,
+    "ref": "3023",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2267,
+    "ref": "3023",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   },
+   {
+    "voisine": 2268,
+    "ref": "24299",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   },
+   {
+    "voisine": 2259,
+    "ref": "3024",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   }
+  ],
+  "rang_V91": 18,
+  "sur": 176,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 2,
+  "voisines_posees_apres": 6,
+  "prise_en_sandwich_T": true,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2231,
+  "sous_ensemble": "V7_oreille_haute",
+  "ref": "24299",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2231
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2196,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2263,
+    "ref": "3069b",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   },
+   {
+    "voisine": 2258,
+    "ref": "47905",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   }
+  ],
+  "rang_V91": 43,
+  "sur": 176,
+  "mouvement_insertion": [
+   0.8,
+   0.0,
+   -0.6
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 2,
+  "voisines_posees_apres": 1,
+  "prise_en_sandwich_T": true,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2158,
+  "sous_ensemble": "V7_oreille_haute",
+  "ref": "52107",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2158,
+   2303
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2208,
+    "ref": "3070b",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2209,
+    "ref": "3023",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2144,
+    "ref": "41539",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2210,
+    "ref": "24299",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2211,
+    "ref": "24307",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   },
+   {
+    "voisine": 2145,
+    "ref": "41539",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   },
+   {
+    "voisine": 2207,
+    "ref": "3666",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   }
+  ],
+  "rang_V91": 27,
+  "sur": 176,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 6,
+  "prise_en_sandwich_T": true,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2303,
+  "sous_ensemble": "V7_oreille_haute",
+  "ref": "3070b",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2158,
+   2303
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2277,
+    "ref": "3024",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   }
+  ],
+  "rang_V91": 140,
+  "sur": 176,
+  "mouvement_insertion": [
+   -0.8,
+   -0.0,
+   0.6
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 0,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2281,
+  "sous_ensemble": "V7_oreille_haute",
+  "ref": "3069b",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2281,
+   2282
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2248,
+    "ref": "24307",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   }
+  ],
+  "rang_V91": 39,
+  "sur": 176,
+  "mouvement_insertion": [
+   0.8,
+   0.0,
+   -0.6
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 0,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2282,
+  "sous_ensemble": "V7_oreille_haute",
+  "ref": "3069b",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2281,
+   2282
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2249,
+    "ref": "3023",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   }
+  ],
+  "rang_V91": 36,
+  "sur": 176,
+  "mouvement_insertion": [
+   0.8,
+   0.0,
+   -0.6
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 0,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2269,
+  "sous_ensemble": "V7_oreille_haute",
+  "ref": "47905",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2269
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2239,
+    "ref": "3666",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2297,
+    "ref": "3666",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2298,
+    "ref": "3666",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   }
+  ],
+  "rang_V91": 98,
+  "sur": 176,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 2,
+  "prise_en_sandwich_T": true,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2321,
+  "sous_ensemble": "V7_oreille_haute_1",
+  "ref": "3070b",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2321
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2319,
+    "ref": "3024",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   }
+  ],
+  "rang_V91": 0,
+  "sur": 5,
+  "mouvement_insertion": null,
+  "glissement": null,
+  "voisines_deja_posees": 0,
+  "voisines_posees_apres": 1,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2326,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3023",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2323,
+    "ref": "3623",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   }
+  ],
+  "rang_V91": 2,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 0,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2339,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3460",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2335,
+    "ref": "3666",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2342,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2341,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2381,
+    "ref": "3623",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   }
+  ],
+  "rang_V91": 6,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 2,
+  "voisines_posees_apres": 2,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2341,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "52107",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2339,
+    "ref": "3460",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2383,
+    "ref": "3460",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2336,
+    "ref": "41539",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2337,
+    "ref": "41539",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   }
+  ],
+  "rang_V91": 10,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 3,
+  "prise_en_sandwich_T": true,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2342,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "52107",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2339,
+    "ref": "3460",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2383,
+    "ref": "3460",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2336,
+    "ref": "41539",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2337,
+    "ref": "41539",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   }
+  ],
+  "rang_V91": 9,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 3,
+  "prise_en_sandwich_T": true,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2381,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3623",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2400,
+    "ref": "3024",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2339,
+    "ref": "3460",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2399,
+    "ref": "47905",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   }
+  ],
+  "rang_V91": 5,
+  "sur": 156,
+  "mouvement_insertion": null,
+  "glissement": null,
+  "voisines_deja_posees": 0,
+  "voisines_posees_apres": 3,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2383,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3460",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2341,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2342,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2343,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2401,
+    "ref": "3623",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2388,
+    "ref": "3460",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   }
+  ],
+  "rang_V91": 12,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 2,
+  "voisines_posees_apres": 3,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2388,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3460",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2383,
+    "ref": "3460",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2345,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2344,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2409,
+    "ref": "3023",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   }
+  ],
+  "rang_V91": 14,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 2,
+  "voisines_posees_apres": 2,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2400,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3024",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2381,
+    "ref": "3623",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2424,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   }
+  ],
+  "rang_V91": 7,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 1,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2409,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3023",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2425,
+    "ref": "3024",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2388,
+    "ref": "3460",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2424,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   }
+  ],
+  "rang_V91": 11,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 2,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2410,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3023",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2390,
+    "ref": "3623",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   }
+  ],
+  "rang_V91": 18,
+  "sur": 156,
+  "mouvement_insertion": null,
+  "glissement": null,
+  "voisines_deja_posees": 0,
+  "voisines_posees_apres": 1,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2424,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "52107",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2400,
+    "ref": "3024",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2409,
+    "ref": "3023",
+    "liaison_engagee_par_mouvement": [
+     "Y-"
+    ]
+   },
+   {
+    "voisine": 2432,
+    "ref": "43723",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2433,
+    "ref": "43722",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   }
+  ],
+  "rang_V91": 8,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 3,
+  "prise_en_sandwich_T": true,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2466,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3024",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2457,
+    "ref": "3035",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   }
+  ],
+  "rang_V91": 147,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 0,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2467,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3666",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2326,
+   2339,
+   2341,
+   2342,
+   2381,
+   2383,
+   2388,
+   2400,
+   2409,
+   2410,
+   2424,
+   2466,
+   2467
+  ],
+  "niveau_V9": "niveau 0",
+  "contacts": [
+   {
+    "voisine": 2457,
+    "ref": "3035",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   }
+  ],
+  "rang_V91": 146,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 0,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2393,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3460",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2393
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2346,
+    "ref": "52107",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2414,
+    "ref": "3069b",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   },
+   {
+    "voisine": 2415,
+    "ref": "6636",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   }
+  ],
+  "rang_V91": 55,
+  "sur": 156,
+  "mouvement_insertion": [
+   0.8,
+   0.0,
+   -0.6
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 2,
+  "prise_en_sandwich_T": true,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2456,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "63864",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2456
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2444,
+    "ref": "43722",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   }
+  ],
+  "rang_V91": 71,
+  "sur": 156,
+  "mouvement_insertion": [
+   0.8,
+   0.0,
+   -0.6
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 0,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2459,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "47905",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2459
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2454,
+    "ref": "3623",
+    "liaison_engagee_par_mouvement": [
+     "Y+"
+    ]
+   },
+   {
+    "voisine": 2468,
+    "ref": "78443",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   },
+   {
+    "voisine": 2469,
+    "ref": "78444",
+    "liaison_engagee_par_mouvement": [
+     "T+"
+    ]
+   }
+  ],
+  "rang_V91": 77,
+  "sur": 156,
+  "mouvement_insertion": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 2,
+  "prise_en_sandwich_T": true,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2330,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "6636",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2330,
+   2331
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2325,
+    "ref": "78443",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   }
+  ],
+  "rang_V91": 23,
+  "sur": 156,
+  "mouvement_insertion": [
+   0.8,
+   0.0,
+   -0.6
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 0,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2331,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3070b",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2330,
+   2331
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2325,
+    "ref": "78443",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   }
+  ],
+  "rang_V91": 22,
+  "sur": 156,
+  "mouvement_insertion": [
+   0.8,
+   0.0,
+   -0.6
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 0,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ },
+ {
+  "piece": 2431,
+  "sous_ensemble": "V7_oreille_basse",
+  "ref": "3069b",
+  "couleur": 0,
+  "ensemble_bloque_V9": [
+   2431
+  ],
+  "niveau_V9": "unite",
+  "contacts": [
+   {
+    "voisine": 2423,
+    "ref": "24299",
+    "liaison_engagee_par_mouvement": [
+     "T-"
+    ]
+   }
+  ],
+  "rang_V91": 41,
+  "sur": 156,
+  "mouvement_insertion": [
+   0.8,
+   0.0,
+   -0.6
+  ],
+  "glissement": null,
+  "voisines_deja_posees": 1,
+  "voisines_posees_apres": 0,
+  "prise_en_sandwich_T": false,
+  "cause": "3 : limitation du planificateur V9 (sous-ensembles rigides construits a part, 6 axes) ; ordre de montage en une pièce à la fois trouvé en V9.1"
+ }
+]

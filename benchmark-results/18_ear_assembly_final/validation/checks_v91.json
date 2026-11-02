@@ -1,0 +1,50 @@
+{
+ "pieces_hors_oreilles_identiques": true,
+ "retirees": {
+  "6636": 12,
+  "3069b": 2,
+  "63864": 2
+ },
+ "ajoutees": {
+  "3069b": 26,
+  "63864": 4,
+  "3070b": 18
+ },
+ "modifications_uniquement_tuiles_de_face": true,
+ "pieces": {
+  "V9": 3066,
+  "V91": 3098
+ },
+ "oreilles_hors_tuiles_identiques": true,
+ "catalogue": {
+  "couples": 73,
+  "statuts": {
+   "vérifiée": 73
+  },
+  "non_verifies": []
+ },
+ "base": {
+  "V9": {
+   "masse_modele_g": 1117.7,
+   "cdg_hauteur_mm": 189.5,
+   "marge_mm": 41.1,
+   "plaques_au_sol": 26,
+   "aire_cm2": 132.2
+  },
+  "V91": {
+   "masse_modele_g": 1117.7,
+   "cdg_hauteur_mm": 189.5,
+   "marge_mm": 41.1,
+   "plaques_au_sol": 26,
+   "aire_cm2": 132.2
+  }
+ },
+ "fixation_oreilles": {
+  "pieces_au_contact_de_la_tete": {
+   "V7_oreille_basse": 8,
+   "V7_oreille_haute": 7
+  },
+  "pieces_de_fixation_identiques_V9_V91": true,
+  "remarque": "Les deux chemins de fixation (plaque principale 2x8 et plaque secondaire cachee, V7) sont composes de pieces qui ne sont pas des tuiles : elles sont identiques en V9 et V9.1 (pieces, positions, matrices). L'independance des deux chemins est donc celle de V7 ; un calcul de flot a ete essaye puis ecarte (il mesurait le goulot de la racine, pas les deux plaques)."
+ }
+}

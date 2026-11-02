@@ -1,0 +1,20 @@
+{
+ "V7_oreille_haute:0": {
+  "parts": 176,
+  "steps": 176,
+  "problemes": 0,
+  "detail": []
+ },
+ "V7_oreille_haute_1:0": {
+  "parts": 5,
+  "steps": 5,
+  "problemes": 0,
+  "detail": []
+ },
+ "V7_oreille_basse:0": {
+  "parts": 156,
+  "steps": 154,
+  "problemes": 0,
+  "detail": []
+ }
+}

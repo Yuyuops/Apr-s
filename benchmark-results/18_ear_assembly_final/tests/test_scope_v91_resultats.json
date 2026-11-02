@@ -1,0 +1,82 @@
+[
+ {
+  "test": "T1 module V8.1 (lcm B) : modifications hors de sa zone -> REJETE",
+  "ok": true,
+  "detail": "153 cellules hors zone sur 245"
+ },
+ {
+  "test": "T2 module V8.2 (lcm C) : toutes les modifications dans sa zone -> ACCEPTE",
+  "ok": true,
+  "detail": "0 cellules hors zone sur 24"
+ },
+ {
+  "test": "T3a modele V8 -> V8.1 : modifications de surface hors zone -> REJETE",
+  "ok": true,
+  "detail": "198 violations (dont occupation : 21 listees)"
+ },
+ {
+  "test": "T3b entrees du moteur de volume V8 -> V8.2 : identiques hors zone",
+  "ok": true,
+  "detail": "17 cellules differentes, 0 hors zone"
+ },
+ {
+  "test": "T3c modele V8 -> V8.2 : la derive de reconstruction hors zone est DETECTEE (pas silencieuse) et attribuee au moteur (T3b)",
+  "ok": true,
+  "detail": "21 cellules de surface hors zone dans le modele construit, alors que les entrees du moteur sont identiques hors zone : derive du moteur, a ne pas confondre avec une erreur du module"
+ },
+ {
+  "test": "T4 recoloration d'une plaque lointaine (pied/jambe) -> REJETEE",
+  "ok": true,
+  "detail": "1 violations"
+ },
+ {
+  "test": "T5 suppression d'une plaque lointaine -> REJETEE (occupation)",
+  "ok": true,
+  "detail": "1 violations"
+ },
+ {
+  "test": "T6 changement de decoupage seul (deux 1x1 -> une 1x2, memes cellules, meme couleur) -> NON une violation",
+  "ok": true,
+  "detail": "2 cellules de decoupage differentes, 0 violations"
+ },
+ {
+  "test": "T7 recoloration d'une plaque DANS la zone declaree -> acceptee et attribuee au module",
+  "ok": true,
+  "detail": "par zone {'bouche': 4}"
+ },
+ {
+  "test": "T8 V8.2 -> V9 : oreilles, yeux, truffe, pente rouge identiques (pieces, positions, matrices)",
+  "ok": true,
+  "detail": "346 pieces"
+ },
+ {
+  "test": "T9 V9 -> V9.1 : aucune difference hors des zones d'oreille",
+  "ok": true,
+  "detail": "violations 0, occupation 0, couleur exposee 0, decoupage seul 387, pieces hors reseau {'retirees': 16, 'ajoutees': 48}"
+ },
+ {
+  "test": "T10 V8.2 -> V9.1 : bouche (zone declaree) identique ; yeux, truffe, pente identiques",
+  "ok": true,
+  "detail": "zone bouche [12, 78, 10]..[27, 91, 28] ; 9 pieces de detail identiques"
+ },
+ {
+  "test": "T11 V9.1 : recoloration d'une plaque de pied hors oreilles -> REJETEE",
+  "ok": true,
+  "detail": "1 violations"
+ },
+ {
+  "test": "T12 V9.1 : suppression d'une plaque de la sculpture hors oreilles -> REJETEE",
+  "ok": true,
+  "detail": "1 violations"
+ },
+ {
+  "test": "T13 V9.1 : recoloration d'une tuile d'oreille (zone declaree) -> acceptee et attribuee a la zone d'oreille",
+  "ok": true,
+  "detail": "par zone {'V7_oreille_haute': 2}"
+ },
+ {
+  "test": "T14 V9.1 : une plaque aile d'oreille deplacee HORS de toute zone declaree -> REJETEE",
+  "ok": true,
+  "detail": "12 violations (zones d'oreille retirees du controle)"
+ }
+]

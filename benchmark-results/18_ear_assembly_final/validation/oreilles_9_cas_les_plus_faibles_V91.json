@@ -1,0 +1,56 @@
+[
+ {
+  "masse_g": 1.9,
+  "tenons": 2,
+  "force_N": 0.54,
+  "pieces": 6
+ },
+ {
+  "masse_g": 1.8,
+  "tenons": 2,
+  "force_N": 0.54,
+  "pieces": 5
+ },
+ {
+  "masse_g": 5.3,
+  "tenons": 2,
+  "force_N": 0.62,
+  "pieces": 13
+ },
+ {
+  "masse_g": 3.0,
+  "tenons": 3,
+  "force_N": 0.81,
+  "pieces": 9
+ },
+ {
+  "masse_g": 5.7,
+  "tenons": 3,
+  "force_N": 0.83,
+  "pieces": 15
+ },
+ {
+  "masse_g": 3.3,
+  "tenons": 3,
+  "force_N": 1.34,
+  "pieces": 6
+ },
+ {
+  "masse_g": 78.5,
+  "tenons": 9,
+  "force_N": 1.4,
+  "pieces": 155
+ },
+ {
+  "masse_g": 78.5,
+  "tenons": 9,
+  "force_N": 1.4,
+  "pieces": 155
+ },
+ {
+  "masse_g": 78.5,
+  "tenons": 9,
+  "force_N": 1.4,
+  "pieces": 155
+ }
+]

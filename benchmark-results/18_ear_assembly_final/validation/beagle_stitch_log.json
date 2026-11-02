@@ -1,0 +1,250 @@
+[
+ {
+  "groupe": 4,
+  "sub": null,
+  "resultat": "tuiles a cheval sur les joints",
+  "couples": [
+   {
+    "couche": -36,
+    "cellules": [
+     [
+      -5,
+      -18
+     ],
+     [
+      -6,
+      -18
+     ]
+    ]
+   },
+   {
+    "couche": -36,
+    "cellules": [
+     [
+      5,
+      -18
+     ],
+     [
+      5,
+      -17
+     ]
+    ]
+   },
+   {
+    "couche": -36,
+    "cellules": [
+     [
+      -1,
+      -18
+     ],
+     [
+      -1,
+      -17
+     ]
+    ]
+   },
+   {
+    "couche": 8,
+    "cellules": [
+     [
+      -5,
+      -18
+     ],
+     [
+      -6,
+      -18
+     ]
+    ]
+   },
+   {
+    "couche": 8,
+    "cellules": [
+     [
+      5,
+      -18
+     ],
+     [
+      5,
+      -17
+     ]
+    ]
+   },
+   {
+    "couche": 8,
+    "cellules": [
+     [
+      -1,
+      -18
+     ],
+     [
+      -1,
+      -17
+     ]
+    ]
+   }
+  ],
+  "tuiles_retirees": 10,
+  "tuiles_ajoutees": 18,
+  "tuiles_a_cheval": 6
+ },
+ {
+  "groupe": 2,
+  "sub": null,
+  "resultat": "tuiles a cheval sur les joints",
+  "couples": [
+   {
+    "couche": -36,
+    "cellules": [
+     [
+      -7,
+      -7
+     ],
+     [
+      -6,
+      -7
+     ]
+    ]
+   },
+   {
+    "couche": 8,
+    "cellules": [
+     [
+      -7,
+      -7
+     ],
+     [
+      -6,
+      -7
+     ]
+    ]
+   }
+  ],
+  "tuiles_retirees": 4,
+  "tuiles_ajoutees": 6,
+  "tuiles_a_cheval": 2
+ },
+ {
+  "groupe": 5,
+  "sub": null,
+  "resultat": "tuiles a cheval sur les joints",
+  "couples": [
+   {
+    "couche": -36,
+    "cellules": [
+     [
+      1,
+      -19
+     ],
+     [
+      1,
+      -18
+     ]
+    ]
+   },
+   {
+    "couche": -36,
+    "cellules": [
+     [
+      5,
+      -19
+     ],
+     [
+      5,
+      -18
+     ]
+    ]
+   },
+   {
+    "couche": -36,
+    "cellules": [
+     [
+      3,
+      -19
+     ],
+     [
+      3,
+      -18
+     ]
+    ]
+   },
+   {
+    "couche": 8,
+    "cellules": [
+     [
+      1,
+      -19
+     ],
+     [
+      1,
+      -18
+     ]
+    ]
+   },
+   {
+    "couche": 8,
+    "cellules": [
+     [
+      5,
+      -19
+     ],
+     [
+      5,
+      -18
+     ]
+    ]
+   },
+   {
+    "couche": 8,
+    "cellules": [
+     [
+      3,
+      -19
+     ],
+     [
+      3,
+      -18
+     ]
+    ]
+   }
+  ],
+  "tuiles_retirees": 10,
+  "tuiles_ajoutees": 18,
+  "tuiles_a_cheval": 6
+ },
+ {
+  "groupe": 3,
+  "sub": null,
+  "resultat": "tuiles a cheval sur les joints",
+  "couples": [
+   {
+    "couche": -36,
+    "cellules": [
+     [
+      -7,
+      -18
+     ],
+     [
+      -8,
+      -18
+     ]
+    ]
+   },
+   {
+    "couche": 8,
+    "cellules": [
+     [
+      -7,
+      -18
+     ],
+     [
+      -8,
+      -18
+     ]
+    ]
+   }
+  ],
+  "tuiles_retirees": 4,
+  "tuiles_ajoutees": 4,
+  "tuiles_a_cheval": 2
+ }
+]

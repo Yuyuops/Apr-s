@@ -1,0 +1,276 @@
+[
+ {
+  "groupe": 6,
+  "sub": "V7_oreille_basse",
+  "resultat": "tuiles a cheval sur les joints",
+  "couples": [
+   {
+    "couche": -84,
+    "cellules": [
+     [
+      12,
+      -37
+     ],
+     [
+      11,
+      -37
+     ]
+    ]
+   },
+   {
+    "couche": -84,
+    "cellules": [
+     [
+      16,
+      -37
+     ],
+     [
+      16,
+      -36
+     ]
+    ]
+   },
+   {
+    "couche": -40,
+    "cellules": [
+     [
+      12,
+      -37
+     ],
+     [
+      11,
+      -37
+     ]
+    ]
+   },
+   {
+    "couche": -40,
+    "cellules": [
+     [
+      16,
+      -37
+     ],
+     [
+      16,
+      -36
+     ]
+    ]
+   }
+  ],
+  "tuiles_retirees": 6,
+  "tuiles_ajoutees": 14,
+  "tuiles_a_cheval": 4
+ },
+ {
+  "groupe": 5,
+  "sub": "V7_oreille_basse",
+  "resultat": "tuiles a cheval sur les joints",
+  "couples": [
+   {
+    "couche": -84,
+    "cellules": [
+     [
+      5,
+      -28
+     ],
+     [
+      4,
+      -28
+     ]
+    ]
+   },
+   {
+    "couche": -84,
+    "cellules": [
+     [
+      10,
+      -28
+     ],
+     [
+      10,
+      -29
+     ]
+    ]
+   },
+   {
+    "couche": -84,
+    "cellules": [
+     [
+      7,
+      -28
+     ],
+     [
+      7,
+      -29
+     ]
+    ]
+   },
+   {
+    "couche": -40,
+    "cellules": [
+     [
+      5,
+      -28
+     ],
+     [
+      4,
+      -28
+     ]
+    ]
+   },
+   {
+    "couche": -40,
+    "cellules": [
+     [
+      10,
+      -28
+     ],
+     [
+      10,
+      -29
+     ]
+    ]
+   },
+   {
+    "couche": -40,
+    "cellules": [
+     [
+      7,
+      -28
+     ],
+     [
+      7,
+      -29
+     ]
+    ]
+   }
+  ],
+  "tuiles_retirees": 6,
+  "tuiles_ajoutees": 18,
+  "tuiles_a_cheval": 6
+ },
+ {
+  "groupe": 1,
+  "sub": "V7_oreille_basse",
+  "resultat": "tuiles a cheval sur les joints",
+  "couples": [
+   {
+    "couche": -84,
+    "cellules": [
+     [
+      3,
+      -30
+     ],
+     [
+      4,
+      -30
+     ]
+    ]
+   },
+   {
+    "couche": -40,
+    "cellules": [
+     [
+      3,
+      -30
+     ],
+     [
+      4,
+      -30
+     ]
+    ]
+   }
+  ],
+  "tuiles_retirees": 4,
+  "tuiles_ajoutees": 6,
+  "tuiles_a_cheval": 2
+ },
+ {
+  "groupe": 8,
+  "sub": "V7_oreille_basse",
+  "resultat": "tuiles a cheval sur les joints",
+  "couples": [
+   {
+    "couche": -84,
+    "cellules": [
+     [
+      6,
+      -37
+     ],
+     [
+      6,
+      -36
+     ]
+    ]
+   },
+   {
+    "couche": -84,
+    "cellules": [
+     [
+      10,
+      -37
+     ],
+     [
+      10,
+      -36
+     ]
+    ]
+   },
+   {
+    "couche": -84,
+    "cellules": [
+     [
+      8,
+      -37
+     ],
+     [
+      8,
+      -36
+     ]
+    ]
+   },
+   {
+    "couche": -40,
+    "cellules": [
+     [
+      6,
+      -37
+     ],
+     [
+      6,
+      -36
+     ]
+    ]
+   },
+   {
+    "couche": -40,
+    "cellules": [
+     [
+      10,
+      -37
+     ],
+     [
+      10,
+      -36
+     ]
+    ]
+   },
+   {
+    "couche": -40,
+    "cellules": [
+     [
+      8,
+      -37
+     ],
+     [
+      8,
+      -36
+     ]
+    ]
+   }
+  ],
+  "tuiles_retirees": 6,
+  "tuiles_ajoutees": 16,
+  "tuiles_a_cheval": 6
+ }
+]

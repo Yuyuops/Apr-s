@@ -1,0 +1,100 @@
+[
+ {
+  "id": 2,
+  "zone": "visage / tete",
+  "sous_ensemble": "corps",
+  "pieces": 7,
+  "masse_g": 1.3,
+  "tenons": 2,
+  "types_de_liaison": {
+   "vertical": 2
+  },
+  "force_decrochage_indicative_N": 0.19,
+  "centre_mm": [
+   224.0,
+   309.0,
+   -268.0
+  ],
+  "couleurs": {
+   "Yellow": 7
+  },
+  "categorie": "decoration legere",
+  "risque_montage": "moyen",
+  "risque_manipulation": "moyen",
+  "expose": true
+ },
+ {
+  "id": 1,
+  "zone": "mains / doigts",
+  "sous_ensemble": "Bras_gauche",
+  "pieces": 5,
+  "masse_g": 1.0,
+  "tenons": 2,
+  "types_de_liaison": {
+   "vertical": 2
+  },
+  "force_decrochage_indicative_N": 0.26,
+  "centre_mm": [
+   44.0,
+   104.0,
+   -128.0
+  ],
+  "couleurs": {
+   "Yellow": 5
+  },
+  "categorie": "decoration legere",
+  "risque_montage": "moyen",
+  "risque_manipulation": "moyen",
+  "expose": true
+ },
+ {
+  "id": 3,
+  "zone": "visage / tete",
+  "sous_ensemble": "corps",
+  "pieces": 9,
+  "masse_g": 1.4,
+  "tenons": 3,
+  "types_de_liaison": {
+   "vertical": 3
+  },
+  "force_decrochage_indicative_N": 0.26,
+  "centre_mm": [
+   156.0,
+   275.0,
+   -176.0
+  ],
+  "couleurs": {
+   "Yellow": 8,
+   "Black": 1
+  },
+  "categorie": "decoration legere",
+  "risque_montage": "faible",
+  "risque_manipulation": "moyen",
+  "expose": true
+ },
+ {
+  "id": 4,
+  "zone": "mains / doigts",
+  "sous_ensemble": "Bras_droit",
+  "pieces": 12,
+  "masse_g": 2.1,
+  "tenons": 3,
+  "types_de_liaison": {
+   "vertical": 3
+  },
+  "force_decrochage_indicative_N": 0.26,
+  "centre_mm": [
+   244.0,
+   109.0,
+   -128.0
+  ],
+  "couleurs": {
+   "Yellow": 9,
+   "Black": 2
+  },
+  "categorie": "intermediaire",
+  "risque_montage": "moyen",
+  "risque_manipulation": "moyen",
+  "expose": true
+ }
+]

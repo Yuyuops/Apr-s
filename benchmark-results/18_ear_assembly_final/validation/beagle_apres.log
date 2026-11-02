@@ -1,0 +1,5 @@
+proto/v91/vbeagle_s/beagle_s_notice.ldr: 60 steps, 0 parts could not be ordered
+{"parts": 294, "part_types": 30, "steps": 61, "collisions": {"pairs": 0, "cells_4ldu": 0, "examples": [], "details": []}, "blocked_studs": 0, "disconnected_parts": 0, "islands": 0, "unsupported_at_placement": 0, "subassemblies_not_attachable": [], "sideways_joints": 268}
+{"cases": 189, "gravity_sf_below_1": 0, "gravity_sf_below_2": 0, "min_gravity_sf": 3.9, "subassemblies_over_1g": 34, "tip_force_below_0_5N": 12, "tip_force_below_2N": 20, "min_tip_force_N": 0.07, "big_cases": [{"mass_g": 133.9, "studs": 4, "gravity_sf": 3584.59, "tip_force_N": 0.07, "frame": [0.0, -1.0, 0.0], "parts": 288, "colours": {"Black": 288}, "bbox_ldu": [[-180.0, -432.0, -36.0], [120.0, -52.0, 16.0]]}, {"mass
+cas faibles 12 distincts 12 groupes 1
+1 288 p 133.9 g 4 tenons 0.07 N [('hors segmentation', 0)] {'corps': 288} {'Black': 288} centre [-12.0, 97.0, 4.0]

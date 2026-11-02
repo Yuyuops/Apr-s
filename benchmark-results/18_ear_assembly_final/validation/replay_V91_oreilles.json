@@ -1,0 +1,170 @@
+{
+ "V7_oreille_haute:0": {
+  "pieces": 176,
+  "orientation": "debout",
+  "etapes": 176,
+  "defauts_au_rejeu": 0,
+  "instables": 0,
+  "par_dessous": 12,
+  "de_cote": 106,
+  "orientations_essayees": [
+   {
+    "name": "debout",
+    "up": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "stuck": [],
+    "eval": {
+     "instables": 0,
+     "par_dessous": 11,
+     "de_cote": 106
+    },
+    "secondes": 194
+   },
+   {
+    "name": "a plat, face tournee vers l'exterieur",
+    "up": [
+     0.8,
+     0.0,
+     -0.6
+    ],
+    "stuck": [],
+    "eval": {
+     "instables": 86,
+     "par_dessous": 51,
+     "de_cote": 68
+    },
+    "secondes": 117
+   },
+   {
+    "name": "a plat, face tournee vers l'interieur",
+    "up": [
+     -0.8,
+     0.0,
+     0.6
+    ],
+    "stuck": [],
+    "eval": {
+     "instables": 13,
+     "par_dessous": 51,
+     "de_cote": 68
+    },
+    "secondes": 114
+   }
+  ]
+ },
+ "V7_oreille_haute_1:0": {
+  "pieces": 5,
+  "orientation": "a plat, face tournee vers l'exterieur",
+  "etapes": 5,
+  "defauts_au_rejeu": 0,
+  "instables": 0,
+  "par_dessous": 0,
+  "de_cote": 0,
+  "orientations_essayees": [
+   {
+    "name": "debout",
+    "up": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "stuck": [],
+    "eval": {
+     "instables": 0,
+     "par_dessous": 0,
+     "de_cote": 4
+    },
+    "secondes": 0
+   },
+   {
+    "name": "a plat, face tournee vers l'exterieur",
+    "up": [
+     0.8,
+     0.0,
+     -0.6
+    ],
+    "stuck": [],
+    "eval": {
+     "instables": 0,
+     "par_dessous": 0,
+     "de_cote": 0
+    },
+    "secondes": 0
+   },
+   {
+    "name": "a plat, face tournee vers l'interieur",
+    "up": [
+     -0.8,
+     0.0,
+     0.6
+    ],
+    "stuck": [],
+    "eval": {
+     "instables": 0,
+     "par_dessous": 0,
+     "de_cote": 0
+    },
+    "secondes": 0
+   }
+  ]
+ },
+ "V7_oreille_basse:0": {
+  "pieces": 188,
+  "orientation": "a plat, face tournee vers l'exterieur",
+  "etapes": 186,
+  "defauts_au_rejeu": 0,
+  "instables": 8,
+  "par_dessous": 57,
+  "de_cote": 70,
+  "orientations_essayees": [
+   {
+    "name": "debout",
+    "up": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "stuck": [],
+    "eval": {
+     "instables": 174,
+     "par_dessous": 17,
+     "de_cote": 115
+    },
+    "secondes": 179
+   },
+   {
+    "name": "a plat, face tournee vers l'exterieur",
+    "up": [
+     0.8,
+     0.0,
+     -0.6
+    ],
+    "stuck": [],
+    "eval": {
+     "instables": 9,
+     "par_dessous": 57,
+     "de_cote": 70
+    },
+    "secondes": 106
+   },
+   {
+    "name": "a plat, face tournee vers l'interieur",
+    "up": [
+     -0.8,
+     0.0,
+     0.6
+    ],
+    "stuck": [],
+    "eval": {
+     "instables": 84,
+     "par_dessous": 57,
+     "de_cote": 70
+    },
+    "secondes": 105
+   }
+  ]
+ }
+}

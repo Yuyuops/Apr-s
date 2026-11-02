@@ -1,0 +1,12 @@
+part,designation,couleur,quantite_minimale (un banc a la fois)
+3005,Brick 1 x 1,Dark_Bluish_Grey,5
+3007,Brick 2 x 8,Black,1
+3008,Brick 1 x 8,Black,1
+3024,Plate 1 x 1,Dark_Bluish_Grey,10
+3024,Plate 1 x 1,Red,12
+3031,Plate 4 x 4,Black,1
+3034,Plate 2 x 8,Black,2
+3035,Plate 4 x 8,Black,3
+3036,Plate 6 x 8,Dark_Bluish_Grey,1
+4282,Plate 2 x 16,Yellow,1
+91405,Plate 16 x 16 with Underside Ribs,Dark_Bluish_Grey,1

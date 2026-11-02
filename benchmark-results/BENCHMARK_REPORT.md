@@ -29,6 +29,17 @@ Planches principales :
 - Contrôle de stabilité numérique ajouté au validateur (`clutch_stability`). Sur les modèles complets à 250 mm, il prévoit qu'un bras de Paco (brut, 14,6 g sur 1 tenon)
   et une oreille de Paco (réglé, 38 g sur 2 tenons) se détachent sous leur propre poids, avec un coefficient de sécurité d'environ 0,7, si l'on retient l'hypothèse de 1 N par tenon.
 
+## 0 quaterdecies. LEGO V9.1 : oreilles, séquence de montage, renfort et notice (`18_ear_assembly_final/`)
+
+**Verdict : VALIDER AVEC RÉSERVE PHYSIQUE.** Aucun essai physique.
+
+- **Les 31 pièces d'oreille « sans séquence » de V9 ne sont pas emprisonnées** : erreur du planificateur de V9 (unités rigides construites à part). Un séquenceur généralisé (règle des tenons, volume balayé, précédence, dégagement puis glissement) place toutes les pièces des oreilles de Paco (V9 : 337 ; V9.1 : 181 + 188), de l'oreille V6.1 isolée de Paco (170) et du Beagle (276), une pièce à la fois ; **0 défaut** au rejeu avec une géométrie indépendante. Une première version du rejeu signalait 2 à 3 étapes par oreille : artefact de l'outil de contrôle (brique creuse), corrigé.
+- **Générateur V6.1 inchangé** (rejeu V6 et V6.1 : AUCUNE DIFFERENCE). Renfort après génération : **tuiles à cheval sur les joints de plaques de face** (16 retirées, 48 ajoutées, mêmes cases, mêmes couleurs, références déjà présentes). Cas d'oreille sous 0,5 N : 10 → 0 ; force minimale d'un cas d'oreille 0,08 N → 0,54 N ; modèle complet : 17 → 7 cas, 8 → 4 groupes (mains et museau, non traités). Même opération sur le Beagle : 4 groupes sur 4 résolus. Limite : le modèle de résistance ignore le cisaillement que subissent ces tenons.
+- **Masse** : le modèle ne dépend que du volume (1 118,2 → 1 117,7 g) ; l'anomalie de V9 était un arrondi. Masse réelle inconnue.
+- **338 pièces par le bas** : corps (283) stable, aucune étape à tenir ; bras (55) à tenir à la main. Oreille basse : montage à plat, 57 poses par le dessous.
+- **Notice** : 201 étapes, 5 PDF (203 pages), vues éclatées, orientation, page de précautions. **Tests** : 16/16 ; 0 collision, 0 pièce déconnectée ; catalogue 73/73.
+- **Non démontré physiquement** : tenue des bords renforcés, des mains et du museau ; montage réel ; masse ; stabilité debout.
+
 ## 0 terdecies. LEGO V9 : solidité, validation indépendante et vraie notice (`17_structural_and_instructions/`)
 
 **Verdict : CORRIGER.**

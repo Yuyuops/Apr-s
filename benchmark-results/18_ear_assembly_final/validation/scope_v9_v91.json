@@ -1,0 +1,61 @@
+{
+ "categories": {
+  "occupation": 0,
+  "couleur_exposee": 0,
+  "couleur_interieure": 0,
+  "finition_dessus": 0
+ },
+ "violations": [],
+ "par_zone": {},
+ "ignores_tessellation": 387,
+ "cellules_identiques": 12223,
+ "pieces_hors_reseau_modifiees": {
+  "retirees": 16,
+  "ajoutees": 48
+ },
+ "violations_total": 0,
+ "zones": [
+  {
+   "name": "V7_oreille_basse",
+   "kind": "module",
+   "lo": [
+    2,
+    63,
+    -1
+   ],
+   "hi": [
+    22,
+    97,
+    21
+   ]
+  },
+  {
+   "name": "V7_oreille_haute",
+   "kind": "module",
+   "lo": [
+    2,
+    101,
+    -1
+   ],
+   "hi": [
+    22,
+    125,
+    24
+   ]
+  },
+  {
+   "name": "V7_oreille_haute_1",
+   "kind": "module",
+   "lo": [
+    14,
+    106,
+    14
+   ],
+   "hi": [
+    18,
+    110,
+    18
+   ]
+  }
+ ]
+}
