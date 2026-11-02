@@ -56,7 +56,7 @@ Chaîne : `generateur/run_beagle.sh` (moteur V9.1 + évolutions E1 à E3 de `RAP
 
 ## 4. Notice (PDF, voir `notice/`)
 
-581 étapes, modules : corps (555 étapes) et détails du visage (13 sous-assemblages de 2 pièces chacun, les pentes et le nez). Pas de bras, pas d'oreille : **pas de sous-assemblages structurels** ; les pattes sont construites couche par couche avec le corps. Chaque page : pièces à ajouter, direction d'emboîtement, vue (pâle = posé, couleur = à poser). Page de précautions : voir `notice/`. Les 7 points fragiles et les 2 poses à tenir y sont signalés.
+581 étapes, modules : corps (555 étapes) et détails du visage (13 sous-assemblages de 2 pièces chacun, les pentes et le nez). Pas de bras, pas d'oreille : **pas de sous-assemblages structurels** ; les pattes sont construites couche par couche avec le corps. Chaque page : pièces à ajouter, direction d'emboîtement, vue (pâle = posé, couleur = à poser). Trois PDF (`notice/`, 582 pages, 17,5 Mo, pages réduites à 60 % pour rester légères) : corps étapes 1 à 277, 278 à 581, détails du visage. **Pas de page de précautions** pour le Beagle (elle n'a pas été générée) : les 7 points fragiles et les 2 poses à tenir ne sont signalés que dans les rapports.
 
 ## 5. Valeurs calculées et propriétés non vérifiées physiquement
 Calculées : collisions, connexions, séquence rigide, force indicative (1 N par tenon, traction et moment seulement), masse du modèle, marge de basculement, disponibilité Rebrickable. **Non vérifiées** : toute résistance réelle, la facilité du montage, la masse, la stabilité réelle, l'état de surface réel, la disponibilité effective des quantités.
