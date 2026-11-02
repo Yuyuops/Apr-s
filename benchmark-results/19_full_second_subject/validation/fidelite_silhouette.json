@@ -1,0 +1,104 @@
+{
+ "1_face": {
+  "iou": 0.686,
+  "aire_ref": 70355,
+  "aire_lego": 65008,
+  "ratio_aire": 0.924,
+  "couleur_moy_ref": [
+   170.0,
+   139.0,
+   106.0
+  ],
+  "couleur_moy_lego": [
+   102.0,
+   80.0,
+   63.0
+  ],
+  "ecart_couleur_moy": 99.5
+ },
+ "2_dos": {
+  "iou": 0.682,
+  "aire_ref": 59477,
+  "aire_lego": 75015,
+  "ratio_aire": 1.261,
+  "couleur_moy_ref": [
+   189.0,
+   165.0,
+   140.0
+  ],
+  "couleur_moy_lego": [
+   131.0,
+   90.0,
+   55.0
+  ],
+  "ecart_couleur_moy": 127.3
+ },
+ "3_profil_gauche": {
+  "iou": 0.809,
+  "aire_ref": 95911,
+  "aire_lego": 100088,
+  "ratio_aire": 1.044,
+  "couleur_moy_ref": [
+   175.0,
+   146.0,
+   114.0
+  ],
+  "couleur_moy_lego": [
+   109.0,
+   72.0,
+   46.0
+  ],
+  "ecart_couleur_moy": 119.2
+ },
+ "4_profil_droit": {
+  "iou": 0.791,
+  "aire_ref": 94737,
+  "aire_lego": 97670,
+  "ratio_aire": 1.031,
+  "couleur_moy_ref": [
+   180.0,
+   151.0,
+   118.0
+  ],
+  "couleur_moy_lego": [
+   118.0,
+   81.0,
+   53.0
+  ],
+  "ecart_couleur_moy": 114.4
+ },
+ "5_trois_quarts": {
+  "iou": 0.74,
+  "aire_ref": 95744,
+  "aire_lego": 103316,
+  "ratio_aire": 1.079,
+  "couleur_moy_ref": [
+   175.0,
+   146.0,
+   114.0
+  ],
+  "couleur_moy_lego": [
+   107.0,
+   80.0,
+   60.0
+  ],
+  "ecart_couleur_moy": 108.6
+ },
+ "6_dessus": {
+  "iou": 0.7,
+  "aire_ref": 55849,
+  "aire_lego": 72258,
+  "ratio_aire": 1.294,
+  "couleur_moy_ref": [
+   195.0,
+   172.0,
+   146.0
+  ],
+  "couleur_moy_lego": [
+   150.0,
+   122.0,
+   100.0
+  ],
+  "ecart_couleur_moy": 80.5
+ }
+}

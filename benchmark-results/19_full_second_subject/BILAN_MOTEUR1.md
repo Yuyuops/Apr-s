@@ -1,0 +1,11 @@
+# Bilan du moteur 1 après deux sujets
+
+| Axe | Paco (V9.1) | Beagle (V10) | Jugement |
+|---|---|---|---|
+| **Fidélité visuelle** | Bonne : silhouette, couleurs, visage, oreilles lisses ; 0,05 à 0,12 % d'écart entre V9 et V9.1 | **Moyenne** : proportions et posture bonnes (IoU 0,79 à 0,81 en profil, 0,74 en trois quarts) ; couleurs trop sombres (écart d'environ 100 sur 255) ; **pas d'yeux** ; oreilles sans module ; taches jaunes et rouges parasites | Le moteur rend une forme, il ne rend pas encore un second visage |
+| **Automatisation** | Chaîne de plusieurs scripts successifs, entrées intermédiaires propres à Paco | Un script (`run_beagle.sh`) sans choix manuel de pièce ni coordonnée, mais **après 3 évolutions** du moteur et des adaptations de données (`ears.pkl` vide, masque de protection) | Automatique de bout en bout seulement une fois la chaîne câblée pour le sujet |
+| **Généralisation** | — | **Partielle** : génériques et réussis sur le Beagle : voxélisation, volume, renforts (157 → 10 cas fragiles), contrôle de portée, validation, séquence de la notice. **Propres à Paco** : segmentation (cou à 70 %, deux jambes, bras), module d'oreille (repère et silhouette de Paco codés en dur), classes de détails (palette noir, jaune, rouge, blanc), noms de sortie | Les modules de forme (oreilles, yeux) ne sont pas génériques |
+| **Constructibilité numérique** | 0 collision, 0 pièce déconnectée, 73/73 pièces vérifiées, 7 cas sous 0,5 N | **Satisfaisante** : 0 collision, 0 pièce déconnectée, 77/77, 10 cas sous 0,5 N, 581 étapes sans défaut | Équivalente sur ces contrôles |
+| **Qualité de la notice** | Hiérarchique (oreilles pièce par pièce, bras, vues éclatées, 203 pages) | **Rudimentaire** : linéaire, 581 pages, sans sous-assemblage structurel, sans oreille ni patte comme module | Exploitable, pas aussi lisible que Paco |
+| **Reproductibilité** | Impossible depuis le dépôt seul (intermédiaires non archivés) | Déterministe (deux exécutions identiques) mais non autonome (moteur `brickify`, LDraw, Rebrickable, `~/bench`) | **Insuffisante** |
+| **Risques physiques résiduels** | Voir 18 | Plan d'appui de 17 cm², masse réelle inconnue, 7 groupes fragiles, notice non suivie | Ouverts |

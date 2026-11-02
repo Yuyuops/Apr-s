@@ -1,0 +1,659 @@
+{
+ "categories": {
+  "occupation": 0,
+  "couleur_exposee": 0,
+  "couleur_interieure": 241,
+  "finition_dessus": 0
+ },
+ "violations": [],
+ "par_zone": {
+  "R2 final groupe 13": 8,
+  "R2 final groupe 20": 17,
+  "R2 final groupe 26": 10,
+  "R2 final groupe 24": 6,
+  "R2 final groupe 25": 5,
+  "R2 final groupe 37": 4,
+  "R2 final groupe 8": 14,
+  "R2 final groupe 18": 10,
+  "R2 final groupe 34": 14,
+  "R2 final groupe 6": 25,
+  "R2 final groupe 10": 19,
+  "R2 final groupe 46": 25,
+  "R2 final groupe 42": 10,
+  "R2 final groupe 32": 8,
+  "R2 final groupe 22": 6,
+  "R2 final groupe 41": 7,
+  "R2 final groupe 29": 6,
+  "R2 final groupe 43": 6,
+  "R2 final groupe 15": 1,
+  "R2 final groupe 3": 8,
+  "R2 final groupe 4": 7,
+  "R2 final groupe 19": 1,
+  "R2 final groupe 33": 14,
+  "R2 final groupe 38": 6,
+  "R2 final groupe 9": 14,
+  "R2 final groupe 5": 15,
+  "R2 final groupe 30": 7,
+  "R2 final groupe 35": 8,
+  "R2 final groupe 36": 4,
+  "R2 final groupe 44": 4,
+  "R2 final groupe 40": 12,
+  "R2 final groupe 14": 6,
+  "R2 final groupe 23": 3,
+  "R2 final groupe 12": 5,
+  "R2 final groupe 11": 1,
+  "R2 final groupe 16": 8,
+  "R2 final groupe 45": 5
+ },
+ "ignores_tessellation": 2126,
+ "cellules_identiques": 50221,
+ "pieces_hors_reseau_modifiees": {
+  "retirees": 0,
+  "ajoutees": 0
+ },
+ "violations_total": 0,
+ "zones": [
+  {
+   "name": "R2 final groupe 42",
+   "kind": "module",
+   "lo": [
+    7,
+    42,
+    41
+   ],
+   "hi": [
+    10,
+    57,
+    43
+   ]
+  },
+  {
+   "name": "R2 final groupe 40",
+   "kind": "module",
+   "lo": [
+    21,
+    97,
+    36
+   ],
+   "hi": [
+    25,
+    110,
+    38
+   ]
+  },
+  {
+   "name": "R2 final groupe 44",
+   "kind": "module",
+   "lo": [
+    21,
+    36,
+    15
+   ],
+   "hi": [
+    24,
+    48,
+    18
+   ]
+  },
+  {
+   "name": "R2 final groupe 13",
+   "kind": "module",
+   "lo": [
+    0,
+    102,
+    42
+   ],
+   "hi": [
+    4,
+    113,
+    45
+   ]
+  },
+  {
+   "name": "R2 final groupe 41",
+   "kind": "module",
+   "lo": [
+    11,
+    65,
+    43
+   ],
+   "hi": [
+    14,
+    76,
+    45
+   ]
+  },
+  {
+   "name": "R2 final groupe 20",
+   "kind": "module",
+   "lo": [
+    1,
+    95,
+    43
+   ],
+   "hi": [
+    7,
+    115,
+    47
+   ]
+  },
+  {
+   "name": "R2 final groupe 32",
+   "kind": "module",
+   "lo": [
+    9,
+    75,
+    42
+   ],
+   "hi": [
+    13,
+    85,
+    45
+   ]
+  },
+  {
+   "name": "R2 final groupe 33",
+   "kind": "module",
+   "lo": [
+    15,
+    65,
+    42
+   ],
+   "hi": [
+    21,
+    83,
+    45
+   ]
+  },
+  {
+   "name": "R2 final groupe 14",
+   "kind": "module",
+   "lo": [
+    22,
+    111,
+    43
+   ],
+   "hi": [
+    25,
+    120,
+    47
+   ]
+  },
+  {
+   "name": "R2 final groupe 37",
+   "kind": "module",
+   "lo": [
+    4,
+    0,
+    42
+   ],
+   "hi": [
+    11,
+    7,
+    45
+   ]
+  },
+  {
+   "name": "R2 final groupe 19",
+   "kind": "module",
+   "lo": [
+    11,
+    89,
+    1
+   ],
+   "hi": [
+    15,
+    97,
+    4
+   ]
+  },
+  {
+   "name": "R2 final groupe 34",
+   "kind": "module",
+   "lo": [
+    4,
+    35,
+    15
+   ],
+   "hi": [
+    8,
+    48,
+    17
+   ]
+  },
+  {
+   "name": "R2 final groupe 24",
+   "kind": "module",
+   "lo": [
+    0,
+    95,
+    41
+   ],
+   "hi": [
+    4,
+    105,
+    44
+   ]
+  },
+  {
+   "name": "R2 final groupe 46",
+   "kind": "module",
+   "lo": [
+    9,
+    0,
+    32
+   ],
+   "hi": [
+    12,
+    20,
+    45
+   ]
+  },
+  {
+   "name": "R2 final groupe 2",
+   "kind": "module",
+   "lo": [
+    7,
+    37,
+    4
+   ],
+   "hi": [
+    11,
+    46,
+    7
+   ]
+  },
+  {
+   "name": "R2 final groupe 38",
+   "kind": "module",
+   "lo": [
+    16,
+    57,
+    5
+   ],
+   "hi": [
+    20,
+    66,
+    8
+   ]
+  },
+  {
+   "name": "R2 final groupe 15",
+   "kind": "module",
+   "lo": [
+    12,
+    98,
+    54
+   ],
+   "hi": [
+    17,
+    103,
+    58
+   ]
+  },
+  {
+   "name": "R2 final groupe 16",
+   "kind": "module",
+   "lo": [
+    23,
+    89,
+    42
+   ],
+   "hi": [
+    27,
+    97,
+    45
+   ]
+  },
+  {
+   "name": "R2 final groupe 3",
+   "kind": "module",
+   "lo": [
+    17,
+    90,
+    50
+   ],
+   "hi": [
+    20,
+    100,
+    54
+   ]
+  },
+  {
+   "name": "R2 final groupe 9",
+   "kind": "module",
+   "lo": [
+    18,
+    19,
+    30
+   ],
+   "hi": [
+    23,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "R2 final groupe 12",
+   "kind": "module",
+   "lo": [
+    23,
+    62,
+    35
+   ],
+   "hi": [
+    26,
+    68,
+    40
+   ]
+  },
+  {
+   "name": "R2 final groupe 22",
+   "kind": "module",
+   "lo": [
+    10,
+    40,
+    42
+   ],
+   "hi": [
+    15,
+    47,
+    45
+   ]
+  },
+  {
+   "name": "R2 final groupe 4",
+   "kind": "module",
+   "lo": [
+    12,
+    105,
+    49
+   ],
+   "hi": [
+    16,
+    113,
+    52
+   ]
+  },
+  {
+   "name": "R2 final groupe 25",
+   "kind": "module",
+   "lo": [
+    2,
+    97,
+    35
+   ],
+   "hi": [
+    6,
+    105,
+    38
+   ]
+  },
+  {
+   "name": "R2 final groupe 8",
+   "kind": "module",
+   "lo": [
+    5,
+    20,
+    30
+   ],
+   "hi": [
+    12,
+    31,
+    33
+   ]
+  },
+  {
+   "name": "R2 final groupe 36",
+   "kind": "module",
+   "lo": [
+    20,
+    0,
+    10
+   ],
+   "hi": [
+    24,
+    5,
+    13
+   ]
+  },
+  {
+   "name": "R2 final groupe 5",
+   "kind": "module",
+   "lo": [
+    18,
+    13,
+    31
+   ],
+   "hi": [
+    23,
+    21,
+    34
+   ]
+  },
+  {
+   "name": "R2 final groupe 6",
+   "kind": "module",
+   "lo": [
+    6,
+    5,
+    32
+   ],
+   "hi": [
+    11,
+    12,
+    35
+   ]
+  },
+  {
+   "name": "R2 final groupe 10",
+   "kind": "module",
+   "lo": [
+    6,
+    13,
+    31
+   ],
+   "hi": [
+    11,
+    21,
+    34
+   ]
+  },
+  {
+   "name": "R2 final groupe 11",
+   "kind": "module",
+   "lo": [
+    23,
+    63,
+    32
+   ],
+   "hi": [
+    26,
+    69,
+    36
+   ]
+  },
+  {
+   "name": "R2 final groupe 18",
+   "kind": "module",
+   "lo": [
+    6,
+    28,
+    29
+   ],
+   "hi": [
+    12,
+    36,
+    32
+   ]
+  },
+  {
+   "name": "R2 final groupe 29",
+   "kind": "module",
+   "lo": [
+    12,
+    68,
+    0
+   ],
+   "hi": [
+    17,
+    76,
+    3
+   ]
+  },
+  {
+   "name": "R2 final groupe 43",
+   "kind": "module",
+   "lo": [
+    12,
+    79,
+    3
+   ],
+   "hi": [
+    17,
+    87,
+    7
+   ]
+  },
+  {
+   "name": "R2 final groupe 23",
+   "kind": "module",
+   "lo": [
+    22,
+    0,
+    9
+   ],
+   "hi": [
+    27,
+    4,
+    12
+   ]
+  },
+  {
+   "name": "R2 final groupe 35",
+   "kind": "module",
+   "lo": [
+    18,
+    5,
+    32
+   ],
+   "hi": [
+    24,
+    14,
+    35
+   ]
+  },
+  {
+   "name": "R2 final groupe 26",
+   "kind": "module",
+   "lo": [
+    1,
+    93,
+    37
+   ],
+   "hi": [
+    4,
+    101,
+    44
+   ]
+  },
+  {
+   "name": "R2 final groupe 30",
+   "kind": "module",
+   "lo": [
+    19,
+    2,
+    9
+   ],
+   "hi": [
+    24,
+    9,
+    12
+   ]
+  },
+  {
+   "name": "R2 final groupe 45",
+   "kind": "module",
+   "lo": [
+    25,
+    93,
+    39
+   ],
+   "hi": [
+    28,
+    100,
+    44
+   ]
+  },
+  {
+   "name": "R2 final groupe 21",
+   "kind": "module",
+   "lo": [
+    21,
+    57,
+    18
+   ],
+   "hi": [
+    24,
+    62,
+    22
+   ]
+  },
+  {
+   "name": "R2 final groupe 10",
+   "kind": "module",
+   "lo": [
+    23,
+    98,
+    35
+   ],
+   "hi": [
+    25,
+    110,
+    38
+   ]
+  },
+  {
+   "name": "R2 final groupe 6",
+   "kind": "module",
+   "lo": [
+    4,
+    32,
+    14
+   ],
+   "hi": [
+    9,
+    48,
+    18
+   ]
+  },
+  {
+   "name": "R2 final groupe 3",
+   "kind": "module",
+   "lo": [
+    11,
+    98,
+    55
+   ],
+   "hi": [
+    18,
+    102,
+    58
+   ]
+  },
+  {
+   "name": "R2 final groupe 5",
+   "kind": "module",
+   "lo": [
+    21,
+    114,
+    43
+   ],
+   "hi": [
+    25,
+    120,
+    47
+   ]
+  }
+ ]
+}

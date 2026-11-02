@@ -1,0 +1,17 @@
+full grid (30, 126, 58) cells 59778 fine/coarse 0.875 head in full [ 0 88  0]
+proto/v10/final/ref_full_frame.glb bounds mm [[4.0, 1.6, -458.8], [234.7, 401.6, -4.0]]
+proto/v10/final/v82/notice.ldr: 753 steps, 0 parts could not be ordered
+cas faibles 152 distincts 149 groupes 46
+{"r1": null, "groupes_traites": 46, "pieces": [10658, 11091]}
+cas faibles 23 distincts 23 groupes 11
+{"r1": null, "groupes_traites": 11, "pieces": [11091, 11111]}
+proto/v10/final/beagle_V10_notice.ldr: 592 steps, 0 parts could not be ordered
+cas faibles 10 distincts 10 groupes 7
+4 8 p 1.0 g 1 tenons 0.1 N [('museau', 25), ('yeux', 5)] {'corps': 8} {'White': 6, 'Medium_Nougat': 2} centre [92.0, 299.0, -440.0]
+2 4 p 1.0 g 1 tenons 0.15 N [('pieds', 11)] {'corps': 4} {'White': 4} centre [212.0, 10.0, -348.0]
+5 12 p 1.9 g 2 tenons 0.19 N [('torse', 34)] {'corps': 12} {'Medium_Nougat': 9, 'White': 2} centre [120.0, 258.0, -372.0]
+3 6 p 1.0 g 2 tenons 0.22 N [('torse', 13)] {'corps': 6} {'White': 6} centre [160.0, 144.0, -348.0]
+7 11 p 1.4 g 2 tenons 0.22 N [('crane', 39)] {'corps': 11} {'Dark_Brown': 5, 'White': 3} centre [104.0, 301.0, -24.0]
+6 9 p 1.2 g 2 tenons 0.31 N [('torse', 17)] {'corps': 9} {'White': 7, 'Reddish_Brown': 1} centre [184.0, 214.0, -340.0]
+1 4 p 1.3 g 3 tenons 0.47 N [('pieds', 20)] {'corps': 4} {'White': 4} centre [204.0, 13.0, -64.0]
+{'categories': {'occupation': 0, 'couleur_exposee': 0, 'couleur_interieure': 241, 'finition_dessus': 0}, 'violations_total': 0, 'ignores_tessellation': 2126, 'pieces_hors_reseau_modifiees': {'retirees': 0, 'ajoutees': 0}}

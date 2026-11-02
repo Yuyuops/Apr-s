@@ -1,0 +1,32 @@
+{
+ "tol1": {
+  "plaques_au_sol": 18,
+  "aire_enveloppe_cm2": 487.4,
+  "marge_mm": 78.8
+ },
+ "tol9": {
+  "plaques_au_sol": 131,
+  "aire_enveloppe_cm2": 655.0,
+  "marge_mm": 100.4
+ },
+ "masse_modele_g": 5253.0,
+ "cdg_mm": [
+  120.3,
+  203.0,
+  -237.2
+ ],
+ "pieces_au_sol": 18,
+ "pattes_detectees_au_sol": 10,
+ "aire_pattes_cm2": [
+  1.3,
+  2.6,
+  1.3,
+  3.2,
+  0.6,
+  1.9,
+  1.3,
+  2.6,
+  1.9,
+  0.6
+ ]
+}

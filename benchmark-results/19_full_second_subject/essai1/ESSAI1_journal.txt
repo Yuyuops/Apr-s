@@ -1,0 +1,35 @@
+## etape 0 : GLB source du depot, tel quel (vertex colours) -> fullgrid.py
+AttributeError: 'ColorVisuals' object has no attribute 'to_color'
+    vcol = np.asarray(mesh.visual.to_color().vertex_colors)[:, :3].astype(np.uint8)
+                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ColorVisuals' object has no attribute 'to_color'
+
+## etape 1 : fullgrid.py sur le GLB texture archive (donnees identiques)
+full grid (30, 126, 58) cells 59778
+layer areas around neck: {84: 392, 85: 388, 86: 385, 87: 368, 88: 365, 89: 432, 90: 442, 91: 438, 92: 441} -> neck layer 88
+full grid (30, 126, 58) cells 59778 fine/coarse 0.875 head in full [ 0 88  0]
+
+## etape 2 : segment.py
+yeux             198  ratio 0.184  0.681  ep 78.5  mm  couleur de la grille seulement (detail trop petit pour   [faible]
+truffe            23  ratio 0.187  0.207  ep 12.1  mm  couleur de la grille seulement (detail trop petit pour   [faible]
+museau          1558  ratio 0.587  0.649  ep 60.8  mm  volume brickify_plus (reglages du prototype C)  [moyenne]
+crane          10523  ratio 0.581  0.64   ep 102.8 mm  volume brickify_plus (reglages du prototype C)  [haute]
+pieds           3336  ratio 0.101  0.222  ep 47.1  mm  volume brickify_plus (reglages du prototype C)  [haute]
+jambes          3060  ratio 0.177  0.378  ep 64.0  mm  volume brickify_plus (reglages du prototype C)  [haute]
+bras_mains       542  ratio 0.076  0.903  ep 46.4  mm  volume brickify_plus (reglages du prototype C)  [moyenne]
+torse          33353  ratio 0.439  0.886  ep 139.7 mm  volume brickify_plus (reglages du prototype C)  [haute]
+
+## etape 3 : integrate.py (oreilles) : constantes codees en dur
+27:FULL = os.path.expanduser("~/bench/proto/v7/paco_full400.npz")
+29:REP41 = json.load(open(os.path.expanduser("~/bench/proto/ear08/run/module_report.json")))
+136:        shutil.copy(os.path.join(tdir, f"A_paco_{ext}"), os.path.join(tdir, f"V7_oreille_haute_{ext}"))
+
+## etape 4 : brickify_plus.py GELE sur la grille du Beagle (--no-shapes --drop-floating)
+    ~~~~^^
+  File "/root/bench/proto/brickify_plus_v91_frozen.py", line 291, in main
+    if reg.any(): m.pack_region(y, reg, int(colour), use_tiles=ut)
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/bench/proto/brickify_plus_v91_frozen.py", line 133, in pack_region
+    _, x0, z0, w, dd, num, rot = best
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object

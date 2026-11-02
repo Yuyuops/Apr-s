@@ -1,0 +1,8 @@
+Rejeu de Paco apres les trois evolutions generiques de V10 (E1 repli de tuile dans brickify_plus, E2 grille LEGO_SHAPE, E3 notice sans bras)
+1. E1 : brickify_plus (version V10) sur la grille carvee de Paco (proto/v7/run/corps_V7.npz) : corps.ldr IDENTIQUE octet a octet a la version gelee V9.1 et a l'archive V7 (2 414 pieces).
+2. E1 : assemble_v82.py complet (corps, micro-details, module de bouche) rejoue avec le brickify_plus V10 : paco_V82.ldr IDENTIQUE octet a octet a proto/v82/runC/paco_V82.ldr.
+3. E2 : scope.py, reinforce.py : valeur par defaut LEGO_SHAPE = 40,130,40 (grille de Paco) -> comportement inchange ; reinforce.py est identique (diff vide) ; test_scope_v91.py : 16/16 tests reussis.
+4. E3 : notice_plan.py (V10) rejoue sur le modele Paco V9.1 avec les plans d'oreille V9.1 : plan complet (201 etapes, modules, controles de chaque etape) IDENTIQUE au plan archive de V9.1 (comparaison des structures JSON).
+5. Le generateur d'oreilles, la fixation, le renfort des bords d'oreille, les validations et les PDF de Paco ne sont pas modifies : les resultats de V9.1 (3 098 pieces, 0 collision, 0 piece deconnectee, 7 cas sous 0,5 N, 4 groupes fragiles) restent ceux du dossier 18.
+Geometrie : inchangee. Couleurs : inchangees. Stabilite : inchangee. Fragilite : inchangee. Notice : inchangee. Fidelite visuelle : inchangee (modeles identiques).
+Limite : le rejeu de Paco depuis les entrees archivees dans le depot est impossible (voir RAPPORT_REPRODUCTIBILITE.md) ; le rejeu a utilise les fichiers de travail de ~/bench.

@@ -1,0 +1,4314 @@
+{
+ "name": "final",
+ "source_ldr": "/root/bench/proto/v10/final/beagle_V10_notice.ldr",
+ "disclaimer": "Geometric and graph checks plus an indicative stud-clutch model. Not a physical test.",
+ "parts": 11111,
+ "part_types": 24,
+ "part_colour_lines": 77,
+ "steps": 593,
+ "collisions": {
+  "pairs": 0,
+  "cells_4ldu": 0,
+  "examples": [],
+  "details": []
+ },
+ "blocked_studs": 0,
+ "joints": 21091,
+ "studs_engaged": 51020,
+ "single_stud_joints": 10420,
+ "sideways_joints": 2,
+ "groups_on_support_not_attached_to_main": 0,
+ "disconnected_parts": 0,
+ "islands": 0,
+ "disconnected_examples": [],
+ "unsupported_at_placement": 0,
+ "subassemblies_not_attachable": [],
+ "catalogue": {
+  "lines": 77,
+  "never_produced": [],
+  "not_found": [],
+  "rare": []
+ },
+ "frames": [
+  [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  [
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "turntable_joints": 0,
+ "stability": {
+  "model": "rigid parts; clutch 1.0 N per stud (assumed); compression free; 0.10 g per stud x stud x plate; gravity, then a force at the far end of each sub-assembly. Indicative only.",
+  "cases": 2285,
+  "gravity_sf_below_1": 0,
+  "gravity_sf_below_2": 0,
+  "min_gravity_sf": 38.23,
+  "subassemblies_over_1g": 251,
+  "tip_force_below_0_5N": 10,
+  "tip_force_below_2N": 65,
+  "min_tip_force_N": 0.1,
+  "weakest": [
+   {
+    "mass_g": 1.0,
+    "studs": 1,
+    "gravity_sf": 101.94,
+    "tip_force_N": 0.1,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8,
+    "colours": {
+     "White": 6,
+     "Medium_Nougat": 2
+    },
+    "bbox_ldu": [
+     [
+      220.0,
+      -776.0,
+      1080.0
+     ],
+     [
+      240.0,
+      -720.0,
+      1120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.0,
+    "studs": 1,
+    "gravity_sf": 38.23,
+    "tip_force_N": 0.15,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 4,
+    "colours": {
+     "White": 4
+    },
+    "bbox_ldu": [
+     [
+      500.0,
+      -40.0,
+      860.0
+     ],
+     [
+      560.0,
+      -8.0,
+      880.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.9,
+    "studs": 2,
+    "gravity_sf": 70.91,
+    "tip_force_N": 0.19,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 12,
+    "colours": {
+     "Medium_Nougat": 9,
+     "White": 2
+    },
+    "bbox_ldu": [
+     [
+      260.0,
+      -672.0,
+      920.0
+     ],
+     [
+      340.0,
+      -616.0,
+      940.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.4,
+    "studs": 2,
+    "gravity_sf": 203.87,
+    "tip_force_N": 0.22,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 11,
+    "colours": {
+     "Dark_Brown": 5,
+     "White": 3
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -776.0,
+      40.0
+     ],
+     [
+      280.0,
+      -728.0,
+      80.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.0,
+    "studs": 2,
+    "gravity_sf": 203.87,
+    "tip_force_N": 0.22,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6,
+    "colours": {
+     "White": 6
+    },
+    "bbox_ldu": [
+     [
+      380.0,
+      -384.0,
+      860.0
+     ],
+     [
+      420.0,
+      -336.0,
+      880.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.2,
+    "studs": 2,
+    "gravity_sf": 305.81,
+    "tip_force_N": 0.31,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9,
+    "colours": {
+     "White": 7,
+     "Reddish_Brown": 1
+    },
+    "bbox_ldu": [
+     [
+      440.0,
+      -552.0,
+      820.0
+     ],
+     [
+      480.0,
+      -520.0,
+      880.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.3,
+    "studs": 3,
+    "gravity_sf": null,
+    "tip_force_N": 0.47,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 4,
+    "colours": {
+     "White": 4
+    },
+    "bbox_ldu": [
+     [
+      500.0,
+      -48.0,
+      120.0
+     ],
+     [
+      520.0,
+      -16.0,
+      200.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.3,
+    "studs": 4,
+    "gravity_sf": null,
+    "tip_force_N": 0.52,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6,
+    "colours": {
+     "White": 5,
+     "Medium_Nougat": 1
+    },
+    "bbox_ldu": [
+     [
+      120.0,
+      -648.0,
+      640.0
+     ],
+     [
+      140.0,
+      -608.0,
+      720.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.6,
+    "studs": 4,
+    "gravity_sf": 254.84,
+    "tip_force_N": 0.52,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10,
+    "colours": {
+     "White": 5,
+     "Dark_Brown": 3
+    },
+    "bbox_ldu": [
+     [
+      260.0,
+      -496.0,
+      100.0
+     ],
+     [
+      340.0,
+      -456.0,
+      120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.5,
+    "studs": 3,
+    "gravity_sf": null,
+    "tip_force_N": 0.6,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 11,
+    "colours": {
+     "Black": 5,
+     "Dark_Brown": 3
+    },
+    "bbox_ldu": [
+     [
+      120.0,
+      -968.0,
+      900.0
+     ],
+     [
+      160.0,
+      -920.0,
+      940.0
+     ]
+    ]
+   }
+  ],
+  "big_cases": [
+   {
+    "mass_g": 5250.3,
+    "studs": 27,
+    "gravity_sf": null,
+    "tip_force_N": 5.31,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 11093,
+    "colours": {
+     "Dark_Orange": 6179,
+     "Medium_Nougat": 1854
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -8.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 5211.6,
+    "studs": 310,
+    "gravity_sf": null,
+    "tip_force_N": 75.58,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10959,
+    "colours": {
+     "Dark_Orange": 6167,
+     "Medium_Nougat": 1819
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -16.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 5174.4,
+    "studs": 291,
+    "gravity_sf": null,
+    "tip_force_N": 63.82,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10842,
+    "colours": {
+     "Dark_Orange": 6135,
+     "Medium_Nougat": 1789
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -24.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 5143.4,
+    "studs": 272,
+    "gravity_sf": null,
+    "tip_force_N": 60.2,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10758,
+    "colours": {
+     "Dark_Orange": 6103,
+     "Medium_Nougat": 1762
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -32.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 5113.1,
+    "studs": 249,
+    "gravity_sf": null,
+    "tip_force_N": 51.03,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10681,
+    "colours": {
+     "Dark_Orange": 6078,
+     "Medium_Nougat": 1734
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -40.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 5084.9,
+    "studs": 223,
+    "gravity_sf": null,
+    "tip_force_N": 44.25,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10597,
+    "colours": {
+     "Dark_Orange": 6046,
+     "Medium_Nougat": 1709
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -48.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 5057.2,
+    "studs": 192,
+    "gravity_sf": null,
+    "tip_force_N": 36.73,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10508,
+    "colours": {
+     "Dark_Orange": 6016,
+     "Medium_Nougat": 1682
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -56.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 5034.9,
+    "studs": 176,
+    "gravity_sf": null,
+    "tip_force_N": 34.67,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10433,
+    "colours": {
+     "Dark_Orange": 5989,
+     "Medium_Nougat": 1655
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -64.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 5016.0,
+    "studs": 166,
+    "gravity_sf": null,
+    "tip_force_N": 33.21,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10366,
+    "colours": {
+     "Dark_Orange": 5964,
+     "Medium_Nougat": 1631
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -72.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4998.9,
+    "studs": 160,
+    "gravity_sf": null,
+    "tip_force_N": 31.98,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10301,
+    "colours": {
+     "Dark_Orange": 5941,
+     "Medium_Nougat": 1604
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -80.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4982.0,
+    "studs": 156,
+    "gravity_sf": null,
+    "tip_force_N": 31.93,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10225,
+    "colours": {
+     "Dark_Orange": 5911,
+     "Medium_Nougat": 1577
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -88.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4966.1,
+    "studs": 157,
+    "gravity_sf": null,
+    "tip_force_N": 32.26,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10160,
+    "colours": {
+     "Dark_Orange": 5890,
+     "Medium_Nougat": 1552
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -96.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4950.1,
+    "studs": 152,
+    "gravity_sf": null,
+    "tip_force_N": 31.66,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10094,
+    "colours": {
+     "Dark_Orange": 5870,
+     "Medium_Nougat": 1526
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -104.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4934.6,
+    "studs": 150,
+    "gravity_sf": null,
+    "tip_force_N": 31.41,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 10026,
+    "colours": {
+     "Dark_Orange": 5848,
+     "Medium_Nougat": 1496
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -112.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4919.0,
+    "studs": 155,
+    "gravity_sf": null,
+    "tip_force_N": 32.81,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9954,
+    "colours": {
+     "Dark_Orange": 5824,
+     "Medium_Nougat": 1463
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -120.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4902.9,
+    "studs": 155,
+    "gravity_sf": null,
+    "tip_force_N": 33.04,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9880,
+    "colours": {
+     "Dark_Orange": 5800,
+     "Medium_Nougat": 1433
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -128.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4887.0,
+    "studs": 158,
+    "gravity_sf": null,
+    "tip_force_N": 33.73,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9809,
+    "colours": {
+     "Dark_Orange": 5772,
+     "Medium_Nougat": 1411
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -136.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4871.0,
+    "studs": 160,
+    "gravity_sf": null,
+    "tip_force_N": 34.41,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9734,
+    "colours": {
+     "Dark_Orange": 5745,
+     "Medium_Nougat": 1388
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -144.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4854.2,
+    "studs": 163,
+    "gravity_sf": null,
+    "tip_force_N": 35.43,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9654,
+    "colours": {
+     "Dark_Orange": 5717,
+     "Medium_Nougat": 1365
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -152.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4837.6,
+    "studs": 166,
+    "gravity_sf": null,
+    "tip_force_N": 35.94,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9583,
+    "colours": {
+     "Dark_Orange": 5690,
+     "Medium_Nougat": 1347
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -160.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4819.8,
+    "studs": 178,
+    "gravity_sf": null,
+    "tip_force_N": 39.25,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9509,
+    "colours": {
+     "Dark_Orange": 5663,
+     "Medium_Nougat": 1329
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -168.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4800.8,
+    "studs": 184,
+    "gravity_sf": null,
+    "tip_force_N": 40.69,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9426,
+    "colours": {
+     "Dark_Orange": 5629,
+     "Medium_Nougat": 1306
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -176.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4781.5,
+    "studs": 193,
+    "gravity_sf": null,
+    "tip_force_N": 43.27,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9353,
+    "colours": {
+     "Dark_Orange": 5606,
+     "Medium_Nougat": 1278
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -184.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4761.7,
+    "studs": 196,
+    "gravity_sf": null,
+    "tip_force_N": 44.45,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9272,
+    "colours": {
+     "Dark_Orange": 5577,
+     "Medium_Nougat": 1256
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -192.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4740.6,
+    "studs": 209,
+    "gravity_sf": null,
+    "tip_force_N": 48.32,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9195,
+    "colours": {
+     "Dark_Orange": 5551,
+     "Medium_Nougat": 1232
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -200.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4717.7,
+    "studs": 218,
+    "gravity_sf": null,
+    "tip_force_N": 50.63,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9117,
+    "colours": {
+     "Dark_Orange": 5522,
+     "Medium_Nougat": 1211
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -208.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4695.1,
+    "studs": 221,
+    "gravity_sf": null,
+    "tip_force_N": 51.74,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 9043,
+    "colours": {
+     "Dark_Orange": 5496,
+     "Medium_Nougat": 1188
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -216.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4672.0,
+    "studs": 229,
+    "gravity_sf": null,
+    "tip_force_N": 55.44,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8970,
+    "colours": {
+     "Dark_Orange": 5468,
+     "Medium_Nougat": 1160
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -224.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4648.0,
+    "studs": 236,
+    "gravity_sf": null,
+    "tip_force_N": 58.68,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8888,
+    "colours": {
+     "Dark_Orange": 5435,
+     "Medium_Nougat": 1128
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -232.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4622.6,
+    "studs": 251,
+    "gravity_sf": null,
+    "tip_force_N": 63.92,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8800,
+    "colours": {
+     "Dark_Orange": 5397,
+     "Medium_Nougat": 1096
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -240.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4595.1,
+    "studs": 266,
+    "gravity_sf": null,
+    "tip_force_N": 68.68,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8716,
+    "colours": {
+     "Dark_Orange": 5358,
+     "Medium_Nougat": 1069
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -248.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4560.3,
+    "studs": 347,
+    "gravity_sf": null,
+    "tip_force_N": 90.96,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8624,
+    "colours": {
+     "Dark_Orange": 5310,
+     "Medium_Nougat": 1042
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -256.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4521.6,
+    "studs": 383,
+    "gravity_sf": null,
+    "tip_force_N": 101.26,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8538,
+    "colours": {
+     "Dark_Orange": 5268,
+     "Medium_Nougat": 1012
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -264.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4481.0,
+    "studs": 406,
+    "gravity_sf": null,
+    "tip_force_N": 114.65,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8443,
+    "colours": {
+     "Dark_Orange": 5221,
+     "Medium_Nougat": 980
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -272.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4435.4,
+    "studs": 450,
+    "gravity_sf": null,
+    "tip_force_N": 121.79,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8322,
+    "colours": {
+     "Dark_Orange": 5160,
+     "Medium_Nougat": 937
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -280.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4384.2,
+    "studs": 510,
+    "gravity_sf": null,
+    "tip_force_N": 139.03,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8230,
+    "colours": {
+     "Dark_Orange": 5110,
+     "White": 926
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -288.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4330.8,
+    "studs": 534,
+    "gravity_sf": null,
+    "tip_force_N": 147.1,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8139,
+    "colours": {
+     "Dark_Orange": 5054,
+     "White": 914
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -296.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4274.9,
+    "studs": 557,
+    "gravity_sf": null,
+    "tip_force_N": 154.68,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 8036,
+    "colours": {
+     "Dark_Orange": 4993,
+     "White": 901
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -304.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4214.9,
+    "studs": 600,
+    "gravity_sf": null,
+    "tip_force_N": 169.19,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7928,
+    "colours": {
+     "Dark_Orange": 4930,
+     "White": 887
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -312.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4153.4,
+    "studs": 615,
+    "gravity_sf": null,
+    "tip_force_N": 175.76,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7829,
+    "colours": {
+     "Dark_Orange": 4874,
+     "White": 877
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -320.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4090.3,
+    "studs": 628,
+    "gravity_sf": null,
+    "tip_force_N": 191.63,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7716,
+    "colours": {
+     "Dark_Orange": 4798,
+     "White": 864
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -328.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 4025.3,
+    "studs": 650,
+    "gravity_sf": null,
+    "tip_force_N": 203.15,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7617,
+    "colours": {
+     "Dark_Orange": 4728,
+     "White": 849
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -336.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3958.0,
+    "studs": 672,
+    "gravity_sf": null,
+    "tip_force_N": 212.14,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7513,
+    "colours": {
+     "Dark_Orange": 4652,
+     "White": 834
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -344.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3888.8,
+    "studs": 683,
+    "gravity_sf": null,
+    "tip_force_N": 217.99,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7400,
+    "colours": {
+     "Dark_Orange": 4568,
+     "White": 818
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -352.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3819.3,
+    "studs": 692,
+    "gravity_sf": null,
+    "tip_force_N": 223.72,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7286,
+    "colours": {
+     "Dark_Orange": 4489,
+     "White": 806
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -360.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3749.7,
+    "studs": 692,
+    "gravity_sf": null,
+    "tip_force_N": 225.86,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7187,
+    "colours": {
+     "Dark_Orange": 4419,
+     "White": 795
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -368.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3679.3,
+    "studs": 699,
+    "gravity_sf": null,
+    "tip_force_N": 232.18,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 7074,
+    "colours": {
+     "Dark_Orange": 4336,
+     "White": 784
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -376.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3608.4,
+    "studs": 707,
+    "gravity_sf": null,
+    "tip_force_N": 249.29,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6974,
+    "colours": {
+     "Dark_Orange": 4256,
+     "White": 773
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -384.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3536.3,
+    "studs": 715,
+    "gravity_sf": null,
+    "tip_force_N": 246.07,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6876,
+    "colours": {
+     "Dark_Orange": 4176,
+     "White": 760
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -392.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3464.2,
+    "studs": 716,
+    "gravity_sf": null,
+    "tip_force_N": 249.03,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6779,
+    "colours": {
+     "Dark_Orange": 4101,
+     "White": 748
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -400.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3391.9,
+    "studs": 718,
+    "gravity_sf": null,
+    "tip_force_N": 252.6,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6669,
+    "colours": {
+     "Dark_Orange": 4020,
+     "White": 733
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -408.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3318.3,
+    "studs": 722,
+    "gravity_sf": null,
+    "tip_force_N": 269.31,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6555,
+    "colours": {
+     "Dark_Orange": 3941,
+     "White": 719
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -416.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3244.0,
+    "studs": 722,
+    "gravity_sf": null,
+    "tip_force_N": 263.23,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6438,
+    "colours": {
+     "Dark_Orange": 3847,
+     "White": 709
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -424.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3171.5,
+    "studs": 721,
+    "gravity_sf": null,
+    "tip_force_N": 265.29,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6343,
+    "colours": {
+     "Dark_Orange": 3776,
+     "White": 699
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -432.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3098.3,
+    "studs": 717,
+    "gravity_sf": null,
+    "tip_force_N": 265.85,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6230,
+    "colours": {
+     "Dark_Orange": 3689,
+     "White": 687
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -440.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 3026.4,
+    "studs": 717,
+    "gravity_sf": null,
+    "tip_force_N": 270.52,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6141,
+    "colours": {
+     "Dark_Orange": 3622,
+     "White": 677
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -448.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2953.2,
+    "studs": 722,
+    "gravity_sf": null,
+    "tip_force_N": 289.01,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 6037,
+    "colours": {
+     "Dark_Orange": 3541,
+     "White": 669
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -456.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2880.0,
+    "studs": 723,
+    "gravity_sf": null,
+    "tip_force_N": 294.78,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 5938,
+    "colours": {
+     "Dark_Orange": 3469,
+     "Medium_Nougat": 654
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -464.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2804.5,
+    "studs": 711,
+    "gravity_sf": null,
+    "tip_force_N": 279.05,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 5821,
+    "colours": {
+     "Dark_Orange": 3381,
+     "Medium_Nougat": 650
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -472.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2731.8,
+    "studs": 698,
+    "gravity_sf": null,
+    "tip_force_N": 276.54,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 5714,
+    "colours": {
+     "Dark_Orange": 3303,
+     "Medium_Nougat": 644
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -480.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2659.1,
+    "studs": 698,
+    "gravity_sf": null,
+    "tip_force_N": 273.43,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 5592,
+    "colours": {
+     "Dark_Orange": 3214,
+     "Medium_Nougat": 636
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -488.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2587.3,
+    "studs": 695,
+    "gravity_sf": null,
+    "tip_force_N": 274.41,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 5483,
+    "colours": {
+     "Dark_Orange": 3132,
+     "Medium_Nougat": 630
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -496.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2516.0,
+    "studs": 689,
+    "gravity_sf": null,
+    "tip_force_N": 274.37,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 5384,
+    "colours": {
+     "Dark_Orange": 3059,
+     "Medium_Nougat": 625
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -504.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2444.5,
+    "studs": 677,
+    "gravity_sf": null,
+    "tip_force_N": 265.29,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 5268,
+    "colours": {
+     "Dark_Orange": 2972,
+     "Medium_Nougat": 617
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -512.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2374.4,
+    "studs": 663,
+    "gravity_sf": null,
+    "tip_force_N": 262.44,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 5146,
+    "colours": {
+     "Dark_Orange": 2888,
+     "Medium_Nougat": 606
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -520.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2307.0,
+    "studs": 654,
+    "gravity_sf": null,
+    "tip_force_N": 254.38,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 5037,
+    "colours": {
+     "Dark_Orange": 2811,
+     "Medium_Nougat": 600
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -528.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2239.1,
+    "studs": 653,
+    "gravity_sf": null,
+    "tip_force_N": 258.81,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 4923,
+    "colours": {
+     "Dark_Orange": 2733,
+     "Medium_Nougat": 590
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -536.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2173.1,
+    "studs": 648,
+    "gravity_sf": null,
+    "tip_force_N": 258.22,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 4821,
+    "colours": {
+     "Dark_Orange": 2661,
+     "Medium_Nougat": 582
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -544.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2106.8,
+    "studs": 628,
+    "gravity_sf": null,
+    "tip_force_N": 239.48,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 4710,
+    "colours": {
+     "Dark_Orange": 2586,
+     "Medium_Nougat": 570
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -552.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 2039.3,
+    "studs": 604,
+    "gravity_sf": null,
+    "tip_force_N": 229.76,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 4590,
+    "colours": {
+     "Dark_Orange": 2511,
+     "Medium_Nougat": 553
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -560.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1977.9,
+    "studs": 593,
+    "gravity_sf": null,
+    "tip_force_N": 236.41,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 4506,
+    "colours": {
+     "Dark_Orange": 2448,
+     "Medium_Nougat": 544
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -568.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1914.8,
+    "studs": 572,
+    "gravity_sf": null,
+    "tip_force_N": 229.33,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 4386,
+    "colours": {
+     "Dark_Orange": 2375,
+     "Medium_Nougat": 534
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      0.0
+     ],
+     [
+      600.0,
+      -576.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1793.1,
+    "studs": 517,
+    "gravity_sf": null,
+    "tip_force_N": 208.66,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 4010,
+    "colours": {
+     "Dark_Orange": 2198,
+     "Medium_Nougat": 505
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      200.0
+     ],
+     [
+      600.0,
+      -584.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 63.0,
+    "studs": 41,
+    "gravity_sf": null,
+    "tip_force_N": 10.21,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 280,
+    "colours": {
+     "Dark_Orange": 111,
+     "White": 60
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -584.0,
+      200.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1739.1,
+    "studs": 501,
+    "gravity_sf": null,
+    "tip_force_N": 201.04,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 3924,
+    "colours": {
+     "Dark_Orange": 2138,
+     "Medium_Nougat": 499
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      200.0
+     ],
+     [
+      600.0,
+      -592.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 58.7,
+    "studs": 39,
+    "gravity_sf": null,
+    "tip_force_N": 10.36,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 262,
+    "colours": {
+     "Dark_Orange": 103,
+     "White": 57
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -592.0,
+      160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1684.5,
+    "studs": 465,
+    "gravity_sf": null,
+    "tip_force_N": 175.72,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 3842,
+    "colours": {
+     "Dark_Orange": 2090,
+     "Medium_Nougat": 494
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      200.0
+     ],
+     [
+      600.0,
+      -600.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 54.8,
+    "studs": 38,
+    "gravity_sf": null,
+    "tip_force_N": 10.75,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 244,
+    "colours": {
+     "Dark_Orange": 98,
+     "White": 54
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -600.0,
+      160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1635.9,
+    "studs": 444,
+    "gravity_sf": null,
+    "tip_force_N": 168.94,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 3762,
+    "colours": {
+     "Dark_Orange": 2038,
+     "Medium_Nougat": 480
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      220.0
+     ],
+     [
+      600.0,
+      -608.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 50.5,
+    "studs": 35,
+    "gravity_sf": null,
+    "tip_force_N": 9.84,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 226,
+    "colours": {
+     "Dark_Orange": 93,
+     "White": 51
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -608.0,
+      160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1586.2,
+    "studs": 401,
+    "gravity_sf": null,
+    "tip_force_N": 158.82,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 3665,
+    "colours": {
+     "Dark_Orange": 1970,
+     "Medium_Nougat": 461
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      240.0
+     ],
+     [
+      600.0,
+      -616.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 45.8,
+    "studs": 30,
+    "gravity_sf": null,
+    "tip_force_N": 7.8,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 203,
+    "colours": {
+     "Dark_Orange": 83,
+     "White": 47
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -616.0,
+      140.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1536.1,
+    "studs": 325,
+    "gravity_sf": null,
+    "tip_force_N": 133.95,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 3549,
+    "colours": {
+     "Dark_Orange": 1890,
+     "Medium_Nougat": 435
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      380.0
+     ],
+     [
+      600.0,
+      -624.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 42.7,
+    "studs": 31,
+    "gravity_sf": null,
+    "tip_force_N": 8.77,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 192,
+    "colours": {
+     "Dark_Orange": 78,
+     "White": 44
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -624.0,
+      140.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1502.7,
+    "studs": 324,
+    "gravity_sf": null,
+    "tip_force_N": 136.59,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 3484,
+    "colours": {
+     "Dark_Orange": 1852,
+     "Medium_Nougat": 422
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      460.0
+     ],
+     [
+      600.0,
+      -632.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 39.5,
+    "studs": 32,
+    "gravity_sf": null,
+    "tip_force_N": 9.83,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 181,
+    "colours": {
+     "Dark_Orange": 74,
+     "White": 41
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -632.0,
+      140.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1466.9,
+    "studs": 317,
+    "gravity_sf": null,
+    "tip_force_N": 145.04,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 3410,
+    "colours": {
+     "Dark_Orange": 1812,
+     "Medium_Nougat": 402
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      460.0
+     ],
+     [
+      600.0,
+      -640.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 36.2,
+    "studs": 31,
+    "gravity_sf": null,
+    "tip_force_N": 10.29,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 167,
+    "colours": {
+     "Dark_Orange": 70,
+     "White": 38
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -640.0,
+      140.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1431.7,
+    "studs": 309,
+    "gravity_sf": null,
+    "tip_force_N": 145.82,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 3318,
+    "colours": {
+     "Dark_Orange": 1760,
+     "Medium_Nougat": 384
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      480.0
+     ],
+     [
+      600.0,
+      -648.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 33.1,
+    "studs": 30,
+    "gravity_sf": null,
+    "tip_force_N": 10.8,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 155,
+    "colours": {
+     "Dark_Orange": 65,
+     "White": 36
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -648.0,
+      140.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1398.1,
+    "studs": 303,
+    "gravity_sf": null,
+    "tip_force_N": 145.37,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 3232,
+    "colours": {
+     "Dark_Orange": 1711,
+     "Medium_Nougat": 361
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      500.0
+     ],
+     [
+      600.0,
+      -656.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 30.0,
+    "studs": 30,
+    "gravity_sf": null,
+    "tip_force_N": 11.41,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 140,
+    "colours": {
+     "Dark_Orange": 60,
+     "White": 33
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -656.0,
+      120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1361.8,
+    "studs": 282,
+    "gravity_sf": null,
+    "tip_force_N": 127.11,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 3140,
+    "colours": {
+     "Dark_Orange": 1674,
+     "Dark_Brown": 334
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      520.0
+     ],
+     [
+      600.0,
+      -664.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 26.6,
+    "studs": 28,
+    "gravity_sf": null,
+    "tip_force_N": 11.4,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 124,
+    "colours": {
+     "Dark_Orange": 56,
+     "White": 31
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -664.0,
+      120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1332.0,
+    "studs": 289,
+    "gravity_sf": null,
+    "tip_force_N": 134.89,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 3076,
+    "colours": {
+     "Dark_Orange": 1637,
+     "Dark_Brown": 334
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      540.0
+     ],
+     [
+      600.0,
+      -672.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 23.5,
+    "studs": 23,
+    "gravity_sf": null,
+    "tip_force_N": 8.39,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 108,
+    "colours": {
+     "Dark_Orange": 50,
+     "White": 26
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -672.0,
+      120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1297.9,
+    "studs": 273,
+    "gravity_sf": null,
+    "tip_force_N": 130.18,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2984,
+    "colours": {
+     "Dark_Orange": 1597,
+     "Dark_Brown": 334
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      560.0
+     ],
+     [
+      600.0,
+      -680.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 20.6,
+    "studs": 20,
+    "gravity_sf": null,
+    "tip_force_N": 6.95,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 91,
+    "colours": {
+     "Dark_Orange": 42,
+     "White": 24
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -680.0,
+      120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1268.0,
+    "studs": 278,
+    "gravity_sf": null,
+    "tip_force_N": 140.13,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2915,
+    "colours": {
+     "Dark_Orange": 1551,
+     "Dark_Brown": 334
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      580.0
+     ],
+     [
+      600.0,
+      -688.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 18.6,
+    "studs": 20,
+    "gravity_sf": null,
+    "tip_force_N": 7.45,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 83,
+    "colours": {
+     "Dark_Orange": 38,
+     "White": 22
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      0.0
+     ],
+     [
+      360.0,
+      -688.0,
+      120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1237.4,
+    "studs": 281,
+    "gravity_sf": null,
+    "tip_force_N": 143.33,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2849,
+    "colours": {
+     "Dark_Orange": 1512,
+     "Dark_Brown": 334
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      580.0
+     ],
+     [
+      600.0,
+      -696.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 16.6,
+    "studs": 18,
+    "gravity_sf": null,
+    "tip_force_N": 6.35,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 73,
+    "colours": {
+     "Dark_Orange": 32,
+     "White": 20
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      20.0
+     ],
+     [
+      360.0,
+      -696.0,
+      120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 14.0,
+    "studs": 15,
+    "gravity_sf": null,
+    "tip_force_N": 5.43,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 60,
+    "colours": {
+     "Dark_Orange": 27,
+     "White": 16
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      20.0
+     ],
+     [
+      360.0,
+      -704.0,
+      120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1205.9,
+    "studs": 268,
+    "gravity_sf": null,
+    "tip_force_N": 140.36,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2777,
+    "colours": {
+     "Dark_Orange": 1474,
+     "Dark_Brown": 334
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      580.0
+     ],
+     [
+      600.0,
+      -704.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 12.5,
+    "studs": 15,
+    "gravity_sf": null,
+    "tip_force_N": 5.93,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 54,
+    "colours": {
+     "Dark_Orange": 25,
+     "White": 15
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      20.0
+     ],
+     [
+      360.0,
+      -712.0,
+      120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1177.9,
+    "studs": 262,
+    "gravity_sf": null,
+    "tip_force_N": 138.82,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2715,
+    "colours": {
+     "Dark_Orange": 1437,
+     "Dark_Brown": 334
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      620.0
+     ],
+     [
+      600.0,
+      -712.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 10.9,
+    "studs": 16,
+    "gravity_sf": null,
+    "tip_force_N": 7.13,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 48,
+    "colours": {
+     "Dark_Orange": 22,
+     "White": 13
+    },
+    "bbox_ldu": [
+     [
+      240.0,
+      -792.0,
+      20.0
+     ],
+     [
+      360.0,
+      -720.0,
+      120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1147.1,
+    "studs": 291,
+    "gravity_sf": null,
+    "tip_force_N": 190.86,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2645,
+    "colours": {
+     "Dark_Orange": 1405,
+     "Dark_Brown": 334
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -720.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1113.1,
+    "studs": 340,
+    "gravity_sf": null,
+    "tip_force_N": 246.55,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2550,
+    "colours": {
+     "Dark_Orange": 1364,
+     "Dark_Brown": 325
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -728.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1076.3,
+    "studs": 360,
+    "gravity_sf": null,
+    "tip_force_N": 275.63,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2452,
+    "colours": {
+     "Dark_Orange": 1318,
+     "Dark_Brown": 315
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -728.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1038.5,
+    "studs": 369,
+    "gravity_sf": null,
+    "tip_force_N": 293.79,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2369,
+    "colours": {
+     "Dark_Orange": 1278,
+     "Dark_Brown": 305
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -728.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1000.8,
+    "studs": 372,
+    "gravity_sf": null,
+    "tip_force_N": 298.78,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2278,
+    "colours": {
+     "Dark_Orange": 1230,
+     "Dark_Brown": 296
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -728.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 962.3,
+    "studs": 381,
+    "gravity_sf": null,
+    "tip_force_N": 314.22,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2184,
+    "colours": {
+     "Dark_Orange": 1181,
+     "Dark_Brown": 284
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -728.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 923.8,
+    "studs": 385,
+    "gravity_sf": null,
+    "tip_force_N": 337.95,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 2093,
+    "colours": {
+     "Dark_Orange": 1132,
+     "Dark_Brown": 274
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -728.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 882.0,
+    "studs": 382,
+    "gravity_sf": null,
+    "tip_force_N": 344.82,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1992,
+    "colours": {
+     "Dark_Orange": 1082,
+     "Dark_Brown": 264
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -728.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 843.0,
+    "studs": 387,
+    "gravity_sf": null,
+    "tip_force_N": 361.41,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1915,
+    "colours": {
+     "Dark_Orange": 1038,
+     "Dark_Brown": 253
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -728.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 802.5,
+    "studs": 393,
+    "gravity_sf": null,
+    "tip_force_N": 384.23,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1828,
+    "colours": {
+     "Dark_Orange": 990,
+     "Reddish_Brown": 244
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -792.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 761.6,
+    "studs": 389,
+    "gravity_sf": null,
+    "tip_force_N": 384.12,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1735,
+    "colours": {
+     "Dark_Orange": 939,
+     "Reddish_Brown": 238
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -800.0,
+      1160.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 722.5,
+    "studs": 389,
+    "gravity_sf": null,
+    "tip_force_N": 372.49,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1654,
+    "colours": {
+     "Dark_Orange": 891,
+     "Reddish_Brown": 232
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -808.0,
+      1140.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 682.3,
+    "studs": 394,
+    "gravity_sf": null,
+    "tip_force_N": 390.02,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1583,
+    "colours": {
+     "Dark_Orange": 850,
+     "Reddish_Brown": 226
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -816.0,
+      1140.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 640.3,
+    "studs": 389,
+    "gravity_sf": null,
+    "tip_force_N": 389.31,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1491,
+    "colours": {
+     "Dark_Orange": 800,
+     "Reddish_Brown": 218
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -824.0,
+      1120.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 599.4,
+    "studs": 378,
+    "gravity_sf": null,
+    "tip_force_N": 404.04,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1409,
+    "colours": {
+     "Dark_Orange": 753,
+     "Reddish_Brown": 211
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -832.0,
+      1060.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 561.0,
+    "studs": 374,
+    "gravity_sf": null,
+    "tip_force_N": 433.4,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1331,
+    "colours": {
+     "Dark_Orange": 711,
+     "Reddish_Brown": 202
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -840.0,
+      1040.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 523.0,
+    "studs": 372,
+    "gravity_sf": null,
+    "tip_force_N": 450.98,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1252,
+    "colours": {
+     "Dark_Orange": 665,
+     "Reddish_Brown": 196
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -848.0,
+      1040.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 485.1,
+    "studs": 373,
+    "gravity_sf": null,
+    "tip_force_N": 450.61,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1167,
+    "colours": {
+     "Dark_Orange": 618,
+     "Reddish_Brown": 186
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      640.0
+     ],
+     [
+      600.0,
+      -856.0,
+      1040.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 446.9,
+    "studs": 376,
+    "gravity_sf": null,
+    "tip_force_N": 466.03,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1079,
+    "colours": {
+     "Dark_Orange": 570,
+     "Reddish_Brown": 173
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -1000.0,
+      660.0
+     ],
+     [
+      600.0,
+      -864.0,
+      1040.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 408.2,
+    "studs": 371,
+    "gravity_sf": null,
+    "tip_force_N": 489.9,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 990,
+    "colours": {
+     "Dark_Orange": 523,
+     "Reddish_Brown": 156
+    },
+    "bbox_ldu": [
+     [
+      20.0,
+      -1000.0,
+      660.0
+     ],
+     [
+      600.0,
+      -872.0,
+      1040.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 370.5,
+    "studs": 364,
+    "gravity_sf": null,
+    "tip_force_N": 493.36,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 901,
+    "colours": {
+     "Dark_Orange": 472,
+     "Reddish_Brown": 140
+    },
+    "bbox_ldu": [
+     [
+      20.0,
+      -1000.0,
+      660.0
+     ],
+     [
+      580.0,
+      -880.0,
+      1040.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 333.0,
+    "studs": 350,
+    "gravity_sf": null,
+    "tip_force_N": 497.36,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 822,
+    "colours": {
+     "Dark_Orange": 432,
+     "Reddish_Brown": 120
+    },
+    "bbox_ldu": [
+     [
+      20.0,
+      -1000.0,
+      660.0
+     ],
+     [
+      580.0,
+      -888.0,
+      1040.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 293.8,
+    "studs": 332,
+    "gravity_sf": null,
+    "tip_force_N": 512.65,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 725,
+    "colours": {
+     "Dark_Orange": 383,
+     "Medium_Nougat": 107
+    },
+    "bbox_ldu": [
+     [
+      60.0,
+      -1000.0,
+      660.0
+     ],
+     [
+      560.0,
+      -896.0,
+      1040.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 259.3,
+    "studs": 318,
+    "gravity_sf": null,
+    "tip_force_N": 478.51,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 659,
+    "colours": {
+     "Dark_Orange": 347,
+     "Medium_Nougat": 102
+    },
+    "bbox_ldu": [
+     [
+      60.0,
+      -1000.0,
+      680.0
+     ],
+     [
+      560.0,
+      -904.0,
+      1040.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 224.4,
+    "studs": 302,
+    "gravity_sf": null,
+    "tip_force_N": 491.19,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 576,
+    "colours": {
+     "Dark_Orange": 301,
+     "Medium_Nougat": 94
+    },
+    "bbox_ldu": [
+     [
+      60.0,
+      -1000.0,
+      680.0
+     ],
+     [
+      560.0,
+      -912.0,
+      1040.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 188.2,
+    "studs": 271,
+    "gravity_sf": null,
+    "tip_force_N": 464.95,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 486,
+    "colours": {
+     "Dark_Orange": 253,
+     "Medium_Nougat": 90
+    },
+    "bbox_ldu": [
+     [
+      80.0,
+      -1000.0,
+      680.0
+     ],
+     [
+      520.0,
+      -920.0,
+      1000.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 157.6,
+    "studs": 247,
+    "gravity_sf": null,
+    "tip_force_N": 445.01,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 425,
+    "colours": {
+     "Dark_Orange": 220,
+     "Medium_Nougat": 86
+    },
+    "bbox_ldu": [
+     [
+      100.0,
+      -1000.0,
+      680.0
+     ],
+     [
+      520.0,
+      -928.0,
+      1000.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 129.3,
+    "studs": 224,
+    "gravity_sf": null,
+    "tip_force_N": 408.91,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 364,
+    "colours": {
+     "Dark_Orange": 181,
+     "Medium_Nougat": 82
+    },
+    "bbox_ldu": [
+     [
+      100.0,
+      -1000.0,
+      700.0
+     ],
+     [
+      500.0,
+      -936.0,
+      1000.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 101.0,
+    "studs": 203,
+    "gravity_sf": null,
+    "tip_force_N": 430.94,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 293,
+    "colours": {
+     "Dark_Orange": 152,
+     "Medium_Nougat": 66
+    },
+    "bbox_ldu": [
+     [
+      100.0,
+      -1000.0,
+      700.0
+     ],
+     [
+      480.0,
+      -944.0,
+      980.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 78.7,
+    "studs": 184,
+    "gravity_sf": null,
+    "tip_force_N": 415.11,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 249,
+    "colours": {
+     "Dark_Orange": 126,
+     "Medium_Nougat": 61
+    },
+    "bbox_ldu": [
+     [
+      120.0,
+      -1000.0,
+      700.0
+     ],
+     [
+      480.0,
+      -952.0,
+      960.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 56.7,
+    "studs": 159,
+    "gravity_sf": null,
+    "tip_force_N": 364.65,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 199,
+    "colours": {
+     "Dark_Orange": 100,
+     "Medium_Nougat": 54
+    },
+    "bbox_ldu": [
+     [
+      120.0,
+      -1000.0,
+      720.0
+     ],
+     [
+      460.0,
+      -960.0,
+      940.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 27.5,
+    "studs": 102,
+    "gravity_sf": null,
+    "tip_force_N": 277.16,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 105,
+    "colours": {
+     "Dark_Orange": 53,
+     "Medium_Nougat": 30
+    },
+    "bbox_ldu": [
+     [
+      140.0,
+      -1000.0,
+      720.0
+     ],
+     [
+      380.0,
+      -968.0,
+      940.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 10.9,
+    "studs": 35,
+    "gravity_sf": null,
+    "tip_force_N": 30.79,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 47,
+    "colours": {
+     "Dark_Orange": 20,
+     "Medium_Nougat": 19
+    },
+    "bbox_ldu": [
+     [
+      360.0,
+      -1000.0,
+      740.0
+     ],
+     [
+      440.0,
+      -968.0,
+      940.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 17.9,
+    "studs": 38,
+    "gravity_sf": 190.62,
+    "tip_force_N": 26.76,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 62,
+    "colours": {
+     "Medium_Nougat": 20,
+     "Dark_Orange": 15
+    },
+    "bbox_ldu": [
+     [
+      220.0,
+      -680.0,
+      960.0
+     ],
+     [
+      380.0,
+      -624.0,
+      1080.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 12.6,
+    "studs": 31,
+    "gravity_sf": 210.15,
+    "tip_force_N": 25.91,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 42,
+    "colours": {
+     "Medium_Nougat": 16,
+     "Dark_Orange": 11
+    },
+    "bbox_ldu": [
+     [
+      220.0,
+      -672.0,
+      960.0
+     ],
+     [
+      360.0,
+      -624.0,
+      1080.0
+     ]
+    ]
+   }
+  ]
+ },
+ "fidelity": null
+}

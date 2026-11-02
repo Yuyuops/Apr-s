@@ -1,0 +1,280 @@
+{
+ "r1": {
+  "niveau_0": {
+   "pieces": 18,
+   "aire_cm2": 487.4,
+   "marge_cdg_mm": 78.8
+  }
+ },
+ "r2": [
+  {
+   "groupe": 10,
+   "parties": 11,
+   "force_avant_N": 0.06,
+   "tenons_avant": 1,
+   "cellules_ajoutees": 6,
+   "gain_tenons_estime": 12,
+   "pieces_retirees": 12,
+   "pieces_ajoutees": 12,
+   "couches": [
+    "101",
+    "102",
+    "103",
+    "107",
+    "108",
+    "109"
+   ],
+   "cellules": [
+    [
+     24,
+     101,
+     37
+    ],
+    [
+     24,
+     102,
+     37
+    ],
+    [
+     24,
+     103,
+     37
+    ],
+    [
+     24,
+     107,
+     37
+    ],
+    [
+     24,
+     108,
+     37
+    ],
+    [
+     24,
+     109,
+     37
+    ]
+   ],
+   "decision": "applique"
+  },
+  {
+   "groupe": 6,
+   "parties": 16,
+   "force_avant_N": 0.1,
+   "tenons_avant": 2,
+   "cellules_ajoutees": 14,
+   "gain_tenons_estime": 28,
+   "pieces_retirees": 28,
+   "pieces_ajoutees": 41,
+   "couches": [
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "46",
+    "47"
+   ],
+   "cellules": [
+    [
+     8,
+     33,
+     16
+    ],
+    [
+     8,
+     34,
+     16
+    ],
+    [
+     8,
+     35,
+     16
+    ],
+    [
+     7,
+     36,
+     17
+    ],
+    [
+     7,
+     37,
+     17
+    ],
+    [
+     7,
+     38,
+     17
+    ],
+    [
+     7,
+     39,
+     17
+    ],
+    [
+     7,
+     40,
+     17
+    ],
+    [
+     7,
+     41,
+     17
+    ],
+    [
+     7,
+     42,
+     17
+    ],
+    [
+     6,
+     43,
+     15
+    ],
+    [
+     8,
+     44,
+     16
+    ],
+    [
+     5,
+     46,
+     16
+    ],
+    [
+     5,
+     47,
+     16
+    ]
+   ],
+   "decision": "applique"
+  },
+  {
+   "groupe": 7,
+   "parties": 8,
+   "force_avant_N": 0.1,
+   "tenons_avant": 1,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 5
+  },
+  {
+   "groupe": 2,
+   "parties": 4,
+   "force_avant_N": 0.15,
+   "tenons_avant": 1,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 4
+  },
+  {
+   "groupe": 3,
+   "parties": 6,
+   "force_avant_N": 0.19,
+   "tenons_avant": 1,
+   "cellules_ajoutees": 2,
+   "gain_tenons_estime": 3,
+   "pieces_retirees": 5,
+   "pieces_ajoutees": 5,
+   "couches": [
+    "99",
+    "101"
+   ],
+   "cellules": [
+    [
+     17,
+     99,
+     57
+    ],
+    [
+     12,
+     101,
+     56
+    ]
+   ],
+   "decision": "applique"
+  },
+  {
+   "groupe": 8,
+   "parties": 12,
+   "force_avant_N": 0.19,
+   "tenons_avant": 2,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 7
+  },
+  {
+   "groupe": 4,
+   "parties": 6,
+   "force_avant_N": 0.22,
+   "tenons_avant": 2,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 6
+  },
+  {
+   "groupe": 11,
+   "parties": 11,
+   "force_avant_N": 0.22,
+   "tenons_avant": 2,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 4
+  },
+  {
+   "groupe": 9,
+   "parties": 9,
+   "force_avant_N": 0.31,
+   "tenons_avant": 2,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 4
+  },
+  {
+   "groupe": 5,
+   "parties": 7,
+   "force_avant_N": 0.39,
+   "tenons_avant": 3,
+   "cellules_ajoutees": 3,
+   "gain_tenons_estime": 6,
+   "pieces_retirees": 6,
+   "pieces_ajoutees": 13,
+   "couches": [
+    "115",
+    "116",
+    "118"
+   ],
+   "cellules": [
+    [
+     24,
+     115,
+     44
+    ],
+    [
+     22,
+     116,
+     44
+    ],
+    [
+     22,
+     118,
+     44
+    ]
+   ],
+   "decision": "applique"
+  },
+  {
+   "groupe": 1,
+   "parties": 4,
+   "force_avant_N": 0.47,
+   "tenons_avant": 3,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 4
+  }
+ ],
+ "non_relies_avant": 0,
+ "pieces_avant": 11091,
+ "pieces_apres": 11111
+}
