@@ -1,0 +1,47 @@
+[
+ {
+  "test": "T1 aucun chemin absolu ni dossier de developpeur dans le moteur",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "T2 references historiques intactes (empreintes)",
+  "ok": true,
+  "detail": "38 fichiers verifies ; ecarts : []"
+ },
+ {
+  "test": "T3 paco : GLB a couleurs par sommets lu directement = grille archivee",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "T3 beagle : GLB a couleurs par sommets lu directement = grille archivee",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "T4 la validation d'entree refuse un GLB sans couleurs",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "T5 audit paco = baseline archivee (defauts retrouves)",
+  "ok": true,
+  "detail": "{\"cellules_exposees\": 6212, \"cellules_parasites\": 369, \"cellules_sans_correspondance\": 467, \"dE_moyen\": 20.4, \"iou_global\": 0.867}"
+ },
+ {
+  "test": "T5 audit beagle = baseline archivee (defauts retrouves)",
+  "ok": true,
+  "detail": "{\"cellules_exposees\": 11846, \"cellules_parasites\": 195, \"cellules_sans_correspondance\": 0, \"dE_moyen\": 17.1, \"iou_global\": 0.998}"
+ },
+ {
+  "test": "T6 l'audit detecte des briques de couleur parasite injectees (60 plaques Dark Orange -> bleu)",
+  "ok": true,
+  "detail": "+73 cellules parasites"
+ },
+ {
+  "test": "T7 l'audit detecte une oreille deplacee (80 ldu = 32 mm)",
+  "ok": true,
+  "detail": "ecart du centre 11.1 -> 35.2 mm"
+ }
+]

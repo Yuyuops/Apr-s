@@ -1,0 +1,32 @@
+{
+ "grille": {
+  "grid": true,
+  "surface": true,
+  "fine": true
+ },
+ "brut": {
+  "sha256_identique": true,
+  "pieces_nouveau": 3098,
+  "pieces_reference": 3098,
+  "pieces_en_plus": 0,
+  "pieces_en_moins": 0,
+  "identique_pieces": true,
+  "types_en_plus": {},
+  "types_en_moins": {},
+  "couleurs_en_plus": {},
+  "couleurs_en_moins": {}
+ },
+ "notice": {
+  "sha256_identique": false,
+  "pieces_nouveau": 3098,
+  "pieces_reference": 3098,
+  "pieces_en_plus": 0,
+  "pieces_en_moins": 0,
+  "identique_pieces": true,
+  "types_en_plus": {},
+  "types_en_moins": {},
+  "couleurs_en_plus": {},
+  "couleurs_en_moins": {}
+ },
+ "identique": true
+}

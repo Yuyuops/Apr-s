@@ -1,0 +1,72 @@
+{
+ "grille": {
+  "grid": true,
+  "surface": true,
+  "fine": true
+ },
+ "brut": {
+  "sha256_identique": false,
+  "pieces_nouveau": 11074,
+  "pieces_reference": 11111,
+  "pieces_en_plus": 86,
+  "pieces_en_moins": 123,
+  "identique_pieces": false,
+  "types_en_plus": {
+   "3623.dat": 38,
+   "3023.dat": 28,
+   "3024.dat": 17,
+   "3020.dat": 2,
+   "3710.dat": 1
+  },
+  "types_en_moins": {
+   "3024.dat": 61,
+   "3023.dat": 53,
+   "3710.dat": 4,
+   "3021.dat": 3,
+   "3623.dat": 2
+  },
+  "couleurs_en_plus": {
+   "308": 55,
+   "484": 23,
+   "70": 8
+  },
+  "couleurs_en_moins": {
+   "308": 95,
+   "484": 21,
+   "70": 7
+  }
+ },
+ "notice": {
+  "sha256_identique": false,
+  "pieces_nouveau": 11074,
+  "pieces_reference": 11111,
+  "pieces_en_plus": 86,
+  "pieces_en_moins": 123,
+  "identique_pieces": false,
+  "types_en_plus": {
+   "3623.dat": 38,
+   "3023.dat": 28,
+   "3024.dat": 17,
+   "3020.dat": 2,
+   "3710.dat": 1
+  },
+  "types_en_moins": {
+   "3024.dat": 61,
+   "3023.dat": 53,
+   "3710.dat": 4,
+   "3021.dat": 3,
+   "3623.dat": 2
+  },
+  "couleurs_en_plus": {
+   "308": 55,
+   "484": 23,
+   "70": 8
+  },
+  "couleurs_en_moins": {
+   "308": 95,
+   "484": 21,
+   "70": 7
+  }
+ },
+ "identique": false
+}

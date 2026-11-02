@@ -1,0 +1,91 @@
+{
+ "subject": "beagle",
+ "glb": "beagle.glb",
+ "height_mm": 400,
+ "stages": [
+  [
+   "input",
+   4.7
+  ],
+  [
+   "grid",
+   36.3
+  ],
+  [
+   "segment",
+   1.6
+  ],
+  [
+   "frame",
+   5.0
+  ],
+  [
+   "ears",
+   0.2
+  ],
+  [
+   "details",
+   20.3
+  ],
+  [
+   "assemble",
+   30.6
+  ],
+  [
+   "validate",
+   30.6
+  ],
+  [
+   "reinforce",
+   170.4
+  ],
+  [
+   "stitch",
+   0.0
+  ],
+  [
+   "final",
+   41.3
+  ]
+ ],
+ "seconds": 340.9,
+ "files": {
+  "ctx.json": "40346e1c3f63dc84bb1345a25a2b357574593503888723abc649649c294d0f33",
+  "details.json": "84a02da1ea3023263cd522a8d5e79c23e898548d3d8c72d757f5eb5e76e3f5fc",
+  "input_report.json": "a217346c875172c9daaff1813766e31974f0505e11ff79564c7765873c1939d0",
+  "ref_full_frame.glb": "4d4b3b9b55c406c35524495b48d6b4258aa4ce2a015ecafe9bdb14aee16d8d50",
+  "targets/A_paco_contour.json": "c6a13b70b0dde65bfed92e98e971d49b9482e540a134e6a32220344bf56284c2",
+  "targets/B_beagle_contour.json": "7f1552781a756b0e4eff644e22e0ea063ea311cb4774ab867a8822c4864407bf",
+  "targets/V7_oreille_basse_contour.json": "eec8dd3b014a5a7b2d0055d53df3890b4204d5152bcd8ecabbd31a4352e2c466",
+  "targets/V7_oreille_haute_contour.json": "c6a13b70b0dde65bfed92e98e971d49b9482e540a134e6a32220344bf56284c2",
+  "final/beagle_brut.ldr": "4e59b1e9a6a0d3f72ff27e6a7ff0167b348a73d8bb9b99528447fd96cd07118d",
+  "final/beagle_notice.ldr": "36a1bce873cb0297d9ff36dd83abb82500d63131f107adfdc1b4629901e46884",
+  "final/beagle_validation_v2.json": "024ac189130644be8c605cf87070849d4ac70813ffc7a6376e25667e42264653",
+  "final/beagle_weak.json": "c433f74e6dde8b849a8f7e7ec74e245da833c6d7279aa6439ebd1de5da4b2027",
+  "final/scope.json": "7d77f10806353372786b0a89a1ee520529e79c65198fba84a525d0fb2d7496c9",
+  "reinforce/last.json": "6576add6b8ccfd0b6ae5e5de04f652cffc2b290eca85e3bbd16ed7306fb277d3",
+  "reinforce/pass1.ldr": "ec1dac71c48d49525d4245ee300583803af2fda9063e2328fe075b3bd5384575",
+  "reinforce/pass1_log.json": "e18b4ac8383f0b1f80a5be1836081e9071e8a300579a740c0c22d4d0f0a9fc6c",
+  "reinforce/pass1_validation_v2.json": "6aa8bec7bc966d2a7a8cf1ce8f9d67637ca26fdcf2b46a07cf5465bd8094089e",
+  "reinforce/pass1_weak.json": "99c131859f6963bf2fe167457fb8dfa0dd6bd1ef10ab492ce49cdb86cea5fe30",
+  "reinforce/pass2.ldr": "4e59b1e9a6a0d3f72ff27e6a7ff0167b348a73d8bb9b99528447fd96cd07118d",
+  "reinforce/pass2_log.json": "64aef7e90886bdc759888168c0e7404a16a032c1c617737183e3c24886c41385",
+  "reinforce/pass2_validation_v2.json": "35b20a67b1b934077833f428c6919a341ec162ef58faa556a5d9e790ff95a021",
+  "reinforce/pass2_weak.json": "024813308143fff91312848cca29246e4a9ab04dfc518a0f79d4f9b18a61c9eb",
+  "md/microdetails.json": "5f067eed54e9339212a74c459a51fc01f7515cfaca664fd84b0fa3d782738ccf",
+  "seg/segmentation.json": "0f2a118371d016669ea3cf3560ef2e0a738ad02f3044ba11b092725ba1862fa8",
+  "seg/segmentation.npz": "653f96623f824bcd8ee4df08f5ae9f0f22e6937d811370d69c5f08e79c397cff",
+  "run7/full_sans_oreilles.npz": "86d1e1a59f5c9fd4a58909c08664725791303d54a758454cff84e52b0714bf33",
+  "v82/assemble_report.json": "6480d0dbd6abb372ffe6c80202c94b7a02322bb1af08a279747966f7af533443",
+  "v82/corps.ldr": "ebcf013d256a80a75b3eb44ca08dd0ae4b55479acda50a4aeaba509043897a43",
+  "v82/corps_V82.npz": "263176b9e26b11624ae8230d105733e64c8ee3ebee7ac8238d61057fb5b63863",
+  "v82/corps_report.json": "38191756e192bb8920a79488bfdf1694bd4c1d7e7d46f4e8646fc29645e049f2",
+  "v82/lcm_C.json": "3ded15335bf9e7c384ad51ba0e3da560ebd171624c3022f4ea6a6fb52cd6669e",
+  "v82/paco_V82.ldr": "16f581b3f6a779c03524a8f6e26f25c38160bf97a9df277af7fa00337922414f",
+  "v82/pre_lcm.npz": "4964748fe75facb977ed87f2b34b899290ce3da028eda20c1db13a9a36c1fc00",
+  "v82/v82_notice.ldr": "58208887d5d37e4a6e3adac9056eaa8cc8ceae7435db15d9f7b4a313b762a360",
+  "v82/v82_validation_v2.json": "a2ecfa581524893dd5290a9982b393d122686ae4b22ccd0ae69db80a258e1a65",
+  "v82/v82_weak.json": "b0dda9cd6e28cf7597003fbc1befd81792da96f50874db3604436dc1e1c8b12e",
+  "grid/full400.npz": "4cc73bbbf4bb870a0f92a5b127d65eeca6da39366f4f5071eae04e5128d494a7"
+ }
+}

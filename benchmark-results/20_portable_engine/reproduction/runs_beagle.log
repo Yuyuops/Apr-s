@@ -1,0 +1,13 @@
+{"path": "../02_glb_gratuit_hunyuan2mv/beagle.glb", "vertices": 190057, "faces": 380110, "kind": "ColorVisuals", "extents": [0.9933559000492096, 1.7220571041107178, 1.957800567150116], "colours_distinct": 50220, "watertight": true, "components": 1}
+stage input        4.7s
+stage grid        36.3s
+stage segment      1.6s
+stage frame        5.0s
+stage ears         0.2s
+stage details     20.3s
+stage assemble    30.6s
+stage validate    30.6s
+stage reinforce  170.4s
+stage stitch       0.0s
+stage final       41.3s
+done in 341s ; 37 files in manifest.json

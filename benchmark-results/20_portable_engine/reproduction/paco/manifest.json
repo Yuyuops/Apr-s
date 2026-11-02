@@ -1,0 +1,93 @@
+{
+ "subject": "paco",
+ "glb": "paco.glb",
+ "height_mm": 400,
+ "stages": [
+  [
+   "input",
+   3.1
+  ],
+  [
+   "grid",
+   23.5
+  ],
+  [
+   "segment",
+   1.6
+  ],
+  [
+   "frame",
+   2.5
+  ],
+  [
+   "ears",
+   68.1
+  ],
+  [
+   "details",
+   33.0
+  ],
+  [
+   "assemble",
+   9.6
+  ],
+  [
+   "validate",
+   12.6
+  ],
+  [
+   "reinforce",
+   31.5
+  ],
+  [
+   "stitch",
+   2.5
+  ],
+  [
+   "final",
+   16.4
+  ]
+ ],
+ "seconds": 204.3,
+ "files": {
+  "ctx.json": "c7f1f913e823e8ef42a8b16be48f5ff5401d464f04b828d397ed5bfe54fa2bc4",
+  "details.json": "946e5db84a8bfa6547d0c637f66e0b17dde9498fee4e9cf4ec96bc15fd5583aa",
+  "input_report.json": "a7abcd7c202ab07b9986c0d2ae44c9f6971dc690806902c56e0006c65b48e83e",
+  "ref_full_frame.glb": "568a96fbf724e93fe87b1d37dc86abd9f644aab33aaae0c1c5b19f73d7f548ff",
+  "targets/A_paco_contour.json": "c6a13b70b0dde65bfed92e98e971d49b9482e540a134e6a32220344bf56284c2",
+  "targets/B_beagle_contour.json": "7f1552781a756b0e4eff644e22e0ea063ea311cb4774ab867a8822c4864407bf",
+  "targets/V7_oreille_basse_contour.json": "eec8dd3b014a5a7b2d0055d53df3890b4204d5152bcd8ecabbd31a4352e2c466",
+  "targets/V7_oreille_haute_contour.json": "c6a13b70b0dde65bfed92e98e971d49b9482e540a134e6a32220344bf56284c2",
+  "final/paco_brut.ldr": "f878c3b723abf60d982cb284f0596dd2d4cb3d0a3c669b1f51f8806b8e334661",
+  "final/paco_notice.ldr": "cc7229980d34d0dcaa43cbe13ca6fdeb90023216d02f5047af30d8e50a3d72cd",
+  "final/paco_validation_v2.json": "46ed872e153420218ebe9eeae087fe6a325c69bf7de16f645b5afb6312c3cc09",
+  "final/paco_weak.json": "d95232f04b5eb93d44462425e8097e7b65cde3c0d4c9977deed1bb20af29703d",
+  "final/scope.json": "baf395ee2864324ae603a459b5e4be21638a799065f6d8a4a85c08753664408f",
+  "reinforce/last.json": "83c1f60bf9b3c968dd439e669e37d94f375a13b6dcd7cf9e4c45ace9b21ea360",
+  "reinforce/pass1.ldr": "4c23408fabf763b63e8c3ce52c440d5b2a7495bb4c371df3f86d9529951440f3",
+  "reinforce/pass1_log.json": "9cb5c67c8e104667b76643695267171d182afc1944711f0a720b395e4829fd98",
+  "reinforce/pass1_validation_v2.json": "ef6eb1b4a2c770e8cd4224c24004d97cd9d258f299b2bbaa5710bc1e5dfd8d2a",
+  "reinforce/pass1_weak.json": "754876a4675df11a0466dc29357cc80f6b8daf148d3b4baf7e13737cbd05c42d",
+  "reinforce/pass2.ldr": "837b1b21c71270efdfb5a5e2dbfd273af95751c948a7a04ba261ebcb8ff38f47",
+  "reinforce/pass2_log.json": "3bfd7743e150f657c9f48128f90c01e8ea36a28f50d5824bfb5d15011c7ce073",
+  "reinforce/pass2_validation_v2.json": "bce6ab550ec91e48cef56ac0a9614413fa40775ffac337d676504d16ef6bd2ef",
+  "reinforce/pass2_weak.json": "928e303e091d841f8ca9fdf72014755cd03725a55cb304a32fc69a61d73d4c71",
+  "reinforce/stitch_log.json": "186a8d34fb86a093dc9dd78d62eb104b984a49b5d541729d7c199567bba4cb10",
+  "reinforce/stitched.ldr": "f878c3b723abf60d982cb284f0596dd2d4cb3d0a3c669b1f51f8806b8e334661",
+  "md/microdetails.json": "a95e5f9e85b0d812215d4fc06c25a0a59a7b61a97991fcf8103d0220fafe9ded",
+  "seg/segmentation.json": "5db9dc2e6acb0403aae1b902ca9eb13622a4314203e0f22ea67c00e4fce567f3",
+  "seg/segmentation.npz": "27bfdd2761ee0c8cc8ed0a07e50e005b85d08352fd9db5c5b61400ec3a1ced67",
+  "run7/paco_full_sans_oreilles.npz": "72f89a8d6438a855cd9e85c38267ffcfef200f3335a2513e4ccdaece1913a191",
+  "v82/assemble_report.json": "66e85601a648434e17f5c59c7e0122febeb5d1bd6561781fd16c0223186eb634",
+  "v82/corps.ldr": "d34447d9136e9b5d20b9af63e80232a9066287b85ed34d7319a5410dc3cfb2f2",
+  "v82/corps_V82.npz": "4cf7a5c5d506839c131cc697721590102997154177f6d7a8334a2b7f1b727420",
+  "v82/corps_report.json": "561b376906ae84dc3cb5031c9a296ad0d5a9b2a557ba2d76783feb1924348107",
+  "v82/lcm_C.json": "3afa47f82295e744bf0bf9302168cc93d2421397631ce3f71419669f9ee45050",
+  "v82/paco_V82.ldr": "f4bb6e67a42535e413e4310524db916d36efe3457b55ba5cca2a95cdd0e5dd09",
+  "v82/pre_lcm.npz": "723fbc90f1e0c0a4910bd0a6f16ce6cefbbf1b4a719476a93538749324aeda22",
+  "v82/v82_notice.ldr": "8b9a1f093ff50e5c3d45991d9294fce774d44d8792f2b7fc11d3bda20441787c",
+  "v82/v82_validation_v2.json": "893172e3fe3a92f68bfff9e09de3d659a9034fde5ece085d2860e27680efca5d",
+  "v82/v82_weak.json": "d2c679903e8f917ffe84fe5ab86f82634138ea9a9b1284d17232e1c3678e285b",
+  "grid/full400.npz": "f30464ee8b120977e4cddc47c1ef84d442543833814e61fd2241823c9ddbd623"
+ }
+}

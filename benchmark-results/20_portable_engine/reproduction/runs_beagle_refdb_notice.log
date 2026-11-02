@@ -1,0 +1,28 @@
+{
+ "info": {
+  "crotch_layer": 35,
+  "merge_layer": 99,
+  "bras": "non detectes : morphologie non bipede, tout le corps sur la ligne principale (V10)"
+ },
+ "pieces": 11111,
+ "etapes": 581,
+ "modules": {
+  "Corps": 555,
+  "Detail du visage 1 (1x 54200)": 2,
+  "Detail du visage 2 (1x 3960, 1x 6141)": 2,
+  "Detail du visage 3 (1x 54200)": 2,
+  "Detail du visage 4 (1x 54200)": 2,
+  "Detail du visage 5 (1x 54200)": 2,
+  "Detail du visage 6 (1x 54200)": 2,
+  "Detail du visage 7 (1x 54200)": 2,
+  "Detail du visage 8 (1x 54200)": 2,
+  "Detail du visage 9 (1x 54200)": 2,
+  "Detail du visage 10 (1x 54200)": 2,
+  "Detail du visage 11 (1x 54200)": 2,
+  "Detail du visage 12 (1x 54200)": 2,
+  "Detail du visage 13 (1x 54200)": 2
+ },
+ "problemes_insertion": [],
+ "autres": [],
+ "manquantes": 0
+}

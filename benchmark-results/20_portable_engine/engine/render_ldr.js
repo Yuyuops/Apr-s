@@ -4,7 +4,7 @@
 const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
 const [,, sceneFile, viewsFile, outDir] = process.argv;
-const THREE_DIR = path.join(__dirname, 'node_modules', 'three');
+const THREE_DIR = path.join(process.env.LEGO_NODE_MODULES || path.join(__dirname, '..', 'node_modules'), 'three');
 const PAGE = `<!doctype html><html><head><style>html,body{margin:0;background:#fff}</style>
 <script type="importmap">{"imports":{"three":"http://local/three/build/three.module.js","three/addons/":"http://local/three/examples/jsm/"}}</script>
 </head><body><script type="module">

@@ -1,0 +1,8 @@
+{
+ "data_timestamp": "1793543538",
+ "pcs_mat_rows": 104541,
+ "sha256_pcs_mat_table": "78db1bb644a50f2b8b27e89c659be6bcabe4261d37d3b44cb475025ac0d056a4",
+ "sha256_colors_table": "d94410e18400e0535695c0d076e45ebfb70c4fb7208f1574d1c0d0811c6c909b",
+ "identique_a_la_reference": false,
+ "avertissement": "base Rebrickable differente de la reference (timestamp 1793543538 contre 1793454908) : les disponibilites de pieces par couleur peuvent differer ; les ecarts de resultat sont mesures par tests/compare_references.py"
+}
