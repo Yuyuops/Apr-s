@@ -20,7 +20,7 @@ import argparse, hashlib, json, os, shutil, subprocess, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from _paths import ROOT, LDRAW, RB_DB, ENGINE_DIR
-STAGES = ["input", "grid", "segment", "frame", "ears", "details", "assemble", "validate", "reinforce", "stitch", "final"]
+STAGES = ["input", "palette", "grid", "segment", "frame", "ears", "details", "assemble", "validate", "reinforce", "stitch", "repair", "final"]
 
 def sh(cmd, env=None, log=None, cwd=None):
     e = dict(os.environ); e.update(env or {})
@@ -46,8 +46,9 @@ def main():
     a = ap.parse_args()
     cfg = json.load(open(a.subject)) if a.subject else {}
     name = cfg.get("name", "subject"); height = a.height_mm or cfg.get("height_mm", 400)
-    excl = a.palette_exclude or ",".join(str(c) for c in cfg.get("palette_exclude", []))
-    if not excl: sys.exit("no palette : give --palette-exclude or a subject config (the palette of the references is an input, as for brickify)")
+    pal_cfg = cfg.get("palette", {"mode": "fixed", "exclude": cfg.get("palette_exclude", [])})
+    excl = a.palette_exclude or ",".join(str(c) for c in pal_cfg.get("exclude", []))
+    if not excl and pal_cfg.get("mode") != "auto": sys.exit("no palette : give --palette-exclude, a fixed palette in the subject config, or palette.mode = auto (selection from the GLB)")
     out = os.path.abspath(a.out); os.makedirs(out, exist_ok=True); log = os.path.join(out, "run.log"); py = sys.executable
     E = lambda f: os.path.join(ENGINE_DIR, f)
     for p, what in ((LDRAW, "LDraw library"), (RB_DB, "Rebrickable database")):
@@ -67,8 +68,16 @@ def main():
     def s_input():
         import glb_io
         rep = glb_io.validate(a.glb); json.dump(rep, open(os.path.join(out, "input_report.json"), "w"), indent=1); json.dump(rep, sys.stdout); print()
+    def s_palette():
+        nonlocal excl
+        if pal_cfg.get("mode") != "auto" or a.palette_exclude: return
+        pj = os.path.join(out, "palette.json")
+        sh([py, E("palette_select.py"), a.glb, pj, "--required", ",".join(map(str, pal_cfg.get("required", []))), "--forbidden", ",".join(map(str, pal_cfg.get("forbidden", []))), "--max-colours", str(pal_cfg.get("max_colours", 8))], env, log)
+        rep = json.load(open(pj)); excl = ",".join(str(c) for c in rep["exclude"]); print("  palette :", [c["nom"] for c in rep["choisies"]])
     # ---- grid
     def s_grid():
+        nonlocal excl
+        if pal_cfg.get("mode") == "auto" and not a.palette_exclude and os.path.exists(os.path.join(out, "palette.json")): excl = ",".join(str(c) for c in json.load(open(os.path.join(out, "palette.json")))["exclude"])
         os.makedirs(os.path.join(out, "grid"), exist_ok=True)
         cmd = [py, E("fullgrid.py"), a.glb, ctx["full_npz"], "--height-mm", str(height), "--neck", str(cfg.get("neck", "auto")), "--exclude", excl, "--palette-passes", str(cfg.get("palette_passes", 4))]
         if cfg.get("mirror_x", True): cmd.append("--mirror-x")
@@ -125,13 +134,18 @@ def main():
         if not (ears and cfg.get("ear_stitch")): return
         l = json.load(open(os.path.join(rf, "last.json"))); out_ldr = os.path.join(rf, "stitched.ldr")
         sh([py, E("stitch.py"), l["ldr"], l["weak"], out_ldr, os.path.join(rf, "stitch_log.json"), "3"], dict(env, **shape_env()), log); l["ldr"] = out_ldr; json.dump(l, open(os.path.join(rf, "last.json"), "w"))
+    def s_repair():
+        if not cfg.get("colour_repair", False): return
+        l = json.load(open(os.path.join(rf, "last.json"))); out_ldr = os.path.join(rf, "repaired.ldr")
+        sh([py, E("colour_repair.py"), "--ldr", l["ldr"], "--glb", ctx["ref_full_frame"], "--grid", ctx["full_npz"], "--out", out_ldr, "--report", os.path.join(out, "colour_repair.json")], dict(env, **shape_env()), log)
+        l["ldr_avant_reparation"] = l["ldr"]; l["ldr"] = out_ldr; json.dump(l, open(os.path.join(rf, "last.json"), "w"))
     def s_final():
         l = json.load(open(os.path.join(rf, "last.json"))); fin = os.path.join(out, "final"); os.makedirs(fin, exist_ok=True)
         shutil.copy(l["ldr"], os.path.join(fin, "%s_brut.ldr" % name))
         src = validate(l["ldr"], name, fin, True)
         sh([py, E("final_scope.py"), os.path.join(v82, "v82_notice.ldr"), src, os.path.join(fin, "scope.json")] + [os.path.join(v82, "v82_notice.ldr") + ":" + os.path.join(v82, "v82_weak.json") + ":" + os.path.join(rf, "pass1_log.json")]
            + ([os.path.join(rf, "pass1.ldr") + ":" + os.path.join(rf, "pass1_weak.json") + ":" + os.path.join(rf, "pass2_log.json")] if len(cfg.get("reinforce_passes", [0, 0])) > 1 else []), dict(env, **shape_env()), log)
-    for s, f in (("input", s_input), ("grid", s_grid), ("segment", s_segment), ("frame", s_frame), ("ears", s_ears), ("details", s_details), ("assemble", s_assemble), ("validate", s_validate), ("reinforce", s_reinforce), ("stitch", s_stitch), ("final", s_final)):
+    for s, f in (("input", s_input), ("palette", s_palette), ("grid", s_grid), ("segment", s_segment), ("frame", s_frame), ("ears", s_ears), ("details", s_details), ("assemble", s_assemble), ("validate", s_validate), ("reinforce", s_reinforce), ("stitch", s_stitch), ("repair", s_repair), ("final", s_final)):
         stage(s, f)
     man = {}
     for dp, dn, fn in os.walk(out):

@@ -1,0 +1,7 @@
+# V12 — couleurs parasites et pièces structurelles visibles
+
+Point de départ : V11 (commit 88210a7, `20_portable_engine/`). Le moteur reste portable, automatique et multi-sujets ; il n'y a ni nouveau module d'oreille/d'œil ni nouvelle segmentation. Les GLB sources, les archives V9.1 / V10 / V11 et les baselines archivées (`refs/audit_baseline.json`, `refs/references.json`) sont inchangés.
+
+Contenu : `modeles/` (Paco et Beagle V12 : brut, notice, catalogue, rapports de palette et de réparation) · `audit_avant/`, `audit_apres/` (cartes de défauts de couleur et JSON d'audit, mêmes vues) · `rendus/` (GLB / avant / après : vues d'ensemble, crâne, deux oreilles) · `validation/` (validateur v4, vérifications des fixations d'oreille, références V11) · `placement_oreilles/` (mesure des deux oreilles) · `RAPPORT_V12.md` · `VERDICT.md`.
+Moteur modifié : `20_portable_engine/engine/` (`palette_util.py`, `palette_select.py`, `colour_repair.py`, `ear_placement.py` nouveaux ; `detect.py`, `microdetails.py`, `lcm82.py`, `assemble_v82.py`, `segment.py`, `integrate.py`, `lego_run.py` modifiés) ; sujets `subjects/*.json` (palette automatique) et `subjects/*_fixed_v11.json` (palette V11 figée pour la non-régression).
+Rejeu : `python engine/lego_run.py --glb <glb> --subject subjects/<paco|beagle>.json --out <dossier>` (avec la base Rebrickable de référence, `LEGO_DEPS`). Tests : `python tests/run_tests.py` → 15/15.

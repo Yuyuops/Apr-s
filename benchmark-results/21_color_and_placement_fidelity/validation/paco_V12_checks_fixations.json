@@ -1,0 +1,106 @@
+{
+ "pieces_hors_oreilles_identiques": false,
+ "retirees": {
+  "3710": 94,
+  "3795": 11,
+  "3020": 67,
+  "3023": 213,
+  "3623": 94,
+  "3024": 387,
+  "3021": 32,
+  "3034": 5,
+  "3032": 13,
+  "3666": 35,
+  "3022": 20,
+  "3070b": 25,
+  "3031": 8,
+  "3069b": 8,
+  "2431": 2,
+  "63864": 4,
+  "3068b": 1,
+  "3035": 10,
+  "3958": 8,
+  "3460": 10,
+  "54200": 1,
+  "3008": 2,
+  "52107": 3,
+  "3007": 1
+ },
+ "ajoutees": {
+  "3623": 104,
+  "3021": 30,
+  "3024": 451,
+  "3023": 247,
+  "3460": 7,
+  "3710": 103,
+  "3035": 11,
+  "3031": 9,
+  "3022": 21,
+  "3795": 12,
+  "3020": 59,
+  "3070b": 27,
+  "3069b": 9,
+  "3068b": 1,
+  "2431": 1,
+  "3666": 28,
+  "3032": 6,
+  "3958": 10,
+  "63864": 2,
+  "54200": 1,
+  "3034": 4,
+  "3008": 2,
+  "52107": 3,
+  "3007": 1
+ },
+ "modifications_uniquement_tuiles_de_face": false,
+ "pieces": {
+  "V9": 3098,
+  "V91": 3193
+ },
+ "oreilles_hors_tuiles_identiques": false,
+ "fixation": {
+  "V7_oreille_basse": {
+   "V9": {
+    "pieces_de_contact_avec_la_tete": 8,
+    "chemins_disjoints_depuis_le_bout_libre": 1
+   },
+   "V91": {
+    "pieces_de_contact_avec_la_tete": 8,
+    "chemins_disjoints_depuis_le_bout_libre": 1
+   }
+  },
+  "V7_oreille_haute": {
+   "V9": {
+    "pieces_de_contact_avec_la_tete": 7,
+    "chemins_disjoints_depuis_le_bout_libre": 1
+   },
+   "V91": {
+    "pieces_de_contact_avec_la_tete": 7,
+    "chemins_disjoints_depuis_le_bout_libre": 1
+   }
+  }
+ },
+ "catalogue": {
+  "couples": 89,
+  "statuts": {
+   "vérifiée": 89
+  },
+  "non_verifies": []
+ },
+ "base": {
+  "V9": {
+   "masse_modele_g": 1117.7,
+   "cdg_hauteur_mm": 189.5,
+   "marge_mm": 41.1,
+   "plaques_au_sol": 26,
+   "aire_cm2": 132.2
+  },
+  "V91": {
+   "masse_modele_g": 1117.9,
+   "cdg_hauteur_mm": 189.6,
+   "marge_mm": 41.1,
+   "plaques_au_sol": 35,
+   "aire_cm2": 132.2
+  }
+ }
+}

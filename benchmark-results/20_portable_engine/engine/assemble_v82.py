@@ -21,13 +21,14 @@ sys.path.insert(0, ENGINE_DIR); sys.path.insert(0, ENGINE_DIR)
 import conn
 import autogen as A6
 D = A6.D
-BLACK = 0
+BLACK = 0     # replaced in main() by the darkest colour of the subject palette
 
 def main():
     run7, mdp, run = sys.argv[1], sys.argv[2], sys.argv[3]; os.makedirs(run, exist_ok=True)
     details, variant = sys.argv[4], sys.argv[5]
     P = pickle.load(open(os.path.join(run7, "ears.pkl"), "rb")); MD = pickle.load(open(mdp, "rb"))
     R = np.array(P["R"]); npz2 = P["npz2"]
+    import palette_util; BLACK = palette_util.roles(palette_util.subject_palette(npz2))["dark"]
     d = np.load(npz2); G = d["grid"].astype(int); F = d["fine"]; K = int(d["k"]); NX, NY, NZ = G.shape
     occ = (G >= 0) & (F.reshape(NX, K, NY, K, NZ, K).mean(axis=(1, 3, 5)) >= 0.5); protect = d["protect"].astype(bool)
     parts = []                      # (ear, colour, num, Mw, ow, group, role)

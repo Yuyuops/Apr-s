@@ -40,7 +40,7 @@ ROUND = ["98138", "6141", "85861", "4740", "14769", "18674", "43898", "3960"]   
 FLAT = ["3070b", "3069b", "63864", "2431", "98138", "24246"]                        # tiles for inset details
 SNOT = ["87087"]                                                                   # 1x1 brick, stud on one side
 SPACER = "6141"
-LDC = {"blanc": 15, "noir": 0, "rouge": 4, "jaune": 14}
+LDC = {}          # class -> LDraw code, filled in main() from the colours OBSERVED on the GLB and the palette of the subject (palette_util.class_codes)
 
 def avail(num, colour, _c={}):
     if "db" not in _c: _c["db"] = sqlite3.connect(RB)
@@ -173,6 +173,7 @@ def build_side(b, stack, a_name):
 def main():
     det_json, run, out = sys.argv[1:4]; os.makedirs(out, exist_ok=True)
     D = json.load(open(det_json)); P = pickle.load(open(os.path.join(run, "ears.pkl"), "rb"))
+    import palette_util; LDC.update(palette_util.class_codes(det_json, P["npz2"]))
     g = Grid(P["npz2"]); shape = g.shape
     # cells already used by the V7 ears (carved in assemble): reserved
     R = np.array(P["R"]); reserved = set()
@@ -190,7 +191,7 @@ def main():
     dets = {p["id"]: p for p in D["details"]}
     parts, carve, recolour, report = [], set(), {}, []
     md_solid = set()
-    skin = 14
+    skin = LDC["jaune"]
     def clear_colour(p, radius_mm, colours, depth_mm=20.0):
         """voxel cells of the detail colours within radius_mm of the detail centre in its plane and depth_mm along its
         normal (the voxel surface can lie a cell off the GLB surface) take the skin colour"""

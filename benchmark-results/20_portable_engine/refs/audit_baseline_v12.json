@@ -1,0 +1,16 @@
+{
+ "paco": {
+  "cellules_exposees": 6212,
+  "cellules_parasites": 114,
+  "cellules_sans_correspondance": 182,
+  "dE_moyen": 15.5,
+  "iou_global": 0.867
+ },
+ "beagle": {
+  "cellules_exposees": 11846,
+  "cellules_parasites": 31,
+  "cellules_sans_correspondance": 31,
+  "dE_moyen": 14.7,
+  "iou_global": 0.998
+ }
+}

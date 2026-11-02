@@ -1,15 +1,33 @@
 {
   "name": "beagle",
-  "description": "Beagle, quadrupede : second sujet (V10), aucune oreille ni yeux dedies",
+  "description": "Beagle, quadrupede : second sujet (V10), aucune oreille ni yeux dedies (V12 : palette choisie par le moteur a partir du GLB ; la configuration V11 a palette fixe est subjects/beagle_fixed_v11.json)",
   "source_glb": "benchmark-results/02_glb_gratuit_hunyuan2mv/beagle.glb",
   "height_mm": 400,
   "mirror_x": true,
   "neck": "auto",
-  "palette_exclude": [4,1,14,2,25,19,28,71,72,272,288,320,321,322,26,27,191,226,212,78,85,30,73,10,3,323,378,379,330,43],
   "palette_passes": 4,
-  "ears": {"enabled": false, "note": "le moteur n'a pas de module d'oreille generique"},
+  "ears": {
+    "enabled": false,
+    "note": "le moteur n'a pas de module d'oreille generique"
+  },
   "mouth_module": "C",
-  "reinforce_passes": [{"per_layer": 1, "skip_r1": 0}, {"per_layer": 1, "skip_r1": 1}],
+  "reinforce_passes": [
+    {
+      "per_layer": 1,
+      "skip_r1": 0
+    },
+    {
+      "per_layer": 1,
+      "skip_r1": 1
+    }
+  ],
   "ear_stitch": false,
-  "grid_shape": "auto"
+  "grid_shape": "auto",
+  "palette": {
+    "mode": "auto",
+    "required": [],
+    "forbidden": [],
+    "max_colours": 8
+  },
+  "colour_repair": true
 }

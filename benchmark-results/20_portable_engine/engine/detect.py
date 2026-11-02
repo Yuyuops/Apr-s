@@ -206,7 +206,11 @@ def main():
     for p in patches:
         p["pupille"] = [k_["id"] for k_ in p.get("_kids", [])] or None
         for k_ in ("_kids", "parent", "_faces"): p.pop(k_, None)
-    res = dict(repere=dict(axe_museau=np.round(ax, 3).tolist(), normale_plan_sagittal=np.round(lat, 3).tolist(), plan_offset_mm=round(float(off), 1),
+    cls_rgb = {}
+    for cname in ("blanc", "noir", "rouge"):
+        sel_ = head_face & (cl == cname)
+        if sel_.any(): cls_rgb[cname] = [round(float(x), 1) for x in np.average(C[Fc].mean(1)[sel_], axis=0, weights=area[sel_])]
+    res = dict(repere=dict(couleurs_classes=cls_rgb, axe_museau=np.round(ax, 3).tolist(), normale_plan_sagittal=np.round(lat, 3).tolist(), plan_offset_mm=round(float(off), 1),
                            ecart_symetrie_median_mm=round(float(best[0]), 2), museau_racine_mm=round(snout_root, 1), museau_bout_mm=round(snout_tip, 1)),
                regles=dict(fusion_mm=MERGE_MM, aire_min_mm2=MIN_AREA), details=sorted(patches, key=lambda p: (p["classe"], -p["aire_mm2"])))
     json.dump(res, open(out, "w"), indent=1, ensure_ascii=False)

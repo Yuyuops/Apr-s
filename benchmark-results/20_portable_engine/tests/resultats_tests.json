@@ -43,5 +43,35 @@
   "test": "T7 l'audit detecte une oreille deplacee (80 ldu = 32 mm)",
   "ok": true,
   "detail": "ecart du centre 11.1 -> 35.2 mm"
+ },
+ {
+  "test": "T8 audit paco V12 = baseline V12 (refs/audit_baseline_v12.json)",
+  "ok": true,
+  "detail": "{\"cellules_exposees\": 6212, \"cellules_parasites\": 114, \"cellules_sans_correspondance\": 182, \"dE_moyen\": 15.5, \"iou_global\": 0.867}"
+ },
+ {
+  "test": "T8 audit beagle V12 = baseline V12 (refs/audit_baseline_v12.json)",
+  "ok": true,
+  "detail": "{\"cellules_exposees\": 11846, \"cellules_parasites\": 31, \"cellules_sans_correspondance\": 31, \"dE_moyen\": 14.7, \"iou_global\": 0.998}"
+ },
+ {
+  "test": "T9 paco : moins de cellules parasites et de dE moyen qu'en V11 (baseline historique inchangee)",
+  "ok": true,
+  "detail": "parasites 369 -> 114 ; dE 20.4 -> 15.5"
+ },
+ {
+  "test": "T9 beagle : moins de cellules parasites et de dE moyen qu'en V11 (baseline historique inchangee)",
+  "ok": true,
+  "detail": "parasites 195 -> 31 ; dE 17.1 -> 14.7"
+ },
+ {
+  "test": "T10 beagle V12 : aucune couleur hors palette selectionnee dans le GLB (pas de jaune / rouge de Paco)",
+  "ok": true,
+  "detail": "couleurs ['0', '15', '28', '484', '70']"
+ },
+ {
+  "test": "T10b modeles V12 : 0 collision, 0 piece deconnectee, 0 piece sans appui",
+  "ok": true,
+  "detail": ""
  }
 ]

@@ -16,7 +16,7 @@ res = []
 def check(name, ok, detail=""):
     res.append(dict(test=name, ok=bool(ok), detail=detail)); print(("PASS " if ok else "FAIL ") + name, detail, flush=True)
 SLOW = "--skip-slow" not in sys.argv
-CFG = {s: json.load(open(os.path.join(HERE, "..", "subjects", s + ".json"))) for s in ("paco", "beagle")}
+CFG = {s: json.load(open(os.path.join(HERE, "..", "subjects", s + "_fixed_v11.json"))) for s in ("paco", "beagle")}
 INT = {s: os.path.join(HERE, "..", "refs", "intermediates", s) for s in ("paco", "beagle")}
 GLB = {s: os.path.join(REPO, CFG[s]["source_glb"].replace("benchmark-results/", "")) for s in CFG}
 # T1
@@ -39,7 +39,7 @@ if SLOW:
     for s in ("paco", "beagle"):
         with tempfile.TemporaryDirectory() as td:
             out = os.path.join(td, "g.npz"); c = CFG[s]
-            cmd = [sys.executable, os.path.join(ENG, "fullgrid.py"), GLB[s], out, "--height-mm", str(c["height_mm"]), "--neck", "auto", "--exclude", ",".join(map(str, c["palette_exclude"])), "--palette-passes", str(c["palette_passes"]), "--mirror-x"]
+            cmd = [sys.executable, os.path.join(ENG, "fullgrid.py"), GLB[s], out, "--height-mm", str(c["height_mm"]), "--neck", "auto", "--exclude", ",".join(map(str, c["palette"]["exclude"])), "--palette-passes", str(c["palette_passes"]), "--mirror-x"]
             r = subprocess.run(cmd, capture_output=True, text=True); a = np.load(out) if os.path.exists(out) else None
             ref = np.load(os.path.join(INT[s], s + "_full400.npz")); ok = a is not None and all(np.array_equal(a[k], ref[k]) for k in ("grid", "surface", "fine"))
             check("T3 %s : GLB a couleurs par sommets lu directement = grille archivee" % s, ok, "" if ok else r.stderr[-300:])
@@ -55,7 +55,7 @@ import audit_fidelity as A
 def run_audit(s, ldr, tmp):
     ref = os.path.join(tmp, "ref_full_frame_%s.glb" % s)
     if not os.path.exists(ref): subprocess.run([sys.executable, os.path.join(ENG, "ref_glb_fullframe.py"), GLB[s], os.path.join(INT[s], s + "_full400.npz"), ref], check=True, capture_output=True)
-    return A.audit(ref, ldr, os.path.join(INT[s], s + "_full400.npz"), os.path.join(INT[s], "segmentation.npz"), os.path.join(INT[s], "details.json"), CFG[s]["palette_exclude"])
+    return A.audit(ref, ldr, os.path.join(INT[s], s + "_full400.npz"), os.path.join(INT[s], "segmentation.npz"), os.path.join(INT[s], "details.json"), CFG[s]["palette"]["exclude"])
 LDR = {"paco": os.path.join(REPO, "18_ear_assembly_final/modeles/paco_V91_brut.ldr"), "beagle": os.path.join(REPO, "19_full_second_subject/modeles/beagle_V10_brut.ldr")}
 KEYS = ("cellules_exposees", "cellules_parasites", "cellules_sans_correspondance")
 if SLOW:
@@ -85,5 +85,25 @@ if SLOW:
         mod = os.path.join(td, "paco_ear_moved.ldr"); open(mod, "w").write("\n".join(lines)); r3 = run_audit("paco", mod, td)
         e0 = cache["paco"]["placement"]["oreilles"]["V7_oreille_haute"]["ecart_centre_mm"]; e1 = r3["placement"]["oreilles"]["V7_oreille_haute"]["ecart_centre_mm"]
         check("T7 l'audit detecte une oreille deplacee (80 ldu = 32 mm)", e1 - e0 >= 15, "ecart du centre %.1f -> %.1f mm" % (e0, e1))
+
+# T8-T10 : V12 models (colour and structure corrections), compared with the historical references WITHOUT touching them
+if SLOW:
+    V12 = os.path.join(REPO, "21_color_and_placement_fidelity"); b12 = json.load(open(os.path.join(HERE, "..", "refs", "audit_baseline_v12.json"))); r12 = {}
+    with tempfile.TemporaryDirectory() as td:
+        for s in ("paco", "beagle"):
+            os.environ["LEGO_SHAPE"] = "40,130,40" if s == "paco" else "30,126,58"; I12 = os.path.join(HERE, "..", "refs", "intermediates_v12", s)
+            ref = os.path.join(td, "ref12_%s.glb" % s); subprocess.run([sys.executable, os.path.join(ENG, "ref_glb_fullframe.py"), GLB[s], os.path.join(I12, s + "_full400.npz"), ref], check=True, capture_output=True)
+            excl = json.load(open(os.path.join(V12, "modeles", s + "_V12_palette.json")))["exclude"]
+            r = A.audit(ref, os.path.join(V12, "modeles", s + "_brut.ldr"), os.path.join(I12, s + "_full400.npz"), os.path.join(I12, "segmentation.npz"), os.path.join(I12, "details.json"), excl); r12[s] = r; c = r["couleurs"]
+            now = dict(cellules_exposees=c["cellules_exposees"], cellules_parasites=c["cellules_parasites"], cellules_sans_correspondance=c["cellules_sans_correspondance"], dE_moyen=c["dE_moyen"], iou_global=r["placement"]["iou_global"])
+            check("T8 audit %s V12 = baseline V12 (refs/audit_baseline_v12.json)" % s, all(abs(now[k] - b12[s][k]) <= max(1e-6, 0.01 * abs(b12[s][k])) for k in now), json.dumps(now))
+    for s in ("paco", "beagle"):
+        c0 = base[s]; c1 = r12[s]["couleurs"]
+        check("T9 %s : moins de cellules parasites et de dE moyen qu'en V11 (baseline historique inchangee)" % s, c1["cellules_parasites"] < c0["cellules_parasites"] and c1["dE_moyen"] < c0["dE_moyen"], "parasites %d -> %d ; dE %.1f -> %.1f" % (c0["cellules_parasites"], c1["cellules_parasites"], c0["dE_moyen"], c1["dE_moyen"]))
+    cols = {l.split()[1] for l in open(os.path.join(V12, "modeles", "beagle_brut.ldr")) if l.startswith("1 ")}
+    pal = json.load(open(os.path.join(V12, "modeles", "beagle_V12_palette.json")))["selection"]
+    check("T10 beagle V12 : aucune couleur hors palette selectionnee dans le GLB (pas de jaune / rouge de Paco)", {int(c) for c in cols} <= set(pal) and "14" not in cols and "4" not in cols, "couleurs %s" % sorted(cols))
+    vp = json.load(open(os.path.join(V12, "validation", "paco_V12_validation_v2.json"))); vb = json.load(open(os.path.join(V12, "validation", "beagle_V12_validation_v2.json")))
+    check("T10b modeles V12 : 0 collision, 0 piece deconnectee, 0 piece sans appui", all(v["collisions"]["pairs"] == 0 and v["disconnected_parts"] == 0 and v["unsupported_at_placement"] == 0 for v in (vp, vb)))
 json.dump(res, open(os.path.join(HERE, "resultats_tests.json"), "w"), indent=1, ensure_ascii=False)
 print("%d/%d tests reussis" % (sum(r["ok"] for r in res), len(res))); sys.exit(0 if all(r["ok"] for r in res) else 1)

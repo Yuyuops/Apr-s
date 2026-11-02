@@ -39,7 +39,8 @@ def prepare(out):
     idx = {v: k for k, v in names.items()}
     ears = np.isin(lab, [idx["oreille_haute"], idx["oreille_basse"]])
     # V4.1 removal rule: ear cells, the black skin connected to them, then the yellow core left floating near them
-    black = (G == BLACK); black[:, :hif[1], :] = False
+    import palette_util as PU
+    black = np.isin(G, PU.dark_neutral(PU.subject_palette(FULL))); black[:, :hif[1], :] = False       # dark skin = any dark neutral colour of the subject palette (V12: no hard-wired black)
     lb, _ = ndimage.label(black, structure=np.ones((3, 3, 3)))
     skin = np.isin(lb, np.unique(lb[ears])) & (lb > 0) & ndimage.binary_dilation(ears, iterations=1)
     G2 = G.copy(); G2[skin | ears] = -1

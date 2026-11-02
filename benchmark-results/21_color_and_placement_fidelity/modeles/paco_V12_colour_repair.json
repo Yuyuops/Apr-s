@@ -1,0 +1,670 @@
+{
+ "parametres": {
+  "min_sets": 20,
+  "gain_relatif": 0.3,
+  "gain_par_cellule": 8.0,
+  "seuil_parasite_dE": 40.0
+ },
+ "pieces_recolorees": 123,
+ "par_portee": {
+  "volume": 104,
+  "structure": 19
+ },
+ "par_transition": {
+  "Black -> Yellow": 31,
+  "Red -> Yellow": 12,
+  "Dark_Tan -> Yellow": 11,
+  "Yellow -> Red": 10,
+  "Yellow -> Dark_Tan": 9,
+  "Yellow -> Orange": 8,
+  "Yellow -> Black": 7,
+  "Dark_Tan -> Red": 6,
+  "Dark_Tan -> Orange": 5,
+  "Red -> Dark_Tan": 4,
+  "Black -> Orange": 3,
+  "Red -> White": 3
+ },
+ "cellules_exposees_concernees": 334,
+ "exemples": [
+  {
+   "piece": 1248,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Red",
+   "vers": "Yellow",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 82.0,
+   "dE_somme_apres": 4.6,
+   "cellule_exemple": [
+    1,
+    32,
+    14
+   ]
+  },
+  {
+   "piece": 1249,
+   "ref": "3023",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Dark_Tan",
+   "vers": "Orange",
+   "cellules_exposees": 2,
+   "dE_somme_avant": 96.7,
+   "dE_somme_apres": 32.7,
+   "cellule_exemple": [
+    1,
+    32,
+    15
+   ]
+  },
+  {
+   "piece": 1246,
+   "ref": "3023",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Red",
+   "vers": "Yellow",
+   "cellules_exposees": 2,
+   "dE_somme_avant": 146.6,
+   "dE_somme_apres": 21.2,
+   "cellule_exemple": [
+    1,
+    33,
+    14
+   ]
+  },
+  {
+   "piece": 1245,
+   "ref": "3023",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Dark_Tan",
+   "vers": "Red",
+   "cellules_exposees": 2,
+   "dE_somme_avant": 110.2,
+   "dE_somme_apres": 49.3,
+   "cellule_exemple": [
+    1,
+    34,
+    15
+   ]
+  },
+  {
+   "piece": 1254,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Dark_Tan",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 73.6,
+   "dE_somme_apres": 2.5,
+   "cellule_exemple": [
+    1,
+    36,
+    13
+   ]
+  },
+  {
+   "piece": 1221,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Dark_Tan",
+   "vers": "Yellow",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 67.0,
+   "dE_somme_apres": 10.9,
+   "cellule_exemple": [
+    3,
+    36,
+    15
+   ]
+  },
+  {
+   "piece": 1281,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 73.2,
+   "dE_somme_apres": 18.8,
+   "cellule_exemple": [
+    5,
+    48,
+    13
+   ]
+  },
+  {
+   "piece": 1283,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Dark_Tan",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 61.7,
+   "dE_somme_apres": 15.6,
+   "cellule_exemple": [
+    5,
+    49,
+    13
+   ]
+  },
+  {
+   "piece": 1285,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Dark_Tan",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 73.3,
+   "dE_somme_apres": 3.3,
+   "cellule_exemple": [
+    5,
+    49,
+    15
+   ]
+  },
+  {
+   "piece": 1155,
+   "ref": "3020",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Orange",
+   "cellules_exposees": 2,
+   "dE_somme_avant": 77.4,
+   "dE_somme_apres": 38.3,
+   "cellule_exemple": [
+    6,
+    52,
+    14
+   ]
+  },
+  {
+   "piece": 31,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Black",
+   "vers": "Yellow",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 87.9,
+   "dE_somme_apres": 27.3,
+   "cellule_exemple": [
+    8,
+    1,
+    16
+   ]
+  },
+  {
+   "piece": 198,
+   "ref": "3710",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Red",
+   "vers": "Orange",
+   "cellules_exposees": 4,
+   "dE_somme_avant": 187.7,
+   "dE_somme_apres": 70.0,
+   "cellule_exemple": [
+    10,
+    8,
+    11
+   ]
+  },
+  {
+   "piece": 216,
+   "ref": "3021",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Red",
+   "cellules_exposees": 2,
+   "dE_somme_avant": 123.5,
+   "dE_somme_apres": 40.3,
+   "cellule_exemple": [
+    11,
+    9,
+    15
+   ]
+  },
+  {
+   "piece": 555,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Red",
+   "vers": "Dark_Tan",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 64.3,
+   "dE_somme_apres": 23.5,
+   "cellule_exemple": [
+    11,
+    32,
+    15
+   ]
+  },
+  {
+   "piece": 1461,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 76.3,
+   "dE_somme_apres": 14.7,
+   "cellule_exemple": [
+    11,
+    66,
+    15
+   ]
+  },
+  {
+   "piece": 1474,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Dark_Tan",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 79.9,
+   "dE_somme_apres": 20.7,
+   "cellule_exemple": [
+    11,
+    67,
+    14
+   ]
+  },
+  {
+   "piece": 2616,
+   "ref": "3069b",
+   "portee": "structure",
+   "sous_ensemble": "V7_oreille_basse",
+   "de": "Black",
+   "vers": "Orange",
+   "cellules_exposees": 9,
+   "dE_somme_avant": 618.2,
+   "dE_somme_apres": 417.6,
+   "cellule_exemple": [
+    11,
+    87,
+    12
+   ]
+  },
+  {
+   "piece": 650,
+   "ref": "3710",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 79.7,
+   "dE_somme_apres": 14.4,
+   "cellule_exemple": [
+    12,
+    37,
+    12
+   ]
+  },
+  {
+   "piece": 726,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Red",
+   "vers": "Yellow",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 90.3,
+   "dE_somme_apres": 10.9,
+   "cellule_exemple": [
+    12,
+    38,
+    11
+   ]
+  },
+  {
+   "piece": 680,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 77.9,
+   "dE_somme_apres": 15.5,
+   "cellule_exemple": [
+    12,
+    38,
+    12
+   ]
+  },
+  {
+   "piece": 3018,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Red",
+   "vers": "Yellow",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 92.4,
+   "dE_somme_apres": 13.4,
+   "cellule_exemple": [
+    12,
+    39,
+    11
+   ]
+  },
+  {
+   "piece": 821,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 85.9,
+   "dE_somme_apres": 29.5,
+   "cellule_exemple": [
+    12,
+    50,
+    14
+   ]
+  },
+  {
+   "piece": 1491,
+   "ref": "3020",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Orange",
+   "cellules_exposees": 2,
+   "dE_somme_avant": 118.3,
+   "dE_somme_apres": 60.0,
+   "cellule_exemple": [
+    12,
+    68,
+    14
+   ]
+  },
+  {
+   "piece": 2622,
+   "ref": "3070b",
+   "portee": "structure",
+   "sous_ensemble": "V7_oreille_basse",
+   "de": "Black",
+   "vers": "Yellow",
+   "cellules_exposees": 3,
+   "dE_somme_avant": 315.7,
+   "dE_somme_apres": 25.2,
+   "cellule_exemple": [
+    12,
+    89,
+    13
+   ]
+  },
+  {
+   "piece": 203,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Dark_Tan",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 63.2,
+   "dE_somme_apres": 10.8,
+   "cellule_exemple": [
+    13,
+    8,
+    12
+   ]
+  },
+  {
+   "piece": 223,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 76.5,
+   "dE_somme_apres": 15.1,
+   "cellule_exemple": [
+    13,
+    9,
+    14
+   ]
+  },
+  {
+   "piece": 912,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Orange",
+   "vers": "Dark_Tan",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 48.4,
+   "dE_somme_apres": 7.6,
+   "cellule_exemple": [
+    13,
+    54,
+    14
+   ]
+  },
+  {
+   "piece": 945,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 78.0,
+   "dE_somme_apres": 2.7,
+   "cellule_exemple": [
+    13,
+    56,
+    11
+   ]
+  },
+  {
+   "piece": 957,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Orange",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 44.2,
+   "dE_somme_apres": 1.7,
+   "cellule_exemple": [
+    13,
+    56,
+    18
+   ]
+  },
+  {
+   "piece": 1420,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Red",
+   "vers": "Yellow",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 91.7,
+   "dE_somme_apres": 19.2,
+   "cellule_exemple": [
+    13,
+    64,
+    12
+   ]
+  },
+  {
+   "piece": 1437,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Red",
+   "vers": "Yellow",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 96.7,
+   "dE_somme_apres": 22.3,
+   "cellule_exemple": [
+    13,
+    65,
+    12
+   ]
+  },
+  {
+   "piece": 1511,
+   "ref": "3069b",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Dark_Tan",
+   "vers": "Yellow",
+   "cellules_exposees": 2,
+   "dE_somme_avant": 101.3,
+   "dE_somme_apres": 48.1,
+   "cellule_exemple": [
+    13,
+    69,
+    15
+   ]
+  },
+  {
+   "piece": 1662,
+   "ref": "3035",
+   "portee": "structure",
+   "sous_ensemble": null,
+   "de": "Black",
+   "vers": "Yellow",
+   "cellules_exposees": 18,
+   "dE_somme_avant": 1969.1,
+   "dE_somme_apres": 151.5,
+   "cellule_exemple": [
+    13,
+    83,
+    14
+   ]
+  },
+  {
+   "piece": 2592,
+   "ref": "52107",
+   "portee": "structure",
+   "sous_ensemble": "V7_oreille_basse",
+   "de": "Black",
+   "vers": "Yellow",
+   "cellules_exposees": 4,
+   "dE_somme_avant": 445.0,
+   "dE_somme_apres": 29.3,
+   "cellule_exemple": [
+    13,
+    84,
+    13
+   ]
+  },
+  {
+   "piece": 2594,
+   "ref": "3035",
+   "portee": "structure",
+   "sous_ensemble": "V7_oreille_basse",
+   "de": "Black",
+   "vers": "Yellow",
+   "cellules_exposees": 15,
+   "dE_somme_avant": 1582.4,
+   "dE_somme_apres": 169.4,
+   "cellule_exemple": [
+    13,
+    87,
+    14
+   ]
+  },
+  {
+   "piece": 2604,
+   "ref": "3666",
+   "portee": "structure",
+   "sous_ensemble": "V7_oreille_basse",
+   "de": "Black",
+   "vers": "Yellow",
+   "cellules_exposees": 8,
+   "dE_somme_avant": 853.4,
+   "dE_somme_apres": 87.5,
+   "cellule_exemple": [
+    13,
+    88,
+    14
+   ]
+  },
+  {
+   "piece": 1978,
+   "ref": "3024",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Black",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 114.9,
+   "dE_somme_apres": 14.1,
+   "cellule_exemple": [
+    13,
+    94,
+    13
+   ]
+  },
+  {
+   "piece": 1946,
+   "ref": "3623",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Dark_Tan",
+   "cellules_exposees": 3,
+   "dE_somme_avant": 219.3,
+   "dE_somme_apres": 133.5,
+   "cellule_exemple": [
+    13,
+    95,
+    13
+   ]
+  },
+  {
+   "piece": 1993,
+   "ref": "3023",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Dark_Tan",
+   "cellules_exposees": 2,
+   "dE_somme_avant": 145.4,
+   "dE_somme_apres": 95.3,
+   "cellule_exemple": [
+    13,
+    96,
+    14
+   ]
+  },
+  {
+   "piece": 541,
+   "ref": "3023",
+   "portee": "volume",
+   "sous_ensemble": null,
+   "de": "Yellow",
+   "vers": "Red",
+   "cellules_exposees": 1,
+   "dE_somme_avant": 80.1,
+   "dE_somme_apres": 5.9,
+   "cellule_exemple": [
+    14,
+    32,
+    11
+   ]
+  }
+ ]
+}

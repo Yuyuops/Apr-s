@@ -25,7 +25,7 @@ import numpy as np
 from scipy import ndimage
 from sklearn.cluster import KMeans
 
-COL = {0: "noir", 14: "jaune", 4: "rouge", 15: "blanc"}
+COL = {}          # LDraw code -> name, from LDConfig (display only)
 
 def pca_ratio(cells):
     """(3rd/1st singular value, 3rd/2nd, thickness along the 3rd axis in mm: 5-95 % span)"""
@@ -38,18 +38,20 @@ def main():
     npz, out = sys.argv[1], sys.argv[2]; out_npz = sys.argv[3] if len(sys.argv) > 3 else None
     d = np.load(npz); G = d["grid"].astype(int); F = d["fine"]; K = int(d["k"]); neck = int(d["neck"]); NX, NY, NZ = G.shape
     fr = F.reshape(NX, K, NY, K, NZ, K).mean(axis=(1, 3, 5)); occ = (G >= 0) & (fr >= 0.5)
+    import palette_util; ROLE = palette_util.roles(palette_util.subject_palette(npz))          # darkest / lightest / reddest colour of THIS subject (V12 : no fixed colour codes)
+    COL.update({c: n for c, (n, _) in palette_util.codes().items()})
     lab = np.zeros(G.shape, np.int16); names = {}
     def put(mask, name):
         k = len(names) + 1; names[k] = name; lab[mask & (lab == 0)] = k; return k
     head = occ.copy(); head[:, :neck, :] = False; body = occ & ~head
     # ---- head details
     hz = np.argwhere(head)[:, 2]; z_mid = (hz.min() + hz.max()) / 2.0
-    black_all = occ & (G == 0)
+    black_all = occ & (G == ROLE["dark"])
     lb, nb = ndimage.label(black_all, structure=np.ones((3, 3, 3)))
     comps = [(k, np.argwhere(lb == k)) for k in range(1, nb + 1)]
     # ears: black components that touch the head on its back half (they may hang below the neck)
     back = [c for k, c in comps if len(c) >= 30 and (c[:, 1] >= neck).any() and c[c[:, 1] >= neck][:, 2].mean() < z_mid]
-    black = head & (G == 0)
+    black = head & (G == ROLE["dark"])
     front = [c[c[:, 1] >= neck] for k, c in comps if (c[:, 1] >= neck).sum() >= 4 and c[c[:, 1] >= neck][:, 2].mean() >= z_mid]
     ears = np.concatenate(back) if back else np.zeros((0, 3), int)
     zones = []
@@ -59,7 +61,7 @@ def main():
         for rank, j in enumerate(order):
             m = np.zeros(G.shape, bool); m[tuple(ears[km.labels_ == j].T)] = True
             put(m, ["oreille_haute", "oreille_basse"][rank])
-    white = head & (G == 15)
+    white = head & (G == ROLE["light"])
     lw, nw = ndimage.label(white, structure=np.ones((3, 3, 3)))
     eyes = np.zeros(G.shape, bool)
     for k in range(1, nw + 1):
@@ -71,7 +73,7 @@ def main():
         m = np.zeros(G.shape, bool); m[tuple(nose.T)] = True; put(m & (lab == 0), "truffe")
     z_eye = np.argwhere(eyes)[:, 2].mean() if eyes.any() else z_mid
     snout = head.copy(); snout[:, :, :int(np.ceil(z_eye)) + 1] = False
-    put(head & (G == 4), "bouche")
+    put(head & (G == (ROLE["red"] if ROLE["red"] is not None else -2)), "bouche")
     put(snout & (lab == 0), "museau")
     put(head & (lab == 0), "crane")
     # ---- body: per-layer components

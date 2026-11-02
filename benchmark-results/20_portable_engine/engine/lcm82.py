@@ -36,7 +36,7 @@ import conn, partlib as PL
 import sqlite3
 
 MIN_SETS = 20
-LDC = {"blanc": 15, "noir": 0, "rouge": 4, "jaune": 14}
+LDC = {}          # class -> LDraw code, filled in run() from the colours observed on the GLB and the palette of the subject (palette_util.class_codes)
 LINING_LAYERS = 2          # plates of lining behind a down-facing surface (6.4 mm: visible edge)
 MARGIN_MM = 4.0            # footprint margin around a patch
 CEIL_MAX = 5               # layers: an empty cell with a solid cell at most this far above belongs to a cavity
@@ -74,6 +74,7 @@ def to_ldu(p): p = np.asarray(p, float); return np.array([p[0] / 0.4, -p[1] / 0.
 def run(npz, details, out, variant):
     d = np.load(npz); G = d["grid"].astype(int); F = d["fine"]; K = int(d["k"]); NX, NY, NZ = G.shape
     occ = (G >= 0) & (F.reshape(NX, K, NY, K, NZ, K).mean(axis=(1, 3, 5)) >= 0.5)
+    import palette_util; LDC.update(palette_util.class_codes(details, npz)); LIGHT = LDC["blanc"]
     D = json.load(open(details)); patches = [p for p in D["details"] if p["classe"] == "bouche"]
     cell_mm = np.array([8.0, 3.2, 8.0])
     def cen_mm(c): return (np.array(c) + 0.5) * cell_mm * np.array([1, 1, -1])
@@ -143,7 +144,7 @@ def run(npz, details, out, variant):
         from scipy import ndimage
         FLOOR_MAX = 6
         down = [p for p in patches if p["normale"][1] < -0.5]; up = [p for p in patches if p["normale"][1] > 0.5]
-        line_col = LDC[max(down, key=lambda q: q["aire_mm2"])["couleur"]] if down else 0                    # dominant colour of the ceiling patches
+        line_col = LDC[max(down, key=lambda q: q["aire_mm2"])["couleur"]] if down else LDC["noir"]                    # dominant colour of the ceiling patches
         # 1. pocket cells: empty, OPEN TO THE OUTSIDE (flood fill from the grid border; voids left by the ears are not cavities),
         #    with a ceiling within CEIL_MAX layers above and a floor within FLOOR_MAX below (nothing in between)
         lab_e, ne = ndimage.label(~occ)
@@ -198,7 +199,7 @@ def run(npz, details, out, variant):
             if len(ys) < MIN_OPEN:
                 for k in range(MIN_OPEN - len(ys)):
                     c3 = (x, max(ys) + 1 + k, z)
-                    if c3[1] < NY and occ[c3] and G[c3] != 15: carve.add(c3); added += 1
+                    if c3[1] < NY and occ[c3] and G[c3] != LIGHT: carve.add(c3); added += 1
         if variant == "B":
             # 4. lip line: ceiling cells (LINING_LAYERS plates) of the pocket columns that touch the open side (a neighbour column that is not a pocket column and is
             #    empty at the pocket mid-height: the opening seen from the side)
@@ -230,7 +231,7 @@ def run(npz, details, out, variant):
                     if q in pk: continue
                     for y in ys:
                         c = (q[0], y, q[1])
-                        if 0 <= q[0] < NX and 0 <= q[1] < NZ and occ[c] and c not in carve and c not in recolour and G[c] != 15: recolour[c] = line_col; walls += 1
+                        if 0 <= q[0] < NX and 0 <= q[1] < NZ and occ[c] and c not in carve and c not in recolour and G[c] != LIGHT: recolour[c] = line_col; walls += 1
 
         else:
             # 4. colour transfer from the GLB onto the exposed cavity surface cells
@@ -250,14 +251,14 @@ def run(npz, details, out, variant):
             for (x, y, z) in cavset:
                 for dx, dy, dz in ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)):
                     sc = (x + dx, y + dy, z + dz)
-                    if not (0 <= sc[0] < NX and 0 <= sc[1] < NY and 0 <= sc[2] < NZ) or not occ[sc] or sc in carve or G[sc] == 15: continue
+                    if not (0 <= sc[0] < NX and 0 <= sc[1] < NY and 0 <= sc[2] < NZ) or not occ[sc] or sc in carve or G[sc] == LIGHT: continue
                     n = np.array([-dx, -dy, dz], float)                      # outward normal (cavity side) of the solid cell face, mm frame (z negated)
                     ctr = cen_mm(sc) + n * np.array([4, 1.6, 4]); t1 = np.cross(n, [0, 1, 0]) if abs(n[1]) < .5 else np.array([1.0, 0, 0]); t2 = np.cross(n, t1); ext = np.array([4, 1.6, 4])
                     P = np.array([ctr + a_ * t1 * ext + b_ * t2 * ext for a_ in (-.6, 0, .6) for b_ in (-.6, 0, .6)])
                     dd, ii = tree.query(P); ok = dd <= 6.0
                     faces.setdefault(sc, []).append((n, [klass(Cg[i]) for i, o in zip(ii, ok) if o]))
             transfer = {"sombre": 0, "rouge": 0, "peau": 0, "clair": 0}; recol = 0
-            COL = {"sombre": 0, "rouge": 4, "peau": 14}
+            COL = {"sombre": LDC["noir"], "rouge": LDC["rouge"], "peau": LDC["jaune"]}
             for sc, lst in faces.items():
                 cl = [k for n_, ks in lst for k in ks]
                 if not cl: continue
@@ -269,7 +270,7 @@ def run(npz, details, out, variant):
                 step = -1 if any(n_[1] > .5 for n_, ks in lst) else 1                             # floor: the plates under the face; ceiling: the plates above
                 for k in range(layers):
                     c3 = (sc[0], sc[1] + (step * k if vertical else 0), sc[2])
-                    if 0 <= c3[1] < NY and occ[c3] and c3 not in carve and G[c3] != 15 and G[c3] != COL[best]: recolour[c3] = COL[best]; recol += 1
+                    if 0 <= c3[1] < NY and occ[c3] and c3 not in carve and G[c3] != LIGHT and G[c3] != COL[best]: recolour[c3] = COL[best]; recol += 1
             tongue = line = walls = 0; sides = {}
             report.append(dict(id="T3C", traitement="transfert des couleurs du GLB sur les cellules de cavite exposees", cellules_cavite_exposees=len(faces), cellules_sombres=transfer["sombre"], cellules_rouges=transfer["rouge"], cellules_peau=transfer["peau"], cellules_claires=transfer["clair"], cellules_recolorees=recol, cavite=cavity_info))
         report.append(dict(id="T3", traitement=("cavite ouverte : ouverture minimale %d plaques (%.1f mm), ligne de levre sur les bords ouverts, langue sur le plancher" if variant == "B" else "cavite ouverte : ouverture minimale %d plaques (%.1f mm) ; couleurs transferees du GLB (voir T3C)") % (MIN_OPEN, MIN_OPEN * 3.2),

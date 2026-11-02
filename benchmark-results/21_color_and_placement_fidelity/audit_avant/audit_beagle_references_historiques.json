@@ -1,0 +1,441 @@
+{
+ "modele": "beagle_V10_brut.ldr",
+ "pieces": 11111,
+ "palette_autorisee": [
+  "Black",
+  "Dark_Pink",
+  "Light_Grey",
+  "White",
+  "Bright_Pink",
+  "Reddish_Brown",
+  "Medium_Nougat",
+  "Dark_Brown",
+  "Yellowish_Green",
+  "Dark_Orange"
+ ],
+ "palette_moteur": [
+  "Black",
+  "White",
+  "Reddish_Brown",
+  "Medium_Nougat",
+  "Dark_Brown",
+  "Dark_Orange"
+ ],
+ "couleurs": {
+  "cellules_exposees": 11846,
+  "cellules_avec_surface_glb": 11846,
+  "dE_moyen": 17.1,
+  "dE_median": 15.6,
+  "plancher_palette_moteur_moyen": 14.3,
+  "plancher_catalogue_moyen": 12.4,
+  "exces_moyen": 2.8,
+  "cellules_parasites": 195,
+  "part_parasites": 0.0165,
+  "cellules_sans_correspondance": 0,
+  "par_zone": {
+   "bras_mains": {
+    "cellules": 280,
+    "dE_moyen": 18.1,
+    "parasites": 8,
+    "exces_moyen": 3.5
+   },
+   "crane": {
+    "cellules": 2061,
+    "dE_moyen": 16.6,
+    "parasites": 51,
+    "exces_moyen": 4.5
+   },
+   "hors zone": {
+    "cellules": 32,
+    "dE_moyen": 25.7,
+    "parasites": 5,
+    "exces_moyen": 13.9
+   },
+   "jambes": {
+    "cellules": 1207,
+    "dE_moyen": 18.0,
+    "parasites": 3,
+    "exces_moyen": 1.1
+   },
+   "museau": {
+    "cellules": 458,
+    "dE_moyen": 23.8,
+    "parasites": 30,
+    "exces_moyen": 7.2
+   },
+   "pieds": {
+    "cellules": 1551,
+    "dE_moyen": 19.7,
+    "parasites": 3,
+    "exces_moyen": 1.1
+   },
+   "torse": {
+    "cellules": 6056,
+    "dE_moyen": 15.6,
+    "parasites": 78,
+    "exces_moyen": 2.4
+   },
+   "truffe": {
+    "cellules": 9,
+    "dE_moyen": 18.9,
+    "parasites": 1,
+    "exces_moyen": 8.1
+   },
+   "yeux": {
+    "cellules": 192,
+    "dE_moyen": 23.0,
+    "parasites": 16,
+    "exces_moyen": 7.0
+   }
+  },
+  "parasites_par_module": {
+   "volume (palette brickify, reconstruction brickify_plus, renforts)": 183,
+   "micro-details / module de bouche (V8 - V8.2)": 12
+  },
+  "confusions_attendu_construit": [
+   {
+    "attendu": "Medium_Nougat",
+    "construit": "White",
+    "cellules": 419
+   },
+   {
+    "attendu": "Medium_Nougat",
+    "construit": "Dark_Orange",
+    "cellules": 296
+   },
+   {
+    "attendu": "White",
+    "construit": "Medium_Nougat",
+    "cellules": 242
+   },
+   {
+    "attendu": "Dark_Orange",
+    "construit": "Medium_Nougat",
+    "cellules": 232
+   },
+   {
+    "attendu": "Reddish_Brown",
+    "construit": "Dark_Brown",
+    "cellules": 133
+   },
+   {
+    "attendu": "Dark_Brown",
+    "construit": "Reddish_Brown",
+    "cellules": 111
+   },
+   {
+    "attendu": "Dark_Orange",
+    "construit": "Reddish_Brown",
+    "cellules": 100
+   },
+   {
+    "attendu": "Reddish_Brown",
+    "construit": "Dark_Orange",
+    "cellules": 85
+   },
+   {
+    "attendu": "Dark_Brown",
+    "construit": "Black",
+    "cellules": 79
+   },
+   {
+    "attendu": "Medium_Nougat",
+    "construit": "Reddish_Brown",
+    "cellules": 52
+   },
+   {
+    "attendu": "Medium_Nougat",
+    "construit": "Black",
+    "cellules": 47
+   },
+   {
+    "attendu": "Reddish_Brown",
+    "construit": "Medium_Nougat",
+    "cellules": 46
+   }
+  ],
+  "parasites_par_couleur_construite": {
+   "White": 80,
+   "Yellow": 51,
+   "Black": 26,
+   "Dark_Orange": 17,
+   "Red": 15,
+   "Medium_Nougat": 4,
+   "Reddish_Brown": 2
+  },
+  "parasites_par_type_de_piece": {
+   "3024": 78,
+   "3023": 60,
+   "3710": 16,
+   "54200": 11,
+   "3623": 10,
+   "3022": 5,
+   "3069b": 4,
+   "3666": 3
+  }
+ },
+ "placement": {
+  "iou_global": 0.998,
+  "iou_par_zone": {
+   "yeux": {
+    "iou": 0.975,
+    "cellules_glb": 198,
+    "cellules_lego": 193
+   },
+   "truffe": {
+    "iou": 0.826,
+    "cellules_glb": 23,
+    "cellules_lego": 19
+   },
+   "museau": {
+    "iou": 0.985,
+    "cellules_glb": 1558,
+    "cellules_lego": 1534
+   },
+   "crane": {
+    "iou": 0.999,
+    "cellules_glb": 10523,
+    "cellules_lego": 10515
+   },
+   "pieds": {
+    "iou": 1.0,
+    "cellules_glb": 3336,
+    "cellules_lego": 3336
+   },
+   "jambes": {
+    "iou": 1.0,
+    "cellules_glb": 3060,
+    "cellules_lego": 3060
+   },
+   "bras_mains": {
+    "iou": 1.0,
+    "cellules_glb": 542,
+    "cellules_lego": 542
+   },
+   "torse": {
+    "iou": 1.0,
+    "cellules_glb": 33353,
+    "cellules_lego": 33351
+   }
+  },
+  "oreilles": "aucun module d'oreille : les oreilles sont dans le volume (voir iou_par_zone)",
+  "taches_glb": [
+   {
+    "id": "bouche_37",
+    "classe": "bouche",
+    "couleur": "rouge",
+    "diametre_mm": 142.0,
+    "piece_de_detail_la_plus_proche_mm": 62.4,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 54.3,
+    "construit": false
+   },
+   {
+    "id": "bouche_12",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 77.1,
+    "piece_de_detail_la_plus_proche_mm": 37.5,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 24.5,
+    "construit": false
+   },
+   {
+    "id": "bouche_21",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 26.1,
+    "piece_de_detail_la_plus_proche_mm": 52.9,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 4.6,
+    "construit": false
+   },
+   {
+    "id": "bouche_16",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 25.1,
+    "piece_de_detail_la_plus_proche_mm": 15.5,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 1.8,
+    "construit": false
+   },
+   {
+    "id": "bouche_41",
+    "classe": "bouche",
+    "couleur": "rouge",
+    "diametre_mm": 21.5,
+    "piece_de_detail_la_plus_proche_mm": 51.8,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 1.4,
+    "construit": false
+   },
+   {
+    "id": "bouche_45",
+    "classe": "bouche",
+    "couleur": "rouge",
+    "diametre_mm": 12.8,
+    "piece_de_detail_la_plus_proche_mm": 5.4,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 6.4,
+    "construit": false
+   },
+   {
+    "id": "bouche_28",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 12.5,
+    "piece_de_detail_la_plus_proche_mm": 6.8,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 7.7,
+    "construit": false
+   },
+   {
+    "id": "bouche_30",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 11.3,
+    "piece_de_detail_la_plus_proche_mm": 19.0,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 6.0,
+    "construit": false
+   },
+   {
+    "id": "bouche_39",
+    "classe": "bouche",
+    "couleur": "rouge",
+    "diametre_mm": 11.0,
+    "piece_de_detail_la_plus_proche_mm": 6.3,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 7.2,
+    "construit": false
+   },
+   {
+    "id": "bouche_46",
+    "classe": "bouche",
+    "couleur": "rouge",
+    "diametre_mm": 10.8,
+    "piece_de_detail_la_plus_proche_mm": 23.3,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 102.1,
+    "construit": false
+   },
+   {
+    "id": "bouche_14",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 10.4,
+    "piece_de_detail_la_plus_proche_mm": 2.2,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 2.6,
+    "construit": false
+   },
+   {
+    "id": "bouche_47",
+    "classe": "bouche",
+    "couleur": "rouge",
+    "diametre_mm": 8.2,
+    "piece_de_detail_la_plus_proche_mm": 7.1,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 7.1,
+    "construit": false
+   },
+   {
+    "id": "bouche_11",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 8.1,
+    "piece_de_detail_la_plus_proche_mm": 3.2,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 3.3,
+    "construit": false
+   },
+   {
+    "id": "bouche_10",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 8.1,
+    "piece_de_detail_la_plus_proche_mm": 8.6,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 9.0,
+    "construit": false
+   },
+   {
+    "id": "bouche_43",
+    "classe": "bouche",
+    "couleur": "rouge",
+    "diametre_mm": 7.7,
+    "piece_de_detail_la_plus_proche_mm": 64.4,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 2.8,
+    "construit": false
+   },
+   {
+    "id": "bouche_13",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 7.2,
+    "piece_de_detail_la_plus_proche_mm": 59.2,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 19.0,
+    "construit": false
+   },
+   {
+    "id": "bouche_29",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 6.7,
+    "piece_de_detail_la_plus_proche_mm": 1.5,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 1.4,
+    "construit": false
+   },
+   {
+    "id": "bouche_48",
+    "classe": "bouche",
+    "couleur": "rouge",
+    "diametre_mm": 6.3,
+    "piece_de_detail_la_plus_proche_mm": 54.7,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 6.2,
+    "construit": false
+   },
+   {
+    "id": "bouche_32",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 6.1,
+    "piece_de_detail_la_plus_proche_mm": 3.0,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 1.7,
+    "construit": false
+   },
+   {
+    "id": "bouche_31",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 6.0,
+    "piece_de_detail_la_plus_proche_mm": 7.5,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 7.8,
+    "construit": false
+   },
+   {
+    "id": "truffe_52",
+    "classe": "truffe",
+    "couleur": "noir",
+    "diametre_mm": 39.7,
+    "piece_de_detail_la_plus_proche_mm": 4.4,
+    "type_piece": "3960",
+    "cellule_exposee_de_meme_couleur_mm": 8.7,
+    "construit": true
+   }
+  ],
+  "details_attendus_non_construits": []
+ },
+ "pieces_structurelles_visibles": {
+  "cellules": 0,
+  "par_type": {},
+  "exemples": []
+ }
+}
