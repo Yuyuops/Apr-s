@@ -24,6 +24,10 @@ jobs:
         run: git lfs pull --include="benchmark-results/maps-engine-v02/fixtures/ecosse_carte.png" --exclude=""
       - name: Install pinned V11 Python LDraw Rebrickable Node dependencies
         run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Install Chromium for source SVG rasterization
+        run: |
+          cd benchmark-results/20_portable_engine
+          npx playwright install chromium
       - name: Reproduce five V0.3 maps without heavy renders
         run: bash benchmark-results/maps-engine-v03/run_all.sh --generate
       - name: Validate every map with independent V11 validator
