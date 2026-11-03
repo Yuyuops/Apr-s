@@ -1,0 +1,64 @@
+name: LEGO Maps V0.3 - five maps digital regression
+
+on:
+  push:
+    branches: [research/lego-maps-v03-chatgpt-20261103]
+    paths:
+      - '.github/workflows/lego-maps-v03-five-cases.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  five-maps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout source without LFS bulk download
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Fetch Scotland PNG from Git LFS
+        run: git lfs pull --include="benchmark-results/maps-engine-v02/fixtures/ecosse_carte.png" --exclude=""
+      - name: Install pinned V11 Python LDraw Rebrickable Node dependencies
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Reproduce five V0.3 maps without heavy renders
+        run: bash benchmark-results/maps-engine-v03/run_all.sh --generate
+      - name: Validate every map with independent V11 validator
+        run: |
+          cd benchmark-results/maps-engine-v03
+          ../20_portable_engine/.venv/bin/python - <<'PY'
+          import json
+          from pathlib import Path
+          from sys import path
+          path.insert(0, 'engine')
+          from maps_engine import validate as V
+          cases = ['ecosse/A_32','ecosse/A_48','ile_temoin/A_32','test_3_zones/A_32','archipel/A_32']
+          results = {}
+          for case in cases:
+              folder = Path('results') / case
+              (folder/'validation').mkdir(exist_ok=True)
+              v = V.engine1(str(folder/'map.ldr'), str(folder/'validation'), 'map')
+              vals = {name: int(value) for name, value in (
+                  ('collisions',v['collisions']['pairs']),
+                  ('disconnected_parts',v['disconnected_parts']),
+                  ('islands',v['islands']),
+                  ('unsupported_at_placement',v['unsupported_at_placement']),
+              )}
+              results[case] = vals
+              assert all(value == 0 for value in vals.values()), (case, vals)
+          Path('results/INDEPENDENT_VALIDATION_V03.json').write_text(json.dumps(results,indent=2))
+          print(json.dumps(results,indent=2))
+          PY
+      - name: Archive reports and digital models
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lego-maps-v03-five-cases
+          path: |
+            benchmark-results/maps-engine-v03/results/**/*.json
+            benchmark-results/maps-engine-v03/results/**/*.ldr
+            benchmark-results/maps-engine-v03/results/**/*.csv
+          if-no-files-found: warn
