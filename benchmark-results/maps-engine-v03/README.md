@@ -38,3 +38,7 @@ Le runner utilise les dependances LDraw/Rebrickable installees pour V11. Les blo
 La mise en production ou l'accrochage mural sont interdits sans essai physique. Aucun prix ni stock n'est invente. La verite commerciale reste exclusivement Briquestore, non verifiee ici.
 
 Le prochain verdict doit etre base sur les cinq rejeux, avec zero collision et deconnexion, control des portes critiques, difference de surface, nomenclature, notice et un budget pieces de +15 % maximum.
+
+## V0.3 essais d'extension (sans compromis esthétique)
+
+Le premier rejeu reel avec 3 passes a corrige l'Ecosse 32x32 (17 vers 13 critiques) et 48x48 (19 vers 13). Un essai conservateur local sur les memes `parts.json` a montre une amelioration additionnelle en autorisant 12 passes. Le CLI passe a 12 passes **sans changer les seuils**, avec la meme condition stricte d'amelioration lexicographique. Les nombres definitifs seront ceux de la CI avec catalogue valide et controle LDraw.
