@@ -15,11 +15,14 @@ from maps_engine.common import PLATES
 from maps_engine.support_opt import improve
 
 LAST = {}
+BEFORE_PARTS = []
 ORIGINAL_BUILD = builder.build
 
 
 def support_build(*args, **kwargs):
     result = ORIGINAL_BUILD(*args, **kwargs)
+    BEFORE_PARTS.clear()
+    BEFORE_PARTS.extend(dict(p) for p in result["parts"])
     updated, audit = improve(
         result["parts"], PLATES, palette.available, max_passes=3,
         max_cells=32, max_candidates_per_group=96, max_growth=0.15,
@@ -55,6 +58,9 @@ def run(args):
         _, model, result = v02.full(
             args.input, str(out), render=not args.no_render, **kw
         )
+    (out / "parts_before_v03.json").write_text(
+        json.dumps(BEFORE_PARTS, indent=1, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     (out / "support_report_v03.json").write_text(
         json.dumps(LAST, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
