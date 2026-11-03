@@ -25,15 +25,17 @@ CASES = {
 
 
 def cells_by_height(parts):
-    """Exact occupied cells with type and colour, including stacked plates."""
-    cells = {}
+    """Multiset of part footprints + colours, stable even for wedge bounding boxes.
+
+    A cut-corner wedge occupies fewer cells than its 2x2 bounding box. We
+    deliberately compare identical multisets before/after, not infer
+    geometric collision from rectangular wedges. LDraw validator owns that.
+    """
+    cells = Counter()
     for p in parts:
         for x in range(p["x"], p["x"] + p["w"]):
             for z in range(p["z"], p["z"] + p["d"]):
-                key = (p["zbot"], p["h"], x, z)
-                if key in cells:
-                    raise ValueError("Overlapping parts at " + repr(key))
-                cells[key] = (p["colour"], p["kind"])
+                cells[(p["zbot"], p["h"], x, z, p["colour"], p["kind"])] += 1
     return cells
 
 
