@@ -1,0 +1,509 @@
+{
+  "base_commit": "f672fc2a391296e75505eb2dab862d5179f6d456",
+  "method": "same zbot / h footprint support graph as V02 frag.py",
+  "cases": [
+    {
+      "subject": "Ecosse",
+      "size": "32x32",
+      "parts": 301,
+      "weak_carriers": 44,
+      "critical_carriers": 17,
+      "critical_by_zone": {
+        "foret": 8,
+        "village": 4,
+        "colline": 4,
+        "riviere": 1
+      },
+      "critical_parts": [
+        {
+          "id": 62,
+          "region": "foret",
+          "layer": "L0",
+          "x": 31,
+          "z": 1,
+          "w": 2,
+          "d": 1,
+          "support_studs": 2,
+          "exclusive_children": [
+            167
+          ]
+        },
+        {
+          "id": 63,
+          "region": "foret",
+          "layer": "L0",
+          "x": 31,
+          "z": 8,
+          "w": 2,
+          "d": 1,
+          "support_studs": 2,
+          "exclusive_children": [
+            179
+          ]
+        },
+        {
+          "id": 68,
+          "region": "riviere",
+          "layer": "L0",
+          "x": 31,
+          "z": 14,
+          "w": 2,
+          "d": 1,
+          "support_studs": 2,
+          "exclusive_children": [
+            157
+          ]
+        },
+        {
+          "id": 138,
+          "region": "village",
+          "layer": "L1",
+          "x": 26,
+          "z": 24,
+          "w": 1,
+          "d": 1,
+          "support_studs": 1,
+          "exclusive_children": [
+            243
+          ]
+        },
+        {
+          "id": 139,
+          "region": "village",
+          "layer": "L1",
+          "x": 29,
+          "z": 26,
+          "w": 1,
+          "d": 1,
+          "support_studs": 1,
+          "exclusive_children": [
+            246
+          ]
+        },
+        {
+          "id": 151,
+          "region": "village",
+          "layer": "L1",
+          "x": 21,
+          "z": 19,
+          "w": 1,
+          "d": 1,
+          "support_studs": 1,
+          "exclusive_children": [
+            242
+          ]
+        },
+        {
+          "id": 158,
+          "region": "village",
+          "layer": "L1",
+          "x": 27,
+          "z": 25,
+          "w": 1,
+          "d": 1,
+          "support_studs": 1,
+          "exclusive_children": [
+            244
+          ]
+        },
+        {
+          "id": 167,
+          "region": "foret",
+          "layer": "L1",
+          "x": 31,
+          "z": 1,
+          "w": 2,
+          "d": 1,
+          "support_studs": 2,
+          "exclusive_children": [
+            258
+          ]
+        },
+        {
+          "id": 169,
+          "region": "colline",
+          "layer": "L1",
+          "x": 14,
+          "z": 21,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            251
+          ]
+        },
+        {
+          "id": 171,
+          "region": "foret",
+          "layer": "L1",
+          "x": 30,
+          "z": 2,
+          "w": 2,
+          "d": 1,
+          "support_studs": 2,
+          "exclusive_children": [
+            263
+          ]
+        },
+        {
+          "id": 189,
+          "region": "foret",
+          "layer": "L1",
+          "x": 29,
+          "z": 9,
+          "w": 1,
+          "d": 3,
+          "support_studs": 3,
+          "exclusive_children": [
+            245
+          ]
+        },
+        {
+          "id": 192,
+          "region": "foret",
+          "layer": "L1",
+          "x": 28,
+          "z": 1,
+          "w": 1,
+          "d": 3,
+          "support_studs": 3,
+          "exclusive_children": [
+            257
+          ]
+        },
+        {
+          "id": 231,
+          "region": "foret",
+          "layer": "L1",
+          "x": 25,
+          "z": 5,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            247
+          ]
+        },
+        {
+          "id": 232,
+          "region": "foret",
+          "layer": "L1",
+          "x": 27,
+          "z": 10,
+          "w": 2,
+          "d": 1,
+          "support_studs": 2,
+          "exclusive_children": [
+            264
+          ]
+        },
+        {
+          "id": 249,
+          "region": "colline",
+          "layer": "L2",
+          "x": 17,
+          "z": 16,
+          "w": 1,
+          "d": 1,
+          "support_studs": 1,
+          "exclusive_children": [
+            278
+          ]
+        },
+        {
+          "id": 256,
+          "region": "colline",
+          "layer": "L2",
+          "x": 13,
+          "z": 19,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            277
+          ]
+        },
+        {
+          "id": 265,
+          "region": "colline",
+          "layer": "L2",
+          "x": 18,
+          "z": 13,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            275
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Ecosse",
+      "size": "48x48",
+      "parts": 487,
+      "weak_carriers": 44,
+      "critical_carriers": 19,
+      "critical_by_zone": {
+        "foret": 7,
+        "terre": 4,
+        "colline": 3,
+        "mer": 2,
+        "village": 2,
+        "route": 1
+      },
+      "critical_parts": [
+        {
+          "id": 102,
+          "region": "mer",
+          "layer": "L0",
+          "x": 3,
+          "z": 30,
+          "w": 2,
+          "d": 1,
+          "support_studs": 2,
+          "exclusive_children": [
+            258
+          ]
+        },
+        {
+          "id": 108,
+          "region": "foret",
+          "layer": "L0",
+          "x": 42,
+          "z": 1,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            390
+          ]
+        },
+        {
+          "id": 110,
+          "region": "route",
+          "layer": "L0",
+          "x": 47,
+          "z": 30,
+          "w": 2,
+          "d": 1,
+          "support_studs": 2,
+          "exclusive_children": [
+            305
+          ]
+        },
+        {
+          "id": 114,
+          "region": "mer",
+          "layer": "L0",
+          "x": 28,
+          "z": 15,
+          "w": 2,
+          "d": 1,
+          "support_studs": 2,
+          "exclusive_children": [
+            259
+          ]
+        },
+        {
+          "id": 249,
+          "region": "village",
+          "layer": "L1",
+          "x": 30,
+          "z": 28,
+          "w": 1,
+          "d": 1,
+          "support_studs": 1,
+          "exclusive_children": [
+            396
+          ]
+        },
+        {
+          "id": 272,
+          "region": "foret",
+          "layer": "L1",
+          "x": 43,
+          "z": 13,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            405,
+            410
+          ]
+        },
+        {
+          "id": 280,
+          "region": "colline",
+          "layer": "L1",
+          "x": 20,
+          "z": 33,
+          "w": 2,
+          "d": 1,
+          "support_studs": 2,
+          "exclusive_children": [
+            426
+          ]
+        },
+        {
+          "id": 289,
+          "region": "terre",
+          "layer": "L1",
+          "x": 42,
+          "z": 38,
+          "w": 2,
+          "d": 1,
+          "support_studs": 2,
+          "exclusive_children": [
+            407
+          ]
+        },
+        {
+          "id": 300,
+          "region": "terre",
+          "layer": "L1",
+          "x": 31,
+          "z": 28,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            399
+          ]
+        },
+        {
+          "id": 304,
+          "region": "village",
+          "layer": "L1",
+          "x": 40,
+          "z": 37,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            403,
+            404
+          ]
+        },
+        {
+          "id": 315,
+          "region": "foret",
+          "layer": "L1",
+          "x": 46,
+          "z": 1,
+          "w": 3,
+          "d": 1,
+          "support_studs": 3,
+          "exclusive_children": [
+            420
+          ]
+        },
+        {
+          "id": 317,
+          "region": "foret",
+          "layer": "L1",
+          "x": 43,
+          "z": 16,
+          "w": 3,
+          "d": 1,
+          "support_studs": 3,
+          "exclusive_children": [
+            430
+          ]
+        },
+        {
+          "id": 356,
+          "region": "foret",
+          "layer": "L1",
+          "x": 41,
+          "z": 15,
+          "w": 3,
+          "d": 1,
+          "support_studs": 3,
+          "exclusive_children": [
+            406,
+            418
+          ]
+        },
+        {
+          "id": 368,
+          "region": "foret",
+          "layer": "L1",
+          "x": 38,
+          "z": 10,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            424
+          ]
+        },
+        {
+          "id": 375,
+          "region": "terre",
+          "layer": "L1",
+          "x": 40,
+          "z": 36,
+          "w": 3,
+          "d": 1,
+          "support_studs": 3,
+          "exclusive_children": [
+            402
+          ]
+        },
+        {
+          "id": 377,
+          "region": "terre",
+          "layer": "L1",
+          "x": 39,
+          "z": 36,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            401
+          ]
+        },
+        {
+          "id": 390,
+          "region": "foret",
+          "layer": "L1",
+          "x": 42,
+          "z": 1,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            421
+          ]
+        },
+        {
+          "id": 412,
+          "region": "colline",
+          "layer": "L2",
+          "x": 19,
+          "z": 29,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            451
+          ]
+        },
+        {
+          "id": 425,
+          "region": "colline",
+          "layer": "L2",
+          "x": 27,
+          "z": 19,
+          "w": 1,
+          "d": 2,
+          "support_studs": 2,
+          "exclusive_children": [
+            447
+          ]
+        }
+      ]
+    }
+  ]
+}
