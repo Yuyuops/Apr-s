@@ -1,0 +1,103 @@
+{
+ "moteur1": {
+  "parts": 224,
+  "collisions": 0,
+  "disconnected_parts": 0,
+  "islands": 0,
+  "unsupported_at_placement": 0,
+  "joints": 429,
+  "studs_engaged": 3023,
+  "single_stud_joints": 83,
+  "blocked_studs": 0,
+  "stabilite_moteur1": {
+   "model": "rigid parts; clutch 1.0 N per stud (assumed); compression free; 0.10 g per stud x stud x plate; gravity, then a force at the far end of each sub-assembly. Indicative only.",
+   "cases": 149,
+   "gravity_sf_below_1": 0,
+   "gravity_sf_below_2": 0,
+   "min_gravity_sf": null,
+   "subassemblies_over_1g": 15,
+   "tip_force_below_0_5N": 0,
+   "tip_force_below_2N": 0,
+   "min_tip_force_N": 4.29
+  },
+  "disclaimer": "Geometric and graph checks plus an indicative stud-clutch model. Not a physical test."
+ },
+ "moteur2": {
+  "cellules_en_collision_interne": 0,
+  "cellules_de_champ_mal_couvertes": 0,
+  "pieces_sans_appui": [],
+  "graphe": {
+   "noeuds": 224,
+   "liaisons": 429,
+   "tenons_engages": 3023,
+   "composantes": 1
+  },
+  "pieces_isolees": [],
+  "pieces_sur_un_seul_tenon": 15,
+  "pieces_sur_un_seul_tenon_ids": [
+   108,
+   109,
+   110,
+   111,
+   112,
+   113,
+   114,
+   115,
+   116,
+   160,
+   161,
+   164,
+   165,
+   179,
+   180
+  ],
+  "points_d_articulation": 23,
+  "points_d_articulation_non_feuilles": 23,
+  "ponts": 49,
+  "noyau_dos_et_cadre": {
+   "plaques": 86,
+   "coupe_minimale_tenons": 2,
+   "cotes": [
+    1,
+    85
+   ]
+  },
+  "coupe_minimale_globale_tenons": 1,
+  "coupe_minimale_globale_cotes": [
+   1,
+   223
+  ],
+  "alignement_des_joints_entre_couches": {
+   "B1->B2": 0.0,
+   "B2->L0": 0.004,
+   "L0->L1": 0.218,
+   "L1->L2": 0.188,
+   "L2->L3": 0.614,
+   "L3->L4": 0.2
+  },
+  "dimensions_mm": {
+   "champ": 256.0,
+   "tableau_complet": 272.0,
+   "epaisseur": 22.4,
+   "epaisseur_champ": 22.4
+  },
+  "pieces": 224,
+  "pieces_1x1": 15,
+  "part_1x1": 0.067,
+  "references": 61,
+  "modeles_de_piece": 29,
+  "couches_de_plaques": 7,
+  "pieces_par_section": {
+   "B": 50,
+   "L": 138,
+   "F": 36
+  },
+  "masse_estimee_g": 954.0,
+  "masse_par_section_g": {
+   "B": 497,
+   "L": 343,
+   "F": 114
+  },
+  "masse_hypotheses": "ABS 1,05 g/cm3 x volume des boites x taux de remplissage de la geometrie LDraw (moteur 1) ; la masse reelle est plausiblement +-30 %, tenons non comptes"
+ }
+}

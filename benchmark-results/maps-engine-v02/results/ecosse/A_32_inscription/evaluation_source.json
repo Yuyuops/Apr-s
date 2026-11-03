@@ -1,0 +1,148 @@
+{
+ "n": 32,
+ "classes_moteur": [
+  "autre",
+  "colline",
+  "foret",
+  "mer",
+  "riviere",
+  "route",
+  "terre",
+  "village"
+ ],
+ "couverture_pixels_de_chaque_couleur_de_la_source_par_classe_moteur": {
+  "mer": {
+   "mer": 0.914,
+   "riviere": 0.052,
+   "terre": 0.026
+  },
+  "terre_Angleterre_Ecosse": {
+   "mer": 0.063,
+   "riviere": 0.102,
+   "route": 0.052,
+   "terre": 0.76
+  },
+  "Irlande": {
+   "foret": 0.841,
+   "mer": 0.024,
+   "riviere": 0.103,
+   "route": 0.021
+  },
+  "lac_riviere": {
+   "autre": 0.021,
+   "foret": 0.079,
+   "mer": 0.102,
+   "riviere": 0.691,
+   "terre": 0.1
+  },
+  "massif": {
+   "colline": 0.801,
+   "route": 0.093,
+   "terre": 0.104
+  },
+  "route": {
+   "foret": 0.091,
+   "riviere": 0.062,
+   "route": 0.68,
+   "terre": 0.134,
+   "village": 0.033
+  },
+  "ville": {
+   "foret": 0.036,
+   "riviere": 0.07,
+   "route": 0.04,
+   "terre": 0.129,
+   "village": 0.71
+  }
+ },
+ "meilleure_correspondance_1_a_1": {
+  "mer": "mer",
+  "terre_Angleterre_Ecosse": "terre",
+  "Irlande": "foret",
+  "lac_riviere": "riviere",
+  "massif": "colline",
+  "route": "route",
+  "ville": "village"
+ },
+ "iou_pixels_apres_correspondance": {
+  "mer": 0.885,
+  "terre_Angleterre_Ecosse": 0.709,
+  "Irlande": 0.781,
+  "lac_riviere": 0.037,
+  "massif": 0.718,
+  "route": 0.204,
+  "ville": 0.242
+ },
+ "classes_de_la_source_sans_classe_propre": [],
+ "rappel_lac_riviere": 0.797,
+ "rappel_route": 0.866,
+ "rappel_ville": 0.856,
+ "composantes_connexes": {
+  "lac_riviere": {
+   "composantes_moteur": 21,
+   "composantes_source": 15
+  },
+  "route": {
+   "composantes_moteur": 5,
+   "composantes_source": 9
+  }
+ },
+ "cote_reelle": {
+  "deplacement_moyen_mm": 2.32,
+  "iou_terre": 0.844,
+  "champ_mm": 256.0
+ },
+ "couleurs": {
+  "colline": {
+   "source": "massif",
+   "lego": "Medium_Nougat",
+   "dE76": 7.0,
+   "dE2000": 5.7,
+   "cellules": 24
+  },
+  "foret": {
+   "source": "Irlande",
+   "lego": "Bright_Green",
+   "dE76": 18.3,
+   "dE2000": 6.1,
+   "cellules": 60
+  },
+  "mer": {
+   "source": "mer",
+   "lego": "Blue",
+   "dE76": 26.3,
+   "dE2000": 4.7,
+   "cellules": 596
+  },
+  "riviere": {
+   "source": "lac_riviere",
+   "lego": "Sand_Blue",
+   "dE76": 21.0,
+   "dE2000": 18.8,
+   "cellules": 72
+  },
+  "route": {
+   "source": "route",
+   "lego": "Medium_Nougat",
+   "dE76": 3.0,
+   "dE2000": 1.7,
+   "cellules": 26
+  },
+  "terre": {
+   "source": "terre_Angleterre_Ecosse",
+   "lego": "Tan",
+   "dE76": 10.6,
+   "dE2000": 6.7,
+   "cellules": 239
+  },
+  "village": {
+   "source": "ville",
+   "lego": "Red",
+   "dE76": 25.8,
+   "dE2000": 6.9,
+   "cellules": 6
+  }
+ },
+ "dE2000_moyen_pondere": 6.2,
+ "dE76_moyen_pondere": 20.72
+}

@@ -1,0 +1,29 @@
+{
+ "input": "ecosse_carte.png",
+ "finish": "A",
+ "lisse": [
+  "mer",
+  "riviere"
+ ],
+ "chape_cadre": true,
+ "ameliore": true,
+ "coins_coupes": 4,
+ "mode": "2.5d",
+ "n": 32,
+ "frame": 1,
+ "style": "relief_classic",
+ "pieces": 328,
+ "pieces_1x1": 40,
+ "references": 62,
+ "etapes": 27,
+ "seconds": 50.4,
+ "part_1x1_share": 0.122,
+ "pieces_sur_un_seul_tenon": 40,
+ "points_articulation": 54,
+ "collisions": 0,
+ "deconnectees": 0,
+ "masse_g": 902.0,
+ "epaisseur_mm": 19.2,
+ "briquestore": 202,
+ "seconds_total": 83.0
+}

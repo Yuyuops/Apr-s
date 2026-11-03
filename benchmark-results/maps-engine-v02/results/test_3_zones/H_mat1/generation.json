@@ -1,0 +1,28 @@
+{
+ "input": "input.png",
+ "finish": "A",
+ "lisse": [
+  "mer"
+ ],
+ "chape_cadre": true,
+ "ameliore": true,
+ "coins_coupes": 17,
+ "mode": "2.5d",
+ "n": 32,
+ "frame": 1,
+ "style": "relief_classic",
+ "pieces": 203,
+ "pieces_1x1": 3,
+ "references": 49,
+ "etapes": 16,
+ "seconds": 10.7,
+ "part_1x1_share": 0.0148,
+ "pieces_sur_un_seul_tenon": 3,
+ "points_articulation": 26,
+ "collisions": 0,
+ "deconnectees": 0,
+ "masse_g": 921.0,
+ "epaisseur_mm": 16.0,
+ "briquestore": 202,
+ "seconds_total": 35.9
+}

@@ -1,0 +1,138 @@
+{
+ "moteur1": {
+  "parts": 487,
+  "collisions": 0,
+  "disconnected_parts": 0,
+  "islands": 0,
+  "unsupported_at_placement": 0,
+  "joints": 895,
+  "studs_engaged": 6101,
+  "single_stud_joints": 206,
+  "blocked_studs": 0,
+  "stabilite_moteur1": {
+   "model": "rigid parts; clutch 1.0 N per stud (assumed); compression free; 0.10 g per stud x stud x plate; gravity, then a force at the far end of each sub-assembly. Indicative only.",
+   "cases": 288,
+   "gravity_sf_below_1": 0,
+   "gravity_sf_below_2": 0,
+   "min_gravity_sf": null,
+   "subassemblies_over_1g": 67,
+   "tip_force_below_0_5N": 0,
+   "tip_force_below_2N": 0,
+   "min_tip_force_N": 2.18
+  },
+  "disclaimer": "Geometric and graph checks plus an indicative stud-clutch model. Not a physical test."
+ },
+ "moteur2": {
+  "cellules_en_collision_interne": 0,
+  "cellules_de_champ_mal_couvertes": 0,
+  "pieces_sans_appui": [],
+  "graphe": {
+   "noeuds": 487,
+   "liaisons": 895,
+   "tenons_engages": 6101,
+   "composantes": 1
+  },
+  "pieces_isolees": [],
+  "pieces_sur_un_seul_tenon": 51,
+  "pieces_sur_un_seul_tenon_ids": [
+   99,
+   100,
+   101,
+   232,
+   233,
+   234,
+   235,
+   236,
+   237,
+   238,
+   239,
+   240,
+   241,
+   242,
+   243,
+   244,
+   245,
+   246,
+   247,
+   248,
+   249,
+   250,
+   251,
+   252,
+   253,
+   254,
+   255,
+   256,
+   257,
+   258,
+   259,
+   353,
+   370,
+   376,
+   396,
+   397,
+   398,
+   399,
+   400,
+   401,
+   402,
+   403,
+   404,
+   405,
+   406,
+   407,
+   408,
+   409,
+   410,
+   447,
+   460
+  ],
+  "points_d_articulation": 78,
+  "points_d_articulation_non_feuilles": 78,
+  "ponts": 151,
+  "noyau_dos_et_cadre": {
+   "plaques": 124,
+   "coupe_minimale_tenons": 2,
+   "cotes": [
+    1,
+    123
+   ]
+  },
+  "coupe_minimale_globale_tenons": 1,
+  "coupe_minimale_globale_cotes": [
+   1,
+   486
+  ],
+  "alignement_des_joints_entre_couches": {
+   "B1->B2": 0.0,
+   "B2->L0": 0.013,
+   "L0->L1": 0.274,
+   "L1->L2": 0.529,
+   "L2->L3": 0.702
+  },
+  "dimensions_mm": {
+   "champ": 384.0,
+   "tableau_complet": 400.0,
+   "epaisseur": 19.2,
+   "epaisseur_champ": 19.2
+  },
+  "pieces": 487,
+  "pieces_1x1": 51,
+  "part_1x1": 0.1047,
+  "references": 74,
+  "modeles_de_piece": 28,
+  "couches_de_plaques": 6,
+  "pieces_par_section": {
+   "B": 98,
+   "L": 363,
+   "F": 26
+  },
+  "masse_estimee_g": 1930.0,
+  "masse_par_section_g": {
+   "B": 1075,
+   "L": 729,
+   "F": 126
+  },
+  "masse_hypotheses": "ABS 1,05 g/cm3 x volume des boites x taux de remplissage de la geometrie LDraw (moteur 1) ; la masse reelle est plausiblement +-30 %, tenons non comptes"
+ }
+}

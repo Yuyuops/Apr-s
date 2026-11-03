@@ -69,7 +69,7 @@ def build(cg, style, finish="A", mode="2.5d", frame_width=None, tries=8, seed=0,
     grid, classes, n = cg["grid"], cg["classes"], cg["grid"].shape[0]; B = finish == "B"; contour_cut = (not B) if contour_cut is None else contour_cut
     levels = {nm: style["levels"].get(nm, style["levels"].get("autre", 1)) if mode != "2d" else 0 for nm in classes}
     h = heights(grid, classes, style, mode); K = int(h.max()); m = frame_width if frame_width is not None else (2 if B else 1); N = n + 2 * m
-    smooth = smooth_classes(grid, classes, levels, style.get("smooth_rule", {})) if B else set(smooth_set or ())
+    smooth = smooth_classes(grid, classes, levels, style.get("smooth_rule", {})) if B else {nm for nm in (smooth_set or ()) if nm in classes}      # names that the classifier did not find on this map are ignored
     from scipy import ndimage
     blob = {}
     for i, nm in enumerate(classes):
