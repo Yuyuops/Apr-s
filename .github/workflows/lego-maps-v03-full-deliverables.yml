@@ -1,0 +1,71 @@
+name: LEGO Maps V0.3 - two finished digital models
+
+on:
+  push:
+    branches: [research/lego-maps-v03-chatgpt-20261103]
+    paths:
+      - '.github/workflows/lego-maps-v03-full-deliverables.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render-and-document:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout source without bulk LFS
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Fetch Scotland source image only
+        run: git lfs pull --include="benchmark-results/maps-engine-v02/fixtures/ecosse_carte.png" --exclude=""
+      - name: Install V11 dependencies including Node
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Install Chromium for rendering PDF and SVG
+        run: |
+          cd benchmark-results/20_portable_engine
+          npx playwright install chromium
+      - name: Full digital LEGO Maps pipeline for Scotland 32
+        run: |
+          cd benchmark-results/maps-engine-v03
+          ../20_portable_engine/.venv/bin/python engine/run_v03.py full \
+            --input ../maps-engine-v02/fixtures/ecosse_carte.png \
+            --out results/ecosse/A_32 --finish A --n 32
+      - name: Full digital LEGO Maps pipeline for independent archipelago
+        run: |
+          cd benchmark-results/maps-engine-v03
+          ../20_portable_engine/.venv/bin/python engine/run_v03.py full \
+            --input fixtures/archipel_original.svg \
+            --out results/archipel/A_32 --finish A --n 32
+      - name: Verify digital model viewer and notice outputs
+        run: |
+          python3 - <<'PY'
+          import csv, json
+          from pathlib import Path
+          base = Path('benchmark-results/maps-engine-v03/results')
+          for sub in ['ecosse/A_32','archipel/A_32']:
+              p = base/sub
+              expected = ['map.ldr','parts.json','parts_list.csv','viewer.html',
+                          'notice.pdf','renders/face.png','renders/trois_quarts.png',
+                          'support_report_v03.json','validation/validation_resume.json']
+              assert all((p/x).exists() and (p/x).stat().st_size > 0 for x in expected), (sub,expected)
+              q = json.loads((p/'parts.json').read_text())
+              with (p/'parts_list.csv').open() as f:
+                  count = sum(int(row['quantity']) for row in csv.DictReader(f))
+              assert len(q) == count, (sub,len(q),count)
+              v = json.loads((p/'validation/validation_resume.json').read_text())['moteur1']
+              assert not v['collisions'] and not v['disconnected_parts'] and not v['islands']
+              print(sub, 'OK',len(q),'parts', (p/'notice.pdf').stat().st_size,'PDF bytes')
+          PY
+      - name: Upload finished V0.3 LEGO maps, views, BOM and PDF
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lego-maps-v03-two-finished-models
+          path: |
+            benchmark-results/maps-engine-v03/results/ecosse/A_32/
+            benchmark-results/maps-engine-v03/results/archipel/A_32/
+          if-no-files-found: warn
