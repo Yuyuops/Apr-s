@@ -1,0 +1,4 @@
+# Gel du moteur avant le test sur la troisième carte
+
+Les empreintes de `GEL_MOTEUR_sha256.txt` (code du moteur, style déclaré, script de génération de la carte et les deux images d'entrée) ont été calculées **avant** toute exécution du moteur sur `ecosse_carte.png`. Aucun paramètre n'a été réglé sur cette carte : paramètres fixés sur l'île témoin et la carte à trois zones (pavage : coût d'orphelin 60, pénalité de joints alignés 4,0 ; biseaux si la source laisse ≥ 30 % de la cellule vide ; colonne de cadre arasée une plaque sous le sommet avec chape de tuiles). Le premier essai est archivé tel quel (`A_32/`), les éventuels écarts sont rapportés, pas corrigés dans cette mission.
+Carte : voir `../../fixtures/make_ecosse_map.py` (source Natural Earth, domaine public, `LICENCE_NATURAL_EARTH.md`). **Aucune donnée d'altitude** : tout relief est artistique.
