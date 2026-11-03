@@ -63,15 +63,15 @@ def y_top(p):
     return -8 * (1 if p["level"] == -2 else 2 if p["level"] == -1 else 3 + p["level"])
 
 def write_ldr(model, path, name, steps=None):
+    """map.ldr : one `0 STEP` per notice step when `steps` (list of dict(title, parts)) is given, plain layer order otherwise"""
     P = model["parts"]; n = model["n"]; L = ["0 %s" % name, "0 Name: %s" % os.path.basename(path), "0 Author: LEGO Maps engine 2 V0", "0 !LICENSE Original test map (fictional), generated file",
-                                          "0 // %dx%d studs, %.1f mm ; levels=%d ; mode=%s" % (n, n, n * 8, model["levels"], model["mode"])]
-    order = sorted(P, key=lambda p: (p["level"], p["id"])) if steps is None else [p for st in steps for p in st["parts"]]
-    cur = None
-    for p in order:
-        key = (p["level"], p["region"]) if steps is None else None
-        if steps is not None:
-            pass
-        x = (p["x"] + p["w"] / 2) * STUD; z = (p["z"] + p["d"] / 2) * STUD; y = y_top(p)
-        rot = "1 0 0 0 1 0 0 0 1" if p["w"] >= p["d"] else "0 0 1 0 1 0 -1 0 0"
-        L.append("1 %d %g %g %g %s %s.dat" % (p["colour"], x, y, z, rot, p["part"]))
-    L.append("0 STEP"); open(path, "w").write("\n".join(L) + "\n")
+                                          "0 // %dx%d studs, %.1f mm ; levels=%d ; mode=%s ; axes: LDraw x = image column (west->east), LDraw z = minus image row (north = +z), y down (relief goes up)" % (n, n, n * 8, model["levels"], model["mode"])]
+    groups = [dict(title="all", parts=sorted(P, key=lambda p: (p["level"], p["id"])))] if steps is None else steps
+    for i, st in enumerate(groups):
+        L.append("0 // STEP %d : %s" % (i + 1, st["title"]))
+        for p in st["parts"]:
+            x = (p["z"] + p["d"] / 2) * STUD; z = -(p["x"] + p["w"] / 2) * STUD; y = y_top(p)       # LDraw x = image column (east), LDraw z = - image row (north is +z) : a board seen from above is upright, not mirrored
+            rot = "1 0 0 0 1 0 0 0 1" if p["d"] >= p["w"] else "0 0 1 0 1 0 -1 0 0"
+            L.append("1 %d %g %g %g %s %s.dat" % (p["colour"], x, y, z, rot, p["part"]))
+        L.append("0 STEP")
+    open(path, "w").write("\n".join(L) + "\n")

@@ -1,0 +1,41 @@
+{
+ "classes": {
+  "mer": {
+   "iou_pixels": 0.966,
+   "iou_cellules": 1.0
+  },
+  "terre": {
+   "iou_pixels": 0.921,
+   "iou_cellules": 1.0
+  },
+  "foret": {
+   "iou_pixels": 0.905,
+   "iou_cellules": 1.0
+  }
+ },
+ "iou_cellules_moyen": 1.0,
+ "iou_pixels_moyen": 0.931,
+ "classes_trouvees_par_le_moteur": [
+  "foret",
+  "mer",
+  "terre"
+ ],
+ "couleurs_reelles": {
+  "foret": {
+   "lego": "Sand_Green",
+   "dE76": 21.2,
+   "cellules": 104
+  },
+  "mer": {
+   "lego": "Blue",
+   "dE76": 8.7,
+   "cellules": 570
+  },
+  "terre": {
+   "lego": "Tan",
+   "dE76": 18.5,
+   "cellules": 350
+  }
+ },
+ "dE_moyen_pondere_surface": 13.33
+}

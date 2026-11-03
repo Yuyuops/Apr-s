@@ -1,0 +1,139 @@
+{
+ "classes": {
+  "mer": {
+   "iou_pixels": 0.962,
+   "iou_cellules": 1.0,
+   "cellules_moteur": 518,
+   "cellules_oracle": 518
+  },
+  "colline": {
+   "iou_pixels": 0.739,
+   "iou_cellules": 0.963,
+   "cellules_moteur": 26,
+   "cellules_oracle": 27
+  },
+  "foret": {
+   "iou_pixels": 0.853,
+   "iou_cellules": 0.972,
+   "cellules_moteur": 35,
+   "cellules_oracle": 36
+  },
+  "lac": {
+   "iou_pixels": 0.779,
+   "iou_cellules": 0.9,
+   "cellules_moteur": 19,
+   "cellules_oracle": 19
+  },
+  "riviere": {
+   "iou_pixels": 0.407,
+   "iou_cellules": 1.0,
+   "cellules_moteur": 14,
+   "cellules_oracle": 14
+  },
+  "route": {
+   "iou_pixels": 0.464,
+   "iou_cellules": 0.824,
+   "cellules_moteur": 17,
+   "cellules_oracle": 14
+  },
+  "sommet": {
+   "iou_pixels": 0.699,
+   "iou_cellules": 1.0,
+   "cellules_moteur": 6,
+   "cellules_oracle": 6
+  },
+  "terre": {
+   "iou_pixels": 0.88,
+   "iou_cellules": 0.985,
+   "cellules_moteur": 388,
+   "cellules_oracle": 388
+  },
+  "village": {
+   "iou_pixels": 0.254,
+   "iou_cellules": 0.5,
+   "cellules_moteur": 1,
+   "cellules_oracle": 2
+  }
+ },
+ "iou_pixels_moyen": 0.671,
+ "iou_cellules_moyen": 0.905,
+ "precision_pixels_globale": 0.9461,
+ "frontieres_F1_tolerance_1_cellule": 1.0,
+ "frontieres_precision_rappel": [
+  1.0,
+  1.0
+ ],
+ "composantes_connexes_8": {
+  "riviere": {
+   "moteur": 1,
+   "oracle": 1
+  },
+  "route": {
+   "moteur": 3,
+   "oracle": 3
+  }
+ },
+ "hauteurs": {
+  "cellules_identiques": 0.9873,
+  "erreur_absolue_moyenne_plaques": 0.014,
+  "erreur_max": 2,
+  "mode": "2.5d"
+ },
+ "couleurs_reelles": {
+  "colline": {
+   "lego": "Dark_Tan",
+   "code": 28,
+   "dE76": 13.1,
+   "cellules": 26
+  },
+  "foret": {
+   "lego": "Sand_Green",
+   "code": 378,
+   "dE76": 21.2,
+   "cellules": 35
+  },
+  "lac": {
+   "lego": "Dark_Azure",
+   "code": 321,
+   "dE76": 5.4,
+   "cellules": 19
+  },
+  "mer": {
+   "lego": "Blue",
+   "code": 1,
+   "dE76": 8.7,
+   "cellules": 518
+  },
+  "riviere": {
+   "lego": "Medium_Blue",
+   "code": 73,
+   "dE76": 9.3,
+   "cellules": 14
+  },
+  "route": {
+   "lego": "Medium_Nougat",
+   "code": 84,
+   "dE76": 3.9,
+   "cellules": 17
+  },
+  "sommet": {
+   "lego": "Light_Bluish_Grey",
+   "code": 71,
+   "dE76": 28.7,
+   "cellules": 6
+  },
+  "terre": {
+   "lego": "Tan",
+   "code": 19,
+   "dE76": 18.5,
+   "cellules": 388
+  },
+  "village": {
+   "lego": "Dark_Orange",
+   "code": 484,
+   "dE76": 18.2,
+   "cellules": 1
+  }
+ },
+ "dE_moyen_pondere_surface": 12.95
+}

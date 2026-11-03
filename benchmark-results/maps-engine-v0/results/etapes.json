@@ -1,0 +1,275 @@
+[
+ {
+  "etape": 1,
+  "titre": "Dos rigide, couche 1 (plaques 8x8)",
+  "region": "dos",
+  "couche": "B1",
+  "pieces": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16
+  ]
+ },
+ {
+  "etape": 2,
+  "titre": "Dos rigide, couche 2 (decalee de 4 tenons)",
+  "region": "dos",
+  "couche": "B2",
+  "pieces": [
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41
+  ]
+ },
+ {
+  "etape": 3,
+  "titre": "Couche 1 - region : mer",
+  "region": "mer",
+  "couche": "L0",
+  "pieces": [
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54,
+   56,
+   58,
+   60,
+   63,
+   64,
+   66,
+   67,
+   72,
+   73,
+   74,
+   75,
+   76,
+   79
+  ]
+ },
+ {
+  "etape": 4,
+  "titre": "Couche 1 - region : terre",
+  "region": "terre",
+  "couche": "L0",
+  "pieces": [
+   42,
+   43,
+   44,
+   55,
+   59,
+   70,
+   77
+  ]
+ },
+ {
+  "etape": 5,
+  "titre": "Couche 1 - region : lac",
+  "region": "lac",
+  "couche": "L0",
+  "pieces": [
+   57,
+   68,
+   71
+  ]
+ },
+ {
+  "etape": 6,
+  "titre": "Couche 1 - region : riviere",
+  "region": "riviere",
+  "couche": "L0",
+  "pieces": [
+   61,
+   62,
+   65,
+   78,
+   80
+  ]
+ },
+ {
+  "etape": 7,
+  "titre": "Couche 1 - region : sommet",
+  "region": "sommet",
+  "couche": "L0",
+  "pieces": [
+   69
+  ]
+ },
+ {
+  "etape": 8,
+  "titre": "Couche 2 - region : terre",
+  "region": "terre",
+  "couche": "L1",
+  "pieces": [
+   81,
+   82,
+   83,
+   84,
+   85,
+   86,
+   87,
+   88,
+   89,
+   90,
+   91,
+   92,
+   93,
+   95,
+   97,
+   98,
+   99,
+   100,
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   108,
+   109,
+   110,
+   111,
+   112,
+   113,
+   114,
+   115,
+   116,
+   117,
+   118,
+   119,
+   120,
+   125,
+   126,
+   127,
+   130,
+   131,
+   132
+  ]
+ },
+ {
+  "etape": 9,
+  "titre": "Couche 2 - region : colline",
+  "region": "colline",
+  "couche": "L1",
+  "pieces": [
+   107,
+   121,
+   122
+  ]
+ },
+ {
+  "etape": 10,
+  "titre": "Couche 2 - region : route",
+  "region": "route",
+  "couche": "L1",
+  "pieces": [
+   94,
+   96,
+   123,
+   124,
+   128,
+   129
+  ]
+ },
+ {
+  "etape": 11,
+  "titre": "Couche 3 - region : foret",
+  "region": "foret",
+  "couche": "L2",
+  "pieces": [
+   134,
+   135,
+   137,
+   140,
+   144
+  ]
+ },
+ {
+  "etape": 12,
+  "titre": "Couche 3 - region : colline",
+  "region": "colline",
+  "couche": "L2",
+  "pieces": [
+   133,
+   136,
+   138,
+   139,
+   141,
+   142,
+   143
+  ]
+ },
+ {
+  "etape": 13,
+  "titre": "Couche 3 - region : village",
+  "region": "village",
+  "couche": "L2",
+  "pieces": [
+   145
+  ]
+ },
+ {
+  "etape": 14,
+  "titre": "Couche 4 - region : colline",
+  "region": "colline",
+  "couche": "L3",
+  "pieces": [
+   146,
+   147,
+   148,
+   149,
+   150,
+   151,
+   152
+  ]
+ },
+ {
+  "etape": 15,
+  "titre": "Couche 5 - region : sommet",
+  "region": "sommet",
+  "couche": "L4",
+  "pieces": [
+   153
+  ]
+ }
+]

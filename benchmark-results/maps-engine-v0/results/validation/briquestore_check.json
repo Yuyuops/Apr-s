@@ -1,0 +1,9 @@
+{
+ "url": "https://store.bricklink.com/briquestore.fr",
+ "checked_at": "2026-11-03",
+ "price_checked": false,
+ "stock_checked": false,
+ "values": "null",
+ "http_status": 202,
+ "note": "page reachable but the store inventory is rendered client-side and per-item stock/price are not machine-verified by this engine : left null"
+}

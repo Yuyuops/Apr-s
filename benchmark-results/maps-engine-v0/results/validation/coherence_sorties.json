@@ -1,0 +1,42 @@
+{
+ "ile_2_5d": {
+  "pieces_parts_json": 153,
+  "pieces_ldr": 153,
+  "pieces_bom": 153,
+  "pieces_dans_etapes": 153,
+  "etapes_sans_doublon": true,
+  "couverture_notice": true,
+  "etapes": 15,
+  "max_pieces_par_etape": 43
+ },
+ "ile_2d": {
+  "pieces_parts_json": 171,
+  "pieces_ldr": 171,
+  "pieces_bom": 171,
+  "pieces_dans_etapes": 171,
+  "etapes_sans_doublon": true,
+  "couverture_notice": true,
+  "etapes": 11,
+  "max_pieces_par_etape": 56
+ },
+ "trois_zones_2_5d": {
+  "pieces_parts_json": 119,
+  "pieces_ldr": 119,
+  "pieces_bom": 119,
+  "pieces_dans_etapes": 119,
+  "etapes_sans_doublon": true,
+  "couverture_notice": true,
+  "etapes": 8,
+  "max_pieces_par_etape": 26
+ },
+ "trois_zones_2d": {
+  "pieces_parts_json": 127,
+  "pieces_ldr": 127,
+  "pieces_bom": 127,
+  "pieces_dans_etapes": 127,
+  "etapes_sans_doublon": true,
+  "couverture_notice": true,
+  "etapes": 5,
+  "max_pieces_par_etape": 36
+ }
+}

@@ -13,7 +13,23 @@ def _feasible(ok, w, d):
     if w > n0 or d > n1: return f
     s = p[w:, d:] - p[:-w, d:] - p[w:, :-d] + p[:-w, :-d]; f[:n0 - w + 1, :n1 - d + 1] = s == w * d; return f
 
-def tile_layer(fixed, wild, below, rng, hidden_colour_of, jitter=0.0, stagger=2.0, allowed=None):
+def _orphans(fixed, wild, free, x, z, w, d):
+    """number of free cells around the rectangle that, once it is placed, have no free compatible neighbour left : each one would need a 1x1 plate (or a lonely 1-stud contact)"""
+    n = fixed.shape[0]; F = free.copy(); F[x:x + w, z:z + d] = False; cnt = 0; ring = set()
+    for a in range(x, x + w):
+        for b in (z - 1, z + d): ring.add((a, b))
+    for b in range(z, z + d):
+        for a in (x - 1, x + w): ring.add((a, b))
+    for (a, b) in ring:
+        if not (0 <= a < n and 0 <= b < n) or not F[a, b]: continue
+        ok = False
+        for da, db in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+            p, q = a + da, b + db
+            if 0 <= p < n and 0 <= q < n and F[p, q] and (fixed[p, q] == fixed[a, b] or wild[p, q] or wild[a, b]) and (fixed[p, q] >= 0 or wild[p, q]) and (fixed[a, b] >= 0 or wild[a, b]): ok = True; break
+        if not ok: cnt += 1
+    return cnt
+
+def tile_layer(fixed, wild, below, rng, hidden_colour_of, jitter=0.0, stagger=2.0, allowed=None, orphan_cost=25.0, orphan_tiers=3):
     """fixed (n,n) LEGO colour or -1 ; wild (n,n) bool = hidden cell that may take any colour ; below (n,n) id of the plate under every cell (-1 : none).
     returns list of dict(x, z, w, d, colour, wild_only)"""
     n = fixed.shape[0]; covered = (fixed < 0) & ~wild; plates = []
@@ -30,11 +46,13 @@ def tile_layer(fixed, wild, below, rng, hidden_colour_of, jitter=0.0, stagger=2.
                     f = _feasible(ok, w, d)
                     if f.any(): cands.append((w * d, g, w, d, f))
         if not cands: raise RuntimeError("cannot cover the layer")
-        amax = max(c[0] for c in cands); best = None
+        areas = sorted({c[0] for c in cands}, reverse=True)[:orphan_tiers]; best = None
+        free_now = ~covered
         for area, g, w, d, f in cands:
-            if area != amax: continue
+            if area not in areas: continue
             for x, z in np.argwhere(f):
-                u = len(set(below[x:x + w, z:z + d].ravel().tolist()) - {-1}); sc = stagger * min(u, 3) + (rng.random() * jitter)
+                u = len(set(below[x:x + w, z:z + d].ravel().tolist()) - {-1}); sc = area * 10.0 + stagger * min(u, 3) + (rng.random() * jitter)
+                sc -= orphan_cost * _orphans(fixed, wild, free_now, x, z, w, d)
                 if best is None or sc > best[0]: best = (sc, g, x, z, w, d, None)
         if best is None: raise RuntimeError("cannot cover the layer")
         _, g, x, z, w, d, ok = best

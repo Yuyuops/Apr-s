@@ -90,10 +90,14 @@ def cell_grid(sem, names_list, n=32, thin_threshold=0.2):
         frac[:, :, i] = (sem == i).reshape(n, cell, n, cell).mean(axis=(1, 3))
     grid = frac.argmax(2)
     prio = [cls.index(nm) for nm in cls if nm in ("riviere", "route", "village")]
+    for ci in prio:                                                           # thin classes / point features : kept as soon as 20 % of the cell is theirs ; where several compete the one that covers MOST of the cell wins (a river crossing a road is the one drawn on top)
+        pass
+    cand = np.stack([np.where(frac[:, :, ci] >= thin_threshold, frac[:, :, ci], 0.0) for ci in prio], 2) if prio else None
+    if prio:
+        win = cand.argmax(2); has = cand.max(2) > 0
+        for k, ci in enumerate(prio): grid[has & (win == k)] = ci
     for ci in prio:
-        sel = frac[:, :, ci] >= thin_threshold; grid[sel] = ci
-        if cls[ci] == "village":                                               # a point feature never disappears
-            if not (grid == ci).any() and (frac[:, :, ci] > 0).any(): a = np.unravel_index(frac[:, :, ci].argmax(), (n, n)); grid[a] = ci
+        if cls[ci] == "village" and not (grid == ci).any() and (frac[:, :, ci] > 0).any(): a = np.unravel_index(frac[:, :, ci].argmax(), (n, n)); grid[a] = ci   # a point feature never disappears
     # connectivity of thin classes : two thin parts that are one object at pixel level must stay one object at cell level
     for ci in prio:
         nm = cls[ci]

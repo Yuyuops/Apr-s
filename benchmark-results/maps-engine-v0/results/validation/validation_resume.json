@@ -1,0 +1,81 @@
+{
+ "moteur1": {
+  "parts": 153,
+  "collisions": 0,
+  "disconnected_parts": 0,
+  "islands": 0,
+  "unsupported_at_placement": 0,
+  "joints": 285,
+  "studs_engaged": 2627,
+  "single_stud_joints": 35,
+  "blocked_studs": 0,
+  "min_tip_force_N": 2.18,
+  "stabilite_moteur1": {
+   "model": "rigid parts; clutch 1.0 N per stud (assumed); compression free; 0.10 g per stud x stud x plate; gravity, then a force at the far end of each sub-assembly. Indicative only.",
+   "cases": 78,
+   "gravity_sf_below_1": 0,
+   "gravity_sf_below_2": 0,
+   "min_gravity_sf": null,
+   "subassemblies_over_1g": 20,
+   "tip_force_below_0_5N": 0,
+   "tip_force_below_2N": 0,
+   "min_tip_force_N": 2.18
+  },
+  "disclaimer": "Geometric and graph checks plus an indicative stud-clutch model. Not a physical test."
+ },
+ "moteur2": {
+  "couvertures_de_couche_incorrectes": [],
+  "pieces_sans_appui": [],
+  "graphe_pieces": {
+   "noeuds": 153,
+   "liaisons": 285,
+   "tenons_engages": 2627,
+   "composantes": 1
+  },
+  "pieces_isolees": [],
+  "points_d_articulation": 25,
+  "ponts": 38,
+  "coupe_minimale_tenons": 1,
+  "coupe_minimale_cotes": [
+   1,
+   152
+  ],
+  "coupe_minimale_force_N_indicative": 1.0,
+  "noyau_dos_et_niveau_mer": {
+   "plaques": 80,
+   "coupe_minimale_tenons": 2,
+   "cotes": [
+    1,
+    79
+   ]
+  },
+  "tenons_min_vers_le_niveau_inferieur": 1,
+  "plaques_attachees_par_1_tenon": 9,
+  "alignement_des_joints_entre_niveaux": {
+   "-2->-1": 0.0,
+   "-1->0": 0.14,
+   "0->1": 0.237,
+   "1->2": 0.198,
+   "2->3": 0.75,
+   "3->4": 0.2
+  },
+  "dimensions_mm": {
+   "x": 256.0,
+   "z": 256.0,
+   "hauteur": 22.4
+  },
+  "dimensions_conformes_256mm": true,
+  "pieces": 153,
+  "pieces_1x1": 9,
+  "part_1x1": 0.0588,
+  "pieces_par_niveau": {
+   "-2": 16,
+   "-1": 25,
+   "0": 39,
+   "1": 52,
+   "2": 13,
+   "3": 7,
+   "4": 1
+  }
+ }
+}

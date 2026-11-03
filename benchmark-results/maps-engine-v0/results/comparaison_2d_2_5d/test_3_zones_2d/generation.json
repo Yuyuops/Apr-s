@@ -1,0 +1,22 @@
+{
+ "input": "input.png",
+ "mode": "2d",
+ "style": "relief_classic",
+ "pieces": 127,
+ "pieces_1x1": 2,
+ "references": 36,
+ "seconds": 5.0,
+ "part_1x1_share": 0.0157,
+ "etapes": 5,
+ "validation": {
+  "collisions": 0,
+  "deconnectees": 0,
+  "liaisons": 195,
+  "tenons_engages": 2048,
+  "a_1_tenon": 2,
+  "points_articulation": 13,
+  "coupe_min_tenons": 1
+ },
+ "briquestore": 202,
+ "seconds_total": 27.1
+}
