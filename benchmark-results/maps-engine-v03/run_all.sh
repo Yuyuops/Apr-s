@@ -3,7 +3,8 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 PY="$ROOT/../20_portable_engine/.venv/bin/python"
-MODE="$1"
+MODE="--generate"
+if [[ $# -ge 1 ]]; then MODE="$1"; fi
 if [[ ! -x "$PY" ]]; then echo "Missing V11 Python environment: $PY" >&2; exit 2; fi
 if [[ "$MODE" != "--generate" && "$MODE" != "--full" ]]; then
   echo "Usage: bash run_all.sh [--generate|--full]" >&2; exit 2
@@ -21,4 +22,5 @@ run_case "$ROOT/../maps-engine-v02/fixtures/ecosse_carte.png" "ecosse/A_48" 48
 run_case "$ROOT/../maps-engine-v01/fixtures/ile_temoin.svg" "ile_temoin/A_32" 32
 run_case "$ROOT/../maps-engine-v01/fixtures/test_3_zones.svg" "test_3_zones/A_32" 32
 run_case "$ROOT/fixtures/archipel_original.svg" "archipel/A_32" 32
-echo "All cases processed. Review support_report_v03.json inside results."
+"$PY" "$ROOT/tests/compare_v03.py"
+echo "All cases processed. Review results/COMPARAISON_V03.json and each support_report_v03.json."
