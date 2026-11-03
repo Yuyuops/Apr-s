@@ -1,0 +1,8 @@
+{
+  "name": "relief_classic",
+  "declaration": "Convention de style ARTISTIQUE declaree : les hauteurs sont des niveaux de plaques (3,2 mm) choisis par classe, jamais des altitudes geographiques. Niveau 0 = plan de la mer.",
+  "plate_mm": 3.2,
+  "max_relief_plates": 4,
+  "levels": {"mer": 0, "lac": 0, "riviere": 0, "terre": 1, "route": 1, "foret": 2, "colline": 3, "sommet": 4, "village": 2, "autre": 1},
+  "flat_2d_level": 1
+}
