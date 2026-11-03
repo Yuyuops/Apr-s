@@ -1,0 +1,31 @@
+name: LEGO Maps V0.3 - support regression tests
+
+on:
+  push:
+    branches:
+      - research/lego-maps-v03-chatgpt-20261103
+    paths:
+      - 'benchmark-results/maps-engine-v03/**'
+      - '.github/workflows/lego-maps-v03-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-support:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository without LFS downloads
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+      - name: Python standard-library unit and historical baseline tests
+        run: python3 benchmark-results/maps-engine-v03/tests/test_support_opt.py
+      - name: Syntax-check new support and CLI modules
+        run: |
+          python3 -m py_compile \
+            benchmark-results/maps-engine-v03/engine/maps_engine/support_opt.py \
+            benchmark-results/maps-engine-v03/engine/run_v03.py \
+            benchmark-results/maps-engine-v03/tests/compare_v03.py
