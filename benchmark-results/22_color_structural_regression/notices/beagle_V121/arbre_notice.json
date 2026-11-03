@@ -1,0 +1,62 @@
+{
+ "modules": {
+  "Corps": {
+   "etapes": 528,
+   "pieces": 10553
+  },
+  "Detail du visage 1 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 2 (1x 3960, 1x 6141)": {
+   "etapes": 2,
+   "pieces": 2
+  },
+  "Detail du visage 3 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 4 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 5 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 6 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 7 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 8 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 9 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 10 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 11 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 12 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 13 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  }
+ },
+ "total_etapes": 554,
+ "total_pieces": 10567
+}

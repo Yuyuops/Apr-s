@@ -1,0 +1,1523 @@
+{
+ "categories": {
+  "occupation": 5,
+  "couleur_exposee": 381,
+  "couleur_interieure": 356,
+  "finition_dessus": 0
+ },
+ "violations": [
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    1,
+    32,
+    14
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    1,
+    32,
+    15
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    1,
+    33,
+    14
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    1,
+    33,
+    15
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    1,
+    34,
+    13
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    1,
+    36,
+    13
+   ],
+   "avant": 0,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    4,
+    43,
+    13
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    5,
+    40,
+    15
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    5,
+    48,
+    13
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    5,
+    49,
+    13
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    5,
+    49,
+    15
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    40,
+    15
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    41,
+    15
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    50,
+    13
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    8,
+    1,
+    16
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    8,
+    2,
+    16
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    8,
+    48,
+    13
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    9,
+    2,
+    20
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    9,
+    49,
+    14
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    9,
+    49,
+    15
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    10,
+    52,
+    15
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    11,
+    34,
+    12
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    11,
+    34,
+    13
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    11,
+    67,
+    14
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    12,
+    68,
+    14
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    12,
+    68,
+    15
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    8,
+    12
+   ],
+   "avant": 0,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    60,
+    11
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    64,
+    12
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    65,
+    12
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    68,
+    12
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    69,
+    15
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    69,
+    16
+   ],
+   "avant": 4,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    83,
+    14
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    84,
+    13
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    84,
+    14
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    85,
+    14
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    86,
+    14
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    87,
+    14
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    88,
+    14
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  }
+ ],
+ "par_zone": {
+  "R1 plan d'appui (couche 0)": 5,
+  "R2 reinforce groupe 18": 23,
+  "R2 reinforce groupe 21": 46,
+  "R2 reinforce groupe 1": 22,
+  "R2 reinforce groupe 14": 13,
+  "R2 reinforce groupe 9": 52,
+  "R2 reinforce groupe 5": 84,
+  "R2 reinforce groupe 8": 10,
+  "R2 reinforce groupe 2": 4,
+  "R2 reinforce groupe 3": 8,
+  "R2 reinforce groupe 17": 1,
+  "R2 reinforce groupe 11": 4,
+  "R2 reinforce groupe 7": 18,
+  "R2 reinforce groupe 12": 8,
+  "R2 reinforce groupe 15": 19
+ },
+ "ignores_tessellation": 1981,
+ "interieur_hors_zone": [
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    13,
+    36,
+    13
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    13,
+    36,
+    14
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    13,
+    36,
+    15
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    13,
+    68,
+    14
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    13,
+    68,
+    15
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    13,
+    85,
+    13
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    13,
+    86,
+    13
+   ],
+   "avant": 0,
+   "apres": 14,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    14,
+    36,
+    13
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    14,
+    36,
+    14
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    14,
+    36,
+    15
+   ],
+   "avant": 14,
+   "apres": 4,
+   "zones": []
+  }
+ ],
+ "cellules_identiques": 9892,
+ "pieces_hors_reseau_modifiees": {
+  "retirees": 31,
+  "ajoutees": 63
+ },
+ "pieces_hors_reseau_liste": [
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3035",
+   "colour": 0,
+   "cell": [
+    17,
+    83,
+    16
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3035",
+   "colour": 0,
+   "cell": [
+    22,
+    88,
+    22
+   ],
+   "zones": [
+    "R2 reinforce groupe 9",
+    "R2 reinforce groupe 5"
+   ]
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3034",
+   "colour": 0,
+   "cell": [
+    18,
+    101,
+    20
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3031",
+   "colour": 0,
+   "cell": [
+    18,
+    106,
+    17
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3034",
+   "colour": 0,
+   "cell": [
+    18,
+    105,
+    20
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3008",
+   "colour": 0,
+   "cell": [
+    17,
+    103,
+    20
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3023",
+   "colour": 0,
+   "cell": [
+    20,
+    106,
+    22
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3023",
+   "colour": 0,
+   "cell": [
+    19,
+    106,
+    20
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    8,
+    68,
+    4
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    6,
+    68,
+    5
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    8,
+    88,
+    4
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    8,
+    70,
+    4
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    6,
+    70,
+    5
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    6,
+    88,
+    5
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    6,
+    74,
+    1
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    4,
+    74,
+    3
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    5,
+    72,
+    1
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    4,
+    72,
+    2
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    9,
+    90,
+    5
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    7,
+    90,
+    6
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "52107",
+   "colour": 0,
+   "cell": [
+    14,
+    85,
+    14
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "63864",
+   "colour": 0,
+   "cell": [
+    13,
+    85,
+    11
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "63864",
+   "colour": 0,
+   "cell": [
+    11,
+    85,
+    12
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3035",
+   "colour": 0,
+   "cell": [
+    17,
+    87,
+    16
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "52107",
+   "colour": 0,
+   "cell": [
+    15,
+    85,
+    15
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "52107",
+   "colour": 0,
+   "cell": [
+    16,
+    85,
+    17
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3007",
+   "colour": 0,
+   "cell": [
+    18,
+    85,
+    15
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3008",
+   "colour": 0,
+   "cell": [
+    17,
+    85,
+    16
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "3666",
+   "colour": 0,
+   "cell": [
+    16,
+    88,
+    16
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    12,
+    90,
+    10
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "6636",
+   "colour": 0,
+   "cell": [
+    10,
+    90,
+    11
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3035",
+   "colour": 14,
+   "cell": [
+    17,
+    83,
+    16
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3035",
+   "colour": 14,
+   "cell": [
+    22,
+    88,
+    22
+   ],
+   "zones": [
+    "R2 reinforce groupe 9",
+    "R2 reinforce groupe 5"
+   ]
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3034",
+   "colour": 14,
+   "cell": [
+    18,
+    101,
+    20
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3031",
+   "colour": 14,
+   "cell": [
+    18,
+    106,
+    17
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3034",
+   "colour": 14,
+   "cell": [
+    18,
+    105,
+    20
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3023",
+   "colour": 14,
+   "cell": [
+    20,
+    106,
+    22
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3023",
+   "colour": 14,
+   "cell": [
+    19,
+    106,
+    20
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3008",
+   "colour": 14,
+   "cell": [
+    17,
+    103,
+    20
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    9,
+    69,
+    6
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    9,
+    68,
+    5
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    8,
+    69,
+    4
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3070b",
+   "colour": 0,
+   "cell": [
+    7,
+    68,
+    3
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    6,
+    68,
+    2
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    8,
+    69,
+    7
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    7,
+    68,
+    6
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    6,
+    69,
+    5
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3070b",
+   "colour": 0,
+   "cell": [
+    5,
+    68,
+    4
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    4,
+    68,
+    3
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    9,
+    89,
+    6
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3070b",
+   "colour": 0,
+   "cell": [
+    9,
+    88,
+    5
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    8,
+    89,
+    5
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3070b",
+   "colour": 0,
+   "cell": [
+    8,
+    88,
+    4
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    7,
+    89,
+    3
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3070b",
+   "colour": 0,
+   "cell": [
+    6,
+    88,
+    2
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    9,
+    70,
+    5
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    7,
+    70,
+    3
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3070b",
+   "colour": 0,
+   "cell": [
+    6,
+    70,
+    1
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "3069b",
+   "colour": 0,
+   "cell": [
+    6,
+    73,
+    1
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "63864",
+   "colour": 0,
+   "cell": [
+    6,
+    78,
+    1
+   ],
+   "zones": []
+  }
+ ],
+ "violations_total": 395,
+ "interieur_hors_zone_total": 205,
+ "zones": [
+  {
+   "name": "R1 plan d'appui (couche 0)",
+   "kind": "module",
+   "lo": [
+    0,
+    0,
+    0
+   ],
+   "hi": [
+    39,
+    0,
+    39
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 7",
+   "kind": "module",
+   "lo": [
+    19,
+    37,
+    9
+   ],
+   "hi": [
+    24,
+    48,
+    13
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 14",
+   "kind": "module",
+   "lo": [
+    11,
+    92,
+    12
+   ],
+   "hi": [
+    16,
+    102,
+    15
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 5",
+   "kind": "module",
+   "lo": [
+    3,
+    29,
+    14
+   ],
+   "hi": [
+    6,
+    36,
+    17
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 8",
+   "kind": "module",
+   "lo": [
+    18,
+    64,
+    11
+   ],
+   "hi": [
+    22,
+    70,
+    14
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 13",
+   "kind": "module",
+   "lo": [
+    15,
+    64,
+    16
+   ],
+   "hi": [
+    19,
+    73,
+    19
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 15",
+   "kind": "module",
+   "lo": [
+    20,
+    37,
+    12
+   ],
+   "hi": [
+    24,
+    49,
+    19
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 17",
+   "kind": "module",
+   "lo": [
+    28,
+    30,
+    14
+   ],
+   "hi": [
+    34,
+    37,
+    17
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 9",
+   "kind": "module",
+   "lo": [
+    17,
+    82,
+    19
+   ],
+   "hi": [
+    22,
+    90,
+    23
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 18",
+   "kind": "module",
+   "lo": [
+    10,
+    37,
+    12
+   ],
+   "hi": [
+    14,
+    47,
+    19
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 21",
+   "kind": "module",
+   "lo": [
+    11,
+    36,
+    9
+   ],
+   "hi": [
+    22,
+    53,
+    12
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 20",
+   "kind": "module",
+   "lo": [
+    31,
+    27,
+    11
+   ],
+   "hi": [
+    35,
+    36,
+    17
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 2",
+   "kind": "module",
+   "lo": [
+    19,
+    9,
+    10
+   ],
+   "hi": [
+    25,
+    15,
+    13
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 3",
+   "kind": "module",
+   "lo": [
+    19,
+    9,
+    13
+   ],
+   "hi": [
+    25,
+    15,
+    17
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 12",
+   "kind": "module",
+   "lo": [
+    18,
+    14,
+    10
+   ],
+   "hi": [
+    21,
+    23,
+    17
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 11",
+   "kind": "module",
+   "lo": [
+    13,
+    17,
+    12
+   ],
+   "hi": [
+    16,
+    22,
+    17
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 5",
+   "kind": "module",
+   "lo": [
+    17,
+    81,
+    18
+   ],
+   "hi": [
+    22,
+    90,
+    23
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 8",
+   "kind": "module",
+   "lo": [
+    28,
+    30,
+    13
+   ],
+   "hi": [
+    34,
+    37,
+    17
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 1",
+   "kind": "module",
+   "lo": [
+    11,
+    47,
+    12
+   ],
+   "hi": [
+    15,
+    54,
+    19
+   ]
+  }
+ ]
+}

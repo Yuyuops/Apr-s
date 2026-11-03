@@ -1,0 +1,92 @@
+[
+ {
+  "test": "T1 aucun chemin absolu ni dossier de developpeur dans le moteur",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "T2 references historiques intactes (empreintes)",
+  "ok": true,
+  "detail": "38 fichiers verifies ; ecarts : []"
+ },
+ {
+  "test": "T3 paco : GLB a couleurs par sommets lu directement = grille archivee",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "T3 beagle : GLB a couleurs par sommets lu directement = grille archivee",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "T4 la validation d'entree refuse un GLB sans couleurs",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "T5 audit paco = baseline archivee (defauts retrouves)",
+  "ok": true,
+  "detail": "{\"cellules_exposees\": 6212, \"cellules_parasites\": 369, \"cellules_sans_correspondance\": 467, \"dE_moyen\": 20.4, \"iou_global\": 0.867}"
+ },
+ {
+  "test": "T5 audit beagle = baseline archivee (defauts retrouves)",
+  "ok": true,
+  "detail": "{\"cellules_exposees\": 11846, \"cellules_parasites\": 195, \"cellules_sans_correspondance\": 0, \"dE_moyen\": 17.1, \"iou_global\": 0.998}"
+ },
+ {
+  "test": "T6 l'audit detecte des briques de couleur parasite injectees (60 plaques Dark Orange -> bleu)",
+  "ok": true,
+  "detail": "+73 cellules parasites"
+ },
+ {
+  "test": "T7 l'audit detecte une oreille deplacee (80 ldu = 32 mm)",
+  "ok": true,
+  "detail": "ecart du centre 11.1 -> 35.2 mm"
+ },
+ {
+  "test": "T8 audit paco V12 = baseline V12 (refs/audit_baseline_v12.json)",
+  "ok": true,
+  "detail": "{\"cellules_exposees\": 6212, \"cellules_parasites\": 114, \"cellules_sans_correspondance\": 182, \"dE_moyen\": 15.5, \"iou_global\": 0.867}"
+ },
+ {
+  "test": "T8 audit beagle V12 = baseline V12 (refs/audit_baseline_v12.json)",
+  "ok": true,
+  "detail": "{\"cellules_exposees\": 11846, \"cellules_parasites\": 31, \"cellules_sans_correspondance\": 31, \"dE_moyen\": 14.7, \"iou_global\": 0.998}"
+ },
+ {
+  "test": "T9 paco : moins de cellules parasites et de dE moyen qu'en V11 (baseline historique inchangee)",
+  "ok": true,
+  "detail": "parasites 369 -> 114 ; dE 20.4 -> 15.5"
+ },
+ {
+  "test": "T9 beagle : moins de cellules parasites et de dE moyen qu'en V11 (baseline historique inchangee)",
+  "ok": true,
+  "detail": "parasites 195 -> 31 ; dE 17.1 -> 14.7"
+ },
+ {
+  "test": "T10 beagle V12 : aucune couleur hors palette selectionnee dans le GLB (pas de jaune / rouge de Paco)",
+  "ok": true,
+  "detail": "couleurs ['0', '15', '28', '484', '70']"
+ },
+ {
+  "test": "T10b modeles V12 : 0 collision, 0 piece deconnectee, 0 piece sans appui",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "test": "T11 Beagle V12.1 : 0 collision, 0 deconnectee, cas < 0,5 N <= V11, SF gravite >= V11, force de bout >= V11",
+  "ok": true,
+  "detail": "cas 10 -> 0 ; SF 38.23 -> 43.25"
+ },
+ {
+  "test": "T11b Paco V12.1 option B : 0 collision, 0 deconnectee, cas < 0,5 N <= V11 ; option A mesuree (compromis documente)",
+  "ok": true,
+  "detail": "A : 8 cas ; B : 6 cas ; V11 : 7"
+ },
+ {
+  "test": "T12 generateur historique : Paco (palette V11 figee, renfort historique) = V9.1 octet pour octet apres les modifications V12.1",
+  "ok": true,
+  "detail": ""
+ }
+]

@@ -1,0 +1,115 @@
+{
+ "ear": "oreille_haute",
+ "triangles_glb": 14693,
+ "points_lego": {
+  "tout": 57552,
+  "zone": 7834,
+  "visible": 1239
+ },
+ "glb": {
+  "centroide": [
+   87.3,
+   357.4,
+   -76.6
+  ],
+  "longueur_mm": 128.3,
+  "largeur_mm": 69.7,
+  "epaisseur_mm": 18.4,
+  "normale": [
+   0.849,
+   -0.027,
+   0.528
+  ]
+ },
+ "mesures": {
+  "tout": {
+   "ecart_centroide_mm": 6.5,
+   "ecart_normale_deg": 4.5,
+   "ecart_racine_mm": 23.7,
+   "ecart_pointe_mm": 64.9,
+   "longueur_mm": [
+    128.3,
+    201.7
+   ],
+   "largeur_mm": [
+    69.7,
+    56.9
+   ],
+   "epaisseur_mm": [
+    18.4,
+    18.8
+   ],
+   "rapport_epaisseur": 1.02,
+   "rapport_longueur": 1.57,
+   "rapport_largeur": 0.82,
+   "surface_contour_cm2": [
+    95.4,
+    113.8
+   ],
+   "iou_contour_en_place": 0.63,
+   "iou_contour_centroides_superposes": 0.631,
+   "iou_contour_axes_et_centroides_superposes": 0.619
+  },
+  "zone": {
+   "ecart_centroide_mm": 6.1,
+   "ecart_normale_deg": 2.2,
+   "ecart_racine_mm": 17.2,
+   "ecart_pointe_mm": 22.3,
+   "longueur_mm": [
+    128.3,
+    118.5
+   ],
+   "largeur_mm": [
+    69.7,
+    55.1
+   ],
+   "epaisseur_mm": [
+    18.4,
+    15.8
+   ],
+   "rapport_epaisseur": 0.86,
+   "rapport_longueur": 0.92,
+   "rapport_largeur": 0.79,
+   "surface_contour_cm2": [
+    95.8,
+    66.7
+   ],
+   "iou_contour_en_place": 0.696,
+   "iou_contour_centroides_superposes": 0.666,
+   "iou_contour_axes_et_centroides_superposes": 0.638
+  },
+  "visible": {
+   "ecart_centroide_mm": 13.9,
+   "ecart_normale_deg": 3.8,
+   "ecart_racine_mm": 8.0,
+   "ecart_pointe_mm": 19.5,
+   "longueur_mm": [
+    128.3,
+    127.3
+   ],
+   "largeur_mm": [
+    69.7,
+    49.1
+   ],
+   "epaisseur_mm": [
+    18.4,
+    17.2
+   ],
+   "rapport_epaisseur": 0.93,
+   "rapport_longueur": 0.99,
+   "rapport_largeur": 0.7,
+   "surface_contour_cm2": [
+    95.8,
+    25.0
+   ],
+   "iou_contour_en_place": 0.26,
+   "iou_contour_centroides_superposes": 0.242,
+   "iou_contour_axes_et_centroides_superposes": 0.231
+  }
+ },
+ "critere": {
+  "ecart_de_forme": 0.304,
+  "gain_iou_par_superposition": -0.03
+ },
+ "conclusion": "difference de forme / d'epaisseur (le placement n'est pas demontre errone)"
+}

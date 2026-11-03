@@ -20,7 +20,7 @@ import argparse, hashlib, json, os, shutil, subprocess, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from _paths import ROOT, LDRAW, RB_DB, ENGINE_DIR
-STAGES = ["input", "palette", "grid", "segment", "frame", "ears", "details", "assemble", "validate", "reinforce", "stitch", "repair", "final"]
+STAGES = ["input", "palette", "grid", "segment", "frame", "ears", "details", "assemble", "validate", "reinforce", "stitch", "repair", "final", "notice"]
 
 def sh(cmd, env=None, log=None, cwd=None):
     e = dict(os.environ); e.update(env or {})
@@ -126,7 +126,7 @@ def main():
         cur, weak = os.path.join(v82, "v82_notice.ldr"), os.path.join(v82, "v82_weak.json")
         for k, p in enumerate(cfg.get("reinforce_passes", [{"per_layer": 1, "skip_r1": 0}, {"per_layer": 1, "skip_r1": 1}])):
             nxt = os.path.join(rf, "pass%d.ldr" % (k + 1)); log_j = os.path.join(rf, "pass%d_log.json" % (k + 1))
-            sh([py, E("reinforce.py"), cur, weak, nxt, log_j, str(p["per_layer"]), str(p["skip_r1"])], e, log)
+            sh([py, E("reinforce.py"), cur, weak, nxt, log_j, str(p["per_layer"]), str(p["skip_r1"]), str(p.get("max_group_parts", 60)), str(int(p.get("shorten_on_cut", 0)))], e, log)
             validate(nxt, "pass%d" % (k + 1), rf, False); last.update(ldr=nxt, weak=os.path.join(rf, "pass%d_weak.json" % (k + 1)))
             cur, weak = nxt, last["weak"]
         json.dump(last, open(os.path.join(rf, "last.json"), "w"))
@@ -145,7 +145,18 @@ def main():
         src = validate(l["ldr"], name, fin, True)
         sh([py, E("final_scope.py"), os.path.join(v82, "v82_notice.ldr"), src, os.path.join(fin, "scope.json")] + [os.path.join(v82, "v82_notice.ldr") + ":" + os.path.join(v82, "v82_weak.json") + ":" + os.path.join(rf, "pass1_log.json")]
            + ([os.path.join(rf, "pass1.ldr") + ":" + os.path.join(rf, "pass1_weak.json") + ":" + os.path.join(rf, "pass2_log.json")] if len(cfg.get("reinforce_passes", [0, 0])) > 1 else []), dict(env, **shape_env()), log)
-    for s, f in (("input", s_input), ("palette", s_palette), ("grid", s_grid), ("segment", s_segment), ("frame", s_frame), ("ears", s_ears), ("details", s_details), ("assemble", s_assemble), ("validate", s_validate), ("reinforce", s_reinforce), ("stitch", s_stitch), ("repair", s_repair), ("final", s_final)):
+    def s_notice():
+        """hierarchical building plan (modules : body, arms, sub-assemblies, details) with the motion checks of every step : notice_plan.py (+ run_ears_v91.py for the ear sub-assemblies)"""
+        fin = os.path.join(out, "final"); nd = os.path.join(out, "notice"); os.makedirs(nd, exist_ok=True); src = os.path.join(fin, "%s_notice.ldr" % name); e = dict(env, **shape_env())
+        cmd = [py, E("notice_plan.py"), src, os.path.join(nd, name)]
+        if ears:
+            seq = os.path.join(nd, "sequences.json"); sh([py, E("run_ears_v91.py"), src, seq, "--all"], e, log); cmd += ["--ears", seq]
+        sh(cmd, e, log); plan = json.load(open(os.path.join(nd, name + "_plan.json")))
+        sh([py, E("export_notice.py"), src, os.path.join(nd, name + "_plan.json"), os.path.join(fin, "%s_catalogue.csv" % name), nd], e, log)
+        pl = plan["plan"]; bad = [i for i, s_ in enumerate(pl) if any(not c.get("ok", True) for c in s_["checks"])]
+        from collections import Counter
+        json.dump(dict(etapes=len(pl), par_module=dict(Counter(s_["module"] for s_ in pl)), etapes_avec_controle_en_defaut=len(bad), exemples_en_defaut=bad[:10], resume=plan.get("resume")), open(os.path.join(nd, "notice_resume.json"), "w"), indent=1, default=str)
+    for s, f in (("input", s_input), ("palette", s_palette), ("grid", s_grid), ("segment", s_segment), ("frame", s_frame), ("ears", s_ears), ("details", s_details), ("assemble", s_assemble), ("validate", s_validate), ("reinforce", s_reinforce), ("stitch", s_stitch), ("repair", s_repair), ("final", s_final), ("notice", s_notice)):
         stage(s, f)
     man = {}
     for dp, dn, fn in os.walk(out):

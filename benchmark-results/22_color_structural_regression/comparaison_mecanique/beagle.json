@@ -1,0 +1,503 @@
+{
+ "V11": {
+  "pieces": 11111,
+  "types_de_pieces": 24,
+  "pieces_par_type": {
+   "3024": 4070,
+   "3023": 2554,
+   "3032": 919,
+   "3710": 737,
+   "3623": 666,
+   "3020": 570,
+   "3795": 536,
+   "3666": 424
+  },
+  "couleurs_lignes": 8,
+  "liaisons": 21091,
+  "tenons_engages": 51020,
+  "liaisons_a_un_tenon": 10420,
+  "collisions": 0,
+  "pieces_deconnectees": 0,
+  "sans_appui_a_la_pose": 0,
+  "cas": 2285,
+  "cas_sous_0_5N": 10,
+  "cas_sous_2N": 65,
+  "sf_gravite_min": 38.23,
+  "force_bout_min_N": 0.1,
+  "groupes_faibles": 10,
+  "cas_faibles_par_zone": {
+   "museau": 1,
+   "pieds": 2,
+   "torse": 6,
+   "crane": 1
+  },
+  "groupes": [
+   {
+    "parties": 8,
+    "tenons": 1,
+    "force_N": 0.1,
+    "cas": 1,
+    "couleurs": {
+     "White": 6,
+     "Medium_Nougat": 2
+    },
+    "zone": [
+     [
+      "museau",
+      27
+     ],
+     [
+      "yeux",
+      3
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      220.0,
+      -776.0,
+      1080.0
+     ],
+     [
+      240.0,
+      -720.0,
+      1120.0
+     ]
+    ]
+   },
+   {
+    "parties": 4,
+    "tenons": 1,
+    "force_N": 0.15,
+    "cas": 1,
+    "couleurs": {
+     "White": 4
+    },
+    "zone": [
+     [
+      "pieds",
+      11
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      500.0,
+      -40.0,
+      860.0
+     ],
+     [
+      560.0,
+      -8.0,
+      880.0
+     ]
+    ]
+   },
+   {
+    "parties": 12,
+    "tenons": 2,
+    "force_N": 0.19,
+    "cas": 4,
+    "couleurs": {
+     "Medium_Nougat": 9,
+     "White": 2
+    },
+    "zone": [
+     [
+      "torse",
+      34
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      260.0,
+      -672.0,
+      920.0
+     ],
+     [
+      340.0,
+      -616.0,
+      940.0
+     ]
+    ]
+   },
+   {
+    "parties": 6,
+    "tenons": 2,
+    "force_N": 0.22,
+    "cas": 1,
+    "couleurs": {
+     "White": 6
+    },
+    "zone": [
+     [
+      "torse",
+      13
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      380.0,
+      -384.0,
+      860.0
+     ],
+     [
+      420.0,
+      -336.0,
+      880.0
+     ]
+    ]
+   },
+   {
+    "parties": 11,
+    "tenons": 2,
+    "force_N": 0.22,
+    "cas": 1,
+    "couleurs": {
+     "Dark_Brown": 5,
+     "White": 3
+    },
+    "zone": [
+     [
+      "crane",
+      39
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      240.0,
+      -776.0,
+      40.0
+     ],
+     [
+      280.0,
+      -728.0,
+      80.0
+     ]
+    ]
+   },
+   {
+    "parties": 9,
+    "tenons": 2,
+    "force_N": 0.31,
+    "cas": 1,
+    "couleurs": {
+     "White": 7,
+     "Reddish_Brown": 1
+    },
+    "zone": [
+     [
+      "torse",
+      17
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      440.0,
+      -552.0,
+      820.0
+     ],
+     [
+      480.0,
+      -520.0,
+      880.0
+     ]
+    ]
+   },
+   {
+    "parties": 4,
+    "tenons": 3,
+    "force_N": 0.47,
+    "cas": 1,
+    "couleurs": {
+     "White": 4
+    },
+    "zone": [
+     [
+      "pieds",
+      20
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      500.0,
+      -48.0,
+      120.0
+     ],
+     [
+      520.0,
+      -16.0,
+      200.0
+     ]
+    ]
+   }
+  ],
+  "etapes_ldr": 593
+ },
+ "V12": {
+  "pieces": 10498,
+  "types_de_pieces": 24,
+  "pieces_par_type": {
+   "3024": 3552,
+   "3023": 2166,
+   "3032": 949,
+   "3623": 875,
+   "3710": 834,
+   "3020": 540,
+   "3795": 513,
+   "3666": 442
+  },
+  "couleurs_lignes": 5,
+  "liaisons": 20440,
+  "tenons_engages": 51020,
+  "liaisons_a_un_tenon": 9520,
+  "collisions": 0,
+  "pieces_deconnectees": 0,
+  "sans_appui_a_la_pose": 0,
+  "cas": 2055,
+  "cas_sous_0_5N": 32,
+  "cas_sous_2N": 99,
+  "sf_gravite_min": 15.79,
+  "force_bout_min_N": 0.06,
+  "groupes_faibles": 32,
+  "cas_faibles_par_zone": {
+   "crane": 4,
+   "museau": 1,
+   "pieds": 26,
+   "torse": 1
+  },
+  "groupes": [
+   {
+    "parties": 12,
+    "tenons": 1,
+    "force_N": 0.06,
+    "cas": 3,
+    "couleurs": {
+     "Black": 6,
+     "Reddish_Brown": 5
+    },
+    "zone": [
+     [
+      "crane",
+      52
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      460.0,
+      -880.0,
+      740.0
+     ],
+     [
+      480.0,
+      -784.0,
+      760.0
+     ]
+    ]
+   },
+   {
+    "parties": 9,
+    "tenons": 1,
+    "force_N": 0.1,
+    "cas": 1,
+    "couleurs": {
+     "White": 6,
+     "Dark_Tan": 3
+    },
+    "zone": [
+     [
+      "museau",
+      27
+     ],
+     [
+      "yeux",
+      3
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      220.0,
+      -776.0,
+      1080.0
+     ],
+     [
+      240.0,
+      -720.0,
+      1120.0
+     ]
+    ]
+   },
+   {
+    "parties": 4,
+    "tenons": 1,
+    "force_N": 0.15,
+    "cas": 1,
+    "couleurs": {
+     "White": 4
+    },
+    "zone": [
+     [
+      "pieds",
+      11
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      500.0,
+      -40.0,
+      860.0
+     ],
+     [
+      560.0,
+      -8.0,
+      880.0
+     ]
+    ]
+   },
+   {
+    "parties": 69,
+    "tenons": 3,
+    "force_N": 0.15,
+    "cas": 24,
+    "couleurs": {
+     "Dark_Tan": 27,
+     "White": 4
+    },
+    "zone": [
+     [
+      "pieds",
+      93
+     ],
+     [
+      "jambes",
+      78
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      220.0,
+      -248.0,
+      620.0
+     ],
+     [
+      240.0,
+      -8.0,
+      900.0
+     ]
+    ]
+   },
+   {
+    "parties": 8,
+    "tenons": 2,
+    "force_N": 0.26,
+    "cas": 1,
+    "couleurs": {
+     "Black": 5,
+     "Dark_Orange": 2
+    },
+    "zone": [
+     [
+      "crane",
+      22
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      120.0,
+      -968.0,
+      900.0
+     ],
+     [
+      160.0,
+      -928.0,
+      940.0
+     ]
+    ]
+   },
+   {
+    "parties": 9,
+    "tenons": 2,
+    "force_N": 0.31,
+    "cas": 1,
+    "couleurs": {
+     "White": 6,
+     "Dark_Tan": 2
+    },
+    "zone": [
+     [
+      "torse",
+      17
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      440.0,
+      -552.0,
+      820.0
+     ],
+     [
+      480.0,
+      -520.0,
+      880.0
+     ]
+    ]
+   },
+   {
+    "parties": 4,
+    "tenons": 3,
+    "force_N": 0.47,
+    "cas": 1,
+    "couleurs": {
+     "White": 4
+    },
+    "zone": [
+     [
+      "pieds",
+      20
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      500.0,
+      -48.0,
+      120.0
+     ],
+     [
+      520.0,
+      -16.0,
+      200.0
+     ]
+    ]
+   }
+  ],
+  "etapes_ldr": 602
+ },
+ "V12.1": {
+  "pieces": 10567,
+  "types_de_pieces": 23,
+  "pieces_par_type": {
+   "3024": 3584,
+   "3023": 2207,
+   "3032": 946,
+   "3623": 879,
+   "3710": 835,
+   "3020": 536,
+   "3795": 513,
+   "3666": 446
+  },
+  "couleurs_lignes": 5,
+  "liaisons": 20594,
+  "tenons_engages": 51020,
+  "liaisons_a_un_tenon": 9715,
+  "collisions": 0,
+  "pieces_deconnectees": 0,
+  "sans_appui_a_la_pose": 0,
+  "cas": 2016,
+  "cas_sous_0_5N": 0,
+  "cas_sous_2N": 62,
+  "sf_gravite_min": 43.25,
+  "force_bout_min_N": 0.52,
+  "groupes_faibles": 0,
+  "cas_faibles_par_zone": {},
+  "groupes": [],
+  "etapes_ldr": 544
+ }
+}

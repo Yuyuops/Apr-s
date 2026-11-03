@@ -1,0 +1,16 @@
+{"path": "../02_glb_gratuit_hunyuan2mv/paco.glb", "vertices": 115868, "faces": 231740, "kind": "ColorVisuals", "extents": [1.3318107724189758, 1.9573139548301697, 1.3329504132270813], "colours_distinct": 42129, "watertight": true, "components": 1}
+stage input        3.2s
+  palette : ['Orange', 'Black', 'Yellow', 'Red', 'Dark_Tan', 'White']
+stage palette      2.0s
+stage grid        33.0s
+stage segment      3.2s
+stage frame        4.4s
+stage ears       120.0s
+stage details     51.1s
+stage assemble    14.6s
+stage validate    18.8s
+stage reinforce   84.8s
+stage stitch       4.1s
+stage repair       4.5s
+stage final       22.9s
+done in 367s ; 46 files in manifest.json

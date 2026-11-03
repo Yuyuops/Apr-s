@@ -1,0 +1,1240 @@
+{
+ "categories": {
+  "occupation": 0,
+  "couleur_exposee": 107,
+  "couleur_interieure": 305,
+  "finition_dessus": 0
+ },
+ "violations": [
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    2,
+    1,
+    43
+   ],
+   "avant": 15,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    2,
+    2,
+    43
+   ],
+   "avant": 15,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    3,
+    1,
+    11
+   ],
+   "avant": 0,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    3,
+    1,
+    43
+   ],
+   "avant": 15,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    3,
+    2,
+    43
+   ],
+   "avant": 15,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    4,
+    1,
+    11
+   ],
+   "avant": 0,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    5,
+    1,
+    5
+   ],
+   "avant": 15,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    5,
+    40,
+    38
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    5,
+    40,
+    39
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    31,
+    35
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    38,
+    39
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    47,
+    40
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    48,
+    40
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    49,
+    40
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    56,
+    41
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    59,
+    41
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    65,
+    40
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    66,
+    40
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    6,
+    68,
+    39
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    7,
+    76,
+    31
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    7,
+    99,
+    35
+   ],
+   "avant": 0,
+   "apres": 70,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    7,
+    99,
+    36
+   ],
+   "avant": 0,
+   "apres": 70,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    8,
+    41,
+    41
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    8,
+    103,
+    34
+   ],
+   "avant": 0,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    8,
+    104,
+    34
+   ],
+   "avant": 0,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    8,
+    107,
+    35
+   ],
+   "avant": 0,
+   "apres": 70,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    8,
+    108,
+    35
+   ],
+   "avant": 0,
+   "apres": 70,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    8,
+    108,
+    36
+   ],
+   "avant": 0,
+   "apres": 70,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    9,
+    17,
+    5
+   ],
+   "avant": 15,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    9,
+    18,
+    5
+   ],
+   "avant": 15,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    9,
+    19,
+    5
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    9,
+    20,
+    5
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    9,
+    21,
+    5
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    9,
+    109,
+    49
+   ],
+   "avant": 0,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    11,
+    108,
+    50
+   ],
+   "avant": 0,
+   "apres": 70,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    12,
+    94,
+    32
+   ],
+   "avant": 15,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    12,
+    96,
+    32
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    13,
+    94,
+    32
+   ],
+   "avant": 15,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    16,
+    58,
+    6
+   ],
+   "avant": 15,
+   "apres": 28,
+   "zones": []
+  },
+  {
+   "type": "couleur_exposee",
+   "cell": [
+    16,
+    89,
+    2
+   ],
+   "avant": 15,
+   "apres": 484,
+   "zones": []
+  }
+ ],
+ "par_zone": {
+  "R2 reinforce groupe 15": 15,
+  "R2 reinforce groupe 28": 1,
+  "R2 reinforce groupe 32": 13,
+  "R2 reinforce groupe 4": 8,
+  "R2 reinforce groupe 21": 7,
+  "R2 reinforce groupe 14": 2,
+  "R2 reinforce groupe 20": 4,
+  "R2 reinforce groupe 25": 9,
+  "R2 reinforce groupe 38": 13,
+  "R2 reinforce groupe 30": 2,
+  "R2 reinforce groupe 12": 5,
+  "R2 reinforce groupe 8": 1,
+  "R2 reinforce groupe 36": 4,
+  "R2 reinforce groupe 9": 18,
+  "R2 reinforce groupe 18": 10,
+  "R2 reinforce groupe 35": 10,
+  "R2 reinforce groupe 2": 23,
+  "R2 reinforce groupe 34": 14,
+  "R2 reinforce groupe 19": 10,
+  "R2 reinforce groupe 11": 11,
+  "R2 reinforce groupe 41": 39,
+  "R2 reinforce groupe 40": 8,
+  "R2 reinforce groupe 24": 6,
+  "R2 reinforce groupe 16": 12,
+  "R2 reinforce groupe 22": 11,
+  "R2 reinforce groupe 31": 1,
+  "R2 reinforce groupe 39": 6,
+  "R2 reinforce groupe 5": 9,
+  "R2 reinforce groupe 1": 12,
+  "R2 reinforce groupe 27": 7,
+  "R2 reinforce groupe 23": 12,
+  "R2 reinforce groupe 17": 5,
+  "R2 reinforce groupe 3": 7,
+  "R2 reinforce groupe 10": 17,
+  "R2 reinforce groupe 29": 5,
+  "R2 reinforce groupe 26": 8,
+  "R2 reinforce groupe 7": 8,
+  "R2 reinforce groupe 6": 3,
+  "R2 reinforce groupe 33": 5,
+  "R2 reinforce groupe 37": 10
+ },
+ "ignores_tessellation": 2295,
+ "interieur_hors_zone": [
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    6,
+    31,
+    34
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    6,
+    31,
+    36
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    6,
+    31,
+    37
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    7,
+    59,
+    41
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    7,
+    76,
+    32
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    7,
+    76,
+    33
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    7,
+    76,
+    34
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    7,
+    76,
+    35
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    7,
+    76,
+    36
+   ],
+   "avant": 484,
+   "apres": 15,
+   "zones": []
+  },
+  {
+   "type": "couleur_interieure",
+   "cell": [
+    8,
+    104,
+    35
+   ],
+   "avant": 0,
+   "apres": 484,
+   "zones": []
+  }
+ ],
+ "cellules_identiques": 49882,
+ "pieces_hors_reseau_modifiees": {
+  "retirees": 1,
+  "ajoutees": 1
+ },
+ "pieces_hors_reseau_liste": [
+  {
+   "type": "piece_hors_reseau_retiree",
+   "ref": "85984",
+   "colour": 0,
+   "cell": [
+    24,
+    119,
+    40
+   ],
+   "zones": []
+  },
+  {
+   "type": "piece_hors_reseau_ajoutee",
+   "ref": "85984",
+   "colour": 28,
+   "cell": [
+    24,
+    119,
+    40
+   ],
+   "zones": []
+  }
+ ],
+ "violations_total": 86,
+ "interieur_hors_zone_total": 53,
+ "zones": [
+  {
+   "name": "R2 reinforce groupe 40",
+   "kind": "module",
+   "lo": [
+    7,
+    42,
+    41
+   ],
+   "hi": [
+    10,
+    58,
+    43
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 33",
+   "kind": "module",
+   "lo": [
+    21,
+    36,
+    15
+   ],
+   "hi": [
+    24,
+    48,
+    18
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 37",
+   "kind": "module",
+   "lo": [
+    23,
+    98,
+    35
+   ],
+   "hi": [
+    25,
+    110,
+    38
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 38",
+   "kind": "module",
+   "lo": [
+    22,
+    97,
+    36
+   ],
+   "hi": [
+    25,
+    110,
+    38
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 39",
+   "kind": "module",
+   "lo": [
+    11,
+    65,
+    43
+   ],
+   "hi": [
+    14,
+    76,
+    45
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 32",
+   "kind": "module",
+   "lo": [
+    9,
+    75,
+    42
+   ],
+   "hi": [
+    13,
+    86,
+    45
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 36",
+   "kind": "module",
+   "lo": [
+    4,
+    0,
+    42
+   ],
+   "hi": [
+    11,
+    7,
+    45
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 21",
+   "kind": "module",
+   "lo": [
+    11,
+    89,
+    1
+   ],
+   "hi": [
+    15,
+    97,
+    5
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 31",
+   "kind": "module",
+   "lo": [
+    10,
+    89,
+    53
+   ],
+   "hi": [
+    13,
+    97,
+    56
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 34",
+   "kind": "module",
+   "lo": [
+    4,
+    35,
+    15
+   ],
+   "hi": [
+    8,
+    48,
+    17
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 23",
+   "kind": "module",
+   "lo": [
+    15,
+    65,
+    42
+   ],
+   "hi": [
+    21,
+    78,
+    45
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 15",
+   "kind": "module",
+   "lo": [
+    3,
+    95,
+    43
+   ],
+   "hi": [
+    8,
+    106,
+    46
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 8",
+   "kind": "module",
+   "lo": [
+    24,
+    0,
+    41
+   ],
+   "hi": [
+    28,
+    5,
+    44
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 16",
+   "kind": "module",
+   "lo": [
+    12,
+    45,
+    43
+   ],
+   "hi": [
+    17,
+    65,
+    46
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 41",
+   "kind": "module",
+   "lo": [
+    9,
+    0,
+    30
+   ],
+   "hi": [
+    12,
+    31,
+    45
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 14",
+   "kind": "module",
+   "lo": [
+    12,
+    98,
+    54
+   ],
+   "hi": [
+    18,
+    103,
+    58
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 22",
+   "kind": "module",
+   "lo": [
+    12,
+    76,
+    44
+   ],
+   "hi": [
+    17,
+    84,
+    47
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 25",
+   "kind": "module",
+   "lo": [
+    22,
+    27,
+    32
+   ],
+   "hi": [
+    25,
+    35,
+    35
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 17",
+   "kind": "module",
+   "lo": [
+    17,
+    41,
+    41
+   ],
+   "hi": [
+    21,
+    48,
+    44
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 35",
+   "kind": "module",
+   "lo": [
+    4,
+    29,
+    12
+   ],
+   "hi": [
+    7,
+    39,
+    16
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 10",
+   "kind": "module",
+   "lo": [
+    18,
+    19,
+    30
+   ],
+   "hi": [
+    23,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 24",
+   "kind": "module",
+   "lo": [
+    10,
+    40,
+    42
+   ],
+   "hi": [
+    15,
+    47,
+    45
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 28",
+   "kind": "module",
+   "lo": [
+    5,
+    115,
+    44
+   ],
+   "hi": [
+    8,
+    121,
+    47
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 3",
+   "kind": "module",
+   "lo": [
+    17,
+    92,
+    50
+   ],
+   "hi": [
+    20,
+    100,
+    54
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 4",
+   "kind": "module",
+   "lo": [
+    12,
+    105,
+    49
+   ],
+   "hi": [
+    16,
+    113,
+    52
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 9",
+   "kind": "module",
+   "lo": [
+    5,
+    20,
+    30
+   ],
+   "hi": [
+    11,
+    31,
+    33
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 30",
+   "kind": "module",
+   "lo": [
+    21,
+    64,
+    39
+   ],
+   "hi": [
+    24,
+    69,
+    44
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 12",
+   "kind": "module",
+   "lo": [
+    23,
+    63,
+    35
+   ],
+   "hi": [
+    26,
+    68,
+    40
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 7",
+   "kind": "module",
+   "lo": [
+    18,
+    13,
+    31
+   ],
+   "hi": [
+    24,
+    21,
+    34
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 5",
+   "kind": "module",
+   "lo": [
+    12,
+    68,
+    0
+   ],
+   "hi": [
+    17,
+    76,
+    3
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 11",
+   "kind": "module",
+   "lo": [
+    6,
+    13,
+    31
+   ],
+   "hi": [
+    11,
+    21,
+    34
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 19",
+   "kind": "module",
+   "lo": [
+    5,
+    5,
+    32
+   ],
+   "hi": [
+    11,
+    14,
+    35
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 20",
+   "kind": "module",
+   "lo": [
+    22,
+    0,
+    9
+   ],
+   "hi": [
+    27,
+    4,
+    12
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 26",
+   "kind": "module",
+   "lo": [
+    18,
+    5,
+    32
+   ],
+   "hi": [
+    24,
+    14,
+    35
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 18",
+   "kind": "module",
+   "lo": [
+    6,
+    28,
+    29
+   ],
+   "hi": [
+    12,
+    35,
+    32
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 27",
+   "kind": "module",
+   "lo": [
+    12,
+    79,
+    3
+   ],
+   "hi": [
+    18,
+    87,
+    7
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 29",
+   "kind": "module",
+   "lo": [
+    19,
+    2,
+    9
+   ],
+   "hi": [
+    24,
+    9,
+    12
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 1",
+   "kind": "module",
+   "lo": [
+    23,
+    1,
+    5
+   ],
+   "hi": [
+    26,
+    6,
+    10
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 2",
+   "kind": "module",
+   "lo": [
+    7,
+    71,
+    20
+   ],
+   "hi": [
+    10,
+    76,
+    24
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 6",
+   "kind": "module",
+   "lo": [
+    18,
+    30,
+    14
+   ],
+   "hi": [
+    22,
+    35,
+    17
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 13",
+   "kind": "module",
+   "lo": [
+    22,
+    69,
+    32
+   ],
+   "hi": [
+    26,
+    74,
+    36
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 2",
+   "kind": "module",
+   "lo": [
+    4,
+    32,
+    14
+   ],
+   "hi": [
+    9,
+    48,
+    18
+   ]
+  },
+  {
+   "name": "R2 reinforce groupe 1",
+   "kind": "module",
+   "lo": [
+    13,
+    68,
+    0
+   ],
+   "hi": [
+    17,
+    73,
+    3
+   ]
+  }
+ ]
+}

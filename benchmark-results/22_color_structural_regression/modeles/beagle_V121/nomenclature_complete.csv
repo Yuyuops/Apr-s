@@ -1,0 +1,65 @@
+part,name,ldraw_colour,colour,rebrickable_colour_id,qty,sets,first_year,last_year,status,masse_modele_g,masse_unitaire_modele_g
+3024,Plate  1 x  1,484,Dark_Orange,484,1424,127,2017,2026,vérifiée,142.4,0.1
+3032,Plate  4 x  6,484,Dark_Orange,484,945,21,2003,2026,vérifiée,2268.0,2.4
+3023,Plate  1 x  2,484,Dark_Orange,484,908,258,2003,2026,vérifiée,181.6,0.2
+3024,Plate  1 x  1,28,Dark_Tan,28,876,336,2009,2026,vérifiée,87.6,0.1
+3024,Plate  1 x  1,15,White,15,757,1524,1962,2026,vérifiée,75.7,0.1
+3710,Plate  1 x  4,484,Dark_Orange,484,588,162,2002,2026,vérifiée,235.2,0.4
+3020,Plate  2 x  4,484,Dark_Orange,484,527,178,2002,2026,vérifiée,421.6,0.8
+3795,Plate  2 x  6,484,Dark_Orange,484,509,73,2013,2026,vérifiée,610.8,1.2
+3023,Plate  1 x  2,15,White,15,508,2625,1962,2026,vérifiée,101.6,0.2
+3023,Plate  1 x  2,28,Dark_Tan,28,487,596,2008,2026,vérifiée,97.4,0.2
+3623,Plate  1 x  3,484,Dark_Orange,484,469,88,2017,2026,vérifiée,140.7,0.3
+3666,Plate  1 x  6,484,Dark_Orange,484,397,86,2010,2026,vérifiée,238.2,0.6
+3024,Plate  1 x  1,70,Reddish_Brown,70,359,575,2004,2026,vérifiée,35.9,0.1
+3021,Plate  2 x  3,484,Dark_Orange,484,244,59,2002,2026,vérifiée,146.4,0.6
+3023,Plate  1 x  2,70,Reddish_Brown,70,244,1012,2003,2026,vérifiée,48.8,0.2
+3623,Plate  1 x  3,15,White,15,174,1109,1977,2026,vérifiée,52.2,0.3
+3022,Plate  2 x  2,484,Dark_Orange,484,170,168,2002,2026,vérifiée,68.0,0.4
+3024,Plate  1 x  1,0,Black,0,168,1461,1962,2026,vérifiée,16.8,0.1
+3623,Plate  1 x  3,28,Dark_Tan,28,145,214,2016,2026,vérifiée,43.5,0.3
+3710,Plate  1 x  4,28,Dark_Tan,28,103,387,2011,2026,vérifiée,41.2,0.4
+3623,Plate  1 x  3,70,Reddish_Brown,70,87,516,2004,2026,vérifiée,26.1,0.3
+3710,Plate  1 x  4,15,White,15,80,1878,1977,2026,vérifiée,32.0,0.4
+3023,Plate  1 x  2,0,Black,0,60,2930,1962,2026,vérifiée,12.0,0.2
+3710,Plate  1 x  4,70,Reddish_Brown,70,59,831,2003,2026,vérifiée,23.6,0.4
+3070b,Tile  1 x  1 with Groove,484,Dark_Orange,484,58,86,2016,2026,vérifiée,5.8,0.1
+3666,Plate  1 x  6,28,Dark_Tan,28,27,254,2013,2026,vérifiée,16.2,0.6
+3070b,Tile  1 x  1 with Groove,28,Dark_Tan,28,23,188,2013,2026,vérifiée,2.3,0.1
+3460,Plate  1 x  8,28,Dark_Tan,28,20,119,2016,2026,vérifiée,16.0,0.8
+3666,Plate  1 x  6,15,White,15,15,1188,1977,2026,vérifiée,9.0,0.6
+3070b,Tile  1 x  1 with Groove,15,White,15,15,904,1976,2026,vérifiée,1.5,0.1
+3069b,Tile  1 x  2 with Groove,484,Dark_Orange,484,15,165,2011,2026,vérifiée,3.0,0.2
+3070b,Tile  1 x  1 with Groove,70,Reddish_Brown,70,13,372,2004,2026,vérifiée,1.3,0.1
+54200,Slope Brick 31  1 x  1 x  0.667,0,Black,0,9,1149,2006,2026,vérifiée,1.1,0.122
+3022,Plate  2 x  2,28,Dark_Tan,28,8,273,2015,2026,vérifiée,3.2,0.4
+3666,Plate  1 x  6,70,Reddish_Brown,70,7,516,2003,2026,vérifiée,4.2,0.6
+3020,Plate  2 x  4,15,White,15,6,1747,1962,2026,vérifiée,4.8,0.8
+3021,Plate  2 x  3,15,White,15,5,1373,1962,2026,vérifiée,3.0,0.6
+3069b,Tile  1 x  2 with Groove,28,Dark_Tan,28,5,324,2009,2026,vérifiée,1.0,0.2
+3710,Plate  1 x  4,0,Black,0,5,2182,1977,2026,vérifiée,2.0,0.4
+3460,Plate  1 x  8,70,Reddish_Brown,70,4,292,2004,2026,vérifiée,3.2,0.8
+3623,Plate  1 x  3,0,Black,0,4,1378,1977,2026,vérifiée,1.2,0.3
+3021,Plate  2 x  3,28,Dark_Tan,28,3,308,2013,2026,vérifiée,1.8,0.6
+3022,Plate  2 x  2,15,White,15,3,1768,1962,2026,vérifiée,1.2,0.4
+3020,Plate  2 x  4,28,Dark_Tan,28,3,427,2010,2026,vérifiée,2.4,0.8
+54200,Slope Brick 31  1 x  1 x  0.667,484,Dark_Orange,484,3,89,2015,2026,vérifiée,0.37,0.122
+3460,Plate  1 x  8,15,White,15,2,817,1972,2026,vérifiée,1.6,0.8
+3034,Plate  2 x  8,15,White,15,2,765,1958,2026,vérifiée,3.2,1.6
+3795,Plate  2 x  6,15,White,15,2,1081,1978,2027,vérifiée,2.4,1.2
+3069b,Tile  1 x  2 with Groove,15,White,15,2,1580,1974,2026,vérifiée,0.4,0.2
+63864,Tile  1 x  3,15,White,15,2,532,2010,2026,vérifiée,0.6,0.3
+3795,Plate  2 x  6,28,Dark_Tan,28,2,295,2009,2026,vérifiée,2.4,1.2
+63864,Tile  1 x  3,484,Dark_Orange,484,2,43,2021,2026,vérifiée,0.6,0.3
+2431,Tile  1 x  4 with Groove,484,Dark_Orange,484,2,90,2002,2026,vérifiée,0.8,0.4
+3070b,Tile  1 x  1 with Groove,0,Black,0,2,878,1974,2026,vérifiée,0.2,0.1
+3958,Plate  6 x  6,28,Dark_Tan,28,1,86,2008,2026,vérifiée,3.6,3.6
+3021,Plate  2 x  3,70,Reddish_Brown,70,1,620,2004,2026,vérifiée,0.6,0.6
+3068b,Tile  2 x  2 with Groove,484,Dark_Orange,484,1,87,2017,2026,vérifiée,0.4,0.4
+3032,Plate  4 x  6,15,White,15,1,486,1969,2026,vérifiée,2.4,2.4
+87087,Brick  1 x  1 with Stud on 1 Side,484,Dark_Orange,484,1,124,2012,2026,vérifiée,0.3,0.3
+6141,Plate  1 x  1 Round,0,Black,0,1,1486,1986,2026,vérifiée,0.02,0.019
+3960,Dish  4 x  4 Inverted,0,Black,0,1,84,1985,2025,vérifiée,0.89,0.888
+2431,Tile  1 x  4 with Groove,15,White,15,1,1006,1987,2026,vérifiée,0.4,0.4
+3069b,Tile  1 x  2 with Groove,70,Reddish_Brown,70,1,536,2004,2026,vérifiée,0.2,0.2
+85984,Slope Brick 31  1 x  2 x  0.667,28,Dark_Tan,28,1,143,2013,2026,vérifiée,0.24,0.244

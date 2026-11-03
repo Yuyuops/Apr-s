@@ -1,0 +1,13 @@
+{
+ "r1": {
+  "niveau_0": {
+   "pieces": 19,
+   "aire_cm2": 487.4,
+   "marge_cdg_mm": 78.8
+  }
+ },
+ "r2": [],
+ "non_relies_avant": 0,
+ "pieces_avant": 10567,
+ "pieces_apres": 10567
+}

@@ -105,5 +105,20 @@ if SLOW:
     check("T10 beagle V12 : aucune couleur hors palette selectionnee dans le GLB (pas de jaune / rouge de Paco)", {int(c) for c in cols} <= set(pal) and "14" not in cols and "4" not in cols, "couleurs %s" % sorted(cols))
     vp = json.load(open(os.path.join(V12, "validation", "paco_V12_validation_v2.json"))); vb = json.load(open(os.path.join(V12, "validation", "beagle_V12_validation_v2.json")))
     check("T10b modeles V12 : 0 collision, 0 piece deconnectee, 0 piece sans appui", all(v["collisions"]["pairs"] == 0 and v["disconnected_parts"] == 0 and v["unsupported_at_placement"] == 0 for v in (vp, vb)))
+
+# T11-T13 : V12.1 (mechanical regression correction) ; models in 22_color_structural_regression/
+V121 = os.path.join(REPO, "22_color_structural_regression")
+if os.path.isdir(V121):
+    mech = json.load(open(os.path.join(V121, "comparaison_mecanique", "beagle.json"))); mp = json.load(open(os.path.join(V121, "comparaison_mecanique", "paco.json")))
+    check("T11 Beagle V12.1 : 0 collision, 0 deconnectee, cas < 0,5 N <= V11, SF gravite >= V11, force de bout >= V11",
+          mech["V12.1"]["collisions"] == 0 and mech["V12.1"]["pieces_deconnectees"] == 0 and mech["V12.1"]["cas_sous_0_5N"] <= mech["V11"]["cas_sous_0_5N"] and mech["V12.1"]["sf_gravite_min"] >= mech["V11"]["sf_gravite_min"] and mech["V12.1"]["force_bout_min_N"] >= mech["V11"]["force_bout_min_N"],
+          "cas %s -> %s ; SF %s -> %s" % (mech["V11"]["cas_sous_0_5N"], mech["V12.1"]["cas_sous_0_5N"], mech["V11"]["sf_gravite_min"], mech["V12.1"]["sf_gravite_min"]))
+    check("T11b Paco V12.1 option B : 0 collision, 0 deconnectee, cas < 0,5 N <= V11 ; option A mesuree (compromis documente)", mp["V12.1_B"]["collisions"] == 0 and mp["V12.1_B"]["pieces_deconnectees"] == 0 and mp["V12.1_B"]["cas_sous_0_5N"] <= mp["V11"]["cas_sous_0_5N"] and mp["V12.1_A"]["collisions"] == 0,
+          "A : %d cas ; B : %d cas ; V11 : %d" % (mp["V12.1_A"]["cas_sous_0_5N"], mp["V12.1_B"]["cas_sous_0_5N"], mp["V11"]["cas_sous_0_5N"]))
+    if SLOW:
+        with tempfile.TemporaryDirectory() as td:
+            r = subprocess.run([sys.executable, os.path.join(ENG, "lego_run.py"), "--glb", GLB["paco"], "--subject", os.path.join(HERE, "..", "subjects", "paco_fixed_v11.json"), "--out", td], capture_output=True, text=True)
+            fb = os.path.join(td, "final", "paco_brut.ldr"); ok = os.path.exists(fb) and hashlib.sha256(open(fb, "rb").read()).hexdigest() == refs["paco_V91"]["18_ear_assembly_final/modeles/paco_V91_brut.ldr"]["sha256"]
+            check("T12 generateur historique : Paco (palette V11 figee, renfort historique) = V9.1 octet pour octet apres les modifications V12.1", ok, "" if ok else r.stderr[-300:])
 json.dump(res, open(os.path.join(HERE, "resultats_tests.json"), "w"), indent=1, ensure_ascii=False)
 print("%d/%d tests reussis" % (sum(r["ok"] for r in res), len(res))); sys.exit(0 if all(r["ok"] for r in res) else 1)

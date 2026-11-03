@@ -1,6 +1,6 @@
 {
   "name": "beagle",
-  "description": "Beagle, quadrupede : second sujet (V10), aucune oreille ni yeux dedies (V12 : palette choisie par le moteur a partir du GLB ; la configuration V11 a palette fixe est subjects/beagle_fixed_v11.json)",
+  "description": "Beagle, quadrupede : second sujet (V10), aucune oreille ni yeux dedies (V12 : palette choisie par le moteur a partir du GLB ; la configuration V11 a palette fixe est subjects/beagle_fixed_v11.json) ; V12.1 : renfort sans plafond de 60 pieces (400), pont raccourci si une liaison est coupee, 3 passes",
   "source_glb": "benchmark-results/02_glb_gratuit_hunyuan2mv/beagle.glb",
   "height_mm": 400,
   "mirror_x": true,
@@ -14,11 +14,21 @@
   "reinforce_passes": [
     {
       "per_layer": 1,
-      "skip_r1": 0
+      "skip_r1": 0,
+      "max_group_parts": 400,
+      "shorten_on_cut": 1
     },
     {
       "per_layer": 1,
-      "skip_r1": 1
+      "skip_r1": 1,
+      "max_group_parts": 400,
+      "shorten_on_cut": 1
+    },
+    {
+      "per_layer": 1,
+      "skip_r1": 1,
+      "max_group_parts": 400,
+      "shorten_on_cut": 1
     }
   ],
   "ear_stitch": false,

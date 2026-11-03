@@ -1,0 +1,54 @@
+{
+ "r1": {
+  "niveau_0": {
+   "pieces": 35,
+   "aire_cm2": 132.2,
+   "marge_cdg_mm": 41.1
+  }
+ },
+ "r2": [
+  {
+   "groupe": 4,
+   "parties": 7,
+   "force_avant_N": 0.19,
+   "tenons_avant": 2,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 16
+  },
+  {
+   "groupe": 6,
+   "parties": 8,
+   "force_avant_N": 0.26,
+   "tenons_avant": 2,
+   "decision": "aucune cellule voisine utilisable (couleur et cellules cachees)",
+   "cellules_ajoutees": 0
+  },
+  {
+   "groupe": 7,
+   "parties": 9,
+   "force_avant_N": 0.26,
+   "tenons_avant": 2,
+   "decision": "aucune cellule voisine utilisable (couleur et cellules cachees)",
+   "cellules_ajoutees": 0
+  },
+  {
+   "groupe": 3,
+   "parties": 9,
+   "force_avant_N": 0.33,
+   "tenons_avant": 3,
+   "decision": "aucune cellule voisine utilisable (couleur et cellules cachees)",
+   "cellules_ajoutees": 0
+  },
+  {
+   "groupe": 1,
+   "parties": 3,
+   "force_avant_N": 0.4,
+   "tenons_avant": 2,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 1
+  }
+ ],
+ "non_relies_avant": 0,
+ "pieces_avant": 3161,
+ "pieces_apres": 3161
+}

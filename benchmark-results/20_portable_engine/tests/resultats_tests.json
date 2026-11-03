@@ -73,5 +73,20 @@
   "test": "T10b modeles V12 : 0 collision, 0 piece deconnectee, 0 piece sans appui",
   "ok": true,
   "detail": ""
+ },
+ {
+  "test": "T11 Beagle V12.1 : 0 collision, 0 deconnectee, cas < 0,5 N <= V11, SF gravite >= V11, force de bout >= V11",
+  "ok": true,
+  "detail": "cas 10 -> 0 ; SF 38.23 -> 43.25"
+ },
+ {
+  "test": "T11b Paco V12.1 option B : 0 collision, 0 deconnectee, cas < 0,5 N <= V11 ; option A mesuree (compromis documente)",
+  "ok": true,
+  "detail": "A : 8 cas ; B : 6 cas ; V11 : 7"
+ },
+ {
+  "test": "T12 generateur historique : Paco (palette V11 figee, renfort historique) = V9.1 octet pour octet apres les modifications V12.1",
+  "ok": true,
+  "detail": ""
  }
 ]

@@ -1,0 +1,101 @@
+{
+ "r1": {
+  "niveau_0": {
+   "pieces": 26,
+   "aire_cm2": 132.2,
+   "marge_cdg_mm": 41.1
+  }
+ },
+ "r2": [
+  {
+   "groupe": 3,
+   "parties": 7,
+   "force_avant_N": 0.19,
+   "tenons_avant": 2,
+   "decision": "annule : une liaison entre colonnes etait coupee (connectivite)",
+   "cellules_ajoutees": 16
+  },
+  {
+   "groupe": 2,
+   "parties": 5,
+   "force_avant_N": 0.26,
+   "tenons_avant": 2,
+   "decision": "aucune cellule voisine utilisable (couleur et cellules cachees)",
+   "cellules_ajoutees": 0
+  },
+  {
+   "groupe": 4,
+   "parties": 9,
+   "force_avant_N": 0.26,
+   "tenons_avant": 3,
+   "cellules_ajoutees": 8,
+   "gain_tenons_estime": 16,
+   "pieces_retirees": 14,
+   "pieces_ajoutees": 14,
+   "couches": [
+    "82",
+    "83",
+    "84",
+    "85",
+    "86",
+    "87",
+    "88",
+    "89"
+   ],
+   "cellules": [
+    [
+     20,
+     82,
+     20
+    ],
+    [
+     20,
+     83,
+     20
+    ],
+    [
+     21,
+     82,
+     20
+    ],
+    [
+     21,
+     83,
+     20
+    ],
+    [
+     21,
+     82,
+     19
+    ],
+    [
+     21,
+     83,
+     19
+    ],
+    [
+     22,
+     82,
+     19
+    ],
+    [
+     22,
+     83,
+     19
+    ]
+   ],
+   "decision": "applique"
+  },
+  {
+   "groupe": 7,
+   "parties": 12,
+   "force_avant_N": 0.26,
+   "tenons_avant": 2,
+   "decision": "aucune cellule voisine utilisable (couleur et cellules cachees)",
+   "cellules_ajoutees": 0
+  }
+ ],
+ "non_relies_avant": 0,
+ "pieces_avant": 3070,
+ "pieces_apres": 3070
+}

@@ -1,0 +1,671 @@
+{
+ "V11": {
+  "pieces": 3098,
+  "types_de_pieces": 42,
+  "pieces_par_type": {
+   "3024": 1011,
+   "3023": 602,
+   "3710": 300,
+   "3623": 260,
+   "3666": 148,
+   "3020": 113,
+   "3069b": 100,
+   "3070b": 97
+  },
+  "couleurs_lignes": 4,
+  "liaisons": 4899,
+  "tenons_engages": 9801,
+  "liaisons_a_un_tenon": 2933,
+  "collisions": 0,
+  "pieces_deconnectees": 0,
+  "sans_appui_a_la_pose": 0,
+  "cas": 1026,
+  "cas_sous_0_5N": 7,
+  "cas_sous_2N": 48,
+  "sf_gravite_min": 11.15,
+  "force_bout_min_N": 0.19,
+  "groupes_faibles": 7,
+  "cas_faibles_par_zone": {
+   "museau": 4,
+   "torse": 3
+  },
+  "groupes": [
+   {
+    "parties": 7,
+    "tenons": 2,
+    "force_N": 0.19,
+    "cas": 2,
+    "couleurs": {
+     "Yellow": 7
+    },
+    "zone": [
+     [
+      "museau",
+      47
+     ],
+     [
+      "truffe",
+      6
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      540.0,
+      -800.0,
+      640.0
+     ],
+     [
+      580.0,
+      -744.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "parties": 5,
+    "tenons": 2,
+    "force_N": 0.26,
+    "cas": 1,
+    "couleurs": {
+     "Yellow": 5
+    },
+    "zone": [
+     [
+      "torse",
+      12
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      100.0,
+      -280.0,
+      300.0
+     ],
+     [
+      120.0,
+      -240.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "parties": 9,
+    "tenons": 3,
+    "force_N": 0.26,
+    "cas": 2,
+    "couleurs": {
+     "Yellow": 8,
+     "Black": 1
+    },
+    "zone": [
+     [
+      "museau",
+      68
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      360.0,
+      -720.0,
+      420.0
+     ],
+     [
+      420.0,
+      -656.0,
+      460.0
+     ]
+    ]
+   },
+   {
+    "parties": 12,
+    "tenons": 2,
+    "force_N": 0.26,
+    "cas": 2,
+    "couleurs": {
+     "Yellow": 9,
+     "Black": 2
+    },
+    "zone": [
+     [
+      "torse",
+      24
+     ],
+     [
+      "jambes",
+      8
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      580.0,
+      -296.0,
+      300.0
+     ],
+     [
+      640.0,
+      -248.0,
+      340.0
+     ]
+    ]
+   }
+  ],
+  "etapes_ldr": 289
+ },
+ "V12": {
+  "pieces": 3193,
+  "types_de_pieces": 42,
+  "pieces_par_type": {
+   "3024": 1075,
+   "3023": 636,
+   "3710": 309,
+   "3623": 270,
+   "3666": 141,
+   "3020": 105,
+   "3069b": 101,
+   "3070b": 99
+  },
+  "couleurs_lignes": 6,
+  "liaisons": 4954,
+  "tenons_engages": 9803,
+  "liaisons_a_un_tenon": 2995,
+  "collisions": 0,
+  "pieces_deconnectees": 0,
+  "sans_appui_a_la_pose": 0,
+  "cas": 1083,
+  "cas_sous_0_5N": 8,
+  "cas_sous_2N": 51,
+  "sf_gravite_min": 9.82,
+  "force_bout_min_N": 0.19,
+  "groupes_faibles": 8,
+  "cas_faibles_par_zone": {
+   "museau": 2,
+   "torse": 5,
+   "crane": 1
+  },
+  "groupes": [
+   {
+    "parties": 7,
+    "tenons": 2,
+    "force_N": 0.19,
+    "cas": 2,
+    "couleurs": {
+     "Yellow": 7
+    },
+    "zone": [
+     [
+      "museau",
+      47
+     ],
+     [
+      "truffe",
+      6
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      540.0,
+      -800.0,
+      640.0
+     ],
+     [
+      580.0,
+      -744.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "parties": 8,
+    "tenons": 2,
+    "force_N": 0.26,
+    "cas": 1,
+    "couleurs": {
+     "Yellow": 5,
+     "Orange": 2
+    },
+    "zone": [
+     [
+      "torse",
+      12
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      100.0,
+      -280.0,
+      300.0
+     ],
+     [
+      120.0,
+      -240.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "parties": 9,
+    "tenons": 2,
+    "force_N": 0.26,
+    "cas": 1,
+    "couleurs": {
+     "Yellow": 6,
+     "Dark_Tan": 2
+    },
+    "zone": [
+     [
+      "torse",
+      21
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      580.0,
+      -288.0,
+      300.0
+     ],
+     [
+      620.0,
+      -248.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "parties": 9,
+    "tenons": 3,
+    "force_N": 0.33,
+    "cas": 3,
+    "couleurs": {
+     "Red": 5,
+     "Yellow": 3
+    },
+    "zone": [
+     [
+      "torse",
+      21
+     ],
+     [
+      "jambes",
+      17
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      20.0,
+      -280.0,
+      280.0
+     ],
+     [
+      40.0,
+      -232.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "parties": 3,
+    "tenons": 2,
+    "force_N": 0.4,
+    "cas": 1,
+    "couleurs": {
+     "Yellow": 3
+    },
+    "zone": [
+     [
+      "crane",
+      27
+     ],
+     [
+      "museau",
+      8
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      340.0,
+      -872.0,
+      360.0
+     ],
+     [
+      440.0,
+      -848.0,
+      400.0
+     ]
+    ]
+   }
+  ],
+  "etapes_ldr": 371
+ },
+ "V12.1_A": {
+  "pieces": 3193,
+  "types_de_pieces": 42,
+  "pieces_par_type": {
+   "3024": 1075,
+   "3023": 636,
+   "3710": 309,
+   "3623": 270,
+   "3666": 141,
+   "3020": 105,
+   "3069b": 101,
+   "3070b": 99
+  },
+  "couleurs_lignes": 6,
+  "liaisons": 4954,
+  "tenons_engages": 9803,
+  "liaisons_a_un_tenon": 2995,
+  "collisions": 0,
+  "pieces_deconnectees": 0,
+  "sans_appui_a_la_pose": 0,
+  "cas": 1083,
+  "cas_sous_0_5N": 8,
+  "cas_sous_2N": 51,
+  "sf_gravite_min": 9.82,
+  "force_bout_min_N": 0.19,
+  "groupes_faibles": 8,
+  "cas_faibles_par_zone": {
+   "museau": 2,
+   "torse": 5,
+   "crane": 1
+  },
+  "groupes": [
+   {
+    "parties": 7,
+    "tenons": 2,
+    "force_N": 0.19,
+    "cas": 2,
+    "couleurs": {
+     "Yellow": 7
+    },
+    "zone": [
+     [
+      "museau",
+      47
+     ],
+     [
+      "truffe",
+      6
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      540.0,
+      -800.0,
+      640.0
+     ],
+     [
+      580.0,
+      -744.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "parties": 8,
+    "tenons": 2,
+    "force_N": 0.26,
+    "cas": 1,
+    "couleurs": {
+     "Yellow": 5,
+     "Orange": 2
+    },
+    "zone": [
+     [
+      "torse",
+      12
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      100.0,
+      -280.0,
+      300.0
+     ],
+     [
+      120.0,
+      -240.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "parties": 9,
+    "tenons": 2,
+    "force_N": 0.26,
+    "cas": 1,
+    "couleurs": {
+     "Yellow": 6,
+     "Dark_Tan": 2
+    },
+    "zone": [
+     [
+      "torse",
+      21
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      580.0,
+      -288.0,
+      300.0
+     ],
+     [
+      620.0,
+      -248.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "parties": 9,
+    "tenons": 3,
+    "force_N": 0.33,
+    "cas": 3,
+    "couleurs": {
+     "Red": 5,
+     "Yellow": 3
+    },
+    "zone": [
+     [
+      "torse",
+      21
+     ],
+     [
+      "jambes",
+      17
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      20.0,
+      -280.0,
+      280.0
+     ],
+     [
+      40.0,
+      -232.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "parties": 3,
+    "tenons": 2,
+    "force_N": 0.4,
+    "cas": 1,
+    "couleurs": {
+     "Yellow": 3
+    },
+    "zone": [
+     [
+      "crane",
+      27
+     ],
+     [
+      "museau",
+      8
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      340.0,
+      -872.0,
+      360.0
+     ],
+     [
+      440.0,
+      -848.0,
+      400.0
+     ]
+    ]
+   }
+  ],
+  "etapes_ldr": 371
+ },
+ "V12.1_B": {
+  "pieces": 3102,
+  "types_de_pieces": 42,
+  "pieces_par_type": {
+   "3024": 1010,
+   "3023": 610,
+   "3710": 300,
+   "3623": 259,
+   "3666": 148,
+   "3020": 112,
+   "3069b": 100,
+   "3070b": 97
+  },
+  "couleurs_lignes": 4,
+  "liaisons": 4902,
+  "tenons_engages": 9801,
+  "liaisons_a_un_tenon": 2934,
+  "collisions": 0,
+  "pieces_deconnectees": 0,
+  "sans_appui_a_la_pose": 0,
+  "cas": 1023,
+  "cas_sous_0_5N": 6,
+  "cas_sous_2N": 45,
+  "sf_gravite_min": 11.15,
+  "force_bout_min_N": 0.17,
+  "groupes_faibles": 6,
+  "cas_faibles_par_zone": {
+   "museau": 4,
+   "torse": 2
+  },
+  "groupes": [
+   {
+    "parties": 9,
+    "tenons": 2,
+    "force_N": 0.17,
+    "cas": 2,
+    "couleurs": {
+     "Yellow": 9
+    },
+    "zone": [
+     [
+      "museau",
+      50
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      360.0,
+      -720.0,
+      420.0
+     ],
+     [
+      400.0,
+      -656.0,
+      460.0
+     ]
+    ]
+   },
+   {
+    "parties": 7,
+    "tenons": 2,
+    "force_N": 0.19,
+    "cas": 2,
+    "couleurs": {
+     "Yellow": 7
+    },
+    "zone": [
+     [
+      "museau",
+      47
+     ],
+     [
+      "truffe",
+      6
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      540.0,
+      -800.0,
+      640.0
+     ],
+     [
+      580.0,
+      -744.0,
+      700.0
+     ]
+    ]
+   },
+   {
+    "parties": 5,
+    "tenons": 2,
+    "force_N": 0.26,
+    "cas": 1,
+    "couleurs": {
+     "Yellow": 5
+    },
+    "zone": [
+     [
+      "torse",
+      12
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      100.0,
+      -280.0,
+      300.0
+     ],
+     [
+      120.0,
+      -240.0,
+      340.0
+     ]
+    ]
+   },
+   {
+    "parties": 12,
+    "tenons": 2,
+    "force_N": 0.26,
+    "cas": 1,
+    "couleurs": {
+     "Yellow": 10,
+     "Black": 2
+    },
+    "zone": [
+     [
+      "torse",
+      21
+     ]
+    ],
+    "bbox_ldu": [
+     [
+      580.0,
+      -288.0,
+      300.0
+     ],
+     [
+      620.0,
+      -248.0,
+      340.0
+     ]
+    ]
+   }
+  ],
+  "etapes_ldr": 289
+ }
+}

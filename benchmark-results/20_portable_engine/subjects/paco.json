@@ -15,11 +15,21 @@
   "reinforce_passes": [
     {
       "per_layer": 2,
-      "skip_r1": 0
+      "skip_r1": 0,
+      "max_group_parts": 400,
+      "shorten_on_cut": 1
     },
     {
       "per_layer": 4,
-      "skip_r1": 1
+      "skip_r1": 1,
+      "max_group_parts": 400,
+      "shorten_on_cut": 1
+    },
+    {
+      "per_layer": 4,
+      "skip_r1": 1,
+      "max_group_parts": 400,
+      "shorten_on_cut": 1
     }
   ],
   "ear_stitch": true,

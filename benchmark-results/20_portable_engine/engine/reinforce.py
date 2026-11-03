@@ -11,7 +11,7 @@ R2  internal bridges: for a fragile group G (indicative tip force < 0.5 N), the 
                       part carrying studs), until the gain reaches GAIN_GOAL or MAX_CELLS cells were added. The region of each layer is re-tiled with available plates of the colour,
                       and the plates that lost cells are re-cut. Geometry, exposed colours and finishes are unchanged by construction; this is checked by scope.py afterwards.
 Only plain right-angle plates on the 20 x 8 x 20 lattice are modified (not tiles, slopes, wings, ears, details). Nothing is deleted except in R1.
-usage: reinforce.py <in.ldr> <weak_groups.json> <out.ldr> <log.json> [per_layer=1] [skip_r1=0]
+usage: reinforce.py <in.ldr> <weak_groups.json> <out.ldr> <log.json> [per_layer=1] [skip_r1=0] [max_group_parts=60] [shorten_on_cut=0]
 """
 import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 from _paths import ENGINE_DIR, LDRAW, RB_DB, BRICKIFY_PIPELINE, NODE_MODULES, EAR_FRAME_JSON, CTX, LEGACY_DATA, TARGETS_DIR
@@ -26,7 +26,7 @@ from scipy.spatial import ConvexHull
 
 PLAIN = set(BP.PLATES.values())
 LEN = [8, 6, 4, 3, 2, 1]
-GAIN_GOAL = 8; MAX_CELLS = 14; MIN_MARGIN_MM = 20.0
+MAX_GROUP_PARTS = 60; GAIN_GOAL = 8; MAX_CELLS = 14; MIN_MARGIN_MM = 20.0
 G_PER_LDU3 = 0.10 / (20 * 20 * 8)
 
 def lattice_cells(p):
@@ -50,17 +50,18 @@ def make_plate(num, colour, x0, y, z0, along_x):
 def line_of(p):
     return f"1 {p['c']} {p['o'][0]:.4f} {p['o'][1]:.4f} {p['o'][2]:.4f} " + " ".join(f"{v:.6f}" for v in np.asarray(p["M"]).ravel()) + f" {p['num']}.dat"
 
+TILE_MODE = 0      # 0 : historical greedy cover ; 1 / 2 : prefer runs along z / x ; 3 : runs of at most 2 studs (V12.1 : alternative tilings tried when the first one cuts a link)
 def tile_cells(cells, y, colour):
     """greedy cover of a set of (x, z) cells by available 1xN plates of the colour"""
     left = set(cells); out = []
     while left:
         x, z = min(left)
         best = None
-        for along_x in (True, False):
+        for along_x in ((True, False) if TILE_MODE in (0, 3) else ((False, True) if TILE_MODE == 1 else (True, False))):
             n = 1
-            while ((x + n, z) if along_x else (x, z + n)) in left and n < 8: n += 1
+            while ((x + n, z) if along_x else (x, z + n)) in left and n < (2 if TILE_MODE == 3 else 8): n += 1
             n = next(l for l in LEN if l <= n and BP.available(BP.PLATES[(l, 1)], colour)) if any(l <= n and BP.available(BP.PLATES[(l, 1)], colour) for l in LEN) else 1
-            if best is None or n > best[0]: best = (n, along_x)
+            if best is None or n > best[0] or (n == best[0] and TILE_MODE in (1, 2) and (along_x == (TILE_MODE == 2))): best = (n, along_x)
         n, along_x = best
         run = [(x + k, z) if along_x else (x, z + k) for k in range(n)]
         for c in run: left.discard(c)
@@ -139,7 +140,7 @@ def stance(P, level):
     return len(ps), float(h.volume / 100), float(-max(np.dot(e[:2], c) + e[2] for e in h.equations))
 
 def main():
-    src, weakf, dst, logf = sys.argv[1:5]; per_layer = int(sys.argv[5]) if len(sys.argv) > 5 else 1; skip_r1 = len(sys.argv) > 6 and sys.argv[6] == "1"
+    src, weakf, dst, logf = sys.argv[1:5]; per_layer = int(sys.argv[5]) if len(sys.argv) > 5 else 1; skip_r1 = len(sys.argv) > 6 and sys.argv[6] == "1"; max_parts = int(sys.argv[7]) if len(sys.argv) > 7 else MAX_GROUP_PARTS; shorten = len(sys.argv) > 8 and sys.argv[8] == "1"
     lines = open(src, encoding="utf-8", errors="replace").read().splitlines()
     P = []
     for l in lines:
@@ -186,7 +187,7 @@ def main():
     log["non_relies_avant"] = base_ung
     for g in sorted(weak, key=lambda g: g["force_N"]):
         ids = [i for i in g["parts_ids"] if i < len(P) and alive[i] and i in pcells]
-        if not ids or g["parties"] > 60: continue          # whole-model case: handled by R1
+        if not ids or g["parties"] > max_parts: continue          # whole-model case: handled by R1 (V12.1 : the cap is a per-pass parameter, 60 = historical default)
         Gset = set(ids)
         colours = Counter(P[i]["c"] for i in ids); gcol = colours.most_common(1)[0][0]
         Gcells = {c for i in ids if P[i]["c"] == gcol for c in pcells[i]}
@@ -217,28 +218,39 @@ def main():
                 chosen.append(n); region.add(n); gain_total += cand[0][0]
         if not chosen:
             log["r2"].append(dict(groupe=g["id"], parties=g["parties"], force_avant_N=g["force_N"], tenons_avant=g["tenons"], decision="aucune cellule voisine utilisable (couleur et cellules cachees)", cellules_ajoutees=0)); continue
-        by_layer = defaultdict(set)
-        for (x, y, z) in region: by_layer[y].add((x, z))
-        removed_ids = set(); new = []
-        for y, cells in by_layer.items():
-            owners = {cellmap[(x, y, z)] for (x, z) in cells if (x, y, z) in cellmap}
-            owners = {r for r in owners if not (r in Gset and P[r]["c"] != gcol)}
-            removed_ids |= owners
-            left = defaultdict(set)
-            for r in owners:
-                for c in pcells[r]:
-                    if (c[0], c[2]) not in cells: left[P[r]["c"]].add((c[0], c[2]))
-            gl = {(c[0], c[2]) for c in Gcells if c[1] == y}
-            new += tile_bridging(cells, gl, y, gcol)
-            for col, cs in left.items(): new += tile_cells(cs, y, col)
-        # tentative application, then the real connectivity check: a bridge between two columns may have been cut
-        n0 = len(P)
-        for r in removed_ids: alive[r] = False
-        for p in new: p["raw"] = line_of(p); P.append(p); alive.append(True)
-        if ungrounded(P, alive) > base_ung:
-            for r in removed_ids: alive[r] = True
-            for _ in new: P.pop(); alive.pop()
+        # V12.1 : when the full set of bridge cells cuts an existing link between columns, the set is shortened (last cell chosen first) until the model stays connected
+        done = None
+        global TILE_MODE
+        attempts = [(len(chosen), 0)] if not shorten else [(k_, m_) for k_ in sorted({len(chosen), max(1, len(chosen) // 2), 1}, reverse=True) for m_ in (0, 1, 2, 3)]
+        for keep, TILE_MODE in attempts:
+            sub = chosen[:keep]; reg = set(Gcells)
+            for c_ in sub: reg.add(c_)          # same insertion history as the historical region set : same part order in the output
+            by_layer = defaultdict(set)
+            for (x, y, z) in reg: by_layer[y].add((x, z))
+            removed_ids = set(); new = []
+            for y, cells in by_layer.items():
+                owners = {cellmap[(x, y, z)] for (x, z) in cells if (x, y, z) in cellmap}
+                owners = {r for r in owners if not (r in Gset and P[r]["c"] != gcol)}
+                removed_ids |= owners
+                left = defaultdict(set)
+                for r in owners:
+                    for c in pcells[r]:
+                        if (c[0], c[2]) not in cells: left[P[r]["c"]].add((c[0], c[2]))
+                gl = {(c[0], c[2]) for c in Gcells if c[1] == y}
+                new += tile_bridging(cells, gl, y, gcol)
+                for col, cs in left.items(): new += tile_cells(cs, y, col)
+            n0 = len(P)
+            for r in removed_ids: alive[r] = False
+            for p in new: p["raw"] = line_of(p); P.append(p); alive.append(True)
+            if ungrounded(P, alive) > base_ung:
+                for r in removed_ids: alive[r] = True
+                for _ in new: P.pop(); alive.pop()
+                continue
+            done = (sub, by_layer, removed_ids, new, n0); break
+        TILE_MODE = 0
+        if done is None:
             log["r2"].append(dict(groupe=g["id"], parties=g["parties"], force_avant_N=g["force_N"], tenons_avant=g["tenons"], decision="annule : une liaison entre colonnes etait coupee (connectivite)", cellules_ajoutees=len(chosen))); continue
+        chosen, by_layer, removed_ids, new, n0 = done
         for k_, p in enumerate(new):
             newparts.append(n0 + k_); cs = lattice_cells(p); pcells[n0 + k_] = cs
             for c in cs: cellmap[c] = n0 + k_

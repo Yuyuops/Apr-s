@@ -1,0 +1,164 @@
+{
+ "V7_oreille_basse": {
+  "points_glb": 12875,
+  "points_lego": {
+   "all": 55224,
+   "zone": 8200,
+   "visible": 1740
+  },
+  "glb_cellules_etiquetees": {
+   "points": 8413,
+   "centroide": [
+    66.0,
+    257.5,
+    -54.8
+   ],
+   "hauteur_centroide": 257.5
+  },
+  "glb": {
+   "centroide": [
+    65.9,
+    260.5,
+    -55.6
+   ],
+   "centre_boite": [
+    69.0,
+    257.6,
+    -58.5
+   ],
+   "pointe": [
+    32.5,
+    257.8,
+    -36.4
+   ],
+   "normale": [
+    -0.8,
+    -0.0,
+    -0.6
+   ],
+   "hauteur_centroide": 260.5,
+   "hauteur_pointe": 257.8
+  },
+  "all": {
+   "ecart_centroide_mm": 17.6,
+   "ecart_centre_boite_mm": 39.5,
+   "ecart_pointe_mm": 26.8,
+   "ecart_normale_deg": 4.3,
+   "hauteur_centroide_mm": 261.0,
+   "hauteur_pointe_mm": 239.4,
+   "ecart_centroide_vs_glb_cellules_mm": 18.3
+  },
+  "zone": {
+   "ecart_centroide_mm": 6.2,
+   "ecart_centre_boite_mm": 2.7,
+   "ecart_pointe_mm": 16.1,
+   "ecart_normale_deg": 1.6,
+   "hauteur_centroide_mm": 256.8,
+   "hauteur_pointe_mm": 267.4,
+   "ecart_centroide_vs_glb_cellules_mm": 4.5
+  },
+  "visible": {
+   "ecart_centroide_mm": 2.1,
+   "ecart_centre_boite_mm": 6.2,
+   "ecart_pointe_mm": 16.1,
+   "ecart_normale_deg": 5.3,
+   "hauteur_centroide_mm": 260.2,
+   "hauteur_pointe_mm": 267.4,
+   "ecart_centroide_vs_glb_cellules_mm": 4.0
+  }
+ },
+ "V7_oreille_haute": {
+  "points_glb": 15003,
+  "points_lego": {
+   "all": 57552,
+   "zone": 8109,
+   "visible": 1411
+  },
+  "glb_cellules_etiquetees": {
+   "points": 8424,
+   "centroide": [
+    87.8,
+    355.0,
+    -77.9
+   ],
+   "hauteur_centroide": 355.0
+  },
+  "glb": {
+   "centroide": [
+    81.4,
+    348.2,
+    -73.8
+   ],
+   "centre_boite": [
+    84.0,
+    346.5,
+    -72.1
+   ],
+   "pointe": [
+    40.2,
+    384.7,
+    -49.3
+   ],
+   "normale": [
+    -0.8,
+    0.0,
+    -0.6
+   ],
+   "hauteur_centroide": 348.2,
+   "hauteur_pointe": 384.7
+  },
+  "all": {
+   "ecart_centroide_mm": 11.1,
+   "ecart_centre_boite_mm": 30.2,
+   "ecart_pointe_mm": 42.6,
+   "ecart_normale_deg": 0.8,
+   "hauteur_centroide_mm": 359.0,
+   "hauteur_pointe_mm": 375.0,
+   "ecart_centroide_vs_glb_cellules_mm": 8.5
+  },
+  "zone": {
+   "ecart_centroide_mm": 15.5,
+   "ecart_centre_boite_mm": 16.7,
+   "ecart_pointe_mm": 31.4,
+   "ecart_normale_deg": 4.0,
+   "hauteur_centroide_mm": 362.6,
+   "hauteur_pointe_mm": 399.0,
+   "ecart_centroide_vs_glb_cellules_mm": 9.3
+  },
+  "visible": {
+   "ecart_centroide_mm": 25.2,
+   "ecart_centre_boite_mm": 16.7,
+   "ecart_pointe_mm": 31.4,
+   "ecart_normale_deg": 8.1,
+   "hauteur_centroide_mm": 372.9,
+   "hauteur_pointe_mm": 399.0,
+   "ecart_centroide_vs_glb_cellules_mm": 18.4
+  }
+ },
+ "denivele_entre_les_deux_oreilles": {
+  "all_centroide": {
+   "glb_mm": 87.7,
+   "lego_mm": 98.0
+  },
+  "zone_centroide": {
+   "glb_mm": 87.7,
+   "lego_mm": 105.8
+  },
+  "visible_centroide": {
+   "glb_mm": 87.7,
+   "lego_mm": 112.7
+  },
+  "all_pointe": {
+   "glb_mm": 126.9,
+   "lego_mm": 135.6
+  },
+  "zone_pointe": {
+   "glb_mm": 126.9,
+   "lego_mm": 131.6
+  },
+  "visible_pointe": {
+   "glb_mm": 126.9,
+   "lego_mm": 131.6
+  }
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "modules": {
+  "Corps": {
+   "etapes": 124,
+   "pieces": 2468
+  },
+  "Bras gauche": {
+   "etapes": 8,
+   "pieces": 137
+  },
+  "Bras droit": {
+   "etapes": 7,
+   "pieces": 118
+  },
+  "Oreille basse": {
+   "etapes": 29,
+   "pieces": 188
+  },
+  "Detail du visage 1 (1x 54200)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Detail du visage 2 (1x 43898, 1x 98138)": {
+   "etapes": 2,
+   "pieces": 2
+  },
+  "Detail du visage 3 (1x 43898, 1x 98138)": {
+   "etapes": 2,
+   "pieces": 2
+  },
+  "Detail du visage 4 (1x 43898)": {
+   "etapes": 2,
+   "pieces": 1
+  },
+  "Oreille haute": {
+   "etapes": 23,
+   "pieces": 176
+  },
+  "Oreille haute (attache 2)": {
+   "etapes": 2,
+   "pieces": 5
+  }
+ },
+ "total_etapes": 201,
+ "total_pieces": 3098
+}

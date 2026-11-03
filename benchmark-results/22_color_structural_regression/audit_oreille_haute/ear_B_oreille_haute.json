@@ -1,0 +1,115 @@
+{
+ "ear": "oreille_haute",
+ "triangles_glb": 15432,
+ "points_lego": {
+  "tout": 57552,
+  "zone": 8109,
+  "visible": 1411
+ },
+ "glb": {
+  "centroide": [
+   87.9,
+   356.6,
+   -77.7
+  ],
+  "longueur_mm": 133.3,
+  "largeur_mm": 69.7,
+  "epaisseur_mm": 18.9,
+  "normale": [
+   0.849,
+   -0.021,
+   0.528
+  ]
+ },
+ "mesures": {
+  "tout": {
+   "ecart_centroide_mm": 7.9,
+   "ecart_normale_deg": 4.4,
+   "ecart_racine_mm": 27.2,
+   "ecart_pointe_mm": 62.6,
+   "longueur_mm": [
+    133.3,
+    201.7
+   ],
+   "largeur_mm": [
+    69.7,
+    56.9
+   ],
+   "epaisseur_mm": [
+    18.9,
+    18.8
+   ],
+   "rapport_epaisseur": 0.99,
+   "rapport_longueur": 1.51,
+   "rapport_largeur": 0.82,
+   "surface_contour_cm2": [
+    100.0,
+    113.8
+   ],
+   "iou_contour_en_place": 0.633,
+   "iou_contour_centroides_superposes": 0.631,
+   "iou_contour_axes_et_centroides_superposes": 0.664
+  },
+  "zone": {
+   "ecart_centroide_mm": 8.0,
+   "ecart_normale_deg": 1.2,
+   "ecart_racine_mm": 19.8,
+   "ecart_pointe_mm": 28.0,
+   "longueur_mm": [
+    133.3,
+    118.4
+   ],
+   "largeur_mm": [
+    69.7,
+    56.1
+   ],
+   "epaisseur_mm": [
+    18.9,
+    16.4
+   ],
+   "rapport_epaisseur": 0.87,
+   "rapport_longueur": 0.89,
+   "rapport_largeur": 0.8,
+   "surface_contour_cm2": [
+    99.4,
+    68.6
+   ],
+   "iou_contour_en_place": 0.691,
+   "iou_contour_centroides_superposes": 0.638,
+   "iou_contour_axes_et_centroides_superposes": 0.588
+  },
+  "visible": {
+   "ecart_centroide_mm": 16.9,
+   "ecart_normale_deg": 6.6,
+   "ecart_racine_mm": 120.7,
+   "ecart_pointe_mm": 140.7,
+   "longueur_mm": [
+    133.3,
+    127.5
+   ],
+   "largeur_mm": [
+    69.7,
+    48.9
+   ],
+   "epaisseur_mm": [
+    18.9,
+    19.2
+   ],
+   "rapport_epaisseur": 1.01,
+   "rapport_longueur": 0.96,
+   "rapport_largeur": 0.7,
+   "surface_contour_cm2": [
+    99.4,
+    27.7
+   ],
+   "iou_contour_en_place": 0.279,
+   "iou_contour_centroides_superposes": 0.257,
+   "iou_contour_axes_et_centroides_superposes": 0.219
+  }
+ },
+ "critere": {
+  "ecart_de_forme": 0.31,
+  "gain_iou_par_superposition": -0.053
+ },
+ "conclusion": "difference de forme / d'epaisseur (le placement n'est pas demontre errone)"
+}
