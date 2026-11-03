@@ -1,0 +1,30 @@
+{
+  "test": "LEGO_MAPS_V0",
+  "mode": "2.5D",
+  "input": "fixtures/ile_temoin.svg",
+  "oracle": "fixtures/ile_temoin_oracle.json",
+  "use_oracle_during_inference": false,
+  "canvas_studs": [
+    32,
+    32
+  ],
+  "dimensions_mm": [
+    256,
+    256
+  ],
+  "stud_pitch_mm": 8,
+  "plate_height_mm": 3.2,
+  "max_artistic_relief_plates": 4,
+  "rigid_backing": true,
+  "wall_mount_verified": false,
+  "source_type": "fictional_original",
+  "supplier": {
+    "commercial_truth": "Briquestore only",
+    "url": "https://store.bricklink.com/briquestore.fr",
+    "stock_checked": false,
+    "price_checked": false,
+    "unknown_value": null
+  },
+  "reference_engine_1": "../20_portable_engine",
+  "engine_1_read_only": true
+}
