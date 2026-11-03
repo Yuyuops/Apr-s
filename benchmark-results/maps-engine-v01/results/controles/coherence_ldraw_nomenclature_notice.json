@@ -1,0 +1,146 @@
+[
+ {
+  "dossier": "ile_temoin/A",
+  "pieces_parts_json": 221,
+  "pieces_ldr": 221,
+  "pieces_bom": 221,
+  "pieces_dans_les_etapes": 221,
+  "chaque_piece_exactement_une_fois": true,
+  "etapes": 23,
+  "max_pieces_par_etape": 20,
+  "sections": [
+   "Cadre",
+   "Dos",
+   "Relief"
+  ],
+  "pages_pdf": 26,
+  "fichiers_presents": {
+   "map.ldr": true,
+   "parts_list.csv": true,
+   "viewer.html": true,
+   "notice.pdf": true,
+   "validation/validation_resume.json": true,
+   "renders/face.png": true
+  }
+ },
+ {
+  "dossier": "ile_temoin/B",
+  "pieces_parts_json": 365,
+  "pieces_ldr": 365,
+  "pieces_bom": 365,
+  "pieces_dans_les_etapes": 365,
+  "chaque_piece_exactement_une_fois": true,
+  "etapes": 32,
+  "max_pieces_par_etape": 20,
+  "sections": [
+   "Cadre",
+   "Dos",
+   "Relief"
+  ],
+  "pages_pdf": 35,
+  "fichiers_presents": {
+   "map.ldr": true,
+   "parts_list.csv": true,
+   "viewer.html": true,
+   "notice.pdf": true,
+   "validation/validation_resume.json": true,
+   "renders/face.png": true
+  }
+ },
+ {
+  "dossier": "ile_temoin/A_sans_coins_coupes",
+  "pieces_parts_json": 202,
+  "pieces_ldr": 202,
+  "pieces_bom": 202,
+  "pieces_dans_les_etapes": 202,
+  "chaque_piece_exactement_une_fois": true,
+  "etapes": 22,
+  "max_pieces_par_etape": 20,
+  "sections": [
+   "Cadre",
+   "Dos",
+   "Relief"
+  ],
+  "pages_pdf": 25,
+  "fichiers_presents": {
+   "map.ldr": true,
+   "parts_list.csv": true,
+   "viewer.html": true,
+   "notice.pdf": true,
+   "validation/validation_resume.json": true,
+   "renders/face.png": true
+  }
+ },
+ {
+  "dossier": "ile_temoin/A_48x48",
+  "pieces_parts_json": 393,
+  "pieces_ldr": 393,
+  "pieces_bom": 393,
+  "pieces_dans_les_etapes": 393,
+  "chaque_piece_exactement_une_fois": true,
+  "etapes": 31,
+  "max_pieces_par_etape": 20,
+  "sections": [
+   "Cadre",
+   "Dos",
+   "Relief"
+  ],
+  "pages_pdf": 34,
+  "fichiers_presents": {
+   "map.ldr": true,
+   "parts_list.csv": true,
+   "viewer.html": true,
+   "notice.pdf": true,
+   "validation/validation_resume.json": true,
+   "renders/face.png": true
+  }
+ },
+ {
+  "dossier": "test_3_zones/A",
+  "pieces_parts_json": 167,
+  "pieces_ldr": 167,
+  "pieces_bom": 167,
+  "pieces_dans_les_etapes": 167,
+  "chaque_piece_exactement_une_fois": true,
+  "etapes": 13,
+  "max_pieces_par_etape": 20,
+  "sections": [
+   "Cadre",
+   "Dos",
+   "Relief"
+  ],
+  "pages_pdf": 16,
+  "fichiers_presents": {
+   "map.ldr": true,
+   "parts_list.csv": true,
+   "viewer.html": true,
+   "notice.pdf": true,
+   "validation/validation_resume.json": true,
+   "renders/face.png": true
+  }
+ },
+ {
+  "dossier": "test_3_zones/B",
+  "pieces_parts_json": 258,
+  "pieces_ldr": 258,
+  "pieces_bom": 258,
+  "pieces_dans_les_etapes": 258,
+  "chaque_piece_exactement_une_fois": true,
+  "etapes": 18,
+  "max_pieces_par_etape": 20,
+  "sections": [
+   "Cadre",
+   "Dos",
+   "Relief"
+  ],
+  "pages_pdf": 21,
+  "fichiers_presents": {
+   "map.ldr": true,
+   "parts_list.csv": true,
+   "viewer.html": true,
+   "notice.pdf": true,
+   "validation/validation_resume.json": true,
+   "renders/face.png": true
+  }
+ }
+]

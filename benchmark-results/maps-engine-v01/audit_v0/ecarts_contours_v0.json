@@ -1,0 +1,38 @@
+{
+ "cote (mer/terre)": {
+  "ecart_moyen_mm": 0.69,
+  "hausdorff_mm": 5.32,
+  "surface_px_oracle": 133038,
+  "surface_px_moteur": 132608
+ },
+ "colline": {
+  "ecart_moyen_mm": 1.85,
+  "hausdorff_mm": 5.66,
+  "surface_px_oracle": 8700,
+  "surface_px_moteur": 8192
+ },
+ "foret": {
+  "ecart_moyen_mm": 1.85,
+  "hausdorff_mm": 5.0,
+  "surface_px_oracle": 9072,
+  "surface_px_moteur": 8960
+ },
+ "lac": {
+  "ecart_moyen_mm": 1.97,
+  "hausdorff_mm": 5.32,
+  "surface_px_oracle": 4989,
+  "surface_px_moteur": 4864
+ },
+ "riviere": {
+  "ecart_moyen_mm": 2.34,
+  "hausdorff_mm": 6.67,
+  "surface_px_oracle": 1588,
+  "surface_px_moteur": 3584
+ },
+ "route": {
+  "ecart_moyen_mm": 2.01,
+  "hausdorff_mm": 7.38,
+  "surface_px_oracle": 2502,
+  "surface_px_moteur": 4352
+ }
+}

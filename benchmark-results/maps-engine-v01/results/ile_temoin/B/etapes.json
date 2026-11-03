@@ -1,0 +1,655 @@
+[
+ {
+  "etape": 1,
+  "section": "Dos",
+  "titre": "Dos rigide, couche 1 (partie 1/2)",
+  "region": "dos",
+  "couche": "B1",
+  "pieces": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20
+  ]
+ },
+ {
+  "etape": 2,
+  "section": "Dos",
+  "titre": "Dos rigide, couche 1 (partie 2/2)",
+  "region": "dos",
+  "couche": "B1",
+  "pieces": [
+   21,
+   22,
+   23,
+   24,
+   25
+  ]
+ },
+ {
+  "etape": 3,
+  "section": "Dos",
+  "titre": "Dos rigide, couche 2 (joints decales) (partie 1/2)",
+  "region": "dos",
+  "couche": "B2",
+  "pieces": [
+   26,
+   31,
+   27,
+   32,
+   28,
+   33,
+   29,
+   34,
+   30,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45
+  ]
+ },
+ {
+  "etape": 4,
+  "section": "Dos",
+  "titre": "Dos rigide, couche 2 (joints decales) (partie 2/2)",
+  "region": "dos",
+  "couche": "B2",
+  "pieces": [
+   46,
+   47,
+   48,
+   49,
+   50
+  ]
+ },
+ {
+  "etape": 5,
+  "section": "Relief",
+  "titre": "Couche 1 - region : mer (partie 1/5)",
+  "region": "mer",
+  "couche": "L0",
+  "pieces": [
+   120,
+   183,
+   161,
+   151,
+   153,
+   109,
+   173,
+   155,
+   113,
+   122,
+   185,
+   125,
+   135,
+   136,
+   111,
+   152,
+   176,
+   116,
+   94,
+   102
+  ]
+ },
+ {
+  "etape": 6,
+  "section": "Relief",
+  "titre": "Couche 1 - region : mer (partie 2/5)",
+  "region": "mer",
+  "couche": "L0",
+  "pieces": [
+   184,
+   158,
+   175,
+   147,
+   145,
+   138,
+   163,
+   150,
+   156,
+   130,
+   159,
+   131,
+   121,
+   100,
+   186,
+   139,
+   95,
+   167,
+   132,
+   170
+  ]
+ },
+ {
+  "etape": 7,
+  "section": "Relief",
+  "titre": "Couche 1 - region : mer (partie 3/5)",
+  "region": "mer",
+  "couche": "L0",
+  "pieces": [
+   148,
+   134,
+   129,
+   164,
+   154,
+   169,
+   137,
+   160,
+   171,
+   143,
+   119,
+   141,
+   174,
+   181,
+   177,
+   149,
+   114,
+   126,
+   172,
+   124
+  ]
+ },
+ {
+  "etape": 8,
+  "section": "Relief",
+  "titre": "Couche 1 - region : mer (partie 4/5)",
+  "region": "mer",
+  "couche": "L0",
+  "pieces": [
+   165,
+   180,
+   123,
+   146,
+   105,
+   110,
+   182,
+   157,
+   127,
+   115,
+   168,
+   166,
+   142,
+   101,
+   140,
+   104,
+   179,
+   144,
+   187,
+   178
+  ]
+ },
+ {
+  "etape": 9,
+  "section": "Relief",
+  "titre": "Couche 1 - region : mer (partie 5/5)",
+  "region": "mer",
+  "couche": "L0",
+  "pieces": [
+   103
+  ]
+ },
+ {
+  "etape": 10,
+  "section": "Relief",
+  "titre": "Couche 1 - region : terre (partie 1/2)",
+  "region": "terre",
+  "couche": "L0",
+  "pieces": [
+   89,
+   72,
+   87,
+   74,
+   61,
+   86,
+   70,
+   84,
+   91,
+   85,
+   81,
+   60,
+   90,
+   71,
+   55,
+   77,
+   67,
+   69,
+   88,
+   62
+  ]
+ },
+ {
+  "etape": 11,
+  "section": "Relief",
+  "titre": "Couche 1 - region : terre (partie 2/2)",
+  "region": "terre",
+  "couche": "L0",
+  "pieces": [
+   56,
+   76,
+   92,
+   64,
+   53,
+   78,
+   82,
+   79,
+   58,
+   75,
+   65,
+   52,
+   59,
+   80,
+   54,
+   66,
+   73,
+   57
+  ]
+ },
+ {
+  "etape": 12,
+  "section": "Relief",
+  "titre": "Couche 1 - region : foret",
+  "region": "foret",
+  "couche": "L0",
+  "pieces": [
+   83
+  ]
+ },
+ {
+  "etape": 13,
+  "section": "Relief",
+  "titre": "Couche 1 - region : colline",
+  "region": "colline",
+  "couche": "L0",
+  "pieces": [
+   51,
+   68,
+   63
+  ]
+ },
+ {
+  "etape": 14,
+  "section": "Relief",
+  "titre": "Couche 1 - region : lac",
+  "region": "lac",
+  "couche": "L0",
+  "pieces": [
+   128,
+   99,
+   93,
+   162,
+   133
+  ]
+ },
+ {
+  "etape": 15,
+  "section": "Relief",
+  "titre": "Couche 1 - region : riviere",
+  "region": "riviere",
+  "couche": "L0",
+  "pieces": [
+   106,
+   117,
+   96,
+   108,
+   118,
+   97,
+   112,
+   107,
+   98
+  ]
+ },
+ {
+  "etape": 16,
+  "section": "Relief",
+  "titre": "Couche 2 - region : terre (partie 1/4)",
+  "region": "terre",
+  "couche": "L1",
+  "pieces": [
+   222,
+   256,
+   264,
+   266,
+   258,
+   236,
+   254,
+   275,
+   253,
+   233,
+   248,
+   218,
+   237,
+   202,
+   272,
+   268,
+   227,
+   251,
+   249,
+   221
+  ]
+ },
+ {
+  "etape": 17,
+  "section": "Relief",
+  "titre": "Couche 2 - region : terre (partie 2/4)",
+  "region": "terre",
+  "couche": "L1",
+  "pieces": [
+   216,
+   212,
+   203,
+   239,
+   234,
+   260,
+   255,
+   271,
+   252,
+   231,
+   263,
+   247,
+   213,
+   211,
+   273,
+   267,
+   228,
+   269,
+   240,
+   262
+  ]
+ },
+ {
+  "etape": 18,
+  "section": "Relief",
+  "titre": "Couche 2 - region : terre (partie 3/4)",
+  "region": "terre",
+  "couche": "L1",
+  "pieces": [
+   244,
+   225,
+   270,
+   232,
+   274,
+   217,
+   277,
+   230,
+   214,
+   205,
+   209,
+   250,
+   246,
+   229,
+   261,
+   210,
+   278,
+   245,
+   238,
+   201
+  ]
+ },
+ {
+  "etape": 19,
+  "section": "Relief",
+  "titre": "Couche 2 - region : terre (partie 4/4)",
+  "region": "terre",
+  "couche": "L1",
+  "pieces": [
+   206,
+   224,
+   223,
+   242,
+   265,
+   276,
+   226,
+   219,
+   241,
+   259,
+   235,
+   207
+  ]
+ },
+ {
+  "etape": 20,
+  "section": "Relief",
+  "titre": "Couche 2 - region : foret",
+  "region": "foret",
+  "couche": "L1",
+  "pieces": [
+   196,
+   200,
+   192,
+   198
+  ]
+ },
+ {
+  "etape": 21,
+  "section": "Relief",
+  "titre": "Couche 2 - region : colline",
+  "region": "colline",
+  "couche": "L1",
+  "pieces": [
+   199,
+   197,
+   193,
+   194,
+   188,
+   195,
+   191,
+   190
+  ]
+ },
+ {
+  "etape": 22,
+  "section": "Relief",
+  "titre": "Couche 2 - region : route",
+  "region": "route",
+  "couche": "L1",
+  "pieces": [
+   208,
+   220,
+   243,
+   257,
+   204,
+   215
+  ]
+ },
+ {
+  "etape": 23,
+  "section": "Relief",
+  "titre": "Couche 2 - region : village",
+  "region": "village",
+  "couche": "L1",
+  "pieces": [
+   189
+  ]
+ },
+ {
+  "etape": 24,
+  "section": "Relief",
+  "titre": "Couche 3 - region : foret",
+  "region": "foret",
+  "couche": "L2",
+  "pieces": [
+   286,
+   289,
+   291,
+   283
+  ]
+ },
+ {
+  "etape": 25,
+  "section": "Relief",
+  "titre": "Couche 3 - region : colline",
+  "region": "colline",
+  "couche": "L2",
+  "pieces": [
+   281,
+   288,
+   287,
+   290,
+   280,
+   285,
+   282,
+   284
+  ]
+ },
+ {
+  "etape": 26,
+  "section": "Relief",
+  "titre": "Couche 3 - region : village",
+  "region": "village",
+  "couche": "L2",
+  "pieces": [
+   279
+  ]
+ },
+ {
+  "etape": 27,
+  "section": "Relief",
+  "titre": "Couche 4 - region : colline",
+  "region": "colline",
+  "couche": "L3",
+  "pieces": [
+   298,
+   293,
+   295,
+   297,
+   294,
+   296,
+   292
+  ]
+ },
+ {
+  "etape": 28,
+  "section": "Relief",
+  "titre": "Couche 5 - region : sommet",
+  "region": "sommet",
+  "couche": "L4",
+  "pieces": [
+   299
+  ]
+ },
+ {
+  "etape": 29,
+  "section": "Cadre",
+  "titre": "Cadre, rang 1",
+  "region": "cadre",
+  "couche": "F0",
+  "pieces": [
+   303,
+   311,
+   312,
+   313,
+   314,
+   304,
+   305,
+   306,
+   307,
+   308,
+   309,
+   310,
+   300,
+   315,
+   316,
+   317,
+   318,
+   301,
+   302
+  ]
+ },
+ {
+  "etape": 30,
+  "section": "Cadre",
+  "titre": "Cadre, rang 2",
+  "region": "cadre",
+  "couche": "F1",
+  "pieces": [
+   324,
+   333,
+   321,
+   329,
+   335,
+   323,
+   330,
+   337,
+   336,
+   326,
+   320,
+   331,
+   319,
+   334,
+   328,
+   332,
+   325,
+   322,
+   327
+  ]
+ },
+ {
+  "etape": 31,
+  "section": "Cadre",
+  "titre": "Cadre, rang 3 (partie 1/2)",
+  "region": "cadre",
+  "couche": "F2",
+  "pieces": [
+   364,
+   341,
+   350,
+   355,
+   365,
+   349,
+   339,
+   359,
+   347,
+   340,
+   352,
+   361,
+   363,
+   344,
+   360,
+   342,
+   356,
+   354,
+   345,
+   338
+  ]
+ },
+ {
+  "etape": 32,
+  "section": "Cadre",
+  "titre": "Cadre, rang 3 (partie 2/2)",
+  "region": "cadre",
+  "couche": "F2",
+  "pieces": [
+   351,
+   348,
+   357,
+   346,
+   353,
+   362,
+   343,
+   358
+  ]
+ }
+]

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Carte fictive en relief d'une ile">
+<rect width="512" height="512" fill="#315c9c"/>
+<polygon points="80,100 135,65 240,80 315,45 390,95 450,175 430,260 466,320 410,420 315,454 240,425 166,462 90,398 65,300 87,215" fill="#e6d1a2"/>
+<polygon points="124,154 180,129 217,166 207,235 148,247 110,208" fill="#568451"/>
+<polygon points="327,106 386,139 400,190 360,232 300,203 299,144" fill="#9a7b50"/>
+<polygon points="337,135 367,151 378,183 355,198 329,176" fill="#c8ad80"/>
+<polygon points="264,205 305,200 330,225 325,269 287,285 250,254" fill="#5e9cc6"/>
+<polyline points="113,340 160,323 222,328 278,313 340,308 396,329" fill="none" stroke="#ae8051" stroke-width="10" stroke-linecap="round"/>
+<polyline points="282,282 256,315 245,356 231,402 215,445" fill="none" stroke="#5e9cc6" stroke-width="9" stroke-linecap="round"/>
+<circle cx="160" cy="323" r="9" fill="#a44533"/>
+</svg>

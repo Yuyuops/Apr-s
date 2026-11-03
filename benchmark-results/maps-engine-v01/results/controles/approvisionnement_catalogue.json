@@ -1,0 +1,195 @@
+{
+ "ile_temoin/A": {
+  "references": 66,
+  "pieces": 221,
+  "min_sets": 22,
+  "refs_sous_100_sets": 16,
+  "exemples": [
+   [
+    "26601",
+    "Tan",
+    16,
+    76
+   ],
+   [
+    "3033",
+    "Blue",
+    7,
+    47
+   ],
+   [
+    "41539",
+    "Tan",
+    4,
+    89
+   ],
+   [
+    "2445",
+    "Blue",
+    3,
+    88
+   ],
+   [
+    "3795",
+    "Medium_Blue",
+    3,
+    25
+   ],
+   [
+    "26601",
+    "Green",
+    2,
+    58
+   ]
+  ],
+  "prix_renseignes": 0,
+  "stock_renseigne": 0
+ },
+ "ile_temoin/B": {
+  "references": 70,
+  "pieces": 365,
+  "min_sets": 22,
+  "refs_sous_100_sets": 14,
+  "exemples": [
+   [
+    "69729",
+    "Blue",
+    15,
+    23
+   ],
+   [
+    "69729",
+    "Tan",
+    14,
+    59
+   ],
+   [
+    "3070b",
+    "Dark_Azure",
+    5,
+    70
+   ],
+   [
+    "26603",
+    "Blue",
+    4,
+    66
+   ],
+   [
+    "3031",
+    "Medium_Nougat",
+    3,
+    22
+   ],
+   [
+    "2431",
+    "Dark_Azure",
+    2,
+    65
+   ]
+  ],
+  "prix_renseignes": 0,
+  "stock_renseigne": 0
+ },
+ "test_3_zones/A": {
+  "references": 42,
+  "pieces": 167,
+  "min_sets": 47,
+  "refs_sous_100_sets": 9,
+  "exemples": [
+   [
+    "26601",
+    "Tan",
+    10,
+    76
+   ],
+   [
+    "3033",
+    "Blue",
+    8,
+    47
+   ],
+   [
+    "41539",
+    "Tan",
+    8,
+    89
+   ],
+   [
+    "26601",
+    "Green",
+    7,
+    58
+   ],
+   [
+    "2445",
+    "Blue",
+    3,
+    88
+   ],
+   [
+    "2445",
+    "Tan",
+    1,
+    93
+   ]
+  ],
+  "prix_renseignes": 0,
+  "stock_renseigne": 0
+ },
+ "test_3_zones/B": {
+  "references": 50,
+  "pieces": 258,
+  "min_sets": 23,
+  "refs_sous_100_sets": 12,
+  "exemples": [
+   [
+    "69729",
+    "Blue",
+    24,
+    23
+   ],
+   [
+    "69729",
+    "Tan",
+    16,
+    59
+   ],
+   [
+    "4162",
+    "Green",
+    6,
+    52
+   ],
+   [
+    "3033",
+    "Tan",
+    3,
+    93
+   ],
+   [
+    "26603",
+    "Blue",
+    2,
+    66
+   ],
+   [
+    "26603",
+    "Green",
+    2,
+    46
+   ]
+  ],
+  "prix_renseignes": 0,
+  "stock_renseigne": 0
+ },
+ "briquestore": {
+  "url": "https://store.bricklink.com/briquestore.fr",
+  "checked_at": "2026-11-03",
+  "price_checked": false,
+  "stock_checked": false,
+  "values": "null",
+  "http_status": 202,
+  "note": "page answered but per-item price / stock are not machine-verifiable by this engine (client-side inventory) : left null ; no workaround attempted"
+ }
+}

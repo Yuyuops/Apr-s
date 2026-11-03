@@ -1,0 +1,23 @@
+{
+ "input": "input.png",
+ "finish": "B",
+ "coins_coupes": 0,
+ "mode": "2.5d",
+ "n": 32,
+ "frame": 2,
+ "style": "relief_classic",
+ "pieces": 258,
+ "pieces_1x1": 7,
+ "references": 50,
+ "etapes": 18,
+ "seconds": 13.7,
+ "part_1x1_share": 0.0271,
+ "pieces_sur_un_seul_tenon": 7,
+ "points_articulation": 26,
+ "collisions": 0,
+ "deconnectees": 0,
+ "masse_g": 1073.0,
+ "epaisseur_mm": 16.0,
+ "briquestore": 202,
+ "seconds_total": 38.7
+}

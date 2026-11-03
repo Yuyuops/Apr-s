@@ -1,0 +1,494 @@
+{
+ "../../maps-engine-v0/results": {
+  "tenue_par_un_tenon": 9,
+  "feuilles_decoratives": 8,
+  "porteuses": 1,
+  "porteuses_tenues_par_moins_de_4_tenons": 10,
+  "points_articulation": 25,
+  "exemples_porteuses_faibles": [
+   {
+    "id": 77,
+    "part": "3623",
+    "couche": "L0",
+    "tenons_dessous": 3,
+    "tenons_dessus": 3
+   },
+   {
+    "id": 78,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 107,
+    "part": "3623",
+    "couche": "L1",
+    "tenons_dessous": 3,
+    "tenons_dessus": 3
+   },
+   {
+    "id": 121,
+    "part": "3024",
+    "couche": "L1",
+    "tenons_dessous": 1,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 122,
+    "part": "3023",
+    "couche": "L1",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 138,
+    "part": "3623",
+    "couche": "L2",
+    "tenons_dessous": 3,
+    "tenons_dessus": 3
+   },
+   {
+    "id": 139,
+    "part": "3623",
+    "couche": "L2",
+    "tenons_dessous": 3,
+    "tenons_dessus": 3
+   },
+   {
+    "id": 141,
+    "part": "3023",
+    "couche": "L2",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   }
+  ]
+ },
+ "../results/ile_temoin/A": {
+  "tenue_par_un_tenon": 15,
+  "feuilles_decoratives": 12,
+  "porteuses": 3,
+  "porteuses_tenues_par_moins_de_4_tenons": 13,
+  "points_articulation": 28,
+  "exemples_porteuses_faibles": [
+   {
+    "id": 53,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 112,
+    "part": "3024",
+    "couche": "L1",
+    "tenons_dessous": 1,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 128,
+    "part": "3023",
+    "couche": "L1",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 138,
+    "part": "3623",
+    "couche": "L1",
+    "tenons_dessous": 3,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 166,
+    "part": "3024",
+    "couche": "L2",
+    "tenons_dessous": 1,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 167,
+    "part": "3024",
+    "couche": "L2",
+    "tenons_dessous": 1,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 171,
+    "part": "3023",
+    "couche": "L2",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 172,
+    "part": "3023",
+    "couche": "L2",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   }
+  ]
+ },
+ "../results/ile_temoin/B": {
+  "tenue_par_un_tenon": 23,
+  "feuilles_decoratives": 16,
+  "porteuses": 7,
+  "porteuses_tenues_par_moins_de_4_tenons": 42,
+  "points_articulation": 51,
+  "exemples_porteuses_faibles": [
+   {
+    "id": 51,
+    "part": "3024",
+    "couche": "L0",
+    "tenons_dessous": 1,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 52,
+    "part": "3024",
+    "couche": "L0",
+    "tenons_dessous": 1,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 53,
+    "part": "3024",
+    "couche": "L0",
+    "tenons_dessous": 1,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 54,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 55,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 56,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 57,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 58,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   }
+  ]
+ },
+ "../results/ile_temoin/A_sans_coins_coupes": {
+  "tenue_par_un_tenon": 11,
+  "feuilles_decoratives": 8,
+  "porteuses": 3,
+  "porteuses_tenues_par_moins_de_4_tenons": 12,
+  "points_articulation": 29,
+  "exemples_porteuses_faibles": [
+   {
+    "id": 53,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 97,
+    "part": "3024",
+    "couche": "L1",
+    "tenons_dessous": 1,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 113,
+    "part": "3023",
+    "couche": "L1",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 147,
+    "part": "3024",
+    "couche": "L2",
+    "tenons_dessous": 1,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 148,
+    "part": "3024",
+    "couche": "L2",
+    "tenons_dessous": 1,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 149,
+    "part": "3023",
+    "couche": "L2",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 150,
+    "part": "3023",
+    "couche": "L2",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 152,
+    "part": "3023",
+    "couche": "L2",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   }
+  ]
+ },
+ "../results/ile_temoin/A_48x48": {
+  "tenue_par_un_tenon": 33,
+  "feuilles_decoratives": 29,
+  "porteuses": 4,
+  "porteuses_tenues_par_moins_de_4_tenons": 19,
+  "points_articulation": 52,
+  "exemples_porteuses_faibles": [
+   {
+    "id": 103,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 106,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 108,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 109,
+    "part": "3623",
+    "couche": "L0",
+    "tenons_dessous": 3,
+    "tenons_dessus": 3
+   },
+   {
+    "id": 210,
+    "part": "3023",
+    "couche": "L1",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 233,
+    "part": "3023",
+    "couche": "L1",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 248,
+    "part": "3623",
+    "couche": "L1",
+    "tenons_dessous": 3,
+    "tenons_dessus": 1
+   },
+   {
+    "id": 304,
+    "part": "3024",
+    "couche": "L2",
+    "tenons_dessous": 1,
+    "tenons_dessus": 1
+   }
+  ]
+ },
+ "../../maps-engine-v0/results/test_3_zones": {
+  "tenue_par_un_tenon": 2,
+  "feuilles_decoratives": 2,
+  "porteuses": 0,
+  "porteuses_tenues_par_moins_de_4_tenons": 6,
+  "points_articulation": 13,
+  "exemples_porteuses_faibles": [
+   {
+    "id": 72,
+    "part": "3623",
+    "couche": "L0",
+    "tenons_dessous": 3,
+    "tenons_dessus": 3
+   },
+   {
+    "id": 74,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 75,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 77,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 78,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 98,
+    "part": "3023",
+    "couche": "L1",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   }
+  ]
+ },
+ "../results/test_3_zones/A": {
+  "tenue_par_un_tenon": 1,
+  "feuilles_decoratives": 1,
+  "porteuses": 0,
+  "porteuses_tenues_par_moins_de_4_tenons": 6,
+  "points_articulation": 18,
+  "exemples_porteuses_faibles": [
+   {
+    "id": 51,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 52,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 53,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 54,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 55,
+    "part": "3623",
+    "couche": "L0",
+    "tenons_dessous": 3,
+    "tenons_dessus": 3
+   },
+   {
+    "id": 56,
+    "part": "3623",
+    "couche": "L0",
+    "tenons_dessous": 3,
+    "tenons_dessus": 3
+   }
+  ]
+ },
+ "../results/test_3_zones/B": {
+  "tenue_par_un_tenon": 7,
+  "feuilles_decoratives": 7,
+  "porteuses": 0,
+  "porteuses_tenues_par_moins_de_4_tenons": 13,
+  "points_articulation": 26,
+  "exemples_porteuses_faibles": [
+   {
+    "id": 51,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 52,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 53,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 54,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 55,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 56,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 57,
+    "part": "3023",
+    "couche": "L0",
+    "tenons_dessous": 2,
+    "tenons_dessus": 2
+   },
+   {
+    "id": 58,
+    "part": "3623",
+    "couche": "L0",
+    "tenons_dessous": 3,
+    "tenons_dessus": 3
+   }
+  ]
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "masse_totale_g": 1194,
+ "interfaces": [
+  {
+   "interface_plaque": 1,
+   "tenons_engages": 1296,
+   "masse_portee_g": 916,
+   "poids_N": 8.98,
+   "capacite_supposee_N": 1296.0,
+   "rapport_capacite_sur_poids_suppose": 144.3
+  },
+  {
+   "interface_plaque": 2,
+   "tenons_engages": 1296,
+   "masse_portee_g": 637,
+   "poids_N": 6.25,
+   "capacite_supposee_N": 1296.0,
+   "rapport_capacite_sur_poids_suppose": 207.4
+  },
+  {
+   "interface_plaque": 3,
+   "tenons_engages": 473,
+   "masse_portee_g": 241,
+   "poids_N": 2.37,
+   "capacite_supposee_N": 473.0,
+   "rapport_capacite_sur_poids_suppose": 199.7
+  },
+  {
+   "interface_plaque": 4,
+   "tenons_engages": 68,
+   "masse_portee_g": 140,
+   "poids_N": 1.37,
+   "capacite_supposee_N": 68.0,
+   "rapport_capacite_sur_poids_suppose": 49.6
+  },
+  {
+   "interface_plaque": 5,
+   "tenons_engages": 304,
+   "masse_portee_g": 125,
+   "poids_N": 1.23,
+   "capacite_supposee_N": 304.0,
+   "rapport_capacite_sur_poids_suppose": 247.6
+  },
+  {
+   "interface_plaque": 6,
+   "tenons_engages": 278,
+   "masse_portee_g": 60,
+   "poids_N": 0.59,
+   "capacite_supposee_N": 278.0,
+   "rapport_capacite_sur_poids_suppose": 474.0
+  }
+ ],
+ "avertissement": "Etude de repartition seulement. 1 N par tenon est une hypothese du moteur 1, non mesuree ; le glissement, les chocs, la fatigue du frottement et le moment du a l'epaisseur ne sont pas modelises. AUCUNE fixation murale n'est declaree sure sans essais physiques."
+}
