@@ -1,9 +1,6 @@
 name: LEGO Maps Italy V0.3 - real source, two LEGO finishes
 
 on:
-  push:
-    branches: [research/lego-maps-italie-v03-20261103]
-    paths: ['.github/workflows/lego-maps-italie-v03.yml']
   workflow_dispatch:
 
 permissions:
@@ -65,7 +62,7 @@ jobs:
               assert len(parts)==bom==count,(finish,len(parts),bom,count)
               val=json.loads((p/'validation/validation_resume.json').read_text(encoding='utf-8'))
               m=val['moteur1']; checks={key:m[key] for key in ('disconnected_parts','islands','unsupported_at_placement')}
-              checks['collisions']=m['collisions']['pairs']
+              checks['collisions']=m['collisions']
               assert all(x==0 for x in checks.values()),(finish,checks)
               support=json.loads((p/'support_report_v03.json').read_text(encoding='utf-8'))
               result[finish]={
