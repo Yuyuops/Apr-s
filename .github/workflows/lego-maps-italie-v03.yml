@@ -1,0 +1,95 @@
+name: LEGO Maps Italy V0.3 - real source, two LEGO finishes
+
+on:
+  push:
+    branches: [research/lego-maps-italie-v03-20261103]
+    paths: ['.github/workflows/lego-maps-italie-v03.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  italy-a-b:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout research branch
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Install pinned V11 tooling (Python LDraw Rebrickable Node)
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Install Chromium for SVG viewer renders and PDF notices
+        run: |
+          cd benchmark-results/20_portable_engine
+          npx playwright install chromium
+      - name: Generate the real Italy geographic source (Natural Earth 10m)
+        run: |
+          benchmark-results/20_portable_engine/.venv/bin/python \
+            benchmark-results/maps-engine-v03/italie/make_italy_source.py \
+            --out benchmark-results/maps-engine-v03/italie/source/italie_ne_10m_style.png
+      - name: Full LEGO Maps Italy 48x48 studs - finish A (visible studs)
+        run: |
+          cd benchmark-results/maps-engine-v03
+          ../20_portable_engine/.venv/bin/python engine/run_v03.py full \
+            --input italie/source/italie_ne_10m_style.png \
+            --out results/italie/A_48 \
+            --finish A --n 48 --frame 2
+      - name: Full LEGO Maps Italy 48x48 studs - finish B (smooth sea, finished frame)
+        run: |
+          cd benchmark-results/maps-engine-v03
+          ../20_portable_engine/.venv/bin/python engine/run_v03.py full \
+            --input italie/source/italie_ne_10m_style.png \
+            --out results/italie/B_48 \
+            --finish B --n 48 --frame 2
+      - name: Independently check Italy LDraw, BOM and PDF A/B outputs
+        run: |
+          python3 - <<'PY'
+          import csv, json
+          from pathlib import Path
+          root=Path('benchmark-results/maps-engine-v03')
+          result={}
+          for finish in ('A','B'):
+              p=root/'results'/'italie'/('%s_48'%finish)
+              required=['map.ldr','parts.json','parts_list.csv','viewer.html','notice.pdf',
+                        'renders/face.png','renders/trois_quarts.png',
+                        'support_report_v03.json','validation/validation_resume.json']
+              missing=[f for f in required if not (p/f).exists() or not (p/f).stat().st_size]
+              assert not missing,(finish,missing)
+              parts=json.loads((p/'parts.json').read_text(encoding='utf-8'))
+              with (p/'parts_list.csv').open(encoding='utf-8') as f:
+                  bom=sum(int(x['quantity']) for x in csv.DictReader(f))
+              count=sum(s.startswith('1 ') for s in (p/'map.ldr').read_text(encoding='utf-8').splitlines())
+              assert len(parts)==bom==count,(finish,len(parts),bom,count)
+              val=json.loads((p/'validation/validation_resume.json').read_text(encoding='utf-8'))
+              m=val['moteur1']; checks={key:m[key] for key in ('disconnected_parts','islands','unsupported_at_placement')}
+              checks['collisions']=m['collisions']['pairs']
+              assert all(x==0 for x in checks.values()),(finish,checks)
+              support=json.loads((p/'support_report_v03.json').read_text(encoding='utf-8'))
+              result[finish]={
+                'parts':len(parts),
+                'critical_before':support['baseline']['critical_carriers'],
+                'critical_after':support['final']['critical_carriers'],
+                'weak_before':support['baseline']['weak_carriers'],
+                'weak_after':support['final']['weak_carriers'],
+                'validations':checks,
+                'pdf_bytes':(p/'notice.pdf').stat().st_size,
+                'wall_mount_physical_test':False,
+                'prices_stock_verified':False,
+              }
+          (root/'italie/RESULTATS_COMPARAISON.json').write_text(json.dumps(result,indent=2,ensure_ascii=False),encoding='utf-8')
+          print(json.dumps(result,indent=2,ensure_ascii=False))
+          PY
+      - name: Upload actual Italy models, renders, BOM, viewers, notices, source
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lego-maps-italie-48-a-b
+          path: |
+            benchmark-results/maps-engine-v03/italie/source/
+            benchmark-results/maps-engine-v03/italie/RESULTATS_COMPARAISON.json
+            benchmark-results/maps-engine-v03/results/italie/A_48/
+            benchmark-results/maps-engine-v03/results/italie/B_48/
+          if-no-files-found: warn
