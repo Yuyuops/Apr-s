@@ -24,7 +24,7 @@ def support_build(*args, **kwargs):
     BEFORE_PARTS.clear()
     BEFORE_PARTS.extend(dict(p) for p in result["parts"])
     updated, audit = improve(
-        result["parts"], PLATES, palette.available, max_passes=3,
+        result["parts"], PLATES, palette.available, max_passes=12,
         max_cells=32, max_candidates_per_group=96, max_growth=0.15,
     )
     # All geometry, occupied cells, colours, layer heights and special parts
