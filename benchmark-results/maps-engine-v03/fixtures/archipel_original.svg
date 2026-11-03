@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Carte fictive originale d'archipel pour benchmark LEGO Maps">
+<rect width="512" height="512" fill="#235c91"/>
+<path d="M57 106 L123 68 L191 84 L220 138 L207 183 L170 213 L182 263 L142 308 L91 294 L56 233 L74 184 Z" fill="#e6c99b"/>
+<path d="M264 86 L346 63 L417 101 L457 152 L432 213 L465 259 L422 304 L387 287 L335 342 L284 311 L246 244 L268 189 L249 131 Z" fill="#e6c99b"/>
+<path d="M335 356 L398 374 L431 420 L402 456 L353 439 L312 405 Z" fill="#e6c99b"/>
+<path d="M92 144 L158 122 L173 176 L130 223 L97 189 Z" fill="#4d915b"/>
+<path d="M308 113 L366 102 L407 140 L387 194 L324 177 Z" fill="#4d915b"/>
+<path d="M301 205 L351 196 L379 225 L371 272 L312 272 L286 241 Z" fill="#ad8b58"/>
+<path d="M326 219 L347 211 L358 238 L339 251 L316 238 Z" fill="#dbc59f"/>
+<path d="M104 250 L146 239 L156 266 L120 285 Z" fill="#4f9cc8"/>
+<polyline points="280,167 304,185 314,213 312,253 320,295" fill="none" stroke="#4f9cc8" stroke-width="8" stroke-linecap="round"/>
+<polyline points="271,279 317,286 360,286 405,265" fill="none" stroke="#c09869" stroke-width="9" stroke-linecap="round"/>
+<circle cx="360" cy="286" r="10" fill="#bd5142"/>
+</svg>
