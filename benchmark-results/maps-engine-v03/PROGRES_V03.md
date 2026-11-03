@@ -11,3 +11,5 @@
 NON VERIFIE : execution du moteur V0.3 sur les cinq cartes, reduction effective des critiques, rendus et notices regeneres, validation physique. Ces resultats exigent un runner possedant LDraw, Rebrickable, Git LFS, Node et les dependances verrouillees.
 
 La recherche est limitee aux paires/trios et 32 cellules maximum. Les cas non resolus seront diagnostiques, pas declares impossibles par principe. Ne pas baisser les seuils.
+
+- Rejeux CI initiaux : Ecosse 32x32 17 -> 13, 301 -> 302 pieces; Ecosse 48x48 19 -> 13. Arret ensuite sur Chromium absent pour rasteriser les SVG de l'ile; le workflow est corrige. L'extension a 12 passes n'est pas encore verifiee par la CI.
