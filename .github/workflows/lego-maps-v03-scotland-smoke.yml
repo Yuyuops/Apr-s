@@ -1,0 +1,78 @@
+name: LEGO Maps V0.3 - Scotland 32x32 digital smoke test
+
+on:
+  push:
+    branches:
+      - research/lego-maps-v03-chatgpt-20261103
+    paths:
+      - '.github/workflows/lego-maps-v03-scotland-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generate-and-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout source without all LFS assets
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Pull Scotland map only
+        run: git lfs pull --include="benchmark-results/maps-engine-v02/fixtures/ecosse_carte.png" --exclude=""
+      - name: Install locked engine 1 technical dependencies (no Node or render)
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh --no-node
+      - name: Generate Scotland V0.3 32x32
+        run: |
+          cd benchmark-results/maps-engine-v03
+          ../20_portable_engine/.venv/bin/python engine/run_v03.py generate \
+            --input ../maps-engine-v02/fixtures/ecosse_carte.png \
+            --out results/ecosse/A_32 --finish A --n 32
+      - name: Independent geometry and assembly validation
+        run: |
+          cd benchmark-results/maps-engine-v03
+          ../20_portable_engine/.venv/bin/python - <<'PY'
+          import csv, json, sys
+          from pathlib import Path
+          sys.path.insert(0, 'engine')
+          from maps_engine import validate as V
+          from maps_engine.support_opt import support_report
+          folder = Path('results/ecosse/A_32')
+          parts = json.loads((folder/'parts.json').read_text())
+          old = json.loads((folder/'parts_before_v03.json').read_text())
+          audit = json.loads((folder/'support_report_v03.json').read_text())
+          base = support_report(old); final = support_report(parts)
+          assert final['critical_carriers'] <= base['critical_carriers'], (base, final)
+          assert len(parts) <= int(len(old)*1.15 + 0.999)
+          assert audit['final']['critical_carriers'] == final['critical_carriers']
+          ldraw = [x for x in (folder/'map.ldr').read_text().splitlines() if x.startswith('1 ')]
+          with (folder/'parts_list.csv').open() as fh:
+              bom = sum(int(r['quantity']) for r in csv.DictReader(fh))
+          assert len(parts) == len(ldraw) == bom
+          check = V.engine1(str(folder/'map.ldr'),str(folder/'validation'),'map')
+          invalid = dict(collisions=check['collisions']['pairs'],
+                         disconnected_parts=check['disconnected_parts'],
+                         islands=check['islands'],
+                         unsupported_at_placement=check['unsupported_at_placement'])
+          assert all(v == 0 for v in invalid.values()), invalid
+          report = dict(parts_before=len(old),parts_after=len(parts),
+                        weak_before=base['weak_carriers'],weak_after=final['weak_carriers'],
+                        critical_before=base['critical_carriers'],critical_after=final['critical_carriers'],
+                        digital_checks=invalid,physical_test=False)
+          (folder/'smoke_validation.json').write_text(json.dumps(report,indent=2))
+          print(json.dumps(report,indent=2))
+          PY
+      - name: Save exact generated output and reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lego-maps-v03-scotland-32
+          path: |
+            benchmark-results/maps-engine-v03/results/ecosse/A_32/*.json
+            benchmark-results/maps-engine-v03/results/ecosse/A_32/*.ldr
+            benchmark-results/maps-engine-v03/results/ecosse/A_32/*.csv
+            benchmark-results/maps-engine-v03/results/ecosse/A_32/validation/*.json
+          if-no-files-found: warn
