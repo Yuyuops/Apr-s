@@ -1,0 +1,81 @@
+name: LEGO Maps Italy V0.4 - real 64-stud art direction
+
+on:
+  push:
+    branches: [research/lego-maps-italie-v04-20261103]
+    paths:
+      - '.github/workflows/lego-maps-italie-v04-first-64.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  italy-64:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout isolated research branch
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Install locked dependencies from engine 1 (engine 1 read-only)
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Install Chromium for real LDraw render and PDF
+        run: |
+          cd benchmark-results/20_portable_engine
+          npx playwright install chromium
+      - name: Generate public-domain Italy artwork source
+        run: |
+          PY="benchmark-results/20_portable_engine/.venv/bin/python"
+          "$PY" benchmark-results/maps-engine-v03/italie_v04/art_direction.py \
+            --out benchmark-results/maps-engine-v03/italie_v04/art_source/italia_art_v04.png
+      - name: Build genuine LDraw and PDF - 64x64 studs, finish A
+        run: |
+          cd benchmark-results/maps-engine-v03
+          ../20_portable_engine/.venv/bin/python engine/run_v03.py full \
+            --input italie_v04/art_source/italia_art_v04.png \
+            --out italie_v04/outputs/A_64 --finish A --n 64 --frame 2 \
+            --style italie_v04/relief_gallery.json
+      - name: Independently check final model parts and structural validity
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json, csv
+          root=Path('benchmark-results/maps-engine-v03/italie_v04')
+          p=root/'outputs/A_64'
+          required=['map.ldr','parts_list.csv','parts.json','viewer.html','notice.pdf',
+                    'renders/face.png','renders/trois_quarts.png',
+                    'support_report_v03.json','validation/validation_resume.json']
+          absent=[v for v in required if not (p/v).exists() or (p/v).stat().st_size<100]
+          assert not absent,absent
+          parts=json.loads((p/'parts.json').read_text())
+          with (p/'parts_list.csv').open() as f: bom=sum(int(row['quantity']) for row in csv.DictReader(f))
+          ldr=sum(line.startswith('1 ') for line in (p/'map.ldr').read_text().splitlines())
+          assert bom==ldr==len(parts),(bom,ldr,len(parts))
+          checks=json.loads((p/'validation/validation_resume.json').read_text())['moteur1']
+          bad={k:checks[k] for k in ('collisions','disconnected_parts','islands','unsupported_at_placement','blocked_studs') if checks[k]}
+          assert not bad,bad
+          frag=json.loads((p/'support_report_v03.json').read_text())
+          out=dict(parts=len(parts),unique_references=len(set((x['part'],x['colour']) for x in parts)),
+                   critical_before=frag['baseline']['critical_carriers'],
+                   critical_after=frag['final']['critical_carriers'],
+                   weak_after=frag['final']['weak_carriers'],
+                   notices_pdf_bytes=(p/'notice.pdf').stat().st_size,
+                   collisions=checks['collisions'],unsupported=checks['unsupported_at_placement'],
+                   physical_test=False,stock_price_verified=False,
+                   city_monuments_3d=False,terrain_elevation_real=False)
+          (root/'RESULTATS_V04_A64.json').write_text(json.dumps(out,indent=2))
+          print(json.dumps(out,indent=2))
+          PY
+      - name: Archive source, rendered LEGO, assembly LDraw/BOM and reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lego-italia-v04-A64-genuine-pieces
+          path: |
+            benchmark-results/maps-engine-v03/italie_v04/art_source/
+            benchmark-results/maps-engine-v03/italie_v04/RESULTATS_V04_A64.json
+            benchmark-results/maps-engine-v03/italie_v04/outputs/A_64/
+          if-no-files-found: warn
