@@ -49,7 +49,8 @@ def run(args):
         mat=args.mat,
     )
     if args.cmd == "generate":
-        _, model, result = v02.generate(args.input, str(out), **kw)
+        png = v02.load_input(args.input, str(out), 512 if 512 % args.n == 0 else args.n * 10)
+        _, model, result = v02.generate(png, str(out), **kw)
     else:
         _, model, result = v02.full(
             args.input, str(out), render=not args.no_render, **kw
@@ -68,7 +69,7 @@ def run(args):
         checks = json.loads(vpath.read_text(encoding="utf-8"))
         m1 = checks["moteur1"]
         # Unlike V0.2, V0.3 refuses to silently call a broken assembly valid.
-        errors = {k: m1.get(k) for k in ("collisions", "disconnected_parts", "islands", "blocked_studs")
+        errors = {k: m1.get(k) for k in ("collisions", "disconnected_parts", "islands", "blocked_studs", "unsupported_at_placement")
                   if isinstance(m1.get(k), int) and m1[k] > 0}
         if errors:
             raise RuntimeError("V0.3 model failed independent engine-1 validation: " + repr(errors))
