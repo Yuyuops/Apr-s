@@ -3,7 +3,9 @@ name: LEGO Maps Italy V0.5 - real 3D components proof
 on:
   push:
     branches: [research/lego-maps-italie-v05-quality-first]
-    paths: ['.github/workflows/lego-maps-italie-v05-diorama.yml']
+    paths:
+      - '.github/workflows/lego-maps-italie-v05-diorama.yml'
+      - 'benchmark-results/maps-engine-v03/italie_v05/prototype_diorama.py'
   workflow_dispatch:
 
 permissions:
