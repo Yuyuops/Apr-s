@@ -1,0 +1,1 @@
+{"window_studs": {"row0": 10, "col0": 20, "rows": 32, "cols": 32}, "relief": {"VE": 2.0, "detail": 8, "ridge_gain": 3.2, "valley_depth": 6, "sharpen": 1.2, "band": 6}, "sculpt": {"steep": 1, "snow_m": 1900, "rock_m": 1200}, "note": "snow/rock lines declared lowered (real 2300/1500 m) for readability at 8 km per stud; vertical exaggeration declared in VE"}

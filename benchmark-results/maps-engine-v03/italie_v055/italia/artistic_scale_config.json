@@ -1,0 +1,213 @@
+{
+  "_doc": "Reusable rules for composing a map from two independent scale systems. Nothing in the code depends on Italy : change this file (or pass another) for another country. Units : studs (1 stud = 8 mm) unless noted.",
+  "geographic": {
+    "grid_studs": [
+      128,
+      128
+    ],
+    "frame_studs": 2,
+    "stud_mm": 8,
+    "window_lonlat": [
+      6.15,
+      35.0,
+      19.35,
+      47.65
+    ],
+    "fill_fraction": 0.94,
+    "land_min_coverage": 0.5,
+    "source_polygons": "fixtures/italy_polygons.json",
+    "places": "fixtures/places.json",
+    "dem": {
+      "file": "fixtures/dem_z6.npy",
+      "metres_to_levels": {
+        "gain": 2.4,
+        "exponent": 0.9,
+        "unit_m": 1000,
+        "max_level": 11,
+        "min_land_level": 1
+      },
+      "peak_boost": 0.5,
+      "note": "level = 1 brick (9.6 mm) ; vertical exaggeration declared : 1 level ~ 330 m at 3000 m, i.e. relief is stretched ~25x vs horizontal scale"
+    },
+    "snow_line_m": 2300,
+    "treeline_m": [
+      300,
+      1900
+    ]
+  },
+  "decorative": {
+    "_doc": "Decorative systems are sized in studs, independent of the geographic scale. 'anchor' is the true position ; the engine may shift a monument (leader line kept, declared in the log) but never moves a coastline, island or city of the geographic layer.",
+    "monuments": [
+      {
+        "id": "colosseum",
+        "name": "Colosseo",
+        "lonlat": [
+          12.4924,
+          41.8902
+        ],
+        "module": "colosseum",
+        "priority": 1,
+        "scales": [
+          {
+            "footprint": [
+              18,
+              22
+            ],
+            "variant": "full"
+          },
+          {
+            "footprint": [
+              15,
+              18
+            ],
+            "variant": "simplified"
+          }
+        ],
+        "min_land_fraction": 0.85,
+        "max_shift_studs": 10,
+        "clearance": 2,
+        "allow_remove": false,
+        "plaza_margin": 1
+      },
+      {
+        "id": "pisa_tower",
+        "name": "Torre di Pisa",
+        "lonlat": [
+          10.3966,
+          43.7229
+        ],
+        "module": "pisa_tower",
+        "priority": 2,
+        "scales": [
+          {
+            "footprint": [
+              6,
+              6
+            ],
+            "variant": "full"
+          },
+          {
+            "footprint": [
+              4,
+              4
+            ],
+            "variant": "simplified"
+          }
+        ],
+        "min_land_fraction": 0.7,
+        "max_shift_studs": 6,
+        "clearance": 2,
+        "allow_remove": true,
+        "plaza_margin": 1
+      },
+      {
+        "id": "vesuvio",
+        "name": "Vesuvio",
+        "lonlat": [
+          14.426,
+          40.8211
+        ],
+        "module": "volcano_cone",
+        "priority": 3,
+        "scales": [
+          {
+            "footprint": [
+              9,
+              9
+            ],
+            "variant": "full"
+          },
+          {
+            "footprint": [
+              6,
+              6
+            ],
+            "variant": "simplified"
+          }
+        ],
+        "min_land_fraction": 0.6,
+        "max_shift_studs": 4,
+        "clearance": 1,
+        "allow_remove": true,
+        "plaza_margin": 0
+      }
+    ],
+    "reserved_zones": [
+      {
+        "id": "title",
+        "kind": "text",
+        "text": "ITALIA",
+        "glyph_studs": [
+          5,
+          7
+        ],
+        "letter_gap": 1,
+        "must_be": "sea",
+        "margin": 2,
+        "prefer": [
+          "bottom-left",
+          "top-left",
+          "bottom-right"
+        ]
+      },
+      {
+        "id": "compass",
+        "kind": "disc",
+        "diameter": 15,
+        "must_be": "sea",
+        "margin": 2,
+        "prefer": [
+          "bottom-right",
+          "top-right",
+          "bottom-left"
+        ]
+      }
+    ],
+    "frame_margin_keepout": 3,
+    "vegetation": {
+      "conifer_pad": [
+        2,
+        2
+      ],
+      "min_spacing": 3,
+      "density_by_level": {
+        "1": 0.0,
+        "2": 0.35,
+        "3": 0.35,
+        "4": 0.2,
+        "5": 0.1
+      },
+      "solid_trees_only": true,
+      "note": "only 2x2 round brick + 2x2 cone (4 + 4 stud joints) ; no single-stud trunk trees"
+    },
+    "_footprint_convention": "[rows, cols] in studs, including the plaza margin"
+  },
+  "conflict_policy": {
+    "order": "priority",
+    "steps": [
+      "keep anchor and largest scale",
+      "shift towards land inside max_shift_studs",
+      "next smaller scale",
+      "simplified variant",
+      "remove if allow_remove else report FAIL"
+    ],
+    "never_overlap": [
+      "reserved_zones",
+      "frame_margin_keepout",
+      "other monuments (clearance)"
+    ],
+    "log": true
+  },
+  "sectors": {
+    "size_studs": [
+      32,
+      32
+    ],
+    "halo_studs": 4,
+    "layout": [
+      4,
+      4
+    ],
+    "seam_rule": "backing layer 2 straddles sector seams ; terrain layers generated on global heightfield and cut at 8-stud base-plate lines"
+  }
+}

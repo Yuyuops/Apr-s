@@ -1,0 +1,15 @@
+{
+ "base_pieces_per_cell": 0.112,
+ "land_pieces_per_cell_flat": 0.543,
+ "land_pieces_per_cell_per_level": 0.202,
+ "land_pieces_per_cell_measured_massif": 1.552,
+ "monument_pieces": {
+  "colosseum": 941,
+  "pisa_tower": 150,
+  "vesuvio": 220
+ },
+ "lettering_pieces": 135,
+ "compass_pieces": 60,
+ "frame_pieces_per_stud": 0.5,
+ "provenance": "measured on results/diorama_v053 (parts.json) ; pisa_tower and vesuvio are placeholders until those modules exist"
+}
