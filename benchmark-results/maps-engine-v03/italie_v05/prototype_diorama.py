@@ -107,6 +107,12 @@ def ldline(p):
     yy=-(p['zbot']+p['h'])*8
     rot=p['angle']
     if not rot and p['w']>p['d'] and p['part'] in ('3035','3020','3023','3710','3666'):rot=90
+    # LDraw 3039 has an origin offset of one half stud along its local Z.
+    # Correct its placement in world coordinates after rotation. Without
+    # this, all 107 real slopes are disconnected and some hit neighbours.
+    if p['part']=='3039':
+        ox,oz={0:(0,10),90:(10,0),180:(0,-10),270:(-10,0)}[rot%360]
+        xx+=ox;zz+=oz
     matrix={0:'1 0 0 0 1 0 0 0 1',90:'0 0 1 0 1 0 -1 0 0',
             180:'-1 0 0 0 1 0 0 0 -1',270:'0 0 -1 0 1 0 1 0 0'}[rot%360]
     return '1 %s %g %g %g %s %s.dat'%(p['colour'],xx,yy,zz,matrix,p['part'])
