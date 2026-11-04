@@ -146,8 +146,11 @@ def output(folder):
     (folder/'parts.json').write_text(json.dumps(s.parts,indent=2)+'\n')
     line=['0 LEGO Maps V0.5 sculpted Alpine mountain and micro Colosseum',
           '0 Name: diorama.ldr','0 Author: Procedural design','0 !LICENSE Original generated test']
-    for region in dict.fromkeys(p['region'] for p in s.parts):
-        line += [ldline(p) for p in s.parts if p['region']==region]
+    # Assemble strictly bottom-up. Upper arcade must NOT precede the
+    # supporting lower lintel, otherwise a digital build is impossible.
+    for level in sorted({p['zbot'] for p in s.parts}):
+        line.append('0 // layer at %d plates'%level)
+        line += [ldline(p) for p in s.parts if p['zbot']==level]
         line.append('0 STEP')
     (folder/'diorama.ldr').write_text('\n'.join(line)+'\n')
     stats=dict(pieces=len(s.parts),references=len(set((p['part'],p['colour']) for p in s.parts)),
