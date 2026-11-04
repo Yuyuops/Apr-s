@@ -1,0 +1,172 @@
+{
+ "note": "indicative only : rigid parts, 1.0 N clutch per stud assumed by the validator, NO physical test",
+ "parts": 2720,
+ "joints_total": 13528,
+ "parts_hanging_by_one_stud": 855,
+ "one_stud_decorative_leaves": 305,
+ "one_stud_and_carrying": 550,
+ "articulation_points_with_loss": 530,
+ "worst_single_failure": {
+  "family": "sea",
+  "part_id": 245,
+  "parts_cut_off": 20,
+  "mass_cut_off_g": 11.7
+ },
+ "families": {
+  "backing": {
+   "parts": 223,
+   "hangs_by_one_stud": 6,
+   "hangs_by_one_stud_and_carries": 6,
+   "hangs_by_two_studs": 7
+  },
+  "beach": {
+   "parts": 39,
+   "hangs_by_one_stud": 27,
+   "hangs_by_one_stud_decorative_leaf": 27,
+   "hangs_by_two_studs": 8
+  },
+  "boulder": {
+   "parts": 19,
+   "hangs_by_one_stud": 19,
+   "hangs_by_one_stud_decorative_leaf": 19
+  },
+  "bush": {
+   "parts": 7,
+   "hangs_by_one_stud": 7,
+   "hangs_by_one_stud_decorative_leaf": 7
+  },
+  "colosseum_arcade": {
+   "parts": 42
+  },
+  "colosseum_attic": {
+   "parts": 34,
+   "hangs_by_two_studs": 13,
+   "hangs_by_one_stud": 13,
+   "hangs_by_one_stud_and_carries": 13
+  },
+  "colosseum_cavea": {
+   "parts": 616,
+   "hangs_by_one_stud": 219,
+   "hangs_by_one_stud_and_carries": 112,
+   "hangs_by_two_studs": 156,
+   "hangs_by_one_stud_decorative_leaf": 107
+  },
+  "colosseum_cornice": {
+   "parts": 23,
+   "hangs_by_one_stud": 6,
+   "hangs_by_one_stud_decorative_leaf": 6,
+   "hangs_by_two_studs": 5
+  },
+  "colosseum_hypogeum": {
+   "parts": 26,
+   "hangs_by_one_stud": 17,
+   "hangs_by_one_stud_decorative_leaf": 17,
+   "hangs_by_two_studs": 2
+  },
+  "colosseum_wall": {
+   "parts": 117,
+   "hangs_by_two_studs": 40,
+   "hangs_by_one_stud": 55,
+   "hangs_by_one_stud_and_carries": 43,
+   "hangs_by_one_stud_decorative_leaf": 12
+  },
+  "mountain": {
+   "parts": 804,
+   "hangs_by_one_stud": 396,
+   "hangs_by_one_stud_and_carries": 325,
+   "hangs_by_two_studs": 136,
+   "hangs_by_one_stud_decorative_leaf": 71
+  },
+  "mountain_slope": {
+   "parts": 301,
+   "hangs_by_two_studs": 249
+  },
+  "plaza": {
+   "parts": 217,
+   "hangs_by_two_studs": 29,
+   "hangs_by_one_stud": 24,
+   "hangs_by_one_stud_decorative_leaf": 9,
+   "hangs_by_one_stud_and_carries": 15
+  },
+  "relief_plate": {
+   "parts": 39,
+   "hangs_by_one_stud": 37,
+   "hangs_by_one_stud_decorative_leaf": 27,
+   "hangs_by_one_stud_and_carries": 10,
+   "hangs_by_two_studs": 2
+  },
+  "sea": {
+   "parts": 164,
+   "hangs_by_two_studs": 7,
+   "hangs_by_one_stud": 3,
+   "hangs_by_one_stud_decorative_leaf": 3
+  },
+  "tree_slim": {
+   "parts": 39,
+   "hangs_by_one_stud": 26,
+   "hangs_by_one_stud_and_carries": 26
+  },
+  "tree_sturdy": {
+   "parts": 10
+  }
+ },
+ "failure_by_family": {
+  "backing": {
+   "articulation_points": 14,
+   "max_parts_cut_off": 5,
+   "max_mass_cut_off_g": 3.6
+  },
+  "colosseum_arcade": {
+   "articulation_points": 11,
+   "max_parts_cut_off": 3,
+   "max_mass_cut_off_g": 2.4
+  },
+  "colosseum_attic": {
+   "articulation_points": 9,
+   "max_parts_cut_off": 2,
+   "max_mass_cut_off_g": 0.3
+  },
+  "colosseum_cavea": {
+   "articulation_points": 184,
+   "max_parts_cut_off": 11,
+   "max_mass_cut_off_g": 4.4
+  },
+  "colosseum_wall": {
+   "articulation_points": 20,
+   "max_parts_cut_off": 5,
+   "max_mass_cut_off_g": 2.8
+  },
+  "mountain": {
+   "articulation_points": 182,
+   "max_parts_cut_off": 10,
+   "max_mass_cut_off_g": 4.8
+  },
+  "plaza": {
+   "articulation_points": 25,
+   "max_parts_cut_off": 9,
+   "max_mass_cut_off_g": 5.0
+  },
+  "relief_plate": {
+   "articulation_points": 11,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 0.1
+  },
+  "sea": {
+   "articulation_points": 43,
+   "max_parts_cut_off": 20,
+   "max_mass_cut_off_g": 11.7
+  },
+  "tree_slim": {
+   "articulation_points": 26,
+   "max_parts_cut_off": 2,
+   "max_mass_cut_off_g": 2.4
+  },
+  "tree_sturdy": {
+   "articulation_points": 5,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 2.4
+  }
+ },
+ "colosseum_one_stud_thick_wall_pieces": 193,
+ "total_mass_g": 2719.0
+}

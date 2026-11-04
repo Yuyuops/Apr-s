@@ -1,0 +1,20 @@
+{
+ "height_plates": 4,
+ "pieces": 234,
+ "references": 44,
+ "size_studs": [
+  64,
+  24
+ ],
+ "physical_size_mm": [
+  512,
+  192
+ ],
+ "max_height_mm": 12.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "887c797c1e5d5462b587b24562a5bab47f488a11e3c540f030221a56f36a5ab6",
+ "letters": 88,
+ "compass_cells": 121
+}

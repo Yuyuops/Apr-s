@@ -1,0 +1,29 @@
+{
+ "height_plates": 20,
+ "pieces": 170,
+ "references": 46,
+ "size_studs": [
+  24,
+  24
+ ],
+ "physical_size_mm": [
+  192,
+  192
+ ],
+ "max_height_mm": 64.0,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "85804a0ea92ce4b61624b4de430603f3f045b050a4b5c93ac7e1a3fc2d5e3846",
+ "colosseum": {
+  "wall_cells": 28,
+  "seat_cells": 28,
+  "arches": 9,
+  "windows": 1,
+  "plaza_cells": 128
+ },
+ "requested_footprint": [
+  11,
+  14
+ ]
+}

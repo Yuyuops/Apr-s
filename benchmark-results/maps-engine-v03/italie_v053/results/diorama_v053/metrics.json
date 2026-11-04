@@ -1,0 +1,88 @@
+{
+ "height_plates": 39,
+ "pieces": 2487,
+ "references": 134,
+ "size_studs": [
+  72,
+  48
+ ],
+ "physical_size_mm": [
+  576,
+  384
+ ],
+ "max_height_mm": 124.8,
+ "colour_substitutions": [
+  [
+   "3022",
+   288,
+   2,
+   1
+  ],
+  [
+   "3037",
+   28,
+   19,
+   2
+  ],
+  [
+   "3038",
+   28,
+   19,
+   1
+  ],
+  [
+   "6141",
+   288,
+   2,
+   6
+  ]
+ ],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "ec0bd5417d2f1f77d79a85e693d1e4d85852473fcd2ca7c091f9ccaf1a07a909",
+ "mountain": {
+  "max_K": 12,
+  "max_height_mm": 115.2,
+  "land_cells": 747,
+  "slopes": 285,
+  "summits": [
+   [
+    10,
+    9,
+    67.2
+   ],
+   [
+    19,
+    25,
+    86.4
+   ],
+   [
+    24,
+    11,
+    57.6
+   ],
+   [
+    10,
+    25,
+    67.2
+   ]
+  ],
+  "pads": 17
+ },
+ "mountain_deco": {
+  "conifers_sturdy": 16,
+  "trees_slim": 0,
+  "bushes": 7,
+  "boulders": 2,
+  "beach_cells": 73,
+  "relief_plates": 4,
+  "boulders_single_stud_decorative": 13
+ },
+ "colosseum": {
+  "wall_cells": 112,
+  "seat_cells": 660,
+  "arches": 42,
+  "windows": 8,
+  "plaza_cells": 984
+ }
+}

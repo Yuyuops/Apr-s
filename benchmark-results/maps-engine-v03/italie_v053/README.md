@@ -1,0 +1,2 @@
+# italie_v053
+`diorama_v053.py` (+ `terrain.py`, `colosseum.py`, `tiler.py`, `scene.py`…) génère le diorama consolidé ; `run_all.sh` rejoue génération, validation moteur 1, vérification des références, audit de fragilité et rendus. `compare_v052_v053.py` produit le tableau comparatif. `italia128/` : configuration d'échelle artistique, moteur de composition, plan par secteurs, preuves (titre/rose, Colisée redimensionné). Verdict : `VERDICT_V053.md`.
