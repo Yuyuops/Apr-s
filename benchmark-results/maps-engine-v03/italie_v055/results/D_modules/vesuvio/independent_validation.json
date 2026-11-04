@@ -1,0 +1,13 @@
+{
+  "parts": 691,
+  "disconnected_parts": 0,
+  "islands": 0,
+  "unsupported_at_placement": 0,
+  "blocked_studs": 0,
+  "collisions": 0,
+  "bom_count": 691,
+  "ldraw_count": 691,
+  "source_parts": 691,
+  "physical_test": false,
+  "all_pass": true
+}

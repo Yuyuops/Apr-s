@@ -1,0 +1,152 @@
+{
+ "note": "indicative only : rigid parts, 1.0 N clutch per stud assumed by the validator, NO physical test",
+ "parts": 600,
+ "joints_total": 3617,
+ "parts_hanging_by_one_stud": 83,
+ "one_stud_decorative_leaves": 39,
+ "one_stud_and_carrying": 44,
+ "articulation_points_with_loss": 126,
+ "worst_single_failure": {
+  "family": "sea",
+  "part_id": 66,
+  "parts_cut_off": 15,
+  "mass_cut_off_g": 15.0
+ },
+ "families": {
+  "backing": {
+   "parts": 64,
+   "hangs_by_one_stud": 1,
+   "hangs_by_one_stud_and_carries": 1
+  },
+  "bush": {
+   "parts": 24,
+   "hangs_by_one_stud": 24,
+   "hangs_by_one_stud_decorative_leaf": 24
+  },
+  "mountain": {
+   "parts": 228,
+   "hangs_by_two_studs": 61,
+   "hangs_by_one_stud": 58,
+   "hangs_by_one_stud_and_carries": 43,
+   "hangs_by_one_stud_decorative_leaf": 15
+  },
+  "mountain_slope": {
+   "parts": 104,
+   "hangs_by_two_studs": 80
+  },
+  "pisa_base": {
+   "parts": 1
+  },
+  "pisa_cap": {
+   "parts": 1
+  },
+  "pisa_plaza": {
+   "parts": 3
+  },
+  "pisa_storey_0": {
+   "parts": 1
+  },
+  "pisa_storey_1": {
+   "parts": 1
+  },
+  "pisa_storey_2": {
+   "parts": 1
+  },
+  "pisa_storey_3": {
+   "parts": 1,
+   "hangs_by_two_studs": 1
+  },
+  "pisa_storey_4": {
+   "parts": 1
+  },
+  "pisa_storey_5": {
+   "parts": 1
+  },
+  "pisa_storey_6": {
+   "parts": 1,
+   "hangs_by_two_studs": 1
+  },
+  "pisa_storey_7": {
+   "parts": 1
+  },
+  "relief_plate": {
+   "parts": 30
+  },
+  "sea": {
+   "parts": 51,
+   "hangs_by_two_studs": 8
+  },
+  "tree_sturdy": {
+   "parts": 86
+  }
+ },
+ "failure_by_family": {
+  "backing": {
+   "articulation_points": 5,
+   "max_parts_cut_off": 2,
+   "max_mass_cut_off_g": 1.2
+  },
+  "mountain": {
+   "articulation_points": 45,
+   "max_parts_cut_off": 5,
+   "max_mass_cut_off_g": 5.5
+  },
+  "pisa_base": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 9,
+   "max_mass_cut_off_g": 10.0
+  },
+  "pisa_storey_0": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 8,
+   "max_mass_cut_off_g": 8.8
+  },
+  "pisa_storey_1": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 7,
+   "max_mass_cut_off_g": 7.6
+  },
+  "pisa_storey_2": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 6,
+   "max_mass_cut_off_g": 6.4
+  },
+  "pisa_storey_3": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 5,
+   "max_mass_cut_off_g": 5.2
+  },
+  "pisa_storey_4": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 4,
+   "max_mass_cut_off_g": 4.0
+  },
+  "pisa_storey_5": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 3,
+   "max_mass_cut_off_g": 2.8
+  },
+  "pisa_storey_6": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 2,
+   "max_mass_cut_off_g": 1.6
+  },
+  "pisa_storey_7": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 0.4
+  },
+  "sea": {
+   "articulation_points": 24,
+   "max_parts_cut_off": 15,
+   "max_mass_cut_off_g": 15.0
+  },
+  "tree_sturdy": {
+   "articulation_points": 43,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 2.4
+  }
+ },
+ "colosseum_one_stud_thick_wall_pieces": 0,
+ "total_mass_g": 793.1
+}

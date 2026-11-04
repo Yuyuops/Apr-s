@@ -1,0 +1,139 @@
+{
+ "note": "indicative only : rigid parts, 1.0 N clutch per stud assumed by the validator, NO physical test",
+ "parts": 1776,
+ "joints_total": 11610,
+ "parts_hanging_by_one_stud": 330,
+ "one_stud_decorative_leaves": 128,
+ "one_stud_and_carrying": 202,
+ "articulation_points_with_loss": 276,
+ "worst_single_failure": {
+  "family": "sea",
+  "part_id": 278,
+  "parts_cut_off": 30,
+  "mass_cut_off_g": 15.8
+ },
+ "families": {
+  "backing": {
+   "parts": 252,
+   "hangs_by_one_stud": 6,
+   "hangs_by_one_stud_and_carries": 6,
+   "hangs_by_two_studs": 1
+  },
+  "boulder": {
+   "parts": 1,
+   "hangs_by_one_stud": 1,
+   "hangs_by_one_stud_decorative_leaf": 1
+  },
+  "bush": {
+   "parts": 30,
+   "hangs_by_one_stud": 30,
+   "hangs_by_one_stud_decorative_leaf": 30
+  },
+  "colosseum_arcade": {
+   "parts": 10
+  },
+  "colosseum_attic": {
+   "parts": 11,
+   "hangs_by_two_studs": 5,
+   "hangs_by_one_stud": 2,
+   "hangs_by_one_stud_and_carries": 2
+  },
+  "colosseum_cavea": {
+   "parts": 107,
+   "hangs_by_two_studs": 58,
+   "hangs_by_one_stud": 15,
+   "hangs_by_one_stud_and_carries": 7,
+   "hangs_by_one_stud_decorative_leaf": 8
+  },
+  "colosseum_cornice": {
+   "parts": 10,
+   "hangs_by_two_studs": 6,
+   "hangs_by_one_stud": 1,
+   "hangs_by_one_stud_decorative_leaf": 1
+  },
+  "colosseum_wall": {
+   "parts": 47,
+   "hangs_by_two_studs": 23,
+   "hangs_by_one_stud": 20,
+   "hangs_by_one_stud_and_carries": 20
+  },
+  "mountain": {
+   "parts": 578,
+   "hangs_by_two_studs": 180,
+   "hangs_by_one_stud": 248,
+   "hangs_by_one_stud_and_carries": 167,
+   "hangs_by_one_stud_decorative_leaf": 81
+  },
+  "mountain_slope": {
+   "parts": 366,
+   "hangs_by_two_studs": 294
+  },
+  "plaza": {
+   "parts": 43,
+   "hangs_by_two_studs": 4,
+   "hangs_by_one_stud": 3,
+   "hangs_by_one_stud_decorative_leaf": 3
+  },
+  "relief_plate": {
+   "parts": 21
+  },
+  "sea": {
+   "parts": 192,
+   "hangs_by_two_studs": 7,
+   "hangs_by_one_stud": 4,
+   "hangs_by_one_stud_decorative_leaf": 4
+  },
+  "tree_sturdy": {
+   "parts": 108
+  }
+ },
+ "failure_by_family": {
+  "backing": {
+   "articulation_points": 16,
+   "max_parts_cut_off": 7,
+   "max_mass_cut_off_g": 3.4
+  },
+  "colosseum_arcade": {
+   "articulation_points": 2,
+   "max_parts_cut_off": 2,
+   "max_mass_cut_off_g": 1.8
+  },
+  "colosseum_attic": {
+   "articulation_points": 5,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 0.3
+  },
+  "colosseum_cavea": {
+   "articulation_points": 40,
+   "max_parts_cut_off": 3,
+   "max_mass_cut_off_g": 1.6
+  },
+  "colosseum_wall": {
+   "articulation_points": 3,
+   "max_parts_cut_off": 2,
+   "max_mass_cut_off_g": 1.2
+  },
+  "mountain": {
+   "articulation_points": 79,
+   "max_parts_cut_off": 7,
+   "max_mass_cut_off_g": 10.2
+  },
+  "plaza": {
+   "articulation_points": 2,
+   "max_parts_cut_off": 3,
+   "max_mass_cut_off_g": 4.2
+  },
+  "sea": {
+   "articulation_points": 75,
+   "max_parts_cut_off": 30,
+   "max_mass_cut_off_g": 15.8
+  },
+  "tree_sturdy": {
+   "articulation_points": 54,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 2.4
+  }
+ },
+ "colosseum_one_stud_thick_wall_pieces": 68,
+ "total_mass_g": 2259.1
+}

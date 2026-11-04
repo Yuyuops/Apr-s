@@ -58,7 +58,7 @@ def to_bricks(h, rng, steep=1):
 def build_terrain(S, r0, c0, F, seed=7, ground=3, P=None):
     P0 = dict(steep=1, snow_m=2300, rock_m=1500, tree_lo=250, tree_hi=1700, open_edges=True, pad_elev_max=900); P0.update(P or {}); P = P0
     rng = random.Random(seed); h = F["h"]; R, C = h.shape; valley = F["valley"]; elev = F["elev"]; land = F["land"]; nrng = np.random.RandomState(seed + 5)
-    K = to_bricks(h, nrng, P.get('steep', 1)); K = np.where(land, np.maximum(K, 1), 0)
+    forb = F.get('forbid', np.zeros(h.shape, bool)); K = to_bricks(h, nrng, P.get('steep', 1)); K = np.where(land, np.maximum(K, 1), 0)
     for i in range(0, R - 1, 2):        # forest terraces : 2x2 flat pads on the low slopes (room for sturdy 2x2 trees, reads as terraced foothills)
         for j in range(0, C - 1, 2):
             blk = K[i:i + 2, j:j + 2]
@@ -85,7 +85,11 @@ def build_terrain(S, r0, c0, F, seed=7, ground=3, P=None):
     def drop(r, c): return max(K[r, c] - kk(*n) for n in nb4(r, c))
     def exposed(r, c, k): return any(kk(*n) <= k for n in nb4(r, c))
     def colour(r, c, k):
-        r, c, k = int(r), int(c), int(k); rg = random.Random(((r // 2) * 7919 + (c // 2) * 104729 + k * 1299709 + seed) & 0xffffffff); top = k == K[r, c] - 1; exp = exposed(r, c, k); face = exp and not top
+        r, c, k = int(r), int(c), int(k)
+        if F.get('override') is not None:
+            ov = F['override'](r, c, k, K)
+            if ov is not None: return ov
+        rg = random.Random(((r // 2) * 7919 + (c // 2) * 104729 + k * 1299709 + seed) & 0xffffffff); top = k == K[r, c] - 1; exp = exposed(r, c, k); face = exp and not top
         if not top and not exp: return DGRAY
         kind = cat[r, c]
         if face and kind == "snow" and K[r, c] - k > 1: kind = "rock"
@@ -112,7 +116,7 @@ def build_terrain(S, r0, c0, F, seed=7, ground=3, P=None):
                 for (r, c) in sorted(mask):
                     if K[r, c] != k + dd or (r, c) in taken or (r, c) in pads: continue
                     rr_, cc_ = r + d[0], c + d[1]
-                    if not (0 <= rr_ < R and 0 <= cc_ < C) or K[rr_, cc_] != k or (rr_, cc_) in taken or (rr_, cc_) in pads: continue
+                    if not (0 <= rr_ < R and 0 <= cc_ < C) or K[rr_, cc_] != k or (rr_, cc_) in taken or (rr_, cc_) in pads or forb[rr_, cc_]: continue
                     p = (.62 if cat[r, c] in ("rock", "snow") else .93) if dd == 1 else (.9 if cat[r, c] in ("rock", "snow") else .55)
                     if rng.random() < p: cand.append((r, c))
                 along = (0, 1) if d[0] else (1, 0); cset = set(cand); done = set(); maxw = 4 if dd == 1 else 2

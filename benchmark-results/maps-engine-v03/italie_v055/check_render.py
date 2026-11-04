@@ -17,6 +17,7 @@ res["bom_count"] = cnt; res["ldraw_count"] = sum(l.startswith("1 ") for l in (ro
 ok = out["parts"] == len(parts) == cnt == res["ldraw_count"] and not (res["collisions"] or res["disconnected_parts"] or res["islands"] or res["unsupported_at_placement"] or res["blocked_studs"])
 res["all_pass"] = bool(ok)
 (root / "independent_validation.json").write_text(json.dumps(res, indent=2, default=str)); print(json.dumps(res, default=str))
+if "--no-render" in sys.argv: sys.exit(0 if ok else 1)
 m = json.load(open(root / "metrics.json")); N = max(m["size_studs"]); 
 views, _ = R.render_all(str(root / "diorama.ldr"), str(root / "renders"), N=N, height_plates=m.get("height_plates", 21), w=1350, zooms=zooms)
 print(views); sys.exit(0 if ok else 1)

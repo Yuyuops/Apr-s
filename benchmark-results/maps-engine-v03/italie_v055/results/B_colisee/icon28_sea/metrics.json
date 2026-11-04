@@ -1,0 +1,97 @@
+{
+ "height_plates": 21,
+ "pieces": 2067,
+ "references": 128,
+ "size_studs": [
+  64,
+  64
+ ],
+ "physical_size_mm": [
+  512,
+  512
+ ],
+ "max_height_mm": 67.2,
+ "colour_substitutions": [
+  [
+   "3022",
+   288,
+   2,
+   5
+  ],
+  [
+   "3037",
+   28,
+   19,
+   1
+  ],
+  [
+   "3038",
+   28,
+   19,
+   5
+  ],
+  [
+   "3678b",
+   288,
+   2,
+   2
+  ],
+  [
+   "6141",
+   288,
+   2,
+   13
+  ]
+ ],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "4a867dc29e3b27a121bc4b01420e764fea6eda957456d9a552dfffd1509d1992",
+ "window": [
+  32,
+  32,
+  64,
+  64
+ ],
+ "relief": {
+  "VE": 1.45,
+  "band": 6,
+  "max_level": 8.137604020704641,
+  "land_cells": 1447,
+  "italy_cells": 1292,
+  "hinterland_cells": 155
+ },
+ "terrain": {
+  "max_K": 5,
+  "max_height_mm": 48.0,
+  "land_cells": 1138,
+  "slopes": 325,
+  "slopes_by_drop": {
+   "1": 309,
+   "2": 16,
+   "3": 0
+  },
+  "snow_cells": 0,
+  "rock_cells": 28,
+  "pads": 27
+ },
+ "deco": {
+  "conifers_sturdy": 45,
+  "trees_slim": 0,
+  "bushes": 32,
+  "boulders": 0,
+  "beach_cells": 0,
+  "relief_plates": 22,
+  "boulders_single_stud_decorative": 2
+ },
+ "modules": {
+  "colosseum": {
+   "variant": "icon28",
+   "wall_cells": 80,
+   "seat_cells": 288,
+   "arches": 16,
+   "openings": 12,
+   "windows": 2,
+   "plaza_cells": 544
+  }
+ }
+}

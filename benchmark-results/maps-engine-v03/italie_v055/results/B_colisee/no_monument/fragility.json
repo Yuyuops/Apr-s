@@ -1,0 +1,80 @@
+{
+ "note": "indicative only : rigid parts, 1.0 N clutch per stud assumed by the validator, NO physical test",
+ "parts": 1771,
+ "joints_total": 11526,
+ "parts_hanging_by_one_stud": 356,
+ "one_stud_decorative_leaves": 130,
+ "one_stud_and_carrying": 226,
+ "articulation_points_with_loss": 257,
+ "worst_single_failure": {
+  "family": "sea",
+  "part_id": 342,
+  "parts_cut_off": 16,
+  "mass_cut_off_g": 12.6
+ },
+ "families": {
+  "backing": {
+   "parts": 252,
+   "hangs_by_one_stud": 6,
+   "hangs_by_one_stud_and_carries": 6,
+   "hangs_by_two_studs": 1
+  },
+  "boulder": {
+   "parts": 6,
+   "hangs_by_one_stud": 6,
+   "hangs_by_one_stud_decorative_leaf": 6
+  },
+  "bush": {
+   "parts": 30,
+   "hangs_by_one_stud": 30,
+   "hangs_by_one_stud_decorative_leaf": 30
+  },
+  "mountain": {
+   "parts": 706,
+   "hangs_by_two_studs": 201,
+   "hangs_by_one_stud": 310,
+   "hangs_by_one_stud_and_carries": 220,
+   "hangs_by_one_stud_decorative_leaf": 90
+  },
+  "mountain_slope": {
+   "parts": 434,
+   "hangs_by_two_studs": 351
+  },
+  "relief_plate": {
+   "parts": 21
+  },
+  "sea": {
+   "parts": 192,
+   "hangs_by_two_studs": 7,
+   "hangs_by_one_stud": 4,
+   "hangs_by_one_stud_decorative_leaf": 4
+  },
+  "tree_sturdy": {
+   "parts": 130
+  }
+ },
+ "failure_by_family": {
+  "backing": {
+   "articulation_points": 18,
+   "max_parts_cut_off": 6,
+   "max_mass_cut_off_g": 3.4
+  },
+  "mountain": {
+   "articulation_points": 100,
+   "max_parts_cut_off": 8,
+   "max_mass_cut_off_g": 5.1
+  },
+  "sea": {
+   "articulation_points": 74,
+   "max_parts_cut_off": 18,
+   "max_mass_cut_off_g": 12.6
+  },
+  "tree_sturdy": {
+   "articulation_points": 65,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 2.4
+  }
+ },
+ "colosseum_one_stud_thick_wall_pieces": 0,
+ "total_mass_g": 2296.8
+}

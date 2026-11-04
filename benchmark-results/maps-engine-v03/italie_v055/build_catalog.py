@@ -11,7 +11,7 @@ PARTS = """3005 3004 3622 3010 3009 3008 3003 3002 3001 2456 3007
 3040b 3039 3038 3037 3298 4286 54200 85984 3045 3046 3665a 3660a 61678 50950 11477 15068
 3659 4490 3455 6182 6183 13965
 6141 3062b 3941 4589 3942c 2357 3063b 2577 30136 60592 4073 3794a
-60481 3678b 4460a 3684a 3685 3688 4161 85984 54200""".split()
+60481 3678b 4460a 3684a 3685 3688 4161 85984 54200 92947 4150 6143 15068 3062b 4589""".split()
 cat = {}
 for n in PARTS:
     f = os.path.join(LDRAW, "parts", n + ".dat")
@@ -26,7 +26,7 @@ print(len(cat), "parts in catalog")
 # part x colour pairs catalogued by Rebrickable (pcs_mat.num_sets) for the colours the generator may use
 import sqlite3
 from _paths import RB_DB
-db = sqlite3.connect(RB_DB); COLOURS = [0, 2, 15, 19, 28, 70, 71, 72, 272, 288, 378, 25, 4, 14, 320]
+db = sqlite3.connect(RB_DB); COLOURS = [0, 2, 15, 19, 28, 70, 71, 72, 272, 288, 378, 25, 4, 14, 320, 1, 73, 321, 322, 308]
 def rbnum(n):
     for cand in (n, n.rstrip("abcdefghijklmnopqrstuvwxyz")):
         if db.execute("select 1 from pcs_mat where part_num=? limit 1", (cand,)).fetchone(): return cand

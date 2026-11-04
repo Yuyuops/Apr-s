@@ -42,8 +42,8 @@ def split_arches(L, only4=False):
             if best is None or (left, -a) < (best[0], -best[1]): best = (left, a, b)
     left, a, b = best; seq = [4] * a + [3] * b
     return seq, left
-def build_colosseum(S, cr, cc, a=13, b=11, seed=3, break_deg=40.0, plaza_extra=2.4):
-    rng = random.Random(seed); O = oval_cells(cr, cc, a, b); W = thin_ring(O); I = O - W
+def build_colosseum(S, cr, cc, a=13, b=11, seed=3, break_deg=40.0, plaza_extra=2.4, n_oval=3.9, gaps=False, ruin_min=2):
+    rng = random.Random(seed); O = oval_cells(cr, cc, a, b, n_oval); W = thin_ring(O); I = O - W
     plaza = {(r, c) for (r, c) in oval_cells(cr, cc, a + plaza_extra, b + plaza_extra, 3.0) if 0 <= r < S.R and 0 <= c < S.C}
     arena_d = lambda r, c: min(math.hypot(r - w[0], c - w[1]) for w in W)
     # plaza + arena floor (plates at y = 3)
@@ -55,7 +55,7 @@ def build_colosseum(S, cr, cc, a=13, b=11, seed=3, break_deg=40.0, plaza_extra=2
     nz = random.Random(seed + 1); T = {}
     for (r, c) in W:
         d = abs(((ang(r, c) - break_deg + 180) % 360) - 180); s = max(0.0, 1 - d / 80.0) ** 0.8 + nz.uniform(-.12, .12)
-        T[(r, c)] = max(2, min(4, 4 - int(round(s * 2.6))))
+        T[(r, c)] = max(ruin_min, min(4, 4 - int(round(s * 2.6))))
     # smooth the ruin so that a tier never hangs over a missing neighbour by more than one tier (ragged but physical)
     for _ in range(4):
         for (r, c) in W:
@@ -82,6 +82,10 @@ def build_colosseum(S, cr, cc, a=13, b=11, seed=3, break_deg=40.0, plaza_extra=2
                         r0, c0 = seg[0]; nr, nc = (1, L) if kind == "H" else (L, 1)
                         S.add(part, TAN, r0, c0, y, rot, "colosseum_arcade_t%d" % t); used.update(seg); info["arches"] += 1
             rest = cells - used
+            if gaps and t == 0:      # arcade rhythm on the curved, non-arch stretches : every other plain wall cell left open (bridged by the next tier / cornice)
+                ring = [k for k in rest if sum(((k[0] + dr, k[1] + dc) in W) for dr, dc in ((1, 0), (-1, 0), (0, 1), (0, -1))) >= 2]
+                opens = {k for k in ring if (k[0] + 2 * k[1]) % 4 == 0 and not any(((k[0] + dr, k[1] + dc) in used) for dr, dc in ((1, 0), (-1, 0), (0, 1), (0, -1)))}
+                rest = rest - opens; info["openings"] = info.get("openings", 0) + len(opens)
             for yy in ((y, y + 3) if t == 0 else (y,)):
                 for (r, c, nr, nc, part, rot) in tile(rest, {k: v for k, v in BRICKS.items() if k[0] <= 2 and k[1] <= 4}, rng, 1.2, 8, S.stud_cells(yy)): S.add(part, TAN, r, c, yy, rot, "colosseum_wall_t%d" % t)
         else:   # attic : brick wall with window slits (every third cell empty inside straight runs), bridged by the cornice

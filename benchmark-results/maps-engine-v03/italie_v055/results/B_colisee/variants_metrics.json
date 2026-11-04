@@ -1,0 +1,84 @@
+{
+ "full": {
+  "footprint": [
+   18,
+   22
+  ],
+  "placed_row": 42,
+  "placed_col": 51,
+  "shift_studs": 8.0,
+  "min_land_fraction_used": 0.85,
+  "land_cells_covered": 315,
+  "peninsula_width_at_rome_studs": 29,
+  "share_of_local_width_covered": 0.76,
+  "relief_levels_removed": 156,
+  "plaza_oval_cells": 352,
+  "pieces": 1811,
+  "modules": {
+   "colosseum": {
+    "variant": "full",
+    "wall_cells": 60,
+    "seat_cells": 172,
+    "arches": 24,
+    "windows": 3,
+    "plaza_cells": 352
+   }
+  }
+ },
+ "simplified": {
+  "footprint": [
+   15,
+   18
+  ],
+  "placed_row": 48,
+  "placed_col": 55,
+  "shift_studs": 3.6,
+  "min_land_fraction_used": 0.85,
+  "land_cells_covered": 208,
+  "peninsula_width_at_rome_studs": 29,
+  "share_of_local_width_covered": 0.62,
+  "relief_levels_removed": 150,
+  "plaza_oval_cells": 232,
+  "pieces": 1737,
+  "modules": {
+   "colosseum": {
+    "variant": "simplified",
+    "wall_cells": 44,
+    "seat_cells": 88,
+    "arches": 19,
+    "windows": 2,
+    "plaza_cells": 232
+   }
+  }
+ },
+ "icon": {
+  "footprint": [
+   14,
+   17
+  ],
+  "placed_row": 49,
+  "placed_col": 56,
+  "shift_studs": 3.6,
+  "min_land_fraction_used": 0.85,
+  "land_cells_covered": 183,
+  "peninsula_width_at_rome_studs": 29,
+  "share_of_local_width_covered": 0.59,
+  "relief_levels_removed": 134,
+  "plaza_oval_cells": 208,
+  "pieces": 1776,
+  "modules": {
+   "colosseum": {
+    "variant": "icon",
+    "wall_cells": 40,
+    "seat_cells": 64,
+    "arches": 10,
+    "openings": 8,
+    "windows": 0,
+    "plaza_cells": 208
+   }
+  }
+ },
+ "no_monument": {
+  "pieces": 1771
+ }
+}

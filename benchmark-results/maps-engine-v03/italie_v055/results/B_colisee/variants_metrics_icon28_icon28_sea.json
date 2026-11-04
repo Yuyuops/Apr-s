@@ -1,0 +1,56 @@
+{
+ "icon28": {
+  "footprint": [
+   22,
+   28
+  ],
+  "placed_row": 42,
+  "placed_col": 48,
+  "shift_studs": 6.0,
+  "min_land_fraction_used": 0.7,
+  "land_cells_covered": 398,
+  "peninsula_width_at_rome_studs": 29,
+  "share_of_local_width_covered": 0.97,
+  "relief_levels_removed": 211,
+  "plaza_oval_cells": 544,
+  "pieces": 1975,
+  "modules": {
+   "colosseum": {
+    "variant": "icon28",
+    "wall_cells": 80,
+    "seat_cells": 288,
+    "arches": 17,
+    "openings": 12,
+    "windows": 2,
+    "plaza_cells": 544
+   }
+  }
+ },
+ "icon28_sea": {
+  "footprint": [
+   22,
+   28
+  ],
+  "placed_row": 48,
+  "placed_col": 48,
+  "shift_studs": 0.0,
+  "min_land_fraction_used": 0.4,
+  "land_cells_covered": 297,
+  "peninsula_width_at_rome_studs": 29,
+  "share_of_local_width_covered": 0.97,
+  "relief_levels_removed": 197,
+  "plaza_oval_cells": 544,
+  "pieces": 2067,
+  "modules": {
+   "colosseum": {
+    "variant": "icon28",
+    "wall_cells": 80,
+    "seat_cells": 288,
+    "arches": 16,
+    "openings": 12,
+    "windows": 2,
+    "plaza_cells": 544
+   }
+  }
+ }
+}

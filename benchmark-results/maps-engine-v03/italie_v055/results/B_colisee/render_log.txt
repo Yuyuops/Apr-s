@@ -1,0 +1,16 @@
+full check_render.py 0 lisions": 0, "bom_count": 1811, "ldraw_count": 1811, "source_parts": 1811, "physical_test": false, "all_pass": true} ['face', 'profil', 'trois_quarts', 'rotation_090', 'rotation_180', 'rotation_270'] 
+full fragility.py 0 : 25, "max_mass_cut_off_g": 15.4}, "tree_sturdy": {"articulation_points": 45, "max_parts_cut_off": 1, "max_mass_cut_off_g": 2.4}}, "colosseum_one_stud_thick_wall_pieces": 102, "total_mass_g": 2313.7} 
+full verify_bom.py 0 {"references": 129, "pieces": 1811, "all_dat_exist": true, "all_colours_valid": true, "pairs_not_catalogued": []} 
+full render_views.py 0 ['region_trois_quarts', 'region_face', 'colosseum_trois_quarts', 'colosseum_face'] 
+simplified check_render.py 0 lisions": 0, "bom_count": 1737, "ldraw_count": 1737, "source_parts": 1737, "physical_test": false, "all_pass": true} ['face', 'profil', 'trois_quarts', 'rotation_090', 'rotation_180', 'rotation_270'] 
+simplified fragility.py 0 ": 29, "max_mass_cut_off_g": 16.5}, "tree_sturdy": {"articulation_points": 45, "max_parts_cut_off": 1, "max_mass_cut_off_g": 2.4}}, "colosseum_one_stud_thick_wall_pieces": 68, "total_mass_g": 2249.1} 
+simplified verify_bom.py 0 {"references": 131, "pieces": 1737, "all_dat_exist": true, "all_colours_valid": true, "pairs_not_catalogued": []} 
+simplified render_views.py 0 ['region_trois_quarts', 'region_face', 'colosseum_trois_quarts', 'colosseum_face'] 
+icon check_render.py 0 lisions": 0, "bom_count": 1776, "ldraw_count": 1776, "source_parts": 1776, "physical_test": false, "all_pass": true} ['face', 'profil', 'trois_quarts', 'rotation_090', 'rotation_180', 'rotation_270'] 
+icon fragility.py 0 ": 30, "max_mass_cut_off_g": 15.8}, "tree_sturdy": {"articulation_points": 54, "max_parts_cut_off": 1, "max_mass_cut_off_g": 2.4}}, "colosseum_one_stud_thick_wall_pieces": 68, "total_mass_g": 2259.1} 
+icon verify_bom.py 0 {"references": 117, "pieces": 1776, "all_dat_exist": true, "all_colours_valid": true, "pairs_not_catalogued": []} 
+icon render_views.py 0 ['region_trois_quarts', 'region_face', 'colosseum_trois_quarts', 'colosseum_face'] 
+no_monument check_render.py 0 lisions": 0, "bom_count": 1771, "ldraw_count": 1771, "source_parts": 1771, "physical_test": false, "all_pass": true} ['face', 'profil', 'trois_quarts', 'rotation_090', 'rotation_180', 'rotation_270'] 
+no_monument fragility.py 0 f": 18, "max_mass_cut_off_g": 12.6}, "tree_sturdy": {"articulation_points": 65, "max_parts_cut_off": 1, "max_mass_cut_off_g": 2.4}}, "colosseum_one_stud_thick_wall_pieces": 0, "total_mass_g": 2296.8} 
+no_monument verify_bom.py 0 {"references": 102, "pieces": 1771, "all_dat_exist": true, "all_colours_valid": true, "pairs_not_catalogued": []} 
+no_monument render_views.py 0 ['region_trois_quarts', 'region_face'] 
