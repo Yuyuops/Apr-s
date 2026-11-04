@@ -1,0 +1,5 @@
+# Verdict V0.5.2 : **VALIDER AVEC LIMITATIONS**
+
+La montagne n'est plus un dôme radial : 4 volumes lisibles (deux grands, deux satellites), vallées visibles en vue de face, trois-quarts et dessus, falaises brisées, transitions neige/roche/éboulis/forêt organiques, vert pâle supprimé. Validations numériques propres (2 720 pièces, 0/0/0/0), références 134/134 catalogue, Colisée inchangé.
+Limitations avant l'Italie complète : (1) sommet sud-ouest trop bas et neige discrète ; (2) forêt clairsemée et majoritairement décorative (13 arbres à tronc 1×1 contre 5 conifères solides) ; (3) fragilité à un tenon en hausse (855 pièces, 305 feuilles décoratives) et murs du Colisée à 1 tenon, non traités ; (4) règle d'échelle des monuments dans la carte 128² toujours à écrire. Aucun essai physique.
+Réponse à la question de la mission : oui, ce moteur atteint un rendu décoratif convaincant sur la direction Italie + monument + relief ; l'Italie complète peut être préparée, avec ces quatre points à traiter en premier.
