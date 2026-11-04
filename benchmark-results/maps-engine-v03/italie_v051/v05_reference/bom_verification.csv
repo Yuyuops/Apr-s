@@ -1,0 +1,18 @@
+part_num,part_name_ldraw,rebrickable_name,color_id,color_name,rgb,quantity,ldraw_dat_exists,not_alias,colour_in_rebrickable,colour_in_ldraw,part_in_rebrickable,pair_sets,stock_verified,unit_price,ok,pair_catalogued
+3003,Brick  2 x  2,Brick 2 x 2,2,Green,237841,89,True,True,True,True,True,474,False,,True,True
+3003,Brick  2 x  2,Brick 2 x 2,70,Reddish Brown,582A12,65,True,True,True,True,True,460,False,,True,True
+3003,Brick  2 x  2,Brick 2 x 2,71,Light Bluish Gray,A0A5A9,2,True,True,True,True,True,743,False,,True,True
+3003,Brick  2 x  2,Brick 2 x 2,72,Dark Bluish Gray,6C6E68,60,True,True,True,True,True,487,False,,True,True
+3020,Plate  2 x  4,Plate 2 x 4,272,Dark Blue,0A3463,192,True,True,True,True,True,266,False,,True,True
+3022,Plate  2 x  2,Plate 2 x 2,19,Tan,E4CD9E,64,True,True,True,True,True,838,False,,True,True
+3022,Plate  2 x  2,Plate 2 x 2,28,Dark Tan,958A73,9,True,True,True,True,True,275,False,,True,True
+3024,Plate  1 x  1,Plate 1 x 1,28,Dark Tan,958A73,12,True,True,True,True,True,336,False,,True,True
+3031,Plate  4 x  4,Plate 4 x 4,72,Dark Bluish Gray,6C6E68,4,True,True,True,True,True,568,False,,True,True
+3035,Plate  4 x  8,Plate 4 x 8,72,Dark Bluish Gray,6C6E68,16,True,True,True,True,True,390,False,,True,True
+3039,Slope Brick 45  2 x  2,Brick Sloped 45° 2 x 2,2,Green,237841,48,True,True,True,True,True,169,False,,True,True
+3039,Slope Brick 45  2 x  2,Brick Sloped 45° 2 x 2,15,White,FFFFFF,4,True,True,True,True,True,494,False,,True,True
+3039,Slope Brick 45  2 x  2,Brick Sloped 45° 2 x 2,70,Reddish Brown,582A12,44,True,True,True,True,True,206,False,,True,True
+3039,Slope Brick 45  2 x  2,Brick Sloped 45° 2 x 2,71,Light Bluish Gray,A0A5A9,11,True,True,True,True,True,373,False,,True,True
+3062b,Brick  1 x  1 Round with Hollow Stud,Brick Round 1 x 1 Open Stud,19,Tan,E4CD9E,36,True,True,True,True,True,304,False,,True,True
+3710,Plate  1 x  4,Plate 1 x 4,28,Dark Tan,958A73,12,True,True,True,True,True,389,False,,True,True
+41539,Plate  8 x  8,Plate 8 x 8,72,Dark Bluish Gray,6C6E68,39,True,True,True,True,True,140,False,,True,True

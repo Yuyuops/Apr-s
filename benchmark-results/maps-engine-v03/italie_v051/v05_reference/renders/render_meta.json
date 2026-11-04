@@ -1,0 +1,148 @@
+{
+ "scene": {
+  "maxLayer": 18,
+  "nParts": 707
+ },
+ "views": {
+  "full_face": {
+   "view": {
+    "name": "full_face",
+    "az": 0,
+    "el": 89,
+    "w": 1000,
+    "h": 1500,
+    "zoom": 0.92,
+    "edges": true,
+    "frameBox": [
+     [
+      0,
+      -2,
+      0
+     ],
+     [
+      256,
+      67.2,
+      384
+     ]
+    ]
+   },
+   "bbox_mm": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     256,
+     68.8,
+     384
+    ]
+   ]
+  },
+  "full_trois_quarts": {
+   "view": {
+    "name": "full_trois_quarts",
+    "az": 28,
+    "el": 34,
+    "w": 1500,
+    "h": 1000,
+    "zoom": 0.9,
+    "edges": true,
+    "frameBox": [
+     [
+      0,
+      -2,
+      0
+     ],
+     [
+      256,
+      67.2,
+      384
+     ]
+    ]
+   },
+   "bbox_mm": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     256,
+     68.8,
+     384
+    ]
+   ]
+  },
+  "montagne_trois_quarts": {
+   "view": {
+    "name": "montagne_trois_quarts",
+    "az": 25,
+    "el": 30,
+    "w": 1300,
+    "h": 975,
+    "zoom": 0.72,
+    "edges": true,
+    "frameBox": [
+     [
+      16,
+      -2,
+      16
+     ],
+     [
+      240,
+      67.2,
+      240
+     ]
+    ]
+   },
+   "bbox_mm": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     256,
+     68.8,
+     384
+    ]
+   ]
+  },
+  "colisee_trois_quarts": {
+   "view": {
+    "name": "colisee_trois_quarts",
+    "az": 28,
+    "el": 32,
+    "w": 1300,
+    "h": 975,
+    "zoom": 0.8,
+    "edges": true,
+    "frameBox": [
+     [
+      48,
+      -2,
+      224
+     ],
+     [
+      208,
+      67.2,
+      384
+     ]
+    ]
+   },
+   "bbox_mm": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     256,
+     68.8,
+     384
+    ]
+   ]
+  }
+ }
+}

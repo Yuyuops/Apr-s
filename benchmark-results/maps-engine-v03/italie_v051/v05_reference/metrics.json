@@ -1,0 +1,36 @@
+{
+  "pieces": 707,
+  "references": 17,
+  "mountain_columns": 113,
+  "mountain_height_mm": 57.6,
+  "physical_size_mm": [
+    384,
+    256
+  ],
+  "max_total_height_mm": 67.2,
+  "bounding_collisions": 0,
+  "bounding_unsupported": 0,
+  "pillars": 18,
+  "arcade_pairs": 6,
+  "quality_target_studs": [
+    128,
+    128
+  ],
+  "quality_target_mm": [
+    1024,
+    1024
+  ],
+  "envelope_pieces": [
+    10000,
+    25000
+  ],
+  "physical_test": false,
+  "stock_verified": false,
+  "independent_ldraw_validation": "PENDING",
+  "ldraw_sha256": "b350c96fd84cf97a3f96ed67a9ae82b18724a2ab81510f808f3ee2b4e2638298",
+  "size_studs": [
+    48,
+    32
+  ],
+  "height_plates": 21
+}

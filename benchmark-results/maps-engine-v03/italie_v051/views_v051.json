@@ -1,0 +1,15 @@
+{
+"full_face":{"box":[0,0,48,72],"h":38,"az":0,"el":89,"w":1500,"hpx":1000,"zoom":0.92},
+"full_trois_quarts":{"box":[0,0,48,72],"h":38,"az":28,"el":34,"w":1500,"hpx":1000,"zoom":0.9},
+"full_rotation_180":{"box":[0,0,48,72],"h":38,"az":208,"el":34,"w":1500,"hpx":1000,"zoom":0.9},
+"full_profil":{"box":[0,0,48,72],"h":38,"az":90,"el":5,"w":1500,"hpx":800,"zoom":0.9},
+"montagne_trois_quarts":{"box":[7,2,41,34],"h":38,"az":25,"el":30,"zoom":0.72},
+"montagne_face":{"box":[7,2,41,34],"h":38,"az":0,"el":89,"hpx":1300,"w":1300,"zoom":0.8},
+"montagne_sommet":{"box":[14,8,32,28],"h":38,"az":18,"el":22,"zoom":0.55},
+"montagne_flanc":{"box":[7,2,41,34],"h":38,"az":100,"el":14,"zoom":0.7},
+"colisee_trois_quarts":{"box":[7,34,41,72],"h":24,"az":28,"el":32,"zoom":0.8},
+"colisee_face":{"box":[7,34,41,72],"h":24,"az":0,"el":89,"w":1300,"hpx":1300,"zoom":0.8},
+"colisee_facade":{"box":[30,38,42,68],"h":24,"az":8,"el":10,"zoom":0.5},
+"colisee_ruine":{"box":[14,40,42,70],"h":24,"az":38,"el":26,"zoom":0.55},
+"colisee_arene":{"box":[14,40,38,66],"h":24,"az":200,"el":30,"zoom":0.55}
+}
