@@ -1,0 +1,83 @@
+name: LEGO Maps Italy V0.5 - real 3D components proof
+
+on:
+  push:
+    branches: [research/lego-maps-italie-v05-quality-first]
+    paths: ['.github/workflows/lego-maps-italie-v05-diorama.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  component-proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout isolated V0.5 research branch
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Install pinned LDraw and Python/Node tools
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Install Chromium for genuine LDraw renderer
+        run: |
+          cd benchmark-results/20_portable_engine
+          npx playwright install chromium
+      - name: Generate actual 3D mountain and amphitheatre LDraw scene
+        run: |
+          PY=benchmark-results/20_portable_engine/.venv/bin/python
+          "$PY" benchmark-results/maps-engine-v03/italie_v05/prototype_diorama.py \
+            --out benchmark-results/maps-engine-v03/italie_v05/results/diorama
+      - name: Validate independent engine-1 geometry, connections and BOM
+        run: |
+          PY=benchmark-results/20_portable_engine/.venv/bin/python
+          "$PY" - <<'PY'
+          import csv,json,sys
+          from pathlib import Path
+          sys.path.insert(0,'benchmark-results/maps-engine-v03/engine')
+          from maps_engine import validate as V
+          root=Path('benchmark-results/maps-engine-v03/italie_v05/results/diorama')
+          (root/'validation').mkdir(exist_ok=True)
+          parts=json.loads((root/'parts.json').read_text())
+          out=V.engine1(str(root/'diorama.ldr'),str(root/'validation'),'map')
+          result={k:out[k] for k in ('parts','disconnected_parts','islands','unsupported_at_placement','blocked_studs')}
+          result['collisions']=out['collisions']['pairs']
+          with (root/'parts_list.csv').open() as f:
+              count=sum(int(r['quantity']) for r in csv.DictReader(f))
+          ldraw=sum(x.startswith('1 ') for x in (root/'diorama.ldr').read_text().splitlines())
+          result['bom_count']=count;result['ldraw_count']=ldraw;result['source_parts']=len(parts)
+          result['physical_test']=False
+          (root/'independent_validation.json').write_text(json.dumps(result,indent=2))
+          assert out['parts']==len(parts)==count==ldraw,result
+          assert not result['collisions'],result
+          assert not result['disconnected_parts'],result
+          assert not result['islands'],result
+          assert not result['unsupported_at_placement'],result
+          assert not result['blocked_studs'],result
+          print(json.dumps(result,indent=2))
+          PY
+      - name: Render the REAL LDraw geometry in five camera views
+        run: |
+          PY=benchmark-results/20_portable_engine/.venv/bin/python
+          "$PY" - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0,'benchmark-results/maps-engine-v03/engine')
+          from maps_engine import render as R
+          root=Path('benchmark-results/maps-engine-v03/italie_v05/results/diorama')
+          views,_=R.render_all(str(root/'diorama.ldr'),str(root/'renders'),
+                              N=48,height_plates=21,w=1350,zooms=None)
+          print('Actual LDraw view names:',views)
+          for fname in ('face.png','trois_quarts.png','profil.png','rotation_180.png'):
+              file=root/'renders'/fname
+              assert file.exists() and file.stat().st_size>5000,(fname,file.exists())
+          PY
+      - name: Archive original proof LDraw, BOM, geometry checks and real renders
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lego-maps-v05-alps-colosseum-real-LDraw
+          path: benchmark-results/maps-engine-v03/italie_v05/results/diorama/
+          if-no-files-found: warn
