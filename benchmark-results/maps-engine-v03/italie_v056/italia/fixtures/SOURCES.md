@@ -1,0 +1,4 @@
+# Sources (V0.5.3 Italia 128)
+- **Natural Earth** 10m `admin_0_countries` and `populated_places_simple`, pinned commit `ca96624a56bd078437bca8184e78163e5039ad19` of nvkelso/natural-earth-vector. Public domain (https://www.naturalearthdata.com/about/terms-of-use/). Italy incl. Sicily and Sardinia ; coastline is geographic.
+- **Elevation** : AWS Open Data "Terrain Tiles" (Terrarium encoding, zoom 6). Composite of SRTM, GMTED2010, EU-DEM/Copernicus and others ; open data with attribution required (https://github.com/tilezen/joerd/blob/master/docs/attribution.md). Used only to derive relief levels ; resolution ~1.8 km, i.e. 1 stud of the 128-stud model ≈ 8 km.
+Relief derived from these data is **real altitude**, quantised to LEGO levels with a declared vertical exaggeration (see artistic_scale_config.json). The V0.5.x dioramas remain artistic.

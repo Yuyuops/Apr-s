@@ -1,0 +1,86 @@
+{
+ "height_plates": 39,
+ "pieces": 1219,
+ "references": 110,
+ "size_studs": [
+  32,
+  32
+ ],
+ "physical_size_mm": [
+  256,
+  256
+ ],
+ "max_height_mm": 124.8,
+ "colour_substitutions": [
+  [
+   "3022",
+   288,
+   2,
+   3
+  ],
+  [
+   "3037",
+   28,
+   19,
+   1
+  ],
+  [
+   "3038",
+   28,
+   19,
+   1
+  ],
+  [
+   "4460a",
+   28,
+   19,
+   2
+  ],
+  [
+   "6141",
+   288,
+   2,
+   4
+  ]
+ ],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "431653c05d3283819ec7a7ecc51a4161567106f609b834e1d58fb6609f464c33",
+ "window": [
+  10,
+  20,
+  32,
+  32
+ ],
+ "relief": {
+  "VE": 2.0,
+  "band": 6,
+  "max_level": 17.788738315458254,
+  "land_cells": 912,
+  "italy_cells": 635,
+  "hinterland_cells": 277
+ },
+ "terrain": {
+  "max_K": 12,
+  "max_height_mm": 115.2,
+  "land_cells": 912,
+  "slopes": 320,
+  "slopes_by_drop": {
+   "1": 144,
+   "2": 139,
+   "3": 37
+  },
+  "snow_cells": 261,
+  "rock_cells": 215,
+  "pads": 3
+ },
+ "deco": {
+  "conifers_sturdy": 17,
+  "trees_slim": 0,
+  "bushes": 8,
+  "boulders": 0,
+  "beach_cells": 0,
+  "relief_plates": 15,
+  "boulders_single_stud_decorative": 10
+ }
+}

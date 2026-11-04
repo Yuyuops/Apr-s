@@ -1,0 +1,29 @@
+{
+ "land_priority": {
+  "row": 42,
+  "col": 51,
+  "shift_studs": 6.9,
+  "land_cells_covered": 396,
+  "land_fraction": 0.76,
+  "relief_levels_hidden": 222,
+  "distance_km": 55.0
+ },
+ "sea_podium": {
+  "row": 47,
+  "col": 43,
+  "shift_studs": 6.4,
+  "land_cells_covered": 226,
+  "land_fraction": 0.43,
+  "relief_levels_hidden": 104,
+  "distance_km": 51.0
+ },
+ "offshore_medallion": {
+  "row": 44,
+  "col": 11,
+  "shift_studs": 38.4,
+  "land_cells_covered": 0,
+  "land_fraction": 0.0,
+  "relief_levels_hidden": 0,
+  "distance_km": 308.0
+ }
+}

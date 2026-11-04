@@ -1,0 +1,422 @@
+{
+ "grid": [
+  128,
+  128
+ ],
+ "projection": {
+  "centre": [
+   12.75,
+   41.325
+  ],
+  "k": 0.7509760819432414,
+  "studs_per_degree_lat": 9.511462450592886
+ },
+ "zones": {
+  "title": {
+   "row": 116,
+   "col": 5,
+   "h": 7,
+   "w": 35,
+   "margin": 2
+  },
+  "compass": {
+   "row": 108,
+   "col": 108,
+   "h": 15,
+   "w": 15,
+   "margin": 2
+  }
+ },
+ "monuments": [
+  {
+   "id": "colosseum",
+   "name": "Colosseo",
+   "module": "colosseum",
+   "variant": "full",
+   "footprint": [
+    18,
+    22
+   ],
+   "row": 42,
+   "col": 51,
+   "shift_studs": 8.0,
+   "true_anchor": [
+    58.6,
+    62.2
+   ]
+  },
+  {
+   "id": "pisa_tower",
+   "name": "Torre di Pisa",
+   "module": "pisa_tower",
+   "variant": "full",
+   "footprint": [
+    6,
+    6
+   ],
+   "row": 35,
+   "col": 43,
+   "shift_studs": 3.2,
+   "true_anchor": [
+    41.2,
+    47.2
+   ]
+  },
+  {
+   "id": "vesuvio",
+   "name": "Vesuvio",
+   "module": "volcano_cone",
+   "variant": "full",
+   "footprint": [
+    9,
+    9
+   ],
+   "row": 63,
+   "col": 71,
+   "shift_studs": 1.0,
+   "true_anchor": [
+    68.8,
+    76.0
+   ]
+  }
+ ],
+ "log": [
+  {
+   "id": "title",
+   "status": "placed",
+   "row": 116,
+   "col": 5,
+   "size": [
+    7,
+    35
+   ]
+  },
+  {
+   "id": "compass",
+   "status": "placed",
+   "row": 108,
+   "col": 108,
+   "size": [
+    15,
+    15
+   ]
+  },
+  {
+   "status": "placed",
+   "steps": [
+    "scale [18, 22]: OK"
+   ],
+   "id": "colosseum",
+   "name": "Colosseo",
+   "module": "colosseum",
+   "variant": "full",
+   "footprint": [
+    18,
+    22
+   ],
+   "row": 42,
+   "col": 51,
+   "shift_studs": 8.0,
+   "true_anchor": [
+    58.6,
+    62.2
+   ]
+  },
+  {
+   "status": "placed",
+   "steps": [
+    "scale [6, 6]: OK"
+   ],
+   "id": "pisa_tower",
+   "name": "Torre di Pisa",
+   "module": "pisa_tower",
+   "variant": "full",
+   "footprint": [
+    6,
+    6
+   ],
+   "row": 35,
+   "col": 43,
+   "shift_studs": 3.2,
+   "true_anchor": [
+    41.2,
+    47.2
+   ]
+  },
+  {
+   "status": "placed",
+   "steps": [
+    "scale [9, 9]: OK"
+   ],
+   "id": "vesuvio",
+   "name": "Vesuvio",
+   "module": "volcano_cone",
+   "variant": "full",
+   "footprint": [
+    9,
+    9
+   ],
+   "row": 63,
+   "col": 71,
+   "shift_studs": 1.0,
+   "true_anchor": [
+    68.8,
+    76.0
+   ]
+  }
+ ],
+ "land_cells": 2290,
+ "max_level": 7,
+ "level_histogram": {
+  "0": 14094,
+  "1": 1409,
+  "2": 448,
+  "3": 189,
+  "4": 126,
+  "5": 75,
+  "6": 41,
+  "7": 2
+ },
+ "places": [
+  {
+   "name": "Rome",
+   "row": 58.6,
+   "col": 62.1,
+   "pop": 3339000
+  },
+  {
+   "name": "Milan",
+   "row": 24.6,
+   "col": 38.7,
+   "pop": 2945000
+  },
+  {
+   "name": "Naples",
+   "row": 68.6,
+   "col": 74.7,
+   "pop": 2250000
+  },
+  {
+   "name": "Turin",
+   "row": 28.4,
+   "col": 27.7,
+   "pop": 1652000
+  },
+  {
+   "name": "Florence",
+   "row": 40.6,
+   "col": 53.3,
+   "pop": 1500000
+  },
+  {
+   "name": "Salerno",
+   "row": 70.1,
+   "col": 78.4,
+   "pop": 954265
+  },
+  {
+   "name": "Palermo",
+   "row": 94.4,
+   "col": 68.3,
+   "pop": 863000
+  },
+  {
+   "name": "Catania",
+   "row": 100.4,
+   "col": 80.6,
+   "pop": 674542
+  },
+  {
+   "name": "Genoa",
+   "row": 34.7,
+   "col": 36.7,
+   "pop": 647497
+  },
+  {
+   "name": "Bari",
+   "row": 66.0,
+   "col": 93.4,
+   "pop": 500577
+  },
+  {
+   "name": "Bologna",
+   "row": 33.8,
+   "col": 53.9,
+   "pop": 488172
+  },
+  {
+   "name": "Verona",
+   "row": 24.9,
+   "col": 51.4,
+   "pop": 347459
+  },
+  {
+   "name": "Pescara",
+   "row": 53.2,
+   "col": 74.5,
+   "pop": 314789
+  },
+  {
+   "name": "Cagliari",
+   "row": 84.0,
+   "col": 38.0,
+   "pop": 291511
+  },
+  {
+   "name": "Venice",
+   "row": 24.9,
+   "col": 61.0,
+   "pop": 270816
+  },
+  {
+   "name": "Messina",
+   "row": 93.7,
+   "col": 84.0,
+   "pop": 252026
+  },
+  {
+   "name": "Caserta",
+   "row": 66.5,
+   "col": 75.3,
+   "pop": 250000
+  },
+  {
+   "name": "Como",
+   "row": 21.3,
+   "col": 37.8,
+   "pop": 250000
+  },
+  {
+   "name": "Trieste",
+   "row": 22.9,
+   "col": 71.5,
+   "pop": 216035
+  },
+  {
+   "name": "Pisa",
+   "row": 41.2,
+   "col": 47.2,
+   "pop": 203336
+  },
+  {
+   "name": "Taranto",
+   "row": 71.8,
+   "col": 96.0,
+   "pop": 202033
+  },
+  {
+   "name": "Bergamo",
+   "row": 22.4,
+   "col": 42.0,
+   "pop": 200000
+  },
+  {
+   "name": "Reggio di Calabria",
+   "row": 94.5,
+   "col": 84.7,
+   "pop": 180353
+  },
+  {
+   "name": "Treviso",
+   "row": 22.7,
+   "col": 60.4,
+   "pop": 177309
+  },
+  {
+   "name": "Modena",
+   "row": 32.4,
+   "col": 50.9,
+   "pop": 175502
+  },
+  {
+   "name": "Parma",
+   "row": 30.8,
+   "col": 46.6,
+   "pop": 166011
+  },
+  {
+   "name": "Lecce",
+   "row": 73.2,
+   "col": 102.6,
+   "pop": 162582
+  },
+  {
+   "name": "Livorno",
+   "row": 42.8,
+   "col": 46.5,
+   "pop": 156274
+  },
+  {
+   "name": "Foggia",
+   "row": 62.7,
+   "col": 84.1,
+   "pop": 155203
+  },
+  {
+   "name": "Perugia",
+   "row": 47.0,
+   "col": 61.4,
+   "pop": 149125
+  },
+  {
+   "name": "Ravenna",
+   "row": 34.6,
+   "col": 60.2,
+   "pop": 134631
+  },
+  {
+   "name": "Ferrara",
+   "row": 30.5,
+   "col": 55.9,
+   "pop": 130992
+  },
+  {
+   "name": "Siracusa",
+   "row": 104.5,
+   "col": 82.1,
+   "pop": 123657
+  },
+  {
+   "name": "Sassari",
+   "row": 69.7,
+   "col": 34.1,
+   "pop": 120729
+  },
+  {
+   "name": "Udine",
+   "row": 18.9,
+   "col": 67.5,
+   "pop": 119009
+  },
+  {
+   "name": "Barletta",
+   "row": 64.0,
+   "col": 89.1,
+   "pop": 107830
+  },
+  {
+   "name": "Trento",
+   "row": 18.8,
+   "col": 52.4,
+   "pop": 107808
+  },
+  {
+   "name": "Brindisi",
+   "row": 70.5,
+   "col": 101.0,
+   "pop": 104437
+  },
+  {
+   "name": "Novara",
+   "row": 24.8,
+   "col": 34.5,
+   "pop": 100910
+  },
+  {
+   "name": "Ancona",
+   "row": 42.4,
+   "col": 69.4,
+   "pop": 100507
+  }
+ ]
+}

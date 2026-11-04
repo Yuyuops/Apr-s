@@ -1,0 +1,25 @@
+{
+ "commit": "ca96624a56bd078437bca8184e78163e5039ad19",
+ "bbox": [
+  6.15,
+  35.0,
+  19.35,
+  47.65
+ ],
+ "zoom": 6,
+ "tiles_x": [
+  33,
+  35
+ ],
+ "tiles_y": [
+  22,
+  25
+ ],
+ "dem_shape": [
+  1024,
+  768
+ ],
+ "dem_sha256": "cf8a7babc8df0d507aa86a8effc5bdf8d78ceede8dd6d0ab2b461874b5f6fa58",
+ "dem_min": -5231.0,
+ "dem_max": 4127.0
+}

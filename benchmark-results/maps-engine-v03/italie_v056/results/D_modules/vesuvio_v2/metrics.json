@@ -1,0 +1,98 @@
+{
+ "height_plates": 24,
+ "pieces": 704,
+ "references": 106,
+ "size_studs": [
+  32,
+  32
+ ],
+ "physical_size_mm": [
+  256,
+  256
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [
+  [
+   "3022",
+   288,
+   2,
+   1
+  ],
+  [
+   "3037",
+   28,
+   19,
+   1
+  ],
+  [
+   "3038",
+   28,
+   19,
+   2
+  ],
+  [
+   "3678b",
+   288,
+   2,
+   2
+  ],
+  [
+   "6141",
+   288,
+   2,
+   3
+  ]
+ ],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "a34886fe00bd883a902772505184c16dfc19eee0d0c8d79b42cf02c6236334f0",
+ "window": [
+  52,
+  60,
+  32,
+  32
+ ],
+ "relief": {
+  "VE": 1.45,
+  "band": 6,
+  "max_level": 7.088422741277282,
+  "land_cells": 523,
+  "italy_cells": 494,
+  "hinterland_cells": 29
+ },
+ "terrain": {
+  "max_K": 7,
+  "max_height_mm": 67.2,
+  "land_cells": 583,
+  "slopes": 184,
+  "slopes_by_drop": {
+   "1": 160,
+   "2": 13,
+   "3": 11
+  },
+  "snow_cells": 1,
+  "rock_cells": 107,
+  "pads": 9
+ },
+ "deco": {
+  "conifers_sturdy": 19,
+  "trees_slim": 0,
+  "bushes": 5,
+  "boulders": 4,
+  "beach_cells": 0,
+  "relief_plates": 3,
+  "boulders_single_stud_decorative": 4
+ },
+ "modules": {
+  "vesuvio": {
+   "type": "terrain-integrated cone",
+   "footprint": [
+    9,
+    9
+   ],
+   "base_radius_studs": 7.1,
+   "crater_radius_studs": 1.7,
+   "somma_arc": true
+  }
+ }
+}
