@@ -1,0 +1,97 @@
+name: LEGO Italia V0.5.4 Tuscany-Rome real DEM pilot
+
+on:
+  push:
+    branches: [research/lego-maps-italie-v054-sector-pilot]
+    paths:
+      - .github/workflows/lego-italie-v054-pilot.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sector-pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout sector code and V0.5.3 source data
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Install pinned V11 LDraw Rebrickable Python and Node dependencies
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Install Chromium for real LDraw renders
+        run: |
+          cd benchmark-results/20_portable_engine
+          npx playwright install chromium
+      - name: Compile pilot and verify DEM inputs
+        run: |
+          python3 -m py_compile benchmark-results/maps-engine-v03/italie_v053/italia128/pilot_s11_s12.py
+          test -s benchmark-results/maps-engine-v03/italie_v053/italia128/output/levels_128.npy
+          test -s benchmark-results/maps-engine-v03/italie_v053/italia128/output/placements.json
+      - name: Generate true DEM terrain plus Colosseum across two sectors
+        run: |
+          export LEGO_ENGINE_HOME="$GITHUB_WORKSPACE/benchmark-results/20_portable_engine"
+          cd benchmark-results/maps-engine-v03/italie_v053
+          "$LEGO_ENGINE_HOME/.venv/bin/python" italia128/pilot_s11_s12.py \
+            --out italia128/pilot_v054/model
+      - name: Verify parts colours and fragility with actual catalogue
+        run: |
+          export LEGO_ENGINE_HOME="$GITHUB_WORKSPACE/benchmark-results/20_portable_engine"
+          cd benchmark-results/maps-engine-v03/italie_v053
+          "$LEGO_ENGINE_HOME/.venv/bin/python" verify_bom.py italia128/pilot_v054/model
+          mkdir -p italia128/pilot_v054
+          "$LEGO_ENGINE_HOME/.venv/bin/python" fragility.py italia128/pilot_v054/model \
+            > italia128/pilot_v054/fragility.log
+      - name: Independent LDraw connection and collision validation
+        run: |
+          export LEGO_ENGINE_HOME="$GITHUB_WORKSPACE/benchmark-results/20_portable_engine"
+          cd benchmark-results/maps-engine-v03/italie_v053
+          "$LEGO_ENGINE_HOME/.venv/bin/python" - <<'PY'
+          import csv,json,subprocess,sys
+          from pathlib import Path
+          sys.path.insert(0,str(Path("../../20_portable_engine/engine").resolve()))
+          import _paths
+          folder=Path("italia128/pilot_v054/model")
+          vd=Path("italia128/pilot_v054/validation"); vd.mkdir(parents=True,exist_ok=True)
+          args=[sys.executable,str(Path("../../20_portable_engine/engine/validate_v4.py").resolve()),
+                "--ldr",str(folder/"diorama.ldr"),"--ldraw",_paths.LDRAW,
+                "--rbdb",_paths.RB_DB,"--out",str(vd),"--name","pilot"]
+          subprocess.run(args,check=True)
+          names=list(vd.glob("*validation*.json"))
+          if not names: raise AssertionError("No validation JSON produced")
+          rep=json.loads(names[0].read_text())
+          parts=json.loads((folder/"parts.json").read_text())
+          with (folder/"parts_list.csv").open() as f:
+              bom=sum(int(r["quantity"]) for r in csv.DictReader(f))
+          ldr=sum(row.startswith("1 ") for row in (folder/"diorama.ldr").read_text().splitlines())
+          assert len(parts)==bom==ldr,(len(parts),bom,ldr)
+          bad={}
+          for key in ("collisions","disconnected_parts","islands","unsupported_at_placement","blocked_studs"):
+              v=rep.get(key)
+              v=v.get("pairs",0) if isinstance(v,dict) and key=="collisions" else v
+              if v!=0: bad[key]=v
+          assert not bad,bad
+          summary=dict(parts=len(parts),references=len(set((p["part"],p["colour"]) for p in parts)),
+                      checks_ok=True,physical_test=False,wall_mount_verified=False)
+          (folder/"independent_validation.json").write_text(json.dumps(summary,indent=2))
+          print(json.dumps(summary))
+          PY
+      - name: Render the pilot from actual LDraw part geometry
+        run: |
+          export LEGO_ENGINE_HOME="$GITHUB_WORKSPACE/benchmark-results/20_portable_engine"
+          export LEGO_NODE_MODULES="$LEGO_ENGINE_HOME/node_modules"
+          export NODE_PATH="$LEGO_NODE_MODULES"
+          cd benchmark-results/maps-engine-v03/italie_v053
+          "$LEGO_ENGINE_HOME/.venv/bin/python" render_views.py \
+            italia128/pilot_v054/model italia128/views_pilot_v054.json
+      - name: Archive all existing results even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: italia-v054-rome-tuscany-real-pieces-sector-pilot
+          path: |
+            benchmark-results/maps-engine-v03/italie_v053/italia128/pilot_v054/
+          if-no-files-found: warn
