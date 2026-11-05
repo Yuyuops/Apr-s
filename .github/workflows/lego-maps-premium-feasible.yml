@@ -1,0 +1,95 @@
+name: LEGO Maps Premium constructible V0.8
+
+on:
+  push:
+    branches:
+      - research/lego-maps-premium-feasible-v08
+    paths:
+      - benchmark-results/maps-engine-v03/style_fidelity_v062/styles/premium_*.json
+      - benchmark-results/maps-engine-v03/style_fidelity_v062/README_PREMIUM_V08.md
+      - .github/workflows/lego-maps-premium-feasible.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare-two-real-styles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    env:
+      LEGO_ENGINE_HOME: ${{ github.workspace }}/benchmark-results/20_portable_engine
+    steps:
+      - name: Checkout pinned source
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Install pinned LEGO engine dependencies
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Install browser for real LDraw meshes
+        run: |
+          cd benchmark-results/20_portable_engine
+          npx playwright install chromium
+      - name: Build and independently validate both Italy 64x96 styles
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="$GITHUB_WORKSPACE/benchmark-results/maps-engine-v03/style_fidelity_v062"
+          PY="$LEGO_ENGINE_HOME/.venv/bin/python"
+          mkdir -p "$RUNNER_TEMP/lego-premium"
+          for STYLE in premium_ivoire_or_sauge premium_noyer_or_lagon; do
+            OUT="$RUNNER_TEMP/lego-premium/$STYLE"
+            mkdir -p "$OUT"
+            "$PY" "$BASE/build_style.py" "$BASE/styles/$STYLE.json" "$BASE/compositions/italia_portrait_64x96.json" "$OUT" --flank vertical
+            "$PY" "$BASE/verify_bom.py" "$OUT"
+            "$PY" "$BASE/check_render.py" "$OUT" --no-render
+          done
+      - name: Refuse all substitutions, fallback cells and failed catalogue checks
+        shell: bash
+        run: |
+          python3 - "$RUNNER_TEMP/lego-premium" <<'PY'
+          import json, pathlib, sys
+          root=pathlib.Path(sys.argv[1])
+          for name in ("premium_ivoire_or_sauge", "premium_noyer_or_lagon"):
+              p=root/name
+              m=json.loads((p/"metrics.json").read_text())
+              v=json.loads((p/"independent_validation.json").read_text())
+              b=json.loads((p/"bom_verification.json").read_text())
+              assert v["all_pass"], (name,v)
+              assert not m.get("colour_substitutions"), (name,m.get("colour_substitutions"))
+              assert int(m.get("rare_colour_fallback_cells",0)) == 0, (name,m.get("rare_colour_fallback_cells"))
+              assert b["all_dat_exist"] and b["all_colours_valid"] and not b["pairs_not_catalogued"], (name,b)
+              print(name, "PASS", m["pieces"], "pieces", m["references"], "references; no fallback")
+          PY
+      - name: Render both styles, identical cameras and actual LDraw meshes
+        shell: bash
+        env:
+          LEGO_NODE_MODULES: ${{ github.workspace }}/benchmark-results/20_portable_engine/node_modules
+          NODE_PATH: ${{ github.workspace }}/benchmark-results/20_portable_engine/node_modules
+        run: |
+          set -euo pipefail
+          BASE="$GITHUB_WORKSPACE/benchmark-results/maps-engine-v03/style_fidelity_v062"
+          PY="$LEGO_ENGINE_HOME/.venv/bin/python"
+          for STYLE in premium_ivoire_or_sauge premium_noyer_or_lagon; do
+            OUT="$RUNNER_TEMP/lego-premium/$STYLE"
+            "$PY" "$BASE/views_local.py" "$OUT"
+            "$PY" "$BASE/render_views.py" "$OUT" "$OUT/views.json"
+          done
+      - name: Upload verified lightweight comparison evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lego-maps-premium-italia-two-real-styles
+          retention-days: 14
+          if-no-files-found: warn
+          path: |
+            ${{ runner.temp }}/lego-premium/*/metrics.json
+            ${{ runner.temp }}/lego-premium/*/parts_list.csv
+            ${{ runner.temp }}/lego-premium/*/bom_verification.json
+            ${{ runner.temp }}/lego-premium/*/independent_validation.json
+            ${{ runner.temp }}/lego-premium/*/diorama.ldr
+            ${{ runner.temp }}/lego-premium/*/views.json
+            ${{ runner.temp }}/lego-premium/*/renders/face.png
+            ${{ runner.temp }}/lego-premium/*/renders/oblique.png
+            ${{ runner.temp }}/lego-premium/*/renders/zoom.png
