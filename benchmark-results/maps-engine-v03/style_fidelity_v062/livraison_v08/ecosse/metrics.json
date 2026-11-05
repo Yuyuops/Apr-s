@@ -1,0 +1,166 @@
+{
+ "height_plates": 24,
+ "pieces": 13676,
+ "references": 103,
+ "size_studs": [
+  72,
+  104
+ ],
+ "physical_size_mm": [
+  576,
+  832
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "84c47d383ea04cabfd4827695eaca6a80fd7abb9b646d0275767bab3627ae659",
+ "style": "premium_noyer_or_lagon_ecosse",
+ "composition": "Ecosse : cadrage du nord de GBR (admin-0 : la fronti\u00e8re avec",
+ "grid_studs": [
+  96,
+  64
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "0": 1015,
+  "1": 617,
+  "2": 835,
+  "3": 731,
+  "4": 945,
+  "5": 2001
+ },
+ "islets_forced_to_one_stud": [
+  [
+   0,
+   57
+  ],
+  [
+   0,
+   59
+  ],
+  [
+   3,
+   58
+  ],
+  [
+   6,
+   49
+  ],
+  [
+   15,
+   52
+  ],
+  [
+   19,
+   41
+  ],
+  [
+   20,
+   45
+  ],
+  [
+   21,
+   43
+  ],
+  [
+   22,
+   44
+  ],
+  [
+   27,
+   42
+  ],
+  [
+   40,
+   9
+  ],
+  [
+   53,
+   12
+  ],
+  [
+   54,
+   5
+  ],
+  [
+   53,
+   14
+  ],
+  [
+   59,
+   12
+  ],
+  [
+   61,
+   10
+  ],
+  [
+   68,
+   15
+  ],
+  [
+   79,
+   15
+  ]
+ ],
+ "island_audit": {
+  "source_components_ge_quarter_stud2": 28,
+  "represented": 10,
+  "not_representable_lost": 0,
+  "lost_areas_stud2": [
+   1.98,
+   0.45,
+   0.55,
+   0.36,
+   0.34,
+   1.48,
+   1.67,
+   0.95,
+   0.95,
+   1.27,
+   0.34,
+   0.31,
+   1.59,
+   2.09,
+   1.62,
+   1.61,
+   0.95,
+   0.36
+  ],
+  "note": "source = Natural Earth raster at 8 px/stud ; a component is represented if at least one stud of the subject land covers it"
+ },
+ "title": {
+  "row": 2,
+  "col": 8,
+  "size": [
+   7,
+   35
+  ],
+  "level": 0
+ },
+ "rounded_corners": 411,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 1035,
+   "single_owner_pieces_above": 146
+  },
+  {
+   "layer": 0,
+   "plates": 1067,
+   "single_owner_pieces_above": 130
+  }
+ ]
+}

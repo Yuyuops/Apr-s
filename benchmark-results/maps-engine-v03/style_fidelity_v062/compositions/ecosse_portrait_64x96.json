@@ -1,0 +1,16 @@
+{
+ "territory_iso": [
+  "GBR"
+ ],
+ "window": {
+  "lat_c": 57.4,
+  "lon_c": -4.2,
+  "lat_span": 6.4
+ },
+ "grid_studs": [
+  96,
+  64
+ ],
+ "sub": 8,
+ "_doc": "Ecosse : cadrage du nord de GBR (admin-0 : la fronti\u00e8re avec l'Angleterre n'est pas repr\u00e9sent\u00e9e)"
+}

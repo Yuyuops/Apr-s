@@ -1,0 +1,92 @@
+{
+ "_doc": "Option B / premium buildable candidate B: dark-brown/gold traditional framing with pale-blue and Light-Aqua sea. No Aqua 118, no inventing colour, stock unverified. Must be independently validated/rendered before GO.",
+ "name": "premium_noyer_or_lagon_c1",
+ "relief": {
+  "strata_thickness_plates": 2,
+  "sea_strata_widths_studs": [
+   2,
+   4.5,
+   7.5,
+   11
+  ],
+  "smooth_sigma_studs": 2.4,
+  "organic_amp": 1,
+  "organic_scale_studs": 6,
+  "seed": 7,
+  "smooth_land": 0.6,
+  "foreign_level": 2,
+  "land_inland_widths_studs": [],
+  "sea_mosaic": null,
+  "flank": "vertical"
+ },
+ "palette": {
+  "subject_land": 84,
+  "foreign_land": 19,
+  "floor": 212,
+  "sea_levels": {
+   "1": 212,
+   "2": 212,
+   "3": 323,
+   "4": 323
+  },
+  "floor_wall": 212,
+  "sea_levels_wall": {
+   "1": 212,
+   "2": 212,
+   "3": 323,
+   "4": 323
+  }
+ },
+ "surface": {
+  "land": "tile",
+  "sea": "tile",
+  "stud_fraction_land": 0,
+  "min_sets": 8,
+  "tile_bias": 2.6,
+  "tile_max_area": 24,
+  "orient_h": 2.2,
+  "squarish": 2.5,
+  "round_corners": true,
+  "allow_rare": false,
+  "fallback_colour": 323
+ },
+ "frame": {
+  "kind": "dark_brown",
+  "width_studs": 4,
+  "colour": 70,
+  "cap_colour": 70,
+  "rim_above_top_plates": 3,
+  "corner": {
+   "kind": "gold_cap",
+   "colour": 297,
+   "size": 4
+  },
+  "finish": {
+   "filet": {
+    "colour": 297,
+    "index": 1
+   },
+   "medallion": {
+    "colour": 297
+   }
+  }
+ },
+ "title": {
+  "text": "ITALIA",
+  "colour": 15,
+  "raise_plates": 2,
+  "scale": 1,
+  "anchor": "top-centre",
+  "margin": 3,
+  "letter_gap": 1,
+  "on_foreign_land": true
+ },
+ "decor": [
+  {
+   "kind": "gold_plaque",
+   "anchor": "top-right",
+   "margin": 3
+  }
+ ],
+ "detail_density": "low"
+}

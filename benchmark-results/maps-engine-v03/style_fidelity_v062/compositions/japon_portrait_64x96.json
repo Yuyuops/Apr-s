@@ -1,0 +1,16 @@
+{
+ "territory_iso": [
+  "JPN"
+ ],
+ "window": {
+  "lat_c": 37.5,
+  "lon_c": 137.5,
+  "lat_span": 20.0
+ },
+ "grid_studs": [
+  96,
+  64
+ ],
+ "sub": 8,
+ "_doc": "Japon : Hokkaido \u00e0 Kyushu, sans les Ryukyu"
+}

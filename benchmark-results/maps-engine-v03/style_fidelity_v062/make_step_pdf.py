@@ -32,4 +32,4 @@ for s in plan["steps"]:
     for ln in lines: d.text((M + 12, y), ln, fill="black", font=F(15)); y += 22
     for c in s["checks"]: d.text((M + 12, y), "- " + c, fill=(120, 40, 20), font=F(14)); y += 20
     y += 14
-pages[0].save(OUT, save_all=True, append_images=pages[1:], resolution=150); print(len(pages), "pages")
+pages = [p.convert("L") for p in pages]; pages[0].save(OUT, save_all=True, append_images=pages[1:], resolution=150, quality=30); print(len(pages), "pages")

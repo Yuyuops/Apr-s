@@ -1,0 +1,151 @@
+{
+ "height_plates": 24,
+ "pieces": 11477,
+ "references": 110,
+ "size_studs": [
+  72,
+  104
+ ],
+ "physical_size_mm": [
+  576,
+  832
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "ac3134cdb3e9afa1c250727d74f7dfc636628c15f15acc0fd66166f4bb1c167b",
+ "style": "premium_noyer_or_lagon_japon",
+ "composition": "Japon : Hokkaido \u00e0 Kyushu, sans les Ryukyu",
+ "grid_studs": [
+  96,
+  64
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "0": 1587,
+  "1": 622,
+  "2": 1462,
+  "3": 990,
+  "4": 763,
+  "5": 720
+ },
+ "islets_forced_to_one_stud": [
+  [
+   10,
+   45
+  ],
+  [
+   11,
+   46
+  ],
+  [
+   25,
+   39
+  ],
+  [
+   45,
+   35
+  ],
+  [
+   54,
+   15
+  ],
+  [
+   54,
+   15
+  ],
+  [
+   61,
+   39
+  ],
+  [
+   63,
+   0
+  ],
+  [
+   62,
+   19
+  ],
+  [
+   65,
+   2
+  ],
+  [
+   69,
+   0
+  ],
+  [
+   75,
+   2
+  ],
+  [
+   80,
+   7
+  ],
+  [
+   82,
+   5
+  ],
+  [
+   92,
+   0
+  ]
+ ],
+ "island_audit": {
+  "source_components_ge_quarter_stud2": 17,
+  "represented": 2,
+  "not_representable_lost": 0,
+  "lost_areas_stud2": [
+   0.36,
+   0.53,
+   0.47,
+   2.08,
+   0.62,
+   0.41,
+   0.3,
+   1.88,
+   0.47,
+   0.44,
+   0.31,
+   0.3,
+   1.16,
+   1.06,
+   1.91
+  ],
+  "note": "source = Natural Earth raster at 8 px/stud ; a component is represented if at least one stud of the subject land covers it"
+ },
+ "title": {
+  "row": 2,
+  "col": 17,
+  "size": [
+   7,
+   29
+  ],
+  "level": 2
+ },
+ "rounded_corners": 415,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 1109,
+   "single_owner_pieces_above": 120
+  },
+  {
+   "layer": 0,
+   "plates": 1082,
+   "single_owner_pieces_above": 162
+  }
+ ]
+}

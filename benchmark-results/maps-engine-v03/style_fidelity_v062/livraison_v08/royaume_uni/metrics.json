@@ -1,0 +1,126 @@
+{
+ "height_plates": 24,
+ "pieces": 13228,
+ "references": 105,
+ "size_studs": [
+  72,
+  104
+ ],
+ "physical_size_mm": [
+  576,
+  832
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "3abcc72e41987a74d0f00890f39a1f13bb58fe46f0aca9c21598633fb3eec9f6",
+ "style": "premium_noyer_or_lagon_royaume_uni",
+ "composition": "Royaume-Uni : GBR, sans les Shetland",
+ "grid_studs": [
+  96,
+  64
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "0": 991,
+  "1": 460,
+  "2": 1274,
+  "3": 764,
+  "4": 1237,
+  "5": 1418
+ },
+ "islets_forced_to_one_stud": [
+  [
+   7,
+   32
+  ],
+  [
+   7,
+   34
+  ],
+  [
+   8,
+   33
+  ],
+  [
+   9,
+   33
+  ],
+  [
+   11,
+   32
+  ],
+  [
+   26,
+   10
+  ],
+  [
+   26,
+   15
+  ],
+  [
+   30,
+   14
+  ],
+  [
+   31,
+   12
+  ],
+  [
+   34,
+   16
+  ]
+ ],
+ "island_audit": {
+  "source_components_ge_quarter_stud2": 18,
+  "represented": 8,
+  "not_representable_lost": 0,
+  "lost_areas_stud2": [
+   0.64,
+   0.73,
+   0.44,
+   0.48,
+   0.53,
+   0.66,
+   0.83,
+   0.62,
+   0.73,
+   0.39
+  ],
+  "note": "source = Natural Earth raster at 8 px/stud ; a component is represented if at least one stud of the subject land covers it"
+ },
+ "title": {
+  "row": 2,
+  "col": 16,
+  "size": [
+   7,
+   11
+  ],
+  "level": 3
+ },
+ "rounded_corners": 428,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 1010,
+   "single_owner_pieces_above": 115
+  },
+  {
+   "layer": 0,
+   "plates": 1052,
+   "single_owner_pieces_above": 141
+  }
+ ]
+}

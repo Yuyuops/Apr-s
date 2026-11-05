@@ -1,0 +1,16 @@
+{
+ "territory_iso": [
+  "GBR"
+ ],
+ "window": {
+  "lat_c": 54.5,
+  "lon_c": -3.0,
+  "lat_span": 11.4
+ },
+ "grid_studs": [
+  96,
+  64
+ ],
+ "sub": 8,
+ "_doc": "Royaume-Uni : GBR, sans les Shetland"
+}

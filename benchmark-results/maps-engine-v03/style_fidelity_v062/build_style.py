@@ -41,6 +41,18 @@ class Builder:
             lev = np.where(subj, strata.smooth_levels(np.where(subj, lev, 0).astype(np.int16), 1) + 0, lev)
         self.lev, self.subj, self.forn, self.geo = lev.astype(int), subj, forn, geo; self.maxlev = int(self.lev.max())
         self.info["levels_histogram"] = {int(a): int(b) for a, b in zip(*np.unique(self.lev, return_counts=True))}
+        sub = self.cp.get("sub", 8); src = np.asarray(geo["subject"]).astype(bool); lab, n = ndimage.label(src, structure=np.ones((3, 3)))
+        if n:
+            idx = np.arange(1, n + 1); area = ndimage.sum(src, lab, idx); up = np.kron(subj.astype(np.uint8), np.ones((sub, sub), np.uint8)); kept = ndimage.maximum(up, lab, idx) > 0; big = area >= 16
+            lost_idx = [int(i) for i in idx[big & ~kept]]; forced = []
+            if self.rel.get("keep_islets") and lost_idx:      # cartographic generalisation : every source islet >= 0.25 stud2 is kept as ONE exaggerated stud (the stud it covers most)
+                R, C = subj.shape
+                for i in lost_idx:
+                    cov = (lab == i).reshape(R, sub, C, sub).mean(axis=(1, 3)); r, c = np.unravel_index(int(cov.argmax()), cov.shape); subj[r, c] = True; forn[r, c] = False; self.lev[r, c] = self.base_land; forced.append([int(r), int(c)])
+                self.subj, self.forn = subj, forn; self.info["levels_histogram"] = {int(a): int(b) for a, b in zip(*np.unique(self.lev, return_counts=True))}
+            self.info["islets_forced_to_one_stud"] = forced
+            self.info["island_audit"] = dict(source_components_ge_quarter_stud2=int(big.sum()), represented=int((big & kept).sum()), not_representable_lost=int((big & ~kept).sum()) - len(forced), lost_areas_stud2=[round(float(a) / (sub * sub), 2) for a in area[big & ~kept]][:40],
+                                           note="source = Natural Earth raster at %d px/stud ; a component is represented if at least one stud of the subject land covers it" % sub)
     def colour_of_level(self, k, kind="wall"):
         pl = self.pal
         if k == 0: return pl.get("floor_wall", pl["floor"]) if kind == "wall" else pl["floor"]
@@ -233,7 +245,10 @@ class Builder:
                 if best is None or score < best[0]: best = (score, r0, c0)
         if not best: self.info["title"] = "no flat sea zone found"; return
         _, r0, c0 = best; self.taken[r0:r0 + H, c0:c0 + W] = True; sl = (slice(r0 - 1, r0 + H + 1), slice(c0 - 1, c0 + W + 1)); L = int(np.bincount(self.lev[sl].ravel()).argmax()); self.lev[sl] = L; S, F = self.S, self.F; y = self.y0 + L * self.thick; colour = t["colour"]
-        self.title_zone = (r0, c0, H, W, L); self.studded[r0:r0 + H, c0:c0 + W] = True
+        self.title_zone = (r0, c0, H, W, L); sc0 = t["scale"]
+        for (rr, cc) in cells:
+            for i in range(sc0):
+                for j in range(sc0): self.studded[r0 + rr * sc0 + i, c0 + cc * sc0 + j] = True   # studs only under letter cells : counters stay smooth (no stray studs)
         self.info["title"] = dict(row=r0, col=c0, size=[H, W], level=L)
     def place_title_letters(self):
         t = self.st.get("title"); z = getattr(self, "title_zone", None)
