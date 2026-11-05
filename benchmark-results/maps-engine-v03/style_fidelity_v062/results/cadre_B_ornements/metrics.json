@@ -1,0 +1,59 @@
+{
+ "height_plates": 24,
+ "pieces": 4664,
+ "references": 93,
+ "size_studs": [
+  48,
+  48
+ ],
+ "physical_size_mm": [
+  384,
+  384
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "3e655e185271153d03585c590e16fed1c9f5c022f944f695bd07c45c5fa33d12",
+ "style": "italia_prestige_cadre_B_ornements",
+ "composition": "local test window golfe",
+ "grid_studs": [
+  40,
+  40
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "0": 6,
+  "1": 86,
+  "2": 267,
+  "3": 361,
+  "4": 417,
+  "5": 463
+ },
+ "title": "no flat sea zone found",
+ "rounded_corners": 120,
+ "rare_colour_fallback_cells": 52,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 306,
+   "single_owner_pieces_above": 16
+  },
+  {
+   "layer": 0,
+   "plates": 310,
+   "single_owner_pieces_above": 43
+  }
+ ]
+}

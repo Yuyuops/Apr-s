@@ -1,0 +1,21 @@
+{
+ "_doc": "C2 : Aqua 118 for the two middle strata (tiles 2x2, plates), Light Aqua 323 on the coastal band and for the walls of the strata, Sand Green 378 for the deepest stratum and the open sea (depth contrast)",
+ "sea_levels": {
+  "4": 323,
+  "3": 118,
+  "2": 323,
+  "1": 118
+ },
+ "floor": 378,
+ "surface": {
+  "allow_rare": true,
+  "fallback_colour": 323
+ },
+ "sea_levels_wall": {
+  "1": 323,
+  "2": 323,
+  "3": 323,
+  "4": 323
+ },
+ "floor_wall": 378
+}

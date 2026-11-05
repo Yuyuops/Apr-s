@@ -172,8 +172,37 @@ class Builder:
         for (r, c) in ring:
             near = lambda a, L: min(a, L - 1 - a); cr = near(r, R + 2 * F) < size and near(c, C + 2 * F) < size
             g.setdefault(gold if (cr and fr["corner"]["kind"] in ("bracket", "gold_cap", "gold_cap+scroll")) else cc, set()).add((r, c))
+        fin = fr.get("finish") or {}; W2, H2 = C + 2 * F, R + 2 * F; rounds = []
+        def band(r, c):   # (distance from the outer edge, position along the side) for a non-corner ring cell
+            if r < F: return r, c
+            if r >= H2 - F: return H2 - 1 - r, c
+            return (c, r) if c < F else (W2 - 1 - c, r)
+        if fin:
+            near = lambda a, L: min(a, L - 1 - a)
+            for (r, c) in list(ring):
+                if near(r, H2) < size and near(c, W2) < size:
+                    if fin.get("medallion"):
+                        lr, lc = near(r, H2), near(c, W2)
+                        for k in g: g[k].discard((r, c))
+                        if 0 < lr < size - 1 and 0 < lc < size - 1: g.setdefault(cc, set()).add((r, c))
+                        else: rounds.append((r, c, fin["medallion"]["colour"]))
+                    continue
+                d, pos = band(r, c)
+                if "filet" in fin and d == fin["filet"]["index"]:
+                    for k in g: g[k].discard((r, c))
+                    g.setdefault((fin["filet"]["colour"], "filet", band(r, c)[0], r < F or r >= H2 - F), set()).add((r, c))
+                elif "dots" in fin and d == fin["dots"]["index"] and pos % fin["dots"]["period"] == 0:
+                    for k in g: g[k].discard((r, c))
+                    rounds.append((r, c, fin["dots"]["colour"]))
         for col2, cells in g.items():
-            for (r, c, nr, nc, part, rot) in tile(cells, avail(TILES, col2, 5), self.rng, 1.8, 8, S.stud_cells(yc), 12): S.add(part, col2, r, c, yc, rot, "frame_cap")
+            if not cells: continue
+            if isinstance(col2, tuple): col2 = col2[0]
+            placed = set()
+            for (r, c, nr, nc, part, rot) in tile(cells, avail(TILES, col2, 5), self.rng, 1.8, 8, S.stud_cells(yc), 12):
+                p = S.add(part, col2, r, c, yc, rot, "frame_cap"); placed.update((rr, cc2) for rr in range(p["r"], p["r"] + p["nr"]) for cc2 in range(p["c"], p["c"] + p["nc"]))
+            missing = cells - placed
+            if missing: raise ValueError("frame cap cells left uncovered %s (colour %s)" % (sorted(missing)[:6], col2))
+        for (r, c, col2) in rounds: S.add("98138", col2, r, c, yc, 0, "frame_ornament")
         self.info["frame"] = dict(courses=n, top_plate=yc)
     SCROLL7 = ["..rrr..", ".r...r.", "r..r..r", "r.rrr.r", "r.....r", ".r...r.", "..rrr.."]
     SCROLL5 = ["rrt..", "r...t", "t.r..", "..t.r", "...rr"]
