@@ -1,0 +1,190 @@
+{
+ "note": "indicative only : rigid parts, 1.0 N clutch per stud assumed by the validator, NO physical test",
+ "parts": 1284,
+ "joints_total": 6958,
+ "parts_hanging_by_one_stud": 266,
+ "one_stud_decorative_leaves": 102,
+ "one_stud_and_carrying": 164,
+ "articulation_points_with_loss": 344,
+ "worst_single_failure": {
+  "family": "backing",
+  "part_id": 66,
+  "parts_cut_off": 1,
+  "mass_cut_off_g": 6.4
+ },
+ "families": {
+  "backing": {
+   "parts": 139,
+   "hangs_by_two_studs": 1,
+   "hangs_by_one_stud": 7,
+   "hangs_by_one_stud_and_carries": 7
+  },
+  "colosseum_attic": {
+   "parts": 38,
+   "hangs_by_two_studs": 19,
+   "hangs_by_one_stud": 9,
+   "hangs_by_one_stud_and_carries": 9
+  },
+  "colosseum_bridge_course": {
+   "parts": 30,
+   "hangs_by_two_studs": 11,
+   "hangs_by_one_stud": 11,
+   "hangs_by_one_stud_and_carries": 11
+  },
+  "colosseum_cavea": {
+   "parts": 629,
+   "hangs_by_two_studs": 250,
+   "hangs_by_one_stud": 183,
+   "hangs_by_one_stud_and_carries": 97,
+   "hangs_by_one_stud_decorative_leaf": 86
+  },
+  "colosseum_cornice": {
+   "parts": 28,
+   "hangs_by_two_studs": 12,
+   "hangs_by_one_stud": 2,
+   "hangs_by_one_stud_decorative_leaf": 2
+  },
+  "colosseum_facade_t0": {
+   "parts": 72,
+   "hangs_by_two_studs": 40,
+   "hangs_by_one_stud": 18,
+   "hangs_by_one_stud_and_carries": 18
+  },
+  "colosseum_facade_t1": {
+   "parts": 72,
+   "hangs_by_two_studs": 40,
+   "hangs_by_one_stud": 18,
+   "hangs_by_one_stud_and_carries": 16,
+   "hangs_by_one_stud_decorative_leaf": 2
+  },
+  "colosseum_hypogeum": {
+   "parts": 16,
+   "hangs_by_one_stud": 9,
+   "hangs_by_one_stud_decorative_leaf": 9,
+   "hangs_by_two_studs": 3
+  },
+  "plaza": {
+   "parts": 181,
+   "hangs_by_two_studs": 27,
+   "hangs_by_one_stud": 9,
+   "hangs_by_one_stud_and_carries": 6,
+   "hangs_by_one_stud_decorative_leaf": 3
+  },
+  "sea": {
+   "parts": 79
+  }
+ },
+ "failure_by_family": {
+  "backing": {
+   "articulation_points": 11,
+   "max_parts_cut_off": 3,
+   "max_mass_cut_off_g": 6.4
+  },
+  "colosseum_attic": {
+   "articulation_points": 14,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 0.4
+  },
+  "colosseum_bridge_course": {
+   "articulation_points": 6,
+   "max_parts_cut_off": 5,
+   "max_mass_cut_off_g": 2.9
+  },
+  "colosseum_cavea": {
+   "articulation_points": 246,
+   "max_parts_cut_off": 13,
+   "max_mass_cut_off_g": 5.2
+  },
+  "colosseum_facade_t0": {
+   "articulation_points": 16,
+   "max_parts_cut_off": 7,
+   "max_mass_cut_off_g": 4.2
+  },
+  "colosseum_facade_t1": {
+   "articulation_points": 9,
+   "max_parts_cut_off": 5,
+   "max_mass_cut_off_g": 2.4
+  },
+  "plaza": {
+   "articulation_points": 24,
+   "max_parts_cut_off": 10,
+   "max_mass_cut_off_g": 5.1
+  },
+  "sea": {
+   "articulation_points": 18,
+   "max_parts_cut_off": 11,
+   "max_mass_cut_off_g": 6.1
+  }
+ },
+ "colosseum_one_stud_thick_wall_pieces": 38,
+ "ap_leaf_isolating_one_part": 158,
+ "ap_cascade_two_or_more": 186,
+ "ap_cascade_mass_sum_g": 258.0,
+ "ap_by_class": {
+  "sea": {
+   "ap": 29,
+   "leaf": 14,
+   "cascade": 15,
+   "max_mass": 6.4
+  },
+  "colosseum": {
+   "ap": 315,
+   "leaf": 144,
+   "cascade": 171,
+   "max_mass": 5.2
+  }
+ },
+ "worst_10": [
+  {
+   "family": "backing",
+   "parts_cut_off": 1,
+   "mass_g": 6.4
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 11,
+   "mass_g": 6.1
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 7,
+   "mass_g": 5.4
+  },
+  {
+   "family": "colosseum_cavea",
+   "parts_cut_off": 11,
+   "mass_g": 5.2
+  },
+  {
+   "family": "colosseum_cavea",
+   "parts_cut_off": 11,
+   "mass_g": 5.2
+  },
+  {
+   "family": "plaza",
+   "parts_cut_off": 8,
+   "mass_g": 5.1
+  },
+  {
+   "family": "backing",
+   "parts_cut_off": 3,
+   "mass_g": 4.8
+  },
+  {
+   "family": "plaza",
+   "parts_cut_off": 6,
+   "mass_g": 4.8
+  },
+  {
+   "family": "colosseum_cavea",
+   "parts_cut_off": 6,
+   "mass_g": 4.8
+  },
+  {
+   "family": "plaza",
+   "parts_cut_off": 6,
+   "mass_g": 4.5
+  }
+ ],
+ "total_mass_g": 1217.7
+}

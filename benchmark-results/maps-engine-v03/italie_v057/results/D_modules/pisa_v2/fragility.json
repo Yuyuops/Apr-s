@@ -1,0 +1,293 @@
+{
+ "note": "indicative only : rigid parts, 1.0 N clutch per stud assumed by the validator, NO physical test",
+ "parts": 552,
+ "joints_total": 3621,
+ "parts_hanging_by_one_stud": 58,
+ "one_stud_decorative_leaves": 32,
+ "one_stud_and_carrying": 26,
+ "articulation_points_with_loss": 121,
+ "worst_single_failure": {
+  "family": "pisa_base",
+  "part_id": 528,
+  "parts_cut_off": 17,
+  "mass_cut_off_g": 13.2
+ },
+ "families": {
+  "backing": {
+   "parts": 63
+  },
+  "bush": {
+   "parts": 21,
+   "hangs_by_one_stud": 21,
+   "hangs_by_one_stud_decorative_leaf": 21
+  },
+  "mountain": {
+   "parts": 210,
+   "hangs_by_one_stud": 37,
+   "hangs_by_one_stud_and_carries": 26,
+   "hangs_by_two_studs": 52,
+   "hangs_by_one_stud_decorative_leaf": 11
+  },
+  "mountain_slope": {
+   "parts": 99,
+   "hangs_by_two_studs": 70
+  },
+  "pisa_base": {
+   "parts": 1
+  },
+  "pisa_cap": {
+   "parts": 1
+  },
+  "pisa_cornice_0": {
+   "parts": 1
+  },
+  "pisa_cornice_1": {
+   "parts": 1
+  },
+  "pisa_cornice_2": {
+   "parts": 1
+  },
+  "pisa_cornice_3": {
+   "parts": 1
+  },
+  "pisa_cornice_4": {
+   "parts": 1
+  },
+  "pisa_cornice_5": {
+   "parts": 1
+  },
+  "pisa_cornice_6": {
+   "parts": 1
+  },
+  "pisa_cornice_7": {
+   "parts": 1
+  },
+  "pisa_plaza": {
+   "parts": 3
+  },
+  "pisa_step": {
+   "parts": 1,
+   "hangs_by_two_studs": 1
+  },
+  "pisa_storey_0": {
+   "parts": 1
+  },
+  "pisa_storey_1": {
+   "parts": 1
+  },
+  "pisa_storey_2": {
+   "parts": 1,
+   "hangs_by_two_studs": 1
+  },
+  "pisa_storey_3": {
+   "parts": 1
+  },
+  "pisa_storey_4": {
+   "parts": 1,
+   "hangs_by_two_studs": 1
+  },
+  "pisa_storey_5": {
+   "parts": 1
+  },
+  "pisa_storey_6": {
+   "parts": 1,
+   "hangs_by_two_studs": 1
+  },
+  "pisa_storey_7": {
+   "parts": 1
+  },
+  "relief_plate": {
+   "parts": 31
+  },
+  "sea": {
+   "parts": 28
+  },
+  "tree_sturdy": {
+   "parts": 78
+  }
+ },
+ "failure_by_family": {
+  "mountain": {
+   "articulation_points": 46,
+   "max_parts_cut_off": 3,
+   "max_mass_cut_off_g": 4.8
+  },
+  "pisa_base": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 17,
+   "max_mass_cut_off_g": 13.2
+  },
+  "pisa_cornice_0": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 15,
+   "max_mass_cut_off_g": 11.6
+  },
+  "pisa_cornice_1": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 13,
+   "max_mass_cut_off_g": 10.0
+  },
+  "pisa_cornice_2": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 11,
+   "max_mass_cut_off_g": 8.4
+  },
+  "pisa_cornice_3": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 9,
+   "max_mass_cut_off_g": 6.8
+  },
+  "pisa_cornice_4": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 7,
+   "max_mass_cut_off_g": 5.2
+  },
+  "pisa_cornice_5": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 5,
+   "max_mass_cut_off_g": 3.6
+  },
+  "pisa_cornice_6": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 3,
+   "max_mass_cut_off_g": 2.0
+  },
+  "pisa_cornice_7": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 0.4
+  },
+  "pisa_plaza": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 0.2
+  },
+  "pisa_storey_0": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 16,
+   "max_mass_cut_off_g": 12.0
+  },
+  "pisa_storey_1": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 14,
+   "max_mass_cut_off_g": 10.4
+  },
+  "pisa_storey_2": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 12,
+   "max_mass_cut_off_g": 8.8
+  },
+  "pisa_storey_3": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 10,
+   "max_mass_cut_off_g": 7.2
+  },
+  "pisa_storey_4": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 8,
+   "max_mass_cut_off_g": 5.6
+  },
+  "pisa_storey_5": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 6,
+   "max_mass_cut_off_g": 4.0
+  },
+  "pisa_storey_6": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 4,
+   "max_mass_cut_off_g": 2.4
+  },
+  "pisa_storey_7": {
+   "articulation_points": 1,
+   "max_parts_cut_off": 2,
+   "max_mass_cut_off_g": 0.8
+  },
+  "sea": {
+   "articulation_points": 18,
+   "max_parts_cut_off": 13,
+   "max_mass_cut_off_g": 10.9
+  },
+  "tree_sturdy": {
+   "articulation_points": 39,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 2.4
+  }
+ },
+ "colosseum_one_stud_thick_wall_pieces": 0,
+ "ap_leaf_isolating_one_part": 73,
+ "ap_cascade_two_or_more": 48,
+ "ap_cascade_mass_sum_g": 231.4,
+ "ap_by_class": {
+  "other": {
+   "ap": 18,
+   "leaf": 2,
+   "cascade": 16,
+   "max_mass": 13.2
+  },
+  "sea": {
+   "ap": 18,
+   "leaf": 2,
+   "cascade": 16,
+   "max_mass": 10.9
+  },
+  "mountain": {
+   "ap": 85,
+   "leaf": 69,
+   "cascade": 16,
+   "max_mass": 4.8
+  }
+ },
+ "worst_10": [
+  {
+   "family": "pisa_base",
+   "parts_cut_off": 17,
+   "mass_g": 13.2
+  },
+  {
+   "family": "pisa_storey_0",
+   "parts_cut_off": 16,
+   "mass_g": 12.0
+  },
+  {
+   "family": "pisa_cornice_0",
+   "parts_cut_off": 15,
+   "mass_g": 11.6
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 13,
+   "mass_g": 10.9
+  },
+  {
+   "family": "pisa_storey_1",
+   "parts_cut_off": 14,
+   "mass_g": 10.4
+  },
+  {
+   "family": "pisa_cornice_1",
+   "parts_cut_off": 13,
+   "mass_g": 10.0
+  },
+  {
+   "family": "pisa_storey_2",
+   "parts_cut_off": 12,
+   "mass_g": 8.8
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 13,
+   "mass_g": 8.7
+  },
+  {
+   "family": "pisa_cornice_2",
+   "parts_cut_off": 11,
+   "mass_g": 8.4
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 8,
+   "mass_g": 8.0
+  }
+ ],
+ "total_mass_g": 780.7
+}

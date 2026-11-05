@@ -1,0 +1,29 @@
+{
+ "height_plates": 38,
+ "pieces": 1576,
+ "references": 164,
+ "size_studs": [
+  58,
+  74
+ ],
+ "physical_size_mm": [
+  464,
+  592
+ ],
+ "max_height_mm": 121.6,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "954b45e348c9bdef556e8d87e10ed355ff0b54700cdcf92386fde97760854209",
+ "source": "it57_b2",
+ "window_rows": [
+  18,
+  92
+ ],
+ "window_cols": [
+  28,
+  86
+ ],
+ "dropped_overhanging_pieces": 0,
+ "junction_strip_studs": 8
+}

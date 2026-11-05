@@ -1,0 +1,3 @@
+{"source": "V0.5.6 it_v6 (9507 pieces) re-audited at the start of V0.5.7 with the extended fragility.py (categories added)", "parts": 9507, "one_stud": 1181, "one_stud_carrying": 426, "articulation_points": 1076, "ap_leaf_isolating_one_part": 570, "ap_cascade_two_or_more": 506, "ap_cascade_mass_sum_g": 866.8,
+ "ap_by_class": {"other": {"ap": 35, "leaf": 22, "cascade": 13, "max_mass_g": 10.0}, "sea": {"ap": 557, "leaf": 217, "cascade": 340, "max_mass_g": 8.7}, "mountain": {"ap": 309, "leaf": 247, "cascade": 62, "max_mass_g": 5.8}, "colosseum": {"ap": 175, "leaf": 84, "cascade": 91, "max_mass_g": 4.8}},
+ "worst_failure": {"family": "pisa_base", "parts_cut_off": 9, "mass_g": 10.0}}

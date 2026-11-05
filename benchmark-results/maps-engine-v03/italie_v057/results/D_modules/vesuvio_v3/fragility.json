@@ -1,0 +1,143 @@
+{
+ "note": "indicative only : rigid parts, 1.0 N clutch per stud assumed by the validator, NO physical test",
+ "parts": 673,
+ "joints_total": 3734,
+ "parts_hanging_by_one_stud": 76,
+ "one_stud_decorative_leaves": 21,
+ "one_stud_and_carrying": 55,
+ "articulation_points_with_loss": 80,
+ "worst_single_failure": {
+  "family": "sea",
+  "part_id": 91,
+  "parts_cut_off": 17,
+  "mass_cut_off_g": 12.3
+ },
+ "families": {
+  "backing": {
+   "parts": 63
+  },
+  "boulder": {
+   "parts": 6,
+   "hangs_by_one_stud": 6,
+   "hangs_by_one_stud_decorative_leaf": 6
+  },
+  "bush": {
+   "parts": 4,
+   "hangs_by_one_stud": 4,
+   "hangs_by_one_stud_decorative_leaf": 4
+  },
+  "mountain": {
+   "parts": 325,
+   "hangs_by_two_studs": 127,
+   "hangs_by_one_stud": 66,
+   "hangs_by_one_stud_and_carries": 55,
+   "hangs_by_one_stud_decorative_leaf": 11
+  },
+  "mountain_slope": {
+   "parts": 205,
+   "hangs_by_two_studs": 162
+  },
+  "relief_plate": {
+   "parts": 6
+  },
+  "sea": {
+   "parts": 28
+  },
+  "tree_sturdy": {
+   "parts": 36
+  }
+ },
+ "failure_by_family": {
+  "backing": {
+   "articulation_points": 2,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 1.6
+  },
+  "mountain": {
+   "articulation_points": 44,
+   "max_parts_cut_off": 4,
+   "max_mass_cut_off_g": 4.8
+  },
+  "sea": {
+   "articulation_points": 16,
+   "max_parts_cut_off": 17,
+   "max_mass_cut_off_g": 12.3
+  },
+  "tree_sturdy": {
+   "articulation_points": 18,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 2.4
+  }
+ },
+ "colosseum_one_stud_thick_wall_pieces": 0,
+ "ap_leaf_isolating_one_part": 53,
+ "ap_cascade_two_or_more": 27,
+ "ap_cascade_mass_sum_g": 99.4,
+ "ap_by_class": {
+  "sea": {
+   "ap": 18,
+   "leaf": 7,
+   "cascade": 11,
+   "max_mass": 12.3
+  },
+  "mountain": {
+   "ap": 62,
+   "leaf": 46,
+   "cascade": 16,
+   "max_mass": 4.8
+  }
+ },
+ "worst_10": [
+  {
+   "family": "sea",
+   "parts_cut_off": 17,
+   "mass_g": 12.3
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 13,
+   "mass_g": 10.4
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 14,
+   "mass_g": 8.2
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 8,
+   "mass_g": 7.2
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 8,
+   "mass_g": 6.1
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 7,
+   "mass_g": 6.0
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 3,
+   "mass_g": 5.4
+  },
+  {
+   "family": "sea",
+   "parts_cut_off": 3,
+   "mass_g": 4.8
+  },
+  {
+   "family": "mountain",
+   "parts_cut_off": 3,
+   "mass_g": 4.8
+  },
+  {
+   "family": "mountain",
+   "parts_cut_off": 2,
+   "mass_g": 3.6
+  }
+ ],
+ "total_mass_g": 865.6
+}

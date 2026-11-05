@@ -1,0 +1,227 @@
+part_num,part_name_ldraw,rebrickable_name,color_id,color_name,rgb,quantity,ldraw_dat_exists,not_alias,colour_in_rebrickable,colour_in_ldraw,part_in_rebrickable,pair_sets,stock_verified,unit_price,ok,pair_catalogued
+2431,Tile  1 x  4 with Groove,Tile 1 x 4 with Groove,1,Blue,0055BF,66,True,True,True,True,True,307,False,,True,True
+2431,Tile  1 x  4 with Groove,Tile 1 x 4 with Groove,4,Red,C91A09,1,True,True,True,True,True,535,False,,True,True
+2431,Tile  1 x  4 with Groove,Tile 1 x 4 with Groove,15,White,FFFFFF,9,True,True,True,True,True,1008,False,,True,True
+2431,Tile  1 x  4 with Groove,Tile 1 x 4 with Groove,28,Dark Tan,958A73,19,True,True,True,True,True,148,False,,True,True
+2431,Tile  1 x  4 with Groove,Tile 1 x 4 with Groove,272,Dark Blue,0A3463,166,True,True,True,True,True,154,False,,True,True
+2431,Tile  1 x  4 with Groove,Tile 1 x 4 with Groove,321,Dark Azure,078BC9,4,True,True,True,True,True,65,False,,True,True
+2456,Brick  2 x  6,Brick 2 x 6,70,Reddish Brown,582A12,82,True,True,True,True,True,161,False,,True,True
+2456,Brick  2 x  6,Brick 2 x 6,72,Dark Bluish Gray,6C6E68,19,True,True,True,True,True,278,False,,True,True
+26603,Tile  2 x  3,Tile 2 x 3,1,Blue,0055BF,25,True,True,True,True,True,66,False,,True,True
+26603,Tile  2 x  3,Tile 2 x 3,15,White,FFFFFF,2,True,True,True,True,True,313,False,,True,True
+26603,Tile  2 x  3,Tile 2 x 3,28,Dark Tan,958A73,12,True,True,True,True,True,62,False,,True,True
+26603,Tile  2 x  3,Tile 2 x 3,272,Dark Blue,0A3463,125,True,True,True,True,True,88,False,,True,True
+3001,Brick  2 x  4,Brick 2 x 4,2,Green,237841,9,True,True,True,True,True,384,False,,True,True
+3001,Brick  2 x  4,Brick 2 x 4,19,Tan,E4CD9E,3,True,True,True,True,True,375,False,,True,True
+3001,Brick  2 x  4,Brick 2 x 4,70,Reddish Brown,582A12,45,True,True,True,True,True,392,False,,True,True
+3001,Brick  2 x  4,Brick 2 x 4,72,Dark Bluish Gray,6C6E68,35,True,True,True,True,True,510,False,,True,True
+3001,Brick  2 x  4,Brick 2 x 4,288,Dark Green,184632,2,True,True,True,True,True,86,False,,True,True
+3002,Brick  2 x  3,Brick 2 x 3,2,Green,237841,4,True,True,True,True,True,236,False,,True,True
+3002,Brick  2 x  3,Brick 2 x 3,19,Tan,E4CD9E,6,True,True,True,True,True,244,False,,True,True
+3002,Brick  2 x  3,Brick 2 x 3,70,Reddish Brown,582A12,18,True,True,True,True,True,216,False,,True,True
+3002,Brick  2 x  3,Brick 2 x 3,72,Dark Bluish Gray,6C6E68,49,True,True,True,True,True,346,False,,True,True
+3002,Brick  2 x  3,Brick 2 x 3,288,Dark Green,184632,5,True,True,True,True,True,1,False,,True,True
+3003,Brick  2 x  2,Brick 2 x 2,0,Black,05131D,1,True,True,True,True,True,1104,False,,True,True
+3003,Brick  2 x  2,Brick 2 x 2,2,Green,237841,19,True,True,True,True,True,474,False,,True,True
+3003,Brick  2 x  2,Brick 2 x 2,19,Tan,E4CD9E,5,True,True,True,True,True,480,False,,True,True
+3003,Brick  2 x  2,Brick 2 x 2,28,Dark Tan,958A73,5,True,True,True,True,True,184,False,,True,True
+3003,Brick  2 x  2,Brick 2 x 2,70,Reddish Brown,582A12,15,True,True,True,True,True,460,False,,True,True
+3003,Brick  2 x  2,Brick 2 x 2,71,Light Bluish Gray,A0A5A9,3,True,True,True,True,True,743,False,,True,True
+3003,Brick  2 x  2,Brick 2 x 2,72,Dark Bluish Gray,6C6E68,59,True,True,True,True,True,487,False,,True,True
+3003,Brick  2 x  2,Brick 2 x 2,288,Dark Green,184632,22,True,True,True,True,True,43,False,,True,True
+3004,Brick  1 x  2,Brick 1 x 2,0,Black,05131D,7,True,True,True,True,True,1826,False,,True,True
+3004,Brick  1 x  2,Brick 1 x 2,2,Green,237841,55,True,True,True,True,True,467,False,,True,True
+3004,Brick  1 x  2,Brick 1 x 2,15,White,FFFFFF,11,True,True,True,True,True,2071,False,,True,True
+3004,Brick  1 x  2,Brick 1 x 2,19,Tan,E4CD9E,130,True,True,True,True,True,697,False,,True,True
+3004,Brick  1 x  2,Brick 1 x 2,28,Dark Tan,958A73,41,True,True,True,True,True,235,False,,True,True
+3004,Brick  1 x  2,Brick 1 x 2,70,Reddish Brown,582A12,36,True,True,True,True,True,566,False,,True,True
+3004,Brick  1 x  2,Brick 1 x 2,71,Light Bluish Gray,A0A5A9,86,True,True,True,True,True,954,False,,True,True
+3004,Brick  1 x  2,Brick 1 x 2,72,Dark Bluish Gray,6C6E68,220,True,True,True,True,True,695,False,,True,True
+3004,Brick  1 x  2,Brick 1 x 2,288,Dark Green,184632,38,True,True,True,True,True,132,False,,True,True
+3005,Brick  1 x  1,Brick 1 x 1,0,Black,05131D,5,True,True,True,True,True,1253,False,,True,True
+3005,Brick  1 x  1,Brick 1 x 1,2,Green,237841,62,True,True,True,True,True,326,False,,True,True
+3005,Brick  1 x  1,Brick 1 x 1,15,White,FFFFFF,3,True,True,True,True,True,1638,False,,True,True
+3005,Brick  1 x  1,Brick 1 x 1,19,Tan,E4CD9E,65,True,True,True,True,True,521,False,,True,True
+3005,Brick  1 x  1,Brick 1 x 1,28,Dark Tan,958A73,25,True,True,True,True,True,208,False,,True,True
+3005,Brick  1 x  1,Brick 1 x 1,70,Reddish Brown,582A12,15,True,True,True,True,True,499,False,,True,True
+3005,Brick  1 x  1,Brick 1 x 1,71,Light Bluish Gray,A0A5A9,62,True,True,True,True,True,803,False,,True,True
+3005,Brick  1 x  1,Brick 1 x 1,72,Dark Bluish Gray,6C6E68,209,True,True,True,True,True,569,False,,True,True
+3005,Brick  1 x  1,Brick 1 x 1,288,Dark Green,184632,35,True,True,True,True,True,101,False,,True,True
+3007,Brick  2 x  8,Brick 2 x 8,72,Dark Bluish Gray,6C6E68,9,True,True,True,True,True,55,False,,True,True
+3008,Brick  1 x  8,Brick 1 x 8,0,Black,05131D,1,True,True,True,True,True,452,False,,True,True
+3008,Brick  1 x  8,Brick 1 x 8,19,Tan,E4CD9E,1,True,True,True,True,True,185,False,,True,True
+3008,Brick  1 x  8,Brick 1 x 8,70,Reddish Brown,582A12,99,True,True,True,True,True,132,False,,True,True
+3008,Brick  1 x  8,Brick 1 x 8,72,Dark Bluish Gray,6C6E68,38,True,True,True,True,True,248,False,,True,True
+3009,Brick  1 x  6,Brick 1 x 6,0,Black,05131D,3,True,True,True,True,True,753,False,,True,True
+3009,Brick  1 x  6,Brick 1 x 6,2,Green,237841,8,True,True,True,True,True,120,False,,True,True
+3009,Brick  1 x  6,Brick 1 x 6,19,Tan,E4CD9E,4,True,True,True,True,True,329,False,,True,True
+3009,Brick  1 x  6,Brick 1 x 6,70,Reddish Brown,582A12,85,True,True,True,True,True,212,False,,True,True
+3009,Brick  1 x  6,Brick 1 x 6,71,Light Bluish Gray,A0A5A9,2,True,True,True,True,True,492,False,,True,True
+3009,Brick  1 x  6,Brick 1 x 6,72,Dark Bluish Gray,6C6E68,48,True,True,True,True,True,398,False,,True,True
+3010,Brick  1 x  4,Brick 1 x 4,0,Black,05131D,1,True,True,True,True,True,1204,False,,True,True
+3010,Brick  1 x  4,Brick 1 x 4,2,Green,237841,9,True,True,True,True,True,291,False,,True,True
+3010,Brick  1 x  4,Brick 1 x 4,19,Tan,E4CD9E,21,True,True,True,True,True,492,False,,True,True
+3010,Brick  1 x  4,Brick 1 x 4,70,Reddish Brown,582A12,38,True,True,True,True,True,356,False,,True,True
+3010,Brick  1 x  4,Brick 1 x 4,71,Light Bluish Gray,A0A5A9,10,True,True,True,True,True,690,False,,True,True
+3010,Brick  1 x  4,Brick 1 x 4,72,Dark Bluish Gray,6C6E68,88,True,True,True,True,True,524,False,,True,True
+3010,Brick  1 x  4,Brick 1 x 4,288,Dark Green,184632,5,True,True,True,True,True,84,False,,True,True
+3020,Plate  2 x  4,Plate 2 x 4,19,Tan,E4CD9E,5,True,True,True,True,True,881,False,,True,True
+3020,Plate  2 x  4,Plate 2 x 4,28,Dark Tan,958A73,8,True,True,True,True,True,429,False,,True,True
+3020,Plate  2 x  4,Plate 2 x 4,72,Dark Bluish Gray,6C6E68,51,True,True,True,True,True,1359,False,,True,True
+3020,Plate  2 x  4,Plate 2 x 4,272,Dark Blue,0A3463,142,True,True,True,True,True,266,False,,True,True
+3021,Plate  2 x  3,Plate 2 x 3,19,Tan,E4CD9E,8,True,True,True,True,True,641,False,,True,True
+3021,Plate  2 x  3,Plate 2 x 3,28,Dark Tan,958A73,7,True,True,True,True,True,309,False,,True,True
+3021,Plate  2 x  3,Plate 2 x 3,72,Dark Bluish Gray,6C6E68,31,True,True,True,True,True,1145,False,,True,True
+3021,Plate  2 x  3,Plate 2 x 3,272,Dark Blue,0A3463,123,True,True,True,True,True,202,False,,True,True
+3022,Plate  2 x  2,Plate 2 x 2,2,Green,237841,31,True,True,True,True,True,547,False,,True,True
+3022,Plate  2 x  2,Plate 2 x 2,19,Tan,E4CD9E,5,True,True,True,True,True,838,False,,True,True
+3022,Plate  2 x  2,Plate 2 x 2,28,Dark Tan,958A73,7,True,True,True,True,True,275,False,,True,True
+3022,Plate  2 x  2,Plate 2 x 2,71,Light Bluish Gray,A0A5A9,2,True,True,True,True,True,1387,False,,True,True
+3022,Plate  2 x  2,Plate 2 x 2,72,Dark Bluish Gray,6C6E68,20,True,True,True,True,True,1255,False,,True,True
+3022,Plate  2 x  2,Plate 2 x 2,272,Dark Blue,0A3463,56,True,True,True,True,True,163,False,,True,True
+3023,Plate  1 x  2,Plate 1 x 2,19,Tan,E4CD9E,28,True,True,True,True,True,1217,False,,True,True
+3023,Plate  1 x  2,Plate 1 x 2,28,Dark Tan,958A73,20,True,True,True,True,True,598,False,,True,True
+3023,Plate  1 x  2,Plate 1 x 2,71,Light Bluish Gray,A0A5A9,8,True,True,True,True,True,1782,False,,True,True
+3023,Plate  1 x  2,Plate 1 x 2,72,Dark Bluish Gray,6C6E68,35,True,True,True,True,True,1432,False,,True,True
+3023,Plate  1 x  2,Plate 1 x 2,272,Dark Blue,0A3463,174,True,True,True,True,True,392,False,,True,True
+3024,Plate  1 x  1,Plate 1 x 1,19,Tan,E4CD9E,30,True,True,True,True,True,612,False,,True,True
+3024,Plate  1 x  1,Plate 1 x 1,28,Dark Tan,958A73,10,True,True,True,True,True,336,False,,True,True
+3024,Plate  1 x  1,Plate 1 x 1,71,Light Bluish Gray,A0A5A9,10,True,True,True,True,True,961,False,,True,True
+3024,Plate  1 x  1,Plate 1 x 1,72,Dark Bluish Gray,6C6E68,17,True,True,True,True,True,721,False,,True,True
+3024,Plate  1 x  1,Plate 1 x 1,272,Dark Blue,0A3463,66,True,True,True,True,True,217,False,,True,True
+3031,Plate  4 x  4,Plate 4 x 4,19,Tan,E4CD9E,1,True,True,True,True,True,342,False,,True,True
+3031,Plate  4 x  4,Plate 4 x 4,71,Light Bluish Gray,A0A5A9,1,True,True,True,True,True,495,False,,True,True
+3031,Plate  4 x  4,Plate 4 x 4,72,Dark Bluish Gray,6C6E68,16,True,True,True,True,True,568,False,,True,True
+3031,Plate  4 x  4,Plate 4 x 4,272,Dark Blue,0A3463,16,True,True,True,True,True,49,False,,True,True
+3032,Plate  4 x  6,Plate 4 x 6,72,Dark Bluish Gray,6C6E68,75,True,True,True,True,True,533,False,,True,True
+3032,Plate  4 x  6,Plate 4 x 6,272,Dark Blue,0A3463,36,True,True,True,True,True,57,False,,True,True
+3034,Plate  2 x  8,Plate 2 x 8,72,Dark Bluish Gray,6C6E68,261,True,True,True,True,True,693,False,,True,True
+3034,Plate  2 x  8,Plate 2 x 8,272,Dark Blue,0A3463,138,True,True,True,True,True,85,False,,True,True
+3035,Plate  4 x  8,Plate 4 x 8,72,Dark Bluish Gray,6C6E68,118,True,True,True,True,True,390,False,,True,True
+3035,Plate  4 x  8,Plate 4 x 8,272,Dark Blue,0A3463,25,True,True,True,True,True,13,False,,True,True
+3036,Plate  6 x  8,Plate 6 x 8,72,Dark Bluish Gray,6C6E68,204,True,True,True,True,True,318,False,,True,True
+3037,Slope Brick 45  2 x  4,Brick Sloped 45° 2 x 4,2,Green,237841,3,True,True,True,True,True,32,False,,True,True
+3037,Slope Brick 45  2 x  4,Brick Sloped 45° 2 x 4,19,Tan,E4CD9E,3,True,True,True,True,True,24,False,,True,True
+3037,Slope Brick 45  2 x  4,Brick Sloped 45° 2 x 4,71,Light Bluish Gray,A0A5A9,4,True,True,True,True,True,143,False,,True,True
+3037,Slope Brick 45  2 x  4,Brick Sloped 45° 2 x 4,72,Dark Bluish Gray,6C6E68,2,True,True,True,True,True,113,False,,True,True
+3037,Slope Brick 45  2 x  4,Brick Sloped 45° 2 x 4,288,Dark Green,184632,2,True,True,True,True,True,1,False,,True,True
+3038,Slope Brick 45  2 x  3,Brick Sloped 45° 2 x 3,2,Green,237841,7,True,True,True,True,True,2,False,,True,True
+3038,Slope Brick 45  2 x  3,Brick Sloped 45° 2 x 3,19,Tan,E4CD9E,4,True,True,True,True,True,1,False,,True,True
+3038,Slope Brick 45  2 x  3,Brick Sloped 45° 2 x 3,70,Reddish Brown,582A12,1,True,True,True,True,True,1,False,,True,True
+3038,Slope Brick 45  2 x  3,Brick Sloped 45° 2 x 3,71,Light Bluish Gray,A0A5A9,2,True,True,True,True,True,62,False,,True,True
+3038,Slope Brick 45  2 x  3,Brick Sloped 45° 2 x 3,72,Dark Bluish Gray,6C6E68,3,True,True,True,True,True,51,False,,True,True
+3038,Slope Brick 45  2 x  3,Brick Sloped 45° 2 x 3,288,Dark Green,184632,9,True,True,True,True,True,3,False,,True,True
+3039,Slope Brick 45  2 x  2,Brick Sloped 45° 2 x 2,2,Green,237841,22,True,True,True,True,True,169,False,,True,True
+3039,Slope Brick 45  2 x  2,Brick Sloped 45° 2 x 2,15,White,FFFFFF,3,True,True,True,True,True,494,False,,True,True
+3039,Slope Brick 45  2 x  2,Brick Sloped 45° 2 x 2,19,Tan,E4CD9E,8,True,True,True,True,True,178,False,,True,True
+3039,Slope Brick 45  2 x  2,Brick Sloped 45° 2 x 2,28,Dark Tan,958A73,13,True,True,True,True,True,62,False,,True,True
+3039,Slope Brick 45  2 x  2,Brick Sloped 45° 2 x 2,71,Light Bluish Gray,A0A5A9,16,True,True,True,True,True,373,False,,True,True
+3039,Slope Brick 45  2 x  2,Brick Sloped 45° 2 x 2,72,Dark Bluish Gray,6C6E68,11,True,True,True,True,True,454,False,,True,True
+3039,Slope Brick 45  2 x  2,Brick Sloped 45° 2 x 2,288,Dark Green,184632,17,True,True,True,True,True,21,False,,True,True
+3040b,Slope Brick 45  2 x  1,Brick Sloped 45° 2 x 1 with Bottom Pin,2,Green,237841,57,True,True,True,True,True,213,False,,True,True
+3040b,Slope Brick 45  2 x  1,Brick Sloped 45° 2 x 1 with Bottom Pin,15,White,FFFFFF,48,True,True,True,True,True,693,False,,True,True
+3040b,Slope Brick 45  2 x  1,Brick Sloped 45° 2 x 1 with Bottom Pin,19,Tan,E4CD9E,60,True,True,True,True,True,262,False,,True,True
+3040b,Slope Brick 45  2 x  1,Brick Sloped 45° 2 x 1 with Bottom Pin,28,Dark Tan,958A73,104,True,True,True,True,True,147,False,,True,True
+3040b,Slope Brick 45  2 x  1,Brick Sloped 45° 2 x 1 with Bottom Pin,70,Reddish Brown,582A12,14,True,True,True,True,True,258,False,,True,True
+3040b,Slope Brick 45  2 x  1,Brick Sloped 45° 2 x 1 with Bottom Pin,71,Light Bluish Gray,A0A5A9,96,True,True,True,True,True,529,False,,True,True
+3040b,Slope Brick 45  2 x  1,Brick Sloped 45° 2 x 1 with Bottom Pin,72,Dark Bluish Gray,6C6E68,112,True,True,True,True,True,544,False,,True,True
+3040b,Slope Brick 45  2 x  1,Brick Sloped 45° 2 x 1 with Bottom Pin,288,Dark Green,184632,88,True,True,True,True,True,81,False,,True,True
+3068b,Tile  2 x  2 with Groove,Tile 2 x 2 with Groove,1,Blue,0055BF,44,True,True,True,True,True,296,False,,True,True
+3068b,Tile  2 x  2 with Groove,Tile 2 x 2 with Groove,28,Dark Tan,958A73,5,True,True,True,True,True,220,False,,True,True
+3068b,Tile  2 x  2 with Groove,Tile 2 x 2 with Groove,272,Dark Blue,0A3463,57,True,True,True,True,True,186,False,,True,True
+3069b,Tile  1 x  2 with Groove,Tile 1 x 2 with Groove,1,Blue,0055BF,139,True,True,True,True,True,460,False,,True,True
+3069b,Tile  1 x  2 with Groove,Tile 1 x 2 with Groove,4,Red,C91A09,1,True,True,True,True,True,901,False,,True,True
+3069b,Tile  1 x  2 with Groove,Tile 1 x 2 with Groove,15,White,FFFFFF,14,True,True,True,True,True,1582,False,,True,True
+3069b,Tile  1 x  2 with Groove,Tile 1 x 2 with Groove,28,Dark Tan,958A73,27,True,True,True,True,True,324,False,,True,True
+3069b,Tile  1 x  2 with Groove,Tile 1 x 2 with Groove,272,Dark Blue,0A3463,155,True,True,True,True,True,276,False,,True,True
+3069b,Tile  1 x  2 with Groove,Tile 1 x 2 with Groove,321,Dark Azure,078BC9,62,True,True,True,True,True,121,False,,True,True
+3070b,Tile  1 x  1 with Groove,Tile 1 x 1 with Groove,1,Blue,0055BF,177,True,True,True,True,True,227,False,,True,True
+3070b,Tile  1 x  1 with Groove,Tile 1 x 1 with Groove,4,Red,C91A09,1,True,True,True,True,True,619,False,,True,True
+3070b,Tile  1 x  1 with Groove,Tile 1 x 1 with Groove,15,White,FFFFFF,14,True,True,True,True,True,906,False,,True,True
+3070b,Tile  1 x  1 with Groove,Tile 1 x 1 with Groove,19,Tan,E4CD9E,12,True,True,True,True,True,373,False,,True,True
+3070b,Tile  1 x  1 with Groove,Tile 1 x 1 with Groove,28,Dark Tan,958A73,5,True,True,True,True,True,190,False,,True,True
+3070b,Tile  1 x  1 with Groove,Tile 1 x 1 with Groove,272,Dark Blue,0A3463,149,True,True,True,True,True,150,False,,True,True
+3070b,Tile  1 x  1 with Groove,Tile 1 x 1 with Groove,321,Dark Azure,078BC9,51,True,True,True,True,True,70,False,,True,True
+3460,Plate  1 x  8,Plate 1 x 8,19,Tan,E4CD9E,5,True,True,True,True,True,319,False,,True,True
+3460,Plate  1 x  8,Plate 1 x 8,28,Dark Tan,958A73,4,True,True,True,True,True,120,False,,True,True
+3460,Plate  1 x  8,Plate 1 x 8,72,Dark Bluish Gray,6C6E68,283,True,True,True,True,True,603,False,,True,True
+3460,Plate  1 x  8,Plate 1 x 8,272,Dark Blue,0A3463,595,True,True,True,True,True,69,False,,True,True
+3622,Brick  1 x  3,Brick 1 x 3,0,Black,05131D,5,True,True,True,True,True,710,False,,True,True
+3622,Brick  1 x  3,Brick 1 x 3,2,Green,237841,21,True,True,True,True,True,211,False,,True,True
+3622,Brick  1 x  3,Brick 1 x 3,15,White,FFFFFF,1,True,True,True,True,True,933,False,,True,True
+3622,Brick  1 x  3,Brick 1 x 3,19,Tan,E4CD9E,35,True,True,True,True,True,370,False,,True,True
+3622,Brick  1 x  3,Brick 1 x 3,28,Dark Tan,958A73,2,True,True,True,True,True,1,False,,True,True
+3622,Brick  1 x  3,Brick 1 x 3,70,Reddish Brown,582A12,41,True,True,True,True,True,276,False,,True,True
+3622,Brick  1 x  3,Brick 1 x 3,71,Light Bluish Gray,A0A5A9,31,True,True,True,True,True,521,False,,True,True
+3622,Brick  1 x  3,Brick 1 x 3,72,Dark Bluish Gray,6C6E68,160,True,True,True,True,True,431,False,,True,True
+3622,Brick  1 x  3,Brick 1 x 3,288,Dark Green,184632,7,True,True,True,True,True,3,False,,True,True
+3623,Plate  1 x  3,Plate 1 x 3,19,Tan,E4CD9E,15,True,True,True,True,True,564,False,,True,True
+3623,Plate  1 x  3,Plate 1 x 3,28,Dark Tan,958A73,24,True,True,True,True,True,216,False,,True,True
+3623,Plate  1 x  3,Plate 1 x 3,71,Light Bluish Gray,A0A5A9,10,True,True,True,True,True,877,False,,True,True
+3623,Plate  1 x  3,Plate 1 x 3,72,Dark Bluish Gray,6C6E68,41,True,True,True,True,True,765,False,,True,True
+3623,Plate  1 x  3,Plate 1 x 3,272,Dark Blue,0A3463,244,True,True,True,True,True,137,False,,True,True
+3666,Plate  1 x  6,Plate 1 x 6,19,Tan,E4CD9E,9,True,True,True,True,True,531,False,,True,True
+3666,Plate  1 x  6,Plate 1 x 6,28,Dark Tan,958A73,7,True,True,True,True,True,256,False,,True,True
+3666,Plate  1 x  6,Plate 1 x 6,72,Dark Bluish Gray,6C6E68,138,True,True,True,True,True,858,False,,True,True
+3666,Plate  1 x  6,Plate 1 x 6,272,Dark Blue,0A3463,428,True,True,True,True,True,197,False,,True,True
+3678b,Slope Brick 65  2 x  2 x  2 with Centre Tube,Brick Sloped 65° 2 x 2 x 2 with Bottom Tube,0,Black,05131D,1,True,True,True,True,True,118,False,,True,True
+3678b,Slope Brick 65  2 x  2 x  2 with Centre Tube,Brick Sloped 65° 2 x 2 x 2 with Bottom Tube,2,Green,237841,3,True,True,True,True,True,2,False,,True,True
+3678b,Slope Brick 65  2 x  2 x  2 with Centre Tube,Brick Sloped 65° 2 x 2 x 2 with Bottom Tube,15,White,FFFFFF,4,True,True,True,True,True,123,False,,True,True
+3678b,Slope Brick 65  2 x  2 x  2 with Centre Tube,Brick Sloped 65° 2 x 2 x 2 with Bottom Tube,28,Dark Tan,958A73,1,True,True,True,True,True,44,False,,True,True
+3678b,Slope Brick 65  2 x  2 x  2 with Centre Tube,Brick Sloped 65° 2 x 2 x 2 with Bottom Tube,70,Reddish Brown,582A12,1,True,True,True,True,True,69,False,,True,True
+3678b,Slope Brick 65  2 x  2 x  2 with Centre Tube,Brick Sloped 65° 2 x 2 x 2 with Bottom Tube,71,Light Bluish Gray,A0A5A9,2,True,True,True,True,True,141,False,,True,True
+3678b,Slope Brick 65  2 x  2 x  2 with Centre Tube,Brick Sloped 65° 2 x 2 x 2 with Bottom Tube,72,Dark Bluish Gray,6C6E68,3,True,True,True,True,True,141,False,,True,True
+3684a,Slope Brick 75  2 x  2 x  3 with Hollow Studs,Brick Sloped 75° 2 x 2 x 3 [Hollow Studs],15,White,FFFFFF,2,True,True,True,True,True,40,False,,True,True
+3684a,Slope Brick 75  2 x  2 x  3 with Hollow Studs,Brick Sloped 75° 2 x 2 x 3 [Hollow Studs],72,Dark Bluish Gray,6C6E68,1,True,True,True,True,True,35,False,,True,True
+3710,Plate  1 x  4,Plate 1 x 4,19,Tan,E4CD9E,6,True,True,True,True,True,838,False,,True,True
+3710,Plate  1 x  4,Plate 1 x 4,28,Dark Tan,958A73,13,True,True,True,True,True,389,False,,True,True
+3710,Plate  1 x  4,Plate 1 x 4,71,Light Bluish Gray,A0A5A9,1,True,True,True,True,True,1351,False,,True,True
+3710,Plate  1 x  4,Plate 1 x 4,72,Dark Bluish Gray,6C6E68,73,True,True,True,True,True,1211,False,,True,True
+3710,Plate  1 x  4,Plate 1 x 4,272,Dark Blue,0A3463,261,True,True,True,True,True,309,False,,True,True
+3795,Plate  2 x  6,Plate 2 x 6,28,Dark Tan,958A73,1,True,True,True,True,True,295,False,,True,True
+3795,Plate  2 x  6,Plate 2 x 6,72,Dark Bluish Gray,6C6E68,129,True,True,True,True,True,1097,False,,True,True
+3795,Plate  2 x  6,Plate 2 x 6,272,Dark Blue,0A3463,140,True,True,True,True,True,98,False,,True,True
+3941,Brick  2 x  2 Round without Reinforcement,Brick Round 2 x 2 with Axle Hole,15,White,FFFFFF,1,True,True,True,True,True,547,False,,True,True
+3941,Brick  2 x  2 Round without Reinforcement,Brick Round 2 x 2 with Axle Hole,71,Light Bluish Gray,A0A5A9,1,True,True,True,True,True,350,False,,True,True
+3941,Brick  2 x  2 Round without Reinforcement,Brick Round 2 x 2 with Axle Hole,288,Dark Green,184632,77,True,True,True,True,True,1,False,,True,True
+3942c,Cone  2 x  2 x  2 with Hollow Stud Open,"Cone 2 x 2 x 2, Open Stud",288,Dark Green,184632,77,True,True,True,True,True,4,False,,True,True
+3958,Plate  6 x  6,Plate 6 x 6,72,Dark Bluish Gray,6C6E68,42,True,True,True,True,True,278,False,,True,True
+4032a,Plate  2 x  2 Round with Axlehole,Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening),71,Light Bluish Gray,A0A5A9,7,True,True,True,True,True,676,False,,True,True
+4032a,Plate  2 x  2 Round with Axlehole,Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening),72,Dark Bluish Gray,6C6E68,1,True,True,True,True,True,719,False,,True,True
+4150,Tile  2 x  2 Round with Cross Underside Stud,Tile Round 2 x 2 with Bottom Cross,72,Dark Bluish Gray,6C6E68,1,True,True,True,True,True,21,False,,True,True
+41539,Plate  8 x  8,Plate 8 x 8,72,Dark Bluish Gray,6C6E68,121,True,True,True,True,True,140,False,,True,True
+4162,Tile  1 x  8,Tile 1 x 8 with Groove,1,Blue,0055BF,9,True,True,True,True,True,133,False,,True,True
+4162,Tile  1 x  8,Tile 1 x 8 with Groove,15,White,FFFFFF,1,True,True,True,True,True,504,False,,True,True
+4162,Tile  1 x  8,Tile 1 x 8 with Groove,28,Dark Tan,958A73,55,True,True,True,True,True,40,False,,True,True
+4162,Tile  1 x  8,Tile 1 x 8 with Groove,272,Dark Blue,0A3463,370,True,True,True,True,True,90,False,,True,True
+4460a,Slope Brick 75  2 x  1 x  3 with Open Stud,Brick Sloped 75° 2 x 1 x 3 with Open Stud,15,White,FFFFFF,32,True,True,True,True,True,47,False,,True,True
+4460a,Slope Brick 75  2 x  1 x  3 with Open Stud,Brick Sloped 75° 2 x 1 x 3 with Open Stud,19,Tan,E4CD9E,4,True,True,True,True,True,5,False,,True,True
+4460a,Slope Brick 75  2 x  1 x  3 with Open Stud,Brick Sloped 75° 2 x 1 x 3 with Open Stud,70,Reddish Brown,582A12,3,True,True,True,True,True,4,False,,True,True
+4460a,Slope Brick 75  2 x  1 x  3 with Open Stud,Brick Sloped 75° 2 x 1 x 3 with Open Stud,71,Light Bluish Gray,A0A5A9,10,True,True,True,True,True,17,False,,True,True
+4460a,Slope Brick 75  2 x  1 x  3 with Open Stud,Brick Sloped 75° 2 x 1 x 3 with Open Stud,72,Dark Bluish Gray,6C6E68,17,True,True,True,True,True,12,False,,True,True
+54200,Slope Brick 31  1 x  1 x  0.667,Brick Sloped 30° 1 x 1 x 2/3 (Cheese Slope),71,Light Bluish Gray,A0A5A9,4,True,True,True,True,True,797,False,,True,True
+54200,Slope Brick 31  1 x  1 x  0.667,Brick Sloped 30° 1 x 1 x 2/3 (Cheese Slope),72,Dark Bluish Gray,6C6E68,10,True,True,True,True,True,774,False,,True,True
+60481,Slope Brick 65  2 x  1 x  2,Brick Sloped 65° 2 x 1 x 2,0,Black,05131D,5,True,True,True,True,True,124,False,,True,True
+60481,Slope Brick 65  2 x  1 x  2,Brick Sloped 65° 2 x 1 x 2,2,Green,237841,5,True,True,True,True,True,1,False,,True,True
+60481,Slope Brick 65  2 x  1 x  2,Brick Sloped 65° 2 x 1 x 2,15,White,FFFFFF,61,True,True,True,True,True,152,False,,True,True
+60481,Slope Brick 65  2 x  1 x  2,Brick Sloped 65° 2 x 1 x 2,19,Tan,E4CD9E,2,True,True,True,True,True,60,False,,True,True
+60481,Slope Brick 65  2 x  1 x  2,Brick Sloped 65° 2 x 1 x 2,28,Dark Tan,958A73,20,True,True,True,True,True,26,False,,True,True
+60481,Slope Brick 65  2 x  1 x  2,Brick Sloped 65° 2 x 1 x 2,70,Reddish Brown,582A12,9,True,True,True,True,True,96,False,,True,True
+60481,Slope Brick 65  2 x  1 x  2,Brick Sloped 65° 2 x 1 x 2,71,Light Bluish Gray,A0A5A9,46,True,True,True,True,True,212,False,,True,True
+60481,Slope Brick 65  2 x  1 x  2,Brick Sloped 65° 2 x 1 x 2,72,Dark Bluish Gray,6C6E68,46,True,True,True,True,True,137,False,,True,True
+60481,Slope Brick 65  2 x  1 x  2,Brick Sloped 65° 2 x 1 x 2,288,Dark Green,184632,9,True,True,True,True,True,22,False,,True,True
+60592,Window  1 x  2 x  2 without Sill,Window 1 x 2 x 2 Flat Front,19,Tan,E4CD9E,12,True,True,True,True,True,66,False,,True,True
+6141,Plate  1 x  1 Round,Plate Round 1 x 1 with Solid Stud,2,Green,237841,29,True,True,True,True,True,229,False,,True,True
+6182,Arch  1 x  4 x  2,Brick Arch 1 x 4 x 2,19,Tan,E4CD9E,8,True,True,True,True,True,76,False,,True,True
+6636,Tile  1 x  6,Tile 1 x 6 with Groove,1,Blue,0055BF,21,True,True,True,True,True,142,False,,True,True
+6636,Tile  1 x  6,Tile 1 x 6 with Groove,4,Red,C91A09,1,True,True,True,True,True,313,False,,True,True
+6636,Tile  1 x  6,Tile 1 x 6 with Groove,15,White,FFFFFF,8,True,True,True,True,True,644,False,,True,True
+6636,Tile  1 x  6,Tile 1 x 6 with Groove,28,Dark Tan,958A73,29,True,True,True,True,True,186,False,,True,True
+6636,Tile  1 x  6,Tile 1 x 6 with Groove,272,Dark Blue,0A3463,242,True,True,True,True,True,152,False,,True,True
+69729,Tile  2 x  6,Tile 2 x 6,1,Blue,0055BF,7,True,True,True,True,True,23,False,,True,True
+69729,Tile  2 x  6,Tile 2 x 6,272,Dark Blue,0A3463,258,True,True,True,True,True,38,False,,True,True
+85984,Slope Brick 31  1 x  2 x  0.667,Brick Sloped 30° 1 x 2 x 2/3,72,Dark Bluish Gray,6C6E68,3,True,True,True,True,True,611,False,,True,True
+87079,Tile  2 x  4 with Groove,Tile 2 x 4 with Groove,1,Blue,0055BF,14,True,True,True,True,True,178,False,,True,True
+87079,Tile  2 x  4 with Groove,Tile 2 x 4 with Groove,28,Dark Tan,958A73,32,True,True,True,True,True,110,False,,True,True
+87079,Tile  2 x  4 with Groove,Tile 2 x 4 with Groove,272,Dark Blue,0A3463,160,True,True,True,True,True,158,False,,True,True
+92947,Brick  2 x  2 Round with Grille,Brick Round 2 x 2 [Grill],15,White,FFFFFF,6,True,True,True,True,True,100,False,,True,True

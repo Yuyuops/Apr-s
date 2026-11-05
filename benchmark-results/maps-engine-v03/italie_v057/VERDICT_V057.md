@@ -1,0 +1,4 @@
+# Verdict V0.5.7 : **GO AVEC LIMITATIONS**
+Progrès nets et mesurés : Pise v2 (étages, corniches, loggias, inclinaison 3 tenons), Vésuve v3 (cratère lisible en dessus et sur l'Italie complète), Colisée A5 (ouvertures alignées sur les pans courbes + ponts) dans un médaillon sans lagon et relié à Rome, masse en cascade des défaillances −35 % et pire cascade de mer ÷ 3,4, notice de 354 étapes (JSON, PDF 100 p., visualiseur HTML), fichiers du secteur d'essai S11. Validation 0/0/0/0 sur 10 441 pièces, 226/226 références catalogue.
+Non atteint : AP < 997 (1 020) ; porteuses à un tenon +12 % ; arcades courbes réelles impossibles à 20×26 (médaillon agrandi non plaçable) ; pas de GO ARTISTIQUE ; aucun essai physique.
+Suite : agrandir le médaillon en libérant l'espace (déplacer titre/rose, marge 2), tester le secteur S11, chaîne de Pise renforcée (tige interne non disponible : étudier brique ronde 2×2 pleine à tenons latéraux).

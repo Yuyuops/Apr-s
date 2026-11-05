@@ -1,0 +1,179 @@
+{
+ "note": "indicative only : rigid parts, 1.0 N clutch per stud assumed by the validator, NO physical test",
+ "parts": 961,
+ "joints_total": 5447,
+ "parts_hanging_by_one_stud": 180,
+ "one_stud_decorative_leaves": 65,
+ "one_stud_and_carrying": 115,
+ "articulation_points_with_loss": 241,
+ "worst_single_failure": {
+  "family": "plaza",
+  "part_id": 199,
+  "parts_cut_off": 11,
+  "mass_cut_off_g": 9.8
+ },
+ "families": {
+  "backing": {
+   "parts": 112,
+   "hangs_by_two_studs": 1,
+   "hangs_by_one_stud": 1,
+   "hangs_by_one_stud_and_carries": 1
+  },
+  "colosseum_attic": {
+   "parts": 33,
+   "hangs_by_two_studs": 18,
+   "hangs_by_one_stud": 10,
+   "hangs_by_one_stud_and_carries": 10
+  },
+  "colosseum_cavea": {
+   "parts": 452,
+   "hangs_by_two_studs": 166,
+   "hangs_by_one_stud": 131,
+   "hangs_by_one_stud_and_carries": 74,
+   "hangs_by_one_stud_decorative_leaf": 57
+  },
+  "colosseum_cornice": {
+   "parts": 24,
+   "hangs_by_two_studs": 14,
+   "hangs_by_one_stud": 1,
+   "hangs_by_one_stud_decorative_leaf": 1
+  },
+  "colosseum_facade_t0": {
+   "parts": 66,
+   "hangs_by_two_studs": 46,
+   "hangs_by_one_stud": 12,
+   "hangs_by_one_stud_and_carries": 12
+  },
+  "colosseum_facade_t1": {
+   "parts": 66,
+   "hangs_by_two_studs": 46,
+   "hangs_by_one_stud": 12,
+   "hangs_by_one_stud_and_carries": 10,
+   "hangs_by_one_stud_decorative_leaf": 2
+  },
+  "colosseum_hypogeum": {
+   "parts": 4,
+   "hangs_by_one_stud": 2,
+   "hangs_by_one_stud_decorative_leaf": 2
+  },
+  "plaza": {
+   "parts": 137,
+   "hangs_by_two_studs": 22,
+   "hangs_by_one_stud": 11,
+   "hangs_by_one_stud_and_carries": 8,
+   "hangs_by_one_stud_decorative_leaf": 3
+  },
+  "sea": {
+   "parts": 67,
+   "hangs_by_two_studs": 6
+  }
+ },
+ "failure_by_family": {
+  "backing": {
+   "articulation_points": 11,
+   "max_parts_cut_off": 2,
+   "max_mass_cut_off_g": 3.6
+  },
+  "colosseum_attic": {
+   "articulation_points": 7,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 0.4
+  },
+  "colosseum_cavea": {
+   "articulation_points": 183,
+   "max_parts_cut_off": 9,
+   "max_mass_cut_off_g": 5.4
+  },
+  "colosseum_facade_t0": {
+   "articulation_points": 11,
+   "max_parts_cut_off": 3,
+   "max_mass_cut_off_g": 1.8
+  },
+  "colosseum_facade_t1": {
+   "articulation_points": 6,
+   "max_parts_cut_off": 1,
+   "max_mass_cut_off_g": 0.6
+  },
+  "plaza": {
+   "articulation_points": 12,
+   "max_parts_cut_off": 11,
+   "max_mass_cut_off_g": 9.8
+  },
+  "sea": {
+   "articulation_points": 11,
+   "max_parts_cut_off": 5,
+   "max_mass_cut_off_g": 2.8
+  }
+ },
+ "colosseum_one_stud_thick_wall_pieces": 33,
+ "ap_leaf_isolating_one_part": 114,
+ "ap_cascade_two_or_more": 127,
+ "ap_cascade_mass_sum_g": 165.9,
+ "ap_by_class": {
+  "colosseum": {
+   "ap": 219,
+   "leaf": 101,
+   "cascade": 118,
+   "max_mass": 9.8
+  },
+  "sea": {
+   "ap": 22,
+   "leaf": 13,
+   "cascade": 9,
+   "max_mass": 3.6
+  }
+ },
+ "worst_10": [
+  {
+   "family": "plaza",
+   "parts_cut_off": 11,
+   "mass_g": 9.8
+  },
+  {
+   "family": "plaza",
+   "parts_cut_off": 7,
+   "mass_g": 6.6
+  },
+  {
+   "family": "colosseum_cavea",
+   "parts_cut_off": 4,
+   "mass_g": 5.4
+  },
+  {
+   "family": "colosseum_cavea",
+   "parts_cut_off": 7,
+   "mass_g": 4.8
+  },
+  {
+   "family": "backing",
+   "parts_cut_off": 1,
+   "mass_g": 3.6
+  },
+  {
+   "family": "backing",
+   "parts_cut_off": 1,
+   "mass_g": 3.6
+  },
+  {
+   "family": "plaza",
+   "parts_cut_off": 8,
+   "mass_g": 3.6
+  },
+  {
+   "family": "colosseum_cavea",
+   "parts_cut_off": 3,
+   "mass_g": 3.6
+  },
+  {
+   "family": "colosseum_cavea",
+   "parts_cut_off": 6,
+   "mass_g": 3.2
+  },
+  {
+   "family": "colosseum_cavea",
+   "parts_cut_off": 4,
+   "mass_g": 3.0
+  }
+ ],
+ "total_mass_g": 968.3
+}
