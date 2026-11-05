@@ -1,0 +1,10 @@
+{
+  "theme": "hyrule",
+  "_notice": "Zelda/Hyrule is a protected franchise (Nintendo). No LDraw model, part mapping or recipe is provided here : every entry is a placeholder describing WORK TO DO. Official LEGO minifigures of these characters : none verified. Before any commercial use, check Nintendo/LEGO terms ; fan-made models (MOCs) have their own authors' rights.",
+  "figures": [
+    {"id": "hy_link", "theme": "hyrule", "name": "Link", "kind": "to_create", "scale": "micro", "footprint": [2, 2], "height_plates": 8, "recipe": null, "ldraw_files": [], "rights": "Nintendo trademark/copyright ; original brick-built interpretation = to create ; fan MOC = check author licence", "recognition": null, "support": "stud field >= 2x2", "status": "to_create", "notes": "green tunic / pointed cap colour code to design ; not designed"},
+    {"id": "hy_zelda", "theme": "hyrule", "name": "Zelda", "kind": "to_create", "scale": "micro", "footprint": [2, 2], "height_plates": 8, "recipe": null, "ldraw_files": [], "rights": "as above", "recognition": null, "support": "stud field >= 2x2", "status": "to_create", "notes": "not designed"},
+    {"id": "hy_ganondorf", "theme": "hyrule", "name": "Ganondorf", "kind": "to_create", "scale": "micro", "footprint": [2, 2], "height_plates": 9, "recipe": null, "ldraw_files": [], "rights": "as above", "recognition": null, "support": "stud field >= 2x2", "status": "to_create", "notes": "not designed"},
+    {"id": "hy_npc", "theme": "hyrule", "name": "Créature ou PNJ emblématique (à choisir)", "kind": "to_create", "scale": "micro", "footprint": [2, 2], "height_plates": 7, "recipe": null, "ldraw_files": [], "rights": "as above", "recognition": null, "support": "stud field >= 2x2", "status": "to_create", "notes": "choice left open"}
+  ]
+}

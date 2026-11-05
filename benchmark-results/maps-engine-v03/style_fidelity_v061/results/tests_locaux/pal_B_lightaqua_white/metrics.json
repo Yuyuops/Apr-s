@@ -1,0 +1,50 @@
+{
+ "height_plates": 24,
+ "pieces": 3860,
+ "references": 100,
+ "size_studs": [
+  44,
+  44
+ ],
+ "physical_size_mm": [
+  352,
+  352
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "36cfd15d18e84c80460d36f72d2afcdf72d2dfc9acbc7ea6125a0d0b89c67c8b",
+ "style": "italia_prestige",
+ "composition": "local test window golfe",
+ "grid_studs": [
+  40,
+  40
+ ],
+ "frame_studs": 2,
+ "levels_histogram": {
+  "0": 6,
+  "1": 86,
+  "2": 267,
+  "3": 361,
+  "4": 417,
+  "5": 463
+ },
+ "rounded_corners": 159,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 270,
+   "single_owner_pieces_above": 15
+  },
+  {
+   "layer": 0,
+   "plates": 265,
+   "single_owner_pieces_above": 33
+  }
+ ]
+}

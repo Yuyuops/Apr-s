@@ -1,0 +1,60 @@
+{
+ "height_plates": 24,
+ "pieces": 13855,
+ "references": 124,
+ "size_studs": [
+  72,
+  104
+ ],
+ "physical_size_mm": [
+  576,
+  832
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "548a0dc9e9a1f2464ec28bdd4fce203f81a09b5368906b89c5e1e3689827a40f",
+ "style": "italia_prestige_frameB",
+ "composition": "Portrait framing of the territory, independent of the style.",
+ "grid_studs": [
+  96,
+  64
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "0": 88,
+  "1": 173,
+  "2": 2611,
+  "3": 1186,
+  "4": 870,
+  "5": 1216
+ },
+ "title": {
+  "row": 2,
+  "col": 14,
+  "size": [
+   7,
+   35
+  ],
+  "level": 2
+ },
+ "rounded_corners": 310,
+ "rare_colour_fallback_cells": 152,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 1042,
+   "single_owner_pieces_above": 65
+  },
+  {
+   "layer": 0,
+   "plates": 1048,
+   "single_owner_pieces_above": 119
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "_doc": "C : Aqua 118 (rare : tile 2x2 only, plates 1x2/2x4/2x6/2x8/1x6/1x8) with Light Aqua near the coast; allow_rare lifts the >=8 sets filter ; no 1x1 tile exists in Aqua : leftovers use plates then the fallback colour ; walls of the strata (body plates) in Light Aqua 323 because Aqua has no 1x1 plate : top surface is Aqua, side walls are Light Aqua",
+ "sea_levels": {
+  "4": 323,
+  "3": 118,
+  "2": 118,
+  "1": 118
+ },
+ "floor": 118,
+ "surface": {
+  "allow_rare": true,
+  "fallback_colour": 323
+ },
+ "sea_levels_wall": {
+  "1": 323,
+  "2": 323,
+  "3": 323,
+  "4": 323
+ },
+ "floor_wall": 323
+}

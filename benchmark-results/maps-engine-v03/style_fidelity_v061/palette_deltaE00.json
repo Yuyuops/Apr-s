@@ -1,0 +1,134 @@
+{
+ "A Sand Green/Light Aqua": {
+  "colours": {
+   "1 (cote, menthe tres claire)": [
+    323,
+    [
+     173,
+     195,
+     192
+    ]
+   ],
+   "2 (menthe claire)": [
+    323,
+    [
+     173,
+     195,
+     192
+    ]
+   ],
+   "3 (turquoise)": [
+    378,
+    [
+     160,
+     188,
+     172
+    ]
+   ],
+   "4 (profond)": [
+    378,
+    [
+     160,
+     188,
+     172
+    ]
+   ]
+  },
+  "dE00": {
+   "1 (cote, menthe tres claire)": 12.6,
+   "2 (menthe claire)": 12.5,
+   "3 (turquoise)": 9.8,
+   "4 (profond)": 17.2
+  },
+  "mean": 13.0,
+  "max": 17.2
+ },
+ "B blanc->Light Aqua->Sand Green": {
+  "colours": {
+   "1 (cote, menthe tres claire)": [
+    15,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   "2 (menthe claire)": [
+    323,
+    [
+     173,
+     195,
+     192
+    ]
+   ],
+   "3 (turquoise)": [
+    323,
+    [
+     173,
+     195,
+     192
+    ]
+   ],
+   "4 (profond)": [
+    378,
+    [
+     160,
+     188,
+     172
+    ]
+   ]
+  },
+  "dE00": {
+   "1 (cote, menthe tres claire)": 14.0,
+   "2 (menthe claire)": 12.5,
+   "3 (turquoise)": 14.4,
+   "4 (profond)": 17.2
+  },
+  "mean": 14.5,
+  "max": 17.2
+ },
+ "C Light Aqua + Aqua": {
+  "colours": {
+   "1 (cote, menthe tres claire)": [
+    323,
+    [
+     173,
+     195,
+     192
+    ]
+   ],
+   "2 (menthe claire)": [
+    118,
+    [
+     179,
+     215,
+     209
+    ]
+   ],
+   "3 (turquoise)": [
+    118,
+    [
+     179,
+     215,
+     209
+    ]
+   ],
+   "4 (profond)": [
+    118,
+    [
+     179,
+     215,
+     209
+    ]
+   ]
+  },
+  "dE00": {
+   "1 (cote, menthe tres claire)": 12.6,
+   "2 (menthe claire)": 7.3,
+   "3 (turquoise)": 11.9,
+   "4 (profond)": 23.5
+  },
+  "mean": 13.8,
+  "max": 23.5
+ }
+}

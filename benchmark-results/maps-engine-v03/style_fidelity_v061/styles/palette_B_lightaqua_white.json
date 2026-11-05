@@ -1,0 +1,10 @@
+{
+ "_doc": "B : white -> Light Aqua -> Sand Green gradient by stratum (no checkerboard : one colour per stratum)",
+ "sea_levels": {
+  "4": 15,
+  "3": 323,
+  "2": 323,
+  "1": 378
+ },
+ "floor": 378
+}

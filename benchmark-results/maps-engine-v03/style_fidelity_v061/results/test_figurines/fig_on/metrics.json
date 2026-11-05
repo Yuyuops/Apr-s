@@ -1,0 +1,90 @@
+{
+ "height_plates": 24,
+ "pieces": 4461,
+ "references": 110,
+ "size_studs": [
+  48,
+  48
+ ],
+ "physical_size_mm": [
+  384,
+  384
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "c6ba3b115c83314861ddfcbe87f74d96bea0175bf1fd976a70286895fd206726",
+ "style": "italia_prestige",
+ "composition": "local test window littoral_adriatique",
+ "grid_studs": [
+  40,
+  40
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "2": 368,
+  "3": 301,
+  "4": 347,
+  "5": 584
+ },
+ "rounded_corners": 108,
+ "rare_colour_fallback_cells": 36,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "figures": {
+  "config": {
+   "enabled": true,
+   "mode": "shelf",
+   "theme": "italy",
+   "max_count": 4,
+   "scale": "micro",
+   "style": "inherit",
+   "placement": "automatic",
+   "allow_overlap_with_geography": false
+  },
+  "accepted": [
+   "it_painter",
+   "it_chef",
+   "it_gondolier",
+   "it_cyclist"
+  ],
+  "rejected": [
+   {
+    "id": "it_minifig_artist",
+    "reason": "status=candidate_unverified : no verified geometry (parts exist in the LDraw library ; engine-1 joint model has not been shown to re)"
+   }
+  ],
+  "candidates": [
+   "it_painter",
+   "it_chef",
+   "it_gondolier",
+   "it_cyclist"
+  ],
+  "status": "shelf placed",
+  "shelf": {
+   "row": 3,
+   "col": 24,
+   "size": [
+    4,
+    13
+   ],
+   "level": 2,
+   "anchor_note": "top-right if free"
+  }
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 293,
+   "single_owner_pieces_above": 14
+  },
+  {
+   "layer": 0,
+   "plates": 330,
+   "single_owner_pieces_above": 33
+  }
+ ]
+}
