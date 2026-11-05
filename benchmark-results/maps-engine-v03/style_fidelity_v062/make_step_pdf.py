@@ -15,7 +15,7 @@ def wrap(text, font, width):
         if d.textlength(line + " " + w, font=font) > width: out.append(line); line = w
         else: line = (line + " " + w).strip()
     return out + [line]
-new("ITALIA 128 - notice pas a pas (%d etapes)" % plan["step_count"])
+LBL = "LEGO Maps " + str(plan.get("model", "modele")); new("%s - notice pas a pas (%d etapes)" % (LBL, plan["step_count"]))
 for t in plan["phases"] + plan["notes"] + ["Lire : 'xN piece colour rot R' = N pieces identiques, rotation R degres ; positions (rangee,colonne,plaque) du coin NO de l'emprise ; (k) = tenons sur lesquels la piece se clipse."]:
     for ln in wrap(t, F(19), W - 2 * M): d.text((M, y), ln, fill="black", font=F(19)); y += 27
     y += 6
@@ -27,7 +27,7 @@ for s in plan["steps"]:
         pos = " ".join("(%d,%d,%d)(%d)" % (p["row"], p["col"], p["plate_level"], p["studs_below"]) for p in L[:14]) + (" ..." if len(L) > 14 else "")
         lines += wrap("x%d %s %s rot %d  [%s]  %s" % (len(L), part, col, rot, name[:34], pos), F(15), W - 2 * M - 20)
     need = 60 + 22 * len(lines) + 20 * len(s["checks"])
-    if y + need > H - M: new("ITALIA 128 - notice pas a pas (suite)")
+    if y + need > H - M: new("%s - notice pas a pas (suite)" % LBL)
     d.rectangle([M, y, W - M, y + 38], fill=(232, 236, 244)); d.text((M + 8, y + 6), "Etape %d  |  %s %s%s  |  %d pieces" % (s["step"], s["group"], s["sector"], "" if s["level_plate"] is None else "  couche %d" % s["level_plate"], s["n_parts"]), fill="black", font=FB(20)); y += 46
     for ln in lines: d.text((M + 12, y), ln, fill="black", font=F(15)); y += 22
     for c in s["checks"]: d.text((M + 12, y), "- " + c, fill=(120, 40, 20), font=F(14)); y += 20

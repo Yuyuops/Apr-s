@@ -33,7 +33,8 @@ def render(k):
     ra, ca, rb_, cb = max(ra, 0), max(ca, 0), min(rb_, R), min(cb, C); top = max(p["y"] + p["h"] for p in order if p["id"] in cur or p["id"] in prev)
     json.dump({"v": dict(box=[ra, ca, rb_, cb], h=top / 3.0 + 1, az=AZ, el=EL, w=1100, hpx=760, zoom=0.9)}, open(d + "/views.json", "w"))
     subprocess.run([sys.executable, os.path.join(HERE, "render_views.py"), d, d + "/views.json"], check=True, capture_output=True)
-    return Image.open(d + "/renders/v.png").convert("RGB")
+    img = Image.open(d + "/renders/v.png").convert("RGB"); img.load(); shutil.rmtree(d, ignore_errors=True)      # each step scene is ~50 MB : free it at once (133 steps would fill a CI runner)
+    return img
 with ThreadPoolExecutor(JOBS) as ex: imgs = list(ex.map(render, range(len(steps))))
 W, Hh, Mg = 1240, 1754, 50; F = lambda s: ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", s); FB = lambda s: ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", s)
 from PIL import ImageChops
