@@ -1,0 +1,69 @@
+{
+ "height_plates": 24,
+ "pieces": 4202,
+ "references": 94,
+ "size_studs": [
+  44,
+  44
+ ],
+ "physical_size_mm": [
+  352,
+  352
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "f3291b5735c344af6688a81b0cc4cbb0a2f0b142ca5a5ca265e81f90ac8a4ab8",
+ "style": "italia_prestige",
+ "composition": "local test window littoral_adriatique",
+ "grid_studs": [
+  40,
+  40
+ ],
+ "frame_studs": 2,
+ "levels_histogram": {
+  "2": 368,
+  "3": 301,
+  "4": 347,
+  "5": 584
+ },
+ "rounded_corners": 103,
+ "rare_colour_fallback_cells": 36,
+ "flanks": {
+  "mode": "plates",
+  "candidates": 279,
+  "concave_skipped": 202,
+  "colour_not_catalogued": 0,
+  "blocked": 7,
+  "units": 70,
+  "placed": {
+   "p11477": 0,
+   "p15068": 0,
+   "plates": 46
+  }
+ },
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 273,
+   "single_owner_pieces_above": 12
+  },
+  {
+   "layer": 0,
+   "plates": 266,
+   "single_owner_pieces_above": 25
+  }
+ ]
+}

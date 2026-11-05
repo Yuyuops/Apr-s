@@ -1,0 +1,190 @@
+{
+ "theme": "hyrule",
+ "label": "Hyrule (The Legend of Zelda)",
+ "n": 6,
+ "verdict": "6 figurine(s) catalogue(es)",
+ "sources": {
+  "rebrickable_catalogue": "local snapshot rb.db, lov=[('8',), ('1793543538',)]",
+  "bricklink": {
+   "url": "https://www.bricklink.com/catalogList.asp?catType=M",
+   "http": 405,
+   "used": false
+  },
+  "lego_official": {
+   "url": "https://www.lego.com/",
+   "http": 403,
+   "used": false
+  },
+  "rebrickable_site": {
+   "http": 403,
+   "used": false
+  }
+ },
+ "candidates": [
+  {
+   "fig_num": "fig-015498",
+   "name": "Adult Link, Ocarina of Time",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-015498.jpg",
+   "sets": [
+    {
+     "set_num": "77092-1",
+     "name": "Great Deku Tree 2-in-1",
+     "year": 2024
+    },
+    {
+     "set_num": "77093-1",
+     "name": "Ocarina of Time – The Final Battle",
+     "year": 2026
+    }
+   ],
+   "match": [
+    "catalogue theme 'The Legend of Zelda' : set 77092-1 (Great Deku Tree 2-in-1)",
+    "catalogue theme 'The Legend of Zelda' : set 77093-1 (Ocarina of Time – The Final Battle)"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-015498/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-015498.jpg"
+  },
+  {
+   "fig_num": "fig-017467",
+   "name": "Ganondorf",
+   "parts": 6,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-017467.jpg",
+   "sets": [
+    {
+     "set_num": "77093-1",
+     "name": "Ocarina of Time – The Final Battle",
+     "year": 2026
+    }
+   ],
+   "match": [
+    "catalogue theme 'The Legend of Zelda' : set 77093-1 (Ocarina of Time – The Final Battle)",
+    "figure name matches"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-017467/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-017467.jpg"
+  },
+  {
+   "fig_num": "fig-015499",
+   "name": "Link, Breath of the Wild",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-015499.jpg",
+   "sets": [
+    {
+     "set_num": "77092-1",
+     "name": "Great Deku Tree 2-in-1",
+     "year": 2024
+    }
+   ],
+   "match": [
+    "catalogue theme 'The Legend of Zelda' : set 77092-1 (Great Deku Tree 2-in-1)"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-015499/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-015499.jpg"
+  },
+  {
+   "fig_num": "fig-015497",
+   "name": "Young Link",
+   "parts": 5,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-015497.jpg",
+   "sets": [
+    {
+     "set_num": "77092-1",
+     "name": "Great Deku Tree 2-in-1",
+     "year": 2024
+    }
+   ],
+   "match": [
+    "catalogue theme 'The Legend of Zelda' : set 77092-1 (Great Deku Tree 2-in-1)"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-015497/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-015497.jpg"
+  },
+  {
+   "fig_num": "fig-015500",
+   "name": "Zelda",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-015500.jpg",
+   "sets": [
+    {
+     "set_num": "77092-1",
+     "name": "Great Deku Tree 2-in-1",
+     "year": 2024
+    }
+   ],
+   "match": [
+    "catalogue theme 'The Legend of Zelda' : set 77092-1 (Great Deku Tree 2-in-1)",
+    "figure name matches"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-015500/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-015500.jpg"
+  },
+  {
+   "fig_num": "fig-017466",
+   "name": "Zelda, Dress",
+   "parts": 5,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-017466.jpg",
+   "sets": [
+    {
+     "set_num": "77093-1",
+     "name": "Ocarina of Time – The Final Battle",
+     "year": 2026
+    }
+   ],
+   "match": [
+    "catalogue theme 'The Legend of Zelda' : set 77093-1 (Ocarina of Time – The Final Battle)",
+    "figure name matches"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-017466/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-017466.jpg"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+  "_doc": "Style B 'Atlas Natural'. Colours measured on references/ref_B_atlas_natural_UK.webp ; sea = mosaic of 2x2-stud tiles (pale blue / white / light aqua + a deep-blue patch), land = stacked studded plates in greens with olive and brown highlights.",
+  "name": "atlas_natural",
+  "relief": {"strata_thickness_plates": 1, "sea_strata_widths_studs": [], "smooth_sigma_studs": 1.2, "organic_amp": 0.0, "seed": 7, "smooth_land": 0.3, "foreign_level": 1, "land_inland_widths_studs": [3.0, 7.0], "sea_mosaic": {"cell_studs": 2, "colours": [212, 15, 323], "weights": [0.45, 0.35, 0.20], "scale_studs": 7.0, "deep_patch": {"colour": 272, "corner": "top-left", "size_studs": [10, 14]}}},
+  "palette": {"subject_land": 2, "foreign_land": 19, "floor": 212, "land_levels": {"1": 2, "2": 10, "3": 288}, "land_highlight": {"colour": 28, "peak": 70}, "sea_levels": {}},
+  "surface": {"land": "plate", "sea": "tile", "stud_fraction_land": 0.85, "min_sets": 8, "tile_bias": 1.6, "tile_max_area": 8},
+  "frame": {"kind": "dark_brown", "width_studs": 3, "colour": 70, "cap_colour": 70, "rim_above_top_plates": 3, "corner": {"kind": "bracket", "colour": 297, "size": 4}},
+  "title": {"text": "ITALIA", "colour": 297, "raise_plates": 1, "scale": 1, "anchor": "bottom-centre", "margin": 3, "letter_gap": 1},
+  "decor": [{"kind": "compass_wheel", "anchor": "top-left", "margin": 3}, {"kind": "anchor", "anchor": "right-middle", "margin": 3}],
+  "detail_density": "high"
+}

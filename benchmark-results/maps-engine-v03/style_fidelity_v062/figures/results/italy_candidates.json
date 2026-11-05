@@ -1,0 +1,487 @@
+{
+ "theme": "italy",
+ "label": "Italie",
+ "n": 17,
+ "verdict": "17 figurine(s) catalogue(es)",
+ "sources": {
+  "rebrickable_catalogue": "local snapshot rb.db, lov=[('8',), ('1793543538',)]",
+  "bricklink": {
+   "url": "https://www.bricklink.com/catalogList.asp?catType=M",
+   "http": 405,
+   "used": false
+  },
+  "lego_official": {
+   "url": "https://www.lego.com/",
+   "http": 403,
+   "used": false
+  },
+  "rebrickable_site": {
+   "http": 403,
+   "used": false
+  }
+ },
+ "candidates": [
+  {
+   "fig_num": "fig-016684",
+   "name": "Blue Torso, Dark Blue Legs, Dark Blue Cap",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-016684.jpg",
+   "sets": [
+    {
+     "set_num": "5009422-1",
+     "name": "Italian Market Van",
+     "year": 2025
+    }
+   ],
+   "match": [
+    "set 5009422-1 : Italian Market Van"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-016684/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": null
+  },
+  {
+   "fig_num": "fig-016706",
+   "name": "Cook, Light Aqua Apron, Light Bluish Grey Hair",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-016706.jpg",
+   "sets": [
+    {
+     "set_num": "21359-1",
+     "name": "Italian Riviera",
+     "year": 2025
+    }
+   ],
+   "match": [
+    "set 21359-1 : Italian Riviera"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-016706/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-016706.jpg"
+  },
+  {
+   "fig_num": "fig-016708",
+   "name": "Fisher Man, Dark Green Torso, Dark Bluish Grey Legs, Reddish Brown Cap, Life Vest",
+   "parts": 5,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-016708.jpg",
+   "sets": [
+    {
+     "set_num": "21359-1",
+     "name": "Italian Riviera",
+     "year": 2025
+    }
+   ],
+   "match": [
+    "set 21359-1 : Italian Riviera"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-016708/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-016708.jpg"
+  },
+  {
+   "fig_num": "fig-016702",
+   "name": "Gelato Seller, White Torso, White Legs, Dark Orange Hair",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-016702.jpg",
+   "sets": [
+    {
+     "set_num": "21359-1",
+     "name": "Italian Riviera",
+     "year": 2025
+    }
+   ],
+   "match": [
+    "set 21359-1 : Italian Riviera"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-016702/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-016702.jpg"
+  },
+  {
+   "fig_num": "fig-016705",
+   "name": "Kid, Bright Light Blue Torso, Blue Medium Legs, Dark Brown Hair",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-016705.jpg",
+   "sets": [
+    {
+     "set_num": "21359-1",
+     "name": "Italian Riviera",
+     "year": 2025
+    }
+   ],
+   "match": [
+    "set 21359-1 : Italian Riviera"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-016705/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-016705.jpg"
+  },
+  {
+   "fig_num": "fig-016704",
+   "name": "Kid, White Torso, Dark Turquoise Legs, Black Hair",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-016704.jpg",
+   "sets": [
+    {
+     "set_num": "21359-1",
+     "name": "Italian Riviera",
+     "year": 2025
+    }
+   ],
+   "match": [
+    "set 21359-1 : Italian Riviera"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-016704/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-016704.jpg"
+  },
+  {
+   "fig_num": "fig-016709",
+   "name": "Lime Torso, Dark Azure Legs, Reddish Brown Hair",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-016709.jpg",
+   "sets": [
+    {
+     "set_num": "21359-1",
+     "name": "Italian Riviera",
+     "year": 2025
+    }
+   ],
+   "match": [
+    "set 21359-1 : Italian Riviera"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-016709/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-016709.jpg"
+  },
+  {
+   "fig_num": "fig-016703",
+   "name": "Man, Tan Torso, Dark Red Legs, Light Bluish Grey Hair",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-016703.jpg",
+   "sets": [
+    {
+     "set_num": "21359-1",
+     "name": "Italian Riviera",
+     "year": 2025
+    }
+   ],
+   "match": [
+    "set 21359-1 : Italian Riviera"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-016703/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-016703.jpg"
+  },
+  {
+   "fig_num": "fig-018222",
+   "name": "Pizzaria Waiter, White Torso, Warm Pink Legs",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-018222.jpg",
+   "sets": [
+    {
+     "set_num": "40909-1",
+     "name": "Restaurants of the World: Italy",
+     "year": 2026
+    }
+   ],
+   "match": [
+    "set 40909-1 : Restaurants of the World: Italy"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-018222/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-018222.jpg"
+  },
+  {
+   "fig_num": "fig-016701",
+   "name": "Tourist, White Torso, Dark Blue Legs, Medium Nougat Hair",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-016701.jpg",
+   "sets": [
+    {
+     "set_num": "21359-1",
+     "name": "Italian Riviera",
+     "year": 2025
+    }
+   ],
+   "match": [
+    "set 21359-1 : Italian Riviera"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-016701/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-016701.jpg"
+  },
+  {
+   "fig_num": "fig-016707",
+   "name": "White Torso, Dark Pink Legs, Dark Tan Hair",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-016707.jpg",
+   "sets": [
+    {
+     "set_num": "21359-1",
+     "name": "Italian Riviera",
+     "year": 2025
+    }
+   ],
+   "match": [
+    "set 21359-1 : Italian Riviera"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-016707/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-016707.jpg"
+  },
+  {
+   "fig_num": "fig-013952",
+   "name": "Woman, Tan Trenchcoat",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-013952.jpg",
+   "sets": [
+    {
+     "set_num": "60380-1",
+     "name": "Downtown",
+     "year": 2023
+    },
+    {
+     "set_num": "60367-1",
+     "name": "Passenger Airplane",
+     "year": 2023
+    },
+    {
+     "set_num": "910049-1",
+     "name": "Adventure in Transylvania",
+     "year": 2025
+    },
+    {
+     "set_num": "21359-1",
+     "name": "Italian Riviera",
+     "year": 2025
+    }
+   ],
+   "match": [
+    "set 21359-1 : Italian Riviera"
+   ],
+   "relevance": "strong",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-013952/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-013952.jpg"
+  },
+  {
+   "fig_num": "fig-005830",
+   "name": "Elsa Schneider",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-005830.jpg",
+   "sets": [
+    {
+     "set_num": "7197-1",
+     "name": "Venice Canal Chase",
+     "year": 2009
+    }
+   ],
+   "match": [
+    "set 7197-1 : Venice Canal Chase (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-005830/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-005830.jpg"
+  },
+  {
+   "fig_num": "fig-011015",
+   "name": "Gladiator",
+   "parts": 6,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-011015.jpg",
+   "sets": [
+    {
+     "set_num": "GLADIATOR-1",
+     "name": "Ancient Rome Comes Back To Life",
+     "year": 2020
+    }
+   ],
+   "match": [
+    "set GLADIATOR-1 : Ancient Rome Comes Back To Life (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-011015/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": null
+  },
+  {
+   "fig_num": "fig-005833",
+   "name": "Grail Guardian",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-005833.jpg",
+   "sets": [
+    {
+     "set_num": "7197-1",
+     "name": "Venice Canal Chase",
+     "year": 2009
+    }
+   ],
+   "match": [
+    "set 7197-1 : Venice Canal Chase (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-005833/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-005833.jpg"
+  },
+  {
+   "fig_num": "fig-005831",
+   "name": "Indiana Jones in Light Bluish Gray Suit",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-005831.jpg",
+   "sets": [
+    {
+     "set_num": "7197-1",
+     "name": "Venice Canal Chase",
+     "year": 2009
+    }
+   ],
+   "match": [
+    "set 7197-1 : Venice Canal Chase (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-005831/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-005831.jpg"
+  },
+  {
+   "fig_num": "fig-005832",
+   "name": "Kazim",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-005832.jpg",
+   "sets": [
+    {
+     "set_num": "7197-1",
+     "name": "Venice Canal Chase",
+     "year": 2009
+    }
+   ],
+   "match": [
+    "set 7197-1 : Venice Canal Chase (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-005832/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-005832.jpg"
+  }
+ ]
+}

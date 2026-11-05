@@ -1,0 +1,1 @@
+{"_doc": "Example : 2 catalogued figures chosen BY ID from figures/results/italy_candidates.json (run search.py italy first). support_build builds an empty shelf only.", "figures": {"enabled": true, "mode": "shelf", "theme": "italy", "selected": ["fig-016702", "fig-018222"], "support_build": true, "allow_overlap_with_geography": false}}

@@ -1,0 +1,3 @@
+{"theme": "hyrule", "label": "Hyrule (The Legend of Zelda)",
+ "set_name_regex": ["\\bHyrule\\b"], "indirect_set_name_regex": [], "theme_name_regex": ["\\bLegend of Zelda\\b"], "figure_name_regex": ["\\bZelda\\b", "\\bGanondorf\\b", "\\bHyrule\\b"],
+ "figure_name_exclude": ["Zelda Fitzgerald"]}
