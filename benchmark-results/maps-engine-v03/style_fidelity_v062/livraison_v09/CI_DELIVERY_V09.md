@@ -27,5 +27,9 @@ Le job échoue si un contrôle échoue. Déclencheurs : push sur la branche (fic
 - **Raisons** : PDF volumineux (17–25 Mo), sans valeur de diff, et entièrement déterministes à partir du code.
 - **Limites honnêtes** : (1) les artefacts expirent après 30 jours : il faudra relancer la CI ou la commande ; (2) **les 4 PDF V0.8 (≈ 76 Mo) restent dans l'historique Git** de la branche V0.8, car la consigne interdit de réécrire l'historique : le dépôt les porte toujours ; (3) je n'ai pas mis en place Git LFS (non configuré).
 
+## Incident corrigé pendant la mise au point
+Le premier run avec Hyrule a **échoué** (`cannot identify image`) : le dépôt suit les `*.png` de `benchmark-results/` avec **Git LFS** (`.gitattributes`) et la CI extrait sans LFS (`lfs: false`) : le masque PNG n'était qu'un pointeur de 129 octets. Corrigé en stockant le masque en TIFF (non LFS). Conséquence à connaître : **tous les PNG livrés (rendus, comparatifs) sont des objets LFS**, donc non lisibles par un clone sans LFS.
+LFS aurait aussi pu porter les PDF ; non retenu (quota de stockage et de bande passante LFS, aucun intérêt à versionner des fichiers régénérables).
+
 ## Ce que la CI ne couvre pas
 Essais physiques, stock, prix ; notation artistique (jugement humain) ; lisibilité réelle des PDF ; régression visuelle pixel à pixel ; module figurines (isolé) ; la validité géographique de Hyrule (démonstrateur ; la CI le reconstruit depuis le masque versionné mais n'en juge pas le rendu).

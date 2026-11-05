@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Land/sea mask from a user-supplied oblique render of a LEGO model of a fictional map (colour segmentation + perspective rectification). NO geography is created :
 the only operations are (1) a perspective rectification from 4 board-corner points measured on the picture, (2) a colour threshold : blue-water pixels = sea, every other pixel inside the board = land.
-usage : hyrule_mask_from_render.py SRC.jpg OUT_mask.png OUT_check.png  [--grid R C] [--px-per-stud N]   (corner points : edit CORNERS, pixel coordinates measured on the 1920x1080 picture)"""
+usage : hyrule_mask_from_render.py SRC.jpg OUT_mask.tif (not .png : PNG files of this repository are Git LFS pointers and the CI checks out without LFS) OUT_check.png  [--grid R C] [--px-per-stud N]   (corner points : edit CORNERS, pixel coordinates measured on the 1920x1080 picture)"""
 import sys
 import numpy as np
 from PIL import Image

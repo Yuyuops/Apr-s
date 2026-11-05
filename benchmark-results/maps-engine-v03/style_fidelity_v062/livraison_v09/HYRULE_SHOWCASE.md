@@ -9,7 +9,7 @@ Branche `research/lego-maps-v09-prototype-hyrule`. Style Premium Noyer/Or/Lagon 
 ## Traitements appliqués (`hyrule_mask_from_render.py`, aucune géographie ajoutée)
 1. **Rectification de perspective** : homographie à partir de **4 coins du plateau mesurés à la main** sur une grille posée sur l'image : (322,48), (1615,48), (1668,812), (163,812). Sortie carrée 960 × 960 px.
 2. **Segmentation par couleur** : plaques bleues (teinte 190–245°, saturation > 0,30, luminosité > 0,28) = **mer** ; plaques sable pâles (teinte 28–62°, saturation 0,10–0,60, luminosité > 0,66), régions ≥ 40 tenons² = **désert**, rendu comme terre plate de la classe « terre étrangère » du style ; **tout le reste du plateau = terre**. Lissage gaussien, retrait des poussières de moins de 1,5 tenon², remplissage des trous du désert.
-3. **Grille 80 × 80 tenons**, `sub = 8`. Le masque (`compositions/hyrule_mask_80x80.png`) alimente le moteur par la nouvelle clé de composition `mask_png`.
+3. **Grille 80 × 80 tenons**, `sub = 8`. Le masque (`compositions/hyrule_mask_80x80.tif`) alimente le moteur par la nouvelle clé de composition `mask_png`.
 Résultat : mer 6,1 % de la surface, désert 10,5 %, terre le reste ; 1 masse terrestre, 11 plans d'eau détectés.
 
 ## Hypothèses prises (toutes discutables)
