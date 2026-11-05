@@ -1,0 +1,1 @@
+Les notices PDF V0.8 ont été retirées de l'arbre à partir de la V0.9 (elles restent dans l'historique de la branche V0.8). Régénération : `style_fidelity_v062/regen_deliverables.sh OUT --render --pdf`, ou artefact CI `lego-maps-v09-notices-pdf`.

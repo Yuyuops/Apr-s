@@ -1,0 +1,24 @@
+# Rapport final — LEGO Maps V0.9
+Branche `research/lego-maps-v09-prototype-hyrule` ; code et résultats au commit `2a8391b` (les rapports sont dans le commit suivant). Run CI de référence : https://github.com/Yuyuops/Apr-s/actions/runs/42094250651 (succès, 21 min).
+Base gelée : style Premium Noyer/Or/Lagon V0.8, compositions et corrections génériques (îlots conservés, police complétée), accélération de fragilité du moteur 1. **Note artistique de référence : 19/25, inchangée** ; aucun nouveau style, aucune boucle esthétique.
+
+## Réponses aux 7 questions
+1. **Le style Premium V0.8 est-il assez bon pour un prototype réel ?** **Oui, pour un prototype de test** (19/25, aucun critère < 3, modèles valides au niveau catalogue). **Non** pour annoncer un produit abouti : le relief en vue de face reste faible et rien n'a été construit.
+2. **Les prototypes réduits sont-ils exploitables pour un montage test ?** **Oui, sous réserve.** A (littoral + relief, 3 489 pièces, 85 réf., 352 × 352 mm) et B (cadre + titre, 2 658 pièces, 101 réf., 448 × 256 mm) sont valides (0/0/0/0, catalogue complet, plan et nomenclature concordants). Réserves : 66 étapes sur 133 (A) et 41 sur 96 (B) contiennent des pièces à un seul tenon ; 48 médaillons or à un tenon ; aucun essai physique.
+3. **La notice est-elle réellement plus utilisable ?** **Plus lisible spatialement, pas prouvée.** La notice illustrée donne l'image de chaque étape avec les pièces en couleurs vraies et un repère correct ; l'ancienne notice avait un titre faux (« ITALIA 128 » sur toutes les cartes) et des coordonnées décalées de 2 tenons (corrigé pour le titre ; les coordonnées de la notice illustrée sont corrigées). Aucun montage n'a été fait avec elle : je ne la déclare pas prête.
+4. **La CI couvre-t-elle correctement les livrables finaux ?** **Oui sur le plan technique** : 4 cartes + 2 prototypes, de la génération à la concordance, run réussi, hachages LDraw identiques au local. Elle ne couvre ni le physique, ni les prix, ni la qualité artistique (voir `CI_DELIVERY_V09.md`).
+5. **La stratégie de stockage des gros PDF est-elle propre ?** **En grande partie** : artefacts CI + commande de régénération + PDF ignorés. **Deux défauts assumés** : expiration des artefacts à 30 jours, et les PDF V0.8 (≈ 76 Mo) restent dans l'historique (pas de réécriture).
+6. **Le rendu Hyrule est-il convaincant ?** **Non évaluable : aucune carte Hyrule générée.** Aucune source géographique utilisable (le dépôt n'a que des listes de figurines ; la seule carte trouvée est une affiche sous droit d'auteur, sans trait de côte, dont je ne dérive rien sans l'inventer). Le pipeline accepte désormais une source raster (`mask_png`), testée par équivalence sur l'Italie. Détail : `HYRULE_SHOWCASE.md`.
+7. **Le moteur est-il prêt pour une phase « prototype réel » ?** **Prêt à lancer un montage test de A et B**, pas à annoncer un résultat. Ce qui reste bloquant pour aller plus loin : aucun essai physique, aucun stock ni prix vérifié (pas de budget), relief de face à 3/5, médaillons et pièces d'angle à un tenon à tester à la main, Hyrule sans source.
+
+## Moteur 1
+Correction de performance conservée (fragilité 107 s → 23 s sur l'Italie, sorties identiques). **Aucune autre modification** : les problèmes vus sur les prototypes (médaillons à un tenon, pire défaillance du cadre de 6,4 g sur B) sont documentés avec une correction proposée, **non implémentée faute d'essai physique** ; aucun avant/après à publier.
+
+## Corrections de la chaîne de livraison faites dans cette version
+Titre de notice tiré du modèle ; notice illustrée (image par étape) ; `check_delivery.py` ; `regen_deliverables.sh` ; workflow CI final ; libération de la place disque des scènes par étape (133 étapes remplissaient le disque) ; source raster générique ; prototypes reconstruits en fenêtres propres (les découpes dans le modèle final, déchiquetées, ont été écartées).
+
+## Défauts et limites restants
+Aucune validation physique ; budget non estimé (aucun prix vérifié) ; BrickLink XML non produit ; notice illustrée sans numéros d'appel ni vignettes ; image d'étape de socle peu contrastée ; Hyrule bloqué ; escalier côtier et relief de face (cf. V0.8).
+
+## Décision
+**GO sous réserves documentées pour un montage test des prototypes A et B** (réalisé par un humain, avec relevé d'observations : lisibilité réelle du relief, tenue des médaillons et du cadre, utilisabilité de la notice). **NO-GO pour toute affirmation de validation physique, de budget ou de démonstration Hyrule.**
