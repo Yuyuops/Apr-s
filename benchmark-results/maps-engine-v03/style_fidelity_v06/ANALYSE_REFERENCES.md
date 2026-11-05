@@ -1,0 +1,8 @@
+# Analyse des deux références (V0.6)
+Fichiers archivés dans `references/` avec empreintes SHA-256 (`SHA256.txt`) : `ref_A_italia_prestige.webp` (2000×1333, bd1e7d54…), `ref_B_atlas_natural_UK.webp` (1920×1440, 0945098d…). Ce sont des rendus de style, **pas des plans** : aucune forme ni pièce vue n'est présumée constructible.
+## A — Italia Prestige (observations visuelles + k-means sur la zone du tableau)
+Cadre blanc épais ; fond crème (≈ 221,202,155) ; terre brun-sable (≈ 168,131,83) en grandes surfaces lisses ; mer menthe/turquoise (≈ 172,228,207 ; 128,202,172 ; 215,246,231) en 4-5 strates qui suivent la côte avec des boucles, baies et lobes (pas d'anneaux parallèles réguliers) ; lettres ITALIA blanches surélevées et inclinées SUR la terre ; ornements dorés aux angles ; petite étagère décorative en haut à droite. Contours très lisses (pas d'escalier visible).
+## B — Atlas Natural (UK)
+Cadre brun foncé (≈ 86,78,70) à coins dorés ; mer en mosaïque de carreaux bleu clair (≈ 165,195,223), blanc (≈ 227,226,224) et bleu-gris, avec un coin bleu profond ; terre en plaques vertes (≈ 67,148,90 ; 39,109,64 ; 26,59,39) empilées avec tenons visibles, reliefs olive (≈ 137,136,94) et bruns ; ancre, gouvernail, bateau, plaque « United Kingdom ».
+## Correspondance couleurs LEGO (ΔE00 aux valeurs Rebrickable, pièces tuile+plaque cataloguées)
+terre A → Medium Nougat 84 (ΔE ≈ 5) ; crème → Tan 19 (≈ 2) ; **menthe/turquoise → aucune couleur bien cataloguée** : Sand Green 378 (ΔE 16-17) et Light Aqua 323 (18-23) sont les plus proches ; Aqua 118 (ΔE 11) n'existe presque pas en tuiles/plaques (≤ 2 sets). Or → Pearl Gold 297 (≈ 4). Style B : Green 2 (≈ 8-11), Dark Green 288 (≈ 6), Bright Light Blue 212 (≈ 5), Dark Tan 28 (≈ 11), Reddish Brown 70 (≈ 12).

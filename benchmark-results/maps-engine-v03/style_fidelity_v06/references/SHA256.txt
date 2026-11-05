@@ -1,0 +1,2 @@
+bd1e7d5419938b6f1eb91225161fd1d431298a0624046d6cfed885e3db8f1fd8  references/ref_A_italia_prestige.webp
+0945098d50abb2f92f5da9047b7ac58fed86dde960a6c1b052b3b88ca11eb777  references/ref_B_atlas_natural_UK.webp
