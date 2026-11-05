@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Indicative fragility audit of a diorama (NOT a physical proof) from the engine-1 joint graph (validate_v4 dump) : stud joints per part, single-stud parts split into
+"""[fast variant : identical output, no per-node graph copy] Indicative fragility audit of a diorama (NOT a physical proof) from the engine-1 joint graph (validate_v4 dump) : stud joints per part, single-stud parts split into
 decorative leaves vs load-carrying, articulation points, and the mass (0.10 g per stud*stud*plate, same convention as the validator) cut off from the base if one part fails.
 usage: fragility.py FOLDER"""
 import json, os, pickle, subprocess, sys, tempfile
@@ -23,13 +23,13 @@ def fam(o):
     for k in ("tree_sturdy", "tree_slim", "bush", "boulder", "relief_plate", "beach", "colosseum_arcade", "colosseum_wall", "colosseum_attic", "colosseum_cornice", "colosseum_cavea", "colosseum_hypogeum", "plaza", "mountain_slope", "mountain", "backing", "sea"):
         if r.startswith(k): return k
     return r
-def subtree_mass(i):          # mass of parts that lose every path to the base if part i is removed
-    H = G.copy(); H.remove_node(i); seen = set(); stack = [g for g in ground if g != i and g in H]; seen.update(stack)
+def subtree_mass(i):          # mass of parts that lose every path to the base if part i is removed (BFS that skips i : no graph copy -> same result, much faster)
+    seen = {g for g in ground if g != i}; stack = list(seen)
     while stack:
         u = stack.pop()
-        for v in H[u]:
-            if v not in seen: seen.add(v); stack.append(v)
-    lost = [v for v in H if v not in seen]; return len(lost), sum(mass[v] for v in lost)
+        for v in G._adj[u]:
+            if v != i and v not in seen: seen.add(v); stack.append(v)
+    lost = [v for v in range(n) if v != i and v not in seen]; return len(lost), sum(mass[v] for v in lost)
 single = [i for i in range(n) if dj[i] == 1 and order[i]["y"] > 0]; fams = defaultdict(lambda: Counter())
 for i in range(n):
     f = fam(order[i]); fams[f]["parts"] += 1
