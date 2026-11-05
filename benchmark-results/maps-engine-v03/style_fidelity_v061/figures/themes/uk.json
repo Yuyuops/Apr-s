@@ -1,0 +1,21 @@
+{
+ "theme": "uk",
+ "label": "Royaume-Uni",
+ "set_name_regex": [
+  "\\bUnited Kingdom\\b",
+  "\\bBritish\\b",
+  "\\bGreat Britain\\b"
+ ],
+ "indirect_set_name_regex": [
+  "\\bLondon\\b",
+  "\\bBig Ben\\b",
+  "\\bBuckingham\\b",
+  "\\bEdinburgh\\b",
+  "\\bScotland\\b",
+  "\\bWindsor\\b"
+ ],
+ "theme_name_regex": [],
+ "figure_name_regex": [
+  "\\bBeefeater\\b"
+ ]
+}

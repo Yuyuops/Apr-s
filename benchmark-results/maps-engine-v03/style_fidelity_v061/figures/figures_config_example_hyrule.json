@@ -1,0 +1,5 @@
+{"_doc": "Example : Hyrule picture with catalogued Zelda figures chosen by id from figures/results/hyrule_candidates.json. The Hyrule map itself is not generated.", "variants": [
+ {"name": "sans_figurines", "figures": {"enabled": false, "mode": "off", "theme": "hyrule", "selected": []}},
+ {"name": "etagere", "figures": {"enabled": true, "mode": "shelf", "theme": "hyrule", "selected": ["fig-015497", "fig-015500", "fig-017467"], "support_build": true}},
+ {"name": "cadre", "figures": {"enabled": true, "mode": "frame", "theme": "hyrule", "selected": ["fig-015499"]}},
+ {"name": "zone_libre", "figures": {"enabled": true, "mode": "free_zone", "theme": "hyrule", "selected": ["fig-015498", "fig-017466"], "allow_overlap_with_geography": false}}]}

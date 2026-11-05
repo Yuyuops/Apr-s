@@ -1,8 +1,0 @@
-{"_doc": "Example only : a Hyrule picture with optional characters. The Hyrule map itself is NOT generated in V0.6.1 ; the hyrule catalogue contains placeholders (status to_create), so the module will REJECT every figure until recipes/models exist and are verified.",
- "composition": {"territory": "fictional : Hyrule (to be drawn)", "grid_studs": [96, 64]},
- "variants": [
-   {"name": "hyrule_sans_personnages", "figures": {"enabled": false, "mode": "off", "theme": "hyrule"}},
-   {"name": "hyrule_etagere", "figures": {"enabled": true, "mode": "shelf", "theme": "hyrule", "max_count": 4, "scale": "micro", "placement": "automatic", "allow_overlap_with_geography": false}},
-   {"name": "hyrule_cadre", "figures": {"enabled": true, "mode": "frame", "theme": "hyrule", "max_count": 2, "scale": "nano", "placement": "automatic"}},
-   {"name": "hyrule_sur_carte", "figures": {"enabled": true, "mode": "on_map", "theme": "hyrule", "max_count": 3, "scale": "micro", "placement": "automatic", "allow_overlap_with_geography": false}}
- ]}

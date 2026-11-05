@@ -1,0 +1,19 @@
+{
+ "theme": "italy",
+ "label": "Italie",
+ "_doc": "search rules only (no figure is described here). strong = the set NAME contains a country word ; indirect = the set NAME contains a city/landmark word only (cultural relevance to be judged on the photo) ; word-boundary regex.",
+ "set_name_regex": [
+  "\\bItaly\\b",
+  "\\bItalian\\b"
+ ],
+ "indirect_set_name_regex": [
+  "\\bRome\\b",
+  "\\bColosseum\\b",
+  "\\bPisa\\b",
+  "\\bVenice\\b",
+  "\\bVenezia\\b",
+  "\\bMilan\\b"
+ ],
+ "theme_name_regex": [],
+ "figure_name_regex": []
+}

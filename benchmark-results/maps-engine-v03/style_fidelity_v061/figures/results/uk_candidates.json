@@ -1,0 +1,343 @@
+{
+ "theme": "uk",
+ "label": "Royaume-Uni",
+ "n": 9,
+ "verdict": "9 figurine(s) catalogue(es)",
+ "sources": {
+  "rebrickable_catalogue": "local snapshot rb.db, lov=[('8',), ('1793543538',)]",
+  "bricklink": {
+   "url": "https://www.bricklink.com/catalogList.asp?catType=M",
+   "http": 405,
+   "used": false
+  },
+  "lego_official": {
+   "url": "https://www.lego.com/",
+   "http": 403,
+   "used": false
+  },
+  "rebrickable_site": {
+   "http": 403,
+   "used": false
+  }
+ },
+ "candidates": [
+  {
+   "fig_num": "fig-001274",
+   "name": "Captain Jack Sparrow with Tricorne",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-001274.jpg",
+   "sets": [
+    {
+     "set_num": "4195-1",
+     "name": "Queen Anne's Revenge",
+     "year": 2011
+    },
+    {
+     "set_num": "30131-1",
+     "name": "Jack Sparrow's Boat",
+     "year": 2011
+    },
+    {
+     "set_num": "4194-1",
+     "name": "Whitecap Bay",
+     "year": 2011
+    },
+    {
+     "set_num": "4193-1",
+     "name": "The London Escape",
+     "year": 2011
+    },
+    {
+     "set_num": "880033-1",
+     "name": "Armor Case Kit for Nintendo DSi - Pirates of the Caribbean",
+     "year": 2011
+    }
+   ],
+   "match": [
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)",
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)",
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-001274/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-001274.jpg"
+  },
+  {
+   "fig_num": "fig-005817",
+   "name": "Coachman",
+   "parts": 5,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-005817.jpg",
+   "sets": [
+    {
+     "set_num": "4193-1",
+     "name": "The London Escape",
+     "year": 2011
+    }
+   ],
+   "match": [
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)",
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)",
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-005817/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-005817.jpg"
+  },
+  {
+   "fig_num": "fig-005784",
+   "name": "Joshamee Gibbs",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-005784.jpg",
+   "sets": [
+    {
+     "set_num": "4193-1",
+     "name": "The London Escape",
+     "year": 2011
+    },
+    {
+     "set_num": "4184-1",
+     "name": "Black Pearl",
+     "year": 2011
+    }
+   ],
+   "match": [
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)",
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)",
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-005784/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-005784.jpg"
+  },
+  {
+   "fig_num": "fig-005798",
+   "name": "King George's Officer",
+   "parts": 6,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-005798.jpg",
+   "sets": [
+    {
+     "set_num": "4193-1",
+     "name": "The London Escape",
+     "year": 2011
+    },
+    {
+     "set_num": "853219-1",
+     "name": "Pirates of the Caribbean Battle Pack",
+     "year": 2011
+    }
+   ],
+   "match": [
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)",
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)",
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-005798/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-005798.jpg"
+  },
+  {
+   "fig_num": "fig-005818",
+   "name": "King George's Soldier",
+   "parts": 5,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-005818.jpg",
+   "sets": [
+    {
+     "set_num": "4193-1",
+     "name": "The London Escape",
+     "year": 2011
+    }
+   ],
+   "match": [
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)",
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)",
+    "set 4193-1 : The London Escape (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-005818/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-005818.jpg"
+  },
+  {
+   "fig_num": "fig-013679",
+   "name": "Peter Pan",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-013679.jpg",
+   "sets": [
+    {
+     "set_num": "43212-1",
+     "name": "Disney Celebration Train",
+     "year": 2023
+    },
+    {
+     "set_num": "43232-1",
+     "name": "Peter Pan & Wendy's Flight over London",
+     "year": 2023
+    }
+   ],
+   "match": [
+    "set 43232-1 : Peter Pan & Wendy's Flight over London (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-013679/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-013679.jpg"
+  },
+  {
+   "fig_num": "fig-013671",
+   "name": "Tinker Bell, Large Wings",
+   "parts": 5,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-013671.jpg",
+   "sets": [
+    {
+     "set_num": "43212-1",
+     "name": "Disney Celebration Train",
+     "year": 2023
+    },
+    {
+     "set_num": "43232-1",
+     "name": "Peter Pan & Wendy's Flight over London",
+     "year": 2023
+    }
+   ],
+   "match": [
+    "set 43232-1 : Peter Pan & Wendy's Flight over London (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-013671/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-013671.jpg"
+  },
+  {
+   "fig_num": "fig-014344",
+   "name": "Wendy Darling - Minifig",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-014344.jpg",
+   "sets": [
+    {
+     "set_num": "43232-1",
+     "name": "Peter Pan & Wendy's Flight over London",
+     "year": 2023
+    }
+   ],
+   "match": [
+    "set 43232-1 : Peter Pan & Wendy's Flight over London (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-014344/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-014344.jpg"
+  },
+  {
+   "fig_num": "fig-000775",
+   "name": "White Torso, Blue Overall, Red Cap, Male (3626c Head)",
+   "parts": 4,
+   "image_url": "https://cdn.rebrickable.com/media/sets/fig-000775.jpg",
+   "sets": [
+    {
+     "set_num": "40081-4",
+     "name": "LEGOLAND Picture Frame - Malaysia Edition",
+     "year": 2013
+    },
+    {
+     "set_num": "40081-5",
+     "name": "LEGOLAND Picture Frame - Windsor Edition",
+     "year": 2013
+    },
+    {
+     "set_num": "40081-2",
+     "name": "LEGOLAND Picture Frame - Deutschland Edition",
+     "year": 2013
+    },
+    {
+     "set_num": "40081-1",
+     "name": "LEGOLAND Picture Frame - Florida Edition",
+     "year": 2013
+    },
+    {
+     "set_num": "40081-3",
+     "name": "LEGOLAND Picture Frame - Billund Edition",
+     "year": 2013
+    },
+    {
+     "set_num": "40081-6",
+     "name": "LEGOLAND Picture Frame - California Edition",
+     "year": 2013
+    }
+   ],
+   "match": [
+    "set 40081-5 : LEGOLAND Picture Frame - Windsor Edition (city/landmark word in the set name only)"
+   ],
+   "relevance": "indirect",
+   "note": "relevance by set name only : judge the cultural fit on the photo",
+   "rebrickable_page": "https://rebrickable.com/minifigs/fig-000775/",
+   "rebrickable_page_note": "standard URL pattern of the catalogue ; page itself not fetched (site returns 403 to this environment)",
+   "dimensions": "taille minifigurine standard : emprise 2x2 tenons, hauteur ~4 cm (valeur generique de la gamme, NON mesuree sur cette reference)",
+   "availability": "non verifie",
+   "price": null,
+   "lego_official_id": null,
+   "bricklink_id": null,
+   "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)",
+   "image_file": "cache/images/fig-000775.jpg"
+  }
+ ]
+}

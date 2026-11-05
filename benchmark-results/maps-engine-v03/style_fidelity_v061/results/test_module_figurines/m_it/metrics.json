@@ -1,0 +1,209 @@
+{
+ "height_plates": 24,
+ "pieces": 4419,
+ "references": 99,
+ "size_studs": [
+  48,
+  48
+ ],
+ "physical_size_mm": [
+  384,
+  384
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "6c7d30b415da1fb25225670a344edfb94794b80003f1884e1cec3a86e9c7b180",
+ "style": "italia_prestige",
+ "composition": "local test window littoral_adriatique",
+ "grid_studs": [
+  40,
+  40
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "2": 368,
+  "3": 301,
+  "4": 347,
+  "5": 584
+ },
+ "rounded_corners": 108,
+ "rare_colour_fallback_cells": 36,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "figures": {
+  "config": {
+   "enabled": true,
+   "mode": "shelf",
+   "theme": "italy",
+   "selected": [
+    "fig-016702",
+    "fig-018222"
+   ],
+   "support_build": true,
+   "allow_overlap_with_geography": false
+  },
+  "selected": [
+   {
+    "fig_num": "fig-016702",
+    "name": "Gelato Seller, White Torso, White Legs, Dark Orange Hair",
+    "sets": [
+     "21359-1"
+    ],
+    "image": "cache/images/fig-016702.jpg",
+    "availability": "non verifie",
+    "price": null,
+    "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)"
+   },
+   {
+    "fig_num": "fig-018222",
+    "name": "Pizzaria Waiter, White Torso, Warm Pink Legs",
+    "sets": [
+     "40909-1"
+    ],
+    "image": "cache/images/fig-018222.jpg",
+    "availability": "non verifie",
+    "price": null,
+    "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)"
+   }
+  ],
+  "rejected": [],
+  "proposals": [
+   {
+    "zone": "top-right",
+    "accepted": true,
+    "support_needed": "studded plates (shelf) clipped on studs of the picture",
+    "slots": [
+     [
+      0,
+      [
+       2,
+       2
+      ]
+     ],
+     [
+      1,
+      [
+       2,
+       2
+      ]
+     ]
+    ],
+    "size_studs": [
+     4,
+     7
+    ],
+    "reasons": [],
+    "constructibility": "support : checkable in LDraw (real plates) ; figure : 3D model unavailable -> NOT validated"
+   },
+   {
+    "zone": "top-left",
+    "accepted": true,
+    "support_needed": "studded plates (shelf) clipped on studs of the picture",
+    "slots": [
+     [
+      0,
+      [
+       2,
+       2
+      ]
+     ],
+     [
+      1,
+      [
+       2,
+       2
+      ]
+     ]
+    ],
+    "size_studs": [
+     4,
+     7
+    ],
+    "reasons": [],
+    "constructibility": "support : checkable in LDraw (real plates) ; figure : 3D model unavailable -> NOT validated"
+   },
+   {
+    "zone": "bottom-right",
+    "accepted": true,
+    "support_needed": "studded plates (shelf) clipped on studs of the picture",
+    "slots": [
+     [
+      0,
+      [
+       2,
+       2
+      ]
+     ],
+     [
+      1,
+      [
+       2,
+       2
+      ]
+     ]
+    ],
+    "size_studs": [
+     4,
+     7
+    ],
+    "reasons": [],
+    "constructibility": "support : checkable in LDraw (real plates) ; figure : 3D model unavailable -> NOT validated"
+   },
+   {
+    "zone": "bottom-left",
+    "accepted": true,
+    "support_needed": "studded plates (shelf) clipped on studs of the picture",
+    "slots": [
+     [
+      0,
+      [
+       2,
+       2
+      ]
+     ],
+     [
+      1,
+      [
+       2,
+       2
+      ]
+     ]
+    ],
+    "size_studs": [
+     4,
+     7
+    ],
+    "reasons": [],
+    "constructibility": "support : checkable in LDraw (real plates) ; figure : 3D model unavailable -> NOT validated"
+   }
+  ],
+  "status": "placement proposed (support dimensions and studs checked ; figure 3D integration NOT validated)",
+  "chosen_anchor": "top-right",
+  "support": {
+   "row": 3,
+   "col": 30,
+   "size": [
+    4,
+    7
+   ],
+   "level": 2,
+   "note": "empty shelf of real plates ; the studs of the shelf are where each minifigure would stand ; no figure model added"
+  }
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 271,
+   "single_owner_pieces_above": 18
+  },
+  {
+   "layer": 0,
+   "plates": 309,
+   "single_owner_pieces_above": 24
+  }
+ ]
+}

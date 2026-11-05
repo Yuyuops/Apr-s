@@ -1,0 +1,98 @@
+{
+ "height_plates": 24,
+ "pieces": 4430,
+ "references": 94,
+ "size_studs": [
+  48,
+  48
+ ],
+ "physical_size_mm": [
+  384,
+  384
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "46088fe40a21c41a3970a469404c0e88496f403326891087f3c133599a50a629",
+ "style": "italia_prestige",
+ "composition": "local test window littoral_adriatique",
+ "grid_studs": [
+  40,
+  40
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "2": 368,
+  "3": 301,
+  "4": 347,
+  "5": 584
+ },
+ "rounded_corners": 108,
+ "rare_colour_fallback_cells": 36,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "figures": {
+  "config": {
+   "enabled": true,
+   "mode": "frame",
+   "theme": "hyrule",
+   "selected": [
+    "fig-015499"
+   ]
+  },
+  "selected": [
+   {
+    "fig_num": "fig-015499",
+    "name": "Link, Breath of the Wild",
+    "sets": [
+     "77092-1"
+    ],
+    "image": "cache/images/fig-015499.jpg",
+    "availability": "non verifie",
+    "price": null,
+    "model_3d": "aucun modele LDraw exact dans ce depot : integration 3D NON validee (aucun modele fabrique)"
+   }
+  ],
+  "rejected": [],
+  "proposals": [
+   {
+    "zone": "frame",
+    "accepted": false,
+    "support_needed": "studded plates (shelf) clipped on studs of the picture",
+    "slots": [
+     [
+      0,
+      [
+       2,
+       2
+      ]
+     ]
+    ],
+    "size_studs": [
+     4,
+     4
+    ],
+    "reasons": [
+     "frame cap is made of smooth tiles (no studs) and 4 studs wide : a studded section would have to be added ; not implemented"
+    ],
+    "constructibility": "rejected"
+   }
+  ],
+  "status": "frame mode : proposal rejected (see proposals)"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 318,
+   "single_owner_pieces_above": 14
+  },
+  {
+   "layer": 0,
+   "plates": 314,
+   "single_owner_pieces_above": 39
+  }
+ ]
+}
