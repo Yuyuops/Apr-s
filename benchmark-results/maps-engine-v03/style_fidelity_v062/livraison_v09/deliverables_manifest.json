@@ -28,5 +28,10 @@
   "pieces": 2658,
   "references": 101,
   "ldr_sha256": "35d8ae4e3ee59f1dc16306a0388f9564576fe915eff249ec8253662baa96545b"
+ },
+ "hyrule": {
+  "pieces": 16721,
+  "references": 99,
+  "ldr_sha256": "721b8573b1e0d0a15abc8d172340ec29b9b544710bed51801d6e29337dd5b958"
  }
 }

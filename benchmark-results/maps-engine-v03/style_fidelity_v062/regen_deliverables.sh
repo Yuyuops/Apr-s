@@ -12,6 +12,16 @@ for k in italia ecosse japon royaume_uni; do d="$OUT/$k"; mkdir -p "$d"
   [ $PDF = 1 ] && $PY make_step_pdf.py "$d" "$d/notice_pas_a_pas.pdf" >/dev/null
   $PY check_delivery.py "$d"
 done
+# Hyrule visual demonstrator (NOT part of the geographic validation) : built from the committed land/sea/desert mask derived from a user-supplied render (see livraison_v09/HYRULE_SHOWCASE.md)
+d="$OUT/hyrule"; mkdir -p "$d"; $PY build_style.py styles/premium_noyer_or_lagon_hyrule.json compositions/hyrule_80x80.json "$d" --flank vertical >/dev/null
+$PY check_render.py "$d" --no-render >/dev/null; $PY verify_bom.py "$d" >/dev/null; $PY fragility.py "$d" >/dev/null; $PY notice_steps.py "$d" >/dev/null
+$PY - "$d" <<'PY3'
+import json, sys
+d = sys.argv[1]; json.dump({"face": dict(box=[0, 0, 88, 88], h=28, az=0, el=89, w=1100, hpx=1100, zoom=0.92), "trois_quarts": dict(box=[0, 0, 88, 88], h=28, az=20, el=38, w=1300, hpx=950, zoom=0.8), "zoom": dict(box=[30, 40, 70, 88], h=28, az=25, el=34, w=1200, hpx=900, zoom=0.6)}, open(d + "/views.json", "w"))
+PY3
+[ $RENDER = 1 ] && $PY render_views.py "$d" "$d/views.json" >/dev/null
+[ $PDF = 1 ] && $PY make_step_pdf.py "$d" "$d/notice_pas_a_pas.pdf" >/dev/null
+$PY check_delivery.py "$d"
 # reduced prototypes : stand-alone engine windows (same style, same studs per degree as the 64x96 cards, own frame) : A = coast + 5 strata levels + islets, B = frame + medallions + title
 $PY build_style.py styles/premium_noyer_or_lagon_c2i.json compositions/proto_a_eolie_36x36.json "$OUT/protoA_littoral" --flank vertical >/dev/null; $PY build_style.py styles/premium_noyer_or_lagon_c2i.json compositions/proto_b_titre_24x48.json "$OUT/protoB_cadre_titre" --flank vertical >/dev/null
 for p in protoA_littoral protoB_cadre_titre; do d="$OUT/$p"; $PY check_render.py "$d" --no-render >/dev/null; $PY verify_bom.py "$d" >/dev/null; $PY fragility.py "$d" >/dev/null; $PY notice_steps.py "$d" >/dev/null; $PY check_delivery.py "$d"
@@ -25,7 +35,7 @@ PY2
 $PY - "$OUT" <<'PY'
 import hashlib, json, sys, os
 o = sys.argv[1]; m = {}
-for k in ("italia", "ecosse", "japon", "royaume_uni", "protoA_littoral", "protoB_cadre_titre"):
+for k in ("italia", "ecosse", "japon", "royaume_uni", "hyrule", "protoA_littoral", "protoB_cadre_titre"):
     d = json.load(open(f"{o}/{k}/metrics.json")); m[k] = dict(pieces=d["pieces"], references=d["references"], ldr_sha256=hashlib.sha256(open(f"{o}/{k}/diorama.ldr", "rb").read()).hexdigest())
 json.dump(m, open(f"{o}/deliverables_manifest.json", "w"), indent=1); print(json.dumps(m))
 PY

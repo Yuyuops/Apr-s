@@ -28,4 +28,4 @@ Le job échoue si un contrôle échoue. Déclencheurs : push sur la branche (fic
 - **Limites honnêtes** : (1) les artefacts expirent après 30 jours : il faudra relancer la CI ou la commande ; (2) **les 4 PDF V0.8 (≈ 76 Mo) restent dans l'historique Git** de la branche V0.8, car la consigne interdit de réécrire l'historique : le dépôt les porte toujours ; (3) je n'ai pas mis en place Git LFS (non configuré).
 
 ## Ce que la CI ne couvre pas
-Essais physiques, stock, prix ; notation artistique (jugement humain) ; lisibilité réelle des PDF ; régression visuelle pixel à pixel ; module figurines (isolé) ; Hyrule (pas de source).
+Essais physiques, stock, prix ; notation artistique (jugement humain) ; lisibilité réelle des PDF ; régression visuelle pixel à pixel ; module figurines (isolé) ; la validité géographique de Hyrule (démonstrateur ; la CI le reconstruit depuis le masque versionné mais n'en juge pas le rendu).

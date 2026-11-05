@@ -52,7 +52,7 @@ class Builder:
                 self.subj, self.forn = subj, forn; self.info["levels_histogram"] = {int(a): int(b) for a, b in zip(*np.unique(self.lev, return_counts=True))}
             self.info["islets_forced_to_one_stud"] = forced
             self.info["island_audit"] = dict(source_components_ge_quarter_stud2=int(big.sum()), represented=int((big & kept).sum()), not_representable_lost=int((big & ~kept).sum()) - len(forced), lost_areas_stud2=[round(float(a) / (sub * sub), 2) for a in area[big & ~kept]][:40],
-                                           note="source = Natural Earth raster at %d px/stud ; a component is represented if at least one stud of the subject land covers it" % sub)
+                                           note="source raster (Natural Earth or user-supplied mask) at %d px/stud ; a component is represented if at least one stud of the subject land covers it" % sub)
     def colour_of_level(self, k, kind="wall"):
         pl = self.pal
         if k == 0: return pl.get("floor_wall", pl["floor"]) if kind == "wall" else pl["floor"]
@@ -240,7 +240,9 @@ class Builder:
         for r0 in range(self.R - H - 2, 1, -1):
             for c0 in range(3, self.C - W - 3):
                 sl = (slice(r0 - 1, r0 + H + 1), slice(c0 - 1, c0 + W + 1))
-                if self.subj[sl].any() or self.taken[r0:r0 + H, c0:c0 + W].any() or (t.get('on_foreign_land', True) is False and self.forn[sl].any()): continue
+                if t.get("allow_subject_land"):      # no free flat zone on small maps : letters may stand on the subject land (zone must be entirely land, nothing else is touched)
+                    if (not self.subj[sl].all()) or self.taken[r0:r0 + H, c0:c0 + W].any(): continue
+                elif self.subj[sl].any() or self.taken[r0:r0 + H, c0:c0 + W].any() or (t.get('on_foreign_land', True) is False and self.forn[sl].any()): continue
                 a = self.st["title"]["anchor"]; tgt = ((0 if "top" in a else self.R), 0 if "left" in a else self.C / 2 if "centre" in a else self.C); score = math.hypot(r0 + H / 2 - tgt[0], c0 + W / 2 - tgt[1]) + 3 * float(np.ptp(self.lev[sl]))
                 if best is None or score < best[0]: best = (score, r0, c0)
         if not best: self.info["title"] = "no flat sea zone found"; return

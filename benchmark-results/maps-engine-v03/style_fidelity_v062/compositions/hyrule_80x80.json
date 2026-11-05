@@ -1,0 +1,9 @@
+{
+ "_doc": "Hyrule (d\u00e9monstrateur visuel, hors validation g\u00e9ographique) : masque terre/mer/d\u00e9sert issu d'un rendu oblique fourni par l'utilisateur, rectifi\u00e9 en perspective ; voir HYRULE_SHOWCASE.md",
+ "mask_png": "compositions/hyrule_mask_80x80.png",
+ "grid_studs": [
+  80,
+  80
+ ],
+ "sub": 8
+}
