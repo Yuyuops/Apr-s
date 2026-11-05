@@ -1,0 +1,32 @@
+{
+ "italia": {
+  "pieces": 13633,
+  "references": 111,
+  "ldr_sha256": "17d9bdc60637614404494517c1736906ec238b1310257f2f9563d7c750cd776f"
+ },
+ "ecosse": {
+  "pieces": 13676,
+  "references": 103,
+  "ldr_sha256": "84c47d383ea04cabfd4827695eaca6a80fd7abb9b646d0275767bab3627ae659"
+ },
+ "japon": {
+  "pieces": 11477,
+  "references": 110,
+  "ldr_sha256": "ac3134cdb3e9afa1c250727d74f7dfc636628c15f15acc0fd66166f4bb1c167b"
+ },
+ "royaume_uni": {
+  "pieces": 13228,
+  "references": 105,
+  "ldr_sha256": "3abcc72e41987a74d0f00890f39a1f13bb58fe46f0aca9c21598633fb3eec9f6"
+ },
+ "protoA_littoral": {
+  "pieces": 2186,
+  "references": 61,
+  "ldr_sha256": "0275a3cb2f87b4f6b69313f498d6df1d5651e00a7d7777629dd290e09ce0f3fa"
+ },
+ "protoB_cadre_titre": {
+  "pieces": 1401,
+  "references": 65,
+  "ldr_sha256": "4b0a3bc806e3ede29225a660c983e886fc875adec857bd65d7ffedff1e1f501f"
+ }
+}

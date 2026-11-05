@@ -1,0 +1,112 @@
+{
+ "note": "indicative only : rigid parts, 1.0 N clutch per stud assumed by the validator, NO physical test",
+ "parts": 2186,
+ "joints_total": 12992,
+ "parts_hanging_by_one_stud": 60,
+ "one_stud_decorative_leaves": 32,
+ "one_stud_and_carrying": 28,
+ "articulation_points_with_loss": 45,
+ "worst_single_failure": {
+  "family": "strata_body",
+  "part_id": 1344,
+  "parts_cut_off": 4,
+  "mass_cut_off_g": 1.2
+ },
+ "families": {
+  "backing": {
+   "parts": 583,
+   "hangs_by_two_studs": 15,
+   "hangs_by_one_stud": 2,
+   "hangs_by_one_stud_and_carries": 2
+  },
+  "strata_body": {
+   "parts": 1512,
+   "hangs_by_two_studs": 82,
+   "hangs_by_one_stud": 26,
+   "hangs_by_one_stud_and_carries": 26
+  },
+  "top_corner_round": {
+   "parts": 20,
+   "hangs_by_one_stud": 20,
+   "hangs_by_one_stud_decorative_leaf": 20
+  },
+  "top_tile": {
+   "parts": 71,
+   "hangs_by_two_studs": 21,
+   "hangs_by_one_stud": 12,
+   "hangs_by_one_stud_decorative_leaf": 12
+  }
+ },
+ "failure_by_family": {
+  "strata_body": {
+   "articulation_points": 45,
+   "max_parts_cut_off": 6,
+   "max_mass_cut_off_g": 1.2
+  }
+ },
+ "colosseum_one_stud_thick_wall_pieces": 0,
+ "ap_leaf_isolating_one_part": 24,
+ "ap_cascade_two_or_more": 21,
+ "ap_cascade_mass_sum_g": 8.5,
+ "ap_by_class": {
+  "other": {
+   "ap": 45,
+   "leaf": 24,
+   "cascade": 21,
+   "max_mass": 1.2
+  }
+ },
+ "worst_10": [
+  {
+   "family": "strata_body",
+   "parts_cut_off": 4,
+   "mass_g": 1.2
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 6,
+   "mass_g": 0.9
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 5,
+   "mass_g": 0.6
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 4,
+   "mass_g": 0.6
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 2,
+   "mass_g": 0.5
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 2,
+   "mass_g": 0.5
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 1,
+   "mass_g": 0.4
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 1,
+   "mass_g": 0.4
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 1,
+   "mass_g": 0.4
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 1,
+   "mass_g": 0.4
+  }
+ ],
+ "total_mass_g": 1509.3
+}

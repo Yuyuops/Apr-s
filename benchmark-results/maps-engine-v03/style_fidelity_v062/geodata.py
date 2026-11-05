@@ -32,3 +32,11 @@ def rasterise(window, grid, subject_iso, sub=8):
             for i, ring in enumerate(poly): d.polygon([to_px(lo, la) for lo, la in ring], fill=255 if i == 0 else 0)
     S = np.asarray(subj) > 127; Fo = np.asarray(forn) > 127; Fo &= ~S
     return dict(subject=S, foreign=Fo, studs_per_deg_lat=spd, k=k, bbox=[lon0, lat0, lon1, lat1], to_lonlat=lambda r, c: (window["lon_c"] + (c - C / 2) / (k * spd), window["lat_c"] - (r - R / 2) / spd))
+
+
+def rasterise_mask(path, grid, sub=8, subject_min=192, foreign_min=64):
+    """Generic raster source (any fictional or real territory drawn as an image) : grey-level PNG/JPG, >= subject_min = subject land, [foreign_min, subject_min) = foreign land, below = sea.
+    The image is resampled to the board at sub-stud resolution ; no geography is created here, the caller must document where the image comes from."""
+    R, C = grid; im = Image.open(path).convert("L").resize((C * sub, R * sub), Image.LANCZOS); a = np.asarray(im)
+    S = a >= subject_min; Fo = (a >= foreign_min) & ~S
+    return dict(subject=S, foreign=Fo, studs_per_deg_lat=None, k=None, bbox=None, to_lonlat=None)

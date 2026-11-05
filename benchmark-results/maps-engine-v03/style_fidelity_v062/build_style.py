@@ -27,7 +27,7 @@ class Builder:
         self.S = Scene(self.R + 2 * self.F, self.C + 2 * self.F); self.S.tops[2] = {(a, b) for a in range(self.R + 2 * self.F) for b in range(self.C + 2 * self.F)}; self.y0 = 2
     # ---------- levels
     def make_levels(self):
-        geo = geodata.rasterise(self.cp["window"], (self.R, self.C), self.cp["territory_iso"], self.cp.get("sub", 8)); p = dict(self.rel); p["strata_widths"] = self.rel["sea_strata_widths_studs"]
+        geo = (geodata.rasterise_mask(os.path.join(HERE, self.cp["mask_png"]) if not os.path.isabs(self.cp["mask_png"]) else self.cp["mask_png"], (self.R, self.C), self.cp.get("sub", 8)) if self.cp.get("mask_png") else geodata.rasterise(self.cp["window"], (self.R, self.C), self.cp["territory_iso"], self.cp.get("sub", 8))); p = dict(self.rel); p["strata_widths"] = self.rel["sea_strata_widths_studs"]
         if not p["strata_widths"]: p["strata_widths"] = [0.0001]; flat_sea = True
         else: flat_sea = False
         p["foreign_level"] = self.rel["foreign_level"]; lev, cat = strata.levels_from_masks(geo, (self.R, self.C), p, self.cp.get("sub", 8)); lev = strata.smooth_levels(lev, 1)

@@ -1,0 +1,39 @@
+{
+ "height_plates": 24,
+ "pieces": 1401,
+ "references": 65,
+ "size_studs": [
+  72,
+  50
+ ],
+ "physical_size_mm": [
+  576,
+  400
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "4b0a3bc806e3ede29225a660c983e886fc875adec857bd65d7ffedff1e1f501f",
+ "source": "v08_map2_italia",
+ "window_rows": [
+  0,
+  50
+ ],
+ "window_cols": [
+  0,
+  72
+ ],
+ "requested_box": [
+  0,
+  14,
+  0,
+  40
+ ],
+ "grid_studs": [
+  50,
+  72
+ ],
+ "frame_studs": 0,
+ "style": "premium_noyer_or_lagon_c2i (V0.8 final)"
+}
