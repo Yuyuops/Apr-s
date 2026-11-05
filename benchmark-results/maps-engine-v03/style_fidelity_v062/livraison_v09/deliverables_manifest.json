@@ -20,13 +20,13 @@
   "ldr_sha256": "3abcc72e41987a74d0f00890f39a1f13bb58fe46f0aca9c21598633fb3eec9f6"
  },
  "protoA_littoral": {
-  "pieces": 2186,
-  "references": 61,
-  "ldr_sha256": "0275a3cb2f87b4f6b69313f498d6df1d5651e00a7d7777629dd290e09ce0f3fa"
+  "pieces": 3489,
+  "references": 85,
+  "ldr_sha256": "6545a26df2de7c4bac649c33f4b20a74aa4cb0839d3380c7616f40a72dba1447"
  },
  "protoB_cadre_titre": {
-  "pieces": 1401,
-  "references": 65,
-  "ldr_sha256": "4b0a3bc806e3ede29225a660c983e886fc875adec857bd65d7ffedff1e1f501f"
+  "pieces": 2658,
+  "references": 101,
+  "ldr_sha256": "35d8ae4e3ee59f1dc16306a0388f9564576fe915eff249ec8253662baa96545b"
  }
 }

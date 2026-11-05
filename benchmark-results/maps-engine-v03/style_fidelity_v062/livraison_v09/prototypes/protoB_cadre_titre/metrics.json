@@ -1,39 +1,71 @@
 {
  "height_plates": 24,
- "pieces": 1401,
- "references": 65,
+ "pieces": 2658,
+ "references": 101,
  "size_studs": [
-  72,
-  50
+  56,
+  32
  ],
  "physical_size_mm": [
-  576,
-  400
+  448,
+  256
  ],
  "max_height_mm": 76.8,
  "colour_substitutions": [],
  "physical_test": false,
  "stock_verified": false,
- "ldraw_sha256": "4b0a3bc806e3ede29225a660c983e886fc875adec857bd65d7ffedff1e1f501f",
- "source": "v08_map2_italia",
- "window_rows": [
-  0,
-  50
- ],
- "window_cols": [
-  0,
-  72
- ],
- "requested_box": [
-  0,
-  14,
-  0,
-  40
- ],
+ "ldraw_sha256": "35d8ae4e3ee59f1dc16306a0388f9564576fe915eff249ec8253662baa96545b",
+ "style": "premium_noyer_or_lagon_c2i",
+ "composition": "Prototype B (cadre + m\u00e9daillons + titre) : fen\u00eatre 24x48 ten",
  "grid_studs": [
-  50,
-  72
+  24,
+  48
  ],
- "frame_studs": 0,
- "style": "premium_noyer_or_lagon_c2i (V0.8 final)"
+ "frame_studs": 4,
+ "levels_histogram": {
+  "2": 893,
+  "4": 18,
+  "5": 241
+ },
+ "islets_forced_to_one_stud": [],
+ "island_audit": {
+  "source_components_ge_quarter_stud2": 1,
+  "represented": 1,
+  "not_representable_lost": 0,
+  "lost_areas_stud2": [],
+  "note": "source = Natural Earth raster at 8 px/stud ; a component is represented if at least one stud of the subject land covers it"
+ },
+ "title": {
+  "row": 2,
+  "col": 6,
+  "size": [
+   7,
+   35
+  ],
+  "level": 2
+ },
+ "rounded_corners": 23,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 248,
+   "single_owner_pieces_above": 8
+  },
+  {
+   "layer": 0,
+   "plates": 217,
+   "single_owner_pieces_above": 38
+  }
+ ]
 }

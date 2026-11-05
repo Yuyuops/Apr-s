@@ -1,0 +1,16 @@
+{
+ "_doc": "Prototype A (litoral + relief) : fen\u00eatre 36x36 tenons m\u00eame \u00e9chelle que le 64x96 (6,957 tenons/degr\u00e9) autour des \u00eeles \u00c9oliennes, du nord de la Sicile et de la pointe de Calabre.",
+ "territory_iso": [
+  "ITA"
+ ],
+ "window": {
+  "lat_c": 38.5,
+  "lon_c": 14.9,
+  "lat_span": 5.175
+ },
+ "grid_studs": [
+  36,
+  36
+ ],
+ "sub": 8
+}

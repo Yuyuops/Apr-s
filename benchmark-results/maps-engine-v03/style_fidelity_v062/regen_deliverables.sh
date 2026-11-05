@@ -12,9 +12,15 @@ for k in italia ecosse japon royaume_uni; do d="$OUT/$k"; mkdir -p "$d"
   [ $PDF = 1 ] && $PY make_step_pdf.py "$d" "$d/notice_pas_a_pas.pdf" >/dev/null
   $PY check_delivery.py "$d"
 done
-# reduced prototypes extracted from the final Italy model (A : coast + relief, B : frame + medallion + title)
-$PY extract_box.py "$OUT/italia" "$OUT/protoA_littoral" 68 84 40 56 "Prototype A littoral+relief" >/dev/null; $PY extract_box.py "$OUT/italia" "$OUT/protoB_cadre_titre" 0 14 0 40 "Prototype B cadre+medaillon+titre" >/dev/null
+# reduced prototypes : stand-alone engine windows (same style, same studs per degree as the 64x96 cards, own frame) : A = coast + 5 strata levels + islets, B = frame + medallions + title
+$PY build_style.py styles/premium_noyer_or_lagon_c2i.json compositions/proto_a_eolie_36x36.json "$OUT/protoA_littoral" --flank vertical >/dev/null; $PY build_style.py styles/premium_noyer_or_lagon_c2i.json compositions/proto_b_titre_24x48.json "$OUT/protoB_cadre_titre" --flank vertical >/dev/null
 for p in protoA_littoral protoB_cadre_titre; do d="$OUT/$p"; $PY check_render.py "$d" --no-render >/dev/null; $PY verify_bom.py "$d" >/dev/null; $PY fragility.py "$d" >/dev/null; $PY notice_steps.py "$d" >/dev/null; $PY check_delivery.py "$d"
+  $PY - "$d" <<'PY2'
+import json, sys
+d = sys.argv[1]; m = json.load(open(d + "/metrics.json")); R, C = m["grid_studs"]; H = m["height_plates"] + 4
+json.dump({"face": dict(box=[0, 0, R, C], h=H, az=0, el=89, w=1100, hpx=int(1100 * R / C) + 40, zoom=0.92), "trois_quarts": dict(box=[0, 0, R, C], h=H, az=20, el=38, w=1300, hpx=950, zoom=0.8), "zoom": dict(box=[0, 0, min(R, 30), min(C, 40)], h=H, az=25, el=34, w=1200, hpx=900, zoom=0.6)}, open(d + "/views.json", "w"))
+PY2
+  [ $RENDER = 1 ] && $PY render_views.py "$d" "$d/views.json" >/dev/null
   [ $PDF = 1 ] && $PY make_visual_notice.py "$d" "$d/notice_illustree.pdf" --jobs 4 >/dev/null; done
 $PY - "$OUT" <<'PY'
 import hashlib, json, sys, os

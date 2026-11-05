@@ -1,0 +1,16 @@
+{
+ "_doc": "Prototype B (cadre + m\u00e9daillons + titre) : fen\u00eatre 24x48 tenons en haut de la carte, m\u00eame \u00e9chelle que le 64x96.",
+ "territory_iso": [
+  "ITA"
+ ],
+ "window": {
+  "lat_c": 46.97,
+  "lon_c": 12.6,
+  "lat_span": 3.45
+ },
+ "grid_studs": [
+  24,
+  48
+ ],
+ "sub": 8
+}

@@ -1,39 +1,83 @@
 {
- "height_plates": 18,
- "pieces": 2186,
- "references": 61,
+ "height_plates": 24,
+ "pieces": 3489,
+ "references": 85,
  "size_studs": [
-  36,
-  88
+  44,
+  44
  ],
  "physical_size_mm": [
-  288,
-  704
+  352,
+  352
  ],
- "max_height_mm": 57.6,
+ "max_height_mm": 76.8,
  "colour_substitutions": [],
  "physical_test": false,
  "stock_verified": false,
- "ldraw_sha256": "0275a3cb2f87b4f6b69313f498d6df1d5651e00a7d7777629dd290e09ce0f3fa",
- "source": "v08_map2_italia",
- "window_rows": [
-  16,
-  104
- ],
- "window_cols": [
-  28,
-  64
- ],
- "requested_box": [
-  68,
-  84,
-  40,
-  56
- ],
+ "ldraw_sha256": "6545a26df2de7c4bac649c33f4b20a74aa4cb0839d3380c7616f40a72dba1447",
+ "style": "premium_noyer_or_lagon_c2i",
+ "composition": "Prototype A (litoral + relief) : fen\u00eatre 36x36 tenons m\u00eame \u00e9",
  "grid_studs": [
-  88,
+  36,
   36
  ],
- "frame_studs": 0,
- "style": "premium_noyer_or_lagon_c2i (V0.8 final)"
+ "frame_studs": 4,
+ "levels_histogram": {
+  "0": 19,
+  "1": 120,
+  "2": 273,
+  "3": 336,
+  "4": 264,
+  "5": 284
+ },
+ "islets_forced_to_one_stud": [
+  [
+   2,
+   12
+  ],
+  [
+   18,
+   18
+  ],
+  [
+   29,
+   2
+  ]
+ ],
+ "island_audit": {
+  "source_components_ge_quarter_stud2": 4,
+  "represented": 1,
+  "not_representable_lost": 0,
+  "lost_areas_stud2": [
+   0.3,
+   0.44,
+   0.45
+  ],
+  "note": "source = Natural Earth raster at 8 px/stud ; a component is represented if at least one stud of the subject land covers it"
+ },
+ "title": "no flat sea zone found",
+ "rounded_corners": 144,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 251,
+   "single_owner_pieces_above": 20
+  },
+  {
+   "layer": 0,
+   "plates": 275,
+   "single_owner_pieces_above": 29
+  }
+ ]
 }
