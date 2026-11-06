@@ -69,13 +69,15 @@ jobs:
   photos-to-lego:
     if: github.event_name == 'workflow_dispatch' && inputs.run_reconstruction || github.event_name == 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 30
     env:
       LEGO_ENGINE_HOME: ${{ github.workspace }}/benchmark-results/20_portable_engine
       LEGO_NODE_MODULES: ${{ github.workspace }}/benchmark-results/20_portable_engine/node_modules
       NODE_PATH: ${{ github.workspace }}/benchmark-results/20_portable_engine/node_modules
       PYTHONPATH: ${{ github.workspace }}/benchmark-results/lego-builder:${{ github.workspace }}/benchmark-results/maps-engine-v03/style_fidelity_v062
       LEGO_GRADIO_PATH: /tmp/gradio_site
+      LEGO_RECON_TIMEOUT: "480"
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -105,6 +107,7 @@ jobs:
           retention-days: 14
           path: |
             ${{ runner.temp }}/paco_photos/manifest.json
+            ${{ runner.temp }}/paco_photos/reconstruct.log
             ${{ runner.temp }}/paco_photos/derived/projection_couleurs.json
             ${{ runner.temp }}/paco_photos/model/diorama.ldr
             ${{ runner.temp }}/paco_photos/model/renders/*.png

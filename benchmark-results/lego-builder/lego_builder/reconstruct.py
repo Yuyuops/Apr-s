@@ -40,14 +40,16 @@ def reconstruct(views, outdir, name="subject", steps=30, octree=256, seed=1234, 
         else: to_white(st_rgba / ("%s_%s_rgba.png" % (name, k)), st_white / ("%s_%s_blanc.png" % (name, k)))
     if problems: return dict(report=rep, glb=None, problems=problems)
     e = env(); e.update(INDIR=str(st_white) + "/", SUF="blanc", EP="/shape_generation", PYTHONPATH=os.pathsep.join(filter(None, [e.get("PYTHONPATH", ""), e.get("LEGO_GRADIO_PATH", "")])))
-    shape_dir = out / "shape"; t0 = time.time(); last = ""
-    for attempt in range(3):
-        r = subprocess.run([PY, str(BR / "tools" / "hf_gen.py"), "tencent/Hunyuan3D-2mv", name, str(shape_dir), str(steps), str(octree)], env=e, capture_output=True, text=True)
-        if log: open(log, "a").write("$ hf_gen attempt %d\n%s%s\n" % (attempt + 1, r.stdout, r.stderr))
-        glbs = sorted(shape_dir.glob("*.glb")) if shape_dir.exists() else []
-        if r.returncode == 0 and glbs: break
-        last = (r.stdout + r.stderr)[-600:]; time.sleep(20 * (attempt + 1))
-    else: return dict(report=rep, glb=None, problems=["shape generation failed after 3 attempts (Hugging Face Space) : " + last])
+    shape_dir = out / "shape"; t0 = time.time(); last = ""; limit = int(os.environ.get("LEGO_RECON_TIMEOUT", "480")); from . import core      # hard limit per attempt : a queued or quota-limited Space must never block a run
+    for attempt in range(2):
+        try:
+            r = core.run([PY, str(BR / "tools" / "hf_gen.py"), "tencent/Hunyuan3D-2mv", name, str(shape_dir), str(steps), str(octree)], log=log, check=False, timeout=limit, extra_env=e)
+            glbs = sorted(shape_dir.glob("*.glb")) if shape_dir.exists() else []
+            if r.returncode == 0 and glbs: break
+            last = (r.stdout + r.stderr)[-600:]
+        except TimeoutError: last = "no answer from the Hugging Face Space within %d s (queue, GPU quota of an anonymous client, or the Space is down ; set HF_TOKEN to use an account quota)" % limit
+        time.sleep(15)
+    else: return dict(report=rep, glb=None, problems=["shape generation failed after 2 attempts : " + last])
     rep["shape"] = dict(space="tencent/Hunyuan3D-2mv", api="/shape_generation", steps=steps, octree_resolution=octree, seed=seed, seconds=round(time.time() - t0, 1), file=str(glbs[0].name))
     coloured = out / ("%s_couleur.glb" % name); report = out / "projection_couleurs.json"; e2 = env(); e2["INPUTS_DIR"] = str(st_rgba) + "/"
     r = subprocess.run([PY, str(BR / "tools" / "colorize_from_views.py"), str(glbs[0]), name, str(coloured), str(report)], env=e2, capture_output=True, text=True)
