@@ -1,0 +1,14 @@
+{"$schema": "http://json-schema.org/draft-07/schema#", "title": "LEGO Builder project manifest", "type": "object",
+ "required": ["schema_version", "project_id", "source", "construction_type", "generator", "geometry_source", "target", "status", "uncertainties"],
+ "properties": {
+  "schema_version": {"const": 1}, "project_id": {"type": "string"},
+  "source": {"type": "object", "required": ["kind", "files"], "properties": {"kind": {"enum": ["image", "photos", "glb", "geodata"]}, "files": {"type": "array", "items": {"type": "object", "required": ["path", "sha256"]}}, "rights_note": {"type": "string"}}},
+  "construction_type": {"enum": ["map_relief_25d", "sculpture_3d", "mosaic_2d", "undetermined"]},
+  "generator": {"enum": ["maps", "sculpture", "mosaic", "none"]},
+  "geometry_source": {"type": "object", "required": ["kind"], "properties": {"kind": {"enum": ["terrain_classes", "geodata_composition", "glb", "none"]}, "files": {"type": "object"}}},
+  "target": {"type": "object", "properties": {"size_mm": {"type": "number"}, "height_mm": {"type": "number"}}},
+  "palette_mode": {"enum": ["catalogue_lego"]},
+  "analysis": {"type": "object"}, "parameters": {"type": "object"}, "validation_strategy": {"type": "object"},
+  "uncertainties": {"type": "array", "items": {"type": "string"}},
+  "status": {"enum": ["analysed", "needs_input", "ready_for_generation", "generated", "validated", "failed"]},
+  "results": {"type": "object"}, "deliverables": {"type": "object"}}}

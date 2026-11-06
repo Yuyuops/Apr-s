@@ -1,0 +1,13 @@
+{
+ "validator_all_pass": true,
+ "no_colour_substitution": true,
+ "catalogue_ok": true,
+ "ldr_lines_eq_parts_json": true,
+ "bom_eq_model": true,
+ "plan_ids_eq_model": true,
+ "plan_steps": 126,
+ "fragility_present": true,
+ "pieces": 3374,
+ "references": 101,
+ "all_ok": true
+}

@@ -1,0 +1,62 @@
+{
+ "biomes": {
+  "rock": {
+   "top": 84,
+   "wall": 70,
+   "level": 5,
+   "gain": {
+    "step": 4,
+    "max": 2
+   }
+  },
+  "desert": {
+   "top": 19,
+   "wall": 28,
+   "level": 2
+  },
+  "grass": {
+   "top": 10,
+   "wall": 2,
+   "level": 3
+  },
+  "water": {
+   "top": 212,
+   "wall": 212,
+   "level": 1,
+   "water": true
+  },
+  "snow": {
+   "top": 15,
+   "wall": 71,
+   "level": 6,
+   "gain": {
+    "step": 3,
+    "max": 2
+   }
+  },
+  "stone": {
+   "top": 71,
+   "wall": 72,
+   "level": 4,
+   "gain": {
+    "step": 5,
+    "max": 1
+   }
+  },
+  "forest": {
+   "top": 2,
+   "wall": 288,
+   "level": 3
+  }
+ },
+ "relief_is_estimated": true,
+ "share": {
+  "water": 0.1086,
+  "grass": 0.2545,
+  "forest": 0.0768,
+  "rock": 0.1978,
+  "desert": 0.1047,
+  "stone": 0.2032,
+  "snow": 0.0545
+ }
+}

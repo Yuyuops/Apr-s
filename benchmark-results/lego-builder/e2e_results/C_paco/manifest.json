@@ -1,0 +1,112 @@
+{
+ "schema_version": 1,
+ "project_id": "paco",
+ "source": {
+  "kind": "glb",
+  "files": [
+   {
+    "path": "source/paco.glb",
+    "sha256": "b3d39c3f6eae3d7cee5644e8665c8a1c53be6a14486745a572d9b636a1be997b"
+   }
+  ],
+  "rights_note": "provided by the user ; rights not verified by the builder : never redistribute third-party works"
+ },
+ "construction_type": "sculpture_3d",
+ "generator": "sculpture",
+ "geometry_source": {
+  "kind": "glb",
+  "files": {
+   "glb": "source/paco.glb"
+  }
+ },
+ "target": {
+  "size_mm": 400.0,
+  "height_mm": 400.0
+ },
+ "palette_mode": "catalogue_lego",
+ "analysis": {
+  "kind": "glb",
+  "construction_type": "sculpture_3d",
+  "confidence": 0.95,
+  "evidence": [
+   "GLB mesh : 1 geometries, 231740 faces, extents [1.332, 1.957, 1.333] (units unknown)",
+   "colour source : vertex colours"
+  ],
+  "alternatives": [],
+  "uncertainties": [],
+  "faces": 231740,
+  "extents": [
+   1.3318107724189758,
+   1.9573139548301697,
+   1.3329504132270813
+  ],
+  "watertight": true,
+  "colour_source": "vertex",
+  "longest_axis": "y",
+  "sha256": "b3d39c3f6eae3d7cee5644e8665c8a1c53be6a14486745a572d9b636a1be997b",
+  "file": "paco.glb"
+ },
+ "parameters": {
+  "height_mm": 400.0
+ },
+ "uncertainties": [],
+ "status": "validated",
+ "validation_strategy": {
+  "support": "free-standing : the contact surface with the ground and the centre of gravity matter",
+  "checks": [
+   "engine-1 validator (collisions, connectivity, clutch stability per sub-assembly)",
+   "weak groups and reinforcement passes",
+   "scope control (parts outside the network)",
+   "catalogue : every part/colour pair exists"
+  ],
+  "not_claimed": [
+   "physical stability of the standing pose (no real test)",
+   "stock or price"
+  ]
+ },
+ "results": {
+  "pieces": 3193,
+  "references": 89,
+  "subject_config": "known subject 'paco' (validated configuration subjects/paco.json)",
+  "known_subject": true,
+  "catalogue_check": {
+   "all_dat_exist": true,
+   "all_colours_valid": true,
+   "pairs_not_catalogued": []
+  },
+  "validation": {
+   "collisions": {
+    "pairs": 0,
+    "cells_4ldu": 0,
+    "examples": [],
+    "details": []
+   },
+   "blocked_studs": 0,
+   "single_stud_joints": 2995,
+   "weak_cases": 8,
+   "weak_distinct_groups": 8
+  },
+  "notice_plan": null,
+  "notice_files": [],
+  "renders": [
+   "lego_1_face.png",
+   "lego_2_dos.png",
+   "lego_3_profil_gauche.png",
+   "lego_5_trois_quarts.png",
+   "lego_6_dessus.png",
+   "reference_glb_1_face.png",
+   "reference_glb_2_dos.png",
+   "reference_glb_3_profil_gauche.png",
+   "reference_glb_5_trois_quarts.png",
+   "reference_glb_6_dessus.png"
+  ],
+  "ldraw": "diorama.ldr",
+  "bom": "parts_list.csv",
+  "run_dir": "/tmp/lb_projects/paco/model/run",
+  "seconds": 27.3
+ },
+ "deliverables": {
+  "ldraw": "model/diorama.ldr",
+  "bom": "model/parts_list.csv"
+ }
+}

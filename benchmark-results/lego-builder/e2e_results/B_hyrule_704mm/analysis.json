@@ -1,0 +1,37 @@
+{
+ "kind": "image",
+ "construction_type": "map_relief_25d",
+ "confidence": 0.95,
+ "scores": {
+  "map_relief_25d": 3.0,
+  "sculpture_3d": 0,
+  "mosaic_2d": 0
+ },
+ "evidence": [
+  "1920x1080 px, RGB",
+  "border uniformity (colour std) 0.094 ; subject/background contrast 0.49",
+  "land-cover colours : water 7 %, vegetation 14 %, snow-like 4 %, sand-like 8 % (3 classes > 4 %)",
+  "50 dominant colours",
+  "dark frame around a brighter board : yes"
+ ],
+ "alternatives": [],
+ "uncertainties": [
+  "relief is ESTIMATED from terrain classes (no altitude data) unless a height source is supplied",
+  "oblique view of a board : perspective is rectified from the detected quadrilateral ; true proportions are assumed square"
+ ],
+ "size_px": [
+  1920,
+  1080
+ ],
+ "has_alpha": false,
+ "framed_board": true,
+ "land_cover": {
+  "water": 0.072,
+  "vegetation": 0.137,
+  "snow": 0.036,
+  "sand": 0.081
+ },
+ "dominant_colours": 50,
+ "sha256": "4b9c7b22e3b461c0f4fe7b8d0dc58a08c576cf2de3ab35ba8ba55a95f96e8ea4",
+ "file": "src.jpg"
+}

@@ -1,0 +1,4 @@
+{"_doc": "Per-biome LEGO colours (all catalogued pairs of the project : Rebrickable ids), base levels and interior relief gains. LEVELS AND GAINS ARE A SHAPE HEURISTIC, NOT REAL ALTITUDE : a height source must be supplied to get real relief.",
+ "biomes": {"water": {"top": 212, "wall": 212, "level": 1, "water": true}, "desert": {"top": 19, "wall": 28, "level": 2}, "grass": {"top": 10, "wall": 2, "level": 3}, "forest": {"top": 2, "wall": 288, "level": 3},
+            "stone": {"top": 71, "wall": 72, "level": 4, "gain": {"step": 5, "max": 1}}, "rock": {"top": 84, "wall": 70, "level": 5, "gain": {"step": 4, "max": 2}}, "snow": {"top": 15, "wall": 71, "level": 6, "gain": {"step": 3, "max": 2}}},
+ "class_names": {"0": "water", "1": "grass", "2": "forest", "3": "rock", "4": "desert", "5": "stone", "6": "snow"}}

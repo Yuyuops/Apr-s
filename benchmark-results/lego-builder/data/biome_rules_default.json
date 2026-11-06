@@ -1,0 +1,173 @@
+{
+ "_doc": "Generic land-cover colour rules (HSV : hue degrees, saturation and value 0-1) used when no rule file is given. Pixel-level soft membership, blurred, argmax (the pictures are textured). Developed on ONE illustrated map ; generalisation is measured in END_TO_END_TESTS.md and the rules are DATA : pass --rules to change them.",
+ "classes": [
+  {
+   "name": "water",
+   "code": 0,
+   "preview": [
+    60,
+    110,
+    200
+   ],
+   "hue": [
+    185,
+    250
+   ],
+   "sat": [
+    0.12,
+    1.0
+   ],
+   "val": [
+    0.25,
+    1.0
+   ],
+   "smooth": 0.7,
+   "weight": 1.25,
+   "min_region_studs2": 1.5
+  },
+  {
+   "name": "snow",
+   "code": 6,
+   "preview": [
+    250,
+    250,
+    250
+   ],
+   "hue": [
+    0,
+    360
+   ],
+   "sat": [
+    0.0,
+    0.1
+   ],
+   "val": [
+    0.72,
+    1.0
+   ],
+   "smooth": 0.9,
+   "weight": 1.1,
+   "min_region_studs2": 3
+  },
+  {
+   "name": "stone",
+   "code": 5,
+   "preview": [
+    150,
+    150,
+    160
+   ],
+   "hue": [
+    0,
+    360
+   ],
+   "sat": [
+    0.0,
+    0.16
+   ],
+   "val": [
+    0.0,
+    0.72
+   ],
+   "smooth": 0.9,
+   "weight": 1.0,
+   "min_region_studs2": 3
+  },
+  {
+   "name": "desert",
+   "code": 4,
+   "preview": [
+    226,
+    205,
+    150
+   ],
+   "hue": [
+    28,
+    62
+   ],
+   "sat": [
+    0.1,
+    0.6
+   ],
+   "val": [
+    0.66,
+    1.0
+   ],
+   "smooth": 1.2,
+   "weight": 1.0,
+   "min_region_studs2": 12
+  },
+  {
+   "name": "grass",
+   "code": 1,
+   "preview": [
+    60,
+    170,
+    80
+   ],
+   "hue": [
+    75,
+    170
+   ],
+   "sat": [
+    0.3,
+    1.0
+   ],
+   "val": [
+    0.45,
+    1.0
+   ],
+   "smooth": 0.8,
+   "weight": 1.0,
+   "min_region_studs2": 2
+  },
+  {
+   "name": "forest",
+   "code": 2,
+   "preview": [
+    20,
+    100,
+    50
+   ],
+   "hue": [
+    75,
+    170
+   ],
+   "sat": [
+    0.3,
+    1.0
+   ],
+   "val": [
+    0.0,
+    0.45
+   ],
+   "smooth": 0.8,
+   "weight": 1.0,
+   "min_region_studs2": 3
+  },
+  {
+   "name": "rock",
+   "code": 3,
+   "preview": [
+    190,
+    110,
+    60
+   ],
+   "hue": [
+    0,
+    40
+   ],
+   "sat": [
+    0.35,
+    1.0
+   ],
+   "val": [
+    0.0,
+    1.0
+   ],
+   "smooth": 0.9,
+   "weight": 1.0,
+   "min_region_studs2": 3
+  }
+ ]
+}

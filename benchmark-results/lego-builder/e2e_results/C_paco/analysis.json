@@ -1,0 +1,22 @@
+{
+ "kind": "glb",
+ "construction_type": "sculpture_3d",
+ "confidence": 0.95,
+ "evidence": [
+  "GLB mesh : 1 geometries, 231740 faces, extents [1.332, 1.957, 1.333] (units unknown)",
+  "colour source : vertex colours"
+ ],
+ "alternatives": [],
+ "uncertainties": [],
+ "faces": 231740,
+ "extents": [
+  1.3318107724189758,
+  1.9573139548301697,
+  1.3329504132270813
+ ],
+ "watertight": true,
+ "colour_source": "vertex",
+ "longest_axis": "y",
+ "sha256": "b3d39c3f6eae3d7cee5644e8665c8a1c53be6a14486745a572d9b636a1be997b",
+ "file": "paco.glb"
+}

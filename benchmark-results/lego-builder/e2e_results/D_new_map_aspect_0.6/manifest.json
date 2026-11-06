@@ -1,0 +1,172 @@
+{
+ "schema_version": 1,
+ "project_id": "uk_manual",
+ "source": {
+  "kind": "image",
+  "files": [
+   {
+    "path": "source/uk_atlas_ref.webp",
+    "sha256": "0945098d50abb2f92f5da9047b7ac58fed86dde960a6c1b052b3b88ca11eb777"
+   }
+  ],
+  "rights_note": "provided by the user ; rights not verified by the builder : never redistribute third-party works"
+ },
+ "construction_type": "map_relief_25d",
+ "generator": "maps",
+ "geometry_source": {
+  "kind": "terrain_classes",
+  "files": {
+   "terrain_classes": "derived/terrain_classes.tif",
+   "palette": "derived/palette.json",
+   "composition": "derived/composition.json",
+   "style": "derived/style.json",
+   "preview": "derived/preview.png"
+  }
+ },
+ "target": {
+  "size_mm": 400.0,
+  "height_mm": 400.0
+ },
+ "palette_mode": "catalogue_lego",
+ "analysis": {
+  "kind": "image",
+  "construction_type": "map_relief_25d",
+  "confidence": 0.88,
+  "scores": {
+   "map_relief_25d": 2.5,
+   "sculpture_3d": 0,
+   "mosaic_2d": 0
+  },
+  "evidence": [
+   "1920x1440 px, RGB",
+   "border uniformity (colour std) 0.064 ; subject/background contrast 0.62",
+   "land-cover colours : water 9 %, vegetation 12 %, snow-like 63 %, sand-like 1 % (3 classes > 4 %)",
+   "35 dominant colours",
+   "dark frame around a brighter board : no"
+  ],
+  "alternatives": [],
+  "uncertainties": [
+   "relief is ESTIMATED from terrain classes (no altitude data) unless a height source is supplied"
+  ],
+  "size_px": [
+   1920,
+   1440
+  ],
+  "has_alpha": false,
+  "framed_board": false,
+  "land_cover": {
+   "water": 0.093,
+   "vegetation": 0.123,
+   "snow": 0.63,
+   "sand": 0.007
+  },
+  "dominant_colours": 35,
+  "sha256": "0945098d50abb2f92f5da9047b7ac58fed86dde960a6c1b052b3b88ca11eb777",
+  "file": "uk_atlas_ref.webp"
+ },
+ "parameters": {
+  "grid_studs": [
+   42,
+   25
+  ],
+  "size_mm": [
+   264,
+   400
+  ],
+  "board": {
+   "foreground_fraction": 0.402,
+   "border_median_value": 0.882,
+   "background": "light_uniform",
+   "mode": "framed_board",
+   "board_area_fraction": 0.439,
+   "perspective_ratio_top_bottom": 1.17,
+   "aspect_used": 0.6
+  },
+  "biome_share": {
+   "water": 0.3671,
+   "grass": 0.3825,
+   "forest": 0.0102,
+   "rock": 0.0502,
+   "stone": 0.093,
+   "snow": 0.097
+  },
+  "corners": [
+   [
+    874.5,
+    116.6
+   ],
+   [
+    1635.5,
+    356.0
+   ],
+   [
+    1233.6,
+    1342.1
+   ],
+   [
+    324.5,
+    1131.2
+   ]
+  ],
+  "relief": "estimated from terrain classes (shape heuristic, not altitude)"
+ },
+ "uncertainties": [
+  "relief is ESTIMATED from terrain classes (no altitude data) unless a height source is supplied",
+  "relief is an estimate (no altitude data)"
+ ],
+ "status": "validated",
+ "validation_strategy": {
+  "support": "board fixed in a frame, base plates fitted on the seams",
+  "checks": [
+   "engine-1 joint graph : 0 collision, 0 disconnected part, 0 island, 0 unsupported part at placement",
+   "catalogue : every part/colour pair exists in Rebrickable and LDraw",
+   "fragility graph : single-stud parts, articulation points, cascade mass (indicative)",
+   "assembly plan ids == model ids, BOM == model"
+  ],
+  "not_claimed": [
+   "physical strength",
+   "stock or price",
+   "behaviour when hung or carried by the frame"
+  ]
+ },
+ "results": {
+  "pieces": 2301,
+  "references": 86,
+  "size_mm": [
+   264,
+   400
+  ],
+  "max_height_mm": 67.2,
+  "delivery_check": {
+   "validator_all_pass": true,
+   "no_colour_substitution": true,
+   "catalogue_ok": true,
+   "ldr_lines_eq_parts_json": true,
+   "bom_eq_model": true,
+   "plan_ids_eq_model": true,
+   "plan_steps": 81,
+   "fragility_present": true,
+   "pieces": 2301,
+   "references": 86,
+   "all_ok": true
+  },
+  "fragility": {
+   "parts_hanging_by_one_stud": 419,
+   "one_stud_and_carrying": 245,
+   "articulation_points_with_loss": 379,
+   "worst_single_failure": {
+    "family": "frame",
+    "part_id": 1618,
+    "parts_cut_off": 3,
+    "mass_cut_off_g": 4.8
+   }
+  },
+  "ldraw": "diorama.ldr",
+  "bom": "parts_list.csv",
+  "seconds": 28.9
+ },
+ "deliverables": {
+  "ldraw": "model/diorama.ldr",
+  "bom": "model/parts_list.csv"
+ }
+}

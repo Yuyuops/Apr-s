@@ -1,0 +1,12 @@
+{
+ "paco": {
+  "sha256": "b3d39c3f6eae3d7cee5644e8665c8a1c53be6a14486745a572d9b636a1be997b",
+  "subject_config": "subjects/paco.json",
+  "note": "validated V9.1/V12.1 ; the configuration contains Paco-specific ear data (ARCHITECTURE.md of the engine)"
+ },
+ "beagle": {
+  "sha256": "c91757508fc40ca895f8d98de5c2df823b2ce7ed39f10b41e5882c1fb71d4f09",
+  "subject_config": "subjects/beagle.json",
+  "note": "validated V10/V12.1"
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "note": "indicative only : rigid parts, 1.0 N clutch per stud assumed by the validator, NO physical test",
+ "parts": 13633,
+ "joints_total": 80117,
+ "parts_hanging_by_one_stud": 1092,
+ "one_stud_decorative_leaves": 684,
+ "one_stud_and_carrying": 408,
+ "articulation_points_with_loss": 976,
+ "worst_single_failure": {
+  "family": "strata_body",
+  "part_id": 4592,
+  "parts_cut_off": 28,
+  "mass_cut_off_g": 5.7
+ },
+ "families": {
+  "backing": {
+   "parts": 2206,
+   "hangs_by_two_studs": 79,
+   "hangs_by_one_stud": 25,
+   "hangs_by_one_stud_and_carries": 25
+  },
+  "frame": {
+   "parts": 953,
+   "hangs_by_two_studs": 30,
+   "hangs_by_one_stud": 5,
+   "hangs_by_one_stud_and_carries": 5
+  },
+  "frame_cap": {
+   "parts": 244,
+   "hangs_by_two_studs": 24,
+   "hangs_by_one_stud": 2,
+   "hangs_by_one_stud_decorative_leaf": 2
+  },
+  "frame_ornament": {
+   "parts": 48,
+   "hangs_by_one_stud": 48,
+   "hangs_by_one_stud_decorative_leaf": 48
+  },
+  "strata_body": {
+   "parts": 8373,
+   "hangs_by_two_studs": 638,
+   "hangs_by_one_stud": 372,
+   "hangs_by_one_stud_and_carries": 372
+  },
+  "title_letters": {
+   "parts": 57,
+   "hangs_by_two_studs": 19,
+   "hangs_by_one_stud": 10,
+   "hangs_by_one_stud_and_carries": 2,
+   "hangs_by_one_stud_decorative_leaf": 8
+  },
+  "top_corner_round": {
+   "parts": 409,
+   "hangs_by_one_stud": 409,
+   "hangs_by_one_stud_decorative_leaf": 409
+  },
+  "top_plate": {
+   "parts": 31,
+   "hangs_by_two_studs": 12,
+   "hangs_by_one_stud": 4,
+   "hangs_by_one_stud_and_carries": 4
+  },
+  "top_tile": {
+   "parts": 1312,
+   "hangs_by_two_studs": 325,
+   "hangs_by_one_stud": 217,
+   "hangs_by_one_stud_decorative_leaf": 217
+  }
+ },
+ "failure_by_family": {
+  "backing": {
+   "articulation_points": 6,
+   "max_parts_cut_off": 3,
+   "max_mass_cut_off_g": 0.9
+  },
+  "frame": {
+   "articulation_points": 94,
+   "max_parts_cut_off": 8,
+   "max_mass_cut_off_g": 4.8
+  },
+  "strata_body": {
+   "articulation_points": 845,
+   "max_parts_cut_off": 28,
+   "max_mass_cut_off_g": 5.7
+  },
+  "title_letters": {
+   "articulation_points": 18,
+   "max_parts_cut_off": 2,
+   "max_mass_cut_off_g": 0.6
+  },
+  "top_plate": {
+   "articulation_points": 13,
+   "max_parts_cut_off": 3,
+   "max_mass_cut_off_g": 1.2
+  }
+ },
+ "colosseum_one_stud_thick_wall_pieces": 0,
+ "ap_leaf_isolating_one_part": 508,
+ "ap_cascade_two_or_more": 468,
+ "ap_cascade_mass_sum_g": 223.3,
+ "ap_by_class": {
+  "other": {
+   "ap": 970,
+   "leaf": 504,
+   "cascade": 466,
+   "max_mass": 5.7
+  },
+  "sea": {
+   "ap": 6,
+   "leaf": 4,
+   "cascade": 2,
+   "max_mass": 0.9
+  }
+ },
+ "worst_10": [
+  {
+   "family": "strata_body",
+   "parts_cut_off": 28,
+   "mass_g": 5.7
+  },
+  {
+   "family": "frame",
+   "parts_cut_off": 4,
+   "mass_g": 4.8
+  },
+  {
+   "family": "frame",
+   "parts_cut_off": 2,
+   "mass_g": 3.2
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 2,
+   "mass_g": 1.8
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 10,
+   "mass_g": 1.7
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 8,
+   "mass_g": 1.7
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 9,
+   "mass_g": 1.6
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 6,
+   "mass_g": 1.6
+  },
+  {
+   "family": "frame",
+   "parts_cut_off": 3,
+   "mass_g": 1.6
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 8,
+   "mass_g": 1.5
+  }
+ ],
+ "total_mass_g": 10642.1
+}

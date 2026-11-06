@@ -242,9 +242,14 @@ class Builder:
         for col2, cells in g.items():
             if not cells: continue
             if isinstance(col2, tuple): col2 = col2[0]
-            placed = set()
-            for (r, c, nr, nc, part, rot) in tile(cells, avail(TILES, col2, 5), self.rng, 1.8, 8, S.stud_cells(yc), 12):
+            placed = set(); import tiler as _t; tb = avail(TILES, col2, 5)
+            if (1, 1) in tb: tiles_ = tile(cells, tb, self.rng, 1.8, 8, S.stud_cells(yc), 12); left_ = set()
+            else:      # colour without a 1x1 tile (e.g. gold) and an odd-length run : cover what the tiles can, finish single cells with a round 1x1 tile of the same colour (98138) when catalogued
+                _t.PARTIAL = True; _t.LEFT.clear(); tiles_ = tile(cells, tb, self.rng, 1.8, 8, S.stud_cells(yc), 12); left_ = set(_t.LEFT); _t.PARTIAL = False; _t.LEFT.clear()
+            for (r, c, nr, nc, part, rot) in tiles_:
                 p = S.add(part, col2, r, c, yc, rot, "frame_cap"); placed.update((rr, cc2) for rr in range(p["r"], p["r"] + p["nr"]) for cc2 in range(p["c"], p["c"] + p["nc"]))
+            for (r, c) in sorted(left_ - placed):
+                if PAIRS.get("98138", {}).get(str(col2), 0) >= 1: S.add("98138", col2, r, c, yc, 0, "frame_cap_single"); placed.add((r, c)); self.info["frame_single_round_tiles"] = self.info.get("frame_single_round_tiles", 0) + 1
             missing = cells - placed
             if missing: raise ValueError("frame cap cells left uncovered %s (colour %s)" % (sorted(missing)[:6], col2))
         for (r, c, col2) in rounds: S.add("98138", col2, r, c, yc, 0, "frame_ornament")
