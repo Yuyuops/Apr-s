@@ -88,7 +88,7 @@ jobs:
       - name: Install browser and the reconstruction client
         run: |
           cd benchmark-results/20_portable_engine && npx playwright install chromium
-          python3 -m pip install --target /tmp/gradio_site -r benchmark-results/lego-builder/requirements-reconstruct.txt
+          python3 -m pip install --target /tmp/gradio_site -r "$GITHUB_WORKSPACE/benchmark-results/lego-builder/requirements-reconstruct.txt"
       - name: Four photographs of Paco -> GLB -> LEGO sculpture, ONE command
         run: |
           I=benchmark-results/01_inputs_prepared
