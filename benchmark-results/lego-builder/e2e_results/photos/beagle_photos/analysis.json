@@ -1,0 +1,12 @@
+{
+ "kind": "photos",
+ "construction_type": "sculpture_3d",
+ "confidence": 0.9,
+ "evidence": [
+  "4 photographs : views found ['dos', 'face', 'profil_droit', 'profil_gauche']"
+ ],
+ "alternatives": [],
+ "uncertainties": [],
+ "sha256": "0708e980820c8eeacf551ce8ed91b1baea785b902c82d6b01e86b103efb8db93",
+ "file": "beagle_face_rgba.png"
+}

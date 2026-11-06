@@ -1,0 +1,208 @@
+{
+ "schema_version": 1,
+ "project_id": "beagle_photos",
+ "source": {
+  "kind": "photos",
+  "files": [
+   {
+    "path": "source/beagle_face_rgba.png",
+    "sha256": "0708e980820c8eeacf551ce8ed91b1baea785b902c82d6b01e86b103efb8db93"
+   },
+   {
+    "path": "source/beagle_dos_rgba.png",
+    "sha256": "1eaa4eb9c854a16e1b297ba1d70f044f9aaf056fec373a5cede6b097a8c5a1e6"
+   },
+   {
+    "path": "source/beagle_profil_gauche_rgba.png",
+    "sha256": "a486ec4a62a7e431e151206897021b1b20cb63ae00153a40bef9ded4c8a50138"
+   },
+   {
+    "path": "source/beagle_profil_droit_rgba.png",
+    "sha256": "3c777718eda974b7b6f1af163b13dd53c13fc7a49f06890e122b679b9556fa28"
+   }
+  ],
+  "rights_note": "provided by the user ; rights not verified by the builder : never redistribute third-party works"
+ },
+ "construction_type": "sculpture_3d",
+ "generator": "sculpture",
+ "geometry_source": {
+  "kind": "glb",
+  "files": {
+   "glb": "derived/beagle_photos_couleur.glb"
+  }
+ },
+ "target": {
+  "size_mm": 400.0,
+  "height_mm": 400.0
+ },
+ "palette_mode": "catalogue_lego",
+ "analysis": {
+  "kind": "photos",
+  "construction_type": "sculpture_3d",
+  "confidence": 0.9,
+  "evidence": [
+   "4 photographs : views found ['dos', 'face', 'profil_droit', 'profil_gauche']"
+  ],
+  "alternatives": [],
+  "uncertainties": [],
+  "sha256": "0708e980820c8eeacf551ce8ed91b1baea785b902c82d6b01e86b103efb8db93",
+  "file": "beagle_face_rgba.png"
+ },
+ "parameters": {
+  "height_mm": 400.0,
+  "subject": null,
+  "reconstruction": {
+   "views": {
+    "face": {
+     "source": "/tmp/lb_projects/beagle_photos/source/beagle_face_rgba.png",
+     "had_alpha": true,
+     "cutout": "provided"
+    },
+    "dos": {
+     "source": "/tmp/lb_projects/beagle_photos/source/beagle_dos_rgba.png",
+     "had_alpha": true,
+     "cutout": "provided"
+    },
+    "profil_gauche": {
+     "source": "/tmp/lb_projects/beagle_photos/source/beagle_profil_gauche_rgba.png",
+     "had_alpha": true,
+     "cutout": "provided"
+    },
+    "profil_droit": {
+     "source": "/tmp/lb_projects/beagle_photos/source/beagle_profil_droit_rgba.png",
+     "had_alpha": true,
+     "cutout": "provided"
+    }
+   },
+   "shape": {
+    "space": "tencent/Hunyuan3D-2mv",
+    "api": "/shape_generation",
+    "steps": 30,
+    "octree_resolution": 256,
+    "seed": 1234,
+    "seconds": 18.3,
+    "file": "beagle_photos_out0.glb"
+   },
+   "projection": {
+    "source": "/tmp/lb_projects/beagle_photos/derived/shape/beagle_photos_out0.glb",
+    "faces_in": 692728,
+    "faces_kept_largest_component": 380110,
+    "components_in": 312611,
+    "second_component_faces": 8,
+    "view_face": {
+     "iou_silhouette": 0.923,
+     "scale": 0.4953,
+     "vertices_coloured_from_this_view": 54116,
+     "vertices_final": 35141
+    },
+    "view_dos": {
+     "iou_silhouette": 0.841,
+     "scale": 0.481,
+     "vertices_coloured_from_this_view": 53764,
+     "vertices_final": 36000
+    },
+    "view_profil_gauche": {
+     "iou_silhouette": 0.854,
+     "scale": 0.432,
+     "vertices_coloured_from_this_view": 46942,
+     "vertices_final": 46942
+    },
+    "view_profil_droit": {
+     "iou_silhouette": 0.857,
+     "scale": 0.4323,
+     "vertices_coloured_from_this_view": 49376,
+     "vertices_final": 49376
+    },
+    "vertices_total": 190057,
+    "vertices_seen_in_no_view": 22598
+   }
+  },
+  "glb_check": {
+   "has_vertex_colours": true,
+   "faces": 380110,
+   "extents": [
+    0.993,
+    1.722,
+    1.958
+   ],
+   "watertight": true,
+   "view_silhouette_iou": {
+    "view_face": 0.923,
+    "view_dos": 0.841,
+    "view_profil_gauche": 0.854,
+    "view_profil_droit": 0.857
+   },
+   "views_ok": true,
+   "unseen_vertex_fraction": 0.119,
+   "coverage_ok": true,
+   "largest_component_face_fraction": 0.549,
+   "colour_distinct_8bit": 13448
+  }
+ },
+ "uncertainties": [
+  "back and hidden volumes are ESTIMATED by the reconstruction model (4 views only)"
+ ],
+ "status": "validated",
+ "validation_strategy": {
+  "support": "free-standing : the contact surface with the ground and the centre of gravity matter",
+  "checks": [
+   "engine-1 validator (collisions, connectivity, clutch stability per sub-assembly)",
+   "weak groups and reinforcement passes",
+   "scope control (parts outside the network)",
+   "catalogue : every part/colour pair exists"
+  ],
+  "not_claimed": [
+   "physical stability of the standing pose (no real test)",
+   "stock or price"
+  ]
+ },
+ "results": {
+  "pieces": 10567,
+  "references": 64,
+  "subject_config": "generic configuration (derived from beagle.json) : segmentation assumptions unvalidated for this GLB",
+  "known_subject": false,
+  "catalogue_check": {
+   "all_dat_exist": true,
+   "all_colours_valid": true,
+   "pairs_not_catalogued": []
+  },
+  "validation": {
+   "collisions": {
+    "pairs": 0,
+    "cells_4ldu": 0,
+    "examples": [],
+    "details": []
+   },
+   "blocked_studs": 0,
+   "single_stud_joints": 9715,
+   "weak_cases": 0,
+   "weak_distinct_groups": 0
+  },
+  "notice": {
+   "mode": "off"
+  },
+  "ordered_steps_ldr": "run/final/beagle_photos_notice.ldr",
+  "notice_plan": null,
+  "notice_files": [],
+  "renders": [
+   "lego_1_face.png",
+   "lego_2_dos.png",
+   "lego_3_profil_gauche.png",
+   "lego_5_trois_quarts.png",
+   "lego_6_dessus.png",
+   "reference_glb_1_face.png",
+   "reference_glb_2_dos.png",
+   "reference_glb_3_profil_gauche.png",
+   "reference_glb_5_trois_quarts.png",
+   "reference_glb_6_dessus.png"
+  ],
+  "ldraw": "diorama.ldr",
+  "bom": "parts_list.csv",
+  "run_dir": "/tmp/lb_projects/beagle_photos/model/run",
+  "seconds": 324.8
+ },
+ "deliverables": {
+  "ldraw": "model/diorama.ldr",
+  "bom": "model/parts_list.csv"
+ }
+}

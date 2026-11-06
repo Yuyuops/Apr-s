@@ -1,0 +1,110 @@
+name: LEGO Builder regression and photos-to-LEGO
+
+on:
+  push:
+    branches:
+      - research/lego-builder-photos-to-lego
+    paths:
+      - benchmark-results/lego-builder/**
+      - benchmark-results/20_portable_engine/**
+      - benchmark-results/tools/**
+      - .github/workflows/lego-builder-regression.yml
+  workflow_dispatch:
+    inputs:
+      run_reconstruction:
+        description: "also run the photos -> GLB reconstruction on the Hugging Face Space (external service)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  sculpture-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      LEGO_ENGINE_HOME: ${{ github.workspace }}/benchmark-results/20_portable_engine
+      LEGO_NODE_MODULES: ${{ github.workspace }}/benchmark-results/20_portable_engine/node_modules
+      NODE_PATH: ${{ github.workspace }}/benchmark-results/20_portable_engine/node_modules
+      PYTHONPATH: ${{ github.workspace }}/benchmark-results/lego-builder:${{ github.workspace }}/benchmark-results/maps-engine-v03/style_fidelity_v062
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Fetch the GLB inputs (Git LFS)
+        run: git lfs install --local && git lfs pull --include="benchmark-results/02_glb_gratuit_hunyuan2mv/*.glb"
+      - name: BLOCKING - the committed GLB inputs are the reference ones
+        run: python3 benchmark-results/lego-builder/tests/check_regression.py glb
+      - name: Unit tests (fast)
+        run: python3 -m pip install numpy pillow scipy -q && python3 benchmark-results/lego-builder/tests/test_unit.py
+      - name: Install pinned engine dependencies
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Install browser for real LDraw meshes
+        run: cd benchmark-results/20_portable_engine && npx playwright install chromium
+      - name: Paco GLB -> LEGO (one command), notice isolated with a hard timeout
+        run: |
+          "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder run benchmark-results/02_glb_gratuit_hunyuan2mv/paco.glb --out "$RUNNER_TEMP/paco" --size-mm 400 --notice fast --notice-timeout 600
+      - name: BLOCKING non-regression - Paco LDraw must equal the accepted V12.1 sha256
+        run: python3 benchmark-results/lego-builder/tests/check_regression.py sculpture paco "$RUNNER_TEMP/paco/model/diorama.ldr" paco_V121_A_palette_V12
+      - name: Beagle GLB -> LEGO
+        run: |
+          "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder run benchmark-results/02_glb_gratuit_hunyuan2mv/beagle.glb --out "$RUNNER_TEMP/beagle" --size-mm 400 --notice off
+      - name: BLOCKING non-regression - Beagle LDraw must equal the accepted V12.1 sha256
+        run: python3 benchmark-results/lego-builder/tests/check_regression.py sculpture beagle "$RUNNER_TEMP/beagle/model/diorama.ldr" beagle_V121
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lego-builder-sculptures
+          retention-days: 14
+          path: |
+            ${{ runner.temp }}/paco/manifest.json
+            ${{ runner.temp }}/paco/model/diorama.ldr
+            ${{ runner.temp }}/paco/model/parts_list.csv
+            ${{ runner.temp }}/paco/model/renders/*.png
+            ${{ runner.temp }}/beagle/manifest.json
+            ${{ runner.temp }}/beagle/model/diorama.ldr
+
+  photos-to-lego:
+    if: github.event_name == 'workflow_dispatch' && inputs.run_reconstruction || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      LEGO_ENGINE_HOME: ${{ github.workspace }}/benchmark-results/20_portable_engine
+      LEGO_NODE_MODULES: ${{ github.workspace }}/benchmark-results/20_portable_engine/node_modules
+      NODE_PATH: ${{ github.workspace }}/benchmark-results/20_portable_engine/node_modules
+      PYTHONPATH: ${{ github.workspace }}/benchmark-results/lego-builder:${{ github.workspace }}/benchmark-results/maps-engine-v03/style_fidelity_v062
+      LEGO_GRADIO_PATH: /tmp/gradio_site
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Fetch the GLB and the four photographs (Git LFS)
+        run: git lfs install --local && git lfs pull --include="benchmark-results/02_glb_gratuit_hunyuan2mv/*.glb,benchmark-results/01_inputs_prepared/*.png"
+      - name: Install pinned engine dependencies
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Install browser and the reconstruction client
+        run: |
+          cd benchmark-results/20_portable_engine && npx playwright install chromium
+          python3 -m pip install --target /tmp/gradio_site -r benchmark-results/lego-builder/requirements-reconstruct.txt
+      - name: Four photographs of Paco -> GLB -> LEGO sculpture, ONE command
+        run: |
+          I=benchmark-results/01_inputs_prepared
+          "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder run --photos $I/paco_face_rgba.png $I/paco_dos_rgba.png $I/paco_profil_gauche_rgba.png $I/paco_profil_droit_rgba.png --out "$RUNNER_TEMP/paco_photos" --size-mm 400 --subject paco --notice off
+      - name: BLOCKING - reconstructed GLB geometry and colours equal the reference Paco GLB
+        run: |
+          "$LEGO_ENGINE_HOME/.venv/bin/python" benchmark-results/lego-builder/tests/compare_glb.py "$RUNNER_TEMP/paco_photos/derived/paco_photos_couleur.glb" benchmark-results/02_glb_gratuit_hunyuan2mv/paco.glb
+      - name: BLOCKING - the photo-built sculpture equals the accepted V12.1 sha256
+        run: python3 benchmark-results/lego-builder/tests/check_regression.py sculpture paco_from_photos "$RUNNER_TEMP/paco_photos/model/diorama.ldr" paco_V121_A_palette_V12
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lego-builder-photos-to-lego
+          retention-days: 14
+          path: |
+            ${{ runner.temp }}/paco_photos/manifest.json
+            ${{ runner.temp }}/paco_photos/derived/projection_couleurs.json
+            ${{ runner.temp }}/paco_photos/model/diorama.ldr
+            ${{ runner.temp }}/paco_photos/model/renders/*.png

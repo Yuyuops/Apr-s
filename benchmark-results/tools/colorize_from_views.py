@@ -15,7 +15,8 @@ from scipy.spatial import cKDTree
 from scipy.ndimage import binary_dilation
 
 src, dog, out, rep = sys.argv[1:5]
-D = '/home/user/Apr-s/benchmark-results/01_inputs_prepared/'
+import os
+D = os.environ.get('INPUTS_DIR', '/home/user/Apr-s/benchmark-results/01_inputs_prepared/')       # INPUTS_DIR lets lego_builder point at any set of four views (default unchanged)
 
 g = trimesh.load(src).to_geometry(); g.merge_vertices()
 comps = sorted(g.split(only_watertight=False), key=lambda m: -len(m.faces))

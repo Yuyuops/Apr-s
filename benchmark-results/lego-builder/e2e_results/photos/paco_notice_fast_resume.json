@@ -1,0 +1,57 @@
+{
+ "etapes": 207,
+ "par_module": {
+  "Corps": 128,
+  "Bras droit": 8,
+  "Bras gauche": 9,
+  "Oreille basse": 25,
+  "Oreille basse > unite 1": 2,
+  "Oreille basse > unite 2": 2,
+  "Detail du visage 1 (1x 54200)": 2,
+  "Detail du visage 2 (1x 43898, 1x 98138)": 2,
+  "Detail du visage 3 (1x 43898, 1x 98138)": 2,
+  "Detail du visage 4 (1x 43898)": 2,
+  "Oreille haute": 23,
+  "Oreille haute (attache 2)": 2
+ },
+ "etapes_avec_controle_en_defaut": 0,
+ "exemples_en_defaut": [],
+ "resume": {
+  "info": {
+   "crotch_layer": 27,
+   "merge_layer": 56,
+   "couche_fin_bras": 53,
+   "composantes_3D": 3,
+   "bras_tailles": [
+    343,
+    359
+   ],
+   "bras": {
+    "G": 143,
+    "D": 136
+   },
+   "pieces_de_bras_reaffectees_au_corps": 0,
+   "pieces_de_bras_sans_sequence_reaffectees": 8,
+   "pieces_du_corps_rattachees_a_un_module": 3
+  },
+  "pieces": 3193,
+  "etapes": 207,
+  "modules": {
+   "Corps": 128,
+   "Bras droit": 8,
+   "Bras gauche": 9,
+   "Oreille basse": 25,
+   "Oreille basse > unite 1": 2,
+   "Oreille basse > unite 2": 2,
+   "Detail du visage 1 (1x 54200)": 2,
+   "Detail du visage 2 (1x 43898, 1x 98138)": 2,
+   "Detail du visage 3 (1x 43898, 1x 98138)": 2,
+   "Detail du visage 4 (1x 43898)": 2,
+   "Oreille haute": 23,
+   "Oreille haute (attache 2)": 2
+  },
+  "problemes_insertion": [],
+  "autres": [],
+  "manquantes": 0
+ }
+}

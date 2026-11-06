@@ -3,8 +3,16 @@
 import csv, json, os, subprocess, sys
 from pathlib import Path
 from .paths import MAPS, E1_SRC, PY, env
-def run(cmd, cwd=None, log=None, check=True):
-    r = subprocess.run([str(c) for c in cmd], cwd=cwd, env=env(), capture_output=True, text=True)
+def run(cmd, cwd=None, log=None, check=True, timeout=None):
+    """Runs a command in its own process group ; on timeout the WHOLE group is killed (worker processes included) and TimeoutError is raised : no stage can block a run for ever."""
+    import signal
+    p = subprocess.Popen([str(c) for c in cmd], cwd=cwd, env=env(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, start_new_session=True)
+    try: out, err = p.communicate(timeout=timeout)
+    except subprocess.TimeoutExpired:
+        os.killpg(p.pid, signal.SIGKILL); out, err = p.communicate()
+        if log: open(log, "a").write("$ %s\nTIMEOUT after %ss (process group killed)\n" % (" ".join(map(str, cmd)), timeout))
+        raise TimeoutError("timeout after %ss : %s" % (timeout, " ".join(map(str, cmd))[:200]))
+    r = subprocess.CompletedProcess(p.args, p.returncode, out, err)
     if log:
         with open(log, "a") as f: f.write("$ %s\n%s%s\n" % (" ".join(map(str, cmd)), r.stdout, r.stderr))
     if check and r.returncode != 0: raise RuntimeError("command failed (%d): %s\n%s" % (r.returncode, " ".join(map(str, cmd)), (r.stdout + r.stderr)[-1800:]))
