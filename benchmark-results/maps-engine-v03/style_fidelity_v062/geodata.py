@@ -40,3 +40,10 @@ def rasterise_mask(path, grid, sub=8, subject_min=192, foreign_min=64):
     R, C = grid; im = Image.open(path).convert("L").resize((C * sub, R * sub), Image.LANCZOS); a = np.asarray(im)
     S = a >= subject_min; Fo = (a >= foreign_min) & ~S
     return dict(subject=S, foreign=Fo, studs_per_deg_lat=None, k=None, bbox=None, to_lonlat=None)
+
+
+def rasterise_classes(path, grid, sub=8, n_classes=16):
+    """Class raster (grey-level image whose pixel value IS the class code) -> dict(codes_sub = sub-stud codes, codes = per-stud majority codes (R,C)). No geography is created here."""
+    R, C = grid; im = Image.open(path).convert("L").resize((C * sub, R * sub), Image.NEAREST); a = np.asarray(im).astype(np.int16)
+    blk = a.reshape(R, sub, C, sub); cnt = np.stack([(blk == k).sum(axis=(1, 3)) for k in range(n_classes)], axis=-1)
+    return dict(codes_sub=a, codes=cnt.argmax(axis=-1).astype(np.int16))

@@ -26,7 +26,26 @@ class Builder:
         self.rng = random.Random(style["relief"].get("seed", 7)); self.rel = style["relief"]; self.pal = style["palette"]; self.sf = style["surface"]; self.thick = self.rel["strata_thickness_plates"]; self.info = {}
         self.S = Scene(self.R + 2 * self.F, self.C + 2 * self.F); self.S.tops[2] = {(a, b) for a in range(self.R + 2 * self.F) for b in range(self.C + 2 * self.F)}; self.y0 = 2
     # ---------- levels
+    def make_levels_biomes(self):
+        """BIOME MODE (V1.0) : the composition gives a class raster (codes -> biome names), the style gives for every biome a top colour, a wall colour, a base level and an optional interior relief gain.
+        Relief rule (generic, documented) : cells of a biome with a gain rise by one level every `step` studs of distance from the biome edge, up to `max` extra levels. Nothing here depends on a country or a map."""
+        bm = self.cp["biome_map"]; geo = geodata.rasterise_classes(os.path.join(HERE, bm["file"]) if not os.path.isabs(bm["file"]) else bm["file"], (self.R, self.C), self.cp.get("sub", 8)); codes = geo["codes"]
+        names = {int(k): v for k, v in bm["classes"].items()}; defs = self.st["biomes"]; R, C = self.R, self.C
+        for _ in range(bm.get("majority_passes", 1)):
+            cnt = np.stack([ndimage.uniform_filter((codes == k).astype(float), 3) for k in sorted(names)], axis=-1); codes = np.array(sorted(names))[cnt.argmax(axis=-1)]
+        lev = np.zeros((R, C), int); top = np.zeros((R, C), int); wall = np.zeros((R, C), int)
+        for k, nm in names.items():
+            d = defs[nm]; m = codes == k; lv = np.full((R, C), d["level"], int)
+            g = d.get("gain")
+            if g:
+                dist = ndimage.distance_transform_edt(np.pad(m, 1, constant_values=True))[1:-1, 1:-1]; lv = lv + np.minimum(g["max"], (dist // g["step"]).astype(int))
+            lev = np.where(m, lv, lev); top = np.where(m, d["top"], top); wall = np.where(m, d["wall"], wall)
+        water = [k for k, nm in names.items() if defs[nm].get("water")]; subj = ~np.isin(codes, water)
+        self.S_sea = 1; self.base_land = 2; self.lev, self.subj, self.forn = lev, subj, np.zeros((R, C), bool); self.geo = geo; self.maxlev = int(lev.max()); self.biome = dict(top=top, wall=wall, codes=codes, names=names)
+        self.info["levels_histogram"] = {int(a): int(b) for a, b in zip(*np.unique(lev, return_counts=True))}
+        self.info["biomes"] = {names[k]: int((codes == k).sum()) for k in names}; self.info["biome_mode"] = True
     def make_levels(self):
+        if self.cp.get("biome_map"): return self.make_levels_biomes()
         geo = (geodata.rasterise_mask(os.path.join(HERE, self.cp["mask_png"]) if not os.path.isabs(self.cp["mask_png"]) else self.cp["mask_png"], (self.R, self.C), self.cp.get("sub", 8)) if self.cp.get("mask_png") else geodata.rasterise(self.cp["window"], (self.R, self.C), self.cp["territory_iso"], self.cp.get("sub", 8))); p = dict(self.rel); p["strata_widths"] = self.rel["sea_strata_widths_studs"]
         if not p["strata_widths"]: p["strata_widths"] = [0.0001]; flat_sea = True
         else: flat_sea = False
@@ -75,6 +94,20 @@ class Builder:
         S, R, C, F, th = self.S, self.R, self.C, self.F, self.thick; self.maxj = self.maxlev * th; mc = self.sf["min_sets"]
         lev = self.lev; jtop = lev * th; yb = self.y0; mosaic = self.rel.get("sea_mosaic"); self.top_y = {}
         colour_top = np.zeros((R, C), int)
+        if hasattr(self, "biome"):
+            colour_top = self.biome["top"].copy(); tz = getattr(self, "title_zone", None); bd = (self.st.get("title") or {}).get("backdrop_colour")
+            if tz and bd is not None: colour_top[tz[0]:tz[0] + tz[2], tz[1]:tz[1] + tz[3]] = bd           # plain backdrop under the title letters
+            self.colour_top = colour_top; wall_col = self.biome["wall"]; hid = self.st.get("hidden_wall")
+            big = int(jtop.max()) + 99; pj = np.pad(jtop, 1, constant_values=big); minnb = np.minimum.reduce([pj[:-2, 1:-1], pj[2:, 1:-1], pj[1:-1, :-2], pj[1:-1, 2:]])      # lowest top among the 4 neighbours (the frame counts as high)
+            for j in range(0, self.maxj + 1):
+                y = yb + j; body_mask = jtop > j; top_mask = jtop == j; sup = S.stud_cells(y)
+                wc = np.where(body_mask & (j <= minnb), hid, wall_col) if hid is not None else wall_col      # planes hidden by the neighbours' bodies are never seen : one neutral colour -> larger plates, better overlap, fewer parts
+                for col in sorted({int(x) for x in wc[body_mask]}):
+                    body = {(r + F, c + F) for r, c in zip(*np.where(body_mask & (wc == col)))}; tb = avail(PLATES, col, mc)
+                    for (r, c, nr, nc, part, rot) in tile(body, tb, self.rng, 2.0, 32, sup, 8): S.add(part, col, r, c, y, rot, "strata_body")
+                top = {(r + F, c + F) for r, c in zip(*np.where(top_mask))}
+                if top: self.place_top(top, y, colour_top)
+            return
         for r in range(R):
             for c in range(C):
                 if self.subj[r, c]: colour_top[r, c] = self.colour_of_level(int(lev[r, c]), "top") if "land_levels" in self.pal else self.pal["subject_land"]

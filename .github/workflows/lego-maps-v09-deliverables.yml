@@ -59,7 +59,7 @@ jobs:
           python3 - "$RUNNER_TEMP/v09" <<'PY'
           import json, sys
           bad = []
-          for k in ("italia", "ecosse", "japon", "royaume_uni", "hyrule", "protoA_littoral", "protoB_cadre_titre"):
+          for k in ("italia", "ecosse", "japon", "royaume_uni", "hyrule", "hyrule_biomes", "protoA_littoral", "protoB_cadre_titre"):
               r = json.load(open(f"{sys.argv[1]}/{k}/delivery_check.json")); print(k, r)
               if not r["all_ok"]: bad.append(k)
           assert not bad, bad

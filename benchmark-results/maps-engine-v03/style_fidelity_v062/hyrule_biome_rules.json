@@ -1,0 +1,191 @@
+{
+ "_doc": "Colour rules for the user-supplied oblique render of a LEGO model of the Breath of the Wild map (SHA-256 4b9c7b22e3b461c0...). Corners measured on a pixel grid overlay of the 1920x1080 picture. Hue in degrees, saturation and value in 0-1.",
+ "corners": [
+  [
+   322,
+   48
+  ],
+  [
+   1615,
+   48
+  ],
+  [
+   1668,
+   812
+  ],
+  [
+   163,
+   812
+  ]
+ ],
+ "classes": [
+  {
+   "name": "water",
+   "code": 0,
+   "preview": [
+    60,
+    110,
+    200
+   ],
+   "hue": [
+    190,
+    245
+   ],
+   "sat": [
+    0.3,
+    1.0
+   ],
+   "val": [
+    0.28,
+    1.0
+   ],
+   "smooth": 0.7,
+   "weight": 1.25,
+   "min_region_studs2": 1.5
+  },
+  {
+   "name": "snow",
+   "code": 6,
+   "preview": [
+    250,
+    250,
+    250
+   ],
+   "hue": [
+    0,
+    360
+   ],
+   "sat": [
+    0.0,
+    0.14
+   ],
+   "val": [
+    0.72,
+    1.0
+   ],
+   "smooth": 0.9,
+   "weight": 1.1,
+   "min_region_studs2": 3
+  },
+  {
+   "name": "stone",
+   "code": 5,
+   "preview": [
+    150,
+    150,
+    160
+   ],
+   "hue": [
+    0,
+    360
+   ],
+   "sat": [
+    0.0,
+    0.16
+   ],
+   "val": [
+    0.0,
+    0.72
+   ],
+   "smooth": 0.9,
+   "weight": 1.0,
+   "min_region_studs2": 3
+  },
+  {
+   "name": "desert",
+   "code": 4,
+   "preview": [
+    226,
+    205,
+    150
+   ],
+   "hue": [
+    28,
+    62
+   ],
+   "sat": [
+    0.1,
+    0.6
+   ],
+   "val": [
+    0.66,
+    1.0
+   ],
+   "smooth": 1.2,
+   "weight": 1.0,
+   "min_region_studs2": 12
+  },
+  {
+   "name": "grass",
+   "code": 1,
+   "preview": [
+    60,
+    170,
+    80
+   ],
+   "hue": [
+    75,
+    170
+   ],
+   "sat": [
+    0.3,
+    1.0
+   ],
+   "val": [
+    0.45,
+    1.0
+   ],
+   "smooth": 0.8,
+   "weight": 1.0,
+   "min_region_studs2": 2
+  },
+  {
+   "name": "forest",
+   "code": 2,
+   "preview": [
+    20,
+    100,
+    50
+   ],
+   "hue": [
+    75,
+    170
+   ],
+   "sat": [
+    0.3,
+    1.0
+   ],
+   "val": [
+    0.0,
+    0.45
+   ],
+   "smooth": 0.8,
+   "weight": 1.0,
+   "min_region_studs2": 3
+  },
+  {
+   "name": "rock",
+   "code": 3,
+   "preview": [
+    190,
+    110,
+    60
+   ],
+   "hue": [
+    0,
+    40
+   ],
+   "sat": [
+    0.35,
+    1.0
+   ],
+   "val": [
+    0.0,
+    1.0
+   ],
+   "smooth": 0.9,
+   "weight": 1.0,
+   "min_region_studs2": 3
+  }
+ ]
+}

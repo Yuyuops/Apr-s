@@ -1,0 +1,77 @@
+{
+ "height_plates": 21,
+ "pieces": 10682,
+ "references": 134,
+ "size_studs": [
+  88,
+  88
+ ],
+ "physical_size_mm": [
+  704,
+  704
+ ],
+ "max_height_mm": 67.2,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "5afb9ac8fe80f0089542e33ba639950251ce372d392512dbc29f777877a9ab8b",
+ "style": "premium_biomes_hyrule",
+ "composition": "Hyrule, mode biomes + relief : classes issues de l'image fou",
+ "grid_studs": [
+  80,
+  80
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "1": 637,
+  "2": 829,
+  "3": 1961,
+  "4": 1284,
+  "5": 1100,
+  "6": 555,
+  "7": 34
+ },
+ "biomes": {
+  "water": 637,
+  "grass": 1404,
+  "forest": 557,
+  "rock": 1169,
+  "desert": 829,
+  "stone": 1400,
+  "snow": 404
+ },
+ "biome_mode": true,
+ "title": {
+  "row": 2,
+  "col": 26,
+  "size": [
+   7,
+   35
+  ],
+  "level": 5
+ },
+ "rounded_corners": 467,
+ "frame": {
+  "courses": 6,
+  "top_plate": 20
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 901,
+   "single_owner_pieces_above": 35
+  },
+  {
+   "layer": 0,
+   "plates": 1071,
+   "single_owner_pieces_above": 93
+  }
+ ]
+}

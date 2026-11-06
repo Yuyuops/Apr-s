@@ -33,5 +33,10 @@
   "pieces": 16721,
   "references": 99,
   "ldr_sha256": "721b8573b1e0d0a15abc8d172340ec29b9b544710bed51801d6e29337dd5b958"
+ },
+ "hyrule_biomes": {
+  "pieces": 10682,
+  "references": 134,
+  "ldr_sha256": "5afb9ac8fe80f0089542e33ba639950251ce372d392512dbc29f777877a9ab8b"
  }
 }
