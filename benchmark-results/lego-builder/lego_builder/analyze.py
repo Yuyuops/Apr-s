@@ -29,7 +29,8 @@ def analyse_image(p):
     ev.append("%dx%d px, %s%s" % (W, H, im.mode, ", transparent background" if alpha else "")); ev.append("border uniformity (colour std) %.3f ; subject/background contrast %.2f" % (bstd, cdist))
     ev.append("land-cover colours : water %.0f %%, vegetation %.0f %%, snow-like %.0f %%, sand-like %.0f %% (%d classes > 4 %%)" % (100 * water, 100 * green, 100 * snow, 100 * sand, classes)); ev.append("%d dominant colours" % ncol); ev.append("dark frame around a brighter board : %s" % ("yes" if framed else "no"))
     obj = (2.0 if alpha else 0) + (1.5 if (bstd < 0.06 and cdist > 0.12 and classes < 3) else 0); mp = (1.5 if classes >= 3 else 0) + (1.0 if water > 0.04 and (green > 0.04 or sand > 0.04 or snow > 0.04) else 0) + (0.5 if framed else 0) - (1.0 if bstd < 0.04 and classes < 3 else 0)
-    mos = (1.5 if max(W, H) <= 160 else 0) + (1.5 if ncol <= 14 and classes < 3 else 0)
+    flat = float(a.reshape(-1, 3).std(0).mean()) < 0.02      # a (nearly) uniform picture has no content at all
+    mos = 0.0 if flat else (1.5 if max(W, H) <= 160 else 0) + (1.5 if ncol <= 14 and classes < 3 else 0)
     sc = {"map_relief_25d": mp, "sculpture_3d": obj, "mosaic_2d": mos}; order = sorted(sc, key=lambda k: -sc[k]); top, second = order[0], order[1]; margin = sc[top] - sc[second]
     if sc[top] < 1.0 or margin < 0.4: ctype = "undetermined"; unc.append("the type of construction is uncertain (scores %s) : give --type map|sculpture|mosaic" % {k: round(v, 2) for k, v in sc.items()})
     else: ctype = top

@@ -1,0 +1,12 @@
+{
+ "kind": "photos",
+ "construction_type": "sculpture_3d",
+ "confidence": 0.9,
+ "evidence": [
+  "4 photographs : views found ['dos', 'face', 'profil_droit', 'profil_gauche']"
+ ],
+ "alternatives": [],
+ "uncertainties": [],
+ "sha256": "495f6a08dd355f813ff442dad5c1349051d217efc2f63fef51b5a905c99f716a",
+ "file": "paco_face_rgba.png"
+}

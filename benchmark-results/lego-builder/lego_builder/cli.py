@@ -15,9 +15,15 @@ def _new(proj, src_files, kind, ctype, analysis, args, unc):
     return {"schema_version": 1, "project_id": Path(proj).name, "source": {"kind": kind, "files": [{"path": str(Path("source") / f.name), "sha256": MF.sha256(f)} for f in src_files], "rights_note": "provided by the user ; rights not verified by the builder : never redistribute third-party works"},
             "construction_type": ctype, "generator": GEN[ctype], "geometry_source": {"kind": "none"}, "target": {"size_mm": args.size_mm, "height_mm": args.size_mm}, "palette_mode": "catalogue_lego", "analysis": analysis, "parameters": {}, "uncertainties": list(unc), "status": "analysed"}
 def prepare(args):
-    proj = Path(args.out); (proj / "source").mkdir(parents=True, exist_ok=True); src = [Path(s) for s in ([args.src] + (args.more or []))]
+    proj = Path(args.out); (proj / "source").mkdir(parents=True, exist_ok=True); photos = [Path(p) for p in (getattr(args, "photos", None) or [])]
+    src = [Path(s) for s in (([args.src] if getattr(args, "src", None) else []) + (args.more or []) + [str(p) for p in photos])]
     for s in src: shutil.copy(s, proj / "source" / s.name)                                   # the original source is kept untouched, derived data go elsewhere
-    an = A.analyse(src[0]); ctype = TYPES[args.type] or an["construction_type"]; kind = "glb" if an["kind"] == "glb" else "photos" if len(src) > 1 else "image"
+    is_photos = len(photos) >= 2 or (len(src) >= 2 and all(s.suffix.lower() in A.IMG for s in src))
+    if is_photos:
+        from . import reconstruct as RC
+        views, vprob = RC.find_views([proj / "source" / s.name for s in src]); an = dict(kind="photos", construction_type="sculpture_3d", confidence=0.9 if not vprob else 0.6, evidence=["%d photographs : views found %s" % (len(src), sorted(views))], alternatives=[], uncertainties=list(vprob), sha256=MF.sha256(src[0]), file=src[0].name)
+    else: an = A.analyse(src[0])
+    ctype = TYPES[args.type] or an["construction_type"]; kind = "glb" if an["kind"] == "glb" else "photos" if is_photos else "image"
     m = _new(proj, [proj / "source" / s.name for s in src], kind, ctype, an, args, an["uncertainties"]); m["source"]["files"] = [{"path": str(Path("source") / s.name), "sha256": MF.sha256(proj / "source" / s.name)} for s in src]
     json.dump(an, open(proj / "analysis.json", "w"), indent=1); d = proj / "derived"; d.mkdir(exist_ok=True)
     if ctype == "map_relief_25d":
@@ -28,9 +34,17 @@ def prepare(args):
         m["uncertainties"] += ["relief is an estimate (no altitude data)"] + (["board proportions assumed square (perspective view)"] if r["board"].get("aspect_source", "").startswith("assumed") else [])
         m["status"] = "ready_for_generation"
     elif ctype == "sculpture_3d":
-        if kind == "glb": m["geometry_source"] = {"kind": "glb", "files": {"glb": str(Path("source") / src[0].name)}}; m["status"] = "ready_for_generation"; m["parameters"] = dict(height_mm=args.size_mm)
+        if kind == "glb": m["geometry_source"] = {"kind": "glb", "files": {"glb": str(Path("source") / src[0].name)}}; m["status"] = "ready_for_generation"; m["parameters"] = dict(height_mm=args.size_mm, subject=getattr(args, "subject", None))
+        elif kind == "photos" and not vprob:
+            from . import reconstruct as RC
+            r = RC.reconstruct(views, proj / "derived", name=proj.name, log=proj / "reconstruct.log"); m["parameters"] = dict(height_mm=args.size_mm, subject=getattr(args, "subject", None), reconstruction=r["report"])
+            if r["problems"]: m["status"] = "needs_input"; m["uncertainties"] += ["reconstruction : " + p for p in r["problems"]]
+            else:
+                ok, checks, warn = RC.check_glb(r["glb"], r["report"]["projection"]); m["parameters"]["glb_check"] = checks; m["uncertainties"] += warn + ["back and hidden volumes are ESTIMATED by the reconstruction model (4 views only)"]
+                m["geometry_source"] = {"kind": "glb", "files": {"glb": str(Path("derived") / r["glb"].name)}}; m["status"] = "ready_for_generation" if ok else "needs_input"
+                if not ok: m["uncertainties"].append("GLB control failed (see parameters.glb_check) : generation refused")
         else:
-            m["status"] = "needs_input"; m["uncertainties"].append("NO 3D GEOMETRY : photographs must first be reconstructed into a GLB (multi-view reconstruction service) ; reconstruction is not run by this command in this version")
+            m["status"] = "needs_input"; m["uncertainties"] += ["NO 3D GEOMETRY : give 4 views (face, dos, profil_gauche, profil_droit) or a GLB"] + (vprob if kind == "photos" else [])
     elif ctype == "mosaic_2d": m["status"] = "needs_input"; m["uncertainties"].append("the 2D mosaic generator is not implemented in this version")
     else: m["status"] = "needs_input"; m["uncertainties"].append("construction type undetermined : choose --type map|sculpture|mosaic")
     MF.write(m, proj); return m
@@ -42,7 +56,7 @@ def build(args):
         if m["generator"] == "maps":
             from .generators import maps; g = m["geometry_source"]["files"]; res = maps.build(out, (proj / g["style"]).resolve(), (proj / g["composition"]).resolve(), pdf=args.pdf)
         elif m["generator"] == "sculpture":
-            from .generators import sculpture; res = sculpture.build(out, (proj / m["geometry_source"]["files"]["glb"]).resolve(), proj.name, m["target"].get("height_mm", 400), with_notice=getattr(args, "notice", False))
+            from .generators import sculpture; res = sculpture.build(out, (proj / m["geometry_source"]["files"]["glb"]).resolve(), proj.name, m["target"].get("height_mm", 400), with_notice=getattr(args, "notice", False), subject=m["parameters"].get("subject"), notice_timeout=getattr(args, "notice_timeout", 900))
         else: raise SystemExit("no generator for %s" % m["generator"])
         m["results"] = res; ok = res.get("delivery_check", {}).get("all_ok", None) if m["generator"] == "maps" else (res["catalogue_check"]["all_dat_exist"] and res["catalogue_check"]["all_colours_valid"] and not res["catalogue_check"]["pairs_not_catalogued"])
         m["status"] = "validated" if ok else "generated"; m["results"]["seconds"] = round(time.time() - t0, 1)
@@ -59,9 +73,9 @@ def main(argv=None):
     p = argparse.ArgumentParser(prog="lego_builder"); sp = p.add_subparsers(dest="cmd", required=True)
     a = sp.add_parser("analyze"); a.add_argument("src")
     def common(x):
-        x.add_argument("--out", required=True); x.add_argument("--type", choices=list(TYPES), default="auto"); x.add_argument("--size-mm", type=float, default=400); x.add_argument("--title"); x.add_argument("--rules"); x.add_argument("--corners"); x.add_argument("--aspect", type=float); x.add_argument("--more", nargs="*"); x.add_argument("--pdf", action="store_true")
-    for n in ("prepare", "run"): x = sp.add_parser(n); x.add_argument("src"); common(x)
-    b = sp.add_parser("build"); b.add_argument("project"); b.add_argument("--pdf", action="store_true"); b.add_argument("--notice", action="store_true", help="sculptures : also build the hierarchical assembly plan (slow)")
+        x.add_argument("--out", required=True); x.add_argument("--type", choices=list(TYPES), default="auto"); x.add_argument("--size-mm", type=float, default=400); x.add_argument("--title"); x.add_argument("--rules"); x.add_argument("--corners"); x.add_argument("--aspect", type=float); x.add_argument("--more", nargs="*"); x.add_argument("--photos", nargs="*", help="four views of a subject (names contain face/dos/profil_gauche/profil_droit or front/back/left/right)"); x.add_argument("--subject", help="sculpture : known validated configuration (paco, beagle) or a JSON path ; default = by GLB fingerprint, else generic"); x.add_argument("--pdf", action="store_true"); x.add_argument("--notice", choices=["off", "fast", "full"], default="fast"); x.add_argument("--notice-timeout", type=int, default=900)
+    for n in ("prepare", "run"): x = sp.add_parser(n); x.add_argument("src", nargs="?"); common(x)
+    b = sp.add_parser("build"); b.add_argument("project"); b.add_argument("--pdf", action="store_true"); b.add_argument("--notice", choices=["off", "fast", "full"], default="fast", help="sculptures : assembly plan : fast (no ear search, default), full (with ears, hard timeout) or off"); b.add_argument("--notice-timeout", type=int, default=900)
     g = sp.add_parser("geo"); g.add_argument("--composition", required=True); g.add_argument("--style", required=True); g.add_argument("--out", required=True); g.add_argument("--pdf", action="store_true")
     c = sp.add_parser("check"); c.add_argument("project"); ar = p.parse_args(argv)
     if ar.cmd == "analyze": print(json.dumps(A.analyse(ar.src), indent=1, ensure_ascii=False))

@@ -42,7 +42,7 @@ def main():
     ap.add_argument("--glb", required=True); ap.add_argument("--out", required=True)
     ap.add_argument("--subject", help="subject config JSON (palette, passes, ears...) ; defaults are used if absent")
     ap.add_argument("--height-mm", type=float); ap.add_argument("--palette-exclude", help="comma separated LDraw colour codes to exclude")
-    ap.add_argument("--stop-after", choices=STAGES, default="final"); ap.add_argument("--from-stage", choices=STAGES, default="input", help="resume : stages before this one are skipped (their files must exist in --out)")
+    ap.add_argument("--notice-ears", choices=["all", "sub"], default="all", help="notice stage : ear sequences for the whole model (all : historical, can take more than 20 minutes) or only the tagged ear sub-assemblies (sub)"); ap.add_argument("--stop-after", choices=STAGES, default="final"); ap.add_argument("--from-stage", choices=STAGES, default="input", help="resume : stages before this one are skipped (their files must exist in --out)")
     a = ap.parse_args()
     cfg = json.load(open(a.subject)) if a.subject else {}
     name = cfg.get("name", "subject"); height = a.height_mm or cfg.get("height_mm", 400)
@@ -150,7 +150,7 @@ def main():
         fin = os.path.join(out, "final"); nd = os.path.join(out, "notice"); os.makedirs(nd, exist_ok=True); src = os.path.join(fin, "%s_notice.ldr" % name); e = dict(env, **shape_env())
         cmd = [py, E("notice_plan.py"), src, os.path.join(nd, name)]
         if ears:
-            seq = os.path.join(nd, "sequences.json"); sh([py, E("run_ears_v91.py"), src, seq, "--all"], e, log); cmd += ["--ears", seq]
+            seq = os.path.join(nd, "sequences.json"); sh([py, E("run_ears_v91.py"), src, seq] + (["--all"] if a.notice_ears == "all" else []), e, log); cmd += ["--ears", seq]
         sh(cmd, e, log); plan = json.load(open(os.path.join(nd, name + "_plan.json")))
         sh([py, E("export_notice.py"), src, os.path.join(nd, name + "_plan.json"), os.path.join(fin, "%s_catalogue.csv" % name), nd], e, log)
         pl = plan["plan"]; bad = [i for i, s_ in enumerate(pl) if any(not c.get("ok", True) for c in s_["checks"])]

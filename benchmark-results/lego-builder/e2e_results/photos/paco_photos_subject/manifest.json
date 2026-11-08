@@ -1,0 +1,220 @@
+{
+ "schema_version": 1,
+ "project_id": "paco_photos_subject",
+ "source": {
+  "kind": "photos",
+  "files": [
+   {
+    "path": "source/paco_face_rgba.png",
+    "sha256": "495f6a08dd355f813ff442dad5c1349051d217efc2f63fef51b5a905c99f716a"
+   },
+   {
+    "path": "source/paco_dos_rgba.png",
+    "sha256": "fae1f28f91a7ac29bc813a7d09b7ebe0adbb5046b8d1071e7ad3014bc33fd55e"
+   },
+   {
+    "path": "source/paco_profil_gauche_rgba.png",
+    "sha256": "01d0b804ab31adceb8d21d4a478e7752d6814c98f1a9abd46c7e7a947e5d69a7"
+   },
+   {
+    "path": "source/paco_profil_droit_rgba.png",
+    "sha256": "8429542d1e3abf7668ca017dd3d1c5365ae79b8aa00323da5ba499adcd1ecaf0"
+   }
+  ],
+  "rights_note": "provided by the user ; rights not verified by the builder : never redistribute third-party works"
+ },
+ "construction_type": "sculpture_3d",
+ "generator": "sculpture",
+ "geometry_source": {
+  "kind": "glb",
+  "files": {
+   "glb": "derived/paco_photos_couleur.glb"
+  }
+ },
+ "target": {
+  "size_mm": 400.0,
+  "height_mm": 400.0
+ },
+ "palette_mode": "catalogue_lego",
+ "analysis": {
+  "kind": "photos",
+  "construction_type": "sculpture_3d",
+  "confidence": 0.9,
+  "evidence": [
+   "4 photographs : views found ['dos', 'face', 'profil_droit', 'profil_gauche']"
+  ],
+  "alternatives": [],
+  "uncertainties": [],
+  "sha256": "495f6a08dd355f813ff442dad5c1349051d217efc2f63fef51b5a905c99f716a",
+  "file": "paco_face_rgba.png"
+ },
+ "parameters": {
+  "height_mm": 400.0,
+  "subject": "paco",
+  "reconstruction": {
+   "views": {
+    "face": {
+     "source": "/tmp/lb_projects/paco_photos/source/paco_face_rgba.png",
+     "had_alpha": true,
+     "cutout": "provided"
+    },
+    "dos": {
+     "source": "/tmp/lb_projects/paco_photos/source/paco_dos_rgba.png",
+     "had_alpha": true,
+     "cutout": "provided"
+    },
+    "profil_gauche": {
+     "source": "/tmp/lb_projects/paco_photos/source/paco_profil_gauche_rgba.png",
+     "had_alpha": true,
+     "cutout": "provided"
+    },
+    "profil_droit": {
+     "source": "/tmp/lb_projects/paco_photos/source/paco_profil_droit_rgba.png",
+     "had_alpha": true,
+     "cutout": "provided"
+    }
+   },
+   "shape": {
+    "space": "tencent/Hunyuan3D-2mv",
+    "api": "/shape_generation",
+    "steps": 30,
+    "octree_resolution": 256,
+    "seed": 1234,
+    "seconds": 18.3,
+    "file": "paco_photos_out0.glb"
+   },
+   "projection": {
+    "source": "/tmp/lb_projects/paco_photos/derived/shape/paco_photos_out0.glb",
+    "faces_in": 374524,
+    "faces_kept_largest_component": 231740,
+    "components_in": 142785,
+    "second_component_faces": 1,
+    "view_face": {
+     "iou_silhouette": 0.805,
+     "scale": 0.4286,
+     "vertices_coloured_from_this_view": 48906,
+     "vertices_final": 33694
+    },
+    "view_dos": {
+     "iou_silhouette": 0.732,
+     "scale": 0.4267,
+     "vertices_coloured_from_this_view": 41168,
+     "vertices_final": 25108
+    },
+    "view_profil_gauche": {
+     "iou_silhouette": 0.69,
+     "scale": 0.4278,
+     "vertices_coloured_from_this_view": 21660,
+     "vertices_final": 21660
+    },
+    "view_profil_droit": {
+     "iou_silhouette": 0.795,
+     "scale": 0.433,
+     "vertices_coloured_from_this_view": 24918,
+     "vertices_final": 24918
+    },
+    "vertices_total": 115868,
+    "vertices_seen_in_no_view": 10488
+   }
+  },
+  "glb_check": {
+   "has_vertex_colours": true,
+   "faces": 231740,
+   "extents": [
+    1.332,
+    1.957,
+    1.333
+   ],
+   "watertight": true,
+   "view_silhouette_iou": {
+    "view_face": 0.805,
+    "view_dos": 0.732,
+    "view_profil_gauche": 0.69,
+    "view_profil_droit": 0.795
+   },
+   "views_ok": true,
+   "unseen_vertex_fraction": 0.091,
+   "coverage_ok": true,
+   "largest_component_face_fraction": 0.619,
+   "colour_distinct_8bit": 14112
+  }
+ },
+ "uncertainties": [
+  "back and hidden volumes are ESTIMATED by the reconstruction model (4 views only)"
+ ],
+ "status": "validated",
+ "validation_strategy": {
+  "support": "free-standing : the contact surface with the ground and the centre of gravity matter",
+  "checks": [
+   "engine-1 validator (collisions, connectivity, clutch stability per sub-assembly)",
+   "weak groups and reinforcement passes",
+   "scope control (parts outside the network)",
+   "catalogue : every part/colour pair exists"
+  ],
+  "not_claimed": [
+   "physical stability of the standing pose (no real test)",
+   "stock or price"
+  ]
+ },
+ "results": {
+  "pieces": 3193,
+  "references": 89,
+  "subject_config": "explicit subject 'paco' (validated configuration subjects/paco.json) applied to THIS geometry",
+  "known_subject": false,
+  "catalogue_check": {
+   "all_dat_exist": true,
+   "all_colours_valid": true,
+   "pairs_not_catalogued": []
+  },
+  "validation": {
+   "collisions": {
+    "pairs": 0,
+    "cells_4ldu": 0,
+    "examples": [],
+    "details": []
+   },
+   "blocked_studs": 0,
+   "single_stud_joints": 2995,
+   "weak_cases": 8,
+   "weak_distinct_groups": 8
+  },
+  "notice": {
+   "mode": "fast",
+   "status": "ok",
+   "seconds": 525.4,
+   "note": "fast plan : ear sequences planned for the tagged ear sub-assemblies only (not for the whole model)"
+  },
+  "ordered_steps_ldr": "run/final/paco_notice.ldr",
+  "notice_plan": "run/notice/paco_plan.json",
+  "notice_files": [
+   "arbre_notice.json",
+   "etapes_notice.csv",
+   "nomenclature_complete.csv",
+   "notice_resume.json",
+   "paco_map.json",
+   "paco_notice.ldr",
+   "paco_plan.json",
+   "sequences.json"
+  ],
+  "renders": [
+   "lego_1_face.png",
+   "lego_2_dos.png",
+   "lego_3_profil_gauche.png",
+   "lego_5_trois_quarts.png",
+   "lego_6_dessus.png",
+   "reference_glb_1_face.png",
+   "reference_glb_2_dos.png",
+   "reference_glb_3_profil_gauche.png",
+   "reference_glb_5_trois_quarts.png",
+   "reference_glb_6_dessus.png"
+  ],
+  "ldraw": "diorama.ldr",
+  "bom": "parts_list.csv",
+  "run_dir": "/tmp/lb_projects/paco_photos_subject/model/run",
+  "seconds": 552.7
+ },
+ "deliverables": {
+  "ldraw": "model/diorama.ldr",
+  "bom": "model/parts_list.csv"
+ }
+}
