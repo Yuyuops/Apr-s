@@ -1,0 +1,319 @@
+{
+ "mode": "individual_bricks",
+ "model": "/tmp/lb_projects/paco_oneshot/model/diorama.ldr",
+ "parts_total": 3193,
+ "parts_supported": 3077,
+ "parts_unsupported": 116,
+ "supported_share": 0.9637,
+ "unsupported_types": {
+  "52107": 46,
+  "63864": 18,
+  "47905": 13,
+  "24299": 6,
+  "24307": 4,
+  "2450": 4,
+  "25269": 4,
+  "87087": 3,
+  "43898": 3,
+  "98138": 2,
+  "30565": 2,
+  "78444": 2,
+  "78443": 2,
+  "43723": 2,
+  "43722": 2,
+  "54200": 1,
+  "54383": 1,
+  "54384": 1
+ },
+ "supported_types": 24,
+ "colours": 6,
+ "colour_names": {
+  "14": "Yellow",
+  "25": "Orange",
+  "28": "Dark Tan",
+  "4": "Red",
+  "0": "Black",
+  "15": "White"
+ },
+ "plates": 21,
+ "plates_3mf_written": 6,
+ "bed_mm": [
+  250.0,
+  250.0
+ ],
+ "material_volume_cm3": 1472.0,
+ "mass_g_upper_bound": 1825.2,
+ "print_hours_estimate": 53.2,
+ "filament_swaps_if_one_colour_per_plate": 5,
+ "mass_by_colour_g": {
+  "Yellow": 1213.1,
+  "Red": 315.9,
+  "Black": 188.9,
+  "Orange": 52.7,
+  "Dark Tan": 42.1,
+  "White": 12.5
+ },
+ "geometry": {
+  "brick_1x8": {
+   "volume_mm3": 2170.4,
+   "bbox_mm": [
+    7.8,
+    63.8,
+    11.3
+   ],
+   "watertight_manifold": true,
+   "triangles": 1052
+  },
+  "brick_2x8": {
+   "volume_mm3": 3947.4,
+   "bbox_mm": [
+    15.8,
+    63.8,
+    11.3
+   ],
+   "watertight_manifold": true,
+   "triangles": 3868
+  },
+  "plate_1x1": {
+   "volume_mm3": 161.1,
+   "bbox_mm": [
+    7.8,
+    7.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 156
+  },
+  "plate_1x2": {
+   "volume_mm3": 296.3,
+   "bbox_mm": [
+    7.8,
+    15.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 284
+  },
+  "plate_1x3": {
+   "volume_mm3": 431.5,
+   "bbox_mm": [
+    7.8,
+    23.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 412
+  },
+  "plate_1x4": {
+   "volume_mm3": 566.7,
+   "bbox_mm": [
+    7.8,
+    31.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 540
+  },
+  "plate_1x6": {
+   "volume_mm3": 837.1,
+   "bbox_mm": [
+    7.8,
+    47.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 796
+  },
+  "plate_1x8": {
+   "volume_mm3": 1107.5,
+   "bbox_mm": [
+    7.8,
+    63.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 1052
+  },
+  "plate_2x2": {
+   "volume_mm3": 557.4,
+   "bbox_mm": [
+    15.8,
+    15.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 796
+  },
+  "plate_2x3": {
+   "volume_mm3": 818.5,
+   "bbox_mm": [
+    15.8,
+    23.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 1308
+  },
+  "plate_2x4": {
+   "volume_mm3": 1079.6,
+   "bbox_mm": [
+    15.8,
+    31.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 1820
+  },
+  "plate_2x6": {
+   "volume_mm3": 1601.7,
+   "bbox_mm": [
+    15.8,
+    47.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 2844
+  },
+  "plate_2x8": {
+   "volume_mm3": 2123.9,
+   "bbox_mm": [
+    15.8,
+    63.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 3868
+  },
+  "plate_4x4": {
+   "volume_mm3": 2105.2,
+   "bbox_mm": [
+    31.8,
+    31.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 4380
+  },
+  "plate_4x6": {
+   "volume_mm3": 3130.9,
+   "bbox_mm": [
+    31.8,
+    47.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 6940
+  },
+  "plate_4x8": {
+   "volume_mm3": 4156.6,
+   "bbox_mm": [
+    31.8,
+    63.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 9500
+  },
+  "plate_6x6": {
+   "volume_mm3": 4660.1,
+   "bbox_mm": [
+    47.8,
+    47.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 11036
+  },
+  "plate_8x8": {
+   "volume_mm3": 8222.1,
+   "bbox_mm": [
+    63.8,
+    63.8,
+    4.9
+   ],
+   "watertight_manifold": true,
+   "triangles": 20764
+  },
+  "tile_1x1": {
+   "volume_mm3": 130.5,
+   "bbox_mm": [
+    7.8,
+    7.8,
+    3.2
+   ],
+   "watertight_manifold": true,
+   "triangles": 28
+  },
+  "tile_1x2": {
+   "volume_mm3": 235.2,
+   "bbox_mm": [
+    7.8,
+    15.8,
+    3.2
+   ],
+   "watertight_manifold": true,
+   "triangles": 28
+  },
+  "tile_1x4": {
+   "volume_mm3": 444.5,
+   "bbox_mm": [
+    7.8,
+    31.8,
+    3.2
+   ],
+   "watertight_manifold": true,
+   "triangles": 28
+  },
+  "tile_1x6": {
+   "volume_mm3": 653.7,
+   "bbox_mm": [
+    7.8,
+    47.8,
+    3.2
+   ],
+   "watertight_manifold": true,
+   "triangles": 28
+  },
+  "tile_2x2": {
+   "volume_mm3": 435.1,
+   "bbox_mm": [
+    15.8,
+    15.8,
+    3.2
+   ],
+   "watertight_manifold": true,
+   "triangles": 284
+  },
+  "tile_2x3": {
+   "volume_mm3": 635.1,
+   "bbox_mm": [
+    15.8,
+    23.8,
+    3.2
+   ],
+   "watertight_manifold": true,
+   "triangles": 540
+  }
+ },
+ "assumptions": {
+  "pitch": 8.0,
+  "plate_h": 3.2,
+  "brick_h": 9.6,
+  "stud_d": 4.8,
+  "stud_h": 1.7,
+  "wall": 1.2,
+  "top": 1.0,
+  "tube_od": 6.5,
+  "tube_id": 4.9,
+  "tol": 0.1,
+  "peg_d": 5.0,
+  "peg_len": 6.0,
+  "socket_clear": 0.3,
+  "density_g_cm3": 1.24,
+  "filament_note": "PLA assumed",
+  "effective_fill": 1.0,
+  "volumetric_rate_mm3_s": 8.0,
+  "plate_overhead_h": 0.1,
+  "note": "mass = mesh volume x density (100 % solid = upper bound) ; time = volume / 8 mm3/s + 0.1 h per plate : FORMULA ESTIMATES, no slicer was run"
+ }
+}

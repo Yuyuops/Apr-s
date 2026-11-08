@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - research/lego-maps-v09-prototype-hyrule
+      - research/lego-builder-commercial-outputs-20261108
     paths:
       - benchmark-results/maps-engine-v03/style_fidelity_v062/*.py
       - benchmark-results/lego-builder/**

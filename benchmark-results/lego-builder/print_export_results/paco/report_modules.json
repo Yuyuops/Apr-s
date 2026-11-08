@@ -1,0 +1,224 @@
+{
+ "mode": "printed_modules",
+ "model": "/tmp/lb_projects/paco_oneshot/model/diorama.ldr",
+ "voxel_grid_studs": [
+  34,
+  35
+ ],
+ "layers": 124,
+ "size_mm": [
+  272,
+  280,
+  396.8
+ ],
+ "bed_limit": {
+  "max_studs": 30,
+  "max_layers": 70
+ },
+ "modules": 8,
+ "colour_bodies": 43,
+ "dowel_pairs": 16,
+ "module_list": [
+  {
+   "index": [
+    0,
+    0,
+    0
+   ],
+   "studs": [
+    17,
+    18
+   ],
+   "layers": 62,
+   "size_mm": [
+    136,
+    144,
+    198.4
+   ],
+   "colours": 5,
+   "voxels": 3007,
+   "faces_with_dowels": 5
+  },
+  {
+   "index": [
+    0,
+    0,
+    1
+   ],
+   "studs": [
+    17,
+    17
+   ],
+   "layers": 62,
+   "size_mm": [
+    136,
+    136,
+    198.4
+   ],
+   "colours": 5,
+   "voxels": 272,
+   "faces_with_dowels": 4
+  },
+  {
+   "index": [
+    0,
+    1,
+    0
+   ],
+   "studs": [
+    17,
+    18
+   ],
+   "layers": 62,
+   "size_mm": [
+    136,
+    144,
+    198.4
+   ],
+   "colours": 6,
+   "voxels": 3855,
+   "faces_with_dowels": 5
+  },
+  {
+   "index": [
+    0,
+    1,
+    1
+   ],
+   "studs": [
+    17,
+    17
+   ],
+   "layers": 62,
+   "size_mm": [
+    136,
+    136,
+    198.4
+   ],
+   "colours": 6,
+   "voxels": 268,
+   "faces_with_dowels": 4
+  },
+  {
+   "index": [
+    1,
+    0,
+    0
+   ],
+   "studs": [
+    17,
+    18
+   ],
+   "layers": 62,
+   "size_mm": [
+    136,
+    144,
+    198.4
+   ],
+   "colours": 5,
+   "voxels": 2779,
+   "faces_with_dowels": 5
+  },
+  {
+   "index": [
+    1,
+    0,
+    1
+   ],
+   "studs": [
+    17,
+    17
+   ],
+   "layers": 62,
+   "size_mm": [
+    136,
+    136,
+    198.4
+   ],
+   "colours": 5,
+   "voxels": 236,
+   "faces_with_dowels": 4
+  },
+  {
+   "index": [
+    1,
+    1,
+    0
+   ],
+   "studs": [
+    17,
+    18
+   ],
+   "layers": 62,
+   "size_mm": [
+    136,
+    144,
+    198.4
+   ],
+   "colours": 6,
+   "voxels": 821,
+   "faces_with_dowels": 5
+  },
+  {
+   "index": [
+    1,
+    1,
+    1
+   ],
+   "studs": [
+    17,
+    17
+   ],
+   "layers": 62,
+   "size_mm": [
+    136,
+    136,
+    198.4
+   ],
+   "colours": 5,
+   "voxels": 1515,
+   "faces_with_dowels": 4
+  }
+ ],
+ "material_volume_cm3": 2635.2,
+ "mass_g_upper_bound": 3267.6,
+ "mass_g_estimate_30pct_effective_fill": 980.3,
+ "print_hours_upper_bound": 92.3,
+ "print_hours_estimate_30pct_fill": 28.2,
+ "colours": 6,
+ "colour_names": {
+  "14": "Yellow",
+  "25": "Orange",
+  "28": "Dark Tan",
+  "4": "Red",
+  "0": "Black",
+  "15": "White"
+ },
+ "min_colour_swaps_one_body_per_colour": 35,
+ "approximations": [
+  "parts are replaced by their bounding boxes (slopes, round tiles and corners become blocks)",
+  "studs only on exposed upper faces of stud-bearing parts",
+  "dowels are separate cylinders (not modelled in this export)"
+ ],
+ "assumptions": {
+  "pitch": 8.0,
+  "plate_h": 3.2,
+  "brick_h": 9.6,
+  "stud_d": 4.8,
+  "stud_h": 1.7,
+  "wall": 1.2,
+  "top": 1.0,
+  "tube_od": 6.5,
+  "tube_id": 4.9,
+  "tol": 0.1,
+  "peg_d": 5.0,
+  "peg_len": 6.0,
+  "socket_clear": 0.3,
+  "density_g_cm3": 1.24,
+  "filament_note": "PLA assumed",
+  "effective_fill": 1.0,
+  "volumetric_rate_mm3_s": 8.0,
+  "plate_overhead_h": 0.1,
+  "note": "FORMULA ESTIMATES, no slicer was run ; mass = mesh volume x density (100 % solid) = upper bound"
+ }
+}

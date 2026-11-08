@@ -1,0 +1,250 @@
+{
+ "mode": "printed_modules",
+ "model": "../maps-engine-v03/style_fidelity_v062/livraison_v10/hyrule_biomes/diorama.ldr",
+ "voxel_grid_studs": [
+  88,
+  88
+ ],
+ "layers": 21,
+ "size_mm": [
+  704,
+  704,
+  67.2
+ ],
+ "bed_limit": {
+  "max_studs": 30,
+  "max_layers": 70
+ },
+ "modules": 9,
+ "colour_bodies": 86,
+ "dowel_pairs": 50,
+ "module_list": [
+  {
+   "index": [
+    0,
+    0,
+    0
+   ],
+   "studs": [
+    29,
+    29
+   ],
+   "layers": 21,
+   "size_mm": [
+    232,
+    232,
+    67.2
+   ],
+   "colours": 5,
+   "voxels": 9205,
+   "faces_with_dowels": 8
+  },
+  {
+   "index": [
+    0,
+    0,
+    1
+   ],
+   "studs": [
+    29,
+    30
+   ],
+   "layers": 21,
+   "size_mm": [
+    232,
+    240,
+    67.2
+   ],
+   "colours": 10,
+   "voxels": 11722,
+   "faces_with_dowels": 13
+  },
+  {
+   "index": [
+    0,
+    0,
+    2
+   ],
+   "studs": [
+    29,
+    29
+   ],
+   "layers": 21,
+   "size_mm": [
+    232,
+    232,
+    67.2
+   ],
+   "colours": 8,
+   "voxels": 12039,
+   "faces_with_dowels": 8
+  },
+  {
+   "index": [
+    1,
+    0,
+    0
+   ],
+   "studs": [
+    30,
+    29
+   ],
+   "layers": 21,
+   "size_mm": [
+    240,
+    232,
+    67.2
+   ],
+   "colours": 12,
+   "voxels": 8692,
+   "faces_with_dowels": 13
+  },
+  {
+   "index": [
+    1,
+    0,
+    1
+   ],
+   "studs": [
+    30,
+    30
+   ],
+   "layers": 21,
+   "size_mm": [
+    240,
+    240,
+    67.2
+   ],
+   "colours": 11,
+   "voxels": 8384,
+   "faces_with_dowels": 20
+  },
+  {
+   "index": [
+    1,
+    0,
+    2
+   ],
+   "studs": [
+    30,
+    29
+   ],
+   "layers": 21,
+   "size_mm": [
+    240,
+    232,
+    67.2
+   ],
+   "colours": 10,
+   "voxels": 11776,
+   "faces_with_dowels": 13
+  },
+  {
+   "index": [
+    2,
+    0,
+    0
+   ],
+   "studs": [
+    29,
+    29
+   ],
+   "layers": 21,
+   "size_mm": [
+    232,
+    232,
+    67.2
+   ],
+   "colours": 10,
+   "voxels": 9609,
+   "faces_with_dowels": 8
+  },
+  {
+   "index": [
+    2,
+    0,
+    1
+   ],
+   "studs": [
+    29,
+    30
+   ],
+   "layers": 21,
+   "size_mm": [
+    232,
+    240,
+    67.2
+   ],
+   "colours": 10,
+   "voxels": 9698,
+   "faces_with_dowels": 13
+  },
+  {
+   "index": [
+    2,
+    0,
+    2
+   ],
+   "studs": [
+    29,
+    29
+   ],
+   "layers": 21,
+   "size_mm": [
+    232,
+    232,
+    67.2
+   ],
+   "colours": 10,
+   "voxels": 11331,
+   "faces_with_dowels": 8
+  }
+ ],
+ "material_volume_cm3": 18931.0,
+ "mass_g_upper_bound": 23474.5,
+ "mass_g_estimate_30pct_effective_fill": 7042.3,
+ "print_hours_upper_bound": 658.2,
+ "print_hours_estimate_30pct_fill": 198.1,
+ "colours": 12,
+ "colour_names": {
+  "72": "Dark Bluish Gray",
+  "70": "Reddish Brown",
+  "19": "Tan",
+  "84": "Medium Nougat",
+  "297": "Pearl Gold",
+  "2": "Green",
+  "288": "Dark Green",
+  "10": "Bright Green",
+  "71": "Light Bluish Gray",
+  "15": "White",
+  "212": "Bright Light Blue",
+  "28": "Dark Tan"
+ },
+ "min_colour_swaps_one_body_per_colour": 77,
+ "approximations": [
+  "parts are replaced by their bounding boxes (slopes, round tiles and corners become blocks)",
+  "studs only on exposed upper faces of stud-bearing parts",
+  "dowels are separate cylinders (not modelled in this export)"
+ ],
+ "assumptions": {
+  "pitch": 8.0,
+  "plate_h": 3.2,
+  "brick_h": 9.6,
+  "stud_d": 4.8,
+  "stud_h": 1.7,
+  "wall": 1.2,
+  "top": 1.0,
+  "tube_od": 6.5,
+  "tube_id": 4.9,
+  "tol": 0.1,
+  "peg_d": 5.0,
+  "peg_len": 6.0,
+  "socket_clear": 0.3,
+  "density_g_cm3": 1.24,
+  "filament_note": "PLA assumed",
+  "effective_fill": 1.0,
+  "volumetric_rate_mm3_s": 8.0,
+  "plate_overhead_h": 0.1,
+  "note": "FORMULA ESTIMATES, no slicer was run ; mass = mesh volume x density (100 % solid) = upper bound"
+ }
+}

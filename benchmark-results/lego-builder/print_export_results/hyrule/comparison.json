@@ -1,0 +1,149 @@
+{
+ "bricks": {
+  "mode": "individual_bricks",
+  "model": "../maps-engine-v03/style_fidelity_v062/livraison_v10/hyrule_biomes/diorama.ldr",
+  "parts_total": 10682,
+  "parts_supported": 10167,
+  "parts_unsupported": 515,
+  "supported_share": 0.9518,
+  "unsupported_types": {
+   "25269": 467,
+   "98138": 48
+  },
+  "supported_types": 34,
+  "colours": 12,
+  "colour_names": {
+   "72": "Dark Bluish Gray",
+   "70": "Reddish Brown",
+   "212": "Bright Light Blue",
+   "2": "Green",
+   "28": "Dark Tan",
+   "71": "Light Bluish Gray",
+   "288": "Dark Green",
+   "19": "Tan",
+   "10": "Bright Green",
+   "15": "White",
+   "84": "Medium Nougat",
+   "297": "Pearl Gold"
+  },
+  "plates": 131,
+  "plates_3mf_written": 6,
+  "bed_mm": [
+   250.0,
+   250.0
+  ],
+  "material_volume_cm3": 11010.9,
+  "mass_g_upper_bound": 13653.5,
+  "print_hours_estimate": 395.4,
+  "filament_swaps_if_one_colour_per_plate": 11,
+  "mass_by_colour_g": {
+   "Dark Bluish Gray": 9778.1,
+   "Reddish Brown": 2840.6,
+   "Light Bluish Gray": 262.2,
+   "Green": 133.5,
+   "Bright Green": 184.8,
+   "Medium Nougat": 118.3,
+   "Bright Light Blue": 86.5,
+   "White": 71.8,
+   "Tan": 108.7,
+   "Pearl Gold": 44.3,
+   "Dark Green": 21.5,
+   "Dark Tan": 3.4
+  },
+  "assumptions": {
+   "pitch": 8.0,
+   "plate_h": 3.2,
+   "brick_h": 9.6,
+   "stud_d": 4.8,
+   "stud_h": 1.7,
+   "wall": 1.2,
+   "top": 1.0,
+   "tube_od": 6.5,
+   "tube_id": 4.9,
+   "tol": 0.1,
+   "peg_d": 5.0,
+   "peg_len": 6.0,
+   "socket_clear": 0.3,
+   "density_g_cm3": 1.24,
+   "filament_note": "PLA assumed",
+   "effective_fill": 1.0,
+   "volumetric_rate_mm3_s": 8.0,
+   "plate_overhead_h": 0.1,
+   "note": "mass = mesh volume x density (100 % solid = upper bound) ; time = volume / 8 mm3/s + 0.1 h per plate : FORMULA ESTIMATES, no slicer was run"
+  }
+ },
+ "modules": {
+  "mode": "printed_modules",
+  "model": "../maps-engine-v03/style_fidelity_v062/livraison_v10/hyrule_biomes/diorama.ldr",
+  "voxel_grid_studs": [
+   88,
+   88
+  ],
+  "layers": 21,
+  "size_mm": [
+   704,
+   704,
+   67.2
+  ],
+  "bed_limit": {
+   "max_studs": 30,
+   "max_layers": 70
+  },
+  "modules": 9,
+  "colour_bodies": 86,
+  "dowel_pairs": 50,
+  "material_volume_cm3": 18931.0,
+  "mass_g_upper_bound": 23474.5,
+  "mass_g_estimate_30pct_effective_fill": 7042.3,
+  "print_hours_upper_bound": 658.2,
+  "print_hours_estimate_30pct_fill": 198.1,
+  "colours": 12,
+  "colour_names": {
+   "72": "Dark Bluish Gray",
+   "70": "Reddish Brown",
+   "19": "Tan",
+   "84": "Medium Nougat",
+   "297": "Pearl Gold",
+   "2": "Green",
+   "288": "Dark Green",
+   "10": "Bright Green",
+   "71": "Light Bluish Gray",
+   "15": "White",
+   "212": "Bright Light Blue",
+   "28": "Dark Tan"
+  },
+  "min_colour_swaps_one_body_per_colour": 77,
+  "approximations": [
+   "parts are replaced by their bounding boxes (slopes, round tiles and corners become blocks)",
+   "studs only on exposed upper faces of stud-bearing parts",
+   "dowels are separate cylinders (not modelled in this export)"
+  ],
+  "assumptions": {
+   "pitch": 8.0,
+   "plate_h": 3.2,
+   "brick_h": 9.6,
+   "stud_d": 4.8,
+   "stud_h": 1.7,
+   "wall": 1.2,
+   "top": 1.0,
+   "tube_od": 6.5,
+   "tube_id": 4.9,
+   "tol": 0.1,
+   "peg_d": 5.0,
+   "peg_len": 6.0,
+   "socket_clear": 0.3,
+   "density_g_cm3": 1.24,
+   "filament_note": "PLA assumed",
+   "effective_fill": 1.0,
+   "volumetric_rate_mm3_s": 8.0,
+   "plate_overhead_h": 0.1,
+   "note": "FORMULA ESTIMATES, no slicer was run ; mass = mesh volume x density (100 % solid) = upper bound"
+  }
+ },
+ "authentic_bricks": {
+  "pieces": 10682,
+  "references": 134,
+  "mass_g_validator_convention": 9245.6,
+  "cost": "NOT COMPUTED : no verified price or stock (fill prices.template.csv)"
+ }
+}

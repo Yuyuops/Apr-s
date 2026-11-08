@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - research/lego-builder-photos-to-lego
+      - research/lego-builder-commercial-outputs-20261108
     paths:
       - benchmark-results/lego-builder/**
       - '!benchmark-results/lego-builder/**.md'
@@ -67,6 +68,39 @@ jobs:
             ${{ runner.temp }}/paco/model/renders/*.png
             ${{ runner.temp }}/beagle/manifest.json
             ${{ runner.temp }}/beagle/model/diorama.ldr
+
+  print-export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      LEGO_ENGINE_HOME: ${{ github.workspace }}/benchmark-results/20_portable_engine
+      LEGO_PRINT_PATH: /tmp/print_site
+      PYTHONPATH: ${{ github.workspace }}/benchmark-results/lego-builder:${{ github.workspace }}/benchmark-results/maps-engine-v03/style_fidelity_v062
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Install pinned engine dependencies (LDraw library, Rebrickable database)
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Install the geometry kernel
+        run: python3 -m pip install --target /tmp/print_site -r benchmark-results/lego-builder/requirements-print3d.txt
+      - name: Experimental STL/3MF export of the committed Paco sample (bricks and modules)
+        run: |
+          "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder.print3d.cli benchmark-results/lego-builder/tests/data/paco_sample.ldr "$RUNNER_TEMP/print" --mode both
+      - name: BLOCKING numeric validation of every STL/3MF (watertight, indices, bed, overlaps)
+        run: |
+          PYTHONPATH=/tmp/print_site:$PYTHONPATH "$LEGO_ENGINE_HOME/.venv/bin/python" benchmark-results/lego-builder/tests/validate_print_exports.py "$RUNNER_TEMP/print/bricks" 250
+          PYTHONPATH=/tmp/print_site:$PYTHONPATH "$LEGO_ENGINE_HOME/.venv/bin/python" benchmark-results/lego-builder/tests/validate_print_exports.py "$RUNNER_TEMP/print/modules_export" 250
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lego-builder-print-export
+          retention-days: 14
+          path: |
+            ${{ runner.temp }}/print/comparison.json
+            ${{ runner.temp }}/print/bricks/report_bricks.json
+            ${{ runner.temp }}/print/modules_export/report_modules.json
 
   photos-to-lego:
     if: github.event_name == 'workflow_dispatch' && inputs.run_reconstruction || github.event_name == 'push'
