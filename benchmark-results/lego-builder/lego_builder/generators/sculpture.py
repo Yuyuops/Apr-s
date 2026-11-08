@@ -12,6 +12,12 @@ def pick_subject(glb, name, height_mm, subject=None):
         return Path(subject), "explicit configuration file %s" % subject, False
     for k, v in known.items():
         if v["sha256"] == h: return E1_SRC / v["subject_config"], "known subject '%s' (validated configuration %s)" % (k, v["subject_config"]), True
+    try:       # a GLB rebuilt from the photos has other container bytes but the SAME geometry and colours (fixed seed) : recognised by a geometry fingerprint
+        import hashlib, trimesh
+        g = list(trimesh.load(str(glb), force="scene").geometry.values())[0]; hh = hashlib.sha256(); hh.update(g.vertices.tobytes()); hh.update(g.faces.tobytes()); hh.update(g.visual.vertex_colors.tobytes()); gs = hh.hexdigest()
+        for k, v in known.items():
+            if v.get("geometry_sha256") == gs: return E1_SRC / v["subject_config"], "known subject '%s' recognised by its geometry fingerprint (validated configuration %s)" % (k, v["subject_config"]), True
+    except Exception: pass
     cfg = json.load(open(E1_SRC / "subjects" / "beagle.json")); cfg.update(name=name, description="GENERIC configuration derived from the Beagle one (no ears, automatic palette) : segmentation rules NOT validated for this subject", height_mm=height_mm)
     cfg["ears"] = {"enabled": False}; return cfg, "generic configuration (derived from beagle.json) : segmentation assumptions unvalidated for this GLB", False
 def build(out, glb, name, height_mm=400, log=None, with_notice=False, subject=None, notice_timeout=900):

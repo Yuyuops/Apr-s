@@ -6,6 +6,8 @@ on:
       - research/lego-builder-photos-to-lego
     paths:
       - benchmark-results/lego-builder/**
+      - '!benchmark-results/lego-builder/**.md'
+      - '!benchmark-results/lego-builder/e2e_results/**'
       - benchmark-results/20_portable_engine/**
       - benchmark-results/tools/**
       - .github/workflows/lego-builder-regression.yml
@@ -94,7 +96,7 @@ jobs:
       - name: Four photographs of Paco -> GLB -> LEGO sculpture, ONE command
         run: |
           I=benchmark-results/01_inputs_prepared
-          "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder run --photos $I/paco_face_rgba.png $I/paco_dos_rgba.png $I/paco_profil_gauche_rgba.png $I/paco_profil_droit_rgba.png --out "$RUNNER_TEMP/paco_photos" --size-mm 400 --subject paco --notice off
+          "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder run --photos $I/paco_face_rgba.png $I/paco_dos_rgba.png $I/paco_profil_gauche_rgba.png $I/paco_profil_droit_rgba.png --out "$RUNNER_TEMP/paco_photos" --size-mm 400 --notice off
       - name: BLOCKING - reconstructed GLB geometry and colours equal the reference Paco GLB
         run: |
           "$LEGO_ENGINE_HOME/.venv/bin/python" benchmark-results/lego-builder/tests/compare_glb.py "$RUNNER_TEMP/paco_photos/derived/paco_photos_couleur.glb" benchmark-results/02_glb_gratuit_hunyuan2mv/paco.glb
