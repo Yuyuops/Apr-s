@@ -1,0 +1,86 @@
+{
+ "paco": [
+  {
+   "tile_studs": 30,
+   "tiles": 3,
+   "max_distinct": 6,
+   "share_tiles_le4_distinct": 0.67,
+   "share_tiles_le4_per_layer": 0.67,
+   "mean_distinct": 4.7
+  },
+  {
+   "tile_studs": 20,
+   "tiles": 4,
+   "max_distinct": 6,
+   "share_tiles_le4_distinct": 0.0,
+   "share_tiles_le4_per_layer": 0.5,
+   "mean_distinct": 5.5
+  },
+  {
+   "tile_studs": 15,
+   "tiles": 7,
+   "max_distinct": 6,
+   "share_tiles_le4_distinct": 0.43,
+   "share_tiles_le4_per_layer": 0.71,
+   "mean_distinct": 4.6
+  },
+  {
+   "tile_studs": 10,
+   "tiles": 10,
+   "max_distinct": 6,
+   "share_tiles_le4_distinct": 0.5,
+   "share_tiles_le4_per_layer": 0.8,
+   "mean_distinct": 3.8
+  },
+  {
+   "tile_studs": 8,
+   "tiles": 15,
+   "max_distinct": 6,
+   "share_tiles_le4_distinct": 0.67,
+   "share_tiles_le4_per_layer": 1.0,
+   "mean_distinct": 3.9
+  }
+ ],
+ "hyrule": [
+  {
+   "tile_studs": 30,
+   "tiles": 9,
+   "max_distinct": 12,
+   "share_tiles_le4_distinct": 0.0,
+   "share_tiles_le4_per_layer": 0.44,
+   "mean_distinct": 9.6
+  },
+  {
+   "tile_studs": 20,
+   "tiles": 25,
+   "max_distinct": 11,
+   "share_tiles_le4_distinct": 0.08,
+   "share_tiles_le4_per_layer": 0.8,
+   "mean_distinct": 7.3
+  },
+  {
+   "tile_studs": 15,
+   "tiles": 36,
+   "max_distinct": 11,
+   "share_tiles_le4_distinct": 0.06,
+   "share_tiles_le4_per_layer": 0.92,
+   "mean_distinct": 7.2
+  },
+  {
+   "tile_studs": 10,
+   "tiles": 81,
+   "max_distinct": 11,
+   "share_tiles_le4_distinct": 0.31,
+   "share_tiles_le4_per_layer": 0.99,
+   "mean_distinct": 5.7
+  },
+  {
+   "tile_studs": 8,
+   "tiles": 121,
+   "max_distinct": 11,
+   "share_tiles_le4_distinct": 0.4,
+   "share_tiles_le4_per_layer": 0.99,
+   "mean_distinct": 5.1
+  }
+ ]
+}

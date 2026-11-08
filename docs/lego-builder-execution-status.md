@@ -32,3 +32,15 @@ Date initiale : 2026-11-08. Branche : research/lego-builder-commercial-outputs-2
 | B4 coupon de tolérance | PREPARED — **BLOCKED** : impression et mesures par un humain | `TOLERANCE_TEST.md`, `tolerance_coupon/` |
 | C généralisation | PROTOCOLE PRÊT — **BLOCKED** : photos d'un sujet inédit à fournir | `GENERALIZATION_TEST.md`, `tools/generalization_test.py` |
 | Verdict | GO limité | `FINAL_VERDICT.md` |
+
+## Sprint V14 — benchmark imprimantes et rendu Hyrule (2026-11-08)
+
+| Chantier | Statut | Preuve |
+|---|---|---|
+| Rendu Hyrule réel (moteur, SHA = référence CI) | DONE | `benchmark-results/lego-builder/sprint_v14/HYRULE_CURRENT_RENDER.md`, `hyrule_render/` |
+| Comparaison imprimantes (A1 Combo / Hi Combo / U1) | DONE (spécifications vérifiées ; **aucune mesure sur machine**) | `PRINTER_COMPARISON.md` |
+| Benchmark de tranchage (PrusaSlicer, profils proxy — pas de slicer constructeur) | DONE avec limites | `SLICING_BENCHMARK.md`, `bench.json`, `merged_supports.json` |
+| Modèle de coûts / marges / scénarios 5-20-50 | DONE (hypothèses explicites) | `BUSINESS_COST_MODEL.md`, `cost.json` |
+| Optimisation d'impression | DONE | `PRINT_OPTIMIZATION.md` |
+| Recommandation | DONE — A1 Combo pour démarrer (monochrome) ; Hi + CFS pour Hyrule multicolore ; U1 non démontré | `FINAL_RECOMMENDATION.md` |
+| Tests physiques (coupon, purge réelle, slicers natifs, prix) | **BLOCKED** (intervention humaine) | `FINAL_RECOMMENDATION.md` §5 |

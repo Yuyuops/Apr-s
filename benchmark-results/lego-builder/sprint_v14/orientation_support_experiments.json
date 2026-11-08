@@ -1,0 +1,230 @@
+[
+ {
+  "tag": "upright_no_support",
+  "profile": "A1",
+  "supports": false,
+  "rc": -11,
+  "warn": [
+   "Floating bridge anchors",
+   "Floating object part",
+   "Long bridging extrusions"
+  ],
+  "seconds": 65287,
+  "filament_g": 367.63,
+  "layers": 985,
+  "support_lines": 0,
+  "orientation": "upright",
+  "variant": "no_support",
+  "extent_mm": [
+   120.0,
+   144.0,
+   200.1
+  ]
+ },
+ {
+  "tag": "upright_support_45",
+  "profile": "A1",
+  "supports": true,
+  "rc": -11,
+  "warn": [
+   "[2026-11-08 21:10:01.114026] [0x00007f51689cf180] [error]   gcode path conflicts found between b1 and b0"
+  ],
+  "seconds": 132681,
+  "filament_g": 679.5,
+  "layers": 2355,
+  "support_lines": 3472,
+  "orientation": "upright",
+  "variant": "support_45",
+  "extent_mm": [
+   120.0,
+   144.0,
+   200.1
+  ]
+ },
+ {
+  "tag": "upright_support_60",
+  "profile": "A1",
+  "supports": true,
+  "rc": -11,
+  "warn": [
+   "[2026-11-08 21:10:10.895585] [0x00007f5ffc4d1180] [error]   gcode path conflicts found between b1 and b0"
+  ],
+  "seconds": 132766,
+  "filament_g": 679.73,
+  "layers": 2348,
+  "support_lines": 3489,
+  "orientation": "upright",
+  "variant": "support_60",
+  "extent_mm": [
+   120.0,
+   144.0,
+   200.1
+  ]
+ },
+ {
+  "tag": "upright_support_buildplate_only",
+  "profile": "A1",
+  "supports": true,
+  "rc": -11,
+  "warn": [
+   "[2026-11-08 21:10:19.977267] [0x00007fa542777180] [error]   gcode path conflicts found between b1 and b0"
+  ],
+  "seconds": 111214,
+  "filament_g": 587.55,
+  "layers": 2077,
+  "support_lines": 1467,
+  "orientation": "upright",
+  "variant": "support_buildplate_only",
+  "extent_mm": [
+   120.0,
+   144.0,
+   200.1
+  ]
+ },
+ {
+  "tag": "upright_support_organic",
+  "profile": "A1",
+  "supports": true,
+  "rc": -11,
+  "warn": [
+   "[2026-11-08 21:10:32.645988] [0x00007f46ea482180] [error]   gcode path conflicts found between b1 and b0"
+  ],
+  "seconds": 106893,
+  "filament_g": 500.93,
+  "layers": 985,
+  "support_lines": 3301,
+  "orientation": "upright",
+  "variant": "support_organic",
+  "extent_mm": [
+   120.0,
+   144.0,
+   200.1
+  ]
+ },
+ {
+  "tag": "on_back_x90_no_support",
+  "profile": "A1",
+  "supports": false,
+  "rc": -11,
+  "warn": [
+   "Floating bridge anchors, Low bed adhesion, Loose extrusions, Long bridging extrusions",
+   "Floating object part, Collapsing overhang, Low bed adhesion, Loose extrusions, Long bridging extrusions",
+   "Floating object part, Floating bridge anchors, Loose extrusions"
+  ],
+  "seconds": 70992,
+  "filament_g": 375.19,
+  "layers": 720,
+  "support_lines": 0,
+  "orientation": "on_back_x90",
+  "variant": "no_support",
+  "extent_mm": [
+   120.0,
+   200.1,
+   144.0
+  ]
+ },
+ {
+  "tag": "on_back_x90_support_45",
+  "profile": "A1",
+  "supports": true,
+  "rc": -11,
+  "warn": [
+   "[2026-11-08 21:10:50.908841] [0x00007ff95fc24180] [error]   gcode path conflicts found between b1 and b0"
+  ],
+  "seconds": 118020,
+  "filament_g": 555.14,
+  "layers": 1082,
+  "support_lines": 5616,
+  "orientation": "on_back_x90",
+  "variant": "support_45",
+  "extent_mm": [
+   120.0,
+   200.1,
+   144.0
+  ]
+ },
+ {
+  "tag": "on_side_y90_no_support",
+  "profile": "A1",
+  "supports": false,
+  "rc": -11,
+  "warn": [
+   "Floating bridge anchors",
+   "Floating object part, Collapsing overhang, Low bed adhesion, Loose extrusions, Long bridging extrusions",
+   "Floating object part, Floating bridge anchors, Loose extrusions"
+  ],
+  "seconds": 68388,
+  "filament_g": 372.1,
+  "layers": 600,
+  "support_lines": 0,
+  "orientation": "on_side_y90",
+  "variant": "no_support",
+  "extent_mm": [
+   200.1,
+   144.0,
+   120.0
+  ]
+ },
+ {
+  "tag": "on_side_y90_support_45",
+  "profile": "A1",
+  "supports": true,
+  "rc": -11,
+  "warn": [
+   "[2026-11-08 21:11:08.863770] [0x00007ff6a84ed180] [error]   gcode path conflicts found between b1 and b0"
+  ],
+  "seconds": 122740,
+  "filament_g": 579.08,
+  "layers": 1057,
+  "support_lines": 8429,
+  "orientation": "on_side_y90",
+  "variant": "support_45",
+  "extent_mm": [
+   200.1,
+   144.0,
+   120.0
+  ]
+ },
+ {
+  "tag": "upside_down_x180_no_support",
+  "profile": "A1",
+  "supports": false,
+  "rc": -11,
+  "warn": [
+   "Floating bridge anchors",
+   "Floating object part",
+   "Long bridging extrusions"
+  ],
+  "seconds": 64595,
+  "filament_g": 367.45,
+  "layers": 984,
+  "support_lines": 0,
+  "orientation": "upside_down_x180",
+  "variant": "no_support",
+  "extent_mm": [
+   120.0,
+   144.0,
+   200.1
+  ]
+ },
+ {
+  "tag": "upside_down_x180_support_45",
+  "profile": "A1",
+  "supports": true,
+  "rc": -11,
+  "warn": [
+   "[2026-11-08 21:11:23.934687] [0x00007f11c7c1f180] [error]   gcode path conflicts found between b1 and b0"
+  ],
+  "seconds": 123889,
+  "filament_g": 637.17,
+  "layers": 2351,
+  "support_lines": 4674,
+  "orientation": "upside_down_x180",
+  "variant": "support_45",
+  "extent_mm": [
+   120.0,
+   144.0,
+   200.1
+  ]
+ }
+]

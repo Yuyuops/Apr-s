@@ -1,0 +1,339 @@
+{
+ "paco": {
+  "modules": [
+   {
+    "module": [
+     0,
+     0,
+     0
+    ],
+    "voxels": 3007,
+    "hidden_share": 0.566,
+    "asis": {
+     "changes": 2080,
+     "max_colours_layer": 4,
+     "colours": 5
+    },
+    "merged": {
+     "changes": 1776,
+     "max_colours_layer": 4,
+     "colours": 5
+    }
+   },
+   {
+    "module": [
+     0,
+     0,
+     1
+    ],
+    "voxels": 274,
+    "hidden_share": 0.219,
+    "asis": {
+     "changes": 400,
+     "max_colours_layer": 4,
+     "colours": 5
+    },
+    "merged": {
+     "changes": 336,
+     "max_colours_layer": 4,
+     "colours": 5
+    }
+   },
+   {
+    "module": [
+     0,
+     1,
+     0
+    ],
+    "voxels": 4629,
+    "hidden_share": 0.487,
+    "asis": {
+     "changes": 1280,
+     "max_colours_layer": 5,
+     "colours": 6
+    },
+    "merged": {
+     "changes": 1248,
+     "max_colours_layer": 5,
+     "colours": 6
+    }
+   },
+   {
+    "module": [
+     0,
+     1,
+     1
+    ],
+    "voxels": 292,
+    "hidden_share": 0.332,
+    "asis": {
+     "changes": 192,
+     "max_colours_layer": 3,
+     "colours": 6
+    },
+    "merged": {
+     "changes": 176,
+     "max_colours_layer": 2,
+     "colours": 6
+    }
+   },
+   {
+    "module": [
+     1,
+     0,
+     0
+    ],
+    "voxels": 2779,
+    "hidden_share": 0.539,
+    "asis": {
+     "changes": 1904,
+     "max_colours_layer": 5,
+     "colours": 5
+    },
+    "merged": {
+     "changes": 1648,
+     "max_colours_layer": 5,
+     "colours": 5
+    }
+   },
+   {
+    "module": [
+     1,
+     0,
+     1
+    ],
+    "voxels": 237,
+    "hidden_share": 0.219,
+    "asis": {
+     "changes": 416,
+     "max_colours_layer": 4,
+     "colours": 5
+    },
+    "merged": {
+     "changes": 288,
+     "max_colours_layer": 3,
+     "colours": 5
+    }
+   },
+   {
+    "module": [
+     1,
+     1,
+     0
+    ],
+    "voxels": 834,
+    "hidden_share": 0.525,
+    "asis": {
+     "changes": 544,
+     "max_colours_layer": 4,
+     "colours": 6
+    },
+    "merged": {
+     "changes": 544,
+     "max_colours_layer": 4,
+     "colours": 6
+    }
+   },
+   {
+    "module": [
+     1,
+     1,
+     1
+    ],
+    "voxels": 1565,
+    "hidden_share": 0.449,
+    "asis": {
+     "changes": 768,
+     "max_colours_layer": 4,
+     "colours": 6
+    },
+    "merged": {
+     "changes": 720,
+     "max_colours_layer": 4,
+     "colours": 6
+    }
+   }
+  ],
+  "total_changes_asis": 7584,
+  "total_changes_merged": 6736,
+  "reduction": 0.112
+ },
+ "hyrule": {
+  "modules": [
+   {
+    "module": [
+     0,
+     0,
+     0
+    ],
+    "voxels": 9205,
+    "hidden_share": 0.617,
+    "asis": {
+     "changes": 208,
+     "max_colours_layer": 3,
+     "colours": 5
+    },
+    "merged": {
+     "changes": 48,
+     "max_colours_layer": 2,
+     "colours": 5
+    }
+   },
+   {
+    "module": [
+     0,
+     0,
+     1
+    ],
+    "voxels": 11722,
+    "hidden_share": 0.752,
+    "asis": {
+     "changes": 480,
+     "max_colours_layer": 4,
+     "colours": 10
+    },
+    "merged": {
+     "changes": 272,
+     "max_colours_layer": 3,
+     "colours": 10
+    }
+   },
+   {
+    "module": [
+     0,
+     0,
+     2
+    ],
+    "voxels": 12039,
+    "hidden_share": 0.716,
+    "asis": {
+     "changes": 416,
+     "max_colours_layer": 4,
+     "colours": 8
+    },
+    "merged": {
+     "changes": 240,
+     "max_colours_layer": 3,
+     "colours": 8
+    }
+   },
+   {
+    "module": [
+     1,
+     0,
+     0
+    ],
+    "voxels": 8692,
+    "hidden_share": 0.65,
+    "asis": {
+     "changes": 560,
+     "max_colours_layer": 6,
+     "colours": 12
+    },
+    "merged": {
+     "changes": 448,
+     "max_colours_layer": 6,
+     "colours": 12
+    }
+   },
+   {
+    "module": [
+     1,
+     0,
+     1
+    ],
+    "voxels": 8384,
+    "hidden_share": 0.752,
+    "asis": {
+     "changes": 384,
+     "max_colours_layer": 4,
+     "colours": 11
+    },
+    "merged": {
+     "changes": 304,
+     "max_colours_layer": 4,
+     "colours": 11
+    }
+   },
+   {
+    "module": [
+     1,
+     0,
+     2
+    ],
+    "voxels": 11776,
+    "hidden_share": 0.753,
+    "asis": {
+     "changes": 592,
+     "max_colours_layer": 6,
+     "colours": 10
+    },
+    "merged": {
+     "changes": 448,
+     "max_colours_layer": 6,
+     "colours": 10
+    }
+   },
+   {
+    "module": [
+     2,
+     0,
+     0
+    ],
+    "voxels": 9609,
+    "hidden_share": 0.607,
+    "asis": {
+     "changes": 336,
+     "max_colours_layer": 4,
+     "colours": 10
+    },
+    "merged": {
+     "changes": 256,
+     "max_colours_layer": 4,
+     "colours": 10
+    }
+   },
+   {
+    "module": [
+     2,
+     0,
+     1
+    ],
+    "voxels": 9698,
+    "hidden_share": 0.661,
+    "asis": {
+     "changes": 544,
+     "max_colours_layer": 5,
+     "colours": 10
+    },
+    "merged": {
+     "changes": 432,
+     "max_colours_layer": 5,
+     "colours": 10
+    }
+   },
+   {
+    "module": [
+     2,
+     0,
+     2
+    ],
+    "voxels": 11331,
+    "hidden_share": 0.686,
+    "asis": {
+     "changes": 448,
+     "max_colours_layer": 4,
+     "colours": 10
+    },
+    "merged": {
+     "changes": 368,
+     "max_colours_layer": 4,
+     "colours": 10
+    }
+   }
+  ],
+  "total_changes_asis": 3968,
+  "total_changes_merged": 2816,
+  "reduction": 0.29
+ }
+}

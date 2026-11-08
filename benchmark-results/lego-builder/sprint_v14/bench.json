@@ -1,0 +1,5088 @@
+{
+ "proxy_profiles": {
+  "A1": {
+   "accel": 10000,
+   "flow": 21
+  },
+  "Hi": {
+   "accel": 12000,
+   "flow": 21
+  },
+  "U1": {
+   "accel": 20000,
+   "flow": 21
+  }
+ },
+ "bed_used_mm": 250.0,
+ "models": {
+  "paco": {
+   "bricks": {
+    "parts": 3193,
+    "supported": 3077,
+    "unsupported_types": {
+     "52107": 46,
+     "63864": 18,
+     "47905": 13,
+     "24299": 6,
+     "24307": 4,
+     "2450": 4,
+     "25269": 4,
+     "87087": 3,
+     "43898": 3,
+     "98138": 2,
+     "30565": 2,
+     "78444": 2,
+     "78443": 2,
+     "43723": 2,
+     "43722": 2,
+     "54200": 1,
+     "54383": 1,
+     "54384": 1
+    },
+    "plates": 21,
+    "colours": 6,
+    "volume_cm3": 1472.0,
+    "plates_files": [
+     "/tmp/v14/work/paco/bricks/plates/plate_001_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_002_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_003_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_004_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_005_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_006_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_007_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_008_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_009_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_010_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_011_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_012_colour14.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_013_colour4.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_014_colour4.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_015_colour4.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_016_colour4.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_017_colour0.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_018_colour0.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_019_colour25.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_020_colour28.3mf",
+     "/tmp/v14/work/paco/bricks/plates/plate_021_colour15.3mf"
+    ]
+   },
+   "modules": {
+    "count": 8,
+    "colour_bodies": 44,
+    "dowel_pairs": 16,
+    "files": [
+     "/tmp/v14/work/paco/modules/modules/module_0_0_0.3mf",
+     "/tmp/v14/work/paco/modules/modules/module_0_0_1.3mf",
+     "/tmp/v14/work/paco/modules/modules/module_0_1_0.3mf",
+     "/tmp/v14/work/paco/modules/modules/module_0_1_1.3mf",
+     "/tmp/v14/work/paco/modules/modules/module_1_0_0.3mf",
+     "/tmp/v14/work/paco/modules/modules/module_1_0_1.3mf",
+     "/tmp/v14/work/paco/modules/modules/module_1_1_0.3mf",
+     "/tmp/v14/work/paco/modules/modules/module_1_1_1.3mf"
+    ],
+    "module_list": [
+     {
+      "file": "module_0_0_0.3mf",
+      "colours": 5,
+      "max_colours_in_layer": 4,
+      "layers": 1001,
+      "colour_changes": 2120,
+      "spool_loads_4slots": 6,
+      "spool_loads_16slots": 5,
+      "components": 77,
+      "height_mm": 200.1
+     },
+     {
+      "file": "module_0_0_1.3mf",
+      "colours": 5,
+      "max_colours_in_layer": 5,
+      "layers": 1001,
+      "colour_changes": 429,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 5,
+      "components": 20,
+      "height_mm": 200.1
+     },
+     {
+      "file": "module_0_1_0.3mf",
+      "colours": 6,
+      "max_colours_in_layer": 5,
+      "layers": 1001,
+      "colour_changes": 1315,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 6,
+      "components": 101,
+      "height_mm": 200.1
+     },
+     {
+      "file": "module_0_1_1.3mf",
+      "colours": 6,
+      "max_colours_in_layer": 4,
+      "layers": 745,
+      "colour_changes": 365,
+      "spool_loads_4slots": 6,
+      "spool_loads_16slots": 6,
+      "components": 15,
+      "height_mm": 148.9
+     },
+     {
+      "file": "module_1_0_0.3mf",
+      "colours": 5,
+      "max_colours_in_layer": 5,
+      "layers": 1001,
+      "colour_changes": 1919,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 5,
+      "components": 78,
+      "height_mm": 200.1
+     },
+     {
+      "file": "module_1_0_1.3mf",
+      "colours": 5,
+      "max_colours_in_layer": 4,
+      "layers": 1001,
+      "colour_changes": 433,
+      "spool_loads_4slots": 6,
+      "spool_loads_16slots": 5,
+      "components": 19,
+      "height_mm": 200.1
+     },
+     {
+      "file": "module_1_1_0.3mf",
+      "colours": 6,
+      "max_colours_in_layer": 5,
+      "layers": 713,
+      "colour_changes": 574,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 6,
+      "components": 28,
+      "height_mm": 142.5
+     },
+     {
+      "file": "module_1_1_1.3mf",
+      "colours": 6,
+      "max_colours_in_layer": 4,
+      "layers": 745,
+      "colour_changes": 835,
+      "spool_loads_4slots": 6,
+      "spool_loads_16slots": 6,
+      "components": 83,
+      "height_mm": 148.9
+     }
+    ]
+   },
+   "mono": {
+    "plates": 7,
+    "pieces": 421,
+    "colours": 6,
+    "plate_list": [
+     {
+      "file": "/tmp/v14/work/paco/mono/mono_000_F2CD37.3mf",
+      "colour": "F2CD37",
+      "pieces": 3
+     },
+     {
+      "file": "/tmp/v14/work/paco/mono/mono_001_F2CD37.3mf",
+      "colour": "F2CD37",
+      "pieces": 74
+     },
+     {
+      "file": "/tmp/v14/work/paco/mono/mono_002_FE8A18.3mf",
+      "colour": "FE8A18",
+      "pieces": 111
+     },
+     {
+      "file": "/tmp/v14/work/paco/mono/mono_003_958A73.3mf",
+      "colour": "958A73",
+      "pieces": 76
+     },
+     {
+      "file": "/tmp/v14/work/paco/mono/mono_004_C91A09.3mf",
+      "colour": "C91A09",
+      "pieces": 43
+     },
+     {
+      "file": "/tmp/v14/work/paco/mono/mono_005_05131D.3mf",
+      "colour": "05131D",
+      "pieces": 101
+     },
+     {
+      "file": "/tmp/v14/work/paco/mono/mono_006_FFFFFF.3mf",
+      "colour": "FFFFFF",
+      "pieces": 13
+     }
+    ]
+   }
+  },
+  "hyrule": {
+   "bricks": {
+    "parts": 10682,
+    "supported": 10167,
+    "unsupported_types": {
+     "25269": 467,
+     "98138": 48
+    },
+    "plates": 131,
+    "colours": 12,
+    "volume_cm3": 11010.9,
+    "plates_files": [
+     "/tmp/v14/work/hyrule/bricks/plates/plate_001_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_002_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_003_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_004_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_005_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_006_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_007_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_008_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_009_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_010_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_011_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_012_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_013_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_014_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_015_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_016_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_017_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_018_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_019_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_020_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_021_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_022_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_023_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_024_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_025_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_026_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_027_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_028_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_029_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_030_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_031_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_032_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_033_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_034_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_035_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_036_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_037_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_038_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_039_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_040_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_041_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_042_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_043_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_044_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_045_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_046_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_047_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_048_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_049_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_050_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_051_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_052_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_053_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_054_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_055_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_056_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_057_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_058_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_059_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_060_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_061_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_062_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_063_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_064_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_065_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_066_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_067_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_068_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_069_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_070_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_071_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_072_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_073_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_074_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_075_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_076_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_077_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_078_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_079_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_080_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_081_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_082_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_083_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_084_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_085_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_086_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_087_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_088_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_089_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_090_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_091_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_092_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_093_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_094_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_095_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_096_colour72.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_097_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_098_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_099_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_100_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_101_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_102_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_103_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_104_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_105_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_106_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_107_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_108_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_109_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_110_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_111_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_112_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_113_colour70.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_114_colour71.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_115_colour71.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_116_colour71.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_117_colour2.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_118_colour2.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_119_colour10.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_120_colour10.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_121_colour10.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_122_colour84.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_123_colour84.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_124_colour212.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_125_colour212.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_126_colour15.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_127_colour19.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_128_colour19.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_129_colour297.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_130_colour288.3mf",
+     "/tmp/v14/work/hyrule/bricks/plates/plate_131_colour28.3mf"
+    ]
+   },
+   "modules": {
+    "count": 9,
+    "colour_bodies": 86,
+    "dowel_pairs": 50,
+    "files": [
+     "/tmp/v14/work/hyrule/modules/modules/module_0_0_0.3mf",
+     "/tmp/v14/work/hyrule/modules/modules/module_0_0_1.3mf",
+     "/tmp/v14/work/hyrule/modules/modules/module_0_0_2.3mf",
+     "/tmp/v14/work/hyrule/modules/modules/module_1_0_0.3mf",
+     "/tmp/v14/work/hyrule/modules/modules/module_1_0_1.3mf",
+     "/tmp/v14/work/hyrule/modules/modules/module_1_0_2.3mf",
+     "/tmp/v14/work/hyrule/modules/modules/module_2_0_0.3mf",
+     "/tmp/v14/work/hyrule/modules/modules/module_2_0_1.3mf",
+     "/tmp/v14/work/hyrule/modules/modules/module_2_0_2.3mf"
+    ],
+    "module_list": [
+     {
+      "file": "module_0_0_0.3mf",
+      "colours": 5,
+      "max_colours_in_layer": 3,
+      "layers": 336,
+      "colour_changes": 211,
+      "spool_loads_4slots": 5,
+      "spool_loads_16slots": 5,
+      "components": 29,
+      "height_mm": 67.2
+     },
+     {
+      "file": "module_0_0_1.3mf",
+      "colours": 10,
+      "max_colours_in_layer": 5,
+      "layers": 336,
+      "colour_changes": 489,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 10,
+      "components": 106,
+      "height_mm": 67.2
+     },
+     {
+      "file": "module_0_0_2.3mf",
+      "colours": 8,
+      "max_colours_in_layer": 5,
+      "layers": 336,
+      "colour_changes": 420,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 8,
+      "components": 58,
+      "height_mm": 67.2
+     },
+     {
+      "file": "module_1_0_0.3mf",
+      "colours": 12,
+      "max_colours_in_layer": 7,
+      "layers": 336,
+      "colour_changes": 568,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 12,
+      "components": 58,
+      "height_mm": 67.2
+     },
+     {
+      "file": "module_1_0_1.3mf",
+      "colours": 11,
+      "max_colours_in_layer": 5,
+      "layers": 240,
+      "colour_changes": 394,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 11,
+      "components": 71,
+      "height_mm": 48.0
+     },
+     {
+      "file": "module_1_0_2.3mf",
+      "colours": 10,
+      "max_colours_in_layer": 6,
+      "layers": 336,
+      "colour_changes": 600,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 10,
+      "components": 83,
+      "height_mm": 67.2
+     },
+     {
+      "file": "module_2_0_0.3mf",
+      "colours": 10,
+      "max_colours_in_layer": 5,
+      "layers": 336,
+      "colour_changes": 342,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 10,
+      "components": 49,
+      "height_mm": 67.2
+     },
+     {
+      "file": "module_2_0_1.3mf",
+      "colours": 10,
+      "max_colours_in_layer": 6,
+      "layers": 336,
+      "colour_changes": 551,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 10,
+      "components": 67,
+      "height_mm": 67.2
+     },
+     {
+      "file": "module_2_0_2.3mf",
+      "colours": 10,
+      "max_colours_in_layer": 5,
+      "layers": 336,
+      "colour_changes": 456,
+      "spool_loads_4slots": null,
+      "spool_loads_16slots": 10,
+      "components": 73,
+      "height_mm": 67.2
+     }
+    ]
+   },
+   "mono": {
+    "plates": 43,
+    "pieces": 594,
+    "colours": 12,
+    "plate_list": [
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_000_6C6E68.3mf",
+      "colour": "6C6E68",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_001_6C6E68.3mf",
+      "colour": "6C6E68",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_002_6C6E68.3mf",
+      "colour": "6C6E68",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_003_6C6E68.3mf",
+      "colour": "6C6E68",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_004_6C6E68.3mf",
+      "colour": "6C6E68",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_005_6C6E68.3mf",
+      "colour": "6C6E68",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_006_6C6E68.3mf",
+      "colour": "6C6E68",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_007_6C6E68.3mf",
+      "colour": "6C6E68",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_008_6C6E68.3mf",
+      "colour": "6C6E68",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_009_582A12.3mf",
+      "colour": "582A12",
+      "pieces": 2
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_010_582A12.3mf",
+      "colour": "582A12",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_011_582A12.3mf",
+      "colour": "582A12",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_012_582A12.3mf",
+      "colour": "582A12",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_013_582A12.3mf",
+      "colour": "582A12",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_014_582A12.3mf",
+      "colour": "582A12",
+      "pieces": 49
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_015_582A12.3mf",
+      "colour": "582A12",
+      "pieces": 98
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_016_E4CD9E.3mf",
+      "colour": "E4CD9E",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_017_E4CD9E.3mf",
+      "colour": "E4CD9E",
+      "pieces": 10
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_018_AA7D55.3mf",
+      "colour": "AA7D55",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_019_AA7D55.3mf",
+      "colour": "AA7D55",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_020_AA7D55.3mf",
+      "colour": "AA7D55",
+      "pieces": 6
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_021_AA7D55.3mf",
+      "colour": "AA7D55",
+      "pieces": 36
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_022_AA7F2E.3mf",
+      "colour": "AA7F2E",
+      "pieces": 17
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_023_AA7F2E.3mf",
+      "colour": "AA7F2E",
+      "pieces": 43
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_024_237841.3mf",
+      "colour": "237841",
+      "pieces": 7
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_025_237841.3mf",
+      "colour": "237841",
+      "pieces": 105
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_026_184632.3mf",
+      "colour": "184632",
+      "pieces": 29
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_027_4B9F4A.3mf",
+      "colour": "4B9F4A",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_028_4B9F4A.3mf",
+      "colour": "4B9F4A",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_029_4B9F4A.3mf",
+      "colour": "4B9F4A",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_030_4B9F4A.3mf",
+      "colour": "4B9F4A",
+      "pieces": 10
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_031_4B9F4A.3mf",
+      "colour": "4B9F4A",
+      "pieces": 12
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_032_A0A5A9.3mf",
+      "colour": "A0A5A9",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_033_A0A5A9.3mf",
+      "colour": "A0A5A9",
+      "pieces": 1
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_034_A0A5A9.3mf",
+      "colour": "A0A5A9",
+      "pieces": 4
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_035_A0A5A9.3mf",
+      "colour": "A0A5A9",
+      "pieces": 23
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_036_A0A5A9.3mf",
+      "colour": "A0A5A9",
+      "pieces": 63
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_037_FFFFFF.3mf",
+      "colour": "FFFFFF",
+      "pieces": 8
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_038_FFFFFF.3mf",
+      "colour": "FFFFFF",
+      "pieces": 23
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_039_9FC3E9.3mf",
+      "colour": "9FC3E9",
+      "pieces": 2
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_040_9FC3E9.3mf",
+      "colour": "9FC3E9",
+      "pieces": 6
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_041_9FC3E9.3mf",
+      "colour": "9FC3E9",
+      "pieces": 10
+     },
+     {
+      "file": "/tmp/v14/work/hyrule/mono/mono_042_958A73.3mf",
+      "colour": "958A73",
+      "pieces": 10
+     }
+    ]
+   }
+  }
+ },
+ "slices": [
+  {
+   "tag": "paco_module_0_0_0",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Low bed adhesion, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 60018,
+   "filament_g": 324.6,
+   "layers": 1001,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_0_0.3mf"
+  },
+  {
+   "tag": "paco_module_0_0_0",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Low bed adhesion, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 60035,
+   "filament_g": 324.6,
+   "layers": 1001,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_0_0.3mf"
+  },
+  {
+   "tag": "paco_module_0_0_0",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Low bed adhesion, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 60048,
+   "filament_g": 324.6,
+   "layers": 1001,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_0_0.3mf"
+  },
+  {
+   "tag": "paco_module_0_0_0",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:34:39.356660] [0x00007fbc5a3cf180] [error]   gcode path conflicts found between module_0_0_0_colour25 and module_0_0_0_colour14"
+   ],
+   "seconds": 158416,
+   "filament_g": 798.2,
+   "layers": 2749,
+   "support_lines": 4643,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_0_0.3mf"
+  },
+  {
+   "tag": "paco_module_0_0_1",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions",
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions"
+   ],
+   "seconds": 8079,
+   "filament_g": 38.05,
+   "layers": 649,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_0_1.3mf"
+  },
+  {
+   "tag": "paco_module_0_0_1",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions",
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions"
+   ],
+   "seconds": 8081,
+   "filament_g": 38.05,
+   "layers": 649,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_0_1.3mf"
+  },
+  {
+   "tag": "paco_module_0_0_1",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions",
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions"
+   ],
+   "seconds": 8083,
+   "filament_g": 38.05,
+   "layers": 649,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_0_1.3mf"
+  },
+  {
+   "tag": "paco_module_0_0_1",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:34:32.654725] [0x00007f82ab8ff180] [error]   gcode path conflicts found between module_0_0_1_colour25 and module_0_0_1_colour14"
+   ],
+   "seconds": 17735,
+   "filament_g": 85.17,
+   "layers": 2214,
+   "support_lines": 1001,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_0_1.3mf"
+  },
+  {
+   "tag": "paco_module_0_1_0",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 65287,
+   "filament_g": 367.63,
+   "layers": 985,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_1_0.3mf"
+  },
+  {
+   "tag": "paco_module_0_1_0",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 65302,
+   "filament_g": 367.63,
+   "layers": 985,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_1_0.3mf"
+  },
+  {
+   "tag": "paco_module_0_1_0",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 65327,
+   "filament_g": 367.63,
+   "layers": 985,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_1_0.3mf"
+  },
+  {
+   "tag": "paco_module_0_1_0",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:35:03.158756] [0x00007f0de8413180] [error]   gcode path conflicts found between module_0_1_0_colour14 and module_0_1_0_colour4"
+   ],
+   "seconds": 132681,
+   "filament_g": 679.5,
+   "layers": 2355,
+   "support_lines": 3472,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_1_0.3mf"
+  },
+  {
+   "tag": "paco_module_0_1_1",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 10835,
+   "filament_g": 43.04,
+   "layers": 689,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_1_1.3mf"
+  },
+  {
+   "tag": "paco_module_0_1_1",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 10837,
+   "filament_g": 43.04,
+   "layers": 689,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_1_1.3mf"
+  },
+  {
+   "tag": "paco_module_0_1_1",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 10841,
+   "filament_g": 43.04,
+   "layers": 689,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_1_1.3mf"
+  },
+  {
+   "tag": "paco_module_0_1_1",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:35:00.267555] [0x00007fe7c6110180] [error]   gcode path conflicts found between module_0_1_1_colour14 and module_0_1_1_colour4"
+   ],
+   "seconds": 21092,
+   "filament_g": 93.56,
+   "layers": 1408,
+   "support_lines": 1033,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_0_1_1.3mf"
+  },
+  {
+   "tag": "paco_module_1_0_0",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 57620,
+   "filament_g": 305.62,
+   "layers": 1001,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_0_0.3mf"
+  },
+  {
+   "tag": "paco_module_1_0_0",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 57632,
+   "filament_g": 305.62,
+   "layers": 1001,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_0_0.3mf"
+  },
+  {
+   "tag": "paco_module_1_0_0",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 57649,
+   "filament_g": 305.62,
+   "layers": 1001,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_0_0.3mf"
+  },
+  {
+   "tag": "paco_module_1_0_0",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:35:20.546508] [0x00007f84e3859180] [error]   gcode path conflicts found between module_1_0_0_colour25 and module_1_0_0_colour14"
+   ],
+   "seconds": 150599,
+   "filament_g": 750.89,
+   "layers": 2788,
+   "support_lines": 4726,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_0_0.3mf"
+  },
+  {
+   "tag": "paco_module_1_0_1",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 9306,
+   "filament_g": 35.49,
+   "layers": 697,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_0_1.3mf"
+  },
+  {
+   "tag": "paco_module_1_0_1",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 9308,
+   "filament_g": 35.49,
+   "layers": 697,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_0_1.3mf"
+  },
+  {
+   "tag": "paco_module_1_0_1",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 9310,
+   "filament_g": 35.49,
+   "layers": 697,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_0_1.3mf"
+  },
+  {
+   "tag": "paco_module_1_0_1",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:35:17.089429] [0x00007f4c7dc39180] [error]   gcode path conflicts found between module_1_0_1_colour28 and module_1_0_1_colour14"
+   ],
+   "seconds": 17901,
+   "filament_g": 79.37,
+   "layers": 2742,
+   "support_lines": 936,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_0_1.3mf"
+  },
+  {
+   "tag": "paco_module_1_1_0",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 17683,
+   "filament_g": 91.31,
+   "layers": 712,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_1_0.3mf"
+  },
+  {
+   "tag": "paco_module_1_1_0",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 17687,
+   "filament_g": 91.31,
+   "layers": 712,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_1_0.3mf"
+  },
+  {
+   "tag": "paco_module_1_1_0",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 17693,
+   "filament_g": 91.31,
+   "layers": 712,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_1_0.3mf"
+  },
+  {
+   "tag": "paco_module_1_1_0",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:35:25.158379] [0x00007f0526d5c180] [error]   gcode path conflicts found between module_1_1_0_colour25 and module_1_1_0_colour4"
+   ],
+   "seconds": 29686,
+   "filament_g": 150.57,
+   "layers": 1528,
+   "support_lines": 1316,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_1_0.3mf"
+  },
+  {
+   "tag": "paco_module_1_1_1",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 35924,
+   "filament_g": 174.55,
+   "layers": 728,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_1_1.3mf"
+  },
+  {
+   "tag": "paco_module_1_1_1",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 35933,
+   "filament_g": 174.55,
+   "layers": 728,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_1_1.3mf"
+  },
+  {
+   "tag": "paco_module_1_1_1",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 35944,
+   "filament_g": 174.55,
+   "layers": 728,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_1_1.3mf"
+  },
+  {
+   "tag": "paco_module_1_1_1",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:35:45.090988] [0x00007f1bb4f3e180] [error]   gcode path conflicts found between module_1_1_1_colour25 and module_1_1_1_colour4"
+   ],
+   "seconds": 82871,
+   "filament_g": 401.37,
+   "layers": 1899,
+   "support_lines": 2076,
+   "kind": "mod2",
+   "model": "paco",
+   "file": "module_1_1_1.3mf"
+  },
+  {
+   "tag": "paco_mono_000_F2CD37",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 53656,
+   "filament_g": 338.04,
+   "layers": 1001,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_000_F2CD37.3mf"
+  },
+  {
+   "tag": "paco_mono_000_F2CD37",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 105426,
+   "filament_g": 582.91,
+   "layers": 1798,
+   "support_lines": 3077,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_000_F2CD37.3mf"
+  },
+  {
+   "tag": "paco_mono_001_F2CD37",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 60818,
+   "filament_g": 365.14,
+   "layers": 857,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_001_F2CD37.3mf"
+  },
+  {
+   "tag": "paco_mono_001_F2CD37",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:36:02.588838] [0x00007f0780d16180] [error]   gcode path conflicts found between c1 and c0"
+   ],
+   "seconds": 101059,
+   "filament_g": 557.35,
+   "layers": 2245,
+   "support_lines": 3004,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_001_F2CD37.3mf"
+  },
+  {
+   "tag": "paco_mono_002_FE8A18",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 24058,
+   "filament_g": 64.16,
+   "layers": 128,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_002_FE8A18.3mf"
+  },
+  {
+   "tag": "paco_mono_002_FE8A18",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:36:05.752141] [0x00007fbc58164180] [error]   gcode path conflicts found between c1 and c0"
+   ],
+   "seconds": 26038,
+   "filament_g": 73.19,
+   "layers": 224,
+   "support_lines": 215,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_002_FE8A18.3mf"
+  },
+  {
+   "tag": "paco_mono_003_958A73",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 14949,
+   "filament_g": 49.72,
+   "layers": 128,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_003_958A73.3mf"
+  },
+  {
+   "tag": "paco_mono_003_958A73",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 14953,
+   "filament_g": 49.72,
+   "layers": 128,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_003_958A73.3mf"
+  },
+  {
+   "tag": "paco_mono_003_958A73",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 14957,
+   "filament_g": 49.72,
+   "layers": 128,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_003_958A73.3mf"
+  },
+  {
+   "tag": "paco_mono_003_958A73",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:36:13.974860] [0x00007f0b39768180] [error]   gcode path conflicts found between c2 and c1"
+   ],
+   "seconds": 16290,
+   "filament_g": 55.56,
+   "layers": 265,
+   "support_lines": 156,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_003_958A73.3mf"
+  },
+  {
+   "tag": "paco_mono_004_C91A09",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 52902,
+   "filament_g": 252.51,
+   "layers": 880,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_004_C91A09.3mf"
+  },
+  {
+   "tag": "paco_mono_004_C91A09",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:36:23.282235] [0x00007f168eb22180] [error]   gcode path conflicts found between c1 and c0"
+   ],
+   "seconds": 90609,
+   "filament_g": 431.98,
+   "layers": 2131,
+   "support_lines": 3219,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_004_C91A09.3mf"
+  },
+  {
+   "tag": "paco_mono_005_05131D",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [],
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_005_05131D.3mf"
+  },
+  {
+   "tag": "paco_mono_005_05131D",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [],
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_005_05131D.3mf"
+  },
+  {
+   "tag": "paco_mono_006_FFFFFF",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 5696,
+   "filament_g": 17.5,
+   "layers": 169,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_006_FFFFFF.3mf"
+  },
+  {
+   "tag": "paco_mono_006_FFFFFF",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:36:21.094537] [0x00007f1051dcf180] [error]   gcode path conflicts found between c2 and c1"
+   ],
+   "seconds": 7058,
+   "filament_g": 23.73,
+   "layers": 298,
+   "support_lines": 354,
+   "kind": "mono3",
+   "model": "paco",
+   "file": "mono_006_FFFFFF.3mf"
+  },
+  {
+   "tag": "paco_plate_001_colour14",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34925,
+   "filament_g": 106.79,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_001_colour14.3mf"
+  },
+  {
+   "tag": "paco_plate_001_colour14",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34934,
+   "filament_g": 106.79,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_001_colour14.3mf"
+  },
+  {
+   "tag": "paco_plate_001_colour14",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34941,
+   "filament_g": 106.79,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_001_colour14.3mf"
+  },
+  {
+   "tag": "paco_plate_005_colour14",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 33729,
+   "filament_g": 109.46,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_005_colour14.3mf"
+  },
+  {
+   "tag": "paco_plate_009_colour14",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 32445,
+   "filament_g": 108.01,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_009_colour14.3mf"
+  },
+  {
+   "tag": "paco_plate_009_colour14",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 32461,
+   "filament_g": 108.01,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_009_colour14.3mf"
+  },
+  {
+   "tag": "paco_plate_009_colour14",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 32471,
+   "filament_g": 108.01,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_009_colour14.3mf"
+  },
+  {
+   "tag": "paco_plate_013_colour4",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 28940,
+   "filament_g": 108.04,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_013_colour4.3mf"
+  },
+  {
+   "tag": "paco_plate_017_colour0",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 30574,
+   "filament_g": 111.22,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_017_colour0.3mf"
+  },
+  {
+   "tag": "paco_plate_017_colour0",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 30579,
+   "filament_g": 111.22,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_017_colour0.3mf"
+  },
+  {
+   "tag": "paco_plate_017_colour0",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 30587,
+   "filament_g": 111.22,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_017_colour0.3mf"
+  },
+  {
+   "tag": "paco_plate_021_colour15",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5620,
+   "filament_g": 12.92,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "paco",
+   "file": "plate_021_colour15.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_0",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Long bridging extrusions",
+    "[2026-11-08 20:40:28.643421] [0x00007f0b2dc2d180] [error]   gcode path conflicts found between module_0_0_0_colour70 and module_0_0_0_colour72",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 64173,
+   "filament_g": 699.3,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_0",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Long bridging extrusions",
+    "[2026-11-08 20:40:29.503623] [0x00007f17e2582180] [error]   gcode path conflicts found between module_0_0_0_colour70 and module_0_0_0_colour72",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 64176,
+   "filament_g": 699.3,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_0",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Long bridging extrusions",
+    "[2026-11-08 20:40:31.969067] [0x00007ff4f1db9180] [error]   gcode path conflicts found between module_0_0_0_colour70 and module_0_0_0_colour72",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 64182,
+   "filament_g": 699.3,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_0",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:40:33.751928] [0x00007fde47ad9180] [error]   gcode path conflicts found between module_0_0_0_colour70 and module_0_0_0_colour72"
+   ],
+   "seconds": 66903,
+   "filament_g": 711.86,
+   "layers": 490,
+   "support_lines": 222,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_1",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 100800,
+   "filament_g": 871.15,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_1",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 100799,
+   "filament_g": 871.15,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_1",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 100823,
+   "filament_g": 871.15,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_1",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:40:48.723455] [0x00007fb31567d180] [error]   gcode path conflicts found between module_0_0_1_colour70 and module_0_0_1_colour72"
+   ],
+   "seconds": 123334,
+   "filament_g": 982.32,
+   "layers": 587,
+   "support_lines": 489,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_2",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 87315,
+   "filament_g": 865.38,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_2",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 87318,
+   "filament_g": 865.38,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_2",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 87331,
+   "filament_g": 865.38,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_module_0_0_2",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:40:56.792455] [0x00007f686d80c180] [error]   gcode path conflicts found between module_0_0_2_colour70 and module_0_0_2_colour72"
+   ],
+   "seconds": 102247,
+   "filament_g": 938.87,
+   "layers": 574,
+   "support_lines": 532,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_0_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_0",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "[2026-11-08 20:40:55.924841] [0x00007f2c9362f180] [error]   gcode path conflicts found between module_1_0_0_colour70 and module_1_0_0_colour72"
+   ],
+   "seconds": 72669,
+   "filament_g": 690.53,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_0",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "[2026-11-08 20:41:00.456049] [0x00007fcb48564180] [error]   gcode path conflicts found between module_1_0_0_colour70 and module_1_0_0_colour72"
+   ],
+   "seconds": 72675,
+   "filament_g": 690.53,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_0",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Low bed adhesion, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 72683,
+   "filament_g": 690.53,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_0",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:41:04.374532] [0x00007f601a208180] [error]   gcode path conflicts found between module_1_0_0_colour70 and module_1_0_0_colour72"
+   ],
+   "seconds": 81524,
+   "filament_g": 735.1,
+   "layers": 573,
+   "support_lines": 335,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_1",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 66254,
+   "filament_g": 642.86,
+   "layers": 224,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_1",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 66258,
+   "filament_g": 642.86,
+   "layers": 224,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_1",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 66267,
+   "filament_g": 642.86,
+   "layers": 224,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_1",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:41:14.224644] [0x00007f8cbd338180] [error]   gcode path conflicts found between module_1_0_1_colour212 and module_1_0_1_colour72"
+   ],
+   "seconds": 73983,
+   "filament_g": 679.49,
+   "layers": 416,
+   "support_lines": 364,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_2",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 84493,
+   "filament_g": 825.83,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_2",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 84500,
+   "filament_g": 825.83,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_2",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 84511,
+   "filament_g": 825.83,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_module_1_0_2",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:41:25.954038] [0x00007f54ad491180] [error]   gcode path conflicts found between module_1_0_2_colour70 and module_1_0_2_colour72"
+   ],
+   "seconds": 113552,
+   "filament_g": 973.6,
+   "layers": 645,
+   "support_lines": 685,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_1_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_0",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "[2026-11-08 20:41:24.697437] [0x00007f809bec3180] [error]   gcode path conflicts found between module_2_0_0_colour70 and module_2_0_0_colour72"
+   ],
+   "seconds": 76034,
+   "filament_g": 736.07,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_0",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "[2026-11-08 20:41:27.453182] [0x00007fa44adb6180] [error]   gcode path conflicts found between module_2_0_0_colour70 and module_2_0_0_colour72"
+   ],
+   "seconds": 76037,
+   "filament_g": 736.07,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_0",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "[2026-11-08 20:41:30.609378] [0x00007f25cf8fb180] [error]   gcode path conflicts found between module_2_0_0_colour70 and module_2_0_0_colour72"
+   ],
+   "seconds": 76045,
+   "filament_g": 736.07,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_0",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:41:34.292486] [0x00007f867cb31180] [error]   gcode path conflicts found between module_2_0_0_colour70 and module_2_0_0_colour72"
+   ],
+   "seconds": 80768,
+   "filament_g": 759.03,
+   "layers": 486,
+   "support_lines": 277,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_0.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_1",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 85267,
+   "filament_g": 757.61,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_1",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 85274,
+   "filament_g": 757.61,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_1",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions"
+   ],
+   "seconds": 85288,
+   "filament_g": 757.61,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_1",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:41:46.916723] [0x00007f4c1b61f180] [error]   gcode path conflicts found between module_2_0_1_colour70 and module_2_0_1_colour72"
+   ],
+   "seconds": 104095,
+   "filament_g": 855.76,
+   "layers": 580,
+   "support_lines": 400,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_1.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_2",
+   "profile": "A1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating object part, Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "[2026-11-08 20:41:45.517078] [0x00007ff2434ef180] [error]   gcode path conflicts found between module_2_0_2_colour70 and module_2_0_2_colour72"
+   ],
+   "seconds": 84434,
+   "filament_g": 827.39,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_2",
+   "profile": "Hi",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating object part, Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "[2026-11-08 20:41:48.831529] [0x00007f1d77868180] [error]   gcode path conflicts found between module_2_0_2_colour70 and module_2_0_2_colour72"
+   ],
+   "seconds": 84439,
+   "filament_g": 827.39,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_2",
+   "profile": "U1",
+   "supports": false,
+   "rc": -11,
+   "warn": [
+    "Floating object part, Floating bridge anchors, Long bridging extrusions",
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "[2026-11-08 20:41:52.016194] [0x00007f5b475fd180] [error]   gcode path conflicts found between module_2_0_2_colour70 and module_2_0_2_colour72"
+   ],
+   "seconds": 84449,
+   "filament_g": 827.39,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_module_2_0_2",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:41:55.851278] [0x00007f8cf9264180] [error]   gcode path conflicts found between module_2_0_2_colour70 and module_2_0_2_colour72"
+   ],
+   "seconds": 100212,
+   "filament_g": 905.72,
+   "layers": 525,
+   "support_lines": 452,
+   "kind": "mod2",
+   "model": "hyrule",
+   "file": "module_2_0_2.3mf"
+  },
+  {
+   "tag": "hyrule_mono_000_6C6E68",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 41586,
+   "filament_g": 499.83,
+   "layers": 256,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_000_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_000_6C6E68",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 42142,
+   "filament_g": 501.2,
+   "layers": 366,
+   "support_lines": 177,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_000_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_001_6C6E68",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 35334,
+   "filament_g": 448.33,
+   "layers": 224,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_001_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_001_6C6E68",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 35805,
+   "filament_g": 449.52,
+   "layers": 334,
+   "support_lines": 170,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_001_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_002_6C6E68",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 36744,
+   "filament_g": 419.07,
+   "layers": 224,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_002_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_002_6C6E68",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 37017,
+   "filament_g": 419.84,
+   "layers": 334,
+   "support_lines": 151,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_002_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_003_6C6E68",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 22781,
+   "filament_g": 301.19,
+   "layers": 192,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_003_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_003_6C6E68",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 22782,
+   "filament_g": 301.19,
+   "layers": 192,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_003_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_003_6C6E68",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 22783,
+   "filament_g": 301.19,
+   "layers": 192,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_003_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_003_6C6E68",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 23028,
+   "filament_g": 301.82,
+   "layers": 290,
+   "support_lines": 154,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_003_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_004_6C6E68",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 35028,
+   "filament_g": 434.76,
+   "layers": 240,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_004_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_004_6C6E68",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 35372,
+   "filament_g": 435.48,
+   "layers": 350,
+   "support_lines": 183,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_004_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_005_6C6E68",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 30989,
+   "filament_g": 368.9,
+   "layers": 224,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_005_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_005_6C6E68",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 31283,
+   "filament_g": 369.48,
+   "layers": 334,
+   "support_lines": 152,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_005_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_006_6C6E68",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 39053,
+   "filament_g": 502.5,
+   "layers": 224,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_006_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_006_6C6E68",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 39803,
+   "filament_g": 504.34,
+   "layers": 334,
+   "support_lines": 221,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_006_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_007_6C6E68",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 27844,
+   "filament_g": 331.9,
+   "layers": 192,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_007_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_007_6C6E68",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 27846,
+   "filament_g": 331.9,
+   "layers": 192,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_007_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_007_6C6E68",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 27848,
+   "filament_g": 331.9,
+   "layers": 192,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_007_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_007_6C6E68",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 27985,
+   "filament_g": 332.17,
+   "layers": 302,
+   "support_lines": 142,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_007_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_008_6C6E68",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 32968,
+   "filament_g": 405.78,
+   "layers": 224,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_008_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_008_6C6E68",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 33387,
+   "filament_g": 406.72,
+   "layers": 334,
+   "support_lines": 177,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_008_6C6E68.3mf"
+  },
+  {
+   "tag": "hyrule_mono_009_582A12",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors, Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 27964,
+   "filament_g": 300.41,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_009_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_009_582A12",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:42:08.889016] [0x00007f2478e0e180] [error]   gcode path conflicts found between c1 and c0"
+   ],
+   "seconds": 29465,
+   "filament_g": 306.94,
+   "layers": 494,
+   "support_lines": 224,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_009_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_010_582A12",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 24016,
+   "filament_g": 261.97,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_010_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_010_582A12",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 24388,
+   "filament_g": 262.82,
+   "layers": 394,
+   "support_lines": 132,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_010_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_011_582A12",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 24088,
+   "filament_g": 262.14,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_011_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_011_582A12",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 24089,
+   "filament_g": 262.14,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_011_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_011_582A12",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 24090,
+   "filament_g": 262.14,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_011_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_011_582A12",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 24409,
+   "filament_g": 262.98,
+   "layers": 394,
+   "support_lines": 139,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_011_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_012_582A12",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 24066,
+   "filament_g": 262.14,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_012_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_012_582A12",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 24386,
+   "filament_g": 262.98,
+   "layers": 394,
+   "support_lines": 134,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_012_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_013_582A12",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 24185,
+   "filament_g": 262.99,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_013_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_013_582A12",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 25557,
+   "filament_g": 268.72,
+   "layers": 411,
+   "support_lines": 173,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_013_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_014_582A12",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 45020,
+   "filament_g": 377.7,
+   "layers": 304,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_014_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_014_582A12",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:42:13.772995] [0x00007fe871d92180] [error]   gcode path conflicts found between c7 and c6"
+   ],
+   "seconds": 48172,
+   "filament_g": 390.45,
+   "layers": 598,
+   "support_lines": 337,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_014_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_015_582A12",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34066,
+   "filament_g": 84.68,
+   "layers": 112,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_015_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_015_582A12",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34068,
+   "filament_g": 84.68,
+   "layers": 112,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_015_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_015_582A12",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34083,
+   "filament_g": 84.68,
+   "layers": 112,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_015_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_015_582A12",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:42:18.423302] [0x00007f9957a55180] [error]   gcode path conflicts found between c2 and c1"
+   ],
+   "seconds": 34766,
+   "filament_g": 87.54,
+   "layers": 253,
+   "support_lines": 156,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_015_582A12.3mf"
+  },
+  {
+   "tag": "hyrule_mono_016_E4CD9E",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 8716,
+   "filament_g": 97.61,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_016_E4CD9E.3mf"
+  },
+  {
+   "tag": "hyrule_mono_016_E4CD9E",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 8716,
+   "filament_g": 97.61,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_016_E4CD9E.3mf"
+  },
+  {
+   "tag": "hyrule_mono_017_E4CD9E",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5549,
+   "filament_g": 45.01,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_017_E4CD9E.3mf"
+  },
+  {
+   "tag": "hyrule_mono_017_E4CD9E",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5549,
+   "filament_g": 45.01,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_017_E4CD9E.3mf"
+  },
+  {
+   "tag": "hyrule_mono_018_AA7D55",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 3563,
+   "filament_g": 28.34,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_018_AA7D55.3mf"
+  },
+  {
+   "tag": "hyrule_mono_018_AA7D55",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 3563,
+   "filament_g": 28.34,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_018_AA7D55.3mf"
+  },
+  {
+   "tag": "hyrule_mono_019_AA7D55",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 4418,
+   "filament_g": 36.63,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_019_AA7D55.3mf"
+  },
+  {
+   "tag": "hyrule_mono_019_AA7D55",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 4418,
+   "filament_g": 36.63,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_019_AA7D55.3mf"
+  },
+  {
+   "tag": "hyrule_mono_019_AA7D55",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 4419,
+   "filament_g": 36.63,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_019_AA7D55.3mf"
+  },
+  {
+   "tag": "hyrule_mono_019_AA7D55",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 4418,
+   "filament_g": 36.63,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_019_AA7D55.3mf"
+  },
+  {
+   "tag": "hyrule_mono_020_AA7D55",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 7981,
+   "filament_g": 61.58,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_020_AA7D55.3mf"
+  },
+  {
+   "tag": "hyrule_mono_020_AA7D55",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 7981,
+   "filament_g": 61.58,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_020_AA7D55.3mf"
+  },
+  {
+   "tag": "hyrule_mono_021_AA7D55",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 9151,
+   "filament_g": 51.91,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_021_AA7D55.3mf"
+  },
+  {
+   "tag": "hyrule_mono_021_AA7D55",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 9151,
+   "filament_g": 51.91,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_021_AA7D55.3mf"
+  },
+  {
+   "tag": "hyrule_mono_022_AA7F2E",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5857,
+   "filament_g": 34.3,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_022_AA7F2E.3mf"
+  },
+  {
+   "tag": "hyrule_mono_022_AA7F2E",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5857,
+   "filament_g": 34.3,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_022_AA7F2E.3mf"
+  },
+  {
+   "tag": "hyrule_mono_023_AA7F2E",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 8291,
+   "filament_g": 39.39,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_023_AA7F2E.3mf"
+  },
+  {
+   "tag": "hyrule_mono_023_AA7F2E",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 8292,
+   "filament_g": 39.39,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_023_AA7F2E.3mf"
+  },
+  {
+   "tag": "hyrule_mono_023_AA7F2E",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 8292,
+   "filament_g": 39.39,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_023_AA7F2E.3mf"
+  },
+  {
+   "tag": "hyrule_mono_023_AA7F2E",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 8291,
+   "filament_g": 39.39,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_023_AA7F2E.3mf"
+  },
+  {
+   "tag": "hyrule_mono_024_237841",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 6818,
+   "filament_g": 53.37,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_024_237841.3mf"
+  },
+  {
+   "tag": "hyrule_mono_024_237841",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 6818,
+   "filament_g": 53.37,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_024_237841.3mf"
+  },
+  {
+   "tag": "hyrule_mono_025_237841",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 29208,
+   "filament_g": 110.28,
+   "layers": 48,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_025_237841.3mf"
+  },
+  {
+   "tag": "hyrule_mono_025_237841",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:42:34.270139] [0x00007fe2a93e0180] [error]   gcode path conflicts found between c44 and c43"
+   ],
+   "seconds": 29280,
+   "filament_g": 110.55,
+   "layers": 67,
+   "support_lines": 22,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_025_237841.3mf"
+  },
+  {
+   "tag": "hyrule_mono_026_184632",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 8791,
+   "filament_g": 23.67,
+   "layers": 48,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_026_184632.3mf"
+  },
+  {
+   "tag": "hyrule_mono_026_184632",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:42:35.667555] [0x00007f7b0f6eb180] [error]   gcode path conflicts found between c9 and c8"
+   ],
+   "seconds": 8859,
+   "filament_g": 23.94,
+   "layers": 67,
+   "support_lines": 22,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_026_184632.3mf"
+  },
+  {
+   "tag": "hyrule_mono_027_4B9F4A",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 9171,
+   "filament_g": 97.26,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_027_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_027_4B9F4A",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 9171,
+   "filament_g": 97.26,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_027_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_027_4B9F4A",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 9172,
+   "filament_g": 97.26,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_027_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_027_4B9F4A",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 9171,
+   "filament_g": 97.26,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_027_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_028_4B9F4A",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 2711,
+   "filament_g": 21.09,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_028_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_028_4B9F4A",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 2711,
+   "filament_g": 21.09,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_028_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_029_4B9F4A",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 4836,
+   "filament_g": 43.22,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_029_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_029_4B9F4A",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 4836,
+   "filament_g": 43.22,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_029_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_030_4B9F4A",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 8869,
+   "filament_g": 69.92,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_030_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_030_4B9F4A",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 8869,
+   "filament_g": 69.92,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_030_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_031_4B9F4A",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 2561,
+   "filament_g": 14.29,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_031_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_031_4B9F4A",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 2561,
+   "filament_g": 14.29,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_031_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_031_4B9F4A",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 2562,
+   "filament_g": 14.29,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_031_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_031_4B9F4A",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 2561,
+   "filament_g": 14.29,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_031_4B9F4A.3mf"
+  },
+  {
+   "tag": "hyrule_mono_032_A0A5A9",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 9253,
+   "filament_g": 62.19,
+   "layers": 144,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_032_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_032_A0A5A9",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 19626,
+   "filament_g": 118.13,
+   "layers": 199,
+   "support_lines": 122,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_032_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_033_A0A5A9",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 10697,
+   "filament_g": 77.01,
+   "layers": 64,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_033_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_033_A0A5A9",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 11805,
+   "filament_g": 82.36,
+   "layers": 92,
+   "support_lines": 37,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_033_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_034_A0A5A9",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 6230,
+   "filament_g": 46.34,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_034_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_034_A0A5A9",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 6230,
+   "filament_g": 46.34,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_034_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_035_A0A5A9",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 16514,
+   "filament_g": 94.27,
+   "layers": 144,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_035_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_035_A0A5A9",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 16518,
+   "filament_g": 94.27,
+   "layers": 144,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_035_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_035_A0A5A9",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Floating object part",
+    "Long bridging extrusions"
+   ],
+   "seconds": 16523,
+   "filament_g": 94.27,
+   "layers": 144,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_035_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_035_A0A5A9",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:42:47.094061] [0x00007f88db554180] [error]   gcode path conflicts found between c2 and c0"
+   ],
+   "seconds": 20338,
+   "filament_g": 113.54,
+   "layers": 339,
+   "support_lines": 178,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_035_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_036_A0A5A9",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "Floating bridge anchors, Low bed adhesion, Loose extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 16199,
+   "filament_g": 55.65,
+   "layers": 144,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_036_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_036_A0A5A9",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:42:46.911079] [0x00007f6d2402f180] [error]   gcode path conflicts found between c11 and c10"
+   ],
+   "seconds": 16503,
+   "filament_g": 57.13,
+   "layers": 194,
+   "support_lines": 88,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_036_A0A5A9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_037_FFFFFF",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating object part, Floating bridge anchors, Loose extrusions, Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 9140,
+   "filament_g": 62.55,
+   "layers": 48,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_037_FFFFFF.3mf"
+  },
+  {
+   "tag": "hyrule_mono_037_FFFFFF",
+   "profile": "A1",
+   "supports": true,
+   "rc": -11,
+   "warn": [
+    "[2026-11-08 20:42:49.653977] [0x00007f0c6eec3180] [error]   gcode path conflicts found between c5 and c4"
+   ],
+   "seconds": 9591,
+   "filament_g": 64.91,
+   "layers": 56,
+   "support_lines": 11,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_037_FFFFFF.3mf"
+  },
+  {
+   "tag": "hyrule_mono_038_FFFFFF",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 6896,
+   "filament_g": 36.21,
+   "layers": 32,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_038_FFFFFF.3mf"
+  },
+  {
+   "tag": "hyrule_mono_038_FFFFFF",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 6896,
+   "filament_g": 36.21,
+   "layers": 32,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_038_FFFFFF.3mf"
+  },
+  {
+   "tag": "hyrule_mono_039_9FC3E9",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5407,
+   "filament_g": 50.55,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_039_9FC3E9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_039_9FC3E9",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5407,
+   "filament_g": 50.55,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_039_9FC3E9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_039_9FC3E9",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5408,
+   "filament_g": 50.55,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_039_9FC3E9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_039_9FC3E9",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5407,
+   "filament_g": 50.55,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_039_9FC3E9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_040_9FC3E9",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5796,
+   "filament_g": 47.66,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_040_9FC3E9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_040_9FC3E9",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5796,
+   "filament_g": 47.66,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_040_9FC3E9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_041_9FC3E9",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 2523,
+   "filament_g": 15.95,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_041_9FC3E9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_041_9FC3E9",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 2523,
+   "filament_g": 15.95,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_041_9FC3E9.3mf"
+  },
+  {
+   "tag": "hyrule_mono_042_958A73",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 1214,
+   "filament_g": 4.01,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_042_958A73.3mf"
+  },
+  {
+   "tag": "hyrule_mono_042_958A73",
+   "profile": "A1",
+   "supports": true,
+   "rc": 0,
+   "warn": [],
+   "seconds": 1214,
+   "filament_g": 4.01,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "mono3",
+   "model": "hyrule",
+   "file": "mono_042_958A73.3mf"
+  },
+  {
+   "tag": "hyrule_plate_001_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 33014,
+   "filament_g": 105.34,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_001_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_001_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 33021,
+   "filament_g": 105.34,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_001_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_001_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 33029,
+   "filament_g": 105.34,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_001_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_005_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 26334,
+   "filament_g": 96.17,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_005_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_009_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 28737,
+   "filament_g": 100.93,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_009_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_009_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 28739,
+   "filament_g": 100.93,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_009_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_009_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 28748,
+   "filament_g": 100.93,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_009_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_013_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 36731,
+   "filament_g": 110.29,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_013_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_017_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 32541,
+   "filament_g": 104.07,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_017_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_017_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 32548,
+   "filament_g": 104.07,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_017_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_017_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 32555,
+   "filament_g": 104.07,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_017_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_021_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 33512,
+   "filament_g": 104.81,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_021_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_025_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34455,
+   "filament_g": 105.49,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_025_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_025_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34465,
+   "filament_g": 105.49,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_025_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_025_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34471,
+   "filament_g": 105.49,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_025_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_029_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 30118,
+   "filament_g": 99.36,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_029_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_033_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 28485,
+   "filament_g": 95.62,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_033_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_033_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 28489,
+   "filament_g": 95.62,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_033_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_033_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 28497,
+   "filament_g": 95.62,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_033_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_037_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 29989,
+   "filament_g": 101.31,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_037_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_041_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 31921,
+   "filament_g": 104.69,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_041_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_041_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 31927,
+   "filament_g": 104.69,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_041_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_041_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 31935,
+   "filament_g": 104.69,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_041_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_045_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 31974,
+   "filament_g": 100.95,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_045_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_049_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 31618,
+   "filament_g": 104.09,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_049_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_049_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 31625,
+   "filament_g": 104.09,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_049_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_049_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 31633,
+   "filament_g": 104.09,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_049_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_053_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 32138,
+   "filament_g": 101.94,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_053_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_057_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 35840,
+   "filament_g": 108.68,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_057_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_057_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 35848,
+   "filament_g": 108.68,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_057_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_057_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 35856,
+   "filament_g": 108.68,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_057_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_061_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34642,
+   "filament_g": 105.9,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_061_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_065_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 31615,
+   "filament_g": 102.68,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_065_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_065_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 31623,
+   "filament_g": 102.68,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_065_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_065_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 31630,
+   "filament_g": 102.68,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_065_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_069_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 33893,
+   "filament_g": 105.47,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_069_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_073_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 30868,
+   "filament_g": 102.1,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_073_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_073_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 30875,
+   "filament_g": 102.1,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_073_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_073_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 30882,
+   "filament_g": 102.1,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_073_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_077_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 35589,
+   "filament_g": 118.92,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_077_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_081_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 38660,
+   "filament_g": 124.47,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_081_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_081_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 38670,
+   "filament_g": 124.47,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_081_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_081_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 38679,
+   "filament_g": 124.47,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_081_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_085_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 35770,
+   "filament_g": 119.0,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_085_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_089_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34643,
+   "filament_g": 116.34,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_089_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_089_colour72",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34661,
+   "filament_g": 116.34,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_089_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_089_colour72",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 34669,
+   "filament_g": 116.34,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_089_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_093_colour72",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 39603,
+   "filament_g": 113.43,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_093_colour72.3mf"
+  },
+  {
+   "tag": "hyrule_plate_097_colour70",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 58385,
+   "filament_g": 188.53,
+   "layers": 57,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_097_colour70.3mf"
+  },
+  {
+   "tag": "hyrule_plate_097_colour70",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 58397,
+   "filament_g": 188.53,
+   "layers": 57,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_097_colour70.3mf"
+  },
+  {
+   "tag": "hyrule_plate_097_colour70",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 58400,
+   "filament_g": 188.53,
+   "layers": 57,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_097_colour70.3mf"
+  },
+  {
+   "tag": "hyrule_plate_101_colour70",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 61673,
+   "filament_g": 191.99,
+   "layers": 57,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_101_colour70.3mf"
+  },
+  {
+   "tag": "hyrule_plate_105_colour70",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 57124,
+   "filament_g": 189.01,
+   "layers": 57,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_105_colour70.3mf"
+  },
+  {
+   "tag": "hyrule_plate_105_colour70",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 57139,
+   "filament_g": 189.01,
+   "layers": 57,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_105_colour70.3mf"
+  },
+  {
+   "tag": "hyrule_plate_105_colour70",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 57143,
+   "filament_g": 189.01,
+   "layers": 57,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_105_colour70.3mf"
+  },
+  {
+   "tag": "hyrule_plate_109_colour70",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 50822,
+   "filament_g": 176.93,
+   "layers": 57,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_109_colour70.3mf"
+  },
+  {
+   "tag": "hyrule_plate_113_colour70",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 37079,
+   "filament_g": 62.64,
+   "layers": 57,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_113_colour70.3mf"
+  },
+  {
+   "tag": "hyrule_plate_113_colour70",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 37084,
+   "filament_g": 62.64,
+   "layers": 57,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_113_colour70.3mf"
+  },
+  {
+   "tag": "hyrule_plate_113_colour70",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 37097,
+   "filament_g": 62.64,
+   "layers": 57,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_113_colour70.3mf"
+  },
+  {
+   "tag": "hyrule_plate_117_colour2",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [
+    "Floating bridge anchors",
+    "Long bridging extrusions",
+    "print warning: Detected print stability issues:"
+   ],
+   "seconds": 23077,
+   "filament_g": 91.43,
+   "layers": 25,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_117_colour2.3mf"
+  },
+  {
+   "tag": "hyrule_plate_121_colour10",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5909,
+   "filament_g": 10.05,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_121_colour10.3mf"
+  },
+  {
+   "tag": "hyrule_plate_121_colour10",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5910,
+   "filament_g": 10.05,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_121_colour10.3mf"
+  },
+  {
+   "tag": "hyrule_plate_121_colour10",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 5911,
+   "filament_g": 10.05,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_121_colour10.3mf"
+  },
+  {
+   "tag": "hyrule_plate_125_colour212",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 393,
+   "filament_g": 0.67,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_125_colour212.3mf"
+  },
+  {
+   "tag": "hyrule_plate_129_colour297",
+   "profile": "A1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 7797,
+   "filament_g": 45.49,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_129_colour297.3mf"
+  },
+  {
+   "tag": "hyrule_plate_129_colour297",
+   "profile": "Hi",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 7798,
+   "filament_g": 45.49,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_129_colour297.3mf"
+  },
+  {
+   "tag": "hyrule_plate_129_colour297",
+   "profile": "U1",
+   "supports": false,
+   "rc": 0,
+   "warn": [],
+   "seconds": 7799,
+   "filament_g": 45.49,
+   "layers": 16,
+   "support_lines": 0,
+   "kind": "bricks1",
+   "model": "hyrule",
+   "file": "plate_129_colour297.3mf"
+  }
+ ]
+}
