@@ -92,6 +92,19 @@ jobs:
         run: |
           PYTHONPATH=/tmp/print_site:$PYTHONPATH "$LEGO_ENGINE_HOME/.venv/bin/python" benchmark-results/lego-builder/tests/validate_print_exports.py "$RUNNER_TEMP/print/bricks" 250
           PYTHONPATH=/tmp/print_site:$PYTHONPATH "$LEGO_ENGINE_HOME/.venv/bin/python" benchmark-results/lego-builder/tests/validate_print_exports.py "$RUNNER_TEMP/print/modules_export" 250
+      - name: Shape-aware modules (convex hull of the real LDraw geometry) + dowel STL + tolerance coupon, BLOCKING numeric validation
+        run: |
+          B=benchmark-results/lego-builder
+          "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder.print3d.cli $B/tests/data/paco_sample.ldr "$RUNNER_TEMP/print_shape" --mode modules --shape-aware
+          test -f "$RUNNER_TEMP/print_shape/modules_shape_export/dowel_peg.stl"
+          "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder.print3d.coupon "$RUNNER_TEMP/coupon"
+          for d in print_shape coupon; do PYTHONPATH=/tmp/print_site:$PYTHONPATH "$LEGO_ENGINE_HOME/.venv/bin/python" $B/tests/validate_print_exports.py "$RUNNER_TEMP/$d" 250; done
+          PYTHONPATH=/tmp/print_site:$PYTHONPATH "$LEGO_ENGINE_HOME/.venv/bin/python" $B/tools/audit_print_exports.py $B/print_export_results "$RUNNER_TEMP/print_audit.json"
+      - name: Independent slice of the coupon (PrusaSlicer, NOT Bambu Studio) - informational
+        continue-on-error: true
+        run: |
+          sudo apt-get install -y --no-install-recommends prusa-slicer
+          python3 benchmark-results/lego-builder/tools/slice_check.py "$RUNNER_TEMP/coupon/tolerance_coupon_plate.3mf" "$RUNNER_TEMP/slicing"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -101,6 +114,9 @@ jobs:
             ${{ runner.temp }}/print/comparison.json
             ${{ runner.temp }}/print/bricks/report_bricks.json
             ${{ runner.temp }}/print/modules_export/report_modules.json
+            ${{ runner.temp }}/print_shape/modules_shape_export/report_modules.json
+            ${{ runner.temp }}/coupon/coupon.json
+            ${{ runner.temp }}/slicing/*.json
 
   photos-to-lego:
     if: github.event_name == 'workflow_dispatch' && inputs.run_reconstruction || github.event_name == 'push'

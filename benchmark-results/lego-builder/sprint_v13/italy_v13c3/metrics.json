@@ -1,0 +1,97 @@
+{
+ "height_plates": 27,
+ "pieces": 13354,
+ "references": 155,
+ "size_studs": [
+  72,
+  104
+ ],
+ "physical_size_mm": [
+  576,
+  832
+ ],
+ "max_height_mm": 86.4,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "b34e4ef8fb547ae48f1aa1fff791b4879e7fbed366934ffb0badc24d2b647504",
+ "style": "premium_noyer_or_lagon_v13c3",
+ "composition": "Portrait framing of the territory, independent of the style.",
+ "grid_studs": [
+  96,
+  64
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "0": 88,
+  "1": 173,
+  "2": 2611,
+  "3": 1184,
+  "4": 868,
+  "5": 902,
+  "6": 318
+ },
+ "islets_forced_to_one_stud": [
+  [
+   41,
+   19
+  ],
+  [
+   55,
+   38
+  ],
+  [
+   71,
+   44
+  ],
+  [
+   82,
+   28
+  ]
+ ],
+ "island_audit": {
+  "source_components_ge_quarter_stud2": 6,
+  "represented": 2,
+  "not_representable_lost": 0,
+  "lost_areas_stud2": [
+   1.33,
+   0.31,
+   0.44,
+   0.5
+  ],
+  "note": "source raster (Natural Earth or user-supplied mask) at 8 px/stud ; a component is represented if at least one stud of the subject land covers it"
+ },
+ "title": {
+  "row": 2,
+  "col": 14,
+  "size": [
+   7,
+   35
+  ],
+  "level": 2
+ },
+ "rounded_corners": 476,
+ "frame": {
+  "courses": 8,
+  "top_plate": 26
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 987,
+   "single_owner_pieces_above": 82
+  },
+  {
+   "layer": 0,
+   "plates": 1020,
+   "single_owner_pieces_above": 121
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "file": "/tmp/bl_paco/modules_export/modules/module_0_1_0.3mf",
+ "supports": false,
+ "returncode": -11,
+ "slicer": "PrusaSlicer (apt 2.7.2) - NOT Bambu Studio",
+ "warnings": [
+  "print warning: Detected print stability issues:",
+  "Floating bridge anchors",
+  "Floating object part",
+  "[2026-11-08 19:18:54.360503] [0x00007f159f779180] [error]   gcode path conflicts found between module_0_1_0_colour28 and module_0_1_0_colour14"
+ ],
+ "log_tail": [
+  "89 => Calculating overhanging perimeters",
+  "89 => Calculating overhanging perimeters",
+  "89 => Calculating overhanging perimeters",
+  "89 => Calculating overhanging perimeters",
+  "88 => Generating skirt and brim",
+  "[2026-11-08 19:18:54.360503] [0x00007f159f779180] [error]   gcode path conflicts found between module_0_1_0_colour28 and module_0_1_0_colour14"
+ ],
+ "est_time": "1d 4h 8m 2s",
+ "filament_g": "341.83",
+ "filament_mm": "114609.79",
+ "filament_cm3": "275.67",
+ "layers": 985,
+ "max_z": 197.0,
+ "support_extrusion_lines": 0,
+ "gcode_bytes": 24331803
+}

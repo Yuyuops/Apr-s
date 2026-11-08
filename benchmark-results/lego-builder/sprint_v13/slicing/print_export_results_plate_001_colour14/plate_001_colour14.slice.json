@@ -1,0 +1,26 @@
+{
+ "file": "print_export_results/paco/plates_sample/plate_001_colour14.3mf",
+ "supports": false,
+ "returncode": 0,
+ "slicer": "PrusaSlicer (apt 2.7.2) - NOT Bambu Studio",
+ "warnings": [
+  "print warning: Detected print stability issues:",
+  "Floating bridge anchors"
+ ],
+ "log_tail": [
+  "89 => Calculating overhanging perimeters",
+  "89 => Calculating overhanging perimeters",
+  "89 => Calculating overhanging perimeters",
+  "88 => Generating skirt and brim",
+  "90 => Exporting G-code to sprint_v13/slicing/print_export_results_plate_001_colour14/plate_001_colour14.gcode",
+  "Slicing result exported to sprint_v13/slicing/print_export_results_plate_001_colour14/plate_001_colour14.gcode"
+ ],
+ "est_time": "15h 54m 29s",
+ "filament_g": "106.79",
+ "filament_mm": "35805.06",
+ "filament_cm3": "86.12",
+ "layers": 25,
+ "max_z": 5.0,
+ "support_extrusion_lines": 0,
+ "gcode_bytes": 31839229
+}

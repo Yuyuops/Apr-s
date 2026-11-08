@@ -1,0 +1,1650 @@
+{
+ "hyrule": {
+  "stl": [
+   {
+    "file": "brick_1x1",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     7.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     8.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 29.2,
+    "overhang_share": 0.046,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "brick_1x2",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     15.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     16.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 72.4,
+    "overhang_share": 0.067,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "brick_1x3",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     23.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     24.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 115.6,
+    "overhang_share": 0.076,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "brick_1x4",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     31.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     32.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 158.8,
+    "overhang_share": 0.081,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "brick_1x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     47.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     48.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 245.2,
+    "overhang_share": 0.086,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "brick_1x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     63.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     64.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 331.6,
+    "overhang_share": 0.089,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "brick_2x2",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     15.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     16.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 165.3,
+    "overhang_share": 0.084,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "brick_2x3",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     23.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     24.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 258.3,
+    "overhang_share": 0.09,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "brick_2x4",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     31.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     32.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 351.3,
+    "overhang_share": 0.093,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "brick_2x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     47.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     48.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 537.2,
+    "overhang_share": 0.096,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "brick_2x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     63.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     64.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 723.1,
+    "overhang_share": 0.098,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x1",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     7.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     8.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 29.2,
+    "overhang_share": 0.099,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x2",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     15.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     16.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 72.4,
+    "overhang_share": 0.136,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x3",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     23.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     24.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 115.6,
+    "overhang_share": 0.15,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x4",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     31.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     32.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 158.8,
+    "overhang_share": 0.158,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     47.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     48.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 245.2,
+    "overhang_share": 0.166,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     63.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     64.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 331.6,
+    "overhang_share": 0.17,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_2x2",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     15.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     16.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 165.3,
+    "overhang_share": 0.165,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_2x3",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     23.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     24.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 258.3,
+    "overhang_share": 0.176,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_2x4",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     31.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     32.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 351.3,
+    "overhang_share": 0.181,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_2x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     47.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     48.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 537.2,
+    "overhang_share": 0.187,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_2x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     63.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     64.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 723.1,
+    "overhang_share": 0.19,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_4x4",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     31.8,
+     31.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     32.0,
+     32.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 736.3,
+    "overhang_share": 0.193,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_4x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     31.8,
+     47.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     32.0,
+     48.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 1121.3,
+    "overhang_share": 0.198,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_4x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     31.8,
+     63.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     32.0,
+     64.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 1506.3,
+    "overhang_share": 0.2,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_1x1",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     7.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     8.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 29.2,
+    "overhang_share": 0.108,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_1x2",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     15.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     16.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 72.4,
+    "overhang_share": 0.151,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_1x4",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     31.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     32.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 158.8,
+    "overhang_share": 0.176,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_1x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     47.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     48.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 245.2,
+    "overhang_share": 0.185,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_1x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     63.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     64.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 331.6,
+    "overhang_share": 0.19,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_2x2",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     15.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     16.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 165.3,
+    "overhang_share": 0.184,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_2x3",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     23.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     24.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 258.3,
+    "overhang_share": 0.196,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_2x4",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     31.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     32.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 351.3,
+    "overhang_share": 0.203,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_2x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     47.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     48.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 537.2,
+    "overhang_share": 0.209,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   }
+  ],
+  "threemf": [
+   {
+    "file": "module_0_0_0.3mf",
+    "unit": "millimeter",
+    "bodies": 5,
+    "colours": 5,
+    "bad": [],
+    "extent_mm": [
+     232.0,
+     232.0,
+     67.2
+    ],
+    "fits_bed": true,
+    "z_min": 0.0,
+    "volume_cm3": 1884.9
+   },
+   {
+    "file": "plate_001_colour72.3mf",
+    "unit": "millimeter",
+    "bodies": 36,
+    "colours": 1,
+    "bad": [],
+    "extent_mm": [
+     31.8,
+     63.8,
+     4.9
+    ],
+    "fits_bed": true,
+    "z_min": 0.0,
+    "volume_cm3": 81.5
+   }
+  ],
+  "report_bricks.json": {
+   "parts_total": 10682,
+   "parts_supported": 10167,
+   "supported_share": 0.9518,
+   "unsupported_types": {
+    "25269": 467,
+    "98138": 48
+   },
+   "plates": 131,
+   "material_volume_cm3": 11010.9,
+   "mass_g_upper_bound": 13653.5,
+   "print_hours_estimate": 395.4
+  },
+  "report_modules.json": {
+   "modules": 9,
+   "colour_bodies": 86,
+   "dowel_pairs": 50,
+   "material_volume_cm3": 18931.0,
+   "mass_g_upper_bound": 23474.5,
+   "print_hours_upper_bound": 658.2,
+   "approximations": [
+    "parts are replaced by their bounding boxes (slopes, round tiles and corners become blocks)",
+    "studs only on exposed upper faces of stud-bearing parts",
+    "dowels are separate cylinders (not modelled in this export)"
+   ]
+  }
+ },
+ "paco": {
+  "stl": [
+   {
+    "file": "brick_1x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     63.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     64.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 331.6,
+    "overhang_share": 0.089,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "brick_2x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     63.8,
+     11.3
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     64.0,
+     11.299999999999999
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 723.1,
+    "overhang_share": 0.098,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x1",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     7.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     8.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 29.2,
+    "overhang_share": 0.099,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x2",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     15.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     16.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 72.4,
+    "overhang_share": 0.136,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x3",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     23.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     24.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 115.6,
+    "overhang_share": 0.15,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x4",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     31.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     32.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 158.8,
+    "overhang_share": 0.158,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     47.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     48.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 245.2,
+    "overhang_share": 0.166,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_1x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     63.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     64.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 331.6,
+    "overhang_share": 0.17,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_2x2",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     15.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     16.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 165.3,
+    "overhang_share": 0.165,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_2x3",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     23.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     24.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 258.3,
+    "overhang_share": 0.176,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_2x4",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     31.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     32.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 351.3,
+    "overhang_share": 0.181,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_2x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     47.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     48.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 537.2,
+    "overhang_share": 0.187,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_2x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     63.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     64.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 723.1,
+    "overhang_share": 0.19,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_4x4",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     31.8,
+     31.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     32.0,
+     32.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 736.3,
+    "overhang_share": 0.193,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_4x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     31.8,
+     47.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     32.0,
+     48.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 1121.3,
+    "overhang_share": 0.198,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_4x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     31.8,
+     63.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     32.0,
+     64.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 1506.3,
+    "overhang_share": 0.2,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_6x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     47.8,
+     47.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     48.0,
+     48.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 1705.3,
+    "overhang_share": 0.201,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "plate_8x8",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     63.8,
+     63.8,
+     4.9
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     64.0,
+     64.0,
+     4.9
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 3072.5,
+    "overhang_share": 0.205,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_1x1",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     7.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     8.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 29.2,
+    "overhang_share": 0.108,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_1x2",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     15.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     16.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 72.4,
+    "overhang_share": 0.151,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_1x4",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     31.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     32.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 158.8,
+    "overhang_share": 0.176,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_1x6",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     7.8,
+     47.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     8.0,
+     48.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 245.2,
+    "overhang_share": 0.185,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_2x2",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     15.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     16.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 165.3,
+    "overhang_share": 0.184,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   },
+   {
+    "file": "tile_2x3",
+    "watertight": true,
+    "volume_ok": true,
+    "bbox_mm": [
+     15.8,
+     23.8,
+     3.2
+    ],
+    "z_min": 0.0,
+    "nominal_mm": [
+     16.0,
+     24.0,
+     3.2
+    ],
+    "delta_mm": [
+     -0.2,
+     -0.2,
+     0.0
+    ],
+    "overhang_area_mm2_over_45deg": 258.3,
+    "overhang_share": 0.196,
+    "wall_x_mm": 1.2,
+    "wall_y_mm": 1.2,
+    "top_skin_mm": 1.0
+   }
+  ],
+  "threemf": [
+   {
+    "file": "module_1_0_1.3mf",
+    "unit": "millimeter",
+    "bodies": 5,
+    "colours": 5,
+    "bad": [],
+    "extent_mm": [
+     80.0,
+     32.0,
+     200.1
+    ],
+    "fits_bed": true,
+    "z_min": 0.0,
+    "volume_cm3": 48.8
+   },
+   {
+    "file": "plate_001_colour14.3mf",
+    "unit": "millimeter",
+    "bodies": 26,
+    "colours": 1,
+    "bad": [],
+    "extent_mm": [
+     31.8,
+     63.8,
+     4.9
+    ],
+    "fits_bed": true,
+    "z_min": 0.0,
+    "volume_cm3": 82.7
+   }
+  ],
+  "report_bricks.json": {
+   "parts_total": 3193,
+   "parts_supported": 3077,
+   "supported_share": 0.9637,
+   "unsupported_types": {
+    "52107": 46,
+    "63864": 18,
+    "47905": 13,
+    "24299": 6,
+    "24307": 4,
+    "2450": 4,
+    "25269": 4,
+    "87087": 3,
+    "43898": 3,
+    "98138": 2,
+    "30565": 2,
+    "78444": 2,
+    "78443": 2,
+    "43723": 2,
+    "43722": 2,
+    "54200": 1,
+    "54383": 1,
+    "54384": 1
+   },
+   "plates": 21,
+   "material_volume_cm3": 1472.0,
+   "mass_g_upper_bound": 1825.2,
+   "print_hours_estimate": 53.2
+  },
+  "report_modules.json": {
+   "modules": 8,
+   "colour_bodies": 43,
+   "dowel_pairs": 16,
+   "material_volume_cm3": 2635.2,
+   "mass_g_upper_bound": 3267.6,
+   "print_hours_upper_bound": 92.3,
+   "approximations": [
+    "parts are replaced by their bounding boxes (slopes, round tiles and corners become blocks)",
+    "studs only on exposed upper faces of stud-bearing parts",
+    "dowels are separate cylinders (not modelled in this export)"
+   ]
+  }
+ }
+}

@@ -10,7 +10,7 @@ def main(argv=None):
     from ..paths import MAPS, E1_HOME
     cat = json.load(open(MAPS / "part_catalog.json")); rb = str(E1_HOME / ".deps" / "rb.db"); res = {}
     if mode in ("bricks", "both"): res["bricks"] = bricks.export(ldr, cat, rb, out / "bricks")
-    if mode in ("modules", "both"): res["modules"] = modules.build(ldr, cat, rb, out / "modules_export")
+    if mode in ("modules", "both"): res["modules"] = modules.build(ldr, cat, rb, out / ("modules_shape_export" if "--shape-aware" in a else "modules_export"), shape_aware="--shape-aware" in a)
     # LEGO mass with the validator convention (0.10 g per stud x stud x plate), for the comparison with real bricks
     parts = common.read_ldr(ldr); import numpy as np; m = 0.0
     for p in parts:

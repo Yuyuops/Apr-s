@@ -1,0 +1,26 @@
+{
+ "file": "sprint_v13/tolerance_coupon/tolerance_coupon_plate.3mf",
+ "supports": false,
+ "returncode": 0,
+ "slicer": "PrusaSlicer (apt 2.7.2) - NOT Bambu Studio",
+ "warnings": [
+  "print warning: Detected print stability issues:",
+  "Floating bridge anchors"
+ ],
+ "log_tail": [
+  "89 => Calculating overhanging perimeters",
+  "89 => Calculating overhanging perimeters",
+  "89 => Calculating overhanging perimeters",
+  "88 => Generating skirt and brim",
+  "90 => Exporting G-code to sprint_v13/slicing/tolerance_coupon_plate.gcode",
+  "Slicing result exported to sprint_v13/slicing/tolerance_coupon_plate.gcode"
+ ],
+ "est_time": "2h 29m 30s",
+ "filament_g": "20.49",
+ "filament_mm": "6868.60",
+ "filament_cm3": "16.52",
+ "layers": 60,
+ "max_z": 12.0,
+ "support_extrusion_lines": 0,
+ "gcode_bytes": 3219112
+}

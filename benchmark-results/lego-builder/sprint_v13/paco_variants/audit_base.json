@@ -1,0 +1,487 @@
+{
+ "modele": "paco_brut.ldr",
+ "pieces": 3193,
+ "palette_autorisee": [
+  "Black",
+  "Blue",
+  "Green",
+  "Dark_Turquoise",
+  "Red",
+  "Dark_Pink",
+  "Light_Grey",
+  "Bright_Green",
+  "Yellow",
+  "White",
+  "Tan",
+  "Orange",
+  "Magenta",
+  "Lime",
+  "Dark_Tan",
+  "Bright_Pink",
+  "Medium_Lavender",
+  "Reddish_Brown",
+  "Light_Bluish_Grey",
+  "Dark_Bluish_Grey",
+  "Medium_Blue",
+  "Light_Nougat",
+  "Medium_Nougat",
+  "Medium_Lilac",
+  "Bright_Light_Orange",
+  "Bright_Light_Blue",
+  "Bright_Light_Yellow",
+  "Dark_Blue",
+  "Dark_Green",
+  "Dark_Brown",
+  "Dark_Red",
+  "Dark_Azure",
+  "Medium_Azure",
+  "Light_Aqua",
+  "Yellowish_Green",
+  "Sand_Green",
+  "Sand_Blue",
+  "Dark_Orange"
+ ],
+ "palette_moteur": [
+  "Black",
+  "Red",
+  "Yellow",
+  "White",
+  "Orange",
+  "Dark_Tan"
+ ],
+ "couleurs": {
+  "cellules_exposees": 6212,
+  "cellules_avec_surface_glb": 5929,
+  "dE_moyen": 15.5,
+  "dE_median": 12.5,
+  "plancher_palette_moteur_moyen": 13.0,
+  "plancher_catalogue_moyen": 11.4,
+  "exces_moyen": 2.6,
+  "cellules_parasites": 114,
+  "part_parasites": 0.0192,
+  "cellules_sans_correspondance": 3,
+  "par_zone": {
+   "bouche": {
+    "cellules": 1,
+    "dE_moyen": 48.6,
+    "parasites": 0,
+    "exces_moyen": 16.0
+   },
+   "bras_mains": {
+    "cellules": 5,
+    "dE_moyen": 14.0,
+    "parasites": 0,
+    "exces_moyen": 0.0
+   },
+   "crane": {
+    "cellules": 945,
+    "dE_moyen": 13.8,
+    "parasites": 17,
+    "exces_moyen": 2.4
+   },
+   "hors zone": {
+    "cellules": 1014,
+    "dE_moyen": 15.3,
+    "parasites": 26,
+    "exces_moyen": 2.0
+   },
+   "jambes": {
+    "cellules": 1638,
+    "dE_moyen": 15.9,
+    "parasites": 15,
+    "exces_moyen": 1.7
+   },
+   "museau": {
+    "cellules": 651,
+    "dE_moyen": 15.3,
+    "parasites": 28,
+    "exces_moyen": 4.8
+   },
+   "oreille_basse": {
+    "cellules": 71,
+    "dE_moyen": 12.7,
+    "parasites": 0,
+    "exces_moyen": 0.0
+   },
+   "oreille_haute": {
+    "cellules": 41,
+    "dE_moyen": 13.0,
+    "parasites": 0,
+    "exces_moyen": 0.0
+   },
+   "pieds": {
+    "cellules": 668,
+    "dE_moyen": 15.1,
+    "parasites": 2,
+    "exces_moyen": 1.1
+   },
+   "torse": {
+    "cellules": 882,
+    "dE_moyen": 17.8,
+    "parasites": 26,
+    "exces_moyen": 4.9
+   },
+   "truffe": {
+    "cellules": 7,
+    "dE_moyen": 19.5,
+    "parasites": 0,
+    "exces_moyen": 0.8
+   },
+   "yeux": {
+    "cellules": 6,
+    "dE_moyen": 24.1,
+    "parasites": 0,
+    "exces_moyen": 8.7
+   }
+  },
+  "parasites_par_module": {
+   "volume : palette brickify (couleur choisie par le quantificateur)": 42,
+   "reconstruction / renforts (brickify_plus, ponts)": 27,
+   "micro-details / module de bouche (V8 - V8.2)": 24,
+   "oreilles (generateur V6.1)": 20,
+   "assemblage V8 (recoloration de surface, micro-details)": 1
+  },
+  "confusions_attendu_construit": [
+   {
+    "attendu": "Orange",
+    "construit": "Yellow",
+    "cellules": 126
+   },
+   {
+    "attendu": "Yellow",
+    "construit": "Orange",
+    "cellules": 55
+   },
+   {
+    "attendu": "Orange",
+    "construit": "Red",
+    "cellules": 53
+   },
+   {
+    "attendu": "Dark_Tan",
+    "construit": "Yellow",
+    "cellules": 42
+   },
+   {
+    "attendu": "Dark_Tan",
+    "construit": "Black",
+    "cellules": 29
+   },
+   {
+    "attendu": "Red",
+    "construit": "Orange",
+    "cellules": 28
+   },
+   {
+    "attendu": "Orange",
+    "construit": "Dark_Tan",
+    "cellules": 27
+   },
+   {
+    "attendu": "Dark_Tan",
+    "construit": "Orange",
+    "cellules": 26
+   },
+   {
+    "attendu": "Red",
+    "construit": "Dark_Tan",
+    "cellules": 16
+   },
+   {
+    "attendu": "Yellow",
+    "construit": "Red",
+    "cellules": 16
+   },
+   {
+    "attendu": "Yellow",
+    "construit": "Black",
+    "cellules": 15
+   },
+   {
+    "attendu": "Black",
+    "construit": "Yellow",
+    "cellules": 15
+   }
+  ],
+  "parasites_par_couleur_construite": {
+   "Yellow": 55,
+   "Black": 25,
+   "Red": 17,
+   "White": 10,
+   "Orange": 4,
+   "Dark_Tan": 3
+  },
+  "parasites_par_type_de_piece": {
+   "3023": 24,
+   "43898": 19,
+   "3623": 11,
+   "3069b": 11,
+   "3031": 8,
+   "3034": 8,
+   "3021": 6,
+   "3020": 6
+  },
+  "sans_correspondance_groupes": [
+   {
+    "rgb_glb": [
+     189,
+     134,
+     54
+    ],
+    "cellules": 3,
+    "meilleur_catalogue": "Orange",
+    "dE_plancher_catalogue": 19.2
+   }
+  ]
+ },
+ "placement": {
+  "iou_global": 0.867,
+  "iou_par_zone": {
+   "oreille_haute": {
+    "iou": 0.865,
+    "cellules_glb": 185,
+    "cellules_lego": 160
+   },
+   "oreille_basse": {
+    "iou": 0.921,
+    "cellules_glb": 202,
+    "cellules_lego": 186
+   },
+   "yeux": {
+    "iou": 0.462,
+    "cellules_glb": 13,
+    "cellules_lego": 6
+   },
+   "museau": {
+    "iou": 0.927,
+    "cellules_glb": 1418,
+    "cellules_lego": 1315
+   },
+   "crane": {
+    "iou": 0.923,
+    "cellules_glb": 2996,
+    "cellules_lego": 2764
+   },
+   "pieds": {
+    "iou": 0.996,
+    "cellules_glb": 1171,
+    "cellules_lego": 1166
+   },
+   "jambes": {
+    "iou": 1.0,
+    "cellules_glb": 3836,
+    "cellules_lego": 3836
+   },
+   "bras_mains": {
+    "iou": 1.0,
+    "cellules_glb": 33,
+    "cellules_lego": 33
+   },
+   "torse": {
+    "iou": 1.0,
+    "cellules_glb": 1793,
+    "cellules_lego": 1793
+   }
+  },
+  "asymetrie_oreilles": {
+   "glb": {
+    "somme_distances_au_plan_mm": 45.2,
+    "ecart_hauteur_mm": 89.3
+   },
+   "lego": {
+    "somme_distances_au_plan_mm": 36.3,
+    "ecart_hauteur_mm": 98.0
+   },
+   "lecture": "si la somme des distances (ou l'ecart de hauteur) differe peu entre GLB et LEGO, l'asymetrie vient de la source ; sinon elle est introduite par le generateur"
+  },
+  "oreilles": {
+   "V7_oreille_basse": {
+    "ecart_centre_mm": 17.6,
+    "ecart_normale_deg": 4.3,
+    "etendue_glb_mm": [
+     86.0,
+     105.6,
+     106.8
+    ],
+    "etendue_lego_mm": [
+     145.8,
+     104.8,
+     164.3
+    ],
+    "distance_plan_sagittal_glb_mm": 24.3,
+    "distance_plan_sagittal_lego_mm": 17.4,
+    "hauteur_glb_mm": 260.5,
+    "hauteur_lego_mm": 261.0
+   },
+   "V7_oreille_haute": {
+    "ecart_centre_mm": 9.5,
+    "ecart_normale_deg": 0.8,
+    "etendue_glb_mm": [
+     87.9,
+     107.1,
+     127.8
+    ],
+    "etendue_lego_mm": [
+     143.6,
+     72.8,
+     190.2
+    ],
+    "distance_plan_sagittal_glb_mm": 20.9,
+    "distance_plan_sagittal_lego_mm": 18.9,
+    "hauteur_glb_mm": 349.8,
+    "hauteur_lego_mm": 359.0
+   }
+  },
+  "taches_glb": [
+   {
+    "id": "bouche_9",
+    "classe": "bouche",
+    "couleur": "noir",
+    "diametre_mm": 12.7,
+    "piece_de_detail_la_plus_proche_mm": 31.2,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 7.7,
+    "construit": false
+   },
+   {
+    "id": "bouche_15",
+    "classe": "bouche",
+    "couleur": "rouge",
+    "diametre_mm": 10.0,
+    "piece_de_detail_la_plus_proche_mm": 6.6,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 6.0,
+    "construit": false
+   },
+   {
+    "id": "bouche_14",
+    "classe": "bouche",
+    "couleur": "rouge",
+    "diametre_mm": 6.1,
+    "piece_de_detail_la_plus_proche_mm": 50.5,
+    "type_piece": "54200",
+    "cellule_exposee_de_meme_couleur_mm": 50.7,
+    "construit": false
+   },
+   {
+    "id": "oeil_2",
+    "classe": "oeil",
+    "couleur": "blanc",
+    "diametre_mm": 22.6,
+    "piece_de_detail_la_plus_proche_mm": 1.8,
+    "type_piece": "98138",
+    "cellule_exposee_de_meme_couleur_mm": 8.0,
+    "construit": true
+   },
+   {
+    "id": "oeil_1",
+    "classe": "oeil",
+    "couleur": "blanc",
+    "diametre_mm": 22.4,
+    "piece_de_detail_la_plus_proche_mm": 7.8,
+    "type_piece": "43898",
+    "cellule_exposee_de_meme_couleur_mm": 1.9,
+    "construit": true
+   },
+   {
+    "id": "oeil_douteux_0",
+    "classe": "oeil_douteux",
+    "couleur": "blanc",
+    "diametre_mm": 16.9,
+    "piece_de_detail_la_plus_proche_mm": 36.4,
+    "type_piece": "43898",
+    "cellule_exposee_de_meme_couleur_mm": 26.2,
+    "construit": false
+   },
+   {
+    "id": "pupille_11",
+    "classe": "pupille",
+    "couleur": "noir",
+    "diametre_mm": 9.3,
+    "piece_de_detail_la_plus_proche_mm": 1.9,
+    "type_piece": "98138",
+    "cellule_exposee_de_meme_couleur_mm": 3.8,
+    "construit": true
+   },
+   {
+    "id": "pupille_7",
+    "classe": "pupille",
+    "couleur": "noir",
+    "diametre_mm": 8.9,
+    "piece_de_detail_la_plus_proche_mm": 6.6,
+    "type_piece": "43898",
+    "cellule_exposee_de_meme_couleur_mm": 10.5,
+    "construit": true
+   },
+   {
+    "id": "pupille_douteuse_5",
+    "classe": "pupille_douteuse",
+    "couleur": "noir",
+    "diametre_mm": 9.2,
+    "piece_de_detail_la_plus_proche_mm": 30.8,
+    "type_piece": "43898",
+    "cellule_exposee_de_meme_couleur_mm": 3.8,
+    "construit": false
+   },
+   {
+    "id": "truffe_16",
+    "classe": "truffe",
+    "couleur": "noir",
+    "diametre_mm": 30.8,
+    "piece_de_detail_la_plus_proche_mm": 2.8,
+    "type_piece": "43898",
+    "cellule_exposee_de_meme_couleur_mm": 4.4,
+    "construit": true
+   }
+  ],
+  "details_attendus_non_construits": []
+ },
+ "pieces_structurelles_visibles": {
+  "cellules": 5,
+  "par_type": {
+   "87087": 5
+  },
+  "exemples": [
+   [
+    "87087",
+    [
+     16,
+     91,
+     18
+    ]
+   ],
+   [
+    "87087",
+    [
+     20,
+     93,
+     17
+    ]
+   ],
+   [
+    "87087",
+    [
+     25,
+     93,
+     31
+    ]
+   ],
+   [
+    "87087",
+    [
+     25,
+     94,
+     31
+    ]
+   ],
+   [
+    "87087",
+    [
+     25,
+     95,
+     31
+    ]
+   ]
+  ]
+ }
+}

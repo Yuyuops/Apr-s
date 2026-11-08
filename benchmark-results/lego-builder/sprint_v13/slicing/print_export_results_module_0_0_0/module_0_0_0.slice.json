@@ -1,0 +1,27 @@
+{
+ "file": "print_export_results/hyrule/modules_sample/module_0_0_0.3mf",
+ "supports": false,
+ "returncode": -11,
+ "slicer": "PrusaSlicer (apt 2.7.2) - NOT Bambu Studio",
+ "warnings": [
+  "print warning: Detected print stability issues:",
+  "Floating bridge anchors, Long bridging extrusions",
+  "[2026-11-08 19:19:23.289164] [0x00007fe4dd754180] [error]   gcode path conflicts found between module_0_0_0_colour70 and module_0_0_0_colour72"
+ ],
+ "log_tail": [
+  "89 => Calculating overhanging perimeters",
+  "89 => Calculating overhanging perimeters",
+  "89 => Calculating overhanging perimeters",
+  "89 => Calculating overhanging perimeters",
+  "88 => Generating skirt and brim",
+  "[2026-11-08 19:19:23.289164] [0x00007fe4dd754180] [error]   gcode path conflicts found between module_0_0_0_colour70 and module_0_0_0_colour72"
+ ],
+ "est_time": "2d 6h 22m 39s",
+ "filament_g": "699.77",
+ "filament_mm": "234622.65",
+ "filament_cm3": "564.33",
+ "layers": 304,
+ "max_z": 60.8,
+ "support_extrusion_lines": 0,
+ "gcode_bytes": 9329409
+}

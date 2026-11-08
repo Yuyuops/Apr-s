@@ -1,0 +1,253 @@
+{
+ "items": 22,
+ "extent_mm": [
+  140.0,
+  112.0
+ ],
+ "fits_bed": true,
+ "parameters": {
+  "stud_d": [
+   4.7,
+   4.8,
+   4.9
+  ],
+  "tube_od": [
+   6.3,
+   6.4,
+   6.5,
+   6.6,
+   6.7
+  ],
+  "socket_clearance": [
+   0.1,
+   0.2,
+   0.3,
+   0.4
+  ],
+  "dowel_d": 5.0,
+  "dowel_len": 12.0
+ },
+ "pieces": [
+  {
+   "name": "A_base_stud4.70",
+   "label": "base 2x2, stud diameter 4.70 mm",
+   "bbox_mm": [
+    15.8,
+    15.8,
+    4.9
+   ],
+   "volume_mm3": 552.3
+  },
+  {
+   "name": "A_base_stud4.80",
+   "label": "base 2x2, stud diameter 4.80 mm",
+   "bbox_mm": [
+    15.8,
+    15.8,
+    4.9
+   ],
+   "volume_mm3": 557.4
+  },
+  {
+   "name": "A_base_stud4.90",
+   "label": "base 2x2, stud diameter 4.90 mm",
+   "bbox_mm": [
+    15.8,
+    15.8,
+    4.9
+   ],
+   "volume_mm3": 562.5
+  },
+  {
+   "name": "A_cap_tube6.30",
+   "label": "cap 2x2 tile PRINTED FLIPPED (smooth face on the bed : no bridging), tube outer diameter 6.30 mm",
+   "bbox_mm": [
+    15.8,
+    15.8,
+    3.2
+   ],
+   "volume_mm3": 430.7
+  },
+  {
+   "name": "A_cap_tube6.40",
+   "label": "cap 2x2 tile PRINTED FLIPPED (smooth face on the bed : no bridging), tube outer diameter 6.40 mm",
+   "bbox_mm": [
+    15.8,
+    15.8,
+    3.2
+   ],
+   "volume_mm3": 432.9
+  },
+  {
+   "name": "A_cap_tube6.50",
+   "label": "cap 2x2 tile PRINTED FLIPPED (smooth face on the bed : no bridging), tube outer diameter 6.50 mm",
+   "bbox_mm": [
+    15.8,
+    15.8,
+    3.2
+   ],
+   "volume_mm3": 435.1
+  },
+  {
+   "name": "A_cap_tube6.60",
+   "label": "cap 2x2 tile PRINTED FLIPPED (smooth face on the bed : no bridging), tube outer diameter 6.60 mm",
+   "bbox_mm": [
+    15.8,
+    15.8,
+    3.2
+   ],
+   "volume_mm3": 437.4
+  },
+  {
+   "name": "A_cap_tube6.70",
+   "label": "cap 2x2 tile PRINTED FLIPPED (smooth face on the bed : no bridging), tube outer diameter 6.70 mm",
+   "bbox_mm": [
+    15.8,
+    15.8,
+    3.2
+   ],
+   "volume_mm3": 439.7
+  },
+  {
+   "name": "B_block_clear0.10",
+   "label": "block 20x20x10, socket radius 2.60 (clearance 0.10)",
+   "bbox_mm": [
+    20.0,
+    20.0,
+    10.0
+   ],
+   "volume_mm3": 3862.8
+  },
+  {
+   "name": "B_block_clear0.20",
+   "label": "block 20x20x10, socket radius 2.70 (clearance 0.20)",
+   "bbox_mm": [
+    20.0,
+    20.0,
+    10.0
+   ],
+   "volume_mm3": 3852.1
+  },
+  {
+   "name": "B_block_clear0.30",
+   "label": "block 20x20x10, socket radius 2.80 (clearance 0.30)",
+   "bbox_mm": [
+    20.0,
+    20.0,
+    10.0
+   ],
+   "volume_mm3": 3840.9
+  },
+  {
+   "name": "B_block_clear0.40",
+   "label": "block 20x20x10, socket radius 2.90 (clearance 0.40)",
+   "bbox_mm": [
+    20.0,
+    20.0,
+    10.0
+   ],
+   "volume_mm3": 3829.4
+  },
+  {
+   "name": "B_dowel_0",
+   "label": "dowel diameter 5.0 x 12 mm",
+   "bbox_mm": [
+    5.0,
+    5.0,
+    12.0
+   ],
+   "volume_mm3": 234.1
+  },
+  {
+   "name": "B_dowel_1",
+   "label": "dowel diameter 5.0 x 12 mm",
+   "bbox_mm": [
+    5.0,
+    5.0,
+    12.0
+   ],
+   "volume_mm3": 234.1
+  },
+  {
+   "name": "B_dowel_2",
+   "label": "dowel diameter 5.0 x 12 mm",
+   "bbox_mm": [
+    5.0,
+    5.0,
+    12.0
+   ],
+   "volume_mm3": 234.1
+  },
+  {
+   "name": "B_dowel_3",
+   "label": "dowel diameter 5.0 x 12 mm",
+   "bbox_mm": [
+    5.0,
+    5.0,
+    12.0
+   ],
+   "volume_mm3": 234.1
+  },
+  {
+   "name": "C_54200",
+   "label": "1x1 slope 31 deg (convex hull of the LDraw part)",
+   "bbox_mm": [
+    8.0,
+    8.0,
+    6.24
+   ],
+   "volume_mm3": 253.1
+  },
+  {
+   "name": "C_3040b",
+   "label": "1x2 slope 45 deg (convex hull of the LDraw part)",
+   "bbox_mm": [
+    8.0,
+    16.0,
+    9.6
+   ],
+   "volume_mm3": 972.8
+  },
+  {
+   "name": "C_98138",
+   "label": "1x1 round tile (convex hull of the LDraw part)",
+   "bbox_mm": [
+    8.0,
+    8.0,
+    3.2
+   ],
+   "volume_mm3": 154.9
+  },
+  {
+   "name": "C_25269",
+   "label": "1x1 quarter round tile (convex hull of the LDraw part)",
+   "bbox_mm": [
+    8.0,
+    8.0,
+    3.2
+   ],
+   "volume_mm3": 153.9
+  },
+  {
+   "name": "D_skin_gauge",
+   "label": "skin thickness steps 0.8 / 1.0 / 1.2 / 1.6 / 2.0 mm",
+   "bbox_mm": [
+    58.0,
+    10.0,
+    2.0
+   ],
+   "volume_mm3": 660.0
+  },
+  {
+   "name": "D_wall_box",
+   "label": "hollow box, 1.2 mm walls, 1.0 mm skin",
+   "bbox_mm": [
+    20.0,
+    20.0,
+    8.0
+   ],
+   "volume_mm3": 1031.7
+  }
+ ],
+ "warning": "Dimensions under test, not proven LEGO-compatible in FDM. Print, MEASURE (calipers), TRY every combination and record the result in TOLERANCE_TEST.md."
+}
