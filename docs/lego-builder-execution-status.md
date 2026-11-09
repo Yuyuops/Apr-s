@@ -55,3 +55,21 @@ Date initiale : 2026-11-08. Branche : research/lego-builder-commercial-outputs-2
 | Pipelines A/B/C (+2 cycles C2, C3), moteur inchangé | DONE : B 12 543 pièces, C3 23 420 pièces ; 0 collision/îlot ; reconstruction identique ; V14 = référence CI inchangée | `PIPELINE_COMPARISON.md`, `builds/`, `SHA256SUMS.txt` |
 | Verdict | GO artistique **limité** (reconnaissance, sous validation humaine) ; NO-GO « égale la référence » ; GO technique non acquis (règle de fragilité) ; **aucun gel CI** | `FINAL_VERDICT.md`, `ARTISTIC_EVALUATION.md` |
 | Validation visuelle humaine / carte originale / plaque-titre / travail moteur (pentes, décor) | **BLOCKED** (décisions humaines) | `FINAL_VERDICT.md` |
+
+## Revue de suivi — 2026-11-09 (lecture des preuves existantes)
+
+**Périmètre de cette revue :** lecture GitHub des rapports V13/V14 et du journal. Aucun runner de test, trancheur natif ou imprimante n'a été exécuté dans cette revue ; les PASS ci-dessous sont des résultats *rapportés par les artefacts des sprints*, non des tests relancés ici.
+
+| Étape / moteur | Statut | Preuve / limite |
+|---|---|---|
+| (1) Régression Maps | PASS rapporté | run 42510458950 (SHA-256 bloquant PASS) ; Hyrule référence SHA-256 `5afb9ac8fe80f0089542e33ba639950251ce372d392512dbc29f777877a9ab8b` ; 10 682 pièces / 134 références ; `sprint_v14/HYRULE_CURRENT_RENDER.md`. Aucun nouveau run lancé ici. |
+| (1) Sculptures / Builder unifié | PASS rapporté, pas de nouveau test | Paco V12.1 et Beagle conservés ; rapports `sprint_v13/FINAL_VERDICT.md` et révalidation antérieure. |
+| (1) Photos→3D | BLOCKED pour généralisation | seuls sujets historiques rejoués ; protocole `sprint_v13/GENERALIZATION_TEST.md` ; quatre photos inédites nécessaires. |
+| (2) Maps artistique | FAIL pour Hyrule commercial | rendu moteur actuel jugé insuffisamment reconnaissable ; ne pas confondre 0 collision / SHA stable et fidélité cartographique. Italie C3 : 21/25 auto-noté, validation humaine encore nécessaire. |
+| (2) Sculptures Paco | PARTIAL | V12.1 conservé ; bouche/lèvre et couleurs non améliorées, cinq variantes rejetées. |
+| (3) STL/3MF | PASS numérique rapporté / BLOCKED physique | exports V13 ; V14 tranchage PrusaSlicer sous profils proxy, pas de slicer natif ni de machine. Coupon et mesure de tolérances absents. |
+| (3) Économie | ESTIMATION | Paco ≈291 € HT, Hyrule ≈349 € HT en multicolore Hi (hypothèses fragiles) ; temps machine proxy ≈128 h / 180–208 h ; ne pas utiliser pour un devis ferme. |
+
+**Prochaines actions sans dégrader les références :** (a) fidélité Hyrule : fixer une source cartographique et produire une hauteur/segmentation comparée en variante isolée, sans remplacer le SHA de référence ; (b) conserver Paco/Beagle et isoler l'étude de lèvre courbe ; (c) ne pas acheter d'imprimante avant essai coupon, slicer natif et mesure purge/temps. Les trois étapes ne sont **pas** prêtes pour GO commercial ni revue de validation physique.
+
+**Traçabilité de cette revue :** seuls des fichiers texte du dépôt ont été inspectés ; pas de vérification indépendante de la dernière exécution CI, pas de calcul de nouveaux SHA ni de génération de rendu. Les rapports V13/V14 constituent les preuves disponibles.
