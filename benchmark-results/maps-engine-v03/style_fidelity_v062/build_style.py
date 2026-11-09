@@ -206,6 +206,10 @@ class Builder:
         def hidden_colour_of(x, z, w, d, part):
             for col in ([hid] if hid is not None else []) + [72, 71, 0, 15, 70, 7]:
                 if allowed(part, col): return col
+            for col in sorted(PAIRS.get(part, {}), key=lambda c: -PAIRS[part][c]):      # hidden cells are never seen : any catalogued colour of this part is acceptable (V16 : the 28/hid fallback could pick an uncatalogued pair)
+                if allowed(part, col): return int(col)
+            for col in sorted(PAIRS.get(part, {}), key=lambda c: -PAIRS[part][c]):      # nothing reaches the min-sets threshold : still never an uncatalogued pair (hidden cell, never seen)
+                if PAIRS[part][col] >= 1: return int(col)
             return hid if hid is not None else 72
         catalog = {(max(k), min(k)): v for k, v in PLATES.items() if v in CAT and k[0] * k[1] <= self.sf.get("body_max_area", 64)}
         above_pen = float(self.sf.get("body_above_pen", 0.0)); above = None
@@ -228,6 +232,8 @@ class Builder:
                 small = {k: v for k, v in catalog.items() if k[0] * k[1] <= int(self.sf.get("reinforce_max_area", 4))}; fx = np.where(flag, fixed_all, -1); wd = wild_all & flag
                 parts += TL.best_tiling(fx, wd, below, hidden_colour_of, small, tries=3, seed=j + 7, allowed=allowed, orphan_cost=self.sf.get("body_orphan_cost", 60.0), stagger=self.sf.get("body_stagger", 2.0) * 3, seam_pen=self.sf.get("body_seam_pen", 4.0) * 2) if (fx >= 0).any() or wd.any() else []
         except RuntimeError: return False
+        if any(PAIRS.get(catalog[(max(p["w"], p["d"]), min(p["w"], p["d"]))], {}).get(str(int(p["colour"])), 1) == 0 for p in parts):
+            self.info["wild_uncatalogued_fallback"] = self.info.get("wild_uncatalogued_fallback", 0) + 1; return False      # a part/colour pair the catalogue refuses : let the legacy tiler (which respects availability) do this layer
         for p in parts:
             key = (max(p["w"], p["d"]), min(p["w"], p["d"])); part = catalog[key]; rot = 0 if p["d"] >= p["w"] else 90
             S.add(part, p["colour"], p["x"] + F, p["z"] + F, y, rot, "strata_body")
