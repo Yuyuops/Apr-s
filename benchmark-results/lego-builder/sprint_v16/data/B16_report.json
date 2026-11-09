@@ -1,0 +1,77 @@
+{
+ "names": [
+  "water",
+  "lake",
+  "void",
+  "grass",
+  "forest",
+  "desert",
+  "shore",
+  "stone",
+  "snow",
+  "mesa",
+  "rust",
+  "crater",
+  "shallow",
+  "meadow",
+  "spare1",
+  "spare2"
+ ],
+ "shares_full": {
+  "water": 0.1347,
+  "lake": 0.0186,
+  "void": 0.0469,
+  "grass": 0.1871,
+  "forest": 0.1464,
+  "desert": 0.0654,
+  "shore": 0.0373,
+  "stone": 0.1075,
+  "snow": 0.0612,
+  "mesa": 0.1231,
+  "rust": 0.0256,
+  "crater": 0.0043,
+  "shallow": 0.0362,
+  "meadow": 0.0057
+ },
+ "zones": {
+  "A": {
+   "water": 0.045,
+   "lake": 0.015,
+   "void": 0.038,
+   "grass": 0.115,
+   "forest": 0.192,
+   "stone": 0.057,
+   "mesa": 0.297,
+   "rust": 0.187,
+   "crater": 0.025,
+   "shallow": 0.023,
+   "meadow": 0.006
+  },
+  "B": {
+   "water": 0.102,
+   "lake": 0.064,
+   "grass": 0.54,
+   "forest": 0.173,
+   "stone": 0.041,
+   "snow": 0.001,
+   "mesa": 0.051,
+   "rust": 0.001,
+   "shallow": 0.02,
+   "meadow": 0.008
+  },
+  "C": {
+   "water": 0.191,
+   "lake": 0.011,
+   "grass": 0.282,
+   "forest": 0.25,
+   "desert": 0.001,
+   "shore": 0.001,
+   "stone": 0.164,
+   "snow": 0.032,
+   "mesa": 0.004,
+   "rust": 0.001,
+   "shallow": 0.049,
+   "meadow": 0.014
+  }
+ }
+}

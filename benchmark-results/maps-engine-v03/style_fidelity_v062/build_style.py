@@ -7,7 +7,7 @@ import numpy as np
 from scipy import ndimage
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import geodata, strata, basefit
-from scene import Scene, PAIRS, CAT
+from scene import Scene, PAIRS, CAT, LOW_DIR
 from tiler import tile, PLATES, TILES, BRICKS
 from decor import text_cells
 def avail(table, colour, minsets):
@@ -44,6 +44,72 @@ class Builder:
         self.S_sea = 1; self.base_land = 2; self.lev, self.subj, self.forn = lev, subj, np.zeros((R, C), bool); self.geo = geo; self.maxlev = int(lev.max()); self.biome = dict(top=top, wall=wall, codes=codes, names=names)
         self.info["levels_histogram"] = {int(a): int(b) for a, b in zip(*np.unique(lev, return_counts=True))}
         self.info["biomes"] = {names[k]: int((codes == k).sum()) for k in names}; self.info["biome_mode"] = True
+        if self.rel.get("smooth_height"): self.smooth_heights(self.rel["smooth_height"], names, codes)
+    def smooth_heights(self, cfg, names, codes):
+        """V16 (ON ONLY with relief.smooth_height) : relief by progressive 1-plate steps instead of 2-plate strata. The height of every LAND cell (class level x strata thickness, plus the interior gain) is smoothed by a Gaussian
+        (normalised over land cells only, so water never pulls the coast up or down) and rounded to plates ; water and the classes listed in `keep` (e.g. craters) keep their height ; land stays at least `coast_min` plates above the water.
+        Heights remain an ESTIMATE from the semantic zones (no altitude data)."""
+        th0 = self.thick; h = (self.lev * th0).astype(float); land = self.subj.copy(); sig = float(cfg.get("sigma", 1.0)); keep = np.isin(codes, [k for k, nm in names.items() if nm in cfg.get("keep", [])])
+        num = ndimage.gaussian_filter(np.where(land, h, 0.0), sig); den = ndimage.gaussian_filter(land.astype(float), sig); hs = np.where(land & (den > 1e-6), num / np.maximum(den, 1e-6), h)
+        hs = np.where(keep, h, hs); jt = np.where(land, np.rint(hs).astype(int), h.astype(int)); wl = int(h[~land].max()) if (~land).any() else 0; jt = np.where(land, np.maximum(jt, wl + int(cfg.get("coast_min", 1))), jt)
+        if cfg.get("coast_ramp") and (~land).any():                                  # banks : height above the water grows by `coast_ramp` plates per stud inland (gentle beaches instead of a vertical bank)
+            dw = ndimage.distance_transform_edt(land); cap = wl + int(cfg.get("coast_min", 1)) + np.floor((dw - 1) * float(cfg["coast_ramp"])).astype(int); jt = np.where(land & ~keep & (dw <= float(cfg.get("coast_width", 4))), np.minimum(jt, cap), jt)          # the ramp only shapes the bank belt (coast_width studs) : inland massifs keep their full height
+        mw = int(cfg.get("min_peak_width", 0))
+        if mw >= 2:                                                                    # no needle-like spires : every height level must be made of regions at least mw x mw studs wide (a 1-2 stud column of stacked plates is both unnatural and a single point of failure)
+            st_el = np.ones((mw, mw), bool)
+            for L in range(int(jt.max()), wl + int(cfg.get("coast_min", 1)) + 1, -1):
+                m = (jt >= L) & land & ~keep; op = ndimage.binary_opening(np.pad(m, mw, constant_values=False), structure=st_el)[mw:-mw, mw:-mw]; jt = np.where(m & ~op, L - 1, jt)
+        self.thick = 1; self.lev = jt.astype(int); self.maxlev = int(jt.max()); self.info["levels_histogram"] = {int(a): int(b) for a, b in zip(*np.unique(jt, return_counts=True))}; self.info["smooth_height"] = dict(sigma=sig, th0=th0, max_plates=self.maxlev)
+    def plan_slopes(self):
+        """V16 (ON ONLY with surface.cliff_slopes) : at the FOOT of a cliff (a land cell with exactly one land neighbour at least `min_dh` plates higher), the plain top tile is replaced by a cheese slope (part 54200, 31 degrees, 2 plates high) rising toward the cliff,
+        in the colour of the cell : a talus instead of a vertical block face. A cell with two or more higher neighbours (concave corner) keeps its tile. Placement is deterministic (no randomness)."""
+        self.slopes = {}; cfg = self.sf.get("cliff_slopes")
+        if not cfg: return
+        jt = self.lev * self.thick; R, C = self.R, self.C; mc = self.sf["min_sets"]; part = cfg.get("part", "54200"); mind = int(cfg.get("min_dh", 2)); top = self.biome["top"]
+        for r in range(R):
+            for c in range(C):
+                if not self.subj[r, c] or self.studded[r, c]: continue
+                hi = [(dr, dc, int(jt[r + dr, c + dc] - jt[r, c])) for dr, dc in ((-1, 0), (1, 0), (0, -1), (0, 1)) if 0 <= r + dr < R and 0 <= c + dc < C and self.subj[r + dr, c + dc] and jt[r + dr, c + dc] - jt[r, c] >= mind]
+                if len(hi) != 1: continue
+                dr, dc, dh = hi[0]; col = int(top[r, c])
+                if PAIRS.get(part, {}).get(str(col), 0) < max(1, mc): continue
+                rot = next((a for a, d in LOW_DIR.items() if d == (-dr, -dc)), None)
+                if rot is not None: self.slopes[(r, c)] = (rot, col)
+        self.info["cliff_slopes_planned"] = len(self.slopes)
+    def plan_details(self):
+        """V16 (ON ONLY with a `details` block in the style) : vegetation placed by RULES, not at random. For every rule {class, part, colours, density, min_dist} the cells of the class become studded plates and a deterministic blue-noise
+        sample (seeded, minimum spacing) receives the detail piece on the stud of the surface (round bricks 3062b = trees, round plates 6141 = bushes). Rules read the semantic classes, never the picture."""
+        self.details_plan = []; cfg = self.st.get("details")
+        if not cfg: return
+        rng = random.Random(int(cfg.get("seed", 11))); names = self.biome["names"]; codes = self.biome["codes"]; R, C = self.R, self.C; mc = self.sf["min_sets"]; taken = set()
+        for rule in cfg.get("rules", []):
+            ks = [k for k, nm in names.items() if nm in rule["classes"]]
+            if not ks: continue
+            cells = [(r, c) for r in range(R) for c in range(C) if codes[r, c] in ks and not self.taken[r, c]]
+            for (r, c) in cells:
+                if rule.get("studded_class", True): self.studded[r, c] = True
+            md = float(rule.get("min_dist", 2.0)); target = int(rule.get("density", 0.3) * len(cells)); order = cells[:]; rng.shuffle(order); placed = []; cols = rule["colours"]
+            for (r, c) in order:
+                if len(placed) >= target: break
+                if any((r - a) ** 2 + (c - b) ** 2 < md * md for a, b in placed + [q for q in taken]): continue
+                if rule.get("interior_only", True) and not all(0 <= r + dr < R and 0 <= c + dc < C and codes[r + dr, c + dc] in ks for dr, dc in ((-1, 0), (1, 0), (0, -1), (0, 1))): continue
+                col = cols[len(placed) % len(cols)]
+                if PAIRS.get(rule["part"], {}).get(str(col), 0) < max(1, mc): continue
+                if not rule.get("studded_class", True):                                    # sparse detail on a tiled surface : the cell and one neighbour of the same class become a studded 1x2 patch (the piece needs a stud and a 2-stud plate under it)
+                    nb = next(((r + dr, c + dc) for dr, dc in ((0, 1), (1, 0), (0, -1), (-1, 0)) if 0 <= r + dr < R and 0 <= c + dc < C and codes[r + dr, c + dc] in ks and (r + dr, c + dc) not in taken and not self.studded[r + dr, c + dc]), None)
+                    if nb is None or self.studded[r, c]: continue
+                    self.studded[r, c] = True; self.studded[nb] = True
+                placed.append((r, c)); self.details_plan.append((r, c, rule["part"], int(col), rule.get("region", "detail")))
+            taken.update(placed)
+        self.info["details_planned"] = len(self.details_plan)
+    def place_details(self):
+        if not getattr(self, "details_plan", None): return
+        S, F = self.S, self.F; jt = self.lev * self.thick; n = 0
+        for (r, c, part, col, region) in getattr(self, "details_plan", []):
+            y = self.y0 + int(jt[r, c]) + 1
+            try: S.add(part, col, r + F, c + F, y, 0, region); n += 1
+            except ValueError: self.info["details_skipped"] = self.info.get("details_skipped", 0) + 1
+        self.info["details_placed"] = n
     def make_levels(self):
         if self.cp.get("biome_map"): return self.make_levels_biomes()
         geo = (geodata.rasterise_mask(os.path.join(HERE, self.cp["mask_png"]) if not os.path.isabs(self.cp["mask_png"]) else self.cp["mask_png"], (self.R, self.C), self.cp.get("sub", 8)) if self.cp.get("mask_png") else geodata.rasterise(self.cp["window"], (self.R, self.C), self.cp["territory_iso"], self.cp.get("sub", 8))); p = dict(self.rel); p["strata_widths"] = self.rel["sea_strata_widths_studs"]
@@ -102,7 +168,8 @@ class Builder:
             for j in range(0, self.maxj + 1):
                 y = yb + j; body_mask = jtop > j; top_mask = jtop == j; sup = S.stud_cells(y)
                 wc = np.where(body_mask & (j <= minnb), hid, wall_col) if hid is not None else wall_col      # planes hidden by the neighbours' bodies are never seen : one neutral colour -> larger plates, better overlap, fewer parts
-                for col in sorted({int(x) for x in wc[body_mask]}):
+                if self.sf.get("body_tiler") == "wild" and hid is not None and body_mask.any() and self.body_layer_wild(j, y, body_mask, ~(j <= minnb), wall_col, hid, mc): wc = None
+                for col in (sorted({int(x) for x in wc[body_mask]}) if wc is not None else []):
                     body = {(r + F, c + F) for r, c in zip(*np.where(body_mask & (wc == col)))}; tb = avail(PLATES, col, mc)
                     for (r, c, nr, nc, part, rot) in tile(body, tb, self.rng, 2.0, 32, sup, 8): S.add(part, col, r, c, y, rot, "strata_body")
                 top = {(r + F, c + F) for r, c in zip(*np.where(top_mask))}
@@ -124,6 +191,70 @@ class Builder:
                 col = self.colour_of_level(k); tb = avail(PLATES, col, mc); sup = S.stud_cells(y)
                 for (r, c, nr, nc, part, rot) in tile(body, tb, self.rng, 2.0, 32, sup, 8): S.add(part, col, r, c, y, rot, "strata_body")
             if top: self.place_top(top, y, colour_top)
+    def body_layer_wild(self, j, y, body_mask, visible_mask, wall_col, hid, mc):
+        """V16 structural tiler (ON ONLY with surface.body_tiler = "wild"). One layer of strata body : cells whose side faces are visible keep their wall colour (fixed) ; cells hidden by the neighbours' bodies are WILD
+        (any colour, never seen) so a one-cell visible strip can be extended into the hidden cells behind it : larger parts, 2+ studs, no lonely 1x1 plates. The engine tiler (maps_engine.tiling : orphan cost, seam stagger,
+        local search + merge of small parts) is reused unchanged. Returns True when the layer was tiled, False to let the caller fall back to the legacy tiler."""
+        sys.path.insert(0, os.path.join(HERE, "..", "engine"))
+        from maps_engine import tiling as TL
+        S, F, R, C = self.S, self.F, self.R, self.C; fixed = np.where(body_mask & visible_mask, wall_col, -1).astype(int); wild = body_mask & ~visible_mask
+        below = -np.ones((R, C), int)
+        if j > 0:
+            for r in range(R):
+                for c in range(C): below[r, c] = S.occ.get((r + F, c + F, y - 1), -1)
+        allowed = lambda part, col: PAIRS.get(part, {}).get(str(int(col)), 0) >= max(1, mc)
+        def hidden_colour_of(x, z, w, d, part):
+            for col in ([hid] if hid is not None else []) + [72, 71, 0, 15, 70, 7]:
+                if allowed(part, col): return col
+            return hid if hid is not None else 72
+        catalog = {(max(k), min(k)): v for k, v in PLATES.items() if v in CAT and k[0] * k[1] <= self.sf.get("body_max_area", 64)}
+        above_pen = float(self.sf.get("body_above_pen", 0.0)); above = None
+        if above_pen:                                              # clusters of cells that stand ABOVE this layer (jtop >= j+1) : see maps_engine.tiling (single-point-of-failure penalty)
+            above, _ = ndimage.label(self.lev * self.thick >= j + 1); above = above - 1
+        flag = None                                                    # V16 reinforcement pass : cells of parts that were single points of failure in the previous build are re-tiled with SMALL parts (see tools/reinforce_v16.py)
+        if self.sf.get("reinforce_file"):
+            if not hasattr(self, "_rf"): self._rf = json.load(open(self.sf["reinforce_file"]))
+            cells = self._rf.get(str(y))
+            if cells:
+                flag = np.zeros((R, C), bool)
+                for (rr, cc) in cells:
+                    if 0 <= rr < R and 0 <= cc < C: flag[rr, cc] = True
+        fixed_all, wild_all = fixed, wild
+        if flag is not None: fixed = np.where(flag, -1, fixed_all); wild = wild_all & ~flag
+        try:
+            parts = TL.best_tiling(fixed, wild, below, hidden_colour_of, catalog, tries=self.sf.get("body_tiler_tries", 3), seed=7919 * j + 13, allowed=allowed, orphan_cost=self.sf.get("body_orphan_cost", 60.0), stagger=self.sf.get("body_stagger", 2.0), seam_pen=self.sf.get("body_seam_pen", 4.0), above_label=above, above_pen=above_pen) if (fixed >= 0).any() or wild.any() else []
+            if parts: parts = TL.merge_small(parts, catalog, allowed=allowed); parts = TL.local_improve(parts, catalog, below, tries=self.sf.get("body_local_tries", 40), seed=j, allowed=allowed, above_label=above, above_pen=above_pen)
+            if flag is not None:
+                small = {k: v for k, v in catalog.items() if k[0] * k[1] <= int(self.sf.get("reinforce_max_area", 4))}; fx = np.where(flag, fixed_all, -1); wd = wild_all & flag
+                parts += TL.best_tiling(fx, wd, below, hidden_colour_of, small, tries=3, seed=j + 7, allowed=allowed, orphan_cost=self.sf.get("body_orphan_cost", 60.0), stagger=self.sf.get("body_stagger", 2.0) * 3, seam_pen=self.sf.get("body_seam_pen", 4.0) * 2) if (fx >= 0).any() or wd.any() else []
+        except RuntimeError: return False
+        for p in parts:
+            key = (max(p["w"], p["d"]), min(p["w"], p["d"])); part = catalog[key]; rot = 0 if p["d"] >= p["w"] else 90
+            S.add(part, p["colour"], p["x"] + F, p["z"] + F, y, rot, "strata_body")
+        self.info["wild_layers"] = self.info.get("wild_layers", 0) + 1; return True
+    def top_seam_tiles(self, groups, y):
+        """V16 (ON ONLY with surface.top_tiler = "seam") : the plain top tiles of this layer are tiled by the engine tiler with the part ids of the layer below, so that tiles bridge the seams of the plates under them (>= 2 supporting parts
+        where possible) instead of resting on a single plate. Colours without a 1x1 tile keep the legacy path. Returns the groups that were NOT handled."""
+        sys.path.insert(0, os.path.join(HERE, "..", "engine"))
+        from maps_engine import tiling as TL
+        S, mc = self.S, self.sf["min_sets"]; mn = 0 if self.sf.get("allow_rare", False) else mc; fixed = -np.ones((S.R, S.C), int); rest = {}; handled = False; tcat = {}
+        for (col, stud), cells in sorted(groups.items()):
+            if stud: rest[(col, stud)] = cells; continue
+            try: tbl = avail(TILES, col, mn)
+            except ValueError: rest[(col, stud)] = cells; continue
+            if (1, 1) not in tbl or self.sf.get("allow_rare", False): rest[(col, stud)] = cells; continue
+            for (r, c) in cells: fixed[r, c] = col
+            handled = True
+        if not handled: return groups
+        below = -np.ones((S.R, S.C), int)
+        for (r, c) in zip(*np.where(fixed >= 0)): below[r, c] = S.occ.get((int(r), int(c), y - 1), -1)
+        catalog = {(max(k), min(k)): v for k, v in TILES.items() if v in CAT}; allowed = lambda part, col: PAIRS.get(part, {}).get(str(int(col)), 0) >= max(1, mn)
+        try:
+            parts = TL.best_tiling(fixed, np.zeros_like(fixed, bool), below, lambda *a: 72, catalog, tries=self.sf.get("top_tiler_tries", 3), seed=104729 * int(y) + 5, allowed=allowed, orphan_cost=self.sf.get("top_orphan_cost", 60.0), stagger=self.sf.get("top_stagger", 6.0), seam_pen=self.sf.get("top_seam_pen", 6.0))
+        except RuntimeError: return groups
+        for p in parts:
+            key = (max(p["w"], p["d"]), min(p["w"], p["d"])); self.S.add(catalog[key], p["colour"], p["x"], p["z"], y, 0 if p["d"] >= p["w"] else 90, "top_tile")
+        self.info["seam_top_layers"] = self.info.get("seam_top_layers", 0) + 1; return rest
     def corner_rot(self, dr, dc):
         """rot (about the vertical) that sends the rounded corner of 25269 (local +x,-z = East,South at rot 0, verified on the LDraw mesh : the underside has no vertex there) to the corner (dr,dc) : dr=+1 south, dc=+1 east"""
         from scene import rot_xz
@@ -132,6 +263,11 @@ class Builder:
             if (round(x), round(-z)) == (dc, dr): return rot
     def place_top(self, top, y, colour_top):
         S, F, mc = self.S, self.F, self.sf["min_sets"]; sup = S.stud_cells(y); groups = {}; jt = (y - self.y0); rounded = 0
+        if getattr(self, "slopes", None):
+            for (r, c) in sorted(top):
+                sl = self.slopes.get((r - F, c - F))
+                if sl is not None: S.add(self.sf["cliff_slopes"].get("part", "54200"), sl[1], r, c, y, sl[0], "cliff_slope"); self.info["cliff_slopes_placed"] = self.info.get("cliff_slopes_placed", 0) + 1
+            top = {k for k in top if (k[0] - F, k[1] - F) not in self.slopes}
         allc = set(top)
         # convex corners of the surface of this stratum : exposed on two perpendicular sides (neighbour absent from top+body of this plane)
         solid = self.solid_at(jt)
@@ -151,6 +287,7 @@ class Builder:
             cc = colour_top[r - F, c - F]; stud = bool(self.studded[r - F, c - F]) or (self.subj[r - F, c - F] and self.sf["land"] == "plate" and self.rng.random() < self.sf["stud_fraction_land"] * 1.0)
             groups.setdefault((int(cc), stud), set()).add((r, c))
         import tiler
+        if self.sf.get("top_tiler") == "seam": groups = self.top_seam_tiles(groups, y)
         for (col, stud), cells in sorted(groups.items()):
             mn = 0 if self.sf.get("allow_rare", False) else mc
             fam = PLATES if stud else TILES
@@ -401,7 +538,7 @@ class Builder:
         self._fig_after, self.fig_log = FG.run(self, self.figures_cfg, CAT, PAIRS)
         self.ornaments(); self.decor() if with_decor else None
         if with_title: self.title()
-        self.plan_flanks(); self.build_layers(); self.place_flanks(); self.frame(); 
+        self.plan_flanks(); self.plan_slopes(); self.plan_details(); self.build_layers(); self.place_flanks(); self.place_details(); self.frame(); 
         if with_title: self.place_title_letters()
         if with_decor: self.place_decor()
         if self._fig_after: self._fig_after()
@@ -415,5 +552,6 @@ if __name__ == "__main__":
     if "--palette" in a: style["palette"]["sea_levels"] = json.load(open(a[a.index("--palette") + 1]))["sea_levels"]; style["palette"].update({k: v for k, v in json.load(open(a[a.index("--palette") + 1])).items() if k in ("floor", "sea_levels_wall", "floor_wall")}); style["surface"].update(json.load(open(a[a.index("--palette") + 1])).get("surface", {}))
     if "--flank" in a: style["relief"]["flank"] = a[a.index("--flank") + 1]
     if "--round" in a: style["surface"]["round_corners"] = a[a.index("--round") + 1] == "1"
+    if "--reinforce" in a: style["surface"]["reinforce_file"] = os.path.abspath(a[a.index("--reinforce") + 1])
     fc = json.load(open(a[a.index("--figures") + 1])) if "--figures" in a else {}
     b = Builder(style, comp, out, grid, frame); m = b.run(with_title="--no-title" not in a, with_decor="--no-decor" not in a, figures_cfg=fc); print(json.dumps({k: m[k] for k in ("pieces", "references", "max_height_mm", "physical_size_mm")}), json.dumps(b.info.get("levels_histogram")))

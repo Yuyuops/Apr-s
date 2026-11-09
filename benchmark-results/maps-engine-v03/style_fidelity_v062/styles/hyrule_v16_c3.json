@@ -1,0 +1,237 @@
+{
+ "_doc": "Sprint V16 cycle 3 : the coast ramp (cycle 1) capped inland heights ; it now only shapes a 4-stud bank belt so that mountain amplitude is really applied (cycle-2 hypothesis re-tested)",
+ "name": "hyrule_v16_c3",
+ "relief": {
+  "strata_thickness_plates": 2,
+  "sea_strata_widths_studs": [
+   2,
+   4.5,
+   7.5,
+   11
+  ],
+  "smooth_sigma_studs": 2.0,
+  "organic_amp": 2.5,
+  "organic_scale_studs": 6,
+  "seed": 7,
+  "smooth_land": 0.6,
+  "foreign_level": 2,
+  "land_inland_widths_studs": [],
+  "sea_mosaic": null,
+  "flank": "vertical",
+  "keep_islets": true,
+  "smooth_height": {
+   "sigma": 1.1,
+   "keep": [
+    "crater"
+   ],
+   "coast_min": 1,
+   "coast_ramp": 0.7,
+   "coast_width": 4
+  }
+ },
+ "palette": {
+  "subject_land": 84,
+  "foreign_land": 19,
+  "floor": 212,
+  "sea_levels": {
+   "1": 212,
+   "2": 212,
+   "3": 323,
+   "4": 323
+  },
+  "floor_wall": 212,
+  "sea_levels_wall": {
+   "1": 212,
+   "2": 212,
+   "3": 323,
+   "4": 323
+  }
+ },
+ "surface": {
+  "land": "tile",
+  "sea": "tile",
+  "stud_fraction_land": 0,
+  "min_sets": 8,
+  "tile_bias": 2.6,
+  "tile_max_area": 24,
+  "orient_h": 2.2,
+  "squarish": 2.5,
+  "round_corners": true,
+  "allow_rare": false,
+  "fallback_colour": 323,
+  "body_tiler": "wild",
+  "body_max_area": 16,
+  "top_tiler": "seam",
+  "cliff_slopes": {
+   "part": "54200",
+   "min_dh": 2
+  }
+ },
+ "frame": {
+  "kind": "dark_brown",
+  "width_studs": 4,
+  "colour": 70,
+  "cap_colour": 70,
+  "rim_above_top_plates": 3,
+  "corner": {
+   "kind": "gold_cap",
+   "colour": 297,
+   "size": 4
+  },
+  "finish": {
+   "filet": {
+    "colour": 297,
+    "index": 1
+   },
+   "medallion": {
+    "colour": 297
+   }
+  }
+ },
+ "decor": [],
+ "detail_density": "low",
+ "biomes": {
+  "water": {
+   "top": 1,
+   "wall": 1,
+   "level": 1,
+   "water": true
+  },
+  "lake": {
+   "top": 322,
+   "wall": 322,
+   "level": 1,
+   "water": true
+  },
+  "void": {
+   "top": 308,
+   "wall": 308,
+   "level": 1,
+   "water": true
+  },
+  "grass": {
+   "top": 10,
+   "wall": 2,
+   "level": 3
+  },
+  "forest": {
+   "top": 2,
+   "wall": 288,
+   "level": 3
+  },
+  "desert": {
+   "top": 19,
+   "wall": 28,
+   "level": 2
+  },
+  "shore": {
+   "top": 28,
+   "wall": 28,
+   "level": 2
+  },
+  "stone": {
+   "top": 71,
+   "wall": 72,
+   "level": 6,
+   "gain": {
+    "step": 2,
+    "max": 5
+   }
+  },
+  "snow": {
+   "top": 15,
+   "wall": 71,
+   "level": 7,
+   "gain": {
+    "step": 2,
+    "max": 6
+   }
+  },
+  "mesa": {
+   "top": 84,
+   "wall": 70,
+   "level": 6,
+   "gain": {
+    "step": 2,
+    "max": 6
+   }
+  },
+  "rust": {
+   "top": 70,
+   "wall": 308,
+   "level": 6,
+   "gain": {
+    "step": 2,
+    "max": 6
+   }
+  },
+  "crater": {
+   "top": 0,
+   "wall": 308,
+   "level": 2
+  },
+  "shallow": {
+   "top": 212,
+   "wall": 212,
+   "level": 1,
+   "water": true
+  },
+  "meadow": {
+   "top": 10,
+   "wall": 2,
+   "level": 3
+  }
+ },
+ "hidden_wall": 72,
+ "details": {
+  "seed": 11,
+  "rules": [
+   {
+    "classes": [
+     "forest"
+    ],
+    "part": "3062b",
+    "colours": [
+     288,
+     2
+    ],
+    "density": 0.3,
+    "min_dist": 2.0,
+    "region": "detail_tree",
+    "interior_only": true
+   },
+   {
+    "classes": [
+     "grass",
+     "meadow"
+    ],
+    "part": "6141",
+    "colours": [
+     10
+    ],
+    "density": 0.04,
+    "min_dist": 3.0,
+    "region": "detail_shrub",
+    "studded_class": false,
+    "interior_only": true
+   },
+   {
+    "classes": [
+     "grass",
+     "meadow"
+    ],
+    "part": "6141",
+    "colours": [
+     14,
+     4,
+     15
+    ],
+    "density": 0.025,
+    "min_dist": 3.5,
+    "region": "detail_flower",
+    "studded_class": false,
+    "interior_only": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "_doc": "Sprint V16 full Hyrule composition : B16 raster (V15 B + shallow/meadow relabels, contours identical), 96x78 studs",
+ "biome_map": {
+  "file": "../../lego-builder/sprint_v16/data/B16_classes.tif",
+  "classes": {
+   "0": "water",
+   "1": "lake",
+   "2": "void",
+   "3": "grass",
+   "4": "forest",
+   "5": "desert",
+   "6": "shore",
+   "7": "stone",
+   "8": "snow",
+   "9": "mesa",
+   "10": "rust",
+   "11": "crater",
+   "12": "shallow",
+   "13": "meadow"
+  },
+  "majority_passes": 1
+ },
+ "grid_studs": [
+  78,
+  96
+ ],
+ "sub": 8
+}

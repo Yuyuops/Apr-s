@@ -1,0 +1,26 @@
+{
+ "_doc": "Sprint V16 pilot zone A (32x32 crop of the V15 B class raster)",
+ "biome_map": {
+  "file": "../../lego-builder/sprint_v16/zones/zone_A_classes.tif",
+  "classes": {
+   "0": "water",
+   "1": "lake",
+   "2": "void",
+   "3": "grass",
+   "4": "forest",
+   "5": "desert",
+   "6": "shore",
+   "7": "stone",
+   "8": "snow",
+   "9": "mesa",
+   "10": "rust",
+   "11": "crater"
+  },
+  "majority_passes": 1
+ },
+ "grid_studs": [
+  32,
+  32
+ ],
+ "sub": 8
+}

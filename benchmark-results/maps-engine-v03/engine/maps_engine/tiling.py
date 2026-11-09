@@ -34,12 +34,13 @@ def _aligned(H, V, x, z, w, d):
     return int(c)
 
 DEFAULTS = dict(orphan_cost=60.0, seam_pen=4.0)      # measured on the island : fewest lonely 1x1 plates, seams still staggered (see RAPPORT)
-def tile_layer(fixed, wild, below, rng, hidden_colour_of, catalog, jitter=0.0, stagger=2.0, allowed=None, orphan_cost=None, orphan_tiers=3, seam_pen=None, orient=0.0, orient_strict=False):
+def tile_layer(fixed, wild, below, rng, hidden_colour_of, catalog, jitter=0.0, stagger=2.0, allowed=None, orphan_cost=None, orphan_tiers=3, seam_pen=None, orient=0.0, orient_strict=False, above_label=None, above_pen=0.0):
     orphan_cost = DEFAULTS["orphan_cost"] if orphan_cost is None else orphan_cost; seam_pen = DEFAULTS["seam_pen"] if seam_pen is None else seam_pen
     """fixed (n,m) colour or -1 ; wild (n,m) bool = hidden cell that may take any colour ; below (n,m) id of the part under each cell (-1 none) ; catalog {(long,short): part}.
     returns [dict(x, z, w, d, colour, wild_only)]  (x = row, w = extent in rows ; z = column, d = extent in columns)"""
     covered = (fixed < 0) & ~wild; parts = []; colours = sorted(set(fixed[fixed >= 0].tolist())); allowed = allowed or PAL.available
     sizes = sorted(catalog, key=lambda s: -s[0] * s[1]); H, V = _seam_arrays(below)
+    comp_size = np.bincount(above_label[above_label >= 0]) if (above_label is not None and above_pen and (above_label >= 0).any()) else None      # V16 : size of every connected cluster of the layer ABOVE
     while not covered.all():
         cands = []
         for g in colours + [None]:
@@ -60,6 +61,8 @@ def tile_layer(fixed, wild, below, rng, hidden_colour_of, catalog, jitter=0.0, s
             for x, z in np.argwhere(f):
                 u = len(set(below[x:x + w, z:z + d].ravel().tolist()) - {-1})
                 sc = area * 10.0 + stagger * min(u, 3) + rng.random() * jitter - orphan_cost * _orphans(fixed, wild, free_now, x, z, w, d) - seam_pen * _aligned(H, V, x, z, w, d) + (orient if d > w else 0.0)
+                if comp_size is not None:                                       # V16 single-point-of-failure penalty : a part that holds an ENTIRE cluster of the layer above (>= 2 cells) alone would cut it off if it failed
+                    labs, cnt = np.unique(above_label[x:x + w, z:z + d], return_counts=True); sc -= above_pen * sum(1 for l, k in zip(labs, cnt) if l >= 0 and comp_size[l] >= 2 and k == comp_size[l])
                 if best is None or sc > best[0]: best = (sc, g, x, z, w, d)
         _, g, x, z, w, d = best
         if g is None: g = hidden_colour_of(x, z, w, d, catalog[(max(w, d), min(w, d))])
@@ -96,7 +99,7 @@ def merge_small(parts, catalog, allowed=None, max_small=2):
             if changed: break
     return parts
 
-def local_improve(parts, catalog, below, tries=60, seed=0, window=2, max_cells=60, allowed=None, small=1):
+def local_improve(parts, catalog, below, tries=60, seed=0, window=2, max_cells=60, allowed=None, small=1, above_label=None, above_pen=0.0):
     """local search on a finished layer : around every 1x1 part, the neighbouring parts of the same colour (or hidden ones) are re-tiled many times with random tie-breaks ; the new tiling is kept when it has fewer 1x1 parts, or as many 1x1 parts and fewer parts. Footprint and colours of the visible cells never change."""
     allowed = allowed or PAL.available; rng = np.random.default_rng(seed); parts = [dict(p) for p in parts]
     n0 = max(p["x"] + p["w"] for p in parts) if parts else 0; n1 = max(p["z"] + p["d"] for p in parts) if parts else 0; n0 = max(n0, below.shape[0]); n1 = max(n1, below.shape[1])
@@ -118,7 +121,7 @@ def local_improve(parts, catalog, below, tries=60, seed=0, window=2, max_cells=6
             old = (sum(1 for q in grp if q["w"] * q["d"] <= small), len(grp)); best = None
             hid = lambda x, z, w, d, part: int(np.bincount(colour_at[x:x + w, z:z + d].ravel()).argmax())
             for t in range(tries):
-                try: cand = tile_layer(fixed, wild, bl, rng, hid, catalog, jitter=0.0 if t == 0 else 12.0, allowed=allowed)
+                try: cand = tile_layer(fixed, wild, bl, rng, hid, catalog, jitter=0.0 if t == 0 else 12.0, allowed=allowed, above_label=(above_label[x0:x1, z0:z1] if above_label is not None and above_label.shape[0] >= x1 and above_label.shape[1] >= z1 else None), above_pen=above_pen)
                 except RuntimeError: continue
                 key = (sum(1 for c in cand if c["w"] * c["d"] <= small), len(cand))
                 if key < (best[0] if best else old) : best = (key, cand)
