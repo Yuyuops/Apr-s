@@ -44,3 +44,14 @@ Date initiale : 2026-11-08. Branche : research/lego-builder-commercial-outputs-2
 | Optimisation d'impression | DONE | `PRINT_OPTIMIZATION.md` |
 | Recommandation | DONE — A1 Combo pour démarrer (monochrome) ; Hi + CFS pour Hyrule multicolore ; U1 non démontré | `FINAL_RECOMMENDATION.md` |
 | Tests physiques (coupon, purge réelle, slicers natifs, prix) | **BLOCKED** (intervention humaine) | `FINAL_RECOMMENDATION.md` §5 |
+
+## Sprint V15 — Hyrule reconstruit à partir du besoin (2026-11-09)
+
+| Chantier | Statut | Preuve |
+|---|---|---|
+| Audit de la détection du besoin | DONE : n'existait que comme classifieur de type heuristique ; ni interprétation de demande, ni contraintes, ni sémantique, ni version | `benchmark-results/lego-builder/sprint_v15/INTENT_DETECTION_AUDIT.md` |
+| Composant minimal `intent` + manifeste d'exigences + `semantic_map` | DONE (hors ligne, sans API payante ; 9/9 tests) | `lego_builder/intent.py`, `semantic_map.py`, `HYRULE_REQUIREMENTS.json` |
+| Version de Hyrule | Breath of the Wild (lecture visuelle de la plaque-titre) ; aucune carte originale fournie | `REFERENCE_ANALYSIS.md` |
+| Pipelines A/B/C (+2 cycles C2, C3), moteur inchangé | DONE : B 12 543 pièces, C3 23 420 pièces ; 0 collision/îlot ; reconstruction identique ; V14 = référence CI inchangée | `PIPELINE_COMPARISON.md`, `builds/`, `SHA256SUMS.txt` |
+| Verdict | GO artistique **limité** (reconnaissance, sous validation humaine) ; NO-GO « égale la référence » ; GO technique non acquis (règle de fragilité) ; **aucun gel CI** | `FINAL_VERDICT.md`, `ARTISTIC_EVALUATION.md` |
+| Validation visuelle humaine / carte originale / plaque-titre / travail moteur (pentes, décor) | **BLOCKED** (décisions humaines) | `FINAL_VERDICT.md` |

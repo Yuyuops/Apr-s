@@ -1,0 +1,24 @@
+{
+ "status": "needs_input",
+ "construction_type": "undetermined",
+ "generator": "none",
+ "decided_by": "inferred",
+ "confidence": 0.5,
+ "scores": {
+  "map_relief_25d": 0.0,
+  "sculpture_3d": 0.0,
+  "photos_3d": 0.0,
+  "mosaic_2d": 0.0
+ },
+ "evidence": [],
+ "blockers": [
+  "construction type undetermined (scores {'map_relief_25d': 0.0, 'sculpture_3d': 0.0, 'photos_3d': 0.0, 'mosaic_2d': 0.0})"
+ ],
+ "questions": [
+  "Is this a map, a sculpture, a reconstruction from photos or a 2D mosaic ?"
+ ],
+ "steps": [],
+ "subject": null,
+ "subject_version": null,
+ "source_analysis": []
+}

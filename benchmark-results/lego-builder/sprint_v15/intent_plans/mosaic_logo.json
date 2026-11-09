@@ -1,0 +1,26 @@
+{
+ "status": "needs_input",
+ "construction_type": "mosaic_2d",
+ "generator": "mosaic",
+ "decided_by": "inferred",
+ "confidence": 0.66,
+ "scores": {
+  "map_relief_25d": 0.0,
+  "sculpture_3d": 0.0,
+  "photos_3d": 0.0,
+  "mosaic_2d": 1.6
+ },
+ "evidence": [
+  "request text : 2 keyword(s) for mosaic_2d"
+ ],
+ "blockers": [
+  "generator 'mosaic' is not implemented in this version"
+ ],
+ "questions": [],
+ "steps": [
+  "(not implemented) palette quantisation to plates/tiles"
+ ],
+ "subject": null,
+ "subject_version": null,
+ "source_analysis": []
+}

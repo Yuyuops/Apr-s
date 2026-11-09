@@ -1,0 +1,73 @@
+{
+ "status": "ready",
+ "construction_type": "map_relief_25d",
+ "generator": "maps",
+ "decided_by": "structured_requirements",
+ "confidence": 0.99,
+ "scores": {
+  "map_relief_25d": 7.55,
+  "sculpture_3d": 0.0,
+  "photos_3d": 0.0,
+  "mosaic_2d": 0.0
+ },
+ "evidence": [
+  "request text : 2 keyword(s) for map_relief_25d",
+  "source analysis : 1200x1200 px, RGB",
+  "source analysis : border uniformity (colour std) 0.152 ; subject/background contrast 0.24",
+  "source analysis : land-cover colours : water 12 %, vegetation 20 %, snow-like 6 %, sand-like 10 % (4 classes > 4 %)",
+  "source analysis : 48 dominant colours",
+  "source analysis : dark frame around a brighter board : yes",
+  "structured requirements declare construction_type=map_relief_25d (operator input, takes precedence)"
+ ],
+ "blockers": [],
+ "questions": [],
+ "steps": [
+  "validate requirements",
+  "semantic preparation of the reference (semantic_map)",
+  "write composition + style (data only)",
+  "maps generator (unchanged engine)",
+  "independent validation + fragility",
+  "renders + comparison with the reference"
+ ],
+ "subject": "Hyrule",
+ "subject_version": "Breath of the Wild (2017)",
+ "source_analysis": [
+  {
+   "kind": "image",
+   "construction_type": "map_relief_25d",
+   "confidence": 0.95,
+   "scores": {
+    "map_relief_25d": 3.0,
+    "sculpture_3d": 0,
+    "mosaic_2d": 0
+   },
+   "evidence": [
+    "1200x1200 px, RGB",
+    "border uniformity (colour std) 0.152 ; subject/background contrast 0.24",
+    "land-cover colours : water 12 %, vegetation 20 %, snow-like 6 %, sand-like 10 % (4 classes > 4 %)",
+    "48 dominant colours",
+    "dark frame around a brighter board : yes"
+   ],
+   "alternatives": [],
+   "uncertainties": [
+    "relief is ESTIMATED from terrain classes (no altitude data) unless a height source is supplied",
+    "oblique view of a board : perspective is rectified from the detected quadrilateral ; true proportions are assumed square"
+   ],
+   "size_px": [
+    1200,
+    1200
+   ],
+   "has_alpha": false,
+   "framed_board": true,
+   "land_cover": {
+    "water": 0.121,
+    "vegetation": 0.205,
+    "snow": 0.063,
+    "sand": 0.098
+   },
+   "dominant_colours": 48,
+   "sha256": "b0d8fdda77bf6702889845fe4b6b3d6718767b3708fe018c26ba164028340825",
+   "file": "reference_botw_lego.png"
+  }
+ ]
+}

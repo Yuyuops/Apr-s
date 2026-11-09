@@ -1,0 +1,79 @@
+{
+ "height_plates": 27,
+ "pieces": 23286,
+ "references": 204,
+ "size_studs": [
+  136,
+  112
+ ],
+ "physical_size_mm": [
+  1088,
+  896
+ ],
+ "max_height_mm": 86.4,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "5ce0b3252a39b3e069ad15338b881b78dd6476ffeb89fa423b920d3f213637be",
+ "style": "hyrule_v15_C",
+ "composition": "Sprint V15 composition C: class raster measured on the refer",
+ "grid_studs": [
+  104,
+  128
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "1": 3104,
+  "2": 1379,
+  "3": 4548,
+  "4": 2553,
+  "5": 125,
+  "6": 989,
+  "7": 194,
+  "8": 401,
+  "9": 19
+ },
+ "biomes": {
+  "water": 2249,
+  "lake": 239,
+  "void": 616,
+  "grass": 2529,
+  "forest": 1960,
+  "desert": 891,
+  "shore": 488,
+  "stone": 1112,
+  "snow": 399,
+  "mesa": 1441,
+  "rust": 125,
+  "crater": 59,
+  "stone_hi": 383,
+  "snow_hi": 372,
+  "mesa_hi": 211,
+  "rust_hi": 238
+ },
+ "biome_mode": true,
+ "rounded_corners": 995,
+ "frame": {
+  "courses": 8,
+  "top_plate": 26
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 1807,
+   "single_owner_pieces_above": 53
+  },
+  {
+   "layer": 0,
+   "plates": 1936,
+   "single_owner_pieces_above": 208
+  }
+ ]
+}

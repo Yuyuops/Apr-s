@@ -1,0 +1,6 @@
+{
+ "_doc": "Subjects whose geography/appearance differs between versions : the intent layer refuses to mix them and asks for (or reads) an explicit version. Extend by data, not code.",
+ "hyrule": {"franchise": "The Legend of Zelda", "versions": ["Zelda (NES 1986)", "A Link to the Past (1991)", "Ocarina of Time (1998)", "Twilight Princess (2006)", "Breath of the Wild (2017)", "Tears of the Kingdom (2023)"]},
+ "middle-earth": {"franchise": "Tolkien", "versions": ["book maps", "Peter Jackson films", "game maps"]},
+ "westeros": {"franchise": "A Song of Ice and Fire", "versions": ["books", "TV series"]}
+}

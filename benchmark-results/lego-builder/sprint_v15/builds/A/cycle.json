@@ -1,0 +1,25 @@
+{
+ "pieces": 10682,
+ "references": 134,
+ "grid_studs": [
+  80,
+  80
+ ],
+ "height_plates": 21,
+ "build_s": 5,
+ "validate_s": 35,
+ "all_pass": true,
+ "collisions": 0,
+ "disconnected": 0,
+ "islands": 0,
+ "unsupported": 0,
+ "one_stud": 1898,
+ "carrying": 1050,
+ "articulation": 1532,
+ "worst": {
+  "family": "strata_body",
+  "part_id": 886,
+  "parts_cut_off": 24,
+  "mass_cut_off_g": 4.4
+ }
+}

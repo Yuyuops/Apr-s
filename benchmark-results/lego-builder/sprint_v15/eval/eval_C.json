@@ -1,0 +1,66 @@
+{
+ "map_pixels": [
+  1413,
+  1149
+ ],
+ "aspect": 1.23,
+ "aspect_error": 0.001,
+ "pixel_accuracy": 0.693,
+ "mean_IoU": 0.515,
+ "IoU_by_family": {
+  "water": 0.593,
+  "grass": 0.57,
+  "forest": 0.529,
+  "desert": 0.487,
+  "stone": 0.383,
+  "snow": 0.396,
+  "mesa_rust": 0.649
+ },
+ "landmark_errors": {
+  "snow_main": 0.525,
+  "desert_main": 0.007,
+  "sea_main": 0.03,
+  "stone_main": 0.019,
+  "forest_main": 0.468,
+  "mesa_main": 0.014
+ },
+ "landmark_error_mean": 0.177,
+ "family_share": {
+  "water": 0.165,
+  "void": 0.085,
+  "grass": 0.141,
+  "forest": 0.197,
+  "desert": 0.108,
+  "stone": 0.123,
+  "snow": 0.032,
+  "mesa_rust": 0.149
+ },
+ "descriptive_variant": {
+  "boundary_density": 0.539,
+  "components": 526,
+  "largest_component_share": {
+   "water": 0.096,
+   "void": 0.045,
+   "grass": 0.089,
+   "forest": 0.062,
+   "desert": 0.072,
+   "stone": 0.03,
+   "snow": 0.004,
+   "mesa_rust": 0.076
+  }
+ },
+ "descriptive_reference": {
+  "boundary_density": 0.639,
+  "components": 650,
+  "largest_component_share": {
+   "water": 0.09,
+   "void": 0.031,
+   "grass": 0.063,
+   "forest": 0.013,
+   "desert": 0.091,
+   "stone": 0.035,
+   "snow": 0.023,
+   "mesa_rust": 0.068
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "status": "ready",
+ "construction_type": "photos_3d",
+ "generator": "photos_to_3d",
+ "decided_by": "inferred",
+ "confidence": 0.62,
+ "scores": {
+  "map_relief_25d": 0.0,
+  "sculpture_3d": 1.6,
+  "photos_3d": 2.8,
+  "mosaic_2d": 0.0
+ },
+ "evidence": [
+  "request text : 2 keyword(s) for sculpture_3d",
+  "request text : 1 keyword(s) for photos_3d",
+  "4 pictures given : multi-view reconstruction candidate"
+ ],
+ "blockers": [],
+ "questions": [],
+ "steps": [
+  "identify the 4 views",
+  "reconstruction (HF Space)",
+  "colour projection + GLB check",
+  "engine 1",
+  "validation"
+ ],
+ "subject": null,
+ "subject_version": null,
+ "source_analysis": []
+}

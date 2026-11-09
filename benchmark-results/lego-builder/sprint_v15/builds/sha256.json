@@ -1,0 +1,28 @@
+{
+ "A": {
+  "ldraw_sha256": "5afb9ac8fe80f0089542e33ba639950251ce372d392512dbc29f777877a9ab8b",
+  "rebuild_sha256": "5afb9ac8fe80f0089542e33ba639950251ce372d392512dbc29f777877a9ab8b",
+  "rebuild_identical": true,
+  "equals_ci_reference_hyrule_biomes": true
+ },
+ "B": {
+  "ldraw_sha256": "882e1293f361447a91069d79a99be5d46a23bca1b0ed700c7d45ff240b7b86da",
+  "rebuild_sha256": "882e1293f361447a91069d79a99be5d46a23bca1b0ed700c7d45ff240b7b86da",
+  "rebuild_identical": true
+ },
+ "C": {
+  "ldraw_sha256": "b21c09f722e40b31561f829a3c13ec62a0317ba6c5060ec2acaeff7890ab58ad",
+  "rebuild_sha256": "b21c09f722e40b31561f829a3c13ec62a0317ba6c5060ec2acaeff7890ab58ad",
+  "rebuild_identical": true
+ },
+ "C2": {
+  "ldraw_sha256": "5ce0b3252a39b3e069ad15338b881b78dd6476ffeb89fa423b920d3f213637be",
+  "rebuild_sha256": "5ce0b3252a39b3e069ad15338b881b78dd6476ffeb89fa423b920d3f213637be",
+  "rebuild_identical": true
+ },
+ "C3": {
+  "ldraw_sha256": "27f3fdfe050bfbd8f774a7416d4fbe80bc370f01ccdb0337465a3085dc4d782f",
+  "rebuild_sha256": "27f3fdfe050bfbd8f774a7416d4fbe80bc370f01ccdb0337465a3085dc4d782f",
+  "rebuild_identical": true
+ }
+}

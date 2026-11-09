@@ -1,0 +1,195 @@
+{
+ "_doc": "Sprint V15 hyrule_v15_C : data-only style for the unchanged maps engine; biome table derived from HYRULE_REQUIREMENTS.json",
+ "name": "hyrule_v15_C",
+ "relief": {
+  "strata_thickness_plates": 2,
+  "sea_strata_widths_studs": [
+   2,
+   4.5,
+   7.5,
+   11
+  ],
+  "smooth_sigma_studs": 2.0,
+  "organic_amp": 2.5,
+  "organic_scale_studs": 6,
+  "seed": 7,
+  "smooth_land": 0.6,
+  "foreign_level": 2,
+  "land_inland_widths_studs": [],
+  "sea_mosaic": null,
+  "flank": "vertical",
+  "keep_islets": true
+ },
+ "palette": {
+  "subject_land": 84,
+  "foreign_land": 19,
+  "floor": 212,
+  "sea_levels": {
+   "1": 212,
+   "2": 212,
+   "3": 323,
+   "4": 323
+  },
+  "floor_wall": 212,
+  "sea_levels_wall": {
+   "1": 212,
+   "2": 212,
+   "3": 323,
+   "4": 323
+  }
+ },
+ "surface": {
+  "land": "tile",
+  "sea": "tile",
+  "stud_fraction_land": 0,
+  "min_sets": 8,
+  "tile_bias": 2.6,
+  "tile_max_area": 24,
+  "orient_h": 2.2,
+  "squarish": 2.5,
+  "round_corners": true,
+  "allow_rare": false,
+  "fallback_colour": 323
+ },
+ "frame": {
+  "kind": "dark_brown",
+  "width_studs": 4,
+  "colour": 70,
+  "cap_colour": 70,
+  "rim_above_top_plates": 3,
+  "corner": {
+   "kind": "gold_cap",
+   "colour": 297,
+   "size": 4
+  },
+  "finish": {
+   "filet": {
+    "colour": 297,
+    "index": 1
+   },
+   "medallion": {
+    "colour": 297
+   }
+  }
+ },
+ "decor": [],
+ "detail_density": "low",
+ "biomes": {
+  "water": {
+   "top": 1,
+   "wall": 1,
+   "level": 1,
+   "water": true
+  },
+  "lake": {
+   "top": 322,
+   "wall": 322,
+   "level": 1,
+   "water": true
+  },
+  "void": {
+   "top": 308,
+   "wall": 308,
+   "level": 1,
+   "water": true
+  },
+  "grass": {
+   "top": 10,
+   "wall": 2,
+   "level": 3
+  },
+  "forest": {
+   "top": 2,
+   "wall": 288,
+   "level": 3
+  },
+  "desert": {
+   "top": 19,
+   "wall": 28,
+   "level": 2
+  },
+  "shore": {
+   "top": 28,
+   "wall": 28,
+   "level": 2
+  },
+  "stone": {
+   "top": 71,
+   "wall": 72,
+   "level": 4,
+   "gain": {
+    "step": 5,
+    "max": 1
+   }
+  },
+  "snow": {
+   "top": 15,
+   "wall": 71,
+   "level": 6,
+   "gain": {
+    "step": 4,
+    "max": 1
+   }
+  },
+  "mesa": {
+   "top": 84,
+   "wall": 70,
+   "level": 4,
+   "gain": {
+    "step": 5,
+    "max": 1
+   }
+  },
+  "rust": {
+   "top": 70,
+   "wall": 308,
+   "level": 5,
+   "gain": {
+    "step": 4,
+    "max": 1
+   }
+  },
+  "crater": {
+   "top": 0,
+   "wall": 308,
+   "level": 3
+  },
+  "stone_hi": {
+   "top": 72,
+   "wall": 72,
+   "level": 6,
+   "gain": {
+    "step": 4,
+    "max": 2
+   }
+  },
+  "snow_hi": {
+   "top": 15,
+   "wall": 15,
+   "level": 8,
+   "gain": {
+    "step": 3,
+    "max": 2
+   }
+  },
+  "mesa_hi": {
+   "top": 92,
+   "wall": 84,
+   "level": 6,
+   "gain": {
+    "step": 4,
+    "max": 2
+   }
+  },
+  "rust_hi": {
+   "top": 320,
+   "wall": 70,
+   "level": 7,
+   "gain": {
+    "step": 3,
+    "max": 2
+   }
+  }
+ },
+ "hidden_wall": 72
+}

@@ -77,11 +77,16 @@ def main(argv=None):
     for n in ("prepare", "run"): x = sp.add_parser(n); x.add_argument("src", nargs="?"); common(x)
     b = sp.add_parser("build"); b.add_argument("project"); b.add_argument("--pdf", action="store_true"); b.add_argument("--notice", choices=["off", "fast", "full"], default="fast", help="sculptures : assembly plan : fast (no ear search, default), full (with ears, hard timeout) or off"); b.add_argument("--notice-timeout", type=int, default=900)
     g = sp.add_parser("geo"); g.add_argument("--composition", required=True); g.add_argument("--style", required=True); g.add_argument("--out", required=True); g.add_argument("--pdf", action="store_true")
+    i = sp.add_parser("intent"); i.add_argument("--request"); i.add_argument("--source", action="append", default=[]); i.add_argument("--requirements"); i.add_argument("--out")
     c = sp.add_parser("check"); c.add_argument("project"); ar = p.parse_args(argv)
     if ar.cmd == "analyze": print(json.dumps(A.analyse(ar.src), indent=1, ensure_ascii=False))
     elif ar.cmd == "prepare": m = prepare(ar); print(json.dumps({k: m[k] for k in ("construction_type", "generator", "status", "uncertainties")}, indent=1, ensure_ascii=False))
     elif ar.cmd == "build": m = build(ar); print(json.dumps({k: m["results"].get(k) for k in ("pieces", "references", "seconds")} | {"status": m["status"]}))
     elif ar.cmd == "run": prepare(ar); ar.project = ar.out; m = build(ar); print(json.dumps({k: m["results"].get(k) for k in ("pieces", "references", "seconds")} | {"status": m["status"]}))
     elif ar.cmd == "geo": geo(ar); ar.project = ar.out; m = build(ar); print(json.dumps({k: m["results"].get(k) for k in ("pieces", "references", "seconds")} | {"status": m["status"]}))
+    elif ar.cmd == "intent":
+        from . import intent as I
+        req = json.load(open(ar.requirements)) if ar.requirements else None; plan = I.interpret(ar.request, ar.source, req); txt = json.dumps(plan, indent=1, ensure_ascii=False); print(txt)
+        if ar.out: Path(ar.out).write_text(txt)
     elif ar.cmd == "check": print(json.dumps({"errors": MF.validate(json.load(open(Path(ar.project) / "manifest.json")), ar.project)}))
 if __name__ == "__main__": main()

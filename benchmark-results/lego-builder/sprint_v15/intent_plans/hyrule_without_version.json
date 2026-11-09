@@ -1,0 +1,34 @@
+{
+ "status": "needs_input",
+ "construction_type": "map_relief_25d",
+ "generator": "maps",
+ "decided_by": "structured_requirements",
+ "confidence": 0.99,
+ "scores": {
+  "map_relief_25d": 5.8,
+  "sculpture_3d": 0.0,
+  "photos_3d": 0.0,
+  "mosaic_2d": 0.0
+ },
+ "evidence": [
+  "request text : 1 keyword(s) for map_relief_25d",
+  "structured requirements declare construction_type=map_relief_25d (operator input, takes precedence)"
+ ],
+ "blockers": [
+  "subject 'Hyrule' exists in several versions ['Zelda (NES 1986)', 'A Link to the Past (1991)', 'Ocarina of Time (1998)', 'Twilight Princess (2006)', 'Breath of the Wild (2017)', 'Tears of the Kingdom (2023)'] : none selected, refusing to mix geographies"
+ ],
+ "questions": [
+  "Which version of the subject should be reproduced ?"
+ ],
+ "steps": [
+  "validate requirements",
+  "semantic preparation of the reference (semantic_map)",
+  "write composition + style (data only)",
+  "maps generator (unchanged engine)",
+  "independent validation + fragility",
+  "renders + comparison with the reference"
+ ],
+ "subject": "Hyrule",
+ "subject_version": null,
+ "source_analysis": []
+}

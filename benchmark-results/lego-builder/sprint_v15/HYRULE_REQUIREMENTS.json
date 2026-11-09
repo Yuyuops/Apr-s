@@ -1,0 +1,377 @@
+{
+ "schema": "lego_builder.requirements/1",
+ "_doc": "Structured requirements manifest (Sprint V15). Operator-provided fields are marked source=operator ; fields measured on the reference by the tools are in reference_measures.json. Reusable for other maps : replace the subject, reference, prototypes and regions.",
+ "request": {
+  "text_fr": "Carte LEGO de Hyrule immédiatement reconnaissable, esthétiquement convaincante et constructible, inspirée d'une carte topographique miniature ; cadre en bois et texture LEGO conservés ; titre discret ; référence de qualité visuelle : le modèle LEGO de Hyrule fourni.",
+  "source": "user, Sprint V15"
+ },
+ "subject": {
+  "name": "Hyrule",
+  "kind": "map",
+  "franchise": "The Legend of Zelda",
+  "version": {
+   "selected": "Breath of the Wild (2017)",
+   "evidence": "the title plate of the reference picture reads 'THE LEGEND OF ZELDA BREATH OF THE WILD' ; the layout (snow mountains NW, desert SW, volcano with crater NE, central plain with castle moat, sea to the east) is that of the BotW map",
+   "source": "operator visual reading of the picture (NOT automatic OCR)",
+   "confidence": "high"
+  },
+  "other_versions_not_mixed": [
+   "Zelda (NES 1986)",
+   "A Link to the Past (1991)",
+   "Ocarina of Time (1998)",
+   "Twilight Princess (2006)",
+   "Tears of the Kingdom (2023)"
+  ],
+  "rule": "only the BotW geography seen in the reference is reproduced ; no element of another game is added ; if the version were unclear the routing returns needs_input"
+ },
+ "reference": {
+  "file": "reference_botw_lego.png",
+  "sha256": "b0d8fdda77bf6702889845fe4b6b3d6718767b3708fe018c26ba164028340825",
+  "size_px": [
+   1200,
+   1200
+  ],
+  "kind": "top-down picture of a third-party LEGO model of the BotW map",
+  "rights": "unknown (third-party model) : kept out of Git, used as private reference ; only derived class grids and measures are versioned",
+  "map_rect_px": [
+   40,
+   56,
+   1168,
+   972
+  ],
+  "map_rect_note": "interior of the map plate measured on the picture (frame, bottom title plate and outer border excluded)",
+  "orientation": "north up (as in the picture)"
+ },
+ "board": {
+  "aspect_width_over_height": 1.2314,
+  "aspect_source": "measured on the picture (1128 x 916 px) ; V14 assumed a square 80 x 80 grid, which distorts the geography",
+  "detail_levels": {
+   "standard": {
+    "grid_studs_rows_cols": [
+     78,
+     96
+    ]
+   },
+   "fine": {
+    "grid_studs_rows_cols": [
+     104,
+     128
+    ]
+   }
+  },
+  "frame": "dark brown wood-like frame with gold corners, kept from the current style, secondary to the map",
+  "title": "none on the map (a separate plate or the frame is future work) ; recognition must not need the title"
+ },
+ "classes": [
+  "water",
+  "lake",
+  "void",
+  "grass",
+  "forest",
+  "desert",
+  "shore",
+  "stone",
+  "snow",
+  "mesa",
+  "rust",
+  "crater",
+  "stone_hi",
+  "snow_hi",
+  "mesa_hi",
+  "rust_hi"
+ ],
+ "class_meaning": {
+  "water": "open sea / deep water",
+  "lake": "lakes and rivers (lighter, greenish blue)",
+  "void": "off-map dark plate (west and north edge)",
+  "grass": "plains",
+  "forest": "dense vegetation",
+  "desert": "Gerudo-type sand",
+  "shore": "darker sand / coast and plateau edges",
+  "stone": "grey rocky zones",
+  "snow": "snow and ice",
+  "mesa": "tan-brown highlands (Death Mountain slopes, Akkala)",
+  "rust": "red-brown volcanic ground",
+  "crater": "enclosed dark crater",
+  "_hi": "same family at altitude (variants used by the hybrid pipeline for tonal progression)"
+ },
+ "reference_prototypes": {
+  "_doc": "Lab prototypes (k-means, k=16, seed 1, on the smoothed reference) named by the operator ; classification = nearest prototype",
+  "source": "operator naming of automatically computed clusters",
+  "list": [
+   {
+    "lab": [
+     38,
+     3,
+     -31
+    ],
+    "class": "water"
+   },
+   {
+    "lab": [
+     38,
+     -2,
+     -16
+    ],
+    "class": "water"
+   },
+   {
+    "lab": [
+     43,
+     -13,
+     -5
+    ],
+    "class": "lake"
+   },
+   {
+    "lab": [
+     21,
+     0,
+     5
+    ],
+    "class": "void"
+   },
+   {
+    "lab": [
+     54,
+     -35,
+     21
+    ],
+    "class": "grass"
+   },
+   {
+    "lab": [
+     53,
+     -20,
+     11
+    ],
+    "class": "grass"
+   },
+   {
+    "lab": [
+     45,
+     -30,
+     19
+    ],
+    "class": "forest"
+   },
+   {
+    "lab": [
+     38,
+     -19,
+     13
+    ],
+    "class": "forest"
+   },
+   {
+    "lab": [
+     84,
+     -1,
+     21
+    ],
+    "class": "desert"
+   },
+   {
+    "lab": [
+     69,
+     -1,
+     20
+    ],
+    "class": "shore"
+   },
+   {
+    "lab": [
+     65,
+     -2,
+     2
+    ],
+    "class": "stone"
+   },
+   {
+    "lab": [
+     49,
+     -1,
+     2
+    ],
+    "class": "stone"
+   },
+   {
+    "lab": [
+     82,
+     1,
+     3
+    ],
+    "class": "snow"
+   },
+   {
+    "lab": [
+     56,
+     7,
+     22
+    ],
+    "class": "mesa"
+   },
+   {
+    "lab": [
+     41,
+     0,
+     16
+    ],
+    "class": "mesa"
+   },
+   {
+    "lab": [
+     39,
+     18,
+     21
+    ],
+    "class": "rust"
+   }
+  ]
+ },
+ "regions_to_preserve": [
+  {
+   "id": "hebra",
+   "name_interpretation": "snow mountains (Hebra)",
+   "class_family": [
+    "snow",
+    "stone"
+   ],
+   "where": "north-west",
+   "priority": 1
+  },
+  {
+   "id": "gerudo",
+   "name_interpretation": "desert (Gerudo)",
+   "class_family": [
+    "desert",
+    "shore"
+   ],
+   "where": "south-west",
+   "priority": 1
+  },
+  {
+   "id": "eldin",
+   "name_interpretation": "volcano (Death Mountain) with enclosed crater",
+   "class_family": [
+    "mesa",
+    "rust",
+    "crater"
+   ],
+   "where": "north-east",
+   "priority": 1
+  },
+  {
+   "id": "central",
+   "name_interpretation": "central plain with the castle moat",
+   "class_family": [
+    "grass",
+    "forest",
+    "lake"
+   ],
+   "where": "centre",
+   "priority": 1
+  },
+  {
+   "id": "sea_east",
+   "name_interpretation": "open sea along the east and south-east coast",
+   "class_family": [
+    "water"
+   ],
+   "where": "east",
+   "priority": 1
+  },
+  {
+   "id": "great_lake_south",
+   "name_interpretation": "large lake south of the centre (probably Lake Hylia : to confirm)",
+   "class_family": [
+    "lake",
+    "water"
+   ],
+   "where": "south-centre",
+   "priority": 2
+  }
+ ],
+ "landmarks_manual_measured_on_reference": [
+  {
+   "id": "castle_moat_centre",
+   "x": 0.479,
+   "y": 0.36,
+   "note": "ring of water around the castle, centre-north"
+  },
+  {
+   "id": "volcano_crater",
+   "x": 0.736,
+   "y": 0.142,
+   "note": "dark enclosed crater in the brown massif"
+  },
+  {
+   "id": "east_spiral_sand",
+   "x": 0.941,
+   "y": 0.257,
+   "note": "spiral sand formation on the east coast"
+  },
+  {
+   "id": "south_lake",
+   "x": 0.465,
+   "y": 0.808,
+   "note": "large blue lake south of the centre"
+  }
+ ],
+ "relief": {
+  "principle": "progressive relief from semantic zones : mountains (snow, stone, mesa, rust) rise with the distance to their edge, plains and deserts stay low, water lowest, crater depressed ; NOT a colour-to-height lookup of the picture",
+  "levels": "max 8 levels of 2 plates (16 plates)",
+  "source_of_heights": "none available : relief is ESTIMATED from the zones (the picture is a top view without altitude data) and declared as such"
+ },
+ "palette": {
+  "intent": "natural, harmonious, deep blue sea, lighter teal lakes, two greens, white/grey mountains, tan desert, tan-brown and red-brown highlands ; brown must not dominate",
+  "ldraw_colours_available_ge_8_sets": {
+   "water": 1,
+   "lake": 322,
+   "void": 308,
+   "grass": 2,
+   "forest": 288,
+   "desert": 19,
+   "shore": 28,
+   "stone": 71,
+   "stone_hi": 72,
+   "snow": 15,
+   "snow_hi": 15,
+   "mesa": 84,
+   "mesa_hi": 92,
+   "rust": 70,
+   "rust_hi": 320,
+   "crater": 0
+  }
+ },
+ "lego_constraints": {
+  "engine": "LEGO Maps (biome + relief mode), unchanged",
+  "validation": "independent validator : 0 collision, 0 disconnected, 0 island, 0 unsupported",
+  "catalogue": "real parts only, colours available in >= 8 sets, 0 substitution",
+  "size_note": "board size follows the grid ; printable-module export (V13) remains possible"
+ },
+ "artistic_priorities": [
+  "recognisable without the title",
+  "regions correctly positioned and proportioned",
+  "progressive readable mountain relief",
+  "water bodies consistent with the reference",
+  "natural palette, no dominant brown",
+  "frame secondary"
+ ],
+ "recognition_criteria": [
+  "landmark_error <= 0.10",
+  "pixel_accuracy >= 0.55 vs the reference class map",
+  "all priority-1 regions present at their reference position"
+ ],
+ "detail_level": "standard 96 x 78 studs (comparable piece count to V14) ; fine 128 x 104 studs for the hybrid variant",
+ "known_limits": [
+  "the reference shows hundreds of 1x1 details (trees, flowers, towers) that a 96 x 78 raster cannot carry",
+  "no altitude data : relief is a documented estimate",
+  "reference rights unknown : never redistributed"
+ ],
+ "routing": {
+  "engine": "maps",
+  "construction_type": "map_relief_25d",
+  "decided_by": "intent.interpret (structured input + image analysis)"
+ }
+}

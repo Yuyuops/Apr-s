@@ -1,0 +1,104 @@
+{
+ "map_px": [
+  1128,
+  916
+ ],
+ "aspect": 1.2314,
+ "class_share": {
+  "water": 0.1499,
+  "lake": 0.0327,
+  "void": 0.0435,
+  "grass": 0.1713,
+  "forest": 0.1373,
+  "desert": 0.0641,
+  "shore": 0.0446,
+  "stone": 0.131,
+  "snow": 0.063,
+  "mesa": 0.1296,
+  "rust": 0.0282,
+  "crater": 0.0048
+ },
+ "landmarks": {
+  "snow_main": [
+   {
+    "x": 0.2717,
+    "y": 0.1236,
+    "area_frac": 0.0219
+   }
+  ],
+  "desert_main": [
+   {
+    "x": 0.1682,
+    "y": 0.8675,
+    "area_frac": 0.09
+   }
+  ],
+  "crater": [
+   {
+    "x": 0.7423,
+    "y": 0.1496,
+    "area_frac": 0.0039
+   }
+  ],
+  "sea_main": [
+   {
+    "x": 0.8992,
+    "y": 0.6465,
+    "area_frac": 0.0913
+   }
+  ],
+  "stone_main": [
+   {
+    "x": 0.1625,
+    "y": 0.1472,
+    "area_frac": 0.0383
+   }
+  ],
+  "forest_main": [
+   {
+    "x": 0.419,
+    "y": 0.689,
+    "area_frac": 0.0129
+   }
+  ],
+  "mesa_main": [
+   {
+    "x": 0.5305,
+    "y": 0.2086,
+    "area_frac": 0.1067
+   }
+  ]
+ },
+ "B_share": {
+  "water": 0.1709,
+  "lake": 0.0186,
+  "void": 0.0469,
+  "grass": 0.1928,
+  "forest": 0.1464,
+  "desert": 0.0654,
+  "shore": 0.0373,
+  "stone": 0.1075,
+  "snow": 0.0612,
+  "mesa": 0.1231,
+  "rust": 0.0256,
+  "crater": 0.0043
+ },
+ "C_share": {
+  "water": 0.1657,
+  "lake": 0.0218,
+  "void": 0.0453,
+  "grass": 0.1856,
+  "forest": 0.1432,
+  "desert": 0.0672,
+  "shore": 0.0388,
+  "stone": 0.1111,
+  "snow": 0.0572,
+  "mesa": 0.1235,
+  "rust": 0.0209,
+  "crater": 0.0046,
+  "stone_hi": 0.0062,
+  "snow_hi": 0.0023,
+  "mesa_hi": 0.0005,
+  "rust_hi": 0.0063
+ }
+}

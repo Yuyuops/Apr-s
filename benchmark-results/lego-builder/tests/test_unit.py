@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from lego_builder import analyze, manifest, reconstruct
+from lego_builder import analyze, manifest, reconstruct, intent
 GOOD = {"schema_version": 1, "project_id": "t", "source": {"kind": "glb", "files": []}, "construction_type": "sculpture_3d", "generator": "sculpture", "geometry_source": {"kind": "none"}, "target": {}, "status": "analysed", "uncertainties": []}
 class T(unittest.TestCase):
     def test_manifest_accepts_valid(self): self.assertEqual(manifest.validate(GOOD), [])
@@ -25,4 +25,16 @@ class T(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             im = np.zeros((200, 200, 4), np.uint8); im[60:140, 60:140] = (200, 120, 30, 255); Image.fromarray(im, "RGBA").save(Path(d) / "obj.png"); r = analyze.analyse(Path(d) / "obj.png"); self.assertEqual(r["construction_type"], "sculpture_3d")
             Image.fromarray(np.full((200, 200, 3), 128, np.uint8)).save(Path(d) / "grey.png"); r = analyze.analyse(Path(d) / "grey.png"); self.assertEqual(r["construction_type"], "undetermined")
+    def test_intent_routing(self):
+        r = intent.interpret("Je veux une carte de la Bretagne avec du relief"); self.assertEqual(r["construction_type"], "map_relief_25d"); self.assertEqual(r["generator"], "maps")
+        r = intent.interpret("une sculpture de chien a partir de quatre photos", ["a_face.png", "a_dos.png"]); self.assertIn(r["construction_type"], ("photos_3d", "sculpture_3d"))
+        r = intent.interpret("un logo en mosaique"); self.assertEqual(r["construction_type"], "mosaic_2d"); self.assertEqual(r["status"], "needs_input")          # generator not implemented : refused, not simulated
+        r = intent.interpret("fais-moi quelque chose de joli"); self.assertEqual(r["construction_type"], "undetermined"); self.assertEqual(r["status"], "needs_input")
+    def test_intent_refuses_ambiguous_version(self):
+        req = {"request": {}, "subject": {"name": "Hyrule", "kind": "map"}, "reference": {"sha256": "x"}, "board": {}, "routing": {"construction_type": "map_relief_25d"}}
+        r = intent.interpret("carte de Hyrule", requirements=req); self.assertEqual(r["status"], "needs_input"); self.assertTrue(any("several versions" in b for b in r["blockers"]))
+        req["subject"]["version"] = {"selected": "Breath of the Wild (2017)"}; r = intent.interpret("carte de Hyrule", requirements=req); self.assertEqual(r["status"], "ready")
+        req["subject"]["version"] = {"selected": "Zelda 99"}; self.assertEqual(intent.interpret("carte de Hyrule", requirements=req)["status"], "needs_input")
+    def test_requirements_validation(self):
+        self.assertTrue(intent.validate_requirements({}))
 if __name__ == "__main__": unittest.main(verbosity=2)

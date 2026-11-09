@@ -1,0 +1,26 @@
+{
+ "_doc": "Sprint V15 composition B: class raster measured on the reference (data/hyrule_B_classes.tif)",
+ "biome_map": {
+  "file": "../../lego-builder/sprint_v15/data/hyrule_B_classes.tif",
+  "classes": {
+   "0": "water",
+   "1": "lake",
+   "2": "void",
+   "3": "grass",
+   "4": "forest",
+   "5": "desert",
+   "6": "shore",
+   "7": "stone",
+   "8": "snow",
+   "9": "mesa",
+   "10": "rust",
+   "11": "crater"
+  },
+  "majority_passes": 1
+ },
+ "grid_studs": [
+  78,
+  96
+ ],
+ "sub": 8
+}
