@@ -1,0 +1,28 @@
+{
+ "_doc": "Sprint V16 grid, FROZEN BEFORE any experiment (committed before the first engine change is run on a zone). Model-assigned 0-5 notes are INDICATIVE ; the experimental threshold 20/25 per zone requires an explicit HUMAN visual validation : a model score alone is never a GO.",
+ "artistic_criteria_each_0_to_5": {
+  "fidelity_to_reference": "zone matches the geography of the reference picture (positions, contours, water bodies) : same class raster, contours not deformed to add detail",
+  "relief_and_natural_forms": "progressive slopes, ridges and valleys, curved pieces on cliffs and banks, not a stack of blocks",
+  "richness_of_details": "meaningful vegetation / geographic details at a density coherent with the scale and the reference",
+  "colour_harmony": "natural transitions, no dominant colour, water/land differentiated",
+  "geographic_legibility": "regions, mountains, forests, plains, rivers/coast readable at normal distance"
+ },
+ "artistic_total": "/25 ; experimental threshold 20/25 per zone AND human visual validation",
+ "objective_measures_per_zone": {
+  "class_agreement": "share of the 32x32 cells whose class in the rendered top view equals the zone raster (checks the geography is untouched)",
+  "block_index": "share of exposed cliff edges (cell/neighbour height difference >= 2 plates) that carry NO slope or curved piece (lower = more natural)",
+  "mean_height_gradient_plates_per_stud": "mean |height difference| between 4-neighbours over land cells (lower = smoother)",
+  "slope_and_curved_pieces": "count of slope / curved / round pieces (parts 54200, 85984, 11477, 15068, 25269, 3062b, ...)",
+  "detail_density": "detail pieces (vegetation etc.) per 100 land cells",
+  "distinct_colours": "number of distinct colours in the top surface",
+  "pieces / references / generation_seconds": "reported, never a goal"
+ },
+ "structural_blocking_criteria_separate_from_artistic": {
+  "must_be_zero": ["collisions", "disconnected_parts", "islands", "unsupported_at_placement"],
+  "must_improve_vs_V15_B": ["parts_hanging_by_one_stud (share of pieces)", "one_stud_and_carrying (structural share)", "worst_single_failure parts_cut_off (V15 B full model : 45)"],
+  "note": "decorative leaf pieces (trees, corner rounds) are inherently one-stud : they are reported separately as `decorative_leaf`; the structural measure is `one_stud_and_carrying` and the share of non-leaf one-stud pieces. A numerical validation is NOT a physical strength proof."
+ },
+ "baselines": "ci/reference_hashes.json entries untouched ; every engine change is OFF by default and activated only by style/config keys ; the 8 CI map references must stay identical.",
+ "cycle_limit": "max 3 targeted cycles per zone ; an approach that fails twice without measured gain is abandoned and documented",
+ "full_model_conditions": "3 zones improved + structural tests PASS + baselines unchanged + no new critical defect ; freezing a new reference requires explicit human validation"
+}
