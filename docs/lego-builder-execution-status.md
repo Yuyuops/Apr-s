@@ -73,3 +73,14 @@ Date initiale : 2026-11-08. Branche : research/lego-builder-commercial-outputs-2
 **Prochaines actions sans dégrader les références :** (a) fidélité Hyrule : fixer une source cartographique et produire une hauteur/segmentation comparée en variante isolée, sans remplacer le SHA de référence ; (b) conserver Paco/Beagle et isoler l'étude de lèvre courbe ; (c) ne pas acheter d'imprimante avant essai coupon, slicer natif et mesure purge/temps. Les trois étapes ne sont **pas** prêtes pour GO commercial ni revue de validation physique.
 
 **Traçabilité de cette revue :** seuls des fichiers texte du dépôt ont été inspectés ; pas de vérification indépendante de la dernière exécution CI, pas de calcul de nouveaux SHA ni de génération de rendu. Les rapports V13/V14 constituent les preuves disponibles.
+
+## Sprint V16 — relief organique, détails et solidité de Hyrule (exécuté)
+
+| Étape | Statut | Preuve / limite |
+|---|---|---|
+| Moteur Maps (options OFF par défaut) | PASS | `tests/test_engine_v16.py` 2/2 ; 8 baselines IDENTICAL après gel final (`sprint_v16/regression/maps_post_final.log`) |
+| 3 zones pilotes A/B/C | PARTIAL | relief/détails enrichis ; pire défaillance 10→7, 14→8, 18→7 ; % 1 tenon total non réduit ; dépassement de 3 cycles déclaré |
+| Hyrule complet 96×78 | PARTIAL | 11 187 pièces, validé 0/0/0/0 ; pire défaillance 45→17 ; 1 tenon 20,6→24,3 % (échec du critère) |
+| Builder unifié Italie / Paco | PASS | LDraw identiques (`regression/builder_post.log`) |
+| Photos→3D | BLOCKED | `gradio_client` absent du venv moteur + service HF Space externe |
+| Validation artistique humaine | ABSENTE | aucun GO artistique ; **NO-GO gel** ; voir `sprint_v16/FINAL_VERDICT.md` |

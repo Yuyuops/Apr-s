@@ -1,0 +1,11 @@
+== builder geo Italy
+{"pieces": 13633, "references": 111, "seconds": 122.8, "status": "validated"}
+== builder run paco.glb
+{"pieces": 3193, "references": 89, "seconds": 869.4, "status": "validated"}
+A Italy LDraw identical to the reference : True
+C Paco LDraw identical to accepted V12.1 : True
+== photos -> 3D -> LEGO (Paco photos, HF Space)
+    from gradio_client import Client, handle_file
+ModuleNotFoundError: No module named 'gradio_client'
+
+DONE

@@ -1,0 +1,70 @@
+{
+ "height_plates": 18,
+ "pieces": 1837,
+ "references": 88,
+ "size_studs": [
+  40,
+  40
+ ],
+ "physical_size_mm": [
+  320,
+  320
+ ],
+ "max_height_mm": 57.6,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "c8b0ccdf54451ace93956573fa688e368067571dca6cea597b41752e7b863ae0",
+ "style": "hyrule_v15_B",
+ "composition": "Sprint V16 pilot zone C (32x32 crop of the V15 B class raste",
+ "grid_studs": [
+  32,
+  32
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "1": 244,
+  "3": 578,
+  "4": 165,
+  "5": 37
+ },
+ "biomes": {
+  "water": 240,
+  "lake": 4,
+  "void": 0,
+  "grass": 311,
+  "forest": 267,
+  "desert": 0,
+  "shore": 0,
+  "stone": 165,
+  "snow": 36,
+  "mesa": 1,
+  "rust": 0,
+  "crater": 0
+ },
+ "biome_mode": true,
+ "rounded_corners": 68,
+ "frame": {
+  "courses": 5,
+  "top_plate": 17
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 158,
+   "single_owner_pieces_above": 4
+  },
+  {
+   "layer": 0,
+   "plates": 193,
+   "single_owner_pieces_above": 12
+  }
+ ]
+}

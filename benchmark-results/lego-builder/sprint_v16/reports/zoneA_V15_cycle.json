@@ -1,0 +1,22 @@
+{
+ "pieces": 2008,
+ "references": 107,
+ "build_s": 2,
+ "validate_s": 15,
+ "all_pass": true,
+ "collisions": 0,
+ "disconnected": 0,
+ "islands": 0,
+ "unsupported": 0,
+ "one_stud": 372,
+ "one_stud_pct": 18.5,
+ "leaf": 186,
+ "carrying": 186,
+ "articulation": 287,
+ "worst": {
+  "family": "strata_body",
+  "part_id": 70,
+  "parts_cut_off": 10,
+  "mass_cut_off_g": 1.8
+ }
+}

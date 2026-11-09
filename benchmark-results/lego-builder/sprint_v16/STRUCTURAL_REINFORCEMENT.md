@@ -32,3 +32,23 @@ Les 2 580 pièces à un seul tenon se décomposent en **1 552 plaques 1×1 de co
 | C | 1837 → 1890 | 17.9 % → 18.9 % | 170 → 331 | **158 → 27** | 215 → 272 | 18 → **7** | 0:13, 1:8, 2:8, 3:7 | 0/0/0/0 |
 
 **Lecture honnête** : (1) la part totale de pièces à un tenon **n'a pas baissé** dans les zones (18,5 → 18,9–22,6 %) : les talus, arbres, fleurs et quarts-de-rond ajoutés sont des **feuilles décoratives** à un tenon par nature ; (2) en revanche les pièces à un tenon **qui portent** d'autres pièces (le vrai risque) chutent de 186/225/158 à 50/34/27, et le pire cas isolé passe de 10/14/18 à 7/8/7 pièces ; (3) zéro collision, zéro déconnectée, zéro îlot, zéro non supportée. Les chiffres du modèle complet sont dans `FINAL_VERDICT.md`.
+
+## Modèle complet Hyrule V16 (96×78, base B) — mesures réelles
+
+Commande : `tools/reinforce_v16.py styles/hyrule_v16_c4f.json compositions/hyrule_v16d_full.json work16/full_rf --passes 3 --threshold 8` (≈ 31 min de construction par passe). Logs : `reports/full_reinforce_driver.log`, `reports/full_V16_*.json`.
+
+| | V15 B | V16 passe 0 (retenue) | V16 passe 1 |
+|---|---|---|---|
+| Pièces | 12 543 | 11 187 | 11 804 |
+| Pièces à 1 tenon | 2 580 (20,6 %) | 2 720 (**24,3 %**) | 2 806 (23,8 %) |
+| dont feuilles décoratives (arbres, fleurs) | n.m. | 2 499 | — |
+| 1 tenon ET porteuses | n.m. | 221 | 303 |
+| Points d'articulation | 1 952 | 1 896 | — |
+| **Pire défaillance isolée (nb de pièces)** | 45 | **17** | 20 |
+| Collisions / déconnectées / îlots / non supportées | 0/0/0/0 | **0/0/0/0** (`all_pass` True) | non validée |
+
+Lecture honnête :
+- **Gain mesuré** : la pire défaillance isolée passe de 45 à 17 pièces (−62 %) ; zéro collision, pièce déconnectée, îlot ou support non résolu.
+- **Objectif non atteint** : la part de pièces à 1 tenon **augmente** (20,6 % → 24,3 %), à cause des 2 499 feuilles décoratives (arbres 3062b, fleurs) qui ne portent rien. Le critère « baisse du % de pièces à 1 tenon vs B » est donc **échoué** sur le modèle complet.
+- La passe 1 n'a pas amélioré (pire cas 20 > 17) ; l'arrêt a été décidé (règle « abandon après échec sans gain mesuré »). Deux crashs de la passe 1 (paire pièce/couleur non cataloguée) ont été corrigés dans `build_style.py` (repli héritage + `wild_uncatalogued_fallback`), sans effet sur les baselines (vérifié).
+- Ces chiffres sont **numériques**, pas une preuve de résistance physique.

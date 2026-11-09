@@ -1,0 +1,94 @@
+{
+ "height_plates": 24,
+ "pieces": 11187,
+ "references": 205,
+ "size_studs": [
+  104,
+  86
+ ],
+ "physical_size_mm": [
+  832,
+  688
+ ],
+ "max_height_mm": 76.8,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "4a8bd2ed90c62110b6ee42dfe13b1f4cd3b06fabc9ed7bd9a9abdddaed349d92",
+ "style": "hyrule_v16_c4f",
+ "composition": "Sprint V16 full Hyrule composition : B16 raster (V15 B + sha",
+ "grid_studs": [
+  78,
+  96
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "2": 1732,
+  "3": 1853,
+  "4": 1644,
+  "5": 298,
+  "6": 609,
+  "7": 135,
+  "8": 93,
+  "9": 100,
+  "10": 102,
+  "11": 158,
+  "12": 211,
+  "13": 344,
+  "14": 122,
+  "15": 87
+ },
+ "biomes": {
+  "water": 1016,
+  "lake": 125,
+  "void": 351,
+  "grass": 1467,
+  "forest": 1130,
+  "desert": 497,
+  "shore": 284,
+  "stone": 773,
+  "snow": 448,
+  "mesa": 936,
+  "rust": 192,
+  "crater": 29,
+  "shallow": 240,
+  "meadow": 0
+ },
+ "biome_mode": true,
+ "smooth_height": {
+  "sigma": 1.1,
+  "th0": 2,
+  "max_plates": 15
+ },
+ "cliff_slopes_planned": 604,
+ "details_planned": 220,
+ "wild_layers": 15,
+ "rounded_corners": 771,
+ "seam_top_layers": 14,
+ "cliff_slopes_placed": 604,
+ "details_skipped": 15,
+ "details_placed": 205,
+ "frame": {
+  "courses": 7,
+  "top_plate": 23
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 886,
+   "single_owner_pieces_above": 24
+  },
+  {
+   "layer": 0,
+   "plates": 1055,
+   "single_owner_pieces_above": 99
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{"pieces": 11187, "one_stud": 2720, "one_stud_pct": 24.3, "carrying": 221, "worst": 17, "critical_ge_K": 21, "pass_": 0, "build_seconds": 1870.2}
+Traceback (most recent call last):
+  File "/home/user/v062/benchmark-results/maps-engine-v03/style_fidelity_v062/../../lego-builder/tools/reinforce_v16.py", line 35, in <module>
+    d = "%s/pass%d" % (out, k); secs = build(d, rf); r = analyse(d); crit = r.pop("crit"); r.update(pass_=k, build_seconds=round(secs, 1)); log.append(r); print(json.dumps(r), flush=True)
+                                       ~~~~~^^^^^^^
+  File "/home/user/v062/benchmark-results/maps-engine-v03/style_fidelity_v062/../../lego-builder/tools/reinforce_v16.py", line 12, in build
+    Path(d).mkdir(parents=True, exist_ok=True); cmd = [PY, "build_style.py", style, comp, d, "--flank", "vertical", "--no-title"] + (["--reinforce", rf] if rf else []); t = time.time(); subprocess.run(cmd, cwd=MAPS, check=True, capture_output=True)
+                                                                                                                                                                                          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/tmp/claude-0/clean/Apr-s/benchmark-results/20_portable_engine/.venv/bin/python', 'build_style.py', '/home/user/v062/benchmark-results/maps-engine-v03/style_fidelity_v062/styles/hyrule_v16_c4f.json', '/home/user/v062/benchmark-results/maps-engine-v03/style_fidelity_v062/compositions/hyrule_v16d_full.json', '/home/user/v062/benchmark-results/maps-engine-v03/style_fidelity_v062/work16/full_rf/pass1', '--flank', 'vertical', '--no-title', '--reinforce', '/home/user/v062/benchmark-results/maps-engine-v03/style_fidelity_v062/work16/full_rf/reinforce_pass0.json']' returned non-zero exit status 1.

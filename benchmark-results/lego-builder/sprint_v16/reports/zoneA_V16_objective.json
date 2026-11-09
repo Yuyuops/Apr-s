@@ -1,0 +1,29 @@
+{
+ "pieces": 2315,
+ "class_agreement": 0.914,
+ "mean_height_gradient_plates_per_stud": 0.779,
+ "cliff_edges_ge2_plates": 194,
+ "cliff_edges_with_slope_at_foot": 74,
+ "block_index": 0.619,
+ "slope_pieces": 115,
+ "curved_or_round_pieces": 342,
+ "detail_pieces": 27,
+ "detail_per_100_land_cells": 3.0,
+ "distinct_surface_colours": 10,
+ "height_range_plates": [
+  5,
+  18
+ ],
+ "region_mix": {
+  "strata_body": 756,
+  "backing": 398,
+  "frame": 384,
+  "top_tile": 273,
+  "top_corner_round": 152,
+  "cliff_slope": 115,
+  "frame_cap": 98,
+  "top_plate": 64,
+  "frame_ornament": 48,
+  "detail_tree": 21
+ }
+}

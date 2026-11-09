@@ -1,0 +1,22 @@
+{
+ "pieces": 2022,
+ "references": 85,
+ "build_s": 1,
+ "validate_s": 6,
+ "all_pass": true,
+ "collisions": 0,
+ "disconnected": 0,
+ "islands": 0,
+ "unsupported": 0,
+ "one_stud": 375,
+ "one_stud_pct": 18.5,
+ "leaf": 150,
+ "carrying": 225,
+ "articulation": 304,
+ "worst": {
+  "family": "strata_body",
+  "part_id": 112,
+  "parts_cut_off": 14,
+  "mass_cut_off_g": 3.2
+ }
+}

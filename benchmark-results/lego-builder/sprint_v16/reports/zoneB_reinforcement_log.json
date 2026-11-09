@@ -1,0 +1,55 @@
+{
+ "log": [
+  {
+   "pieces": 1828,
+   "one_stud": 409,
+   "one_stud_pct": 22.4,
+   "carrying": 31,
+   "worst": 10,
+   "critical_ge_K": 5,
+   "pass_": 0,
+   "build_seconds": 67.3
+  },
+  {
+   "pieces": 1959,
+   "one_stud": 411,
+   "one_stud_pct": 21.0,
+   "carrying": 37,
+   "worst": 9,
+   "critical_ge_K": 2,
+   "pass_": 1,
+   "build_seconds": 40.0
+  },
+  {
+   "pieces": 1972,
+   "one_stud": 406,
+   "one_stud_pct": 20.6,
+   "carrying": 34,
+   "worst": 8,
+   "critical_ge_K": 1,
+   "pass_": 2,
+   "build_seconds": 35.5
+  },
+  {
+   "pieces": 1972,
+   "one_stud": 406,
+   "one_stud_pct": 20.6,
+   "carrying": 34,
+   "worst": 8,
+   "critical_ge_K": 1,
+   "pass_": 3,
+   "build_seconds": 36.5
+  }
+ ],
+ "best": {
+  "pieces": 1972,
+  "one_stud": 406,
+  "one_stud_pct": 20.6,
+  "carrying": 34,
+  "worst": 8,
+  "critical_ge_K": 1,
+  "pass_": 2,
+  "build_seconds": 35.5,
+  "dir": "/home/user/v062/benchmark-results/maps-engine-v03/style_fidelity_v062/work16/rf5_B/pass2"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "pieces": 2315,
+ "references": 127,
+ "validate_s": 7,
+ "all_pass": true,
+ "collisions": 0,
+ "disconnected": 0,
+ "islands": 0,
+ "unsupported": 0,
+ "one_stud": 524,
+ "one_stud_pct": 22.6,
+ "leaf": 474,
+ "carrying": 50,
+ "articulation": 336,
+ "worst": {
+  "family": "frame",
+  "part_id": 1697,
+  "parts_cut_off": 3,
+  "mass_cut_off_g": 3.2
+ }
+}
