@@ -1,0 +1,22 @@
+{
+ "_doc": "Sprint V15 evaluation grid, FROZEN BEFORE any trial (this file is committed before the variants are generated and is not modified afterwards). Automated measures are computed identically for every variant ; the 0-5 'subjective' criteria are scored by the model and are NOT a human validation.",
+ "automated_measures": {
+  "method": "Render each variant from above at the same size, crop the map interior (frame and title excluded), classify every pixel with the SAME Lab prototypes as the reference (reference_prototypes in HYRULE_REQUIREMENTS.json), resample to the reference grid, compare with the reference class map.",
+  "pixel_accuracy": "share of map cells whose class equals the reference class (after merging *_hi classes into their family)",
+  "mean_IoU": "mean over the families water, grass, forest, desert, stone, snow, mesa_rust of the intersection-over-union with the reference",
+  "landmark_error": "mean distance (fraction of map width) between the centroid of each landmark region in the variant and in the reference (landmarks listed in HYRULE_REQUIREMENTS.json, measured on the reference, not invented)",
+  "aspect_error": "|width/height of the variant map - reference aspect| / reference aspect",
+  "technical": ["pieces", "references", "collisions", "disconnected_parts", "islands", "unsupported_at_placement", "one_stud_parts", "articulation_points_with_loss", "generation_seconds", "ldraw_sha256", "rebuild_identical"]
+ },
+ "subjective_criteria_0_to_5": {
+  "geographic_recognition": "is Hyrule (BotW) recognisable WITHOUT the title ? are the big regions where the reference puts them ?",
+  "fidelity_to_reference": "contours, proportions, water bodies compared with the reference picture",
+  "relief_quality": "progressive, readable mountains/cliffs, not blocks put on a plate",
+  "colour_harmony": "natural palette, no dominant brown, water/land differentiated",
+  "region_legibility": "plains, forests, deserts, rocky zones, snow distinct at normal viewing distance",
+  "frame_and_title": "frame secondary to the map, title discreet or absent"
+ },
+ "go_artistic": "recognisable without the title AND big regions correctly positioned (landmark_error <= 0.10 and pixel_accuracy >= 0.55 on the reference grid) ; the model-assigned scores are indicative only and a human visual validation is required before any reference is frozen in CI",
+ "go_technical": "0 collisions, 0 disconnected parts, 0 islands, 0 unsupported, no new critical structural defect (one-stud / articulation counts not worse than V14 by more than 25 %), identical rebuild SHA, baselines in ci/reference_hashes.json untouched",
+ "stop_rules": "max 3 approaches (A current, B guided, C hybrid) and 3 justified correction cycles in total"
+}
