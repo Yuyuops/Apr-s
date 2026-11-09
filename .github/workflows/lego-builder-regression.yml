@@ -46,6 +46,8 @@ jobs:
         run: bash benchmark-results/20_portable_engine/scripts/install.sh
       - name: Install browser for real LDraw meshes
         run: cd benchmark-results/20_portable_engine && npx playwright install chromium
+      - name: Maps engine V16 option tests (options off by default, collision-free when on, deterministic)
+        run: LEGO_ENGINE_HOME="$GITHUB_WORKSPACE/benchmark-results/20_portable_engine" "$GITHUB_WORKSPACE/benchmark-results/20_portable_engine/.venv/bin/python" benchmark-results/lego-builder/tests/test_engine_v16.py
       - name: Paco GLB -> LEGO (one command), notice isolated with a hard timeout
         run: |
           "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder run benchmark-results/02_glb_gratuit_hunyuan2mv/paco.glb --out "$RUNNER_TEMP/paco" --size-mm 400 --notice fast --notice-timeout 600
