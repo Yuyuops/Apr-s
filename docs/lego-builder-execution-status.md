@@ -84,3 +84,14 @@ Date initiale : 2026-11-08. Branche : research/lego-builder-commercial-outputs-2
 | Builder unifié Italie / Paco | PASS | LDraw identiques (`regression/builder_post.log`) |
 | Photos→3D | BLOCKED | `gradio_client` absent du venv moteur + service HF Space externe |
 | Validation artistique humaine | ABSENTE | aucun GO artistique ; **NO-GO gel** ; voir `sprint_v16/FINAL_VERDICT.md` |
+
+## Clôture Sprint V16 et préparation V17
+
+| Étape | Statut | Preuve / limite |
+|---|---|---|
+| Non-régression après `f962b6a` | PASS (exécuté) | 8 baselines Maps IDENTICAL, unit 9/9, engine V16 2/2, Italie/Paco/Beagle identiques à V12.1, GLB inputs OK ; `sprint_v16_closure/REGRESSION_FINAL.md` |
+| Photos→3D | PASS (exécuté) | GLB reconstruit identique, Paco IDENTICAL 9d07c041… ; dépend de la disponibilité du Space HF ; l'ancien blocage venait de `gradio_client` absent |
+| Solidité V16 | ACCEPTABLE techniquement | indicateur « % 1 tenon » mal adapté : liens porteurs faibles (≤2 tenons) 185→12→3, pièces à 1 tenon porteuses 670→108 ; hausse du % due à 1 879 petits éléments décoratifs exposés (+68 %) ; numérique ≠ physique |
+| Correction des faiblesses porteuses | FAIT (candidat) | 5 piliers 1×2 → briques 3004 : −10 pièces, voxels identiques, 0 collision ; non gelé |
+| Écart artistique | DOCUMENTÉ | pas de note ; rivières fines, repères, chemins, volcan, texture ; 351 composantes de classes vs ≈ 950 |
+| V17 | PROPOSÉ, non développé | 3 améliorations avec coût/risque/tests/abandon : `V17_PROPOSAL.md` ; aucun gel, aucune fusion dans `main` |

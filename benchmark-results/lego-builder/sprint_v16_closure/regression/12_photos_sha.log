@@ -1,0 +1,4 @@
+== 12_photos_sha: python3 lego-builder/tests/check_regression.py sculpture paco_from_photos /tmp/closure_out/paco_photos/model/diorama.ldr paco_V121_A_palette_V12
+paco_from_photos IDENTICAL 9d07c041a496
+no regression
+exit=0 seconds=0

@@ -1,0 +1,4 @@
+17d9bdc60637614404494517c1736906ec238b1310257f2f9563d7c750cd776f  /tmp/closure_out/italia/model/diorama.ldr
+9d07c041a4968245228c016c651fef0710fd26fee68f67eac771df261c28089a  /tmp/closure_out/paco/model/diorama.ldr
+551bde0f77f20c227b4c4fde7f9c286c32139c4c6ac2b458edc0b8cedf31808f  /tmp/closure_out/beagle/model/diorama.ldr
+9d07c041a4968245228c016c651fef0710fd26fee68f67eac771df261c28089a  /tmp/closure_out/paco_photos/model/diorama.ldr

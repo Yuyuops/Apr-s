@@ -1,0 +1,50 @@
+{
+ "pieces": 11177,
+ "min_cut": 4,
+ "critical": 268,
+ "by_clutch": {
+  "STRONG(>=6)": 241,
+  "MEDIUM(3-5)": 24,
+  "WEAK(<=2)": 3
+ },
+ "weak": [
+  {
+   "i": 9357,
+   "part": "3004",
+   "colour": 72,
+   "cut": 4,
+   "load_g": 1.2,
+   "studs_to_structure": 2,
+   "studs_to_cut_group": 2,
+   "col": 89.5,
+   "row": -54.0,
+   "layer_plates": 13
+  },
+  {
+   "i": 8678,
+   "part": "3004",
+   "colour": 70,
+   "cut": 4,
+   "load_g": 1.2,
+   "studs_to_structure": 2,
+   "studs_to_cut_group": 2,
+   "col": 76.0,
+   "row": -23.5,
+   "layer_plates": 11
+  },
+  {
+   "i": 8296,
+   "part": "3004",
+   "colour": 308,
+   "cut": 4,
+   "load_g": 1.6,
+   "studs_to_structure": 2,
+   "studs_to_cut_group": 2,
+   "col": 73.0,
+   "row": -9.5,
+   "layer_plates": 10
+  }
+ ],
+ "worst_weak": 4,
+ "min_clutch_among_cut_ge_8": 8
+}

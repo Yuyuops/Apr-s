@@ -1,0 +1,8 @@
+== 02_unit: python3 lego-builder/tests/test_unit.py
+Traceback (most recent call last):
+  File "/home/user/v062/benchmark-results/lego-builder/tests/test_unit.py", line 8, in <module>
+    from lego_builder import analyze, manifest, reconstruct, intent
+  File "/home/user/v062/benchmark-results/lego-builder/lego_builder/analyze.py", line 7, in <module>
+    from scipy import ndimage
+ModuleNotFoundError: No module named 'scipy'
+exit=1 seconds=0

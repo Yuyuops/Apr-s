@@ -1,0 +1,3 @@
+== 06_paco_glb: /tmp/claude-0/clean/Apr-s/benchmark-results/20_portable_engine/.venv/bin/python -m lego_builder run 02_glb_gratuit_hunyuan2mv/paco.glb --out /tmp/closure_out/paco --size-mm 400 --notice off
+{"pieces": 3193, "references": 89, "seconds": 192.7, "status": "validated"}
+exit=0 seconds=193
