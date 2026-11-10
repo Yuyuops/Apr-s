@@ -1,0 +1,50 @@
+{
+ "pieces": 6,
+ "one_stud": 0,
+ "articulation_points": 1,
+ "worst_isolated_failure_parts": 1,
+ "articulation_cut_ge_8": 0,
+ "articulation_cut_ge_4": 0,
+ "worst10": [
+  [
+   1,
+   "3031",
+   71,
+   1,
+   0.9
+  ]
+ ],
+ "classes": {
+  "C1_carrying": {
+   "count": 0,
+   "pct_of_pieces": 0.0,
+   "pct_of_one_stud": 0.0,
+   "parts": [],
+   "max_cut": 0,
+   "cut_ge_4": 0,
+   "cut_ge_8": 0,
+   "cut_mass_g_total": 0
+  },
+  "C2_decorative_captured": {
+   "count": 0,
+   "pct_of_pieces": 0.0,
+   "pct_of_one_stud": 0.0,
+   "parts": [],
+   "max_cut": 0,
+   "cut_ge_4": 0,
+   "cut_ge_8": 0,
+   "cut_mass_g_total": 0
+  },
+  "C3_decorative_exposed": {
+   "count": 0,
+   "pct_of_pieces": 0.0,
+   "pct_of_one_stud": 0.0,
+   "parts": [],
+   "max_cut": 0,
+   "cut_ge_4": 0,
+   "cut_ge_8": 0,
+   "cut_mass_g_total": 0
+  }
+ },
+ "rows": []
+}

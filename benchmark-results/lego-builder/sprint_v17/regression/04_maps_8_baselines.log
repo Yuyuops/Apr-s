@@ -1,0 +1,11 @@
+== 04_maps_8_baselines: lego-builder/sprint_v16/baseline_maps_build.sh /tmp/v17_out/maps
+italia               IDENTICAL 17d9bdc60637
+ecosse               IDENTICAL 84c47d383ea0
+japon                IDENTICAL ac3134cdb3e9
+royaume_uni          IDENTICAL 3abcc72e4198
+protoA_littoral      IDENTICAL 6545a26df2de
+protoB_cadre_titre   IDENTICAL 35d8ae4e3ee5
+hyrule               IDENTICAL 721b8573b1e0
+hyrule_biomes        IDENTICAL 5afb9ac8fe80
+no regression
+exit=0 seconds=47

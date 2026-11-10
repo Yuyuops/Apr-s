@@ -1,0 +1,3 @@
+== 08_beagle_glb: /tmp/claude-0/clean/Apr-s/benchmark-results/20_portable_engine/.venv/bin/python -m lego_builder run 02_glb_gratuit_hunyuan2mv/beagle.glb --out /tmp/v17_out/beagle --size-mm 400 --notice off
+{"pieces": 10567, "references": 64, "seconds": 416.6, "status": "validated"}
+exit=0 seconds=417

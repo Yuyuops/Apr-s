@@ -1,0 +1,179 @@
+{
+ "pieces": 12,
+ "one_stud": 6,
+ "articulation_points": 7,
+ "worst_isolated_failure_parts": 7,
+ "articulation_cut_ge_8": 0,
+ "articulation_cut_ge_4": 4,
+ "worst10": [
+  [
+   7,
+   "3031",
+   71,
+   1,
+   0.5
+  ],
+  [
+   6,
+   "3022",
+   72,
+   5,
+   0.1
+  ],
+  [
+   5,
+   "3062b",
+   71,
+   6,
+   0.1
+  ],
+  [
+   4,
+   "3062b",
+   72,
+   7,
+   0.1
+  ],
+  [
+   3,
+   "3062b",
+   71,
+   8,
+   0.1
+  ],
+  [
+   2,
+   "3062b",
+   72,
+   9,
+   0.1
+  ],
+  [
+   1,
+   "6141",
+   25,
+   10,
+   0.0
+  ]
+ ],
+ "classes": {
+  "C1_carrying": {
+   "count": 5,
+   "pct_of_pieces": 41.67,
+   "pct_of_one_stud": 83.3,
+   "parts": [
+    [
+     "3062b",
+     4
+    ],
+    [
+     "6141",
+     1
+    ]
+   ],
+   "max_cut": 5,
+   "cut_ge_4": 2,
+   "cut_ge_8": 0,
+   "cut_mass_g_total": 0.4
+  },
+  "C2_decorative_captured": {
+   "count": 0,
+   "pct_of_pieces": 0.0,
+   "pct_of_one_stud": 0.0,
+   "parts": [],
+   "max_cut": 0,
+   "cut_ge_4": 0,
+   "cut_ge_8": 0,
+   "cut_mass_g_total": 0
+  },
+  "C3_decorative_exposed": {
+   "count": 1,
+   "pct_of_pieces": 8.33,
+   "pct_of_one_stud": 16.7,
+   "parts": [
+    [
+     "4589",
+     1
+    ]
+   ],
+   "max_cut": 0,
+   "cut_ge_4": 0,
+   "cut_ge_8": 0,
+   "cut_mass_g_total": 0.0
+  }
+ },
+ "rows": [
+  {
+   "i": 6,
+   "part": "3062b",
+   "colour": 71,
+   "cls": "C1_carrying",
+   "cut": 5,
+   "cut_mass_g": 0.1,
+   "col": 1.5,
+   "row": 6.5,
+   "layer_plates": 6,
+   "protrude_plates": 4.0
+  },
+  {
+   "i": 7,
+   "part": "3062b",
+   "colour": 72,
+   "cls": "C1_carrying",
+   "cut": 4,
+   "cut_mass_g": 0.1,
+   "col": 1.5,
+   "row": 6.5,
+   "layer_plates": 9,
+   "protrude_plates": 7.0
+  },
+  {
+   "i": 8,
+   "part": "3062b",
+   "colour": 71,
+   "cls": "C1_carrying",
+   "cut": 3,
+   "cut_mass_g": 0.1,
+   "col": 1.5,
+   "row": 6.5,
+   "layer_plates": 12,
+   "protrude_plates": 10.0
+  },
+  {
+   "i": 9,
+   "part": "3062b",
+   "colour": 72,
+   "cls": "C1_carrying",
+   "cut": 2,
+   "cut_mass_g": 0.1,
+   "col": 1.5,
+   "row": 6.5,
+   "layer_plates": 15,
+   "protrude_plates": 13.0
+  },
+  {
+   "i": 10,
+   "part": "6141",
+   "colour": 25,
+   "cls": "C1_carrying",
+   "cut": 1,
+   "cut_mass_g": 0.0,
+   "col": 1.5,
+   "row": 6.5,
+   "layer_plates": 16,
+   "protrude_plates": 14.0
+  },
+  {
+   "i": 11,
+   "part": "4589",
+   "colour": 15,
+   "cls": "C3_decorative_exposed",
+   "cut": 0,
+   "cut_mass_g": 0.0,
+   "col": 1.5,
+   "row": 6.5,
+   "layer_plates": 18,
+   "protrude_plates": 15.8
+  }
+ ]
+}

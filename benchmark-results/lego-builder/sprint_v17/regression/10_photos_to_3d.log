@@ -1,0 +1,11 @@
+== 10_photos_to_3d: timeout 1700 /tmp/claude-0/clean/Apr-s/benchmark-results/20_portable_engine/.venv/bin/python -m lego_builder run --photos 01_inputs_prepared/paco_face_rgba.png 01_inputs_prepared/paco_dos_rgba.png 01_inputs_prepared/paco_profil_gauche_rgba.png 01_inputs_prepared/paco_profil_droit_rgba.png --out /tmp/v17_out/paco_photos --size-mm 400 --notice off
+project not ready : status needs_input ; reconstruction : shape generation failed after 2 attempts : lf._exception
+  File "/usr/local/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/tmp/gradio_site/gradio_client/client.py", line 1233, in _inner
+    predictions = _predict(*data, **kwargs)
+  File "/tmp/gradio_site/gradio_client/client.py", line 1356, in _predict
+    raise AppError(message=message, **result)
+gradio_client.exceptions.AppError: 'You have exceeded your ZeroGPU quota (60s requested vs. 56s left). Try again in 7:28:02. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens'
+
+exit=1 seconds=41

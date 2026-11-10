@@ -1,0 +1,203 @@
+{
+ "note": "indicative only : rigid parts, 1.0 N clutch per stud assumed by the validator, NO physical test",
+ "parts": 1950,
+ "joints_total": 10406,
+ "parts_hanging_by_one_stud": 509,
+ "one_stud_decorative_leaves": 402,
+ "one_stud_and_carrying": 107,
+ "articulation_points_with_loss": 409,
+ "worst_single_failure": {
+  "family": "top_plate",
+  "part_id": 579,
+  "parts_cut_off": 5,
+  "mass_cut_off_g": 7.2
+ },
+ "families": {
+  "backing": {
+   "parts": 368,
+   "hangs_by_one_stud": 7,
+   "hangs_by_one_stud_and_carries": 7,
+   "hangs_by_two_studs": 9
+  },
+  "cliff_slope": {
+   "parts": 38,
+   "hangs_by_one_stud": 38,
+   "hangs_by_one_stud_decorative_leaf": 38
+  },
+  "detail_flower": {
+   "parts": 11,
+   "hangs_by_one_stud": 11,
+   "hangs_by_one_stud_decorative_leaf": 11
+  },
+  "detail_shrub": {
+   "parts": 19,
+   "hangs_by_one_stud": 19,
+   "hangs_by_one_stud_decorative_leaf": 19
+  },
+  "frame": {
+   "parts": 268,
+   "hangs_by_two_studs": 10
+  },
+  "frame_cap": {
+   "parts": 97,
+   "hangs_by_two_studs": 7
+  },
+  "frame_ornament": {
+   "parts": 48,
+   "hangs_by_one_stud": 48,
+   "hangs_by_one_stud_decorative_leaf": 48
+  },
+  "obj_bridge": {
+   "parts": 4,
+   "hangs_by_two_studs": 4
+  },
+  "obj_castle": {
+   "parts": 31,
+   "hangs_by_two_studs": 8,
+   "hangs_by_one_stud": 12,
+   "hangs_by_one_stud_and_carries": 8,
+   "hangs_by_one_stud_decorative_leaf": 4
+  },
+  "obj_rock": {
+   "parts": 12,
+   "hangs_by_one_stud": 5,
+   "hangs_by_one_stud_and_carries": 1,
+   "hangs_by_one_stud_decorative_leaf": 4
+  },
+  "obj_tower": {
+   "parts": 12
+  },
+  "obj_tree": {
+   "parts": 53,
+   "hangs_by_one_stud": 53,
+   "hangs_by_one_stud_decorative_leaf": 37,
+   "hangs_by_one_stud_and_carries": 16
+  },
+  "strata_body": {
+   "parts": 459,
+   "hangs_by_two_studs": 94,
+   "hangs_by_one_stud": 24,
+   "hangs_by_one_stud_and_carries": 24
+  },
+  "top_corner_round": {
+   "parts": 113,
+   "hangs_by_one_stud": 113,
+   "hangs_by_one_stud_decorative_leaf": 113
+  },
+  "top_plate": {
+   "parts": 93,
+   "hangs_by_one_stud": 58,
+   "hangs_by_one_stud_and_carries": 51,
+   "hangs_by_one_stud_decorative_leaf": 7,
+   "hangs_by_two_studs": 22
+  },
+  "top_tile": {
+   "parts": 324,
+   "hangs_by_two_studs": 157,
+   "hangs_by_one_stud": 121,
+   "hangs_by_one_stud_decorative_leaf": 121
+  }
+ },
+ "failure_by_family": {
+  "frame": {
+   "articulation_points": 50,
+   "max_parts_cut_off": 7,
+   "max_mass_cut_off_g": 2.4
+  },
+  "obj_castle": {
+   "articulation_points": 20,
+   "max_parts_cut_off": 4,
+   "max_mass_cut_off_g": 6.0
+  },
+  "obj_rock": {
+   "articulation_points": 8,
+   "max_parts_cut_off": 2,
+   "max_mass_cut_off_g": 1.3
+  },
+  "obj_tower": {
+   "articulation_points": 8,
+   "max_parts_cut_off": 3,
+   "max_mass_cut_off_g": 4.8
+  },
+  "obj_tree": {
+   "articulation_points": 16,
+   "max_parts_cut_off": 2,
+   "max_mass_cut_off_g": 1.2
+  },
+  "strata_body": {
+   "articulation_points": 231,
+   "max_parts_cut_off": 12,
+   "max_mass_cut_off_g": 6.7
+  },
+  "top_plate": {
+   "articulation_points": 76,
+   "max_parts_cut_off": 5,
+   "max_mass_cut_off_g": 7.2
+  }
+ },
+ "colosseum_one_stud_thick_wall_pieces": 0,
+ "ap_leaf_isolating_one_part": 185,
+ "ap_cascade_two_or_more": 224,
+ "ap_cascade_mass_sum_g": 225.2,
+ "ap_by_class": {
+  "other": {
+   "ap": 409,
+   "leaf": 185,
+   "cascade": 224,
+   "max_mass": 7.2
+  }
+ },
+ "worst_10": [
+  {
+   "family": "top_plate",
+   "parts_cut_off": 5,
+   "mass_g": 7.2
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 7,
+   "mass_g": 6.7
+  },
+  {
+   "family": "strata_body",
+   "parts_cut_off": 5,
+   "mass_g": 6.4
+  },
+  {
+   "family": "top_plate",
+   "parts_cut_off": 4,
+   "mass_g": 6.0
+  },
+  {
+   "family": "obj_castle",
+   "parts_cut_off": 4,
+   "mass_g": 6.0
+  },
+  {
+   "family": "top_plate",
+   "parts_cut_off": 4,
+   "mass_g": 6.0
+  },
+  {
+   "family": "top_plate",
+   "parts_cut_off": 3,
+   "mass_g": 4.8
+  },
+  {
+   "family": "obj_tower",
+   "parts_cut_off": 3,
+   "mass_g": 4.8
+  },
+  {
+   "family": "obj_castle",
+   "parts_cut_off": 3,
+   "mass_g": 4.8
+  },
+  {
+   "family": "obj_tower",
+   "parts_cut_off": 3,
+   "mass_g": 4.8
+  }
+ ],
+ "total_mass_g": 1824.4
+}

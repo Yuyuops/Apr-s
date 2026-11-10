@@ -1,0 +1,290 @@
+{
+ "tree_round": {
+  "pieces": 2,
+  "height_plates": 6,
+  "bom": [
+   [
+    "3062b",
+    70,
+    1
+   ],
+   [
+    "3941",
+    288,
+    1
+   ]
+  ],
+  "substitutions": [],
+  "one_stud_object_pieces": {
+   "C1_carrying": 1,
+   "C3_decorative_exposed": 1
+  },
+  "max_cut": 1,
+  "worst_isolated": 2
+ },
+ "tree_conifer": {
+  "pieces": 3,
+  "height_plates": 8,
+  "bom": [
+   [
+    "3062b",
+    70,
+    1
+   ],
+   [
+    "3062b",
+    288,
+    1
+   ],
+   [
+    "4589",
+    2,
+    1
+   ]
+  ],
+  "substitutions": [
+   [
+    "4589",
+    288,
+    2
+   ]
+  ],
+  "one_stud_object_pieces": {
+   "C1_carrying": 2,
+   "C3_decorative_exposed": 1
+  },
+  "max_cut": 2,
+  "worst_isolated": 3
+ },
+ "tree_tall": {
+  "pieces": 4,
+  "height_plates": 11,
+  "bom": [
+   [
+    "3062b",
+    70,
+    1
+   ],
+   [
+    "3062b",
+    288,
+    2
+   ],
+   [
+    "4589",
+    2,
+    1
+   ]
+  ],
+  "substitutions": [
+   [
+    "4589",
+    288,
+    2
+   ]
+  ],
+  "one_stud_object_pieces": {
+   "C1_carrying": 3,
+   "C3_decorative_exposed": 1
+  },
+  "max_cut": 3,
+  "worst_isolated": 4
+ },
+ "tree_small": {
+  "pieces": 1,
+  "height_plates": 3,
+  "bom": [
+   [
+    "3062b",
+    288,
+    1
+   ]
+  ],
+  "substitutions": [],
+  "one_stud_object_pieces": {
+   "C3_decorative_exposed": 1
+  },
+  "max_cut": 0,
+  "worst_isolated": 1
+ },
+ "rock": {
+  "pieces": 3,
+  "height_plates": 5,
+  "bom": [
+   [
+    "3022",
+    71,
+    1
+   ],
+   [
+    "3024",
+    71,
+    1
+   ],
+   [
+    "3039",
+    72,
+    1
+   ]
+  ],
+  "substitutions": [],
+  "one_stud_object_pieces": {
+   "C3_decorative_exposed": 1
+  },
+  "max_cut": 0,
+  "worst_isolated": 3
+ },
+ "tower": {
+  "pieces": 4,
+  "height_plates": 15,
+  "bom": [
+   [
+    "3941",
+    70,
+    1
+   ],
+   [
+    "3941",
+    71,
+    2
+   ],
+   [
+    "3942c",
+    0,
+    1
+   ]
+  ],
+  "substitutions": [
+   [
+    "3941",
+    308,
+    70
+   ]
+  ],
+  "one_stud_object_pieces": {},
+  "max_cut": 0,
+  "worst_isolated": 4
+ },
+ "tower_1": {
+  "pieces": 1,
+  "height_plates": 3,
+  "bom": [
+   [
+    "3941",
+    70,
+    1
+   ]
+  ],
+  "substitutions": [
+   [
+    "3941",
+    308,
+    70
+   ]
+  ],
+  "one_stud_object_pieces": {},
+  "max_cut": 0,
+  "worst_isolated": 1
+ },
+ "monument": {
+  "pieces": 7,
+  "height_plates": 16,
+  "bom": [
+   [
+    "3022",
+    72,
+    1
+   ],
+   [
+    "3062b",
+    71,
+    2
+   ],
+   [
+    "3062b",
+    72,
+    2
+   ],
+   [
+    "4589",
+    15,
+    1
+   ],
+   [
+    "6141",
+    25,
+    1
+   ]
+  ],
+  "substitutions": [],
+  "one_stud_object_pieces": {
+   "C1_carrying": 5,
+   "C3_decorative_exposed": 1
+  },
+  "max_cut": 5,
+  "worst_isolated": 7
+ },
+ "castle": {
+  "pieces": 31,
+  "height_plates": 18,
+  "bom": [
+   [
+    "3004",
+    71,
+    6
+   ],
+   [
+    "3004",
+    72,
+    2
+   ],
+   [
+    "3010",
+    71,
+    2
+   ],
+   [
+    "3010",
+    72,
+    4
+   ],
+   [
+    "3062b",
+    72,
+    4
+   ],
+   [
+    "3062b",
+    320,
+    4
+   ],
+   [
+    "3941",
+    71,
+    2
+   ],
+   [
+    "3941",
+    72,
+    2
+   ],
+   [
+    "3942c",
+    0,
+    1
+   ],
+   [
+    "4589",
+    0,
+    4
+   ]
+  ],
+  "substitutions": [],
+  "one_stud_object_pieces": {
+   "C1_carrying": 8,
+   "C3_decorative_exposed": 4
+  },
+  "max_cut": 2,
+  "worst_isolated": 4
+ }
+}

@@ -95,3 +95,14 @@ Date initiale : 2026-11-08. Branche : research/lego-builder-commercial-outputs-2
 | Correction des faiblesses porteuses | FAIT (candidat) | 5 piliers 1×2 → briques 3004 : −10 pièces, voxels identiques, 0 collision ; non gelé |
 | Écart artistique | DOCUMENTÉ | pas de note ; rivières fines, repères, chemins, volcan, texture ; 351 composantes de classes vs ≈ 950 |
 | V17 | PROPOSÉ, non développé | 3 améliorations avec coût/risque/tests/abandon : `V17_PROPOSAL.md` ; aucun gel, aucune fusion dans `main` |
+
+## Sprint V17 — reconstruction fidèle de Hyrule : zone du château (prototype)
+
+| Étape | Statut | Preuve / limite |
+|---|---|---|
+| Référence MOC-193441 | PARTIEL | identifié via moteur de recherche et fiches revendeurs ; page Rebrickable **inaccessible** (403/402, non contournée) ; PDF payant non acheté ; aucun fichier 3D/LDraw légalement accessible prouvé ; vues : 1 dessus + 3 trois-quarts, ni latérale ni gros plans (`sprint_v17/REFERENCE_AUDIT.md`) |
+| Bibliothèque d'objets (arbre, rocher, tour, château, pont, monument) + rivières/chemins | PASS (technique) | 12 assemblages validés par le validateur indépendant ; reproductible ; désactivée par défaut |
+| Zone du château (32×32) | PARTIEL | 1 750 → 1 950 pièces, 0/0/0/0, BOM valide ; amélioration visible (volumes, ponts, rivières) mais château trop massif, détails encore loin de la référence ; **aucun GO artistique** |
+| Non-régression | PASS | 8 baselines IDENTICAL, unit 9/9, engine 2/2, objets, Italie/Paco/Beagle identiques |
+| Photos→3D | **BLOCKED** | quota ZeroGPU du Space Hugging Face épuisé (`Try again in 7:28:02`) ; dernier PASS : clôture V16 |
+| Hyrule complet | NON LANCÉ | manifeste planifié à blanc sur 96×78 (272 arbres, 11 rochers, 4 tours, 4 ponts, 1 château), en attente de votre validation visuelle ; voir `sprint_v17/FINAL_VERDICT.md` |

@@ -1,0 +1,25 @@
+0 object test tower
+0 Name: diorama.ldr
+0 Author: procedural generator
+0 !LICENSE Original generated test
+0 // layer at plate 0
+1 72 80 -8 -80 1 0 0 0 1 0 0 0 1 41539.dat
+0 STEP
+0 // layer at plate 1
+1 71 40 -16 -40 1 0 0 0 1 0 0 0 1 3031.dat
+1 71 120 -16 -40 1 0 0 0 1 0 0 0 1 3031.dat
+1 71 40 -16 -120 1 0 0 0 1 0 0 0 1 3031.dat
+1 71 120 -16 -120 1 0 0 0 1 0 0 0 1 3031.dat
+0 STEP
+0 // layer at plate 2
+1 71 40.0005 -40 -39.9995 1 0 0 0 1 0 0 0 1 3941.dat
+0 STEP
+0 // layer at plate 5
+1 71 40.0005 -64 -39.9995 1 0 0 0 1 0 0 0 1 3941.dat
+0 STEP
+0 // layer at plate 8
+1 70 40.0005 -88 -39.9995 1 0 0 0 1 0 0 0 1 3941.dat
+0 STEP
+0 // layer at plate 11
+1 0 40 -136 -40 1 0 0 0 1 0 0 0 1 3942c.dat
+0 STEP

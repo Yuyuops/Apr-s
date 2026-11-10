@@ -1,0 +1,130 @@
+{
+ "pieces": 9,
+ "one_stud": 4,
+ "articulation_points": 4,
+ "worst_isolated_failure_parts": 4,
+ "articulation_cut_ge_8": 0,
+ "articulation_cut_ge_4": 1,
+ "worst10": [
+  [
+   4,
+   "3031",
+   71,
+   1,
+   0.0
+  ],
+  [
+   3,
+   "3062b",
+   70,
+   5,
+   0.0
+  ],
+  [
+   2,
+   "3062b",
+   288,
+   6,
+   0.0
+  ],
+  [
+   1,
+   "3062b",
+   288,
+   7,
+   0.0
+  ]
+ ],
+ "classes": {
+  "C1_carrying": {
+   "count": 3,
+   "pct_of_pieces": 33.33,
+   "pct_of_one_stud": 75.0,
+   "parts": [
+    [
+     "3062b",
+     3
+    ]
+   ],
+   "max_cut": 3,
+   "cut_ge_4": 0,
+   "cut_ge_8": 0,
+   "cut_mass_g_total": 0.0
+  },
+  "C2_decorative_captured": {
+   "count": 0,
+   "pct_of_pieces": 0.0,
+   "pct_of_one_stud": 0.0,
+   "parts": [],
+   "max_cut": 0,
+   "cut_ge_4": 0,
+   "cut_ge_8": 0,
+   "cut_mass_g_total": 0
+  },
+  "C3_decorative_exposed": {
+   "count": 1,
+   "pct_of_pieces": 11.11,
+   "pct_of_one_stud": 25.0,
+   "parts": [
+    [
+     "4589",
+     1
+    ]
+   ],
+   "max_cut": 0,
+   "cut_ge_4": 0,
+   "cut_ge_8": 0,
+   "cut_mass_g_total": 0.0
+  }
+ },
+ "rows": [
+  {
+   "i": 5,
+   "part": "3062b",
+   "colour": 70,
+   "cls": "C1_carrying",
+   "cut": 3,
+   "cut_mass_g": 0.0,
+   "col": 1.5,
+   "row": 6.5,
+   "layer_plates": 5,
+   "protrude_plates": 3.0
+  },
+  {
+   "i": 6,
+   "part": "3062b",
+   "colour": 288,
+   "cls": "C1_carrying",
+   "cut": 2,
+   "cut_mass_g": 0.0,
+   "col": 1.5,
+   "row": 6.5,
+   "layer_plates": 8,
+   "protrude_plates": 6.0
+  },
+  {
+   "i": 7,
+   "part": "3062b",
+   "colour": 288,
+   "cls": "C1_carrying",
+   "cut": 1,
+   "cut_mass_g": 0.0,
+   "col": 1.5,
+   "row": 6.5,
+   "layer_plates": 11,
+   "protrude_plates": 9.0
+  },
+  {
+   "i": 8,
+   "part": "4589",
+   "colour": 2,
+   "cls": "C3_decorative_exposed",
+   "cut": 0,
+   "cut_mass_g": 0.0,
+   "col": 1.5,
+   "row": 6.5,
+   "layer_plates": 13,
+   "protrude_plates": 10.8
+  }
+ ]
+}

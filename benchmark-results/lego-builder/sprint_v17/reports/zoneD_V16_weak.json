@@ -1,0 +1,11 @@
+{
+ "pieces": 1750,
+ "min_cut": 4,
+ "critical": 43,
+ "by_clutch": {
+  "STRONG(>=6)": 43
+ },
+ "weak": [],
+ "worst_weak": 0,
+ "min_clutch_among_cut_ge_8": 15
+}

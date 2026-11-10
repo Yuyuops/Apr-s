@@ -1,0 +1,18 @@
+{
+ "height_plates": 13,
+ "pieces": 9,
+ "references": 5,
+ "size_studs": [
+  8,
+  8
+ ],
+ "physical_size_mm": [
+  64,
+  64
+ ],
+ "max_height_mm": 41.6,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "2a39cac9ec5d39a0ba0d53f92b0e7dd4690a39a20c25f11ca93d0b88b9bb1a4c"
+}

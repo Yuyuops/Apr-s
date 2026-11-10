@@ -1,0 +1,88 @@
+{
+ "height_plates": 18,
+ "pieces": 1750,
+ "references": 104,
+ "size_studs": [
+  40,
+  40
+ ],
+ "physical_size_mm": [
+  320,
+  320
+ ],
+ "max_height_mm": 57.6,
+ "colour_substitutions": [],
+ "physical_test": false,
+ "stock_verified": false,
+ "ldraw_sha256": "df7e7f1d232a250b2cbf95b57241b70a87c521ef2a5a5d8c2efae4d6d79d79ee",
+ "style": "hyrule_v16_c4f",
+ "composition": "Sprint V17 castle zone D : 32x32 crop of B16 at (row 18, col",
+ "grid_studs": [
+  32,
+  32
+ ],
+ "frame_studs": 4,
+ "levels_histogram": {
+  "2": 174,
+  "3": 317,
+  "4": 217,
+  "5": 46,
+  "6": 227,
+  "7": 16,
+  "8": 9,
+  "10": 18
+ },
+ "biomes": {
+  "water": 124,
+  "lake": 37,
+  "void": 0,
+  "grass": 616,
+  "forest": 153,
+  "desert": 3,
+  "shore": 13,
+  "stone": 14,
+  "snow": 4,
+  "mesa": 47,
+  "rust": 0,
+  "crater": 0,
+  "shallow": 13,
+  "meadow": 0
+ },
+ "biome_mode": true,
+ "smooth_height": {
+  "sigma": 1.1,
+  "th0": 2,
+  "max_plates": 10
+ },
+ "cliff_slopes_planned": 43,
+ "details_planned": 48,
+ "wild_layers": 10,
+ "rounded_corners": 113,
+ "seam_top_layers": 7,
+ "cliff_slopes_placed": 43,
+ "details_skipped": 2,
+ "details_placed": 46,
+ "frame": {
+  "courses": 5,
+  "top_plate": 17
+ },
+ "figures": {
+  "config": {},
+  "selected": [],
+  "rejected": [],
+  "proposals": [],
+  "status": "off"
+ },
+ "base_fit": [
+  {
+   "layer": 1,
+   "plates": 160,
+   "single_owner_pieces_above": 4
+  },
+  {
+   "layer": 0,
+   "plates": 182,
+   "single_owner_pieces_above": 17
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "name": "m",
+ "source_ldr": "/home/user/v062/benchmark-results/lego-builder/sprint_v17/data/assemblies/tree_conifer/diorama.ldr",
+ "disclaimer": "Geometric and graph checks plus an indicative stud-clutch model. Not a physical test.",
+ "parts": 8,
+ "part_types": 4,
+ "part_colour_lines": 5,
+ "steps": 6,
+ "collisions": {
+  "pairs": 0,
+  "cells_4ldu": 0,
+  "examples": [],
+  "details": []
+ },
+ "blocked_studs": 0,
+ "joints": 7,
+ "studs_engaged": 67,
+ "single_stud_joints": 3,
+ "sideways_joints": 0,
+ "groups_on_support_not_attached_to_main": 0,
+ "disconnected_parts": 0,
+ "islands": 0,
+ "disconnected_examples": [],
+ "unsupported_at_placement": 0,
+ "subassemblies_not_attachable": [],
+ "catalogue": {
+  "lines": 5,
+  "never_produced": [],
+  "not_found": [],
+  "rare": []
+ },
+ "frames": [
+  [
+   0.0,
+   -1.0,
+   0.0
+  ]
+ ],
+ "turntable_joints": 0,
+ "stability": {
+  "model": "rigid parts; clutch 1.0 N per stud (assumed); compression free; 0.10 g per stud x stud x plate; gravity, then a force at the far end of each sub-assembly. Indicative only.",
+  "cases": 7,
+  "gravity_sf_below_1": 0,
+  "gravity_sf_below_2": 0,
+  "min_gravity_sf": null,
+  "subassemblies_over_1g": 4,
+  "tip_force_below_0_5N": 0,
+  "tip_force_below_2N": 0,
+  "min_tip_force_N": 7.86,
+  "weakest": [
+   {
+    "mass_g": 1.6,
+    "studs": 16,
+    "gravity_sf": null,
+    "tip_force_N": 7.86,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 4,
+    "colours": {
+     "Light_Bluish_Grey": 1,
+     "Reddish_Brown": 1
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -78.0,
+      -80.0
+     ],
+     [
+      80.0,
+      -8.0,
+      0.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.6,
+    "studs": 16,
+    "gravity_sf": null,
+    "tip_force_N": 41.14,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1,
+    "colours": {
+     "Light_Bluish_Grey": 1
+    },
+    "bbox_ldu": [
+     [
+      80.0,
+      -16.0,
+      -80.0
+     ],
+     [
+      160.0,
+      -8.0,
+      0.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.6,
+    "studs": 16,
+    "gravity_sf": null,
+    "tip_force_N": 41.14,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1,
+    "colours": {
+     "Light_Bluish_Grey": 1
+    },
+    "bbox_ldu": [
+     [
+      0.0,
+      -16.0,
+      -160.0
+     ],
+     [
+      80.0,
+      -8.0,
+      -80.0
+     ]
+    ]
+   },
+   {
+    "mass_g": 1.6,
+    "studs": 16,
+    "gravity_sf": null,
+    "tip_force_N": 41.14,
+    "frame": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "parts": 1,
+    "colours": {
+     "Light_Bluish_Grey": 1
+    },
+    "bbox_ldu": [
+     [
+      80.0,
+      -16.0,
+      -160.0
+     ],
+     [
+      160.0,
+      -8.0,
+      -80.0
+     ]
+    ]
+   }
+  ],
+  "big_cases": []
+ },
+ "fidelity": null
+}

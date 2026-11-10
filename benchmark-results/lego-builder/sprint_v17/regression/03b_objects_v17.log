@@ -1,0 +1,16 @@
+== 03b_objects_v17: /tmp/claude-0/clean/Apr-s/benchmark-results/20_portable_engine/.venv/bin/python lego-builder/tests/test_objects_v17.py
+tree {'variant': 'round'} pieces=2 bom=2 all_pass=True
+tree {'variant': 'conifer'} pieces=3 bom=3 all_pass=True
+tree {'variant': 'tall'} pieces=4 bom=3 all_pass=True
+tree {'variant': 'small'} pieces=1 bom=1 all_pass=True
+rock {} pieces=3 bom=3 all_pass=True
+tower {} pieces=4 bom=3 all_pass=True
+tower {'bricks': 1, 'roof_cone': False} pieces=1 bom=1 all_pass=True
+monument {} pieces=7 bom=5 all_pass=True
+castle {} pieces=31 bom=10 all_pass=True
+bridge {'length': 1} pieces=1 bom=1 all_pass=True
+bridge {'length': 2} pieces=1 bom=1 all_pass=True
+bridge {'length': 4, 'dir': 'v'} pieces=1 bom=1 all_pass=True
+zone D with objects : sha256 run1 0364fdd1e2eb run2 0364fdd1e2eb identical=True
+OK : 12 assemblies validated, build deterministic
+exit=0 seconds=114

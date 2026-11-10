@@ -1,0 +1,1083 @@
+{
+ "placed": [
+  {
+   "type": "castle",
+   "provenance": "observed",
+   "source": "central dark-grey castle with circular central structure and 4 corner points, top view (350,405) px; size 6x6 studs estimated from ~25 px width",
+   "row": 27,
+   "col": 44,
+   "params": {
+    "level": 3
+   },
+   "pieces": 31,
+   "bom": [
+    [
+     "3004",
+     71,
+     6
+    ],
+    [
+     "3004",
+     72,
+     2
+    ],
+    [
+     "3010",
+     71,
+     2
+    ],
+    [
+     "3010",
+     72,
+     4
+    ],
+    [
+     "3062b",
+     72,
+     4
+    ],
+    [
+     "3062b",
+     320,
+     4
+    ],
+    [
+     "3941",
+     71,
+     2
+    ],
+    [
+     "3941",
+     72,
+     2
+    ],
+    [
+     "3942c",
+     0,
+     1
+    ],
+    [
+     "4589",
+     0,
+     4
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 18
+  },
+  {
+   "type": "tower",
+   "provenance": "observed",
+   "source": "round tower with brown ring, top view (332,492) px",
+   "row": 44,
+   "col": 43,
+   "params": {
+    "bricks": 3,
+    "ring": 70
+   },
+   "pieces": 4,
+   "bom": [
+    [
+     "3941",
+     70,
+     1
+    ],
+    [
+     "3941",
+     71,
+     2
+    ],
+    [
+     "3942c",
+     0,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 15
+  },
+  {
+   "type": "tower",
+   "provenance": "observed",
+   "source": "round tower with brown ring, top view (415,379) px",
+   "row": 24,
+   "col": 57,
+   "params": {
+    "bricks": 3,
+    "ring": 70
+   },
+   "pieces": 4,
+   "bom": [
+    [
+     "3941",
+     70,
+     1
+    ],
+    [
+     "3941",
+     71,
+     2
+    ],
+    [
+     "3942c",
+     0,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 15
+  },
+  {
+   "type": "tower",
+   "provenance": "observed",
+   "source": "tan round structure with blue centre, top view (266,416) px",
+   "row": 31,
+   "col": 31,
+   "params": {
+    "bricks": 2,
+    "body": 19,
+    "ring": 84
+   },
+   "pieces": 3,
+   "bom": [
+    [
+     "3941",
+     19,
+     1
+    ],
+    [
+     "3941",
+     84,
+     1
+    ],
+    [
+     "3942c",
+     0,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 12
+  },
+  {
+   "type": "tower",
+   "provenance": "observed",
+   "source": "black block with yellow dot, top view (390,494) px",
+   "row": 44,
+   "col": 53,
+   "params": {
+    "bricks": 1,
+    "body": 0,
+    "ring": 14,
+    "roof_cone": false
+   },
+   "pieces": 1,
+   "bom": [
+    [
+     "3941",
+     14,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "bridge",
+   "provenance": "observed",
+   "source": "brown bridge over the left river, top view (297,446) px",
+   "row": 36,
+   "col": 36,
+   "params": {
+    "length": 1,
+    "dir": "h"
+   },
+   "pieces": 1,
+   "bom": [
+    [
+     "3623",
+     70,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 1
+  },
+  {
+   "type": "bridge",
+   "provenance": "observed",
+   "source": "brown bridge, top view (297,506) px",
+   "row": 47,
+   "col": 34,
+   "params": {
+    "length": 1,
+    "dir": "h"
+   },
+   "pieces": 1,
+   "bom": [
+    [
+     "3623",
+     70,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 1
+  },
+  {
+   "type": "bridge",
+   "provenance": "observed",
+   "source": "brown bridge over the right river, top view (400,447) px",
+   "row": 36,
+   "col": 55,
+   "params": {
+    "length": 1,
+    "dir": "h"
+   },
+   "pieces": 1,
+   "bom": [
+    [
+     "3623",
+     70,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 1
+  },
+  {
+   "type": "bridge",
+   "provenance": "observed",
+   "source": "brown bridge, top view (414,469) px",
+   "row": 40,
+   "col": 56,
+   "params": {
+    "length": 1,
+    "dir": "h"
+   },
+   "pieces": 1,
+   "bom": [
+    [
+     "3623",
+     70,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 1
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "conifer",
+   "provenance": "estimated",
+   "pieces": 3,
+   "bom": [
+    [
+     "3062b",
+     70,
+     1
+    ],
+    [
+     "3062b",
+     288,
+     1
+    ],
+    [
+     "4589",
+     2,
+     1
+    ]
+   ],
+   "substitutions": [
+    [
+     "4589",
+     288,
+     2
+    ]
+   ],
+   "height_plates": 8
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "conifer",
+   "provenance": "estimated",
+   "pieces": 3,
+   "bom": [
+    [
+     "3062b",
+     70,
+     1
+    ],
+    [
+     "3062b",
+     288,
+     1
+    ],
+    [
+     "4589",
+     2,
+     1
+    ]
+   ],
+   "substitutions": [
+    [
+     "4589",
+     288,
+     2
+    ]
+   ],
+   "height_plates": 8
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 2,
+   "bom": [
+    [
+     "3062b",
+     70,
+     1
+    ],
+    [
+     "3941",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 6
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "conifer",
+   "provenance": "estimated",
+   "pieces": 3,
+   "bom": [
+    [
+     "3062b",
+     70,
+     1
+    ],
+    [
+     "3062b",
+     288,
+     1
+    ],
+    [
+     "4589",
+     2,
+     1
+    ]
+   ],
+   "substitutions": [
+    [
+     "4589",
+     288,
+     2
+    ]
+   ],
+   "height_plates": 8
+  },
+  {
+   "type": "tree",
+   "variant": "conifer",
+   "provenance": "estimated",
+   "pieces": 3,
+   "bom": [
+    [
+     "3062b",
+     70,
+     1
+    ],
+    [
+     "3062b",
+     288,
+     1
+    ],
+    [
+     "4589",
+     2,
+     1
+    ]
+   ],
+   "substitutions": [
+    [
+     "4589",
+     288,
+     2
+    ]
+   ],
+   "height_plates": 8
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "conifer",
+   "provenance": "estimated",
+   "pieces": 3,
+   "bom": [
+    [
+     "3062b",
+     70,
+     1
+    ],
+    [
+     "3062b",
+     288,
+     1
+    ],
+    [
+     "4589",
+     2,
+     1
+    ]
+   ],
+   "substitutions": [
+    [
+     "4589",
+     288,
+     2
+    ]
+   ],
+   "height_plates": 8
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "conifer",
+   "provenance": "estimated",
+   "pieces": 3,
+   "bom": [
+    [
+     "3062b",
+     70,
+     1
+    ],
+    [
+     "3062b",
+     288,
+     1
+    ],
+    [
+     "4589",
+     2,
+     1
+    ]
+   ],
+   "substitutions": [
+    [
+     "4589",
+     288,
+     2
+    ]
+   ],
+   "height_plates": 8
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 2,
+   "bom": [
+    [
+     "3062b",
+     70,
+     1
+    ],
+    [
+     "3941",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 6
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "conifer",
+   "provenance": "estimated",
+   "pieces": 3,
+   "bom": [
+    [
+     "3062b",
+     70,
+     1
+    ],
+    [
+     "3062b",
+     288,
+     1
+    ],
+    [
+     "4589",
+     2,
+     1
+    ]
+   ],
+   "substitutions": [
+    [
+     "4589",
+     288,
+     2
+    ]
+   ],
+   "height_plates": 8
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "tree",
+   "variant": "round",
+   "provenance": "estimated",
+   "pieces": 1,
+   "bom": [
+    [
+     "3062b",
+     288,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 3
+  },
+  {
+   "type": "rock",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 3,
+   "bom": [
+    [
+     "3022",
+     71,
+     1
+    ],
+    [
+     "3024",
+     71,
+     1
+    ],
+    [
+     "3039",
+     72,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 5
+  },
+  {
+   "type": "rock",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 3,
+   "bom": [
+    [
+     "3022",
+     71,
+     1
+    ],
+    [
+     "3024",
+     71,
+     1
+    ],
+    [
+     "3039",
+     72,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 5
+  },
+  {
+   "type": "rock",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 3,
+   "bom": [
+    [
+     "3022",
+     71,
+     1
+    ],
+    [
+     "3024",
+     71,
+     1
+    ],
+    [
+     "3039",
+     72,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 5
+  },
+  {
+   "type": "rock",
+   "variant": "small",
+   "provenance": "estimated",
+   "pieces": 3,
+   "bom": [
+    [
+     "3022",
+     71,
+     1
+    ],
+    [
+     "3024",
+     71,
+     1
+    ],
+    [
+     "3039",
+     72,
+     1
+    ]
+   ],
+   "substitutions": [],
+   "height_plates": 5
+  }
+ ],
+ "failed": [],
+ "skipped": [],
+ "terrain_edits": [
+  {
+   "type": "river",
+   "provenance": "estimated",
+   "source": "left river branch, top view crop x290-330,y395-512 px",
+   "cells": 22
+  },
+  {
+   "type": "river",
+   "provenance": "estimated",
+   "source": "right river branch, top view x385-430,y430-500 px",
+   "cells": 15
+  },
+  {
+   "type": "land",
+   "provenance": "estimated",
+   "source": "grey causeway south of the castle, top view (350,430)-(352,450) px",
+   "cells": 4
+  },
+  {
+   "type": "scatter",
+   "provenance": "estimated",
+   "source": "dark-green round trees all over the plain, density and variety estimated",
+   "count": 37,
+   "scatter": "tree"
+  },
+  {
+   "type": "scatter",
+   "provenance": "estimated",
+   "source": "few grey rocks, estimated",
+   "count": 4,
+   "scatter": "rock"
+  }
+ ]
+}
