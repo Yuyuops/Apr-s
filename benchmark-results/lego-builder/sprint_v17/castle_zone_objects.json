@@ -1,0 +1,224 @@
+{
+ "_doc": "Sprint V17 object manifest, castle zone (map cells, 96x78 grid). Positions are ESTIMATES read from the reference top view (MOC-193441 product renders, 750x1000 px) registered on the V16 raster (castle anchored on the V16 stone peninsula) : precision about +-1.5 studs ; sizes/heights are NOT measurable from the images and follow the object library.",
+ "ground_class": "grass",
+ "items": [
+  {
+   "type": "river",
+   "points": [
+    [
+     27,
+     39
+    ],
+    [
+     31,
+     38
+    ],
+    [
+     38,
+     37
+    ],
+    [
+     43,
+     38
+    ],
+    [
+     48,
+     34
+    ]
+   ],
+   "width": 1,
+   "class": "water",
+   "provenance": "estimated",
+   "source": "left river branch, top view crop x290-330,y395-512 px",
+   "level": 2
+  },
+  {
+   "type": "river",
+   "points": [
+    [
+     33,
+     52
+    ],
+    [
+     36,
+     56
+    ],
+    [
+     42,
+     57
+    ],
+    [
+     46,
+     60
+    ]
+   ],
+   "width": 1,
+   "class": "water",
+   "provenance": "estimated",
+   "source": "right river branch, top view x385-430,y430-500 px",
+   "level": 2
+  },
+  {
+   "type": "land",
+   "points": [
+    [
+     33,
+     46
+    ],
+    [
+     36,
+     46
+    ]
+   ],
+   "level": 3,
+   "class": "grass",
+   "colour": 71,
+   "provenance": "estimated",
+   "source": "grey causeway south of the castle, top view (350,430)-(352,450) px"
+  },
+  {
+   "type": "castle",
+   "row": 27,
+   "col": 44,
+   "force_ground": true,
+   "params": {
+    "level": 3
+   },
+   "provenance": "observed",
+   "source": "central dark-grey castle with circular central structure and 4 corner points, top view (350,405) px; size 6x6 studs estimated from ~25 px width"
+  },
+  {
+   "type": "tower",
+   "row": 44,
+   "col": 43,
+   "params": {
+    "bricks": 3,
+    "ring": 70
+   },
+   "provenance": "observed",
+   "source": "round tower with brown ring, top view (332,492) px"
+  },
+  {
+   "type": "tower",
+   "row": 24,
+   "col": 57,
+   "params": {
+    "bricks": 3,
+    "ring": 70
+   },
+   "provenance": "observed",
+   "source": "round tower with brown ring, top view (415,379) px"
+  },
+  {
+   "type": "tower",
+   "row": 31,
+   "col": 31,
+   "params": {
+    "bricks": 2,
+    "body": 19,
+    "ring": 84
+   },
+   "provenance": "observed",
+   "source": "tan round structure with blue centre, top view (266,416) px"
+  },
+  {
+   "type": "tower",
+   "row": 44,
+   "col": 53,
+   "params": {
+    "bricks": 1,
+    "body": 0,
+    "ring": 14,
+    "roof_cone": false
+   },
+   "provenance": "observed",
+   "source": "black block with yellow dot, top view (390,494) px"
+  },
+  {
+   "type": "bridge",
+   "row": 36,
+   "col": 36,
+   "params": {
+    "length": 1,
+    "dir": "h"
+   },
+   "provenance": "observed",
+   "source": "brown bridge over the left river, top view (297,446) px"
+  },
+  {
+   "type": "bridge",
+   "row": 47,
+   "col": 34,
+   "params": {
+    "length": 1,
+    "dir": "h"
+   },
+   "provenance": "observed",
+   "source": "brown bridge, top view (297,506) px"
+  },
+  {
+   "type": "bridge",
+   "row": 36,
+   "col": 55,
+   "params": {
+    "length": 1,
+    "dir": "h"
+   },
+   "provenance": "observed",
+   "source": "brown bridge over the right river, top view (400,447) px"
+  },
+  {
+   "type": "bridge",
+   "row": 40,
+   "col": 56,
+   "params": {
+    "length": 1,
+    "dir": "h"
+   },
+   "provenance": "observed",
+   "source": "brown bridge, top view (414,469) px"
+  },
+  {
+   "type": "scatter",
+   "assembly": "tree",
+   "classes": [
+    "forest"
+   ],
+   "density": 0.3,
+   "min_dist": 2.0,
+   "seed": 5,
+   "variants": [
+    [
+     "round",
+     0.4
+    ],
+    [
+     "conifer",
+     0.2
+    ],
+    [
+     "small",
+     0.4
+    ]
+   ],
+   "params": {
+    "leaf": 288,
+    "trunk": 70
+   },
+   "provenance": "estimated",
+   "source": "dark-green round trees all over the plain, density and variety estimated"
+  },
+  {
+   "type": "scatter",
+   "assembly": "rock",
+   "classes": [
+    "grass"
+   ],
+   "density": 0.008,
+   "min_dist": 5.0,
+   "seed": 9,
+   "provenance": "estimated",
+   "source": "few grey rocks, estimated"
+  }
+ ]
+}

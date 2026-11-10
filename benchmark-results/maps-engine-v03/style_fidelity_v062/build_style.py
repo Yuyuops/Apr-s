@@ -3,6 +3,7 @@
 usage : build_style.py STYLE.json COMPOSITION.json OUTDIR [--grid R C] [--frame N] [--no-title] [--no-decor]
 Every rule is read from the style/composition files ; nothing refers to a particular country."""
 import json, math, os, random, sys
+from collections import Counter
 import numpy as np
 from scipy import ndimage
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
@@ -536,6 +537,93 @@ class Builder:
                 except ValueError: self.flank_stats["colour_not_catalogued"] += 1
         self.flank_stats["placed"] = placed; self.info["flanks"] = self.flank_stats
     # ---------- run
+    def plan_objects(self):
+        """V17 (ON ONLY with an `objects` block in the style or --objects FILE) : parametric assemblies of real catalogue pieces (objects.py) + terrain edits (river, path) described by a MANIFEST of observed/estimated objects.
+        Footprints are flattened and studded here (before slopes/details/layers) ; the pieces are placed by place_objects() once the surface exists. Nothing happens without a manifest."""
+        self.obj_plan = []; self.obj_log = dict(items=[], skipped=[]); cfg = self.st.get("objects")
+        if not cfg or not hasattr(self, "biome"): return
+        import objects as OB
+        man = json.load(open(cfg["file"] if os.path.isabs(cfg["file"]) else os.path.join(HERE, cfg["file"]))); o_r, o_c = self.cp.get("origin_rc", [0, 0]); R, C = self.R, self.C; names = self.biome["names"]; inv = {nm: k for k, nm in names.items()}; defs = self.st["biomes"]
+        codes, top, wall = self.biome["codes"], self.biome["top"], self.biome["wall"]; ground = man.get("ground_class", "grass")
+        def set_cell(r, c, cls, lv=None):
+            codes[r, c] = inv[cls]; top[r, c] = defs[cls]["top"]; wall[r, c] = defs[cls]["wall"]; self.lev[r, c] = defs[cls]["level"] if lv is None else lv; self.subj[r, c] = not defs[cls].get("water")
+        def line(a, b):
+            (r0, c0), (r1, c1) = a, b; n = max(abs(r1 - r0), abs(c1 - c0), 1); return [(int(round(r0 + (r1 - r0) * i / n)), int(round(c0 + (c1 - c0) * i / n))) for i in range(n + 1)]
+        inside = lambda r, c: 0 <= r < R and 0 <= c < C
+        for it in man["items"]:
+            t = it["type"]; prov = it.get("provenance", "estimated"); log = dict(type=t, provenance=prov, source=it.get("source", ""))
+            if t == "river":
+                pts = [(int(a) - o_r, int(b) - o_c) for a, b in it["points"]]; cls = it.get("class", "water"); cells = set()
+                for a, b in zip(pts, pts[1:]): cells.update(line(a, b))
+                for k in range(int(it.get("width", 1)) - 1): cells.update({(r + dr, c + dc) for (r, c) in list(cells) for dr, dc in ((0, 1), (1, 0))})
+                n = 0
+                for (r, c) in sorted(cells):
+                    if inside(r, c) and not self.taken[r, c] and codes[r, c] != inv.get("void", -9): set_cell(r, c, cls, it.get("level")); n += 1
+                log.update(cells=n); self.obj_log["items"].append(log); continue
+            if t == "land":                                                                        # land bridge / causeway : cells become `ground` at a fixed level
+                pts = [(int(a) - o_r, int(b) - o_c) for a, b in it["points"]]; cells = set()
+                for a, b in zip(pts, pts[1:]): cells.update(line(a, b))
+                for k in range(int(it.get("width", 1)) - 1): cells.update({(r + dr, c + dc) for (r, c) in list(cells) for dr, dc in ((0, 1), (1, 0))})
+                n = 0
+                for (r, c) in sorted(cells):
+                    if inside(r, c) and not self.taken[r, c]: set_cell(r, c, it.get("class", ground), int(it.get("level", defs[ground]["level"]))); top[r, c] = it.get("colour", top[r, c]); n += 1
+                log.update(cells=n); self.obj_log["items"].append(log); continue
+            if t == "path":
+                pts = [(int(a) - o_r, int(b) - o_c) for a, b in it["points"]]; cells = set()
+                for a, b in zip(pts, pts[1:]): cells.update(line(a, b))
+                n = 0
+                for (r, c) in sorted(cells):
+                    if inside(r, c) and self.subj[r, c] and not self.taken[r, c]: top[r, c] = it.get("colour", 19); n += 1
+                log.update(cells=n); self.obj_log["items"].append(log); continue
+            if t == "scatter":
+                self.plan_scatter(it, OB, o_r, o_c, log); continue
+            r0, c0 = int(it["row"]) - o_r, int(it["col"]) - o_c; asm = OB.build(t, it.get("params", {})); br0, bc0, br1, bc1 = asm.bbox(); nr, nc = br1 - br0, bc1 - bc0
+            rr, cc = r0 + br0, c0 + bc0
+            errs = OB.check_assembly(asm, self.sf["min_sets"])
+            if errs or rr < 0 or cc < 0 or rr + nr > R or cc + nc > C or self.taken[rr:rr + nr, cc:cc + nc].any():
+                self.obj_log["skipped"].append(dict(log, reason=errs or "outside the grid or on a reserved zone")); continue
+            cells = [(rr + a, cc + b) for a in range(nr) for b in range(nc)]
+            if t == "bridge":                                                                      # deck rests on the two bank cells (first and last) ; the cells between stay water
+                ends = [cells[0], cells[-1]]; L = max(int(self.lev[e]) for e in ends)
+                if any(codes[e] == inv.get("void", -9) for e in ends): self.obj_log["skipped"].append(dict(log, reason="bank on the void")); continue
+                for e in ends:
+                    if not self.subj[e]: set_cell(e[0], e[1], ground, L)
+                    else: self.lev[e] = L
+                    self.studded[e] = True
+                for e in cells: self.taken[e] = True
+            else:
+                land = [int(self.lev[e]) for e in cells if self.subj[e]]; L = int(it.get("params", {}).get("level", int(np.median(land)) if land else defs[ground]["level"]))
+                for e in cells:
+                    if not self.subj[e] or it.get("force_ground"): set_cell(e[0], e[1], it.get("ground", ground), L)
+                    else: self.lev[e] = L
+                    self.studded[e] = True; self.taken[e] = True
+            self.obj_plan.append(dict(asm=asm, r=r0, c=c0, level=L, item=dict(log, row=r0 + o_r, col=c0 + o_c, params=it.get("params", {})), cells=cells))
+        self.info["objects_planned"] = len(self.obj_plan)
+    def plan_scatter(self, it, OB, o_r, o_c, log):
+        """deterministic scatter of a small assembly (e.g. trees) on cells of given classes : same blue-noise rule as the V16 details planner ; a 2x2 variant needs 4 free cells of the same level, else it falls back to the 1x1 variant"""
+        names = self.biome["names"]; codes = self.biome["codes"]; ks = [k for k, nm in names.items() if nm in it["classes"]]; R, C = self.R, self.C
+        cells = [(r, c) for r in range(R) for c in range(C) if codes[r, c] in ks and not self.taken[r, c]]
+        pos = OB.scatter_positions(cells, it.get("density", 0.25), float(it.get("min_dist", 2.0)), int(it.get("seed", 5))); rng = random.Random(int(it.get("seed", 5)) + 1); vs = it.get("variants", [["small", 1.0]]); n = 0; used = set()
+        for (r, c) in pos:
+            v = rng.choices([x[0] for x in vs], [x[1] for x in vs])[0]; asm = OB.build(it["assembly"], dict(it.get("params", {}), variant=v)); br0, bc0, br1, bc1 = asm.bbox()
+            cl = [(r + a, c + b) for a in range(br1 - br0) for b in range(bc1 - bc0)]
+            if not all(0 <= x < R and 0 <= y < C and codes[x, y] in ks and not self.taken[x, y] and (x, y) not in used and self.lev[x, y] == self.lev[r, c] for x, y in cl):
+                asm = OB.build(it["assembly"], dict(it.get("params", {}), variant="small")); cl = [(r, c)]
+                if self.taken[r, c] or (r, c) in used: continue
+            for e in cl: self.studded[e] = True; self.taken[e] = True; used.add(e)
+            self.obj_plan.append(dict(asm=asm, r=r, c=c, level=int(self.lev[r, c]), item=dict(type=it["assembly"], variant=v, provenance=it.get("provenance", "estimated")), cells=cl)); n += 1
+        log.update(count=n, scatter=it["assembly"]); self.obj_log["items"].append(log)
+    def place_objects(self):
+        if not getattr(self, "obj_plan", None): return
+        S, F = self.S, self.F; placed = Counter(); failed = []; rows = []
+        for o in self.obj_plan:
+            asm = o["asm"]; yb = self.y0 + int(o["level"]) * self.thick + 1; items = []
+            ok = all(S.free(o["r"] + p["r"] + F, o["c"] + p["c"] + F, yb + p["dy"], p["nr"], p["nc"], p["h"]) for p in asm.pieces)
+            if not ok: failed.append(dict(o["item"], reason="volume not free")); continue
+            for p in asm.pieces: S.add(p["part"], p["colour"], o["r"] + p["r"] + F, o["c"] + p["c"] + F, yb + p["dy"], p["rot"], "obj_" + asm.kind)
+            placed[asm.kind] += 1; rows.append(dict(o["item"], pieces=len(asm.pieces), bom=[[k[0], k[1], q] for k, q in sorted(asm.bom().items())], substitutions=asm.meta.get("substitutions", []), height_plates=asm.height()))
+        self.info["objects_placed"] = dict(placed); self.info["objects_failed"] = failed; self.info["object_pieces"] = sum(r["pieces"] for r in rows)
+        os.makedirs(self.out, exist_ok=True); json.dump(dict(placed=rows, failed=failed, skipped=self.obj_log["skipped"], terrain_edits=[i for i in self.obj_log["items"]]), open(os.path.join(self.out, "objects_placed.json"), "w"), indent=1, default=int)
     def run(self, with_title=True, with_decor=True, figures_cfg=None):
         self.figures_cfg = figures_cfg or {}
         import tiler; tiler.ORIENT_H = self.sf.get('orient_h', 1.0); tiler.SQUARISH = self.sf.get('squarish', 1.0)
@@ -544,7 +632,7 @@ class Builder:
         self._fig_after, self.fig_log = FG.run(self, self.figures_cfg, CAT, PAIRS)
         self.ornaments(); self.decor() if with_decor else None
         if with_title: self.title()
-        self.plan_flanks(); self.plan_slopes(); self.plan_details(); self.build_layers(); self.place_flanks(); self.place_details(); self.frame(); 
+        self.plan_objects(); self.plan_flanks(); self.plan_slopes(); self.plan_details(); self.build_layers(); self.place_flanks(); self.place_details(); self.place_objects(); self.frame(); 
         if with_title: self.place_title_letters()
         if with_decor: self.place_decor()
         if self._fig_after: self._fig_after()
@@ -558,6 +646,7 @@ if __name__ == "__main__":
     if "--palette" in a: style["palette"]["sea_levels"] = json.load(open(a[a.index("--palette") + 1]))["sea_levels"]; style["palette"].update({k: v for k, v in json.load(open(a[a.index("--palette") + 1])).items() if k in ("floor", "sea_levels_wall", "floor_wall")}); style["surface"].update(json.load(open(a[a.index("--palette") + 1])).get("surface", {}))
     if "--flank" in a: style["relief"]["flank"] = a[a.index("--flank") + 1]
     if "--round" in a: style["surface"]["round_corners"] = a[a.index("--round") + 1] == "1"
+    if "--objects" in a: style["objects"] = {"file": os.path.abspath(a[a.index("--objects") + 1])}
     if "--reinforce" in a: style["surface"]["reinforce_file"] = os.path.abspath(a[a.index("--reinforce") + 1])
     fc = json.load(open(a[a.index("--figures") + 1])) if "--figures" in a else {}
     b = Builder(style, comp, out, grid, frame); m = b.run(with_title="--no-title" not in a, with_decor="--no-decor" not in a, figures_cfg=fc); print(json.dumps({k: m[k] for k in ("pieces", "references", "max_height_mm", "physical_size_mm")}), json.dumps(b.info.get("levels_histogram")))
