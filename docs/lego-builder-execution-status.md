@@ -106,3 +106,18 @@ Date initiale : 2026-11-08. Branche : research/lego-builder-commercial-outputs-2
 | Non-régression | PASS | 8 baselines IDENTICAL, unit 9/9, engine 2/2, objets, Italie/Paco/Beagle identiques |
 | Photos→3D | **BLOCKED** | quota ZeroGPU du Space Hugging Face épuisé (`Try again in 7:28:02`) ; dernier PASS : clôture V16 |
 | Hyrule complet | NON LANCÉ | manifeste planifié à blanc sur 96×78 (272 arbres, 11 rochers, 4 tours, 4 ponts, 1 château), en attente de votre validation visuelle ; voir `sprint_v17/FINAL_VERDICT.md` |
+
+## Revue automatisée — 2026-11-10 (lecture GitHub, sans runner)
+
+**Méthode :** consultation directe des rapports versionnés V13/V14/V16 et clôture V16, du journal et des propositions V17. Cette revue n'a exécuté ni Python moteur, ni workflow CI, ni trancheur, ni impression. Les PASS ci-dessous sont des **preuves rapportées par la clôture V16**, pas des PASS nouvellement obtenus aujourd'hui. Les empreintes complètes citées viennent du rapport de clôture ; elles n'ont pas été recalculées ici.
+
+| Étape | Statut au 10/11 | Preuves et réserves |
+|---|---|---|
+| (1) LEGO Maps | PASS rapporté | Clôture V16 : 8/8 baselines IDENTICAL ; `sprint_v16_closure/REGRESSION_FINAL.md`, `regression/04_maps_8_baselines.log`. |
+| (1) Sculptures et Builder unifié | PASS rapporté | Italie SHA-256 `17d9bdc60637614404494517c1736906ec238b1310257f2f9563d7c750cd776f` ; Paco `9d07c041a4968245228c016c651fef0710fd26fee68f67eac771df261c28089a` ; Beagle `551bde0f77f20c227b4c4fde7f9c286c32139c4c6ac2b458edc0b8cedf31808f`. Logs `05` à `09` de la clôture. |
+| (1) Photos→3D | PASS historique, disponibilité non garantie | Clôture V16 : HF Space accessible, GLB Paco reconstruit et modèle LEGO identiques ; logs `10` à `12`. Généralisation à un sujet inédit toujours non validée. |
+| (2) Hyrule V16 | PARTIAL, **NO-GO gel** | 11 187 pièces ; 0 collision/déconnexion/îlot ; pire défaillance 45→17 ; liens faibles ≤2 tenons 185→12, puis 3 dans variante corrigée de 11 177 pièces. **1 879 éléments décoratifs exposés** ; validation artistique humaine absente ; pas de test physique. |
+| (2) V17 | PROPOSÉ, non exécuté | `sprint_v16_closure/V17_PROPOSAL.md` : rivières fines, texture/chemins, 8–12 repères. Aucune nouvelle itération déclenchée sans accord explicite (condition préalable du rapport). |
+| (3) Exports STL/3MF Hyrule et Paco | PROTOTYPE numérique, **BLOCKED validation native/physique** | V13 `BAMBU_READINESS.md` : modules et corps 3MF fermés, dimensions contrôlées ; PrusaSlicer 2.7.2 uniquement, non Bambu Studio ; support Paco pouvant augmenter fortement la masse, couleurs et tolérances non testées en machine. V14 coûts/temps proxy, non devis. |
+
+**Action suivante :** préserver les références CI et les modèles existants. Ne pas lancer V17 avant accord artistique ; ne pas déclarer les exports Bambu prêts à fabriquer sans import/tranchage Bambu Studio et coupon physique. Pour généralisation Photos→3D, sujet inédit à 4 vues nécessaire. Aucun achat ni fusion.
