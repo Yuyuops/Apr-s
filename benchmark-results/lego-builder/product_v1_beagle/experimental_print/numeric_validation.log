@@ -1,0 +1,6 @@
+== validate print
+{"stl": 18, "stl_bad": [[], 0], "threemf": 10, "bodies": 239, "bodies_bad": [[], 0], "oversize": [[], 0], "overlaps": 0, "xml_errors": [[], 0], "all_ok": true}
+== validate print_shape
+{"stl": 1, "stl_bad": [[], 0], "threemf": 4, "bodies": 20, "bodies_bad": [[], 0], "oversize": [[], 0], "overlaps": 0, "xml_errors": [[], 0], "all_ok": true}
+== validate coupon
+{"stl": 22, "stl_bad": [[], 0], "threemf": 1, "bodies": 22, "bodies_bad": [[], 0], "oversize": [[], 0], "overlaps": 0, "xml_errors": [[], 0], "all_ok": true}

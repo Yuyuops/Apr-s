@@ -1,0 +1,87 @@
+{
+ "1_download": {
+  "status": "PASS",
+  "zip_mb": 24.4,
+  "files": 29,
+  "testzip": null
+ },
+ "2_open_guide": {
+  "status": "PASS",
+  "files_named": 20,
+  "missing": [],
+  "guide_chars": 5935
+ },
+ "3_renders": {
+  "status": "PASS",
+  "renders": 7,
+  "size": [
+   2400,
+   2400
+  ],
+  "too_small_or_blank": [],
+  "gif_frames": 12
+ },
+ "4_identify_parts": {
+  "status": "PASS",
+  "bom_lines": 64,
+  "total": 10567,
+  "rebrickable_header": [
+   "Part",
+   "Color",
+   "Quantity"
+  ],
+  "rare_file_lines": 12
+ },
+ "5_prepare_parts": {
+  "status": "PASS",
+  "bags": {
+   "Black": {
+    "pieces": 250,
+    "references": 8
+   },
+   "Dark Orange": {
+    "pieces": 6263,
+    "references": 17
+   },
+   "Dark Tan": {
+    "pieces": 1704,
+    "references": 14
+   },
+   "Reddish Brown": {
+    "pieces": 775,
+    "references": 9
+   },
+   "White": {
+    "pieces": 1575,
+    "references": 16
+   }
+  },
+  "note": "one bag per colour; physical sorting HUMAN REQUIRED"
+ },
+ "6_follow_notice": {
+  "status": "PASS",
+  "steps": 554,
+  "max_pieces_in_one_step": 20,
+  "errors": [],
+  "note": "virtual build in notice order against the BOM stock; the physical assembly is HUMAN REQUIRED"
+ },
+ "7_finish": {
+  "status": "PASS",
+  "pieces_placed": 10567,
+  "stock_left": 0,
+  "pdf_pages": 561,
+  "potentially_ambiguous_pages": {
+   "from_below": 147,
+   "toward_dog_axis": 1,
+   "winding_path": 0,
+   "build_apart": 14
+  }
+ },
+ "human_required": [
+  "physical sorting of the parts",
+  "physical assembly of the 554 steps",
+  "reading comfort of the PDF on paper/screen",
+  "fit and strength of the finished model",
+  "part availability and real cost"
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "1_required_files": {
+  "status": "PASS",
+  "missing": [],
+  "files": 29
+ },
+ "2_integrity": {
+  "status": "PASS",
+  "zip_testzip": null,
+  "hash_mismatch": [],
+  "files_not_in_sha_list": [],
+  "manifest_files": 27
+ },
+ "3_bom_equals_model": {
+  "status": "PASS",
+  "total": 10567,
+  "lines": 64,
+  "part_numbers": 23,
+  "model_sha256": "551bde0f77f20c227b4c4fde7f9c286c32139c4c6ac2b458edc0b8cedf31808f"
+ },
+ "4_notice_equals_parts": {
+  "status": "PASS",
+  "steps": 554,
+  "pdf_pages": 561,
+  "front_matter_pages": 6,
+  "pieces_summed_over_steps": 10567,
+  "step_pages_with_missing_or_wrong_lines": [],
+  "note": "parts x colour summed over the non-attach steps == BOM ; every step page prints its header and each (qty, part number, colour) line"
+ },
+ "5_references_recognised": {
+  "status": "PASS",
+  "no_dat": [],
+  "not_in_rebrickable_parts": [],
+  "unknown_colours": [],
+  "pairs_not_catalogued": []
+ },
+ "6_no_critical_collision": {
+  "status": "PASS",
+  "mode": "engine validate_v4 re-run on both shipped LDraw files",
+  "pairs_steps_file": 0,
+  "pairs_model_file": 0,
+  "blocked_studs": 0
+ },
+ "7_no_disconnected_part": {
+  "status": "PASS",
+  "mode": "re-run",
+  "steps_file": {
+   "parts": 10567,
+   "steps": 555,
+   "disconnected": 0,
+   "islands": 0,
+   "unsupported_at_placement": 0
+  },
+  "model_file": {
+   "disconnected": 0,
+   "islands": 0,
+   "unsupported_at_placement": 353
+  },
+  "note": "unsupported_at_placement is judged on the build-order file ; the model file is in arbitrary file order (its count is an ordering artefact, documented)"
+ },
+ "8_reproducible_generation": {
+  "status": "PASS",
+  "rebuilt_sha256": "551bde0f77f20c227b4c4fde7f9c286c32139c4c6ac2b458edc0b8cedf31808f",
+  "shipped_sha256": "551bde0f77f20c227b4c4fde7f9c286c32139c4c6ac2b458edc0b8cedf31808f"
+ },
+ "9_sha256_of_deliverables": {
+  "status": "PASS",
+  "files_hashed": 28
+ },
+ "10_no_regression_other_engines": {
+  "status": "BLOCKED",
+  "note": "verified separately by tools/product_regression_v1.sh (Maps, Paco, Beagle, unified Builder)"
+ }
+}

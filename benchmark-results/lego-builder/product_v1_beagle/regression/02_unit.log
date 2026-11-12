@@ -1,0 +1,25 @@
+== 02_unit: /tmp/claude-0/clean/Apr-s/benchmark-results/20_portable_engine/.venv/bin/python lego-builder/tests/test_unit.py
+test_analysis_object_vs_unknown (__main__.T.test_analysis_object_vs_unknown) ... ok
+test_cutout_refuses_textured_background (__main__.T.test_cutout_refuses_textured_background) ... ok
+test_intent_refuses_ambiguous_version (__main__.T.test_intent_refuses_ambiguous_version) ... /home/user/v062/benchmark-results/lego-builder/lego_builder/intent.py:23: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/user/v062/benchmark-results/lego-builder/data/subject_versions.json' mode='r' encoding='utf-8'>
+  key = req_subject.get("name", "").strip().lower(); tab = json.load(open(DATA / "subject_versions.json")); ent = tab.get(key)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_intent_routing (__main__.T.test_intent_routing) ... /home/user/v062/benchmark-results/lego-builder/lego_builder/intent.py:45: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/user/v062/benchmark-results/lego-builder/data/subject_versions.json' mode='r' encoding='utf-8'>
+  for key, ent in json.load(open(DATA / "subject_versions.json")).items():
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_manifest_accepts_valid (__main__.T.test_manifest_accepts_valid) ... /home/user/v062/benchmark-results/lego-builder/lego_builder/manifest.py:24: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/user/v062/benchmark-results/lego-builder/schema/project_manifest.schema.json' mode='r' encoding='utf-8'>
+  errs = []; _check(m, json.load(open(schema_path)), "manifest", errs)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_manifest_detects_changed_source (__main__.T.test_manifest_detects_changed_source) ... ok
+test_manifest_rejects_bad_enum_and_missing_key (__main__.T.test_manifest_rejects_bad_enum_and_missing_key) ... ok
+test_requirements_validation (__main__.T.test_requirements_validation) ... ok
+test_views_by_name (__main__.T.test_views_by_name) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.056s
+
+OK
+exit=0 seconds=0

@@ -1,0 +1,3 @@
+== 10_photos_to_3d: timeout 1700 /tmp/claude-0/clean/Apr-s/benchmark-results/20_portable_engine/.venv/bin/python -m lego_builder run --photos 01_inputs_prepared/paco_face_rgba.png 01_inputs_prepared/paco_dos_rgba.png 01_inputs_prepared/paco_profil_gauche_rgba.png 01_inputs_prepared/paco_profil_droit_rgba.png --out /tmp/p1_out/paco_photos --size-mm 400 --notice off
+{"pieces": 3193, "references": 89, "seconds": 198.7, "status": "validated"}
+exit=0 seconds=236

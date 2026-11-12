@@ -1,0 +1,60 @@
+== 03_engine_v16: /tmp/claude-0/clean/Apr-s/benchmark-results/20_portable_engine/.venv/bin/python lego-builder/tests/test_engine_v16.py
+test_no_one_stud_plate_bodies_with_wild_tiler (__main__.T.test_no_one_stud_plate_bodies_with_wild_tiler) ... /home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:12: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/user/v062/benchmark-results/lego-builder/sprint_v15/HYRULE_REQUIREMENTS.json' mode='r' encoding='utf-8'>
+  names = json.load(open(HERE / "sprint_v15" / "HYRULE_REQUIREMENTS.json"))["classes"][:12] + ["shallow", "meadow"]; z = np.load(HERE / "sprint_v16" / "data" / "zone_A_classes_v16.npy")[:14, :14].copy()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:14: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp_p885in1/compN.json' mode='w' encoding='utf-8'>
+  tag = "L" if legacy else "N"; Image.fromarray(z.astype(np.uint8)).save(tmp / ("z%s.tif" % tag)); json.dump({"biome_map": {"file": str(tmp / ("z%s.tif" % tag)), "classes": {str(i): n for i, n in enumerate(names)}, "majority_passes": 1}, "grid_studs": [14, 14], "sub": 8}, open(tmp / ("comp%s.json" % tag), "w")); return tmp / ("comp%s.json" % tag)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:14: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp_p885in1/compL.json' mode='w' encoding='utf-8'>
+  tag = "L" if legacy else "N"; Image.fromarray(z.astype(np.uint8)).save(tmp / ("z%s.tif" % tag)); json.dump({"biome_map": {"file": str(tmp / ("z%s.tif" % tag)), "classes": {str(i): n for i, n in enumerate(names)}, "majority_passes": 1}, "grid_studs": [14, 14], "sub": 8}, open(tmp / ("comp%s.json" % tag), "w")); return tmp / ("comp%s.json" % tag)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:27: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/user/v062/benchmark-results/lego-builder/sprint_v16/hyrule_v16_c4.json' mode='r' encoding='utf-8'>
+  d = Path(d); comp = small_zone(d); compL = small_zone(d, True); on = json.load(open(HERE / "sprint_v16" / "hyrule_v16_c4.json")); json.dump(on, open(d / "on.json", "w")); r = build(d / "on.json", comp, d / "p")
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:27: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp_p885in1/on.json' mode='w' encoding='utf-8'>
+  d = Path(d); comp = small_zone(d); compL = small_zone(d, True); on = json.load(open(HERE / "sprint_v16" / "hyrule_v16_c4.json")); json.dump(on, open(d / "on.json", "w")); r = build(d / "on.json", comp, d / "p")
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:28: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp_p885in1/p/parts.json' mode='r' encoding='utf-8'>
+  self.assertEqual(r.returncode, 0, r.stderr[-400:]); parts = json.load(open(d / "p" / "parts.json")); ones = [p for p in parts if p["region"] == "strata_body" and p["nr"] * p["nc"] == 1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:29: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/user/v062/benchmark-results/maps-engine-v03/style_fidelity_v062/styles/hyrule_v15_B.json' mode='r' encoding='utf-8'>
+  base = json.load(open(M / "styles" / "hyrule_v15_B.json")); json.dump(base, open(d / "off.json", "w")); build(d / "off.json", compL, d / "q"); ones0 = [p for p in json.load(open(d / "q" / "parts.json")) if p["region"] == "strata_body" and p["nr"] * p["nc"] == 1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:29: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp_p885in1/off.json' mode='w' encoding='utf-8'>
+  base = json.load(open(M / "styles" / "hyrule_v15_B.json")); json.dump(base, open(d / "off.json", "w")); build(d / "off.json", compL, d / "q"); ones0 = [p for p in json.load(open(d / "q" / "parts.json")) if p["region"] == "strata_body" and p["nr"] * p["nc"] == 1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:29: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp_p885in1/q/parts.json' mode='r' encoding='utf-8'>
+  base = json.load(open(M / "styles" / "hyrule_v15_B.json")); json.dump(base, open(d / "off.json", "w")); build(d / "off.json", compL, d / "q"); ones0 = [p for p in json.load(open(d / "q" / "parts.json")) if p["region"] == "strata_body" and p["nr"] * p["nc"] == 1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_options_are_off_by_default_and_on_builds_are_collision_free (__main__.T.test_options_are_off_by_default_and_on_builds_are_collision_free) ... /home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:14: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpjj9he9j7/compN.json' mode='w' encoding='utf-8'>
+  tag = "L" if legacy else "N"; Image.fromarray(z.astype(np.uint8)).save(tmp / ("z%s.tif" % tag)); json.dump({"biome_map": {"file": str(tmp / ("z%s.tif" % tag)), "classes": {str(i): n for i, n in enumerate(names)}, "majority_passes": 1}, "grid_studs": [14, 14], "sub": 8}, open(tmp / ("comp%s.json" % tag), "w")); return tmp / ("comp%s.json" % tag)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:14: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpjj9he9j7/compL.json' mode='w' encoding='utf-8'>
+  tag = "L" if legacy else "N"; Image.fromarray(z.astype(np.uint8)).save(tmp / ("z%s.tif" % tag)); json.dump({"biome_map": {"file": str(tmp / ("z%s.tif" % tag)), "classes": {str(i): n for i, n in enumerate(names)}, "majority_passes": 1}, "grid_studs": [14, 14], "sub": 8}, open(tmp / ("comp%s.json" % tag), "w")); return tmp / ("comp%s.json" % tag)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:18: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/user/v062/benchmark-results/maps-engine-v03/style_fidelity_v062/styles/hyrule_v15_B.json' mode='r' encoding='utf-8'>
+  d = Path(d); comp = small_zone(d); compL = small_zone(d, True); base = json.load(open(M / "styles" / "hyrule_v15_B.json")); on = json.load(open(HERE / "sprint_v16" / "hyrule_v16_c4.json"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:18: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/user/v062/benchmark-results/lego-builder/sprint_v16/hyrule_v16_c4.json' mode='r' encoding='utf-8'>
+  d = Path(d); comp = small_zone(d); compL = small_zone(d, True); base = json.load(open(M / "styles" / "hyrule_v15_B.json")); on = json.load(open(HERE / "sprint_v16" / "hyrule_v16_c4.json"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:19: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpjj9he9j7/off.json' mode='w' encoding='utf-8'>
+  json.dump(base, open(d / "off.json", "w")); json.dump(on, open(d / "on.json", "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:19: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpjj9he9j7/on.json' mode='w' encoding='utf-8'>
+  json.dump(base, open(d / "off.json", "w")); json.dump(on, open(d / "on.json", "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:21: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpjj9he9j7/o1/metrics.json' mode='r' encoding='utf-8'>
+  m_off = json.load(open(d / "o1" / "metrics.json")); self.assertNotIn("wild_layers", m_off); self.assertNotIn("smooth_height", m_off); self.assertNotIn("details_placed", m_off)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/user/v062/benchmark-results/lego-builder/tests/test_engine_v16.py:23: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpjj9he9j7/p1/metrics.json' mode='r' encoding='utf-8'>
+  m_on = json.load(open(d / "p1" / "metrics.json")); self.assertGreater(m_on["wild_layers"], 0); self.assertGreaterEqual(m_on["smooth_height"]["max_plates"], 2)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 18.987s
+
+OK
+exit=0 seconds=19

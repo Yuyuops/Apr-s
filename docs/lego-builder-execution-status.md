@@ -121,3 +121,17 @@ Date initiale : 2026-11-08. Branche : research/lego-builder-commercial-outputs-2
 | (3) Exports STL/3MF Hyrule et Paco | PROTOTYPE numérique, **BLOCKED validation native/physique** | V13 `BAMBU_READINESS.md` : modules et corps 3MF fermés, dimensions contrôlées ; PrusaSlicer 2.7.2 uniquement, non Bambu Studio ; support Paco pouvant augmenter fortement la masse, couleurs et tolérances non testées en machine. V14 coûts/temps proxy, non devis. |
 
 **Action suivante :** préserver les références CI et les modèles existants. Ne pas lancer V17 avant accord artistique ; ne pas déclarer les exports Bambu prêts à fabriquer sans import/tranchage Bambu Studio et coupon physique. Pour généralisation Photos→3D, sujet inédit à 4 vues nécessaire. Aucun achat ni fusion.
+
+## Product V1 — Beagle Digital Kit (2026-11-12)
+
+| Étape | Statut | Preuve / limite |
+|---|---|---|
+| Audit Beagle V12.1 | PASS | SHA-256 `551bde0f…` = référence CI ; 10 567 pièces, 64 références ; reproductible depuis `beagle.glb` ; `product_v1_beagle/QUALITY_REPORT.md` |
+| Package numérique (ZIP 24 Mo) | PASS (technique) | modèle LDraw, 7 rendus 2400 px, GIF, notice PDF 554 étapes (561 pages), BOM CSV/JSON/Rebrickable, guide, limites, licences, manifeste SHA-256 |
+| GLB du modèle LEGO | PARTIEL | généré (304 Mo), non inclus (taille) |
+| Validateur du package (10 contrôles) | PASS | `product_v1_beagle/validation/package_validation.json` |
+| Non-régression (Maps 8/8, Paco, Beagle, Builder, Photos→3D) | PASS | `product_v1_beagle/REGRESSION_REPORT.md` ; CI GitHub non relancé |
+| Parcours client | PASS (automatisable) / BLOCKED (construction réelle) | `USER_ACCEPTANCE_TEST.md` ; fiche de validation humaine dans le kit |
+| Fabrication expérimentale STL/3MF | PASS (numérique) / BLOCKED (Bambu Studio, imprimante) | zip séparé ; aucune compatibilité Bambu annoncée |
+| Licences | BLOCKED (vente) | licence Hunyuan3D non applicable dans l'UE, origine des images, Rebrickable, marque, licence du dépôt (`LICENSE_REVIEW.md`) |
+| Verdict | GO technique ; GO utilisateur non confirmé ; **NO-GO commercial** | `FINAL_VERDICT.md` |

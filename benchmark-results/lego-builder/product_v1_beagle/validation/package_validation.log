@@ -1,0 +1,10 @@
+1_required_files                   PASS 
+2_integrity                        PASS 
+3_bom_equals_model                 PASS 
+4_notice_equals_parts              PASS {'note': 'parts x colour summed over the non-attach steps == BOM ; every step page prints its header and each (qty, part number, colour) line'}
+5_references_recognised            PASS 
+6_no_critical_collision            PASS 
+7_no_disconnected_part             PASS {'note': 'unsupported_at_placement is judged on the build-order file ; the model file is in arbitrary file order (its count is an ordering artefact, documented)'}
+8_reproducible_generation          PASS 
+9_sha256_of_deliverables           PASS 
+10_no_regression_other_engines     BLOCKED {'note': 'verified separately by tools/product_regression_v1.sh (Maps, Paco, Beagle, unified Builder)'}

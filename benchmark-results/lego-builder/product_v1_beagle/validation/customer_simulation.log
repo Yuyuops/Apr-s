@@ -1,0 +1,7 @@
+1_download                 PASS 
+2_open_guide               PASS 
+3_renders                  PASS 
+4_identify_parts           PASS 
+5_prepare_parts            PASS {'note': 'one bag per colour; physical sorting HUMAN REQUIRED'}
+6_follow_notice            PASS {'note': 'virtual build in notice order against the BOM stock; the physical assembly is HUMAN REQUIRED'}
+7_finish                   PASS 

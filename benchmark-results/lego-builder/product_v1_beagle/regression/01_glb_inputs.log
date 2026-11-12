@@ -1,0 +1,5 @@
+== 01_glb_inputs: python3 lego-builder/tests/check_regression.py glb
+paco.glb IDENTICAL
+beagle.glb IDENTICAL
+no regression
+exit=0 seconds=0

@@ -1,0 +1,187 @@
+{
+ "release": "LEGO Builder Beagle V1 (technical release, not commercial)",
+ "kit": {
+  "file": "LEGO_Builder_Beagle_V1_Digital_Kit.zip",
+  "bytes": 24407713,
+  "sha256": "3b81c4ac2662aaf6ef207f71273a4e2004195be654e184928f78a2119f4f340f",
+  "manifest_built_utc": "2026-11-12T00:10:42Z",
+  "files": 29
+ },
+ "experimental": {
+  "file": "LEGO_Builder_Beagle_V1_EXPERIMENTAL_Print_Files.zip",
+  "bytes": 12065140,
+  "sha256": "7d153ccf158e2dfee75c0eb104e7e8e6b3557c51b80fbb69d5922522b84c8ed6",
+  "status": "numeric validation only; Bambu Studio not tested"
+ },
+ "model": {
+  "ldraw_sha256": "551bde0f77f20c227b4c4fde7f9c286c32139c4c6ac2b458edc0b8cedf31808f",
+  "pieces": 10567,
+  "part_colour_lines": 64,
+  "distinct_part_numbers": 23,
+  "colours": 5,
+  "steps": 554,
+  "notice_pages": 561
+ },
+ "glb": {
+  "status": "generated, not shipped (304 MB)",
+  "sha256": "2144cb1b386bac590e3e94f08bbcf4f5190d69624f7f29bfa2214888c3feff6b"
+ },
+ "source_repo_commit_of_engines": "7d8d4e7 (engines unmodified; new tools only)",
+ "reports": {
+  "BOM_VALIDATION.md": "79ca4af3670ea86f2c2c32d3442ce78b1ef1429d313539d99005c48ae551925a",
+  "BUILD_COMMANDS.md": "cc4384025cd4192cb4b017ba86b6f0c49f553145639f07751e563920ed34af7c",
+  "FINAL_VERDICT.md": "f214030077a11752e7e81d2a3972b21dbe291a24ec097621eb2ecea30240ed11",
+  "INSTRUCTIONS_VALIDATION.md": "517e781564857080c68228354e503c5718cbf042525ca2a805312efbdd870a9f",
+  "LICENSE_REVIEW.md": "0641828e32d614e3d377df8c5da650581ecf024be04ae14f4e4a146ac575ef61",
+  "QUALITY_REPORT.md": "7d6ba735c65503c1417bcda3e3b91e0d73f7db6532ec6a4aadf1527978199d69",
+  "REGRESSION_REPORT.md": "0862df7f5b877087ba52555332b5546063b0bdd689284f7a68f64f4b5fd0a47f",
+  "USER_ACCEPTANCE_TEST.md": "3562bfda42726a16f65eae4abf4366f21db615bb2d8929b633457efe5d2de2eb"
+ },
+ "validation": {
+  "customer_simulation.json": "fba361230293d74e6e5f8c3a0e5742188364e26c2d70266cdf5b4ed0f278ce35",
+  "package_validation.json": "29833201cd8aacff63a846e19f5e8f155ce998b531a72d78883a77dc4ea5adbc",
+  "package_validation_run1_rebuild.json": "b66bcbf42435190ea1951bc42f696f5c4f6bef22a9f98b1659fb9fc4e087f8cc"
+ },
+ "verdicts": {
+  "technical": "GO",
+  "user": "NOT CONFIRMED (no outside reader)",
+  "commercial": "NO-GO (rights, physical test, availability and cost not established)"
+ },
+ "kit_files": [
+  {
+   "path": "LICENSES/LICENSES.md",
+   "bytes": 1577,
+   "sha256": "e271d9f9c0c8078a73196eea15250d45c2610540dcf968b089ebf73cbee7f909"
+  },
+  {
+   "path": "README.md",
+   "bytes": 2260,
+   "sha256": "831d8cc98db0754d37d4a0cf9ce03f23a51a7c90401eddcf639705ae873e8d8c"
+  },
+  {
+   "path": "bom/Beagle_V1_BOM.csv",
+   "bytes": 5864,
+   "sha256": "9db67ee317916ad19d07403ed1916fa52e2b2a42494388f3464a6c30e7b216d7"
+  },
+  {
+   "path": "bom/Beagle_V1_BOM.json",
+   "bytes": 25863,
+   "sha256": "d1927238a49f36c30985e2a85bf099a3a0d4811e597b3fdda4d9391fab6b20d4"
+  },
+  {
+   "path": "bom/Beagle_V1_ldraw_parts.csv",
+   "bytes": 1075,
+   "sha256": "658fd50cbbe847314ed4c9a00c5db019c3e5724c75e2ab4d109e413cde409b94"
+  },
+  {
+   "path": "bom/Beagle_V1_rare_parts.csv",
+   "bytes": 1069,
+   "sha256": "c429b5dcca621c7ca25b5bfad6c68c10bacb85f15e5db5ad5efde9c6c6b39394"
+  },
+  {
+   "path": "bom/Beagle_V1_rebrickable_import.csv",
+   "bytes": 803,
+   "sha256": "f3ef05975f44396557285d37bae528add3bc232239706704aaa6ab22e7739822"
+  },
+  {
+   "path": "bom/bom_cross_check.json",
+   "bytes": 141,
+   "sha256": "07af6e2d9b78fed27e2775a61fe91512f13fe3b8026b519bc2e897cb01ad0b87"
+  },
+  {
+   "path": "docs/FICHE_VALIDATION_HUMAINE.md",
+   "bytes": 1145,
+   "sha256": "2267af84cbc8fb913b33c20fd3f9035e0fa160b45aa62fa366fe96387cb537b5"
+  },
+  {
+   "path": "docs/GUIDE_UTILISATEUR.md",
+   "bytes": 3815,
+   "sha256": "0fac7429999ec8ff1540a0673ef9033ba17a169745bfebfd4094d3315424bbc1"
+  },
+  {
+   "path": "docs/LIMITES_CONNUES.md",
+   "bytes": 1786,
+   "sha256": "0072b6874c2dfb10424aa1f5635179276e9bd263ec5ea3096e090f07ff9efe8d"
+  },
+  {
+   "path": "instructions/Beagle_V1_Notice.pdf",
+   "bytes": 20563192,
+   "sha256": "2e0ca07bec15b916cf4dd625be415576e11d4e826b00999628d25395e9c547a3"
+  },
+  {
+   "path": "instructions/notice_report.json",
+   "bytes": 209,
+   "sha256": "196c23537547c97e5d9943edb75ea0a9bb81e36f9f6f28b13b190f1f81079d22"
+  },
+  {
+   "path": "instructions/steps.csv",
+   "bytes": 74543,
+   "sha256": "081077a44e3789c2af92a21be6a54b8042b790150a750bd4e164431dd0ac015e"
+  },
+  {
+   "path": "model/Beagle_V1.ldr",
+   "bytes": 575393,
+   "sha256": "551bde0f77f20c227b4c4fde7f9c286c32139c4c6ac2b458edc0b8cedf31808f"
+  },
+  {
+   "path": "model/Beagle_V1_steps.ldr",
+   "bytes": 586359,
+   "sha256": "aa91b825ecd52376c3b6aaa37a3b0d323b9e039c2268ebf262e52223e5e50987"
+  },
+  {
+   "path": "preview/Beagle_V1_turntable.gif",
+   "bytes": 491803,
+   "sha256": "3745b02101c3acb5d197ad772a77d9a8960b47f3cd1a5a66c6a1c8caa22d8a72"
+  },
+  {
+   "path": "renders/Beagle_V1_dessus.png",
+   "bytes": 1301094,
+   "sha256": "5dce67c37ad16e5431dd7b250b14a3c9dbb487d6d4ced1865eb8e4a32ff00e9b"
+  },
+  {
+   "path": "renders/Beagle_V1_dos.png",
+   "bytes": 919555,
+   "sha256": "43b7c6e347cf318506abeb16be3ddd4c2acec1a284ccee1bf63fc358cac02723"
+  },
+  {
+   "path": "renders/Beagle_V1_face.png",
+   "bytes": 862904,
+   "sha256": "8c4cc6c0bf6e31bf2d45b4361af5115869391f32196f5ba224b57c30222b19a9"
+  },
+  {
+   "path": "renders/Beagle_V1_profil_droit.png",
+   "bytes": 1241445,
+   "sha256": "6634b1a56721d28992d085b7b7e337653ca164d8ad652a206ede728ca389861e"
+  },
+  {
+   "path": "renders/Beagle_V1_profil_gauche.png",
+   "bytes": 1295920,
+   "sha256": "43c468c022b126296fe1c3b542a9194d4b25881ce95f7cab3273f7a157fa10d3"
+  },
+  {
+   "path": "renders/Beagle_V1_trois_quarts.png",
+   "bytes": 1735512,
+   "sha256": "29d89854c3fd1aa65a0d8ae36e1df7806e53b3df2362fcb3ce41a475a33f5273"
+  },
+  {
+   "path": "renders/Beagle_V1_trois_quarts_arriere.png",
+   "bytes": 1663184,
+   "sha256": "d00ee3b8d32fc5fa4fa600b5300e599ff1525f088e9dbf1f69f02da7fc716a18"
+  },
+  {
+   "path": "validation/beagle_validation_v2.json",
+   "bytes": 58058,
+   "sha256": "ac2c404627434f8a3f6e53855f94af815cca4309ce469c44a084e601904e1f97"
+  },
+  {
+   "path": "validation/beagle_weak.json",
+   "bytes": 58,
+   "sha256": "e96ac54fe2c6dfef2842b2727a57d5fb8e0cd33d72e57420ebc37060462e0a17"
+  },
+  {
+   "path": "validation/bom_verification.json",
+   "bytes": 120,
+   "sha256": "df70133e8b85114f7b90a7f2443346f563c85d55e3b3e8472f494ee64302c3a9"
+  }
+ ]
+}

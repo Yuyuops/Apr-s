@@ -1,0 +1,4 @@
+== 09_beagle_sha: python3 lego-builder/tests/check_regression.py sculpture beagle /tmp/p1_out/beagle/model/diorama.ldr beagle_V121
+beagle IDENTICAL 551bde0f77f2
+no regression
+exit=0 seconds=0
