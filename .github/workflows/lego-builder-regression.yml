@@ -101,7 +101,7 @@ jobs:
           B=benchmark-results/lego-builder
           "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder.print3d.cli $B/tests/data/paco_sample.ldr "$RUNNER_TEMP/print_shape" --mode modules --shape-aware
           test -f "$RUNNER_TEMP/print_shape/modules_shape_export/dowel_peg.stl"
-          "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder.print3d.coupon "$RUNNER_TEMP/coupon"
+          PYTHONPATH=/tmp/print_site:$PYTHONPATH "$LEGO_ENGINE_HOME/.venv/bin/python" -m lego_builder.print3d.coupon "$RUNNER_TEMP/coupon"
           for d in print_shape coupon; do PYTHONPATH=/tmp/print_site:$PYTHONPATH "$LEGO_ENGINE_HOME/.venv/bin/python" $B/tests/validate_print_exports.py "$RUNNER_TEMP/$d" 250; done
           PYTHONPATH=/tmp/print_site:$PYTHONPATH "$LEGO_ENGINE_HOME/.venv/bin/python" $B/tools/audit_print_exports.py $B/print_export_results "$RUNNER_TEMP/print_audit.json"
       - name: Independent slice of the coupon (PrusaSlicer, NOT Bambu Studio) - informational
