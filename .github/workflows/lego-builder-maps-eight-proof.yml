@@ -1,0 +1,43 @@
+name: LEGO Builder - eight Maps baseline proof
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  maps-eight-baselines:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      LEGO_ENGINE_HOME: ${{ github.workspace }}/benchmark-results/20_portable_engine
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Install pinned portable engine dependencies
+        run: bash benchmark-results/20_portable_engine/scripts/install.sh
+      - name: Generate all eight Maps baselines and compare reference SHA-256 (BLOCKING)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/maps-eight"
+          bash benchmark-results/lego-builder/sprint_v16/baseline_maps_build.sh "$RUNNER_TEMP/maps-eight" 2>&1 | tee "$RUNNER_TEMP/maps-eight-check.log"
+      - name: Record SHA-256 and commit
+        if: always()
+        shell: bash
+        run: |
+          git rev-parse HEAD > "$RUNNER_TEMP/maps-commit.txt"
+          find "$RUNNER_TEMP/maps-eight" -name diorama.ldr -type f -print0 | sort -z | xargs -0 -r sha256sum > "$RUNNER_TEMP/maps-sha256.txt"
+          cat "$RUNNER_TEMP/maps-sha256.txt"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lego-builder-maps-eight-proof
+          retention-days: 14
+          path: |
+            ${{ runner.temp }}/maps-eight-check.log
+            ${{ runner.temp }}/maps-sha256.txt
+            ${{ runner.temp }}/maps-commit.txt
