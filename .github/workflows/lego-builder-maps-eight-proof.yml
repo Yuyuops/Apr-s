@@ -2,6 +2,11 @@ name: LEGO Builder - eight Maps baseline proof
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - research/lego-builder-commercial-outputs-20261108
+    paths:
+      - .github/workflows/lego-builder-maps-eight-proof.yml
 
 permissions:
   contents: read
