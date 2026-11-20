@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "deny": [
+      "mcp__claude_ai__us_election_info",
+      "mcp__claude_ai__launch_extended_search_task",
+      "mcp__claude_ai__show_recommendation_cards",
+      "mcp__claude_ai__read_research_report",
+      "mcp__claude_ai__end_conversation",
+      "mcp__widgets__fetch_sports_data",
+      "mcp__widgets__recipe_display_v0",
+      "mcp__widgets__weather_fetch",
+      "mcp__widgets__places_search",
+      "mcp__widgets__places_map_display_v0",
+      "mcp__widgets__message_compose_v1",
+      "mcp__widgets__chart_display_v0"
+    ]
+  }
+}
